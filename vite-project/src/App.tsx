@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [tree, setTree] = useState([]);
 
   const fetchTree = async () => {
-    const treePath = "api/tree";
+    const treePath = "api/name";
     const response = await fetch("http://127.0.0.1:8000/" + treePath);
     const data = await response.json();
     setTree(data);
