@@ -14,4 +14,6 @@ def list_tree(request):
     names = Name.objects.all()
     return [
         {"id":name.id, "name": name.name} for name in names
+
+        
     ]
