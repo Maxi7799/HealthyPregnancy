@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import  MainRouter from "../router/index";
+
+import { Home } from "./view/page";
 
 function App() {
   const [tree, setTree] = useState([]);
@@ -17,10 +20,12 @@ function App() {
 
   return (
     <>
-      <div>List of the tree</div>
-      {tree.map((tree: any) => (
+      <MainRouter></MainRouter>
+      {/* <div>List of the tree</div> */}
+      {/* {<MainRouter></MainRouter>} */}
+      {/* {tree.map((tree: any) => (
         <div key={tree.id}>{tree.name}</div>
-      ))}
+      ))} */}
     </>
   );
 }

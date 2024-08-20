@@ -1,0 +1,121 @@
+.header-main {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid #000;
+}
+
+.icon-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i-left {
+  margin-right: 10px;
+}
+
+.i-right {
+  text-align: left;
+}
+
+.nav-main {
+  display: flex;
+}
+
+.nav-item {
+  padding: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-item a {
+  color: #000;
+  font-weight: 600;
+}
+/* <GlobalOutlined /> */
+
+.language-main {
+  padding: 10px;
+  background-color: rgb(54, 63, 90);
+  padding: 10px 40px 10px 40px;
+  position: relative;
+}
+
+.language-box {
+  background-color: rgb(123,132,149);
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.language-main:hover .language-other {
+  display: block;
+}
+
+.language-other {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0px;
+  background-color: rgb(54, 63, 90);
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.angel {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  transform: rotate(45deg);
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  /* z-index: 100; */
+}
+
+.white-box {
+  background-color: #fff;
+  position: relative;
+}
+
+.l-row {
+  color: #000;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.l-row:hover {
+    background-color:rgb(214, 227, 239) ;
+}
+
+.simple {
+    width: 20px;
+}
+
+.flag {
+    width: 20px;
+    height: 20px;
+    background-color: lightsalmon;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.flag img {
+    height: 100%;
+}
+
+
+
