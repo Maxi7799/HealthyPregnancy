@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
-from .api import api
+from .api.connection_test import test
 
 
 urlpatterns = [
-    path('api/', api.urls),
+    path('test/', test.urls),
 ]
