@@ -1,41 +1,53 @@
 .topic-header {
-    width: 100%;
-    height: 150px;
-    border-bottom: 2px solid #000;
-    line-height: 150px;
-    font-weight: 600;
-    font-size: 36px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid #000;
+  line-height: 150px;
+  font-weight: 600;
+  font-size: 36px;
+  box-sizing: border-box;
 }
 
 .topic-footer {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 }
 
 .ed-main {
-    width: 100%;
-    height: calc(100% - 250px);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  width: 100%;
+  height: calc(100% - 250px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .edu-main-item {
-    width: calc(100% / 3 - 80px);
-    height: calc(50% - 100px);
-    border: 2px solid rgb(230, 114, 109);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    font-size: 30px;
+  width: calc(100% / 3 - 80px);
+  height: calc(50% - 100px);
+  border: 2px solid rgb(230, 114, 109);
+  border-radius: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.edu-main-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-main-item-span {
+  color: #000;
 }
 
 .edu-main-item:hover {
-    background-color: rgb(230, 114, 109);
+  background-color: rgb(230, 114, 109);
+  .edu-main-item-span {
     color: #fff;
+  }
 }

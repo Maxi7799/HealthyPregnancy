@@ -6,6 +6,7 @@ import { Faqs } from "../src/view/faqs";
 import { Testimonial } from "../src/view/testimonial";
 import { Educational } from "../src/view/educational/index";
 import { DataInsight } from "../src/view/dataInsight/index";
+import { Chapter } from '../src/view/chapter/index'
 function MainRouter() {
   return (
     <>
@@ -17,6 +18,7 @@ function MainRouter() {
         <Route path="/testimonial" element={<Testimonial></Testimonial>} />
         <Route path="/educational" element={<Educational></Educational>} />
         <Route path="/dataInsight" element={<DataInsight></DataInsight>} />
+        <Route path="/chapter" element={<Chapter></Chapter>} />
       </Routes>
     </>
   );
