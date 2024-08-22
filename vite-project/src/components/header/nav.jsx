@@ -20,10 +20,6 @@ export function nav() {
     },
   ];
 
-  // const navClick = () => {
-  //   console.log(this)
-  // }
-
   return (
     <>
       <div className="nav-main">

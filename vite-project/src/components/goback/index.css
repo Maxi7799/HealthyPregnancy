@@ -1,0 +1,39 @@
+.go-back {
+  width: max-content;
+  height: 80px;
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.go-back-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-right: 60px solid rgb(230, 114, 109);
+  /* transform: rotate(45deg); */
+}
+
+.go-back-right {
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgb(230, 114, 109);
+  background-color: rgb(230, 114, 109);
+
+  cursor: pointer;
+  font-size: 28px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.go-back-right .back {
+  color: #000;
+}
+
+.go-back-right:hover {
+  font-size: 32px;
+}
