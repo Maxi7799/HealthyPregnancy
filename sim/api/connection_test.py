@@ -15,3 +15,5 @@ def list_tree(request):
     return [
         {"id": name.id, "name": name.name} for name in names
     ]
+
+

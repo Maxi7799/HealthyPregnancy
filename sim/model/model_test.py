@@ -11,3 +11,5 @@ class Name(models.Model):
 
     class Meta:
         db_table = 'names'
+
+
