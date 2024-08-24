@@ -1,16 +1,15 @@
 import "./header.css";
-import { headerIcon } from "./headerIcon";
-import { nav } from "./nav";
+import {HeaderIcon} from "./headerIcon"; // Assuming headerIcon is a default export
+import { Nav } from "./nav";
 import { language } from "./language";
+import React from "react";
 
-export function header() {
+export const Header: React.FC = () => {
   return (
-    <>
-      <div className="header-main">
-        <div className="h-left">{headerIcon()}</div>
-        <div className="h-center">{nav()}</div>
-        <div className="h-right">{language()}</div>
-      </div>
-    </>
+    <div className="header-main">
+      <HeaderIcon />
+      <Nav />
+      <div className="h-right">{language()}</div>
+    </div>
   );
-}
+};

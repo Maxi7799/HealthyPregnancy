@@ -1,6 +1,7 @@
+import React from "react";
 import icon from "../../assets/h-icon.png";
 
-export function headerIcon() {
+export const HeaderIcon: React.FC = () => {
     return (
       <>
         <div className="icon-main">

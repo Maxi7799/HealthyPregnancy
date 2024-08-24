@@ -5,7 +5,7 @@ import { setTitle } from "../../store/chapter";
 import { useSelector, useDispatch } from "react-redux";
 import { eduType, chapterType } from "./mock/edutype";
 console.log(eduData);
-export function EdMain() {
+export function EdMain(): JSX.Element {
   console.log(eduData);
 
   const count = useSelector((state: any) => state.chapter.value);

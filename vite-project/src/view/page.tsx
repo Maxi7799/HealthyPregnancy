@@ -1,11 +1,11 @@
-import { header } from "../components/header/header.tsx";
-import { mainBox } from "../components/main/index.tsx";
+import { Header } from "../components/header/header.tsx";
+import { MainBox } from "../components/main/index.tsx";
 
 export function Home() {
   return (
     <>
-      {header()}
-      {mainBox()}
+      <Header />
+      <MainBox />
     </>
   );
 }
