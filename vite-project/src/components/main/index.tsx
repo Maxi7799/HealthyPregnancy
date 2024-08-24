@@ -2,7 +2,7 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import { Button, Flex } from "antd";
 
-export function mainBox() {
+export function MainBox() {
   return (
     <>
       <div className="main-box">

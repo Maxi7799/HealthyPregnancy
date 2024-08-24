@@ -1,7 +1,11 @@
-
 import { Link } from "react-router-dom";
-export function nav() {
-  const navData = [
+export function Nav() {
+  type navType = {
+    name: string;
+    to: string;
+  };
+
+  const navData: Array<navType> = [
     {
       name: "About",
       to: "/about",
@@ -23,7 +27,7 @@ export function nav() {
   return (
     <>
       <div className="nav-main">
-        {navData.map((item, index) => (
+        {navData.map((item: navType, index: number) => (
           <div className="nav-item" key={index}>
             <Link to={item.to}>{item.name}</Link>
           </div>

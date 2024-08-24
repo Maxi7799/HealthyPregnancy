@@ -1,5 +1,7 @@
-export const edu_3 = {
-  name: "chapter3",
+import { eduType } from "./edutype";
+
+export const edu_2: eduType = {
+  name: "chapter2",
   chapter: [
     {
       name: "title1",
@@ -7,11 +9,30 @@ export const edu_3 = {
     },
     {
       name: "title2",
-      text: "Keep faith and hope for the future. Make your most sincere dreams, and when the opportunities come, they will fight for them. It may take a season or more, but the ending will not change. Ambition, best, become a reality. An uncertain future, only one step at a time, the hope can realize the dream of the highest. We must treasure the dream, to protect it a season, let it in the heart quietly germinal. However, we have to gently protect our hearts deep expectations, slowly dream, will achieve new life.",
+      text: "",
     },
     {
       name: "title3",
       text: "",
     },
+    {
+      name: "title4",
+      text: "",
+    },
+    {
+      name: "title5",
+      text: "",
+    },
   ],
+  question: {
+    title:
+      "What does the writer say about the performance of older typists on the test?",
+    select: {
+      A: "They used different motor skills from younger typists.",
+      B: "They had been more efficiently trained than younger typists.",
+      C: "They used more time-saving techniques than younger typists.",
+      D: "They had better concentration skills than younger typists.",
+    },
+    answer: "A",
+  },
 };

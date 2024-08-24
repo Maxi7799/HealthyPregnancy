@@ -12,6 +12,10 @@
   border-right: 2px solid rgb(230, 114, 109);
 }
 
+.chapter-question {
+  text-align: left;
+}
+
 .chapter-left-top {
   height: 100px;
   background-color: rgb(230, 114, 109);
@@ -71,6 +75,54 @@
     height: calc(100% - 100px);
 }
 
+.quiz {
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.choice-question {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 28px;
+  color: rgb(230, 114, 109);
+}
+
+.question {
+  text-align: left;
+  font-weight: 600;
+  font-size: 24px;
+  padding-left: 30px;
+}
+
+.choice {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.ant-radio-wrapper {
+  font-size: 20px;
+}
+
+.submit-btn {
+  padding-left: 30px;
+}
+
+.ant-radio-group {
+  padding-left: 30px;
+}
+
+.select-label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.answer-tips {
+  width: 300px;
+  padding-left: 30px;
+  margin-top: 20px;
+}
 /* .title-item:hover {
     opacity: 1;
 } */
