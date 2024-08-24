@@ -5,18 +5,18 @@ import MainRouter from "../router/index";
 import { Home } from "./view/page";
 
 function App() {
-  const [tree, setTree] = useState([]);
+  // const [tree, setTree] = useState([]);
 
-  const fetchTree = async () => {
-    const treePath = "api/name";
-    const response = await fetch("http://127.0.0.1:8000/" + treePath);
-    const data = await response.json();
-    setTree(data);
-  };
+  // const fetchTree = async () => {
+  //   const treePath = "api/name";
+  //   const response = await fetch("http://127.0.0.1:8000/" + treePath);
+  //   const data = await response.json();
+  //   setTree(data);
+  // };
 
-  useEffect(() => {
-    fetchTree();
-  }, []);
+  // useEffect(() => {
+  //   fetchTree();
+  // }, []);
 
   return (
     <>
