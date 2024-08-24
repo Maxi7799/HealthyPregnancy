@@ -1,13 +1,19 @@
 import { GlobalOutlined } from "@ant-design/icons";
-import RO from '../../assets/RO.png'
+import RO from "../../assets/RO.png";
 import ES from "../../assets/ES.png";
 import UK from "../../assets/UK.png";
 import US from "../../assets/US.png";
 import DE from "../../assets/DE.png";
 import FR from "../../assets/FR.png";
 
+type listType = {
+  simple: string;
+  flag: string;
+  country: string;
+};
+
 export function language() {
-  const list = [
+  const list: Array<listType> = [
     {
       simple: "RO",
       flag: RO,
@@ -49,7 +55,7 @@ export function language() {
         <div className="language-other">
           <div className="white-box">
             <div className="angel"></div>
-            {list.map((item) => {
+            {list.map((item: listType) => {
               return (
                 <div className="l-row">
                   <div className="simple">{item.simple}</div>

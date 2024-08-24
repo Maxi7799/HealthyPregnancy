@@ -1,5 +1,7 @@
-export const edu_2 = {
-  name: "chapter2",
+import { eduType } from "./edutype";
+
+export const edu_4: eduType = {
+  name: "chapter4",
   chapter: [
     {
       name: "title1",
@@ -21,5 +23,28 @@ export const edu_2 = {
       name: "title5",
       text: "",
     },
+    {
+      name: "title6",
+      text: "",
+    },
+    {
+      name: "title6",
+      text: "",
+    },
+    {
+      name: "title7",
+      text: "",
+    },
   ],
+  question: {
+    title:
+      "What does the writer say about the performance of older typists on the test?",
+    select: {
+      A: "They used different motor skills from younger typists.",
+      B: "They had been more efficiently trained than younger typists.",
+      C: "They used more time-saving techniques than younger typists.",
+      D: "They had better concentration skills than younger typists.",
+    },
+    answer: "A",
+  },
 };

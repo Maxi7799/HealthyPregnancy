@@ -1,17 +1,22 @@
 import "./index.css";
 import { eduData } from "./mock";
 import { Link } from "react-router-dom";
-import { setTitle, setText } from "../../store/chapter";
+import { setTitle } from "../../store/chapter";
 import { useSelector, useDispatch } from "react-redux";
+import { eduType, chapterType } from "./mock/edutype";
 console.log(eduData);
 export function EdMain() {
   console.log(eduData);
 
-  const count = useSelector((state) => state.chapter.value);
+  const count = useSelector((state: any) => state.chapter.value);
 
   const dispatch = useDispatch();
 
-  const goChapter = (item) => {
+  type EduType = {
+    name: string;
+  };
+
+  const goChapter = (item: eduType) => {
     console.log("==============", item);
     dispatch(setTitle(item));
   };
@@ -19,7 +24,7 @@ export function EdMain() {
   return (
     <>
       <div className="ed-main">
-        {eduData.map((item, index) => {
+        {eduData.map((item: eduType, index: number) => {
           return (
             <div
               className="edu-main-item"
