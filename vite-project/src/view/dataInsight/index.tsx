@@ -4,32 +4,32 @@ import { Header } from "../../components/header/header";
 import "./index.css";
 
 export const DataInsight: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("lineChart");
-  const [lineChartData, setLineChartData] = useState<any>(null);
-  const [pieChartData1, setPieChartData1] = useState<any>(null);
-  const [pieChartData2, setPieChartData2] = useState<any>(null);
-  const [barChartData, setBarChartData] = useState<any>(null);
+  const [activeTab, setActiveTab] = useState<string>("healthrisk");
+  const [healthRiskData, setHealthRiskData] = useState<any>(null);
+  const [firstVisitData, setFirstVisitData] = useState<any>(null);
+  const [birthMethodData, setBirthMethodData] = useState<any>(null);
+  const [cReasonData, setCReasonData] = useState<any>(null);
 
   const rootAddress = "http://127.0.0.1:8000";
 
   // Function to fetch data for a specific chart
   const fetchData = async (chartType: string) => {
     try {
-      const response = await fetch(rootAddress + `/api/data/${chartType}`); // Adjust the endpoint as needed
+      const response = await fetch(rootAddress + `/datainsight/${chartType}`);
       const data = await response.json();
 
       switch (chartType) {
-        case "lineChart":
-          setLineChartData(data);
+        case "healthrisk":
+          setHealthRiskData(data);
           break;
-        case "pieChart1":
-          setPieChartData1(data);
+        case "firstvisit":
+          setFirstVisitData(data);
           break;
-        case "pieChart2":
-          setPieChartData2(data);
+        case "birthmethod":
+          setBirthMethodData(data);
           break;
-        case "barChart":
-          setBarChartData(data);
+        case "creason":
+          setCReasonData(data);
           break;
         default:
           break;
@@ -63,69 +63,79 @@ export const DataInsight: React.FC = () => {
         {/* Tab Navigation */}
         <div className="tabs">
           <button
-            className={activeTab === "lineChart" ? "active" : ""}
-            onClick={() => setActiveTab("lineChart")}
+            className={activeTab === "healthrisk" ? "active" : ""}
+            onClick={() => setActiveTab("healthrisk")}
           >
-            Line Chart
+            Health Risk
           </button>
           <button
-            className={activeTab === "pieChart1" ? "active" : ""}
-            onClick={() => setActiveTab("pieChart1")}
+            className={activeTab === "firstvisit" ? "active" : ""}
+            onClick={() => setActiveTab("firstvisit")}
           >
-            Pie Chart 1
+            First Visit
           </button>
           <button
-            className={activeTab === "pieChart2" ? "active" : ""}
-            onClick={() => setActiveTab("pieChart2")}
+            className={activeTab === "birthmethod" ? "active" : ""}
+            onClick={() => setActiveTab("birthmethod")}
           >
-            Pie Chart 2
+            Birth Method
           </button>
           <button
-            className={activeTab === "barChart" ? "active" : ""}
-            onClick={() => setActiveTab("barChart")}
+            className={activeTab === "creason" ? "active" : ""}
+            onClick={() => setActiveTab("creason")}
           >
-            Horizontal Bar Chart
+            C Reason
           </button>
         </div>
 
         {/* Chart Content */}
         <div className="chart-container">
-          {activeTab === "lineChart" && (
+          {activeTab === "healthrisk" && (
             <div className="chart">
-              {lineChartData ? (
-                <p>Render Line Chart with Data</p>
+              {healthRiskData ? (
+                <>
+                  {console.log("Health Risk Data:", healthRiskData)}
+                  <p>Render Line Chart 1 with Data</p>
+                </>
               ) : (
                 // Render your Line chart here using lineChartData
                 <p>Loading...</p>
               )}
             </div>
           )}
-          {activeTab === "pieChart1" && (
+          {activeTab === "firstvisit" && (
             <div className="chart">
-              {pieChartData1 ? (
-                <p>Render Pie Chart 1 with Data</p>
+              {firstVisitData ? (
+                <>
+                  {console.log(firstVisitData)}
+                  <p>Render Line Chart 1 with Data</p>
+                </>
               ) : (
                 // Render your Pie chart 1 here using pieChartData1
                 <p>Loading...</p>
               )}
             </div>
           )}
-          {activeTab === "pieChart2" && (
+          {activeTab === "birthmethod" && (
             <div className="chart">
-              {pieChartData2 ? (
-                <p>Render Pie Chart 2 with Data</p>
+              {birthMethodData ? (
+                <>
+                  {console.log(birthMethodData)}
+                  <p>Render Line Chart 1 with Data</p>
+                </>
               ) : (
-                // Render your Pie chart 2 here using pieChartData2
                 <p>Loading...</p>
               )}
             </div>
           )}
-          {activeTab === "barChart" && (
+          {activeTab === "creason" && (
             <div className="chart">
-              {barChartData ? (
-                <p>Render Horizontal Bar Chart with Data</p>
+              {cReasonData ? (
+                <>
+                  {console.log(cReasonData)}
+                  <p>Render Line Chart 1 with Data</p>
+                </>
               ) : (
-                // Render your Horizontal Bar chart here using barChartData
                 <p>Loading...</p>
               )}
             </div>
