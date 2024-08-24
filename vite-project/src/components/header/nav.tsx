@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export function nav() {
+export function Nav() {
   type navType = {
     name: string;
     to: string;
