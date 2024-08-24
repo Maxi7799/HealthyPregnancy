@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Header } from "../../components/header/header";
 import "./index.css";
@@ -138,3 +139,4 @@ export const DataInsight: React.FC = () => {
     </div>
   );
 };
+
