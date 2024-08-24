@@ -1,0 +1,65 @@
+.desc h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2c3e50; 
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.desc p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1em;
+  color: #34495e; 
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 20px;
+  padding: 15px;
+  background-color: #ecf0f1; 
+  border-left: 5px solid #5c6bc0; 
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.data-insight-sec1 {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  background-color: #ecf0f1;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.tabs button.active {
+  background-color: #5c6bc0;
+  color: #fff;
+}
+
+.chart-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust this as needed */
+}

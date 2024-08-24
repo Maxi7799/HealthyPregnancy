@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import  MainRouter from "../router/index";
+import MainRouter from "../router/index";
 
 import { Home } from "./view/page";
 
