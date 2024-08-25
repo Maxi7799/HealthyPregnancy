@@ -7,16 +7,16 @@ export function Nav() {
 
   const navData: Array<navType> = [
     {
-      name: "About",
-      to: "/about",
+      name: "Home",
+      to: "/",
     },
     {
-      name: "Testimonial",
-      to: "/testimonial",
+      name: "Risk Education",
+      to: "/educational",
     },
     {
-      name: "FAQs",
-      to: "/faqs",
+      name: "Data Insights",
+      to: "/dataInsight",
     },
     {
       name: "Contact us",

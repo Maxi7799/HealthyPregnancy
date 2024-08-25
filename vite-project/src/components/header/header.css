@@ -1,10 +1,11 @@
 .header-main {
   width: 100%;
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px solid #000;
+  background-color: rgba(254, 212, 213, 0.074);
 }
 
 .icon-main {
@@ -40,16 +41,16 @@
 
 .language-main {
   padding: 10px;
-  background-color: rgb(54, 63, 90);
+  /* background-color: rgb(254, 212, 213, 0.074); */
   padding: 10px 40px 10px 40px;
   position: relative;
 }
 
 .language-box {
-  background-color: rgb(123,132,149);
+  /* background-color: rgb(254, 212, 213, 0.074); */
   padding: 10px 30px 10px 30px;
   cursor: pointer;
-  color: #fff;
+  color: #000000;
 }
 
 .language-main:hover .language-other {
@@ -62,9 +63,9 @@
   width: 100%;
   top: 100%;
   left: 0px;
-  background-color: rgb(54, 63, 90);
+  background-color: rgba(76, 82, 102, 0.213);
   padding: 10px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: none;
 }
 
@@ -117,5 +118,8 @@
     height: 100%;
 }
 
-
-
+.icon-link {
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer; 
+}

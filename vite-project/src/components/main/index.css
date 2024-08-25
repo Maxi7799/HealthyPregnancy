@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-around;
     padding-top: 100px;
+    height: 300px;
 }
 .main-pic {
     width: 300px;
@@ -21,13 +22,4 @@
     right:280px;
     font-size:15px;
     font-family: 'Comic Sans MS', 'Cursive', sans-serif;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0px;
-    height: 200px;
-    background-color: rgb(242, 172, 224);
-    left: 0;
-    right: 0;
 }

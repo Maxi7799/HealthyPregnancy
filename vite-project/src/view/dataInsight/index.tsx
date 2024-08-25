@@ -6,6 +6,7 @@ import HorizontalBarChart from "../../components/chart/horizontalBarChart";
 import FirstVisitPieChart from "../../components/chart/FirstVisitPieChart";
 import BirthMethodChart from "../../components/chart/birthMethodChart";
 import PostLengthStackBarChart from "../../components/chart/postLengthStackbarChart";
+import { Footer } from "../../components/footer";
 
 export const DataInsight: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("healthrisk");
@@ -247,7 +248,7 @@ export const DataInsight: React.FC = () => {
           )}
         </div>
       </div>
-      {/* footer */}
+      <Footer />
     </div>
   );
 };
