@@ -48,7 +48,7 @@ export default function HorizontalBarChart({ data }: BarProps) {
   );
 
   return (
-    <div style={{ width: "100%", height: "400px" }}>
+    <div style={{ height: "450px", width: "100%", position: "relative" }}>
       <Chart
         options={{
           data: chartData,
@@ -56,6 +56,16 @@ export default function HorizontalBarChart({ data }: BarProps) {
           secondaryAxes,
         }}
       />
+      <div
+        style={{
+          textAlign: "center",
+          marginTop: "470px",
+          fontSize: "14px",
+          color: "#333",
+        }}
+      >
+        population
+      </div>
     </div>
   );
 }
