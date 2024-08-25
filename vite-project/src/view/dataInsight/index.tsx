@@ -1,7 +1,11 @@
-
 import React, { useState, useEffect } from "react";
 import { Header } from "../../components/header/header";
 import "./index.css";
+import { TwoLineChart } from "../../components/chart/twoLineChart";
+import HorizontalBarChart from "../../components/chart/horizontalBarChart";
+import FirstVisitPieChart from "../../components/chart/FirstVisitPieChart";
+import birthMethodChart from "../../components/chart/birthMethodChart";
+import BirthMethodChart from "../../components/chart/birthMethodChart";
 
 export const DataInsight: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("healthrisk");
@@ -39,7 +43,6 @@ export const DataInsight: React.FC = () => {
     }
   };
 
-  // Fetch data when the component mounts or when the active tab changes
   useEffect(() => {
     fetchData(activeTab);
   }, [activeTab]);
@@ -95,10 +98,9 @@ export const DataInsight: React.FC = () => {
               {healthRiskData ? (
                 <>
                   {console.log("Health Risk Data:", healthRiskData)}
-                  <p>Render Line Chart 1 with Data</p>
+                  <TwoLineChart data={healthRiskData} />
                 </>
               ) : (
-                // Render your Line chart here using lineChartData
                 <p>Loading...</p>
               )}
             </div>
@@ -108,10 +110,9 @@ export const DataInsight: React.FC = () => {
               {firstVisitData ? (
                 <>
                   {console.log(firstVisitData)}
-                  <p>Render Line Chart 1 with Data</p>
+                  <FirstVisitPieChart data={firstVisitData} />
                 </>
               ) : (
-                // Render your Pie chart 1 here using pieChartData1
                 <p>Loading...</p>
               )}
             </div>
@@ -121,7 +122,7 @@ export const DataInsight: React.FC = () => {
               {birthMethodData ? (
                 <>
                   {console.log(birthMethodData)}
-                  <p>Render Line Chart 1 with Data</p>
+                  <BirthMethodChart data={birthMethodData} />
                 </>
               ) : (
                 <p>Loading...</p>
@@ -133,7 +134,7 @@ export const DataInsight: React.FC = () => {
               {cReasonData ? (
                 <>
                   {console.log(cReasonData)}
-                  <p>Render Line Chart 1 with Data</p>
+                  <HorizontalBarChart data={cReasonData} />
                 </>
               ) : (
                 <p>Loading...</p>
@@ -149,4 +150,3 @@ export const DataInsight: React.FC = () => {
     </div>
   );
 };
-
