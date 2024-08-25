@@ -92,7 +92,7 @@ export const DataInsight: React.FC = () => {
             <span className="tooltip">
               Health Risk
               <span className="tooltiptext">
-                Understanding Risks of High-Risk Conditions During Pregnancy
+                Health risk trend in AU from 2014 - 2021
               </span>
             </span>
           </button>
@@ -101,9 +101,9 @@ export const DataInsight: React.FC = () => {
             onClick={() => setActiveTab("firstvisit")}
           >
             <span className="tooltip">
-              Prenatal Visit Risk
+              First Antenatal Visit
               <span className="tooltiptext">
-                Timing of First Prenatal Visit and Associated Health Risks
+                Time for the first antenatal visit
               </span>
             </span>
           </button>
@@ -113,9 +113,7 @@ export const DataInsight: React.FC = () => {
           >
             <span className="tooltip">
               Child Birth Method
-              <span className="tooltiptext">
-                Common Childbirth Methods in Australia
-              </span>
+              <span className="tooltiptext">Birth method percentage</span>
             </span>
           </button>
           <button
@@ -123,7 +121,7 @@ export const DataInsight: React.FC = () => {
             onClick={() => setActiveTab("creason")}
           >
             <span className="tooltip">
-              Common Reasons for Cesarean Section
+              Common reasons for Cesarean Section
               <span className="tooltiptext">
                 Common Reasons for Electing a Cesarean Section
               </span>
@@ -240,7 +238,8 @@ export const DataInsight: React.FC = () => {
           {postLengthData ? (
             <>
               <div>
-                <PostLengthStackBarChart data = {postLengthData} />
+                <PostLengthStackBarChart data={postLengthData} />
+                <p>Days</p>
               </div>
             </>
           ) : (

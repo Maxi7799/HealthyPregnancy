@@ -58,7 +58,20 @@ export const TwoLineChart: React.FC<TwoLineChartProps> = ({ data }) => {
   );
 
   return (
-    <>
+    <div style={{ height: "450px", width: "100%", position: "relative" }}>
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "-50px",
+          transform: "rotate(-90deg)",
+          transformOrigin: "left center",
+          fontSize: "14px",
+          color: "#333",
+        }}
+      >
+        Population
+      </div>
       <Chart
         options={{
           data: chartData,
@@ -66,6 +79,16 @@ export const TwoLineChart: React.FC<TwoLineChartProps> = ({ data }) => {
           secondaryAxes,
         }}
       />
-    </>
+      <div
+        style={{
+          textAlign: "center",
+          marginTop: "470px",
+          fontSize: "14px",
+          color: "#333",
+        }}
+      >
+        {data.x_desc}
+      </div>
+    </div>
   );
 };
