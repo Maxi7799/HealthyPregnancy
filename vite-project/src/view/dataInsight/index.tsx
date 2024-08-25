@@ -4,8 +4,8 @@ import "./index.css";
 import { TwoLineChart } from "../../components/chart/twoLineChart";
 import HorizontalBarChart from "../../components/chart/horizontalBarChart";
 import FirstVisitPieChart from "../../components/chart/FirstVisitPieChart";
-import birthMethodChart from "../../components/chart/birthMethodChart";
 import BirthMethodChart from "../../components/chart/birthMethodChart";
+import PostLengthStackBarChart from "../../components/chart/postLengthStackbarChart";
 
 export const DataInsight: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("healthrisk");
@@ -13,6 +13,7 @@ export const DataInsight: React.FC = () => {
   const [firstVisitData, setFirstVisitData] = useState<any>(null);
   const [birthMethodData, setBirthMethodData] = useState<any>(null);
   const [cReasonData, setCReasonData] = useState<any>(null);
+  const [postLengthData, setPostLengthData] = useState<any>(null);
 
   const rootAddress = "http://127.0.0.1:8000";
 
@@ -43,22 +44,41 @@ export const DataInsight: React.FC = () => {
     }
   };
 
+  const fetchSec2Data = async () => {
+    try {
+      const response = await fetch(rootAddress + `/datainsight/postlength`);
+      const data = await response.json();
+
+      setPostLengthData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
   useEffect(() => {
     fetchData(activeTab);
   }, [activeTab]);
 
+  useEffect(() => {
+    fetchSec2Data();
+  }, []);
+
   return (
-    <div>
+    <div className="data-insight-root">
       <Header />
       <div className="desc">
         <h1>
-          Pregnancy Data Insights: Empowering Women’s Health Through Analytics
+          Pregnancy Data Insights: Empowering Women’s Health Through Data
+          Analytics
         </h1>
         <p>
-          Explore detailed insights into pregnancy trends and health indicators.
-          Our analytics provide valuable information to support expecting
-          mothers and healthcare providers in making informed decisions for a
-          healthier pregnancy journey.
+          This section provides essential information for new immigrants in
+          Australia about pregnancy and childbirth. Here, you will find various
+          charts that offer insights into the risks of pregnancy-induced
+          conditions, the timing of prenatal care, common childbirth methods,
+          and reasons for choosing cesarean sections. These visual tools are
+          designed to help you understand different aspects of pregnancy and
+          make informed decisions that best suit your needs and circumstances.
         </p>
       </div>
 
@@ -69,36 +89,63 @@ export const DataInsight: React.FC = () => {
             className={activeTab === "healthrisk" ? "active" : ""}
             onClick={() => setActiveTab("healthrisk")}
           >
-            Health Risk
+            <span className="tooltip">
+              Health Risk
+              <span className="tooltiptext">
+                Understanding Risks of High-Risk Conditions During Pregnancy
+              </span>
+            </span>
           </button>
           <button
             className={activeTab === "firstvisit" ? "active" : ""}
             onClick={() => setActiveTab("firstvisit")}
           >
-            First Visit
+            <span className="tooltip">
+              Prenatal Visit Risk
+              <span className="tooltiptext">
+                Timing of First Prenatal Visit and Associated Health Risks
+              </span>
+            </span>
           </button>
           <button
             className={activeTab === "birthmethod" ? "active" : ""}
             onClick={() => setActiveTab("birthmethod")}
           >
-            Birth Method
+            <span className="tooltip">
+              Child Birth Method
+              <span className="tooltiptext">
+                Common Childbirth Methods in Australia
+              </span>
+            </span>
           </button>
           <button
             className={activeTab === "creason" ? "active" : ""}
             onClick={() => setActiveTab("creason")}
           >
-            C Reason
+            <span className="tooltip">
+              Common Reasons for Cesarean Section
+              <span className="tooltiptext">
+                Common Reasons for Electing a Cesarean Section
+              </span>
+            </span>
           </button>
         </div>
 
         {/* Chart Content */}
         <div className="chart-container">
           {activeTab === "healthrisk" && (
-            <div className="chart">
+            <div className="chart-section">
               {healthRiskData ? (
                 <>
-                  {console.log("Health Risk Data:", healthRiskData)}
-                  <TwoLineChart data={healthRiskData} />
+                  <div className="chart">
+                    <TwoLineChart data={healthRiskData} />
+                  </div>
+                  <p className="chart-description">
+                    This chart highlights the trends in gestational diabetes and
+                    hypertension over recent years, providing crucial insights
+                    into the increasing or decreasing risks associated with
+                    these conditions.
+                  </p>
                 </>
               ) : (
                 <p>Loading...</p>
@@ -106,11 +153,24 @@ export const DataInsight: React.FC = () => {
             </div>
           )}
           {activeTab === "firstvisit" && (
-            <div className="chart">
+            <div className="chart-section">
               {firstVisitData ? (
                 <>
-                  {console.log(firstVisitData)}
-                  <FirstVisitPieChart data={firstVisitData} />
+                  <div className="chart">
+                    <FirstVisitPieChart data={firstVisitData} />
+                  </div>
+                  <p className="chart-description">
+                    This pie chart shows the most common times when mothers in
+                    Australia have their first prenatal care visit, grouped into
+                    different stages such as before 14 weeks, between 14-19
+                    weeks, and after. Knowing when others have their first visit
+                    can help you understand the importance of early prenatal
+                    care. Early visits are essential because they can lower the
+                    risk of developing health issues like diabetes and
+                    hypertension during pregnancy. Use this chart to learn from
+                    others' experiences and make informed decisions for a
+                    healthy pregnancy.
+                  </p>
                 </>
               ) : (
                 <p>Loading...</p>
@@ -118,11 +178,20 @@ export const DataInsight: React.FC = () => {
             </div>
           )}
           {activeTab === "birthmethod" && (
-            <div className="chart">
+            <div className="chart-section">
               {birthMethodData ? (
                 <>
-                  {console.log(birthMethodData)}
-                  <BirthMethodChart data={birthMethodData} />
+                  <div className="chart">
+                    <BirthMethodChart data={birthMethodData} />
+                  </div>
+                  <p className="chart-description">
+                    This pie chart shows the different childbirth methods
+                    commonly used by pregnant women in Australia. By
+                    understanding the distribution of these methods, you can
+                    learn about each option and its benefits and drawbacks. This
+                    information will help you make an informed decision about
+                    your own childbirth experience.
+                  </p>
                 </>
               ) : (
                 <p>Loading...</p>
@@ -130,11 +199,21 @@ export const DataInsight: React.FC = () => {
             </div>
           )}
           {activeTab === "creason" && (
-            <div className="chart">
+            <div className="chart-section">
               {cReasonData ? (
                 <>
-                  {console.log(cReasonData)}
-                  <HorizontalBarChart data={cReasonData} />
+                  <div className="chart">
+                    <HorizontalBarChart data={cReasonData} />
+                  </div>
+                  <p className="chart-description">
+                    This horizontal bar chart shows the different reasons why
+                    pregnant women in Australia choose to have a cesarean
+                    section. By looking at the chart, you can see how many
+                    people opted for a cesarean section for each reason. This
+                    information can help you compare your own situation with
+                    others and decide if a cesarean section might be the right
+                    choice for you.
+                  </p>
                 </>
               ) : (
                 <p>Loading...</p>
@@ -144,9 +223,32 @@ export const DataInsight: React.FC = () => {
         </div>
       </div>
       <div className="data-insight-sec2">
-        <h2>hello this is section 2</h2>
-        <p></p>
+        <div className="desc">
+          <h1>Understanding Hospital Stays After Childbirth</h1>
+          <p>
+            This section provides important information about the duration of
+            hospital stays following different childbirth methods in Australia.
+            By exploring the data presented in the chart, you can learn about
+            the average number of days spent in the hospital for each childbirth
+            method. This information helps you understand the recovery time and
+            potential risks associated with various options, enabling you to
+            make informed decisions about your childbirth plan.
+          </p>
+        </div>
+
+        <div className="stack-bar-chart-container">
+          {postLengthData ? (
+            <>
+              <div>
+                <PostLengthStackBarChart data = {postLengthData} />
+              </div>
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
       </div>
+      {/* footer */}
     </div>
   );
 };
