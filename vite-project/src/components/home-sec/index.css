@@ -1,0 +1,79 @@
+
+.vertical-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  /* margin-top: 10px;  */
+  height: 800px;
+  
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-left: 30px; 
+}
+
+.content-container {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.content-container h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.content-container p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* This centers the buttons horizontally */
+  text-align: center;
+}
+
+.primary-button, .secondary-button {
+  max-width: 300px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: #28a745;
+}
+
+.primary-button:hover {
+  background-color: #218838;
+}
+
+.secondary-button {
+  background-color: #28a745;
+}
+
+.secondary-button:hover {
+  background-color: #218838;
+}
