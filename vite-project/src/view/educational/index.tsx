@@ -5,9 +5,9 @@ import { EdFooter } from "./footer";
 export function Educational() {
   return (
     <>
-      <EdHeader />
+      {/* <EdHeader /> */}
       <EdMain />
-      <EdFooter />
+      {/* <EdFooter /> */}
     </>
   );
 }

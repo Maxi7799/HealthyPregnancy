@@ -5,6 +5,7 @@ export type chapterType = {
 
 export type eduType = {
   name: string;
+  imgUrl: string;
   chapter: Array<chapterType>;
   question: questionType;
 };

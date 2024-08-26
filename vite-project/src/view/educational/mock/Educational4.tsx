@@ -1,7 +1,9 @@
 import { eduType } from "./edutype";
+import img from "../../../assets/pregnant4.jpg";
 
 export const edu_4: eduType = {
   name: "chapter4",
+  imgUrl: img,
   chapter: [
     {
       name: "title1",
