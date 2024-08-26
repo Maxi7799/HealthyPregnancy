@@ -1,18 +1,21 @@
 import React from "react";
 import "./index.css";
 import icon from "../../assets/f-icon.png";
+import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <img
-            src={icon}
-            alt="Healthy Pregnancy Logo"
-            className="footer-logo"
-          />
-          <h2>Healthy Pregnancy</h2>
+          <Link to="/" className="icon-link">
+            <img
+              src={icon}
+              alt="Healthy Pregnancy Logo"
+              className="footer-logo"
+            />
+            {/* <h2>Healthy Pregnancy</h2> */}
+          </Link>
         </div>
         <div className="footer-center">
           <div className="footer-column">
