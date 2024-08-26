@@ -240,7 +240,7 @@ export const DataInsight: React.FC = () => {
             <>
               <div>
                 <PostLengthStackBarChart data={postLengthData} />
-                <p>Days</p>
+                <p>Child Birth Method</p>
               </div>
             </>
           ) : (

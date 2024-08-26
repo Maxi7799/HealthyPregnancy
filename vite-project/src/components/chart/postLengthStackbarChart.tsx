@@ -10,34 +10,35 @@ interface ChartData {
 export default function PostLengthStackBarChart({ data }: { data: any }) {
   const chartData = React.useMemo(() => {
     const { method, chart_data } = data;
-    const formattedData: ChartData[] = [];
+    const formattedData: {
+      label: string;
+      data: { primary: string; secondary: number }[];
+    }[] = [];
 
     method.forEach((methodName: string) => {
       const methodData = chart_data[methodName];
       methodData.length_of_stay.forEach((stay: string, index: number) => {
-        if (methodData.value[index] !== null) {
+        const stayData = formattedData.find((d) => d.label === stay);
+        if (stayData) {
+          stayData.data.push({
+            primary: methodName,
+            secondary: methodData.value[index],
+          });
+        } else {
           formattedData.push({
-            method: methodName,
-            length_of_stay: stay,
-            value: methodData.value[index],
+            label: stay,
+            data: [
+              {
+                primary: methodName,
+                secondary: methodData.value[index],
+              },
+            ],
           });
         }
       });
     });
 
-    const groupedData = method.map((methodName: string) => {
-      return {
-        label: methodName,
-        data: formattedData
-          .filter((d) => d.method === methodName)
-          .map((d) => ({
-            primary: d.length_of_stay,
-            secondary: d.value,
-          })),
-      };
-    });
-
-    return groupedData;
+    return formattedData;
   }, [data]);
 
   const primaryAxis = React.useMemo<
