@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Slideshow.css";
 import edu from "../../assets/edu-back.png";
 import exercise from "../../assets/exercise-back.png";
@@ -6,6 +6,7 @@ import food from "../../assets/food-back.png";
 
 const Slideshow: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [fadeIn, setFadeIn] = useState(true);
 
   const slides = [
     {
@@ -40,6 +41,18 @@ const Slideshow: React.FC = () => {
     },
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFadeIn(false); 
+      setTimeout(() => {
+        setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+        setFadeIn(true); 
+      }, 500); // Duration of fade out
+    }, 10000); // Change slide every 10 seconds
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
     <div className="slideshow-container">
       <div className="slideshow-tags">
@@ -54,7 +67,7 @@ const Slideshow: React.FC = () => {
         ))}
       </div>
       <div className="slideshow-window">
-        <div className="slide-content">
+        <div className={`slide-content ${fadeIn ? "fade-in" : "fade-out"}`}>
           <div className="text-content">
             <h2 className="text-topic">{slides[activeSlide].content.topic}</h2>
             <p className="text-desc">{slides[activeSlide].content.text}</p>
