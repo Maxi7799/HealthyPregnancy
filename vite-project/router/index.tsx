@@ -7,6 +7,7 @@ import { Testimonial } from "../src/view/testimonial";
 import { Educational } from "../src/view/educational/index";
 import { DataInsight } from "../src/view/dataInsight/index";
 import { Chapter } from '../src/view/chapter/index'
+import { Login } from "../src/view/login";
 import React from "react";
 
 const MainRouter: React.FC = () => {
@@ -14,6 +15,7 @@ const MainRouter: React.FC = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/faqs" element={<Faqs />} />
