@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import { About } from "./../about";
 import { Alert } from "antd";
 import { Button } from "antd";
+import { Footer } from "../../components/footer/index.tsx";
+import { Header } from "../../components/header/header.tsx";
 
 import type { RadioChangeEvent } from "antd";
 import { Radio } from "antd";
@@ -75,6 +77,7 @@ export function Chapter() {
 
   return (
     <>
+      <Header />
       <div className="chapter-main">
         <div className="chapter-left">
           <div className="chapter-left-top">{chapter.name}</div>
@@ -87,10 +90,9 @@ export function Chapter() {
                     className="title-item"
                     onClick={() => goto(index)}
                     style={{
-                      border:
-                        current == index
-                          ? "2px solid rgb(230, 114, 109)"
-                          : "2px solid rgba(0, 0, 0, 0)",
+                      background: current == index ? "#e5e9ef" : "#fff",
+                      fontWeight: current == index ? 600 : 400,
+                      color: current == index ? "#000" : "#22272B",
                     }}
                   >
                     <span>{item.name}</span>
@@ -151,6 +153,7 @@ export function Chapter() {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

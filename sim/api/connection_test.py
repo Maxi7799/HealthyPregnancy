@@ -1,7 +1,7 @@
 from ninja import NinjaAPI
 from sim.model.model_test import Name
 
-test = NinjaAPI(version="1.0.0")
+test = NinjaAPI()
 
 
 @test.get("/add")

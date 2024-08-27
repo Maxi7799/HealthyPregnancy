@@ -8,13 +8,11 @@ import { Educational } from "../src/view/educational/index";
 import { DataInsight } from "../src/view/dataInsight/index";
 import { Chapter } from '../src/view/chapter/index'
 import React from "react";
-import { Login } from "../src/view/login";
 
 const MainRouter: React.FC = () => {
   return (
     <>
       <Routes>
-        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactus" element={<Contactus />} />

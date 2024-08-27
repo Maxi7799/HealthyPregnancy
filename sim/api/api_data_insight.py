@@ -1,7 +1,7 @@
 from ninja import NinjaAPI
 from sim.model.model_data_insight import HealthRisk, FirstVisit, BirthMethod, CReason, PostLength
 
-datainsight = NinjaAPI(version="2.0.0")
+datainsight = NinjaAPI()
 
 
 @datainsight.get("/healthrisk")
