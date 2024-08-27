@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../src/view/home/index";
 import { About } from "../src/view/about";
-import { Contactus } from "../src/view/contactus";
+import { ContactUs } from "../src/view/contactUs/index";
 import { Faqs } from "../src/view/faqs";
 import { Testimonial } from "../src/view/testimonial";
 import { Educational } from "../src/view/educational/index";
@@ -17,7 +17,7 @@ const MainRouter: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contactus" element={<Contactus />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/educational" element={<Educational />} />
