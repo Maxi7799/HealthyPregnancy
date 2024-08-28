@@ -16,7 +16,7 @@ export const DataInsight: React.FC = () => {
   const [cReasonData, setCReasonData] = useState<any>(null);
   const [postLengthData, setPostLengthData] = useState<any>(null);
 
-  const rootAddress = "http:localhost:8000";
+  const rootAddress = "http://localhost:8000";
 
   // Function to fetch data for a specific chart
   const fetchData = async (chartType: string) => {
