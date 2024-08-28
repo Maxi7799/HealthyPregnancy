@@ -2,7 +2,7 @@ import "./index.css";
 import { eduData } from "./mock";
 import { Link } from "react-router-dom";
 import { setTitle } from "../../store/chapter";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { eduType } from "./mock/edutype";
 import { ArrowRightOutlined } from "@ant-design/icons";
 console.log(eduData);
