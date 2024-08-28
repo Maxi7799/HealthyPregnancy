@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <Link to="/" className="icon-link">
+          <Link to="/home" className="icon-link">
             <img
               src={icon}
               alt="Healthy Pregnancy Logo"

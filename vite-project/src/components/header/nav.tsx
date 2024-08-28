@@ -8,7 +8,7 @@ export function Nav() {
   const navData: Array<navType> = [
     {
       name: "Home",
-      to: "/",
+      to: "/home",
     },
     {
       name: "Risk Education",

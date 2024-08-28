@@ -4,7 +4,7 @@ import icon from "../../assets/h-icon.png";
 
 export const HeaderIcon: React.FC = () => {
   return (
-    <Link to="/" className="icon-link">
+    <Link to="/home" className="icon-link">
       <div className="icon-main">
         <div className="i-left">
           <img className="i-icon" src={icon} alt="Healthy Pregnancy Logo" />

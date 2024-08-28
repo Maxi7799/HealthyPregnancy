@@ -11,7 +11,7 @@ export const Login: React.FC = () => {
 
   const handleLogin = () => {
     if (username === "admin" && password === "admin") {
-      navigate("/");
+      navigate("/home");
     } else {
       setErrorMessage("Invalid username or password");
     }

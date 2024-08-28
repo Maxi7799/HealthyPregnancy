@@ -14,8 +14,8 @@ const MainRouter: React.FC = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/faqs" element={<Faqs />} />
