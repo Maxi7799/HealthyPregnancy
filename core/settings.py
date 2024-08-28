@@ -54,11 +54,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    # "https://example.com",
-    # "https://sub.example.com",
-    # "http://localhost:5173",
-    # '3.26.22.86'
-    "*"
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:5173",
 ]
 
 ROOT_URLCONF = "core.urls"
