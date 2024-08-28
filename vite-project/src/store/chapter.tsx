@@ -11,7 +11,7 @@ const chapterSet = createSlice({
       console.log(payload.payload);
       state.chapter = payload.payload;
     },
-    setText: (state) => {},
+    // setText: (state) => {},
   },
 });
 

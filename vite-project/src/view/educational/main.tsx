@@ -3,19 +3,19 @@ import { eduData } from "./mock";
 import { Link } from "react-router-dom";
 import { setTitle } from "../../store/chapter";
 import { useSelector, useDispatch } from "react-redux";
-import { eduType, chapterType } from "./mock/edutype";
+import { eduType } from "./mock/edutype";
 import { ArrowRightOutlined } from "@ant-design/icons";
 console.log(eduData);
 export function EdMain(): JSX.Element {
   console.log(eduData);
 
-  const count = useSelector((state: any) => state.chapter.value);
+  // const count = useSelector((state: any) => state.chapter.value);
 
   const dispatch = useDispatch();
 
-  type EduType = {
-    name: string;
-  };
+  // type EduType = {
+  //   name: string;
+  // };
 
   const goChapter = (item: eduType) => {
     console.log("==============", item);

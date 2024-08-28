@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "./App.css";
 import MainRouter from "../router/index";
 
-import { Home } from "./view/page";
+// import { Home } from "./view/page";
 
 function App() {
   // const [tree, setTree] = useState([]);

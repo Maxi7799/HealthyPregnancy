@@ -1,7 +1,7 @@
 import "./index.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
-import { About } from "./../about";
+// import { About } from "./../about";
 import { Alert } from "antd";
 import { Button } from "antd";
 import { Footer } from "../../components/footer/index.tsx";

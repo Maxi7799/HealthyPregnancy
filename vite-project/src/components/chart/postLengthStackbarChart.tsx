@@ -1,11 +1,11 @@
 import React from "react";
 import { AxisOptions, Chart } from "react-charts";
 
-interface ChartData {
-  method: string;
-  length_of_stay: string;
-  value: number;
-}
+// interface ChartData {
+//   method: string;
+//   length_of_stay: string;
+//   value: number;
+// }
 
 export default function PostLengthStackBarChart({ data }: { data: any }) {
   const chartData = React.useMemo(() => {
