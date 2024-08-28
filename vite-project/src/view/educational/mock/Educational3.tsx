@@ -2,30 +2,30 @@ import { eduType } from "./edutype";
 import img from "../../../assets/pregnant3.jpg";
 
 export const edu_3: eduType = {
-  name: "chapter3",
+  name: "Emotional",
   imgUrl: img,
   chapter: [
     {
-      name: "title1",
-      text: "No one’s born being good at all things. You become good at things through hard work. You’re not a varsity athlete the first time you play a new sport. You don’t hit every note the first time you sing a song.You’ve got to practice. The same principle applies to your schoolwork. You might have to do a math problem a few times before you get it right. You might have to read something a few times before you understand it.You definitely have to do a few drafts of a paper before it’s good enough to hand in.",
+      name: "Understanding Emotional Changes and Mood Swings",
+      text: "During pregnancy, it is common for women to experience a range of emotions, from joy and excitement to anxiety and fear. Hormonal changes, particularly fluctuations in estrogen and progesterone, can contribute to mood swings and emotional sensitivity. Additionally, physical discomforts, such as nausea, fatigue, and body aches, can affect mood. It is important for pregnant women to recognize that these emotional changes are normal and to communicate their feelings with supportive people, such as partners, friends, or healthcare providers. Understanding that these emotions are a natural part of the pregnancy journey can help women feel more at ease.",
     },
     {
-      name: "title2",
-      text: "Keep faith and hope for the future. Make your most sincere dreams, and when the opportunities come, they will fight for them. It may take a season or more, but the ending will not change. Ambition, best, become a reality. An uncertain future, only one step at a time, the hope can realize the dream of the highest. We must treasure the dream, to protect it a season, let it in the heart quietly germinal. However, we have to gently protect our hearts deep expectations, slowly dream, will achieve new life.",
+      name: "Coping Strategies for Stress and Anxiety",
+      text: "Stress and anxiety are common during pregnancy, especially for first-time mothers or those with high-risk pregnancies. Developing effective coping strategies is crucial for maintaining emotional well-being. Techniques such as deep breathing exercises, prenatal yoga, and mindfulness meditation can help reduce stress levels and promote relaxation. Engaging in light physical activity, such as walking, can also improve mood and reduce anxiety. It is beneficial to establish a strong support network, including friends, family, or prenatal support groups, to share experiences and receive encouragement. Additionally, maintaining a healthy routine with proper nutrition, adequate sleep, and regular exercise can contribute to a positive emotional state.",
     },
     {
-      name: "title3",
-      text: "",
+      name: "Seeking Professional Help When Needed",
+      text: "While some emotional changes are expected during pregnancy, it is important to recognize when additional support may be needed. If a pregnant woman experiences persistent feelings of sadness, hopelessness, overwhelming anxiety, or thoughts of self-harm, it may indicate a condition such as prenatal depression or anxiety disorder. Seeking help from a healthcare professional, such as a therapist or counselor specializing in maternal mental health, can provide valuable support and treatment options. Early intervention and treatment can improve outcomes for both the mother and the baby, ensuring a healthier and more positive pregnancy experience.",
     },
   ],
   question: {
     title:
-      "What does the writer say about the performance of older typists on the test?",
+      "Which of the following statements is TRUE about managing emotional and mental health during pregnancy?",
     select: {
-      A: "They used different motor skills from younger typists.",
-      B: "They had been more efficiently trained than younger typists.",
-      C: "They used more time-saving techniques than younger typists.",
-      D: "They had better concentration skills than younger typists.",
+      A: "Engaging in prenatal yoga and mindfulness meditation can help reduce stress and promote relaxation during pregnancy.",
+      B: "Emotional changes and mood swings during pregnancy are uncommon and usually indicate a serious mental health issue",
+      C: "It is not necessary to seek professional help for persistent sadness or anxiety during pregnancy, as these feelings are normal and will pass.",
+      D: "Stress and anxiety during pregnancy have no impact on the physical health of the mother or the baby.",
     },
     answer: "A",
   },
