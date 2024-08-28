@@ -48,8 +48,8 @@ export function EdMain(): JSX.Element {
                     <div className="edu-item-bottom">
                       <div className="edu-main-item-span"> {item.name}</div>
                       <div className="edu-main-item-text">
-                        Mpox is a viral infection causedhv the nnonkeypox virus.
-                        Learnmore about the symptoms andhow to stay safe.
+                      Here you can learn more about pregnancy and 
+                      get a deeper understanding of them through these six chapters
                       </div>
                       <div className="item-to">
                         <ArrowRightOutlined />
