@@ -45,6 +45,7 @@ export const DataInsight: React.FC = () => {
     }
   };
 
+
   const fetchSec2Data = async () => {
     try {
       const response = await fetch(rootAddress + `/datainsight/postlength`);
@@ -130,7 +131,6 @@ export const DataInsight: React.FC = () => {
           </button>
         </div>
 
-        {/* Chart Content */}
         <div className="chart-container">
           {activeTab === "healthrisk" && (
             <div className="chart-section">
@@ -168,7 +168,10 @@ export const DataInsight: React.FC = () => {
                     risk of developing health issues like diabetes and
                     hypertension during pregnancy. Use this chart to learn from
                     others' experiences and make informed decisions for a
-                    healthy pregnancy.
+                    healthy pregnancy. 79.6% of women started antenatal care
+                    before 14 weeks of pregnancy. Among all pregnant women,
+                    49.7% opted for non-instrumental vaginal deliveries, while
+                    38.2% had cesarean sections.
                   </p>
                 </>
               ) : (
@@ -189,7 +192,11 @@ export const DataInsight: React.FC = () => {
                     understanding the distribution of these methods, you can
                     learn about each option and its benefits and drawbacks. This
                     information will help you make an informed decision about
-                    your own childbirth experience.
+                    your own childbirth experience. Among women who gave birth
+                    vaginally, 36.6% stayed in the postpartum ward for only 1
+                    day. In contrast, only 3.6% of women who had a cesarean
+                    section stayed for just 1 day, with 28% of them staying for
+                    2 days.
                   </p>
                 </>
               ) : (
@@ -220,7 +227,22 @@ export const DataInsight: React.FC = () => {
             </div>
           )}
         </div>
+
+        <div className="desc">
+          <p>
+            Early antenatal care provides a broader range of birth method
+            options, as evidenced by the data showing significant rates of both
+            non-instrumental vaginal deliveries and cesarean sections. For women
+            at higher risk of complications, like those from migrant
+            backgrounds, starting antenatal care early can be crucial in
+            managing risks and potentially avoiding more invasive interventions.
+            Ensuring timely and high-quality antenatal care may help in
+            detecting complications earlier and offer more choices for safer
+            birth methods.
+          </p>
+        </div>
       </div>
+
       <div className="data-insight-sec2">
         <div className="desc">
           <h1>Understanding Hospital Stays After Childbirth</h1>
@@ -246,6 +268,28 @@ export const DataInsight: React.FC = () => {
           ) : (
             <p>Loading...</p>
           )}
+        </div>
+        <div className="desc">
+          <p>
+            Women who undergo cesarean sections generally have longer hospital
+            stays and recovery times compared to those who have vaginal
+            deliveries. Although cesarean sections are sometimes necessary and
+            safe, they can involve extended healing and increased risks for both
+            mother and baby. Understanding these factors helps in making
+            informed delivery choices.
+          </p>
+
+          <h1>Conclusion</h1>
+          <p>
+            Early antenatal care broadens birth method options, including the
+            opportunity to choose a natural birth, which generally involves less
+            harm to the mother and baby and supports faster recovery. While
+            cesarean sections are sometimes necessary, they typically require
+            longer hospital stays and recovery times. By starting antenatal care
+            early, women can better manage risks and increase their chances of
+            opting for a vaginal delivery, which often leads to safer and
+            quicker recovery outcomes.
+          </p>
         </div>
       </div>
       <Footer />
