@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Slideshow.css";
+import "./slideshow.css";
 import edu from "../../assets/edu-back.png";
 import exercise from "../../assets/exercise-back.png";
 import food from "../../assets/food-back.png";
