@@ -7,6 +7,7 @@ import FirstVisitPieChart from "../../components/chart/FirstVisitPieChart";
 import BirthMethodChart from "../../components/chart/birthMethodChart";
 import PostLengthStackBarChart from "../../components/chart/postLengthStackbarChart";
 import { Footer } from "../../components/footer";
+import { rootAddress } from "../../env";
 
 export const DataInsight: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("healthrisk");
@@ -16,7 +17,6 @@ export const DataInsight: React.FC = () => {
   const [cReasonData, setCReasonData] = useState<any>(null);
   const [postLengthData, setPostLengthData] = useState<any>(null);
 
-  const rootAddress = "http://3.26.22.86:8000";
 
   // Function to fetch data for a specific chart
   const fetchData = async (chartType: string) => {
