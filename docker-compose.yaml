@@ -3,6 +3,6 @@ version: '3.8'
 services:
   web:
     build: .
-    container_name: djangoapp:latest
+    container_name: djangoapp
     ports:
       - "8000:8000"
