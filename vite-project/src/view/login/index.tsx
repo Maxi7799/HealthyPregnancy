@@ -15,6 +15,7 @@ export const Login: React.FC = () => {
     } else {
       setErrorMessage("Invalid username or password");
     }
+    // navigate("/home");
   };
 
   return (

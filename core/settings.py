@@ -94,7 +94,7 @@ WSGI_APPLICATION = "core.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'connection', # DB name (not DB identifier)
+        'NAME': 'connection',  # DB name (not DB identifier)
         'USER': 'admin',
         'PASSWORD': 'ta35mysql',
         'HOST': 'mysql.cpmo6s4a4jq3.ap-southeast-2.rds.amazonaws.com',
