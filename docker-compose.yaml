@@ -6,3 +6,5 @@ services:
     container_name: djangoapp
     ports:
       - "8000:8000"
+
+  
