@@ -63,6 +63,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://www.healthypregnancy.online",
     "https://healthypregnancy.online",
     "https://www.healthypregnancy.online",
+    "http://loader-1511278385.ap-southeast-2.elb.amazonaws.com/",
+    "https://loader-1511278385.ap-southeast-2.elb.amazonaws.com/"
 ]
 
 ROOT_URLCONF = "core.urls"
