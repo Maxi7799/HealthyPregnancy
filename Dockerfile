@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose port 8000 for the Django server
 EXPOSE 8000
-
+ 
 # Run migrations (optional, remove if not needed in Docker image)
 # RUN python manage.py migrate
 

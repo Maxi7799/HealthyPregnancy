@@ -7,7 +7,7 @@ import FirstVisitPieChart from "../../components/chart/FirstVisitPieChart";
 import BirthMethodChart from "../../components/chart/birthMethodChart";
 import PostLengthStackBarChart from "../../components/chart/postLengthStackbarChart";
 import { Footer } from "../../components/footer";
-import { rootAddress } from "../../env";
+import { rootAddress } from "../../../env";
 
 export const DataInsight: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("healthrisk");
@@ -16,7 +16,6 @@ export const DataInsight: React.FC = () => {
   const [birthMethodData, setBirthMethodData] = useState<any>(null);
   const [cReasonData, setCReasonData] = useState<any>(null);
   const [postLengthData, setPostLengthData] = useState<any>(null);
-
 
   // Function to fetch data for a specific chart
   const fetchData = async (chartType: string) => {
@@ -44,7 +43,6 @@ export const DataInsight: React.FC = () => {
       console.error("Error fetching data:", error);
     }
   };
-
 
   const fetchSec2Data = async () => {
     try {
