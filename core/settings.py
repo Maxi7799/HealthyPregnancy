@@ -57,8 +57,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "http://3.26.22.86",
-    "https://3.26.22.86",
+    "http://3.26.145.97",
+    "https://3.26.145.97",
     "http://healthypregnancy.online",
     "http://www.healthypregnancy.online",
     "https://healthypregnancy.online",
