@@ -1,17 +1,19 @@
 version: '3.8'
 
 services:
-  web:
+  # Backend service (Django API or other backend)
+  backend:
     build: .
-    container_name: djangoapp
+    container_name: backend
     ports:
-      - "8000:8000"
+      - "8000:8000"  # Expose backend only on the internal Docker network
 
+  # Frontend service (React, Vite, etc.)
   frontend:
     build:
       context: ./vite-project/
       dockerfile: Dockerfile
-    container_name: vite_react_app
+    container_name: frontend
     ports:
-      - "5173:5173" 
-  
+      - "5173:5173"  # Make sure this maps correctly to expose the port
+
