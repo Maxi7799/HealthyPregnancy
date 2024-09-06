@@ -10,3 +10,5 @@ Backend: Django-ninja
 DB: MySQL
 
 Cloud Services: AWS (EC2, RDS)
+
+Deployment: Docker, Nginx, Cerbot(SSL certificate)
