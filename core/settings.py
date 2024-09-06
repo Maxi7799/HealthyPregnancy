@@ -63,6 +63,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://www.healthypregnancy.online",
     "https://healthypregnancy.online",
     "https://www.healthypregnancy.online",
+    "https://healthypregancybackend.systems",
+    "http://healthypregancybackend.systems"
 ]
 
 ROOT_URLCONF = "core.urls"

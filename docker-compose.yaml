@@ -16,16 +16,16 @@ services:
     ports:
       - "5173:5173"  
 
-  # Nginx for SSL
-  nginx:
-    image: nginx:latest
-    container_name: nginx
-    ports:
-      - "8080:8080"  # HTTP port
-      - "8443:8443"  # HTTPS port
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf  # Nginx config
-      - ./backend-selfsigned.crt:/etc/nginx/ssl/backend-selfsigned.crt  # SSL cert
-      - ./backend-selfsigned.key:/etc/nginx/ssl/backend-selfsigned.key  # SSL key
-    depends_on:
-      - backend
+  # # Nginx for SSL
+  # nginx:
+  #   image: nginx:latest
+  #   container_name: nginx
+  #   ports:
+  #     - "8080:8080"  # HTTP port
+  #     - "8443:8443"  # HTTPS port
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/conf.d/default.conf  # Nginx config
+  #     - ./backend-selfsigned.crt:/etc/nginx/ssl/backend-selfsigned.crt  # SSL cert
+  #     - ./backend-selfsigned.key:/etc/nginx/ssl/backend-selfsigned.key  # SSL key
+  #   depends_on:
+  #     - backend
