@@ -7,7 +7,6 @@ def get_age():
     data = [{"age": age_obj.age, "odds": age_obj.odds}
             for age_obj in ages]
     df_ages = pd.DataFrame(data)
-    print(df_ages)
     return df_ages
 
 
