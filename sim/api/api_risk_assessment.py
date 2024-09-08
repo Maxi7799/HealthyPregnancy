@@ -1,7 +1,9 @@
 from ninja import NinjaAPI
+from sim.data_model.data_interface.get_risk_assessment import get_age, get_country_of_birth, get_education, get_employment, get_income, get_marital_status, get_region_case
 
 risk = NinjaAPI(version="3.0.0")
 
 @risk.get("/riskassessment")
-def risk_assessment(request, risk_json):
-    return risk_json
+def risk_assessment(request):
+    get_country_of_birth()
+    return "hello"
