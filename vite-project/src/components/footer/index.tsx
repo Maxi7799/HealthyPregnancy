@@ -14,10 +14,22 @@ export const Footer: React.FC = () => {
               alt="Healthy Pregnancy Logo"
               className="footer-logo"
             />
-            {/* <h2>Healthy Pregnancy</h2> */}
           </Link>
+          <div>
+            <div>Healthy</div>
+            <div>Pregnancy</div>
+          </div>
         </div>
-        <div className="footer-center">
+
+        <div className="footer-item">
+          <div className="footer-item-one">Our Service</div>
+          <div className="footer-item-other">Data Insights</div>
+          <div className="footer-item-other">Pregnancy Education</div>
+          <div className="footer-item-other">Risk Assessment</div>
+          <div className="footer-item-other">Nutritional Advice</div>
+          <div className="footer-item-other">Pregnancy Exercises</div>
+        </div>
+        {/* <div className="footer-center">
           <div className="footer-column">
             <h3>Our Health</h3>
             <p>Education for Risk Reducing</p>
@@ -33,8 +45,8 @@ export const Footer: React.FC = () => {
             <p>Identify Risky Area</p>
             <p>Check Your Action</p>
           </div>
-        </div>
-        <div className="footer-right">
+        </div> */}
+        {/* <div className="footer-right">
           <h3>Contact Us</h3>
           <p>Privacy Statement</p>
           <p>
@@ -42,7 +54,11 @@ export const Footer: React.FC = () => {
               Terms of Use
             </a>
           </p>
-        </div>
+        </div> */}
+      </div>
+
+      <div className="footer-bottom">
+        Copyright © 2024 Powered by HealthyPregnancy
       </div>
     </footer>
   );

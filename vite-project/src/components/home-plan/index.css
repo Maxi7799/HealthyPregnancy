@@ -1,0 +1,41 @@
+.home-plan {
+    width: 90%;
+    height: 252px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background: #FAFAFA;
+    margin: 0 auto;
+    padding: 36px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plan-image {
+    width: 108px;
+    height: 108px;
+    background-color: #2C5665;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.plan-text2 {
+    height: calc(100% - 108px);
+    width: 100%;
+}
+
+.plan-box {
+    width: calc((100% - 128px) / 5);
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.plan-arrow {
+    font-size: 32px;
+    height: 100%;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
