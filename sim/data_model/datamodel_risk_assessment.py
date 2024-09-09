@@ -83,5 +83,5 @@ class RiskAssessment:
             "output_country_region": country_region,
             "output_risk_comparison_to_au": risk_comparison
         }
-        return json.dumps(result)
+        return result
 

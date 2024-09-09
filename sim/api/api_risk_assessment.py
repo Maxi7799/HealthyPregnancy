@@ -1,37 +1,37 @@
-from ninja import NinjaAPI
+from ninja import NinjaAPI, Schema
 from sim.data_model.data_interface.get_risk_assessment import get_age, get_country_of_birth, get_education, get_employment, get_income, get_marital_status, get_region_case
 from sim.data_model.datamodel_risk_assessment import RiskAssessment
 import json
 
 risk = NinjaAPI(version="3.0.0")
 
-@risk.get("/riskassessment")
-def get_risk_assessment(request):
+class DataSchema(Schema):
+    country: str
+    age: str
+    educational:str
+    employment:str
+    income:str
+    status:str
+    remoteness:str
+
+
+@risk.post("/riskassessment")
+def get_risk_assessment(request, payload: DataSchema):
 
     risk_assessment = RiskAssessment()
-    # testing on min max odds
-    # print(risk_assessment.age['odds'].min())
-    # print(risk_assessment.age['odds'].max())
-    
-    # testing on thresholds
-    # print(risk_assessment._compute_thresholds())
-    
-    # test case
-    test_input = {
-        "input_country": "Australia",
-        "input_agegroup": "35-44",
-        "input_education": "Diploma and certificate",
-        "input_employment": "Employed",
-        "input_income": "$500-799 ($26,000-41,599)",
-        "input_maritalstatus": "Widowed",
-        "input_remoteness": "Inner Regional Australia"
+
+    input_dic = {
+        "input_country": payload.country,
+        "input_agegroup": payload.age,
+        "input_education": payload.educational,
+        "input_employment": payload.employment,
+        "input_income": payload.income,
+        "input_maritalstatus": payload.status,
+        "input_remoteness": payload.remoteness
     }
 
-
-    json_input = json.dumps(test_input)
-
-    # Perform risk assessment using the test input
+    json_input = json.dumps(input_dic)
+    print(json_input)
     result = risk_assessment.calculate_odds(json_input)
-    print(result)
-    
-    return "hello"
+
+    return result
