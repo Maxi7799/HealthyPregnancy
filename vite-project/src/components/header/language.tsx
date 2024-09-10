@@ -13,7 +13,7 @@ type listType = {
 };
 
 
-export function language() {
+export function Language() {
   const list: Array<listType> = [
     {
       simple: "RO",
