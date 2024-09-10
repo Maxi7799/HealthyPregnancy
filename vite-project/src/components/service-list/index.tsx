@@ -63,8 +63,8 @@ export const ServiceList: React.FC = () => {
               <div
                 className="textBox"
                 style={{
-                  paddingLeft: index % 2 == 0 ? "150px" : "row-reverse",
-                  paddingRight: index % 2 == 0 ? "0" : "150px",
+                  paddingLeft: index % 2 == 0 ? "10vw" : "row-reverse",
+                  paddingRight: index % 2 == 0 ? "0" : "10vw",
                 }}
               >
                 <div className="service-header">{item.title}</div>

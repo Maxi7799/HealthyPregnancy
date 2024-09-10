@@ -1,4 +1,4 @@
-import { GlobalOutlined } from "@ant-design/icons";
+import { GlobalOutlined, CaretDownOutlined } from "@ant-design/icons";
 import RO from "../../assets/RO.png";
 import ES from "../../assets/ES.png";
 import UK from "../../assets/UK.png";
@@ -11,7 +11,6 @@ type listType = {
   flag: string;
   country: string;
 };
-
 
 export function Language() {
   const list: Array<listType> = [
@@ -51,7 +50,7 @@ export function Language() {
     <>
       <div className="language-main">
         <div className="language-box">
-          <GlobalOutlined /> language
+          <GlobalOutlined /> <CaretDownOutlined />
         </div>
         <div className="language-other">
           <div className="white-box">

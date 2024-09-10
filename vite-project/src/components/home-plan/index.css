@@ -1,11 +1,11 @@
 .home-plan {
     width: 90%;
-    height: 252px;
-    border-radius: 30px;
+    height: 20vw;
+    border-radius: 3vw;
     border: 1px solid #000;
     background: #FAFAFA;
     margin: 0 auto;
-    padding: 36px;
+    padding: 2vw;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
@@ -13,17 +13,18 @@
 }
 
 .plan-image {
-    width: 108px;
-    height: 108px;
+    width: 8vw;
+    height: 8vw;
     background-color: #2C5665;
     border-radius: 50%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
 }
 
 .plan-text2 {
     height: calc(100% - 108px);
     width: 100%;
+    font-size: 1.2vw;
 }
 
 .plan-box {
@@ -34,8 +35,8 @@
 }
 
 .plan-arrow {
-    font-size: 32px;
+    font-size: 3vw;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 2vw;
     box-sizing: border-box;
 }
