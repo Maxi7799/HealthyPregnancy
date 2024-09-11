@@ -1,0 +1,78 @@
+.home-main {
+    width: 100%;
+    height: 30vw;
+    background: #EFE9DB;
+    overflow: hidden;
+    text-align: left;
+    padding: 5vw;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.home-main .main-text {
+    color: #2C5665;
+    font-family: Alata;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 30vw;
+    height: 3vw;
+    flex-shrink: 0;
+    text-align: left;
+    margin-top: 1vw;
+    /* 64px */
+}
+
+.home-main .home-welcome {
+    color: #303030;
+    font-family: "Inria Sans";
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 2.5vw;
+}
+
+.home-main .home-text {
+    width: 40vw;
+    /* height: 15vw; */
+}
+
+.home-main .home-main-image {
+    width: 23vw;
+    height: 23vw;
+    border-radius: 23vw;
+    overflow: hidden;
+    position: absolute;
+    right: 4vw;
+    top: 3vw;
+}
+
+.home-main .home-main-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-main .home-button {
+    display: flex;
+    /* width: 4.2vw; */
+    width: max-content;
+    height: 1vw;
+    padding: 1vw 2.4vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10vw;
+    background: #2C5665;
+    color: #fff;
+    font-family: "Inria Sans";
+    font-size: 1.3vw;
+    font-style: normal;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 2vw;
+}
+
+.home-main .home-button a {
+    color: #fff;
+}

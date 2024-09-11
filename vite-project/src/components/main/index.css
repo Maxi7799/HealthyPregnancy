@@ -1,0 +1,5 @@
+.main-box {
+    display: flex;
+    background-color: rgba(254, 212, 213, 0.159);
+    height: 800px;
+}

@@ -1,0 +1,143 @@
+.data-insight-root{
+  background-color: rgba(254, 212, 213, 0.074)
+}
+
+.desc h1 {
+  margin-top: 60px;
+  font-family: 'Georgia', serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2c3e50; 
+  text-align: center;
+  margin-bottom: 40px; 
+  line-height: 1.2;
+  max-width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.desc p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1em;
+  color: #34495e; 
+  line-height: 1.6;
+  text-align: center;
+  margin: 20px 20px; 
+  max-width: 1100px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.data-insight-sec1 {
+  margin-top: 40px;
+  padding: 20px;
+  /* background-color: rgba(254, 212, 213, 0.209);  */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  /* background-color: rgba(254, 212, 213, 0.209); Semi-transparent background for the tabs container */
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 1000px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.tabs button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: rgba(92, 107, 192, 0.2);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #34495e;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px; 
+}
+
+.tabs button.active {
+  background-color: #5c6bc0;
+  color: #fff;
+}
+
+.tabs button:hover {
+  background-color: rgba(92, 107, 192, 0.3); 
+  color: #fff;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px; 
+  background-color: #333; 
+  color: #fff;
+  font-weight: 300; 
+  padding: 5px; 
+  border-radius: 4px; 
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%); 
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out; 
+  text-align: center; 
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.chart-container {
+  padding: 20px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  max-width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; 
+}
+
+.chart-section {
+  margin-bottom: 40px; 
+}
+
+.chart-description {
+  margin-top: 90px;
+  text-align: center;
+  color: #34495e;
+  max-width: 1100px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.data-insight-sec2 {
+  margin-top: 60px;
+}
+
+.stack-bar-chart-container{
+  padding: 20px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  max-width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
