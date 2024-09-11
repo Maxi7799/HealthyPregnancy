@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 // import leftImage from "../../assets/home-sec.jpg";
 // import { Link } from "react-router-dom";
 import homeImg from "../../assets/home-main.png";
@@ -17,7 +18,9 @@ export const HomeMain: React.FC = () => {
           risks and receive personalized guidance for a safer, healthier
           pregnancy.
         </div>
-        <div className="home-button">Start Risk Assessment</div>
+        <div className="home-button">
+          <Link to="/risk-assessment">Start Risk Assessment</Link>
+        </div>
         <div className="home-main-image">
           <img src={homeImg}></img>
         </div>

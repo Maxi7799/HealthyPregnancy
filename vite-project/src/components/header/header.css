@@ -31,7 +31,13 @@
 .header-nav {
   padding: 0px 1vw 0px 1vw;
   font-size: 1.3vw;
+  color: #2C5665;
+  cursor: pointer;
 }
+.header-nav a {
+  color: #2C5665;
+}
+
 
 .header-left-text {}
 

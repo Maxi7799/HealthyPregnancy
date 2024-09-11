@@ -6,8 +6,9 @@ import { Faqs } from "../src/view/faqs";
 import { Testimonial } from "../src/view/testimonial";
 import { Educational } from "../src/view/educational/index";
 import { DataInsight } from "../src/view/dataInsight/index";
-import { Chapter } from '../src/view/chapter/index'
+import { Chapter } from "../src/view/chapter/index";
 import { Login } from "../src/view/login";
+import { RiskAssessment } from "../src/view/riskAssessment";
 import React from "react";
 
 const MainRouter: React.FC = () => {
@@ -23,6 +24,7 @@ const MainRouter: React.FC = () => {
         <Route path="/educational" element={<Educational />} />
         <Route path="/dataInsight" element={<DataInsight />} />
         <Route path="/chapter" element={<Chapter />} />
+        <Route path="/risk-assessment" element={<RiskAssessment />} />
       </Routes>
     </>
   );
