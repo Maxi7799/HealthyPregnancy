@@ -4,19 +4,19 @@ import { Footer } from "../../components/footer/index.tsx";
 import { Header } from "../../components/header/header.tsx";
 import { Select, Space, Radio, Row, Col } from "antd";
 import { useState } from "react";
-import newCountries from "./country";
-import type { RadioChangeEvent } from "antd";
-// console.log(newCountries.shift());
-// console.log(newCountries);
-newCountries.shift()
+import { countries } from "./country";
+import type { RadioChangeEvent, SelectChangeEvent } from "antd";
+console.log(countries.shift());
+console.log(countries);
+
 type paramDataType = {
-  country: string;
-  age: string;
-  educational: string;
-  employment: string;
-  income: string;
-  status: string;
-  remoteness: string;
+  Country: string;
+  Age: string;
+  Educational: string;
+  Employmet: string;
+  Income: string;
+  Status: string;
+  Remoteness: string;
 };
 
 export const RiskAssessment: React.FC = () => {
@@ -26,10 +26,7 @@ export const RiskAssessment: React.FC = () => {
   const [income, setIncome] = useState("");
   const [marital, setMarital] = useState("");
   const [remote, setRemote] = useState("");
-  const [country, setCountry] = useState("Australia");
-  const [risk_level, setRiskLevel] = useState("");
-  // your score
-  const [score, setScore] = useState(0)
+  const [country, setCountry] = useState("");
 
   const handleChange = (country: string) => {
     setCountry(country);
@@ -64,69 +61,41 @@ export const RiskAssessment: React.FC = () => {
   const submit = () => {
     console.log("submit");
     const paramData: paramDataType = {
-      country: country,
-      age: age,
-      educational: edu,
-      employment: sta,
-      income: income,
-      status: marital,
-      remoteness: remote,
+      Country: country,
+      Age: age,
+      Educational: edu,
+      Employmet: sta,
+      Income: income,
+      Status: marital,
+      Remoteness: remote,
     };
 
     submitAssessment(paramData);
+    // const [tree, setTree] = useState([]);
+
+    // const fetchTree = async () => {
+    //   const treePath = "api/name";
+    //   const response = await fetch("http://127.0.0.1:8000/" + treePath);
+    //   const data = await response.json();
+    //   setTree(data);
+    // };
+
+    // useEffect(() => {
+    //   fetchTree();
+    // }, []);
   };
 
-  const reset = () => {
-    setCountry(newCountries[0]);
-    setAge('');
-    setEdu('');
-    setSta('');
-    setIncome('');
-    setMarital('');
-    setRemote('');
-    setScore(0);
-    setRiskLevel("")
-  }
-
   const submitAssessment = async (paramData: paramDataType) => {
-    // let str = "";
-    // for (let i in paramData) {
-    //   str += "&" + i + "=" + paramData[i];
-    // }
-
-    // str = "?" + str.slice(1);
-    // console.log(str);
-
-    const riskassessment = "/risk/riskassessment";
+    const riskassessment = "/riskassessment";
     const response = await fetch("http://127.0.0.1:8000" + riskassessment, {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      method: "GET", // *GET, POST, PUT, DELETE, etc.
       headers: {
-        "Content-Type": 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(paramData),
+      body: JSON.stringify(paramData), // body data type must match "Content-Type" header
     });
     const data = await response.json();
-    // console.log(data);
-
-    const {output_risk_level} = data;
-    setRiskLevel(output_risk_level)
-    if(output_risk_level == "High Risk") {
-      setScore(83.4)
-    }
-
-    if(output_risk_level == "Moderate Risk") {
-      setScore(50)
-    }
-
-    if(output_risk_level == "Low Risk") {
-      setScore(16.6)
-    }
-//     if any(val > 6 for val in kwargs.values()) or odds > thresholds[1]:
-//     return "High Risk"
-// elif odds <= thresholds[0]:
-//     return "Low Risk"
-// else:
-//     return "Moderate Risk"
+    console.log(data);
     // setTree(data);
   };
   return (
@@ -158,11 +127,10 @@ export const RiskAssessment: React.FC = () => {
         <div className="risk-sub-box">
           <div className="risk-sub-title">What is your Country of birth?</div>
           <Select
-            defaultValue={newCountries[0]}
-            value={country}
+            defaultValue={countries[0]}
             style={{ width: 120 }}
             onChange={handleChange}
-            options={newCountries.map((item) => {
+            options={countries.map((item) => {
               return { value: item, label: item };
             })}
           />
@@ -223,17 +191,17 @@ export const RiskAssessment: React.FC = () => {
             <Row>
               <Col span={12}>
                 <Space direction="vertical">
-                  <Radio value={"$2,500 or more ($130,000 or more)"}>$2,500 or more ($130,000 or more)</Radio>
-                  <Radio value={"$1,750-2,499 ($91,000-129,999)"}>$1,750-2,499 ($91,000-129,999)</Radio>
-                  <Radio value={"$1,250-1,749 ($65,000-90,999)"}>$1,250-1,749 ($65,000-90,999)</Radio>
-                  <Radio value={"$800-1,249 ($41,600-64,999)"}>$800-1,249 ($41,600-64,999)</Radio>
+                  <Radio value={"$130,000 or more"}>$130,000 or more</Radio>
+                  <Radio value={"$91,000-129,999"}>$91,000-129,999</Radio>
+                  <Radio value={"$65,000-90,999"}>$65,000-90,999</Radio>
+                  <Radio value={"$41,600-64,999"}>$41,600-64,999</Radio>
                 </Space>
               </Col>
               <Col span={12}>
                 <Space direction="vertical">
-                  <Radio value={"$500-799 ($26,000-41,599)"}>$500-799 ($26,000-41,599)</Radio>
-                  <Radio value={"$300-499 ($15,600-25,999)"}>$300-499 ($15,600-25,999)</Radio>
-                  <Radio value={"$0-299 ($0-15,599)"}>$0-299 ($0-15,599)</Radio>
+                  <Radio value={"$26,000-41,599"}>$26,000-41,599</Radio>
+                  <Radio value={"$15,600-25,999"}>$15,600-25,999</Radio>
+                  <Radio value={"$0-15,599"}>$0-15,599</Radio>
                 </Space>
               </Col>
             </Row>
@@ -298,15 +266,15 @@ export const RiskAssessment: React.FC = () => {
                     Inner Regional Australia
                   </Radio>
                   <Radio value={"Outer Regional Australia"}>
-                    Outer regional Australia
+                    Outer Regional Australia
                   </Radio>
                 </Space>
               </Col>
               <Col>
                 <Space direction="vertical">
                   <Radio value={"Remote Australia"}>Remote Australia</Radio>
-                  <Radio value={"Very remote Australia"}>
-                    Very remote Australia
+                  <Radio value={">Very Remote Australia"}>
+                    Very Remote Australia\
                   </Radio>
                 </Space>
               </Col>
@@ -318,22 +286,22 @@ export const RiskAssessment: React.FC = () => {
           <div className="risk-submit" onClick={submit}>
             submit
           </div>
-          <div className="rest-answers" onClick={reset}>Reset answers</div>
+          <div className="rest-answers">Reset answers</div>
         </div>
 
         <div className="assessment-result">
           <div className="risk-main-title">Assessment Result</div>
           <div className="your-result">
             <span>Your Result:</span>
-            <span className="risk-orange">{risk_level}</span>
+            <span className="risk-orange">MODERATE RISK</span>
           </div>
 
           <div className="result-box">
             <div className="result-one result"></div>
             <div className="result-two result"></div>
             <div className="result-three result"></div>
-            <div className="result-point" style={{left: score + '%'}}>
-              {/* <div className="point-label">Your Score</div> */}
+            <div className="result-point">
+              <div className="point-label">Your Score</div>
             </div>
           </div>
           <div className="note">

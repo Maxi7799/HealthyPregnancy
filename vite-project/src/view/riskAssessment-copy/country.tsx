@@ -134,10 +134,4 @@ Uganda
 Zambia
 Zimbabwe`;
 
-const countries = country.split("\n");
-
-const newCountries = countries.map((item) => {
-    return item.trim()
-})
-// console.log(newCountries)
-export default newCountries;
+export const countries = country.split("\n");
