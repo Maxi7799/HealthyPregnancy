@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
           {/* <Link to="/risk-assessment">Risk Assessment</Link> */}
         </div>
 
-        <div className="header-nav">Nutrition</div>
+        <div className="header-nav"> <Link to="/nutrition-analysis">Nutrition</Link></div>
         <div className="header-nav">Exercise</div>
         <Language />
       </div>
