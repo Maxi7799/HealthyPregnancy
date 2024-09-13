@@ -1,5 +1,6 @@
 from ninja import NinjaAPI, Schema
 from sim.data_model.data_interface.get_food_nutrition import get_food_nutrition_data
+from sim.model.model_pregancy_food import PregnancyFoods
 
 
 food = NinjaAPI(version="4.0.0")
@@ -8,6 +9,11 @@ food = NinjaAPI(version="4.0.0")
 class FoodNutritionDataSchema(Schema):
     ingrs: list[str]
     ingredient_list: list[str]
+
+
+class FoodNotRecomDataSchema(Schema):
+    classifiction: str
+    category: str
 
 
 @food.post("/nutritioninfo")
@@ -171,11 +177,23 @@ def get_food_nutrition(request, payload: FoodNutritionDataSchema):
     return output
 
 
-@food.get("/notrecomfood")
-def get_notrecom_food_list(request):
-    return "US5.2: Not Recommended Foods for Pregnant Women Feature"
+@food.post("/notrecomfood")
+def get_notrecom_food_list(request, payload: FoodNotRecomDataSchema):
+    foods = PregnancyFoods.objects.all()
+    food_item = []
+    reason = []
+
+    for food in foods:
+        if food.classification == payload.classifiction and food.category == payload.category:
+            food_item.append(food.food_item)
+            reason.append(food.reason)
+
+    return {
+        "food_item": food_item,
+        "reason": reason
+    }
 
 
-@food.get("/nutritioncalcu")
-def get_nutrition_calcuated(request):
-    return "US5.3: Nutrition Calculator for Balanced Intake"
+# @food.get("/nutritioncalcu")
+# def get_nutrition_calcuated(request):
+#     return "US5.3: Nutrition Calculator for Balanced Intake"
