@@ -13,7 +13,8 @@ def get_recom_recipe_data(meal_time):
         'type': "public",
         'app_id': "82874fb9",
         'app_key': "7d282272a8965320920ddd78da1245c8",
-        'mealType': meal_list
+        'mealType': meal_list,
+        'random': True
     }
 
     response = requests.get(Edamam_URL + "/api/recipes/v2", params)
@@ -28,7 +29,4 @@ def get_recom_recipe_data(meal_time):
         except:
             return "recipes less than 10"
     else:
-        return Response(
-            {"error": "Failed to retrieve data from external API"},
-            status=status.HTTP_500_INTERNAL_SERVER_ERROR
-        )
+        return "Failed to retrieve data from external API"
