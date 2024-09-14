@@ -18,9 +18,11 @@ export const NutritionAnalysis: React.FC = () => {
   const [guideList, setGuideList] = useState<GuideType[]>([]);
   const [showResult, setShowResult] = useState(false);
   const [currentPage, setCurrentPage] = useState("Nutrition Analysis");
-  const [currentCategory, setCurrentCategory] = useState(-1);
+  const [currentCategory, setCurrentCategory] = useState('');
   const [tableData, setTableData] = useState([]);
   const [result, setResult] = useState<any>({});
+  const [recomend, setRecomend] = useState(true);
+  const [foodList, setFoodList] = useState([]);
 
   useEffect(() => {
     setGuideList([
@@ -102,19 +104,21 @@ export const NutritionAnalysis: React.FC = () => {
     setCurrentPage(page);
   };
 
-  const categoryClick = (index: number) => {
-    setCurrentCategory(index);
+  const categoryClick = (food: string) => {
+    setCurrentCategory(food);
+
+    getRecomendFood(food)
   };
 
   const submitAnalyze = async () => {
     const url = "/food/nutritioninfo";
     let ingredient_list: string[] = [];
     let ingrs: string[] = []
-    const table:any = [];
+    const table: any = [];
 
 
     if (actTab == 0) {
-      if(!textAreaValue) return 
+      if (!textAreaValue) return
       ingredient_list = textAreaValue.replace(/\n/g, ',').split(',')
       ingrs = ingredient_list.map((item, index) => {
         table.push({
@@ -151,14 +155,47 @@ export const NutritionAnalysis: React.FC = () => {
     setShowResult(true)
     setResult(data)
     console.log(table, data);
-    
+
     data.calories.forEach((item: string, index: number) => {
       table[index].calories = item;
       table[index].weights = data["weights"][index];
     })
 
-    
+
     setTableData(table)
+  }
+
+  const onRecommended = (isRecomend: boolean) => {
+    setRecomend(isRecomend)
+    getRecomendFood(currentCategory)
+  }
+
+  const getRecomendFood = async (food: string) => {
+    if (!food) return
+    const url = "/food/notrecomfood"
+    const response = await fetch(rootAddress + url, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        "Content-Type": 'application/json'
+      },
+      body: JSON.stringify({
+        "classifiction": recomend ? "Recommended" : "Not Recommended",
+        "category": food
+      }),
+    });
+    const data = await response.json();
+    console.log(data)
+
+    const newList = data.food_item.map((item: any, index: number) => {
+      return {
+        food: item,
+        details: data.reason[index] ? data.reason[index] : ''
+      }
+    })
+
+    setFoodList(newList)
+
+    console.log(newList)
   }
 
   return (
@@ -375,7 +412,7 @@ export const NutritionAnalysis: React.FC = () => {
                       <div className="result-sub">Amount Per Serving</div>
                       <div className="result-Calories">
                         <span>Calories</span>
-                        <span>{result.calories.reduce((prev: number, cur: number) => {return prev + cur}) }</span>
+                        <span>{result.calories.reduce((prev: number, cur: number) => { return prev + cur })}</span>
                       </div>
                       <div className="result-line2"></div>
 
@@ -492,8 +529,8 @@ export const NutritionAnalysis: React.FC = () => {
             </div>
 
             <div className="recommendation-switch-button">
-              <div className="left button">Recommended</div>
-              <div className="right button">Not Recommended</div>
+              <div className={"left button " + (recomend ? "actrecomend" : "")} onClick={() => onRecommended(true)}>Recommended</div>
+              <div className={"right button " + (!recomend ? "actrecomend" : "")} onClick={() => onRecommended(false)}>Not Recommended</div>
             </div>
 
             <div className="category">
@@ -503,11 +540,11 @@ export const NutritionAnalysis: React.FC = () => {
               <div className="category-group">
                 <data
                   className={"category-item"}
-                  onClick={() => categoryClick(0)}
+                  onClick={() => categoryClick('Grains')}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 0 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Grains' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -516,11 +553,11 @@ export const NutritionAnalysis: React.FC = () => {
                 </data>
                 <data
                   className="category-item"
-                  onClick={() => categoryClick(1)}
+                  onClick={() => categoryClick('Meat')}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 1 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Meat' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -529,11 +566,11 @@ export const NutritionAnalysis: React.FC = () => {
                 </data>
                 <data
                   className="category-item"
-                  onClick={() => categoryClick(2)}
+                  onClick={() => categoryClick("Dairy")}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 2 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Dairy' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -542,11 +579,11 @@ export const NutritionAnalysis: React.FC = () => {
                 </data>
                 <data
                   className="category-item"
-                  onClick={() => categoryClick(3)}
+                  onClick={() => categoryClick('Fish')}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 3 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Fish' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -555,11 +592,11 @@ export const NutritionAnalysis: React.FC = () => {
                 </data>
                 <data
                   className="category-item"
-                  onClick={() => categoryClick(4)}
+                  onClick={() => categoryClick('Vegetables')}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 4 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Vegetables' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -568,11 +605,11 @@ export const NutritionAnalysis: React.FC = () => {
                 </data>
                 <data
                   className="category-item"
-                  onClick={() => categoryClick(5)}
+                  onClick={() => categoryClick('Fruits')}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 5 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Fruits' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -581,11 +618,11 @@ export const NutritionAnalysis: React.FC = () => {
                 </data>
                 <data
                   className="category-item"
-                  onClick={() => categoryClick(6)}
+                  onClick={() => categoryClick('Beverages')}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 6 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Beverages' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -594,11 +631,11 @@ export const NutritionAnalysis: React.FC = () => {
                 </data>
                 <data
                   className="category-item"
-                  onClick={() => categoryClick(7)}
+                  onClick={() => categoryClick('Processed')}
                 >
                   <div
                     className={
-                      "warp " + (currentCategory == 7 ? "act-warp" : "")
+                      "warp " + (currentCategory == 'Processed' ? "act-warp" : "")
                     }
                   >
                     <div className="category-icon"></div>
@@ -614,24 +651,32 @@ export const NutritionAnalysis: React.FC = () => {
                 List of food items based on your selection
               </div>
 
-              <div className="food-list">
-                <div className="left-icon"></div>
-                <div className="right-item">
-                  <div className="food-right-top">
-                    <span className="food-right-top-left">Salmon (Fish)</span>
-                    <span className="food-right-top-right">
-                      <i>Limit: 2-3 servings/week</i>
-                    </span>
-                  </div>
-                  <div className="food-right-bottom">
-                    <div className="food-tag">Low mercury</div>
-                    <div className="food-tag">High omega 3</div>
-                    <div className="food-tag">Protein</div>
-                  </div>
-                </div>
-              </div>
+              {
+                foodList.map((item: any) => {
+                  return (
+                    <div className="food-list">
+                      <div className="left-icon"></div>
+                      <div className="right-item">
+                        <div className="food-right-top">
+                          <span className="food-right-top-left">{item.food}</span>
+                          <span className="food-right-top-right">
+                            {/* <i>Limit: 2-3 servings/week</i> */}
+                          </span>
+                        </div>
+                        <div className="food-right-bottom" style={{height: "45px",lineHeight: '45px'}}>
+                          {item.details}
+                          {/* <div className="food-tag">Low mercury</div>
+                          <div className="food-tag">High omega 3</div>
+                          <div className="food-tag">Protein</div> */}
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })
+              }
 
-              <div className="food-list">
+
+              {/* <div className="food-list">
                 <div className="left-icon"></div>
                 <div className="right-item">
                   <div className="food-right-top">
@@ -646,9 +691,9 @@ export const NutritionAnalysis: React.FC = () => {
                     <div className="food-tag">Protein</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="food-list">
+              {/* <div className="food-list">
                 <div className="left-icon"></div>
                 <div className="right-item">
                   <div className="food-right-top">
@@ -663,7 +708,7 @@ export const NutritionAnalysis: React.FC = () => {
                     <div className="food-tag">Calcium</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </>

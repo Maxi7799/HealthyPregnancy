@@ -317,11 +317,12 @@
 .recommendation-switch-button .button {
     width: 200px;
     height: 40px;
-    border: 1px solid #000000;
+    border: 2px solid rgba(0,0,0,0);
     color: #fff;
     line-height: 40px;
     cursor: pointer;
     margin: 40px 0px 20px 0px;
+    box-sizing: border-box;
 }
 
 .recommendation-switch-button .left {
@@ -468,4 +469,8 @@
     .food-tag {
         margin-bottom: 10px;
     }
+}
+
+.actrecomend {
+    border: 2px solid #000 !important;
 }
