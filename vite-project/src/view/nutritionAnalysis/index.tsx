@@ -2,6 +2,7 @@ import { Footer } from "../../components/footer/index.tsx";
 import { Header } from "../../components/header/header.tsx";
 import { Input, Select, Space } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
+import { rootAddress } from '../../../env.tsx'
 
 import "./index.css";
 import { useEffect, useState } from "react";
@@ -18,6 +19,8 @@ export const NutritionAnalysis: React.FC = () => {
   const [showResult, setShowResult] = useState(false);
   const [currentPage, setCurrentPage] = useState("Nutrition Analysis");
   const [currentCategory, setCurrentCategory] = useState(-1);
+  const [tableData, setTableData] = useState([]);
+  const [result, setResult] = useState<any>({});
 
   useEffect(() => {
     setGuideList([
@@ -39,7 +42,7 @@ export const NutritionAnalysis: React.FC = () => {
     setTextAreaValue(input.target.value);
   };
 
-  const handleChange = () => {};
+  const handleChange = () => { };
 
   const clear = () => {
     setShowResult(false);
@@ -102,6 +105,61 @@ export const NutritionAnalysis: React.FC = () => {
   const categoryClick = (index: number) => {
     setCurrentCategory(index);
   };
+
+  const submitAnalyze = async () => {
+    const url = "/food/nutritioninfo";
+    let ingredient_list: string[] = [];
+    let ingrs: string[] = []
+    const table:any = [];
+
+
+    if (actTab == 0) {
+      if(!textAreaValue) return 
+      ingredient_list = textAreaValue.replace(/\n/g, ',').split(',')
+      ingrs = ingredient_list.map((item, index) => {
+        table.push({
+          index,
+          unit: item.split(' ')[1],
+          name: item.split(' ')[2]
+        })
+        return item.split(' ')[2]
+      })
+
+    } else {
+      console.log(guideList)
+      guideList.forEach((item, index) => {
+        table.push({
+          index,
+          unit: item.Unit,
+          name: item.IngredientName
+        })
+        ingredient_list.push(item.Qty + " " + item.Unit + " " + item.IngredientName)
+        ingrs.push(item.IngredientName)
+      })
+    }
+    const response = await fetch(rootAddress + url, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        "Content-Type": 'application/json'
+      },
+      body: JSON.stringify({
+        "ingrs": ingrs,
+        "ingredient_list": ingredient_list
+      }),
+    });
+    const data = await response.json();
+    setShowResult(true)
+    setResult(data)
+    console.log(table, data);
+    
+    data.calories.forEach((item: string, index: number) => {
+      table[index].calories = item;
+      table[index].weights = data["weights"][index];
+    })
+
+    
+    setTableData(table)
+  }
 
   return (
     <>
@@ -259,7 +317,7 @@ export const NutritionAnalysis: React.FC = () => {
                 <div className="button-group-submit">
                   <div
                     className="submit-analyze"
-                    onClick={() => setShowResult(true)}
+                    onClick={() => submitAnalyze()}
                   >
                     Analyze
                   </div>
@@ -281,21 +339,26 @@ export const NutritionAnalysis: React.FC = () => {
                         <div>Calories</div>
                         <div>Weight</div>
                       </div>
-                      <div className="table-line"></div>{" "}
-                      <div className="result-row">
-                        <div>1</div>
-                        <div>Unit</div>
-                        <div>Name</div>
-                        <div>Calories</div>
-                        <div>cup</div>
-                      </div>
-                      <div className="result-row">
+                      <div className="table-line"></div>
+                      {
+                        tableData.map((item, index) => {
+                          return <div className="result-row">
+                            <div>{index + 1}</div>
+                            <div>{item.unit}</div>
+                            <div>{item.name}</div>
+                            <div>{item.calories.toFixed(2)}</div>
+                            <div>{item.weights.toFixed(2)}</div>
+                          </div>
+                        })
+                      }
+                      { /*<div className="result-row">
                         <div>100</div>
                         <div>gram</div>
                         <div>chicken breast</div>
                         <div>200 kcal</div>
                         <div>200 g</div>
-                      </div>
+                      </div> */
+                      }
                     </div>
                   </>
                 ) : (
@@ -312,7 +375,7 @@ export const NutritionAnalysis: React.FC = () => {
                       <div className="result-sub">Amount Per Serving</div>
                       <div className="result-Calories">
                         <span>Calories</span>
-                        <span>300</span>
+                        <span>{result.calories.reduce((prev: number, cur: number) => {return prev + cur}) }</span>
                       </div>
                       <div className="result-line2"></div>
 
@@ -321,50 +384,52 @@ export const NutritionAnalysis: React.FC = () => {
                       <div className="result-item">
                         <div className="item-main">
                           <div>
-                            <b>Total Fat </b>31.3 g
+                            <b>Total Fat </b>{result.total_fat_digits.toFixed(2)} {result.total_fat_unit}
                           </div>
                           <div>
-                            <b>48%</b>
+                            <b>{result.total_fat_percent.toFixed(2)}%</b>
                           </div>
                         </div>
                         <div className="item-details">
-                          <span>Saturated Fat 8.9 g</span>
-                          <b>45%</b>
+                          <span>Saturated Fat {result.saturated_fat_digits.toFixed(2)}{result.saturated_fat_unit}</span>
+                          <b>{result.saturated_fat_percent.toFixed(2)}%</b>
                         </div>
                         <div className="item-details">
-                          <span>Trans Fat 0.2 g</span>
+                          <span>Trans Fat {result.trans_fat_digits.toFixed(2)} {result.trans_fat_unit}</span>
+                          <b>{result.trans_fat_percent.toFixed(2)}%</b>
                         </div>
                         <div className="item-main">
                           <div>
-                            <b>Cholesterol </b>150 mg
+                            <b>Cholesterol </b>{result.cholesterol_digits.toFixed(2)} {result.cholesterol_unit}
+                            {/* <b>{result.cholesterol_percent}%</b> */}
                           </div>
                           <div>
-                            <b>50%</b>
-                          </div>
-                        </div>
-                        <div className="item-main">
-                          <div>
-                            <b>Sodium</b>142 mg
-                          </div>
-                          <div>
-                            <b>6%</b>
+                            <b>{result.cholesterol_percent.toFixed(2)}%</b>
                           </div>
                         </div>
                         <div className="item-main">
                           <div>
-                            <b>Total Carbohydrate</b>154.6 g
+                            <b>Sodium</b>{result.saturated_fat_digits.toFixed(2)} {result.saturated_fat_unit}
                           </div>
                           <div>
-                            <b>52 %</b>
+                            <b>{result.saturated_fat_percent.toFixed(2)}%</b>
+                          </div>
+                        </div>
+                        <div className="item-main">
+                          <div>
+                            <b>Total Carbohydrate</b>{result.total_carbohydrate_digits.toFixed(2)} {result.total_carbohydrate_unit}
+                          </div>
+                          <div>
+                            <b>{result.total_carbohydrate_percent.toFixed(2)} %</b>
                           </div>
                         </div>
                         <div className="item-details">
-                          <span>Dietary Fiber 0 g</span>
-                          <b>0%</b>
+                          <span>Dietary Fiber {result.dietary_fiber_digits.toFixed(2)} {result.dietary_fiber_unit}</span>
+                          <b>{result.dietary_fiber_percent.toFixed(2)}%</b>
                         </div>
                         <div className="item-details">
-                          <span>Total Sugars 0 g</span>
-                          <b></b>
+                          <span>Total Sugars {result.total_sugars_digits.toFixed(2)} {result.total_sugars_unit}</span>
+                          <b>{result.total_sugars_percent.toFixed(2)}%</b>
                         </div>
                         <div className="item-details">
                           <span>Includes - Added Sugars</span>
@@ -372,34 +437,34 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-main">
                           <div>
-                            <b>Protein</b>50.1 g
+                            <b>Protein</b>{result.protein_digits.toFixed(2)} {result.protein_unit}
                           </div>
                           <div>
-                            <b>100%</b>
-                          </div>
-                        </div>
-                        <div className="item-main">
-                          <div>Vitamin D 0.4 µg</div>
-                          <div>
-                            <b>3 %</b>
+                            <b>{result.protein_percent.toFixed(2)}</b>
                           </div>
                         </div>
                         <div className="item-main">
-                          <div>Calcium 39.6 mg</div>
+                          <div>Vitamin D {result.vitamin_digits.toFixed(2)} {result.vitamin_unit}</div>
                           <div>
-                            <b>4 %</b>
+                            <b>{result.vitamin_percent.toFixed(2)} %</b>
+                          </div>
+                        </div>
+                        <div className="item-main">
+                          <div>Calcium {result.calcium_digits.toFixed(2)} {result.calcium_unit}</div>
+                          <div>
+                            <b>{result.calcium_percent.toFixed(2)} %</b>
                           </div>
                         </div>{" "}
                         <div className="item-main">
-                          <div>Iron 3.4 mg</div>
+                          <div>Iron {result.iron_digits.toFixed(2)} {result.iron_unit}</div>
                           <div>
-                            <b>19%</b>
+                            <b>{result.iron_percent.toFixed(2)}%</b>
                           </div>
                         </div>{" "}
                         <div className="item-main">
-                          <div>Potassium 545.7 mg</div>
+                          <div>Potassium {result.potassium_digits.toFixed(2)} {result.potassium_unit}</div>
                           <div>
-                            <b>12%</b>
+                            <b>{result.potassium_percent.toFixed(2)}%</b>
                           </div>
                         </div>
                       </div>

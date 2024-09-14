@@ -5,6 +5,7 @@ import { Header } from "../../components/header/header.tsx";
 import { Select, Space, Radio, Row, Col } from "antd";
 import { useState } from "react";
 import newCountries from "./country";
+import { rootAddress } from '../../../env.tsx'
 import type { RadioChangeEvent } from "antd";
 // console.log(newCountries.shift());
 // console.log(newCountries);
@@ -98,7 +99,7 @@ export const RiskAssessment: React.FC = () => {
     // console.log(str);
 
     const riskassessment = "/risk/riskassessment";
-    const response = await fetch("http://127.0.0.1:8000" + riskassessment, {
+    const response = await fetch(rootAddress + riskassessment, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": 'application/json'
