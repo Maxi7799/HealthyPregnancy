@@ -58,6 +58,7 @@ def get_recommended_recipe(request, payload: RecommRecipeDataSchema):
 
     index = 0
     for recipe in recipes:
+        output_element = {}
 
         output_element['recipe_index'] = index
         index += 1
@@ -67,7 +68,6 @@ def get_recommended_recipe(request, payload: RecommRecipeDataSchema):
         output_element['food_picture'] = recipe['recipe'].get('image', '')
 
         output_element['calories_digits'] = recipe['recipe'].get('calories', 0)
-        
 
         output_element['protein_digits'] = recipe['recipe'].get(
             'totalNutrients', {}).get('PROCNT', {}).get('quantity', 0)
