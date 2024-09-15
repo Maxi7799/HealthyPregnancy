@@ -26,6 +26,12 @@
   text-align: left;
 
   padding-left: 5vw;
+  display: flex;
+}
+
+.header-icon {
+  width: 5vw;
+  height: 5vw;
 }
 
 .header-nav {

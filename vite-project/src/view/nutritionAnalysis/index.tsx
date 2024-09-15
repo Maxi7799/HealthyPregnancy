@@ -5,6 +5,16 @@ import { DeleteOutlined } from "@ant-design/icons";
 import { rootAddress } from '../../../env.tsx'
 import { Link } from 'react-router-dom'
 
+import grains_icon from './images/grains.webp'
+import beverages_icon from './images/beverages.webp'
+import dairy_icon from './images/dairy.webp'
+import fruit_icon from './images/fruit.webp'
+import meat_icon from './images/meat.webp'
+import processed_icon from './images/processed.webp'
+import vegetables_icon from './images/vegetables.webp'
+import fish_icon from './images/fish.webp'
+import { useSearchParams } from "react-router-dom";
+
 import "./index.css";
 import { useEffect, useState } from "react";
 export const NutritionAnalysis: React.FC = () => {
@@ -24,6 +34,8 @@ export const NutritionAnalysis: React.FC = () => {
   const [result, setResult] = useState<any>({});
   const [recomend, setRecomend] = useState(true);
   const [foodList, setFoodList] = useState([]);
+  const [params] = useSearchParams()
+  console.log(params.getAll("actTab")[0])
 
   useEffect(() => {
     setGuideList([
@@ -33,6 +45,8 @@ export const NutritionAnalysis: React.FC = () => {
         IngredientName: "",
       },
     ]);
+    if(params.getAll("actTab")[0])  setCurrentPage(params.getAll("actTab")[0] == "0" ? 'Nutrition Analysis' : 'Recommendation')
+    
   }, []);
 
   const TabClick = (index: number) => {
@@ -229,9 +243,8 @@ export const NutritionAnalysis: React.FC = () => {
             <div className="analyze-title">Food Nutrition Analysis</div>
 
             <div className="analyze-text">
-              Analyse each of your ingredient. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
+            Here you can calculate the nutrients contained in various types and amounts of food. You can use a text box to enter, 
+            such as '2 cups coffee', and you can add a variety of foods through line breaks. You can also enter and select the type and amount of food with guided input. When you click analyze, you can get a nutrition table for all your foods combined
             </div>
 
             <div className="tab-switch">
@@ -256,6 +269,7 @@ export const NutritionAnalysis: React.FC = () => {
                   <>
                     <div className="text-area-box">
                       <TextArea
+                        placeholder="e.g.1 cup coffee"
                         onChange={textAreaChange}
                         value={textAreaValue}
                         style={{ width: "100%" }}
@@ -325,7 +339,7 @@ export const NutritionAnalysis: React.FC = () => {
                                 </div>
                                 <div className="table-col">
                                   <Input
-                                    placeholder="e.g. 1"
+                                    placeholder="e.g. fish"
                                     value={item.IngredientName}
                                     style={{ width: 160 }}
                                     onChange={(e) =>
@@ -548,7 +562,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Grains' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + grains_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Grains</div>
                   </div>
                 </data>
@@ -561,7 +575,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Meat' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + meat_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Meat</div>
                   </div>
                 </data>
@@ -574,7 +588,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Dairy' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + dairy_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Dairy</div>
                   </div>
                 </data>
@@ -587,7 +601,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Fish' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + fish_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Fish</div>
                   </div>
                 </data>
@@ -600,7 +614,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Vegetables' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + vegetables_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Vegetables</div>
                   </div>
                 </data>
@@ -613,7 +627,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Fruits' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + fruit_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Fruits</div>
                   </div>
                 </data>
@@ -626,7 +640,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Beverages' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + beverages_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Beverages</div>
                   </div>
                 </data>
@@ -639,7 +653,7 @@ export const NutritionAnalysis: React.FC = () => {
                       "warp " + (currentCategory == 'Processed' ? "act-warp" : "")
                     }
                   >
-                    <div className="category-icon"></div>
+                    <div className="category-icon" style={{background: "url(" + processed_icon + ") no-repeat center center", backgroundSize: 'contain'}}></div>
                     <div className="category-text">Processed</div>
                   </div>
                 </data>
