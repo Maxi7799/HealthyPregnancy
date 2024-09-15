@@ -37,7 +37,7 @@ export const ServiceList: React.FC = () => {
       text: "Find your recommended nutrition during your pregnancy and generate your own recipes.",
       buttonText: "Explore",
       imgUrl: img3,
-      link: "",
+      link: "/nutrition-analysis",
     },
     {
       title: "Get Healthier through Exercises",
