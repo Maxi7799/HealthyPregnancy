@@ -9,7 +9,9 @@ import { DataInsight } from "../src/view/dataInsight/index";
 import { Chapter } from "../src/view/chapter/index";
 import { Login } from "../src/view/login";
 import { RiskAssessment } from "../src/view/riskAssessment";
-import { NutritionAnalysis } from '../src/view/nutritionAnalysis'
+import { NutritionAnalysis } from "../src/view/nutritionAnalysis";
+import { Recipe } from "../src/view/recipe";
+import { RecipeResult } from "../src/view/recipe-result";
 import React from "react";
 
 const MainRouter: React.FC = () => {
@@ -27,6 +29,8 @@ const MainRouter: React.FC = () => {
         <Route path="/chapter" element={<Chapter />} />
         <Route path="/risk-assessment" element={<RiskAssessment />} />
         <Route path="/nutrition-analysis" element={<NutritionAnalysis />} />
+        <Route path="/recipe" element={<Recipe />} />
+        <Route path="/recipe-result" element={<RecipeResult />} />
       </Routes>
     </>
   );

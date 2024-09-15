@@ -1,0 +1,66 @@
+.recipe-result {
+    width: 90%;
+    border: 1px solid #000;
+    background-color: #FEFDFE;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-Schedule {
+    text-align: center;
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.recipe-result .arrow {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+.recipe-result .arrow a {
+    color: #000;
+}
+
+.recipe-items {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.recipe-items-card {
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 0px 0px 0px 20px;
+    position: relative;
+}
+
+.card1 {
+    background: linear-gradient(to bottom right, #7B7168, #B4DBFF);
+}
+
+.card2 {
+    background: linear-gradient(to bottom right, #797979, #E3A973);
+}
+
+.card3 {
+    background: linear-gradient(to bottom right, #FF6B95, #FFC796);
+}
+
+.card4 {
+    background: linear-gradient(to bottom right, #DE8500, #FFF6A0);
+}
+
+.card-label {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}

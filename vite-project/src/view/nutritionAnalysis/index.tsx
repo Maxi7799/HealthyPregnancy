@@ -3,6 +3,7 @@ import { Header } from "../../components/header/header.tsx";
 import { Input, Select, Space } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 import { rootAddress } from '../../../env.tsx'
+import { Link } from 'react-router-dom'
 
 import "./index.css";
 import { useEffect, useState } from "react";
@@ -220,7 +221,7 @@ export const NutritionAnalysis: React.FC = () => {
         >
           Recommendation
         </div>
-        {/* <div className="button-item">Recipes</div> */}
+        <div className="button-item"><Link to="/recipe" style={{color: "#000"}}>Recipes</Link></div>
       </div>
       {currentPage == "Nutrition Analysis" ? (
         <>
