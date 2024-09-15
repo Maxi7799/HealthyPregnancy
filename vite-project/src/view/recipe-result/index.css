@@ -32,12 +32,13 @@
 }
 
 .recipe-items-card {
-    height: 200px;
-    width: 80%;
+    min-height: 200px;
+    width: 90%;
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 0px 0px 0px 20px;
     position: relative;
+    padding: 80px 20px;
 }
 
 .card1 {
@@ -63,4 +64,14 @@
     position: absolute;
     left: 10px;
     top: 20px;
+}
+
+.card-item {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: ; */
+}
+
+.card-item .recipe-list-item {
+    margin-bottom: 10px;
 }
