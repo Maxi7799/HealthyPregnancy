@@ -8,7 +8,6 @@ Edamam_URL = "https://api.edamam.com"
 def get_recom_recipe_data(meal_time):
 
     meal_list = [meal_time]
-    print(meal_list)
     params = {
         'type': "public",
         'app_id': "82874fb9",

@@ -5,6 +5,7 @@ from sim.data_model.data_interface.get_recipe import get_recom_recipe_data
 
 recipe = NinjaAPI(version="5.0.0")
 
+
 class RecommRecipeDataSchema(Schema):
     meal_time: str
 
@@ -24,6 +25,8 @@ def get_recommended_recipe(request, payload: RecommRecipeDataSchema):
         'recipe_name': '',
 
         'food_picture': '',
+
+        'calories_digits': 0,
 
         'protein_digits': 0,
         'protein_unit': '',
@@ -55,40 +58,61 @@ def get_recommended_recipe(request, payload: RecommRecipeDataSchema):
 
     index = 0
     for recipe in recipes:
-        
+
         output_element['recipe_index'] = index
         index += 1
 
         output_element['recipe_name'] = recipe['recipe'].get('label', '')
-        
+
         output_element['food_picture'] = recipe['recipe'].get('image', '')
 
-        output_element['protein_digits'] = recipe['recipe'].get('totalNutrients', {}).get('PROCNT', {}).get('quantity', 0)
-        output_element['protein_unit'] = recipe['recipe'].get('totalNutrients', {}).get('PROCNT', {}).get('unit', '')
+        output_element['calories_digits'] = recipe['recipe'].get('calories', 0)
+        
 
-        output_element['fat_digits'] = recipe['recipe'].get('totalNutrients', {}).get('FAT', {}).get('quantity', 0)
-        output_element['fat_unit'] = recipe['recipe'].get('totalNutrients', {}).get('FAT', {}).get('unit', '')
+        output_element['protein_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('PROCNT', {}).get('quantity', 0)
+        output_element['protein_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('PROCNT', {}).get('unit', '')
 
-        output_element['carb_digits'] = recipe['recipe'].get('totalNutrients', {}).get('CHOCDF', {}).get('quantity', 0)
-        output_element['carb_unit'] = recipe['recipe'].get('totalNutrients', {}).get('CHOCDF', {}).get('unit', '')
+        output_element['fat_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('FAT', {}).get('quantity', 0)
+        output_element['fat_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('FAT', {}).get('unit', '')
 
-        output_element['cholesterol_digits'] = recipe['recipe'].get('totalNutrients', {}).get('CHOLE', {}).get('quantity', 0)
-        output_element['cholesterol_unit'] = recipe['recipe'].get('totalNutrients', {}).get('CHOLE', {}).get('unit', '')
+        output_element['carb_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('CHOCDF', {}).get('quantity', 0)
+        output_element['carb_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('CHOCDF', {}).get('unit', '')
 
-        output_element['sodium_digits'] = recipe['recipe'].get('totalNutrients', {}).get('NA', {}).get('quantity', 0)
-        output_element['sodium_unit'] = recipe['recipe'].get('totalNutrients', {}).get('NA', {}).get('unit', '')
+        output_element['cholesterol_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('CHOLE', {}).get('quantity', 0)
+        output_element['cholesterol_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('CHOLE', {}).get('unit', '')
 
-        output_element['calcium_digits'] = recipe['recipe'].get('totalNutrients', {}).get('CA', {}).get('quantity', 0)
-        output_element['calcium_unit'] = recipe['recipe'].get('totalNutrients', {}).get('CA', {}).get('unit', '')
+        output_element['sodium_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('NA', {}).get('quantity', 0)
+        output_element['sodium_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('NA', {}).get('unit', '')
 
-        output_element['magnesium_digits'] = recipe['recipe'].get('totalNutrients', {}).get('MG', {}).get('quantity', 0)
-        output_element['magnesium_unit'] = recipe['recipe'].get('totalNutrients', {}).get('MG', {}).get('unit', '')
+        output_element['calcium_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('CA', {}).get('quantity', 0)
+        output_element['calcium_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('CA', {}).get('unit', '')
 
-        output_element['potassium_digits'] = recipe['recipe'].get('totalNutrients', {}).get('K', {}).get('quantity', 0)
-        output_element['potassium_unit'] = recipe['recipe'].get('totalNutrients', {}).get('K', {}).get('unit', '')
+        output_element['magnesium_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('MG', {}).get('quantity', 0)
+        output_element['magnesium_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('MG', {}).get('unit', '')
 
-        output_element['iron_digits'] = recipe['recipe'].get('totalNutrients', {}).get('FE', {}).get('quantity', 0)
-        output_element['iron_unit'] = recipe['recipe'].get('totalNutrients', {}).get('FE', {}).get('unit', '')
+        output_element['potassium_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('K', {}).get('quantity', 0)
+        output_element['potassium_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('K', {}).get('unit', '')
+
+        output_element['iron_digits'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('FE', {}).get('quantity', 0)
+        output_element['iron_unit'] = recipe['recipe'].get(
+            'totalNutrients', {}).get('FE', {}).get('unit', '')
 
         output['recipes'].append(output_element)
 
