@@ -20,7 +20,7 @@ const FirstVisitPieChart: React.FC<PieChartProps> = ({ data }) => {
           data: data.pie_chart.map((item, index) => ({
             id: index,
             value: item.value,
-            label: `Group of "${item.duration}" has ${item.percent}% of people`,
+            label: `Group of "${item.duration}" accounts for ${item.percent}%`,
           })),
           innerRadius: 20,
           outerRadius: 150,

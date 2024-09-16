@@ -64,7 +64,7 @@ export default function HorizontalBarChart({ data }: BarProps) {
           color: "#333",
         }}
       >
-        population
+        number of people
       </div>
     </div>
   );

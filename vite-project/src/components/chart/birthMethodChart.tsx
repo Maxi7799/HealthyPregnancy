@@ -20,7 +20,7 @@ const birthMethodChart: React.FC<PieChartProps> = ({ data }) => {
           data: data.pie_chart.map((item, index) => ({
             id: index,
             value: item.value,
-            label: `${item.method} has ${item.percent}% of people`,
+            label: `${item.method} accounts for ${item.percent}%`,
           })),
           innerRadius: 20,
           outerRadius: 150,

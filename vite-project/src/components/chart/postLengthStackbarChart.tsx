@@ -75,7 +75,7 @@ export default function PostLengthStackBarChart({ data }: { data: any }) {
           color: "#333",
         }}
       >
-        Population
+        Number of People
       </div>
       <Chart
         options={{
