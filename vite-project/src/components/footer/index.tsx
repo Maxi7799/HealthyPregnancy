@@ -23,38 +23,22 @@ export const Footer: React.FC = () => {
 
         <div className="footer-item">
           <div className="footer-item-one">Our Service</div>
-          <div className="footer-item-other">Data Insights</div>
-          <div className="footer-item-other">Pregnancy Education</div>
-          <div className="footer-item-other">Risk Assessment</div>
-          <div className="footer-item-other">Nutritional Advice</div>
-          <div className="footer-item-other">Pregnancy Exercises</div>
+          <Link to="/dataInsight" className="footer-item-other">
+            Data Insights
+          </Link>
+          <Link to="/educational" className="footer-item-other">
+            Pregnancy Education
+          </Link>
+          <Link to="/risk-assessment" className="footer-item-other">
+            Risk Assessment
+          </Link>
+          <Link to="/nutrition-analysis" className="footer-item-other">
+            Nutritional Advice
+          </Link>
+          <Link to="/home" className="footer-item-other">
+            Pregnancy Exercises
+          </Link>
         </div>
-        {/* <div className="footer-center">
-          <div className="footer-column">
-            <h3>Our Health</h3>
-            <p>Education for Risk Reducing</p>
-            <p>Education for food health</p>
-            <p>Data Insight Australia</p>
-            <p>See if Food Health</p>
-            <p>Exercise Instructions</p>
-          </div>
-          <div className="footer-column">
-            <h3>Programs and Projects</h3>
-            <p>Identify Healthy Food</p>
-            <p>Food nutrition Calculator</p>
-            <p>Identify Risky Area</p>
-            <p>Check Your Action</p>
-          </div>
-        </div> */}
-        {/* <div className="footer-right">
-          <h3>Contact Us</h3>
-          <p>Privacy Statement</p>
-          <p>
-            <a href="#terms-of-use" className="clickable">
-              Terms of Use
-            </a>
-          </p>
-        </div> */}
       </div>
 
       <div className="footer-bottom">

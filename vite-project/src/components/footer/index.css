@@ -7,7 +7,7 @@
   align-items: center;
   font-family: Arial, sans-serif;
   position: relative;
-  height: 27vw;
+  height: 20vw;
 }
 
 
@@ -19,10 +19,10 @@
   justify-content: left;
 }
 
+
 .footer-item {
   text-align: left;
-
-  margin-left: 10vw;
+  margin-left: 8vw;
 }
 
 .footer-item-one {
@@ -34,14 +34,21 @@
 }
 
 .footer-item-other {
+  display: block; /* This makes sure each item takes its own line */
+  margin: 0.5vw 0; /* Adds a small margin between items */
+  font-size: 1vw; /* You can adjust the size as needed */
   color: #fff;
-  font-family: "Inria Sans";
-  font-size: 1.6vw;
-  font-style: normal;
-  font-weight: 400;
-  padding: 0.2vw
+  cursor: pointer;
 }
 
+.footer-item-other:hover {
+  color: #5f58eb; /* Adds hover effect for interactivity */
+}
+
+.footer-item-other a {
+  text-decoration: none;
+  color: inherit;
+}
 .footer-left {
   /* flex: 1; */
   text-align: left;
