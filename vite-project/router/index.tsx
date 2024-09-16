@@ -12,7 +12,7 @@ import { RiskAssessment } from "../src/view/riskAssessment";
 import { NutritionAnalysis } from "../src/view/nutritionAnalysis";
 import { Recipe } from "../src/view/recipe";
 import { RecipeResult } from "../src/view/recipe-result";
-import ScrollToTop from "./ScrollToTop";
+import {ScrollToTop} from "./scrollToTop";
 import React from "react";
 
 const MainRouter: React.FC = () => {
