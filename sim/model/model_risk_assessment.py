@@ -51,7 +51,7 @@ class MaritalStatus(models.Model):
 
 
 class RegionCase(models.Model):
-    country_of_birth = models.CharField(max_length=255)
+    major_groups = models.CharField(max_length=255)
     number = models.IntegerField()
     per_cent = models.FloatField()
 
@@ -65,3 +65,29 @@ class Remoteness(models.Model):
 
     class Meta:
         db_table = 'remoteness'
+
+
+class Sociecon(models.Model):
+    factor = models.CharField(max_length=255)
+    choice = models.CharField(max_length=255)
+    odds = models.FloatField()
+
+    class Meta:
+        db_table = 'sociecon'
+
+
+class DirectCause(models.Model):
+    factor = models.CharField(max_length=255)
+    choice = models.CharField(max_length=255)
+    odds = models.FloatField()
+
+    class Meta:
+        db_table = 'direct_cause'
+
+
+class CountryGroup(models.Model):
+    major_groups = models.CharField(max_length=255)
+    country = models.CharField(max_length=255)
+
+    class Meta:
+        db_table = 'country_groups'
