@@ -1,4 +1,4 @@
-from sim.model.model_risk_assessment import Age, CountryOfBirth, Education, Employment, Income, MaritalStatus, RegionCase, Remoteness
+from sim.model.model_risk_assessment import Age, CountryOfBirth, Education, Employment, Income, MaritalStatus, RegionCase, Remoteness, Sociecon, DirectCause, CountryGroup
 import pandas as pd
 
 
@@ -52,15 +52,42 @@ def get_marital_status():
 
 def get_region_case():
     region_cases = RegionCase.objects.all()
-    data = [{"country_of_birth": region_case.country_of_birth, "number": region_case.number,
+    data = [{"major_groups": region_case.major_groups, "number": region_case.number,
              "per_cent": region_case.per_cent} for region_case in region_cases]
     df_region_cases = pd.DataFrame(data)
     return df_region_cases
 
 
-def remoteness():
+def get_remoteness():
     remotenesses = Remoteness.objects.all()
     data = [{"remoteness": remoteness.remoteness, "odds": remoteness.odds}
             for remoteness in remotenesses]
     df_remotenesses = pd.DataFrame(data)
     return df_remotenesses
+
+
+def get_sociecon():
+    sociecons = Sociecon.objects.all()
+    data = [{"factor": sociecon.factor, "choice": sociecon.choice,
+             "odds": sociecon.odds} for sociecon in sociecons]
+
+    df_sociecons = pd.DataFrame(data)
+    return df_sociecons
+
+
+def get_direct_cause():
+    direct_causes = DirectCause.objects.all()
+    data = [{"factor": direct_cause.factor, "choice": direct_cause.choice,
+             "odds": direct_cause.odds} for direct_cause in direct_causes]
+
+    df_direct_cause = pd.DataFrame(data)
+    return df_direct_cause
+
+
+def get_country_group():
+    country_groups = CountryGroup.objects.all()
+    data = [{"major_groups": country_group.major_groups,
+             "country": country_group.country} for country_group in country_groups]
+
+    df_country_groups = pd.DataFrame(data)
+    return df_country_groups

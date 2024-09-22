@@ -90,4 +90,4 @@ class CountryGroup(models.Model):
     country = models.CharField(max_length=255)
 
     class Meta:
-        db_table = 'country_groups'
+        db_table = 'country_group'
