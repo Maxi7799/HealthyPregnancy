@@ -8,6 +8,9 @@ import { Provider } from "react-redux";
 import global_en from "./translation/en/global.json";
 import global_zh from "./translation/zh/global.json";
 import global_id from "./translation/id/global.json";
+import global_fil from "./translation/fil/global.json";
+import global_ms from "./translation/ms/global.json";
+import global_vi from "./translation/vi/global.json";
 import i18next from "i18next";
 import "./index.css";
 import { Global } from "@emotion/react";
@@ -26,6 +29,16 @@ i18next.init({
     },
     id:{
       global: global_id
+
+    },
+    fil:{
+      global: global_fil
+    },
+    ms:{
+      global: global_ms
+    },
+    vi:{
+      global: global_vi
     }
   }
 })

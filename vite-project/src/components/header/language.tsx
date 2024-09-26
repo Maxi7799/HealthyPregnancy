@@ -25,7 +25,22 @@ export function Language() {
     {
       simple: "id",
       flag: FR,
-      country: "Indonesian",
+      country: "Bahasa Indonesia",
+    },
+    {
+      simple: "fil",
+      flag: FR,
+      country: "Filipino",
+    },
+    {
+      simple: "vi",
+      flag: FR,
+      country: "Vietnamese",
+    },
+    {
+      simple: "ms",
+      flag: FR,
+      country: "Malaysian",
     },
   ];
 
@@ -50,7 +65,7 @@ export function Language() {
                   className="l-row"
                   onClick={() => handleChangeLanguage(item.simple)}
                 >
-                  <div className="simple">{item.simple}</div>
+                  {/* <div className="simple">{item.simple}</div> */}
                   <div className="flag">
                     <img src={item.flag} alt="" />
                   </div>
