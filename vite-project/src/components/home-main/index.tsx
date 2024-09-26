@@ -4,13 +4,18 @@ import { Link } from "react-router-dom";
 // import leftImage from "../../assets/home-sec.jpg";
 // import { Link } from "react-router-dom";
 import homeImg from "../../assets/home-main.png";
+import { useTranslation } from "react-i18next";
 
 export const HomeMain: React.FC = () => {
+
+  const [t] = useTranslation("global");
+
   return (
     <>
       <div className="home-main">
         <div className="main-text">
-          Pregnancy Health Risk Assessment Questionnaire
+          {/* Pregnancy Health Risk Assessment Questionnaire */}
+          {t("home.hero")}
         </div>
         <div className="home-welcome">welcome</div>
         <div className="home-welcome home-text">
