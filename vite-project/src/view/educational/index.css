@@ -1,138 +1,133 @@
-.topic-header {
-  width: 100%;
-  height: 150px;
-  border-bottom: 2px solid #000;
-  line-height: 150px;
-  font-weight: 600;
-  font-size: 36px;
-  box-sizing: border-box;
-}
-
-.topic-footer {
-  width: 100%;
-  height: 100px;
-}
-
-.ed-main {
-  width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
   height: 100%;
+}
+
+.pregnancy-education {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.edu-main-item {
-  width: calc(100% / 3);
-  height: 50%;
-  /* border: 2px solid rgb(230, 114, 109); */
-  border-radius: 10px;
-  /* cursor: pointer; */
-  box-sizing: border-box;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.edu-main-item a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* .edu-main-item:hover {
-  background-color: rgb(230, 114, 109);
-  .edu-main-item-span {
-    color: #fff;
-  }
-
-} */
-
-.ed-left {
-  width: 40%;
-  background-color: rgb(45, 49, 63);
-  height: 100%;
-  color: #fff;
-  padding: 100px 30px 100px 30px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  .Education {
-    font-size: 90px;
-    font-weight: 600;
-  }
-  .sun-text {
-    font-size: 50px;
-    font-weight: 600;
-    text-align: left;
-  }
-}
-
-.ed-right {
-  width: 60%;
-  /* background-color: #000; */
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(247, 234, 233);
-}
-
-.edu-item {
-  /* border: 1px solid #000; */
-  width: 75%;
-  height: 85%;
-  background-color: #fff;
-  position: relative;
-  a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.edu-image-item {
-  width: 100%;
-  height: 40%;
-  display: block;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  background-color: #f8f8f8;
+  color: #2c5665;
   overflow: hidden;
-  background-size: cover !important;
-  img {
-    width: 100%;
-    /* transform-origin: center center; */
-    /* transform:translateY(-50%); */
+}
+
+.title-divider {
+  border: none;
+  border-top: 10px solid #3c6e71;
+  margin: 20px 0;
+  width: 50px;
+}
+
+.pregnancy-education__text {
+  flex: 1;
+  padding: 40px;
+  padding-left: 60px;
+  background-color: #efe9db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.pregnancy-education__text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px; /* Increased gap between title and body */
+  color: #2c5665;
+}
+
+.pregnancy-education__text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.pregnancy-education__grid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Adjust both row and column gaps */
+  row-gap: 60px; /* Specifically increase the gap between rows */
+  padding: 0 60px; /* Horizontal padding around the grid */
+  justify-content: center;
+  align-self: center; /* Center the grid vertically within the container */
+}
+
+.module-card {
+  background-color: #3c6e71; /* Set background color for the card */
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 280px; /* Set fixed width for the card */
+  height: auto; /* Allow height to adjust automatically */
+}
+
+.module-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.module-card__image {
+  background-color: #3c6e71; /* Match background with the title */
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 0; /* Remove margin between image and title */
+  display: block;
+}
+
+.module-card__title {
+  background-color: #3c6e71; /* Ensure background color matches the image */
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  margin: 0; /* Remove any extra margins */
+}
+
+.module-card:hover .module-card__image {
+  background-color: #1f3b4d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1260px) {
+  .pregnancy-education__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px; /* Reduce padding to prevent overflow */
+    gap: 20px; /* Reduce gap between cards on smaller screens */
+    row-gap: 40px; /* Reduce the row gap slightly on smaller screens */
   }
 }
 
-.edu-item-bottom {
-  height: 60%;
-  padding: 12px;
-  box-sizing: border-box;
-}
+@media (max-width: 1000px) {
+  .title-divider {
+    border: none;
+    border-top: 10px solid #3c6e71;
+    margin: 20px auto;
+    width: 200px;
+  }
+  
+  .pregnancy-education {
+    flex-direction: column; /* Stack text and grid vertically */
+  }
 
-.edu-main-item-span {
-  color: #444;
-  text-align: left;
-  font-size: 18px;
-  font-weight: 600;
-}
+  .pregnancy-education__text {
+    text-align: center;
+    order: -1; /* Move the text area to the top */
+    width: 100%; /* Ensure it takes the full width */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
 
-.edu-main-item-text {
-  font-size: 14px;
-  text-align: left;
-  color: #444;
-  margin-top: 10px;
-}
+  .pregnancy-education__grid {
+    grid-template-columns: 1fr; /* Single column layout for cards */
+    gap: 20px; /* Reduce gap for better fit on small screens */
+    row-gap: 30px;
+    padding: 20px; /* Adjust padding for better fit */
+  }
 
-.item-to {
-  color: #444;
-  font-size: 10px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  word-break: normal;
+  .module-card {
+    width: 100%; /* Ensure cards take full width */
+  }
 }
