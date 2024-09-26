@@ -29,6 +29,7 @@ i18next.init({
     },
     id:{
       global: global_id
+
     },
     fil:{
       global: global_fil
