@@ -3,6 +3,7 @@
     "message": "hello"
   },
   "home": {
-    "body": "A store of messages"
+    "body": "A store of messages",
+    "hero": "test for translation"
   }
 }
