@@ -3,6 +3,7 @@
     "message": "id"
   },
   "home": {
-    "body": "id"
+    "body": "id",
+    "hero": "id"
   }
 }
