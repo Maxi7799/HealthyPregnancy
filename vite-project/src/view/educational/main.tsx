@@ -15,7 +15,7 @@ const modules = [
   { imageSrc: pre_img3, title: "Common Health Risks" },
   { imageSrc: pre_img4, title: "Nutritional Advice" },
   { imageSrc: pre_img5, title: "Exercise and Physical Activity" },
-  { imageSrc:pre_img6,  title: "Birth Preparation" },
+  { imageSrc: pre_img6,  title: "Birth Preparation" },
 ];
 
 export const PregnancyEducation: React.FC = () => {

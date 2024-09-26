@@ -50,6 +50,7 @@ body {
   gap: 30px; /* Adjust both row and column gaps */
   row-gap: 60px; /* Specifically increase the gap between rows */
   padding: 0 60px; /* Horizontal padding around the grid */
+  font-weight: bold;
   justify-content: center;
   align-self: center; /* Center the grid vertically within the container */
 }
@@ -92,7 +93,7 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1260px) {
+@media (max-width: 1360px) {
   .pregnancy-education__grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 20px; /* Reduce padding to prevent overflow */

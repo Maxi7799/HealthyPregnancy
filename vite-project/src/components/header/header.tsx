@@ -2,7 +2,6 @@ import "./header.css";
 import React from "react";
 import { Language } from "./language";
 import { Link } from "react-router-dom";
-import icon from "../../assets/f-icon.png";
 import { HeaderIcon } from "./headerIcon";
 
 export const Header: React.FC = () => {
