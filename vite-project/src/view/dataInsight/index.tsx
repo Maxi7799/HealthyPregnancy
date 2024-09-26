@@ -8,6 +8,7 @@ import BirthMethodChart from "../../components/chart/birthMethodChart";
 import PostLengthStackBarChart from "../../components/chart/postLengthStackbarChart";
 import { Footer } from "../../components/footer";
 import { rootAddress } from "../../../env";
+import { useTranslation } from "react-i18next";
 
 export const DataInsight: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("healthrisk");
@@ -16,6 +17,8 @@ export const DataInsight: React.FC = () => {
   const [birthMethodData, setBirthMethodData] = useState<any>(null);
   const [cReasonData, setCReasonData] = useState<any>(null);
   const [postLengthData, setPostLengthData] = useState<any>(null);
+
+  const [t] = useTranslation("global");
 
   // Function to fetch data for a specific chart
   const fetchData = async (chartType: string) => {
@@ -68,8 +71,9 @@ export const DataInsight: React.FC = () => {
       <Header />
       <div className="desc">
         <h1>
-          Pregnancy Data Insights: Empowering Women’s Health Through Data
-          Analytics
+          {/* Pregnancy Data Insights: Empowering Women’s Health Through Data
+          Analytics */}
+          {t("home.body")}
         </h1>
         <p>
           This section provides essential information for new immigrants in

@@ -1,0 +1,8 @@
+{
+  "header": {
+    "message": "hello"
+  },
+  "home": {
+    "body": "A store of messages"
+  }
+}

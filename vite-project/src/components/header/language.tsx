@@ -1,10 +1,8 @@
 import { GlobalOutlined, CaretDownOutlined } from "@ant-design/icons";
-import RO from "../../assets/RO.png";
-import ES from "../../assets/ES.png";
-import UK from "../../assets/UK.png";
 import US from "../../assets/US.png";
 import DE from "../../assets/DE.png";
 import FR from "../../assets/FR.png";
+import { useTranslation } from "react-i18next";
 
 type listType = {
   simple: string;
@@ -15,36 +13,27 @@ type listType = {
 export function Language() {
   const list: Array<listType> = [
     {
-      simple: "RO",
-      flag: RO,
-      country: "Romana",
-    },
-    {
-      simple: "ES",
-      flag: ES,
-      country: "Espana",
-    },
-    {
-      simple: "UK",
-      flag: UK,
-      country: "United Kingdom",
-    },
-    {
-      simple: "US",
+      simple: "en",
       flag: US,
-      country: "United States",
+      country: "English",
     },
     {
-      simple: "DE",
+      simple: "zh",
       flag: DE,
-      country: "Deutschland",
+      country: "Chinese",
     },
     {
-      simple: "FR",
+      simple: "id",
       flag: FR,
-      country: "France",
+      country: "Indonesian",
     },
   ];
+
+  const [, i18n] = useTranslation('global');
+
+  const handleChangeLanguage = (lang:string) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <>
@@ -57,7 +46,10 @@ export function Language() {
             <div className="angel"></div>
             {list.map((item: listType) => {
               return (
-                <div className="l-row">
+                <div
+                  className="l-row"
+                  onClick={() => handleChangeLanguage(item.simple)}
+                >
                   <div className="simple">{item.simple}</div>
                   <div className="flag">
                     <img src={item.flag} alt="" />
