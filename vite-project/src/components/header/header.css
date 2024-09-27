@@ -1,103 +1,90 @@
+/* General Styles */
 .header-main {
   width: 100%;
-  height: 8vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 2px solid #2C5665;
-  background-color: rgba(254, 212, 213, 0.159);
-}
-
-.header-main {
-  width: 100%;
-  height: 5vw;
+  height: 70px; /* Fixed height */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #2C5665;
   background-color: #FAFAFA;
+  border-bottom: 1px solid #2C5665;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
+/* Header Left Section */
 .header-left {
-  color: #2C5665;
-  font-family: Alata;
-  font-size: 1.4vw;
-  font-style: normal;
-  text-align: left;
-
-  padding-left: 5vw;
-  display: flex;
-}
-
-.header-icon {
-  width: 5vw;
-  height: 5vw;
-}
-
-.header-nav {
-  padding: 0px 1vw 0px 1vw;
-  font-size: 1.3vw;
-  color: #2C5665;
-  cursor: pointer;
-}
-.header-nav a {
-  color: #2C5665;
-}
-
-
-.header-left-text {}
-
-.header-right {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  font-size: 15px; /* Consistent font size */
+  color: #2C5665;
 }
 
 .icon-main {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .i-left {
-  margin-right: 1vw;
+  margin-right: 0px; /* Space between icon and text */
+  margin-top: 10px;
 }
 
+.i-icon {
+  width: 80px; /* Increased size */
+  height: 80px; /* Increased size */
+}
+
+/* Adjusted Icon Section */
 .i-right {
-  text-align: left;
-}
-
-.nav-main {
   display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1; /* Reduce line height to minimize space */
 }
 
-.nav-item {
-  padding: 3vw;
-  font-size: 1.6vw;
-  font-weight: 600;
-  cursor: pointer;
+.i-right div:first-child {
+  font-size: 1.2em;
+  margin-bottom: 2px; /* Reduce space between "Healthy" and "Pregnancy" */
 }
 
-.nav-item a {
-  color: #000;
-  font-weight: 600;
+.i-right div:last-child {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
-/* <GlobalOutlined /> */
+/* Header Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+}
 
+.header-nav {
+  margin: 0 15px; /* Space between nav items */
+  font-size: 16px;
+  color: #2C5665;
+}
+
+.header-nav a {
+  color: #2C5665;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #4392c4;
+}
+
+/* Language Dropdown */
 .language-main {
-  /* padding: 0.5vw; */
-  /* background-color: rgb(254, 212, 213, 0.074); */
-  /* padding: 1vw 0vw 1vw 0vw; */
   position: relative;
 }
 
 .language-box {
-  /* background-color: rgb(254, 212, 213, 0.074); */
-  padding: 1vw 2vw 1vw 2vw;
+  padding: 10px 20px;
   cursor: pointer;
   color: #000000;
-  font-size: 1.8vw;
+  font-size: 18px;
 }
 
 .language-main:hover .language-other {
@@ -107,32 +94,32 @@
 .language-other {
   z-index: 100;
   position: absolute;
-  /* width: 100%; */
   top: 100%;
-  right: 0px;
+  right: 0;
   background-color: rgba(76, 82, 102, 0.213);
-  padding: 1vw;
-  /* box-sizing: border-box; */
   display: none;
 }
 
 .angel {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 15px;
+  height: 15px;
   background: #fff;
   transform: rotate(45deg);
-  top: -0.8vw;
-  /* left: 0; */
-  right: 3vw;
+  top: -8px;
+  right: 30px;
   margin: 0 auto;
   position: absolute;
-  /* z-index: 100; */
 }
 
 .white-box {
-  background-color: #fff;
+  background-color: rgb(250, 250, 250);
   position: relative;
   width: max-content;
+  border: 1px solid #000;
+}
+
+.country {
+  color: #2C5665;
 }
 
 .l-row {
@@ -140,9 +127,9 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 0.5vw 2vw 0.5vw 2vw;
+  padding: 5px 20px;
   cursor: pointer;
-  font-size: 1.4vw;
+  font-size: 14px;
 }
 
 .l-row:hover {
@@ -150,16 +137,15 @@
 }
 
 .simple {
-  width: 2vw;
+  width: 20px;
 }
 
 .flag {
-  width: 2vw;
-  height: 2vw;
+  width: 20px;
+  height: 20px;
   background-color: lightsalmon;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  border-radius: 1vw;
+  margin: 0 5px;
+  border-radius: 10px;
   text-align: center;
   overflow: hidden;
 }
@@ -175,22 +161,75 @@
 }
 
 .Nutrition-row {
-  /* height: 30px;
-  line-height: 30px; */
   font-size: 18px;
   cursor: pointer;
-
 }
 
 .Nutrition-row a {
- color: #666;
- display: inline-block;
- width: 100%;
- height: 100%;
- /* background: #2C5665; */
- padding: 10px 30px 10px 30px;
+  color: #666;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px;
+  text-decoration: none;
 }
 
-.Nutrition-row:hover{
-  background-color: rgb(214, 227, 239)
+.Nutrition-row:hover {
+  background-color: rgb(214, 227, 239);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .header-main {
+    flex-direction: column;
+    height: auto;
+    /* padding: 10px; */
+  }
+
+  .header-left {
+    /* margin-bottom: 10px; */
+    justify-content: space-between; /* Aligns brand and hamburger menu */
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .header-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-right.show {
+    display: flex;
+  }
+
+  .header-nav {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .i-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .i-right div:first-child {
+    font-size: 1.1em; /* Adjust for smaller screens */
+  }
+
+  .i-right div:last-child {
+    font-size: 1.3em; /* Adjust for smaller screens */
+  }
+}
+
+/* Hide the Hamburger Menu on Larger Screens */
+@media (min-width: 900px) {
+  .hamburger-menu {
+    display: none;
+  }
 }
