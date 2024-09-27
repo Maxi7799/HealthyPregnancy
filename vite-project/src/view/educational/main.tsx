@@ -6,24 +6,38 @@ import pre_img3 from "../../assets/pregnant3.jpg";
 import pre_img4 from "../../assets/pregnant4.jpg";
 import pre_img5 from "../../assets/pregnant5.jpg";
 import pre_img6 from "../../assets/pregnant6.jpg";
-import "./index.css"
-
+import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 const modules = [
-  { imageSrc: pre_img1, title: "Australian Healthcare System" },
-  { imageSrc: pre_img2, title: "Optimising Pregnancy Care" },
-  { imageSrc: pre_img3, title: "Common Health Risks" },
-  { imageSrc: pre_img4, title: "Nutritional Advice" },
-  { imageSrc: pre_img5, title: "Exercise and Physical Activity" },
-  { imageSrc: pre_img6,  title: "Birth Preparation" },
+  {
+    imageSrc: pre_img1,
+    title: "Australian Healthcare System",
+    path: "/module1",
+  },
+  { imageSrc: pre_img2, title: "Optimising Pregnancy Care", path: "/module2" },
+  { imageSrc: pre_img3, title: "Common Health Risks", path: "/module3" },
+  { imageSrc: pre_img4, title: "Nutritional Advice", path: "/module4" },
+  {
+    imageSrc: pre_img5,
+    title: "Exercise and Physical Activity",
+    path: "/module5",
+  },
+  { imageSrc: pre_img6, title: "Birth Preparation", path: "/module6" },
 ];
 
 export const PregnancyEducation: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (path: string) => {
+    navigate(path);
+  };
+
   return (
     <div className="pregnancy-education">
       <div className="pregnancy-education__text">
         <h1>Pregnancy Education</h1>
-        <hr className="title-divider"></hr>
+        <hr className="title-divider" />
         <p>
           Whether you are planning to or currently pregnant, let’s leverage your
           knowledge on pregnancy through these interactive modules to achieve
@@ -43,10 +57,12 @@ export const PregnancyEducation: React.FC = () => {
             key={index}
             imageSrc={module.imageSrc}
             title={module.title}
+            onClick={() =>
+              handleCardClick(module.path)
+            } 
           />
         ))}
       </div>
     </div>
   );
 };
-
