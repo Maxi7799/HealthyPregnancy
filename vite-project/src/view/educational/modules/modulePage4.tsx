@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
+import handleLinkClick from "./slowLinkClick";
+
+
 
 export const ModulePage4: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -62,16 +65,36 @@ export const ModulePage4: React.FC = () => {
                   {expandedSection === "Nutritional Advice" && (
                     <ul className="submenu">
                       <li>
-                        <a href="#section1">1.1. Topic One</a>
+                        <a
+                          href="#section1"
+                          onClick={(e) => handleLinkClick(e, "#section1")}
+                        >
+                          1.1. Topic One
+                        </a>
                       </li>
                       <li>
-                        <a href="#section2">1.2. Topic Two</a>
+                        <a
+                          href="#section2"
+                          onClick={(e) => handleLinkClick(e, "#section2")}
+                        >
+                          1.2. Topic Two
+                        </a>
                       </li>
                       <li>
-                        <a href="#section3">1.3. Topic Three</a>
+                        <a
+                          href="#section3"
+                          onClick={(e) => handleLinkClick(e, "#section3")}
+                        >
+                          1.3. Topic Three
+                        </a>
                       </li>
                       <li>
-                        <a href="#quiz">1.4. Knowledge Checker</a>
+                        <a
+                          href="#quiz"
+                          onClick={(e) => handleLinkClick(e, "#quiz")}
+                        >
+                          1.4. Knowledge Checker
+                        </a>
                       </li>
                     </ul>
                   )}
@@ -125,8 +148,12 @@ export const ModulePage4: React.FC = () => {
           </section>
 
           <div className="navigation-buttons">
-            <button className="prev-button">Previous Chapter</button>
-            <button className="next-button">Next Chapter</button>
+            <Link to="/module3">
+              <button className="prev-button">Previous Chapter</button>
+            </Link>
+            <Link to="/module5">
+              <button className="next-button">Next Chapter</button>
+            </Link>
           </div>
         </main>
       </div>
