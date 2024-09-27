@@ -16,7 +16,7 @@ html, body {
 
 /* Sidebar styling */
 .module-sidebar {
-  width: 300px;
+  width: 350px;
   background-color: #EFE9DB;
   padding: 20px;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
@@ -26,8 +26,9 @@ html, body {
 .back-button {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-top:5px;
+  margin-bottom: 50px;
+  font-size: 23px;
   text-decoration: none;
   color: #2a4d69;
   font-weight: bold;
@@ -46,9 +47,12 @@ html, body {
 /* Contents Container */
 .contents-container {
   background-color: white; /* White background for the contents and list */
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #000000;
+  margin: 20px;
 }
 
 .module-contents {
@@ -57,10 +61,10 @@ html, body {
 
 .module-contents h3 {
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   color: #2a4d69;
-  text-align: center;
+  text-align: left;
 }
 
 .module-contents ul {
@@ -86,7 +90,8 @@ html, body {
 }
 
 .module-contents li a:hover, .accordion-title:hover {
-  background-color: #d3cfc9;
+  color: #4392c4; 
+  background-color: transparent; 
 }
 
 /* Accordion styles */
@@ -196,7 +201,7 @@ html, body {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .module-page {
     flex-direction: column;
   }

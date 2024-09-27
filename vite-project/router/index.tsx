@@ -17,8 +17,7 @@ import { ModulePage1 } from "../src/view/educational/modules/modulePage1";
 import { ModulePage2 } from "../src/view/educational/modules/modulePage2";
 import { ModulePage3 } from "../src/view/educational/modules/modulePage3";
 import { ModulePage4 } from "../src/view/educational/modules/modulePage4";
-import { ModulePage5 } from "../src/view/educational/modules/modulePage5";
-import { ModulePage6 } from "../src/view/educational/modules/modulePage6";
+
 
 const MainRouter: React.FC = () => {
   return (
@@ -42,8 +41,6 @@ const MainRouter: React.FC = () => {
         <Route path="/module2" element={<ModulePage2 />} />
         <Route path="/module3" element={<ModulePage3 />} />
         <Route path="/module4" element={<ModulePage4 />} />
-        <Route path="/module5" element={<ModulePage5 />} />
-        <Route path="/module6" element={<ModulePage6 />} />
       </Routes>
     </>
   );
