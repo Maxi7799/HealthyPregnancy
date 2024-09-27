@@ -4,13 +4,49 @@ import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 
+const Modal: React.FC<{
+  title: string;
+  content: string;
+  onClose: () => void;
+}> = ({ title, content, onClose }) => {
+  const handleClickOutside = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
+  return (
+    <div className="modal-overlay" onClick={handleClickOutside}>
+      <div className="modal">
+        <button className="close-button" onClick={onClose}>
+          &times;
+        </button>
+        <h3>{title}</h3>
+        <p>{content}</p>
+      </div>
+    </div>
+  );
+};
+
 export const ModulePage1: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
     "Australian Healthcare System"
   );
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+    content: string;
+  } | null>(null);
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);
+  };
+
+  const openModal = (title: string, content: string) => {
+    setModalContent({ title, content });
+  };
+
+  const closeModal = () => {
+    setModalContent(null);
   };
 
   return (
@@ -85,12 +121,21 @@ export const ModulePage1: React.FC = () => {
           </div>
         </aside>
         <main className="module-content">
-          <h2>Module Title</h2>
+          <h2>1. Module Title</h2>
 
           <section id="section1">
             <h3>1.1. Topic One</h3>
             <p>Content for Topic One...</p>
-            <a href="#section1-more" className="details-link">
+            <a
+              href="#section1-more"
+              className="details-link"
+              onClick={() =>
+                openModal(
+                  "Topic One Details",
+                  "Detailed content for Topic One..."
+                )
+              }
+            >
               More Details...
             </a>
           </section>
@@ -98,7 +143,16 @@ export const ModulePage1: React.FC = () => {
           <section id="section2">
             <h3>1.2. Topic Two</h3>
             <p>Content for Topic Two...</p>
-            <a href="#section2-more" className="details-link">
+            <a
+              href="#section2-more"
+              className="details-link"
+              onClick={() =>
+                openModal(
+                  "Topic Two Details",
+                  "Detailed content for Topic Two..."
+                )
+              }
+            >
               More Details...
             </a>
           </section>
@@ -106,7 +160,16 @@ export const ModulePage1: React.FC = () => {
           <section id="section3">
             <h3>1.3. Topic Three</h3>
             <p>Content for Topic Three...</p>
-            <a href="#section3-more" className="details-link">
+            <a
+              href="#section3-more"
+              className="details-link"
+              onClick={() =>
+                openModal(
+                  "Topic Three Details",
+                  "Detailed content for Topic Three..."
+                )
+              }
+            >
               More Details...
             </a>
           </section>
@@ -123,6 +186,13 @@ export const ModulePage1: React.FC = () => {
         </main>
       </div>
       <Footer />
+      {modalContent && (
+        <Modal
+          title={modalContent.title}
+          content={modalContent.content}
+          onClose={closeModal}
+        />
+      )}
     </>
   );
 };
