@@ -1,9 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../src/view/home/index";
-import { About } from "../src/view/about";
 import { ContactUs } from "../src/view/contactUs/index";
-import { Faqs } from "../src/view/faqs";
-import { Testimonial } from "../src/view/testimonial";
 import { Educational } from "../src/view/educational/index";
 import { DataInsight } from "../src/view/dataInsight/index";
 import { Login } from "../src/view/login";
@@ -19,7 +16,7 @@ import { ModulePage3 } from "../src/view/educational/modules/modulePage3";
 import { ModulePage4 } from "../src/view/educational/modules/modulePage4";
 import { ModulePage5 } from "../src/view/educational/modules/modulePage5";
 import { ModulePage6 } from "../src/view/educational/modules/modulePage6";
-
+import { Exercise } from "../src/view/exercise/index";
 
 const MainRouter: React.FC = () => {
   return (
@@ -28,16 +25,14 @@ const MainRouter: React.FC = () => {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Login />} />
-        <Route path="/about" element={<About />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/faqs" element={<Faqs />} />
-        <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/educational" element={<Educational />} />
         <Route path="/dataInsight" element={<DataInsight />} />
         <Route path="/risk-assessment" element={<RiskAssessment />} />
         <Route path="/nutrition-analysis" element={<NutritionAnalysis />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/recipe-result" element={<RecipeResult />} />
+        <Route path="/exercise" element={<Exercise />} />
 
         <Route path="/module1" element={<ModulePage1 />} />
         <Route path="/module2" element={<ModulePage2 />} />
