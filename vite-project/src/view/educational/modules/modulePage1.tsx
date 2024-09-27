@@ -116,6 +116,18 @@ export const ModulePage1: React.FC = () => {
                     <span className="arrow right"></span>
                   </Link>
                 </li>
+                <li>
+                  <Link to="/module5" className="accordion-link">
+                    Exercise and Physical Activity
+                    <span className="arrow right"></span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/module6" className="accordion-link">
+                    Birth Preparation
+                    <span className="arrow right"></span>
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>

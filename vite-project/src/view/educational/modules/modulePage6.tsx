@@ -4,9 +4,9 @@ import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 
-export const ModulePage2: React.FC = () => {
+export const ModulePage6: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
-    "Optimising Pregnancy Care"
+    "Birth Preparation"
   );
 
   const toggleSection = (section: string) => {
@@ -32,39 +32,10 @@ export const ModulePage2: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <div
-                    className={`accordion-title ${
-                      expandedSection === "Optimising Pregnancy Care"
-                        ? "active"
-                        : ""
-                    }`}
-                    onClick={() => toggleSection("Optimising Pregnancy Care")}
-                  >
+                  <Link to="/module2" className="accordion-link">
                     Optimising Pregnancy Care
-                    <span
-                      className={`arrow ${
-                        expandedSection === "Optimising Pregnancy Care"
-                          ? "down"
-                          : "right"
-                      }`}
-                    ></span>
-                  </div>
-                  {expandedSection === "Optimising Pregnancy Care" && (
-                    <ul className="submenu">
-                      <li>
-                        <a href="#section1">1.1. Topic One</a>
-                      </li>
-                      <li>
-                        <a href="#section2">1.2. Topic Two</a>
-                      </li>
-                      <li>
-                        <a href="#section3">1.3. Topic Three</a>
-                      </li>
-                      <li>
-                        <a href="#quiz">1.4. Knowledge Checker</a>
-                      </li>
-                    </ul>
-                  )}
+                    <span className="arrow right"></span>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/module3" className="accordion-link">
@@ -85,10 +56,37 @@ export const ModulePage2: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/module6" className="accordion-link">
+                  <div
+                    className={`accordion-title ${
+                      expandedSection === "Birth Preparation" ? "active" : ""
+                    }`}
+                    onClick={() => toggleSection("Birth Preparation")}
+                  >
                     Birth Preparation
-                    <span className="arrow right"></span>
-                  </Link>
+                    <span
+                      className={`arrow ${
+                        expandedSection === "Birth Preparation"
+                          ? "down"
+                          : "right"
+                      }`}
+                    ></span>
+                  </div>
+                  {expandedSection === "Birth Preparation" && (
+                    <ul className="submenu">
+                      <li>
+                        <a href="#section1">1.1. Topic One</a>
+                      </li>
+                      <li>
+                        <a href="#section2">1.2. Topic Two</a>
+                      </li>
+                      <li>
+                        <a href="#section3">1.3. Topic Three</a>
+                      </li>
+                      <li>
+                        <a href="#quiz">1.4. Knowledge Checker</a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
               </ul>
             </nav>

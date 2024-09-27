@@ -4,9 +4,9 @@ import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 
-export const ModulePage2: React.FC = () => {
+export const ModulePage5: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
-    "Optimising Pregnancy Care"
+    "Exercise and Physical Activity"
   );
 
   const toggleSection = (section: string) => {
@@ -32,24 +32,44 @@ export const ModulePage2: React.FC = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/module2" className="accordion-link">
+                    Optimising Pregnancy Care
+                    <span className="arrow right"></span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/module3" className="accordion-link">
+                    Common Health Risks
+                    <span className="arrow right"></span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/module4" className="accordion-link">
+                    Nutritional Advice
+                    <span className="arrow right"></span>
+                  </Link>
+                </li>
+                <li>
                   <div
                     className={`accordion-title ${
-                      expandedSection === "Optimising Pregnancy Care"
+                      expandedSection === "Exercise and Physical Activity"
                         ? "active"
                         : ""
                     }`}
-                    onClick={() => toggleSection("Optimising Pregnancy Care")}
+                    onClick={() =>
+                      toggleSection("Exercise and Physical Activity")
+                    }
                   >
-                    Optimising Pregnancy Care
+                    Exercise and Physical Activity
                     <span
                       className={`arrow ${
-                        expandedSection === "Optimising Pregnancy Care"
+                        expandedSection === "Exercise and Physical Activity"
                           ? "down"
                           : "right"
                       }`}
                     ></span>
                   </div>
-                  {expandedSection === "Optimising Pregnancy Care" && (
+                  {expandedSection === "Exercise and Physical Activity" && (
                     <ul className="submenu">
                       <li>
                         <a href="#section1">1.1. Topic One</a>
@@ -65,24 +85,6 @@ export const ModulePage2: React.FC = () => {
                       </li>
                     </ul>
                   )}
-                </li>
-                <li>
-                  <Link to="/module3" className="accordion-link">
-                    Common Health Risks
-                    <span className="arrow right"></span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/module4" className="accordion-link">
-                    Nutritional Advice
-                    <span className="arrow right"></span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/module5" className="accordion-link">
-                    Exercise and Physical Activity
-                    <span className="arrow right"></span>
-                  </Link>
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
