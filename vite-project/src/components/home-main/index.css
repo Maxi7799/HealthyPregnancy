@@ -50,8 +50,26 @@
 }
 
 .home-main .home-main-image img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.my-carousel .slick-dots-bottom {
+    bottom: -14px !important;
+}
+
+.my-carousel li {
+    width: 6px !important;
+    height: 6px!important;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.my-carousel .slick-dots-bottom .slick-active {
+    width: 6px !important;
+    height: 6px!important;
+    border: 1px solid #000;
+    border-radius: 3px;
 }
 
 .home-main .home-button {

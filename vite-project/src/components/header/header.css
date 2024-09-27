@@ -173,3 +173,24 @@
   color: inherit;
   cursor: pointer;
 }
+
+.Nutrition-row {
+  /* height: 30px;
+  line-height: 30px; */
+  font-size: 18px;
+  cursor: pointer;
+
+}
+
+.Nutrition-row a {
+ color: #666;
+ display: inline-block;
+ width: 100%;
+ height: 100%;
+ /* background: #2C5665; */
+ padding: 10px 30px 10px 30px;
+}
+
+.Nutrition-row:hover{
+  background-color: rgb(214, 227, 239)
+}

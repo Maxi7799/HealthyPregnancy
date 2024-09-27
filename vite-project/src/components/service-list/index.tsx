@@ -6,7 +6,7 @@ import "./index.css";
 import img1 from "../../assets/unsplash_7tGqLzHcjZ8.png";
 import img2 from "../../assets/unsplash_076XLvcgeDk.png";
 import img3 from "../../assets/unsplash_7ztiEagrkYk.png";
-import img4 from "../../assets/unsplash_ZSjQakwNsuE (1).png";
+import img4 from "../../assets/unsplash_ZSjQakwNsuE.png";
 
 type listType = Array<{
   title: string;
@@ -16,38 +16,38 @@ type listType = Array<{
   link: string;
 }>;
 
-export const ServiceList: React.FC = () => {
-  const list: listType = [
-    {
-      title: "Pregnancy Data Insights",
-      text: "Explore previous pregnancy experience through data for your better pregnancy.",
-      buttonText: "Explore",
-      imgUrl: img1,
-      link: "/datainsight",
-    },
-    {
-      title: "Know More about Pregnancy",
-      text: "Leverage your knowledge on pregnancy through interactive modules.",
-      buttonText: "Learn More",
-      imgUrl: img2,
-      link: "/educational",
-    },
-    {
-      title: "Find your Best Nutritional Advice",
-      text: "Find your recommended nutrition during your pregnancy and generate your own recipes.",
-      buttonText: "Explore",
-      imgUrl: img3,
-      link: "/nutrition-analysis",
-    },
-    {
-      title: "Get Healthier through Exercises",
-      text: "Get yourself a healthier pregnancy through exercises for pregnant women.",
-      buttonText: "Explore",
-      imgUrl: img4,
-      link: "",
-    },
-  ];
+export const list: listType = [
+  {
+    title: "Pregnancy Data Insights",
+    text: "Explore previous pregnancy experience through data for your better pregnancy.",
+    buttonText: "Explore",
+    imgUrl: img1,
+    link: "/datainsight",
+  },
+  {
+    title: "Know More about Pregnancy",
+    text: "Leverage your knowledge on pregnancy through interactive modules.",
+    buttonText: "Learn More",
+    imgUrl: img2,
+    link: "/educational",
+  },
+  {
+    title: "Find your Best Nutritional Advice",
+    text: "Find your recommended nutrition during your pregnancy and generate your own recipes.",
+    buttonText: "Explore",
+    imgUrl: img3,
+    link: "/nutrition-analysis",
+  },
+  {
+    title: "Get Healthier through Exercises",
+    text: "Get yourself a healthier pregnancy through exercises for pregnant women.",
+    buttonText: "Explore",
+    imgUrl: img4,
+    link: "",
+  },
+];
 
+export const ServiceList: React.FC = () => {
   return (
     <>
       <div className="service-item">
