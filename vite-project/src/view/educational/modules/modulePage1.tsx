@@ -31,7 +31,7 @@ const Modal: React.FC<{
 
 export const ModulePage1: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
-    "Australian Healthcare System"
+    "Health Risk"
   );
   const [modalContent, setModalContent] = useState<{
     title: string;
@@ -60,40 +60,34 @@ export const ModulePage1: React.FC = () => {
       <div className="module-page">
         <aside className="module-sidebar">
           <Link to="/educational" className="back-button">
-            Back to Modules
+            Back to Overview
           </Link>
           <div className="contents-container">
             <nav className="module-contents">
-              <h3>Contents</h3>
+              <h3>Overview</h3>
               <ul>
                 <li>
                   <div
                     className={`accordion-title ${
-                      expandedSection === "Australian Healthcare System"
-                        ? "active"
-                        : ""
+                      expandedSection === "Health Risk" ? "active" : ""
                     }`}
-                    onClick={() =>
-                      toggleSection("Australian Healthcare System")
-                    }
+                    onClick={() => toggleSection("Health Risk")}
                   >
-                    Australian Healthcare System
+                    Health Risk
                     <span
                       className={`arrow ${
-                        expandedSection === "Australian Healthcare System"
-                          ? "down"
-                          : "right"
+                        expandedSection === "Health Risk" ? "down" : "right"
                       }`}
                     ></span>
                   </div>
-                  {expandedSection === "Australian Healthcare System" && (
+                  {expandedSection === "Health Risk" && (
                     <ul className="submenu">
                       <li>
                         <a
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          1.1. Topic One
+                          1.1 Common Health Risk
                         </a>
                       </li>
                       <li>
@@ -101,7 +95,7 @@ export const ModulePage1: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          1.2. Topic Two
+                          1.2 Gestational Diabetes
                         </a>
                       </li>
                       <li>
@@ -109,7 +103,7 @@ export const ModulePage1: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          1.3. Topic Three
+                          1.3 Hyperension
                         </a>
                       </li>
                       <li>
@@ -117,7 +111,7 @@ export const ModulePage1: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          1.4. Knowledge Checker
+                          1.4 Test Your Knowledge!
                         </a>
                       </li>
                     </ul>
@@ -125,19 +119,19 @@ export const ModulePage1: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module2" className="accordion-link">
-                    Optimising Pregnancy Care
+                    Antenatal Visits
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module3" className="accordion-link">
-                    Common Health Risks
+                    Birth Methods
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module4" className="accordion-link">
-                    Nutritional Advice
+                    Nutrition
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -158,11 +152,30 @@ export const ModulePage1: React.FC = () => {
           </div>
         </aside>
         <main className="module-content">
-          <h2>1. Module Title</h2>
+          <h2>1. Health Risk</h2>
+          <p>
+            This module covers important health risks during pregnancy,
+            including gestational diabetes, hypertension, and emotional
+            well-being. Staying informed and proactive helps expectant mothers
+            manage these risks effectively, ensuring a healthier journey for
+            both themselves and their babies. Regular check-ups and healthy
+            lifestyle choices are key to supporting overall health during this
+            exciting time.
+          </p>
 
           <section id="section1">
-            <h3>1.1. Topic One</h3>
-            <p>Content for Topic One...</p>
+            <h3>1.1 Common Health Risk</h3>
+            <p>
+              Common complications include gestational diabetes, high blood
+              pressure (which can lead to preeclampsia), infections, preterm
+              labor, and mental health challenges like depression and anxiety.
+              More serious conditions like pregnancy loss, miscarriage, or
+              stillbirth, though rare, also require awareness. Trust your body
+              and seek medical advice if you notice symptoms like severe
+              headaches, vision problems, unusual swelling, or pain. Regular
+              prenatal care, a balanced diet, staying active, and seeking
+              support are key to a healthy pregnancy.
+            </p>
             <a
               href="#section1-more"
               className="details-link"
@@ -178,8 +191,21 @@ export const ModulePage1: React.FC = () => {
           </section>
 
           <section id="section2">
-            <h3>1.2. Topic Two</h3>
-            <p>Content for Topic Two...</p>
+            <h3>1.2 Gestational Diabetes</h3>
+            <p>
+              Did you know that from 2014 to 2021, cases of gestational diabetes
+              rose by over 80%? Gestational diabetes is a type of diabetes that
+              develops during pregnancy, typically around the 24th week, and can
+              have long-term effects such as an increased risk of type 2
+              diabetes for the mother and potential health issues for the child.
+              It can cause larger babies, leading to complications during
+              delivery and a higher likelihood of needing a C-section. Risk
+              factors include obesity, age, family history, and ethnicity.
+              Managing gestational diabetes involves monitoring blood sugar,
+              eating a healthy diet, staying active, and sometimes taking
+              medication. Awareness and proactive management are crucial for the
+              health of both mother and baby.
+            </p>
             <a
               href="#section2-more"
               className="details-link"
@@ -195,8 +221,19 @@ export const ModulePage1: React.FC = () => {
           </section>
 
           <section id="section3">
-            <h3>1.3. Topic Three</h3>
-            <p>Content for Topic Three...</p>
+            <h3>1.3 Hyperension</h3>
+            <p>
+              Between 2014 and 2021, hypertension has been steadily rising,
+              becoming a common health concern, though not as dramatically as
+              diabetes. Hypertension, or high blood pressure, increases the risk
+              of heart disease, stroke, and kidney problems and often goes
+              unnoticed, earning it the nickname “silent killer.” It can be
+              caused by factors like genetics, poor diet, lack of physical
+              activity, stress, and being overweight. Managing hypertension
+              involves lifestyle changes, such as a heart-healthy diet and
+              regular exercise. Regular check-ups are essential for catching and
+              managing this condition early to prevent serious health issues.
+            </p>
             <a
               href="#section3-more"
               className="details-link"
@@ -212,8 +249,14 @@ export const ModulePage1: React.FC = () => {
           </section>
 
           <section id="quiz">
-            <h3>1.4. Knowledge Checker</h3>
-            <p>Quiz questions go here...</p>
+            <h3>1.4 Knowledge Checker</h3>
+            <p>
+              Below link goes to questions to test your understanding of the
+              education.
+            </p>
+            <a href="#quiz-more" className="details-link">
+              Quesitons go here
+            </a>
           </section>
 
           <div className="navigation-buttons">

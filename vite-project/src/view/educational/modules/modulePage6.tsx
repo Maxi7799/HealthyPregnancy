@@ -21,33 +21,33 @@ export const ModulePage6: React.FC = () => {
       <div className="module-page">
         <aside className="module-sidebar">
           <Link to="/educational" className="back-button">
-            Back to Modules
+            Back to Overview
           </Link>
           <div className="contents-container">
             <nav className="module-contents">
-              <h3>Contents</h3>
+              <h3>Overview</h3>
               <ul>
                 <li>
                   <Link to="/module1" className="accordion-link">
-                    Australian Healthcare System
+                    Health Risk
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module2" className="accordion-link">
-                    Optimising Pregnancy Care
+                    Antenatal Visits
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module3" className="accordion-link">
-                    Common Health Risks
+                    Birth Methods
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module4" className="accordion-link">
-                    Nutritional Advice
+                    Nutrition
                     <span className="arrow right"></span>
                   </Link>
                 </li>
