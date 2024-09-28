@@ -4,30 +4,8 @@ import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick"
+import {Modal} from "./popupModel"
 
-const Modal: React.FC<{
-  title: string;
-  content: string;
-  onClose: () => void;
-}> = ({ title, content, onClose }) => {
-  const handleClickOutside = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
-
-  return (
-    <div className="modal-overlay" onClick={handleClickOutside}>
-      <div className="modal">
-        <button className="close-button" onClick={onClose}>
-          &times;
-        </button>
-        <h3>{title}</h3>
-        <p>{content}</p>
-      </div>
-    </div>
-  );
-};
 
 export const ModulePage1: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -43,7 +21,6 @@ export const ModulePage1: React.FC = () => {
   };
 
 
-
   const openModal = (title: string, content: string) => {
     setModalContent({ title, content });
   };
@@ -51,7 +28,6 @@ export const ModulePage1: React.FC = () => {
   const closeModal = () => {
     setModalContent(null);
   };
-
 
 
   return (
