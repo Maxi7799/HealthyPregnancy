@@ -10,6 +10,7 @@ class PregnancyFoods(models.Model):
     nutritional_benefit = models.CharField(max_length=100)
     potential_risk = models.CharField(max_length=100)
     classification = models.CharField(max_length=50)
+    
 
 
     class Meta:
