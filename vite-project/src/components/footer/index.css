@@ -1,133 +1,120 @@
 .footer {
   background-color: #2C5665;
   color: #fff;
-  /* padding: 3vw 2vw; */
   display: flex;
+  flex-direction: column; /* Stack items on smaller screens */
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
   position: relative;
-  height: 20vw;
+  padding: 20px 0;
 }
-
 
 .footer-container {
   display: flex;
-  /* justify-content: space-between; */
-  width: 80%;
-  max-width: 120vw;
-  justify-content: left;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  padding: 0 20px; /* Add padding for small screens */
 }
 
+.footer-left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px; /* Add space below on smaller screens */
+  font-size: 30px;
+  text-align: left;
+}
+
+.footer-left img {
+  width: 100px; /* Adjust the logo size for responsiveness */
+  height: auto;
+  margin-right: 0px;
+}
+
+.footer-left div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.0;
+}
 
 .footer-item {
   text-align: left;
-  margin-left: 8vw;
+  margin: 10px 0;
+  font-size: 16px;
 }
 
 .footer-item-one {
   color: #fff;
   font-family: Alata;
-  font-size: 2vw;
+  font-size: 28px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .footer-item-other {
-  display: block; /* This makes sure each item takes its own line */
-  margin: 0.5vw 0; /* Adds a small margin between items */
-  font-size: 1vw; /* You can adjust the size as needed */
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
   color: #fff;
   cursor: pointer;
 }
 
 .footer-item-other:hover {
-  color: #5f58eb; /* Adds hover effect for interactivity */
+  color: #5f58eb;
 }
 
 .footer-item-other a {
   text-decoration: none;
   color: inherit;
 }
-.footer-left {
-  /* flex: 1; */
-  text-align: left;
-  display: flex;
-  color: #fff;
-  align-items: center;
-  font-size: 2vw
-}
-
-.footer-left h2 {
-  font-size: 2.4vw;
-  /* margin-top: px;  */
-}
-
-.footer-logo {
-  max-width: 13vw;
-}
-
-.footer-center {
-  flex: 2;
-  display: flex;
-  justify-content: space-around;
-  padding: 0 0.2vw;
-}
-
-.footer-column {
-  text-align: left;
-  margin-right: 0.2vw;
-}
-
-.footer-column:last-child {
-  margin-right: 0;
-}
-
-.footer-column h3 {
-  margin-bottom: 1vw;
-  font-size: 2.4vw;
-  color: #ccc;
-}
-
-.footer-column p {
-  margin: 0.5vw 0;
-  font-size: 1.4vw;
-  color: #bbb;
-}
-
-.footer-right {
-  flex: 1;
-  text-align: left;
-}
-
-.footer-right h3 {
-  margin-bottom: 10px;
-  font-size: 2.4vw;
-  color: #ccc;
-}
-
-.footer-right p {
-  margin: 0.5vw 0;
-  font-size: 1.4vw;
-  color: #bbb;
-}
-
-.footer-right .clickable {
-  color: #00ff99;
-  text-decoration: none;
-}
-
-.footer-right .clickable:hover {
-  text-decoration: underline;
-}
 
 .footer-bottom {
-  height: 3vw;
-  line-height: 3vw;
-  position: absolute;
-  bottom: 0;
-  font-size: 1.2vw;
-  /* background-color: #00ff99; */
-  border-top: 1px solid #FFF;
   width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0; /* Reduce the padding to 5px */
+  border-top: 1px solid #FFF;
+  margin-bottom: 0; /* Ensure there's no extra margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+    margin-left: 50px;
+  }
+
+  .footer-left {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-left img {
+    width: 60px; /* Further reduce logo size */
+    margin-right: 10px;
+  }
+
+  .footer-item {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .footer-item-one {
+    font-size: 16px;
+  }
+
+  .footer-item-other {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
 }

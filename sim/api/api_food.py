@@ -182,6 +182,7 @@ def get_notrecom_food_list(request, payload: FoodNotRecomDataSchema):
     foods = PregnancyFoods.objects.all()
     food_item = []
     reason = []
+    image = []
 
     for food in foods:
         if food.classification == payload.classifiction and food.category == payload.category:

@@ -1,9 +1,128 @@
 {
   "header": {
-    "message": "hello"
+    "icon-top": "Healthy",
+    "icon-bottom": "Pregnancy",
+    "navbar-1": "Home",
+    "navbar-2": "Education",
+    "navbar-3": "Risk Assessment",
+    "navbar-4": "Nutrition",
+    "navbar-4-1": "Nutrition Analysis",
+    "navbar-4-2": "Recommendation",
+    "navbar-4-3": "Recipes",
+    "navbar-5": "Exercise",
+    "language-en": "English",
+    "language-zh": "chinese",
+    "language-id": "Bahasa Indonesia",
+    "language-fil": "Filipino",
+    "language-vi": "Vietnamese",
+    "language-ms": "Malaysian"
   },
   "home": {
+    "slideshow":{
+      "page-1": "",
+      "page-1-text-1": "",
+      "page-1-text-2": "",
+      "page-1-button": "",
+
+      "page-2": "",
+      "page-2-text-1": "",
+      "page-2-text-2": "",
+      "page-2-button": "",
+
+      "page-3": "",
+      "page-3-text-1": "",
+      "page-3-text-2": "",
+      "page-3-button": "",
+
+      "page-4": "",
+      "page-4-text-1": "",
+      "page-4-text-2": "",
+      "page-4-button": ""
+    },
+    "roadmap":{
+      "title": "Plan your best pregnancy",
+      "icon-1-desc": "Explore previous pregnancy through data insights",
+      "icon-2-desc": "Learn essential aspects about being pregnant",
+      "icon-3-desc": "Check pregnancy risk through a simple assessment",
+      "icon-4-desc": "Get your best nutrition and recipe recommendation",
+      "icon-5-desc": "Get yourself healthier through exercises"
+    },
+
+    "detail-blocks":{
+      "title": "",
+
+      "block-1-title": "",
+      "block-1-desc": "",
+      "block-1-button": "",
+
+      "block-2-title": "",
+      "block-2-desc": "",
+      "block-2-button": "",
+
+      "block-3-title": "",
+      "block-3-desc": "",
+      "block-3-button": "",
+
+      "block-4-title": "",
+      "block-4-desc": "",
+      "block-4-button": ""
+    },
+
     "body": "A store of messages",
     "hero": "Pregnancy Health Risk Assessment Questionnaire"
+  },
+
+  "education": {
+    "home": {
+      "title": "Pregnancy Education",
+      "text-1": "Whether you are planning to or currently pregnant, let’s leverage your knowledge on pregnancy through these interactive modules to achieve your best pregnancy experience.",
+      "text-2": "At the end of each chapter, try to check your understanding through a Knowledge Checker.",
+      "text-3": "Have fun!",
+      "card-1": "Australian Healthcare System",
+      "card-2": "Optimising Pregnancy Care",
+      "card-3": "Common Health Risks",
+      "card-4": "Nutritional Advice",
+      "card-5": "Exercise and Physical Activity",
+      "card-6": "Birth Preparation"
+    },
+    "card-1":{
+
+    },
+
+    "card-2":{
+
+    },
+
+    "card-3":{
+
+
+    },
+
+    "card-4":{
+
+    },
+
+    "card-5":{
+
+    },
+
+    "card-6":{
+
+    }
+  },
+
+
+  "footer":{
+    "icon-top": "Healthy",
+    "icon-bottom": "Pregnancy",
+
+    "contents-title": "Service",
+    "content-1": "",
+    "content-2": "",
+    "content-3": "",
+    "content-4": "",
+    "content-5": "",
+
+    "copyright": "Copyright © 2024 Powered by HealthyPregnancy"
   }
 }
