@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick"
 import {Modal} from "./popupModel"
+import { rootAddress } from "../../../../env";
+import { TwoLineChart } from "../../../components/chart/twoLineChart";
 
 
 export const ModulePage1: React.FC = () => {
@@ -13,22 +15,36 @@ export const ModulePage1: React.FC = () => {
   );
   const [modalContent, setModalContent] = useState<{
     title: string;
-    content: string;
+    pdfUrl: string;
   } | null>(null);
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);
   };
 
-
-  const openModal = (title: string, content: string) => {
-    setModalContent({ title, content });
+  const openModal = (title: string, pdfUrl: string) => {
+    setModalContent({ title, pdfUrl });
   };
 
   const closeModal = () => {
     setModalContent(null);
   };
 
+
+  const [healthRiskData, setHealthRiskData] = useState<any>(null);
+   const fetchData = async () => {
+     try {
+       const response = await fetch(rootAddress + `/datainsight/healthrisk`);
+       const data = await response.json();
+       setHealthRiskData(data);
+     } catch (error) {
+       console.error("Error fetching data:", error);
+     }
+   };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -142,25 +158,33 @@ export const ModulePage1: React.FC = () => {
           <section id="section1">
             <h3>1.1 Common Health Risk</h3>
             <p>
-              Common complications include gestational diabetes, high blood
-              pressure (which can lead to preeclampsia), infections, preterm
-              labor, and mental health challenges like depression and anxiety.
-              More serious conditions like pregnancy loss, miscarriage, or
-              stillbirth, though rare, also require awareness. Trust your body
-              and seek medical advice if you notice symptoms like severe
-              headaches, vision problems, unusual swelling, or pain. Regular
-              prenatal care, a balanced diet, staying active, and seeking
-              support are key to a healthy pregnancy.
+              Common complications include{" "}
+              <span
+                className="text-link"
+                onClick={(e) => handleLinkClick(e, "#section2")}
+              >
+                gestational diabetes
+              </span>
+              ,{" "}
+              <span
+                className="text-link"
+                onClick={(e) => handleLinkClick(e, "#section3")}
+              >
+                high blood pressure
+              </span>{" "}
+              (which can lead to preeclampsia), infections, preterm labor, and
+              mental health challenges like depression and anxiety. More serious
+              conditions like pregnancy loss, miscarriage, or stillbirth, though
+              rare, also require awareness. Trust your body and seek medical
+              advice if you notice symptoms like severe headaches, vision
+              problems, unusual swelling, or pain. Regular prenatal care, a
+              balanced diet, staying active, and seeking support are key to a
+              healthy pregnancy.
             </p>
             <a
               href="#section1-more"
               className="details-link"
-              onClick={() =>
-                openModal(
-                  "Topic One Details",
-                  "Detailed content for Topic One..."
-                )
-              }
+              onClick={() => openModal("Common Health Risk", "m1t1.pdf")}
             >
               More Details...
             </a>
@@ -170,27 +194,58 @@ export const ModulePage1: React.FC = () => {
             <h3>1.2 Gestational Diabetes</h3>
             <p>
               Did you know that from 2014 to 2021, cases of gestational diabetes
-              rose by over 80%? Gestational diabetes is a type of diabetes that
-              develops during pregnancy, typically around the 24th week, and can
-              have long-term effects such as an increased risk of type 2
-              diabetes for the mother and potential health issues for the child.
-              It can cause larger babies, leading to complications during
-              delivery and a higher likelihood of needing a C-section. Risk
-              factors include obesity, age, family history, and ethnicity.
+              rose by over 80%?
+            </p>
+            <div className="chart-section">
+              {healthRiskData ? (
+                <>
+                  <div className="chart">
+                    <TwoLineChart data={healthRiskData} />
+                  </div>
+                </>
+              ) : (
+                <p>Loading...</p>
+              )}
+            </div>
+            <p>
+              Gestational diabetes is a type of diabetes that develops during
+              pregnancy, typically around the 24th week, and can have long-term
+              effects such as an increased risk of type 2 diabetes for the
+              mother and potential health issues for the child. It can cause
+              larger babies, leading to complications during delivery and a
+              higher likelihood of needing a C-section{" "}
+              <Link to="/module3" className="text-link">
+                (Visit our education to reduce the risk).
+              </Link>
+            </p>
+            <p>
+              Risk factors include obesity, age, family history, and ethnicity.
               Managing gestational diabetes involves monitoring blood sugar,
               eating a healthy diet, staying active, and sometimes taking
               medication. Awareness and proactive management are crucial for the
-              health of both mother and baby.
+              health of both mother and baby. For more tailored support, check
+              out our:
             </p>
+            <Link to="/nutrition-analysis" className="text-link">
+              1. Nutrition Recommendations
+            </Link>
+            <tr></tr>
+            <Link to="/exercise" className="text-link">
+              2. Exercise
+            </Link>
+            <p>
+              Being a migrant women may face higher risk factors for gestational
+              diabetes due to dietary changes, limited access to healthcare, and
+              stress. If you’d like to assess your risk,{" "}
+              <Link to="/risk-assessment" className="text-link">
+                click here.
+              </Link>
+            </p>
+
             <a
               href="#section2-more"
               className="details-link"
-              onClick={() =>
-                openModal(
-                  "Topic Two Details",
-                  "Detailed content for Topic Two..."
-                )
-              }
+              onClick={() => openModal("Gestational Diabetes", "m1t2.pdf")}
             >
               More Details...
             </a>
@@ -205,20 +260,34 @@ export const ModulePage1: React.FC = () => {
               of heart disease, stroke, and kidney problems and often goes
               unnoticed, earning it the nickname “silent killer.” It can be
               caused by factors like genetics, poor diet, lack of physical
-              activity, stress, and being overweight. Managing hypertension
-              involves lifestyle changes, such as a heart-healthy diet and
-              regular exercise. Regular check-ups are essential for catching and
-              managing this condition early to prevent serious health issues.
+              activity, stress, and being overweight.{" "}
             </p>
+
+            <p>
+              Managing hypertension involves lifestyle changes, such as a
+              heart-healthy diet and regular exercise. To help you along the
+              way, check out our resources on:{" "}
+            </p>
+            <Link to="/nutrition-analysis" className="text-link">
+              1. Nutrition Recommendations
+            </Link>
+            <tr></tr>
+            <Link to="/exercise" className="text-link">
+              2. Exercise
+            </Link>
+
+            <p>
+              Regular check-ups are essential for catching and managing this
+              condition early to prevent serious health issues.{" "}
+              <Link to="/module2" className="text-link">
+                (More information can be found here)
+              </Link>
+            </p>
+
             <a
               href="#section3-more"
               className="details-link"
-              onClick={() =>
-                openModal(
-                  "Topic Three Details",
-                  "Detailed content for Topic Three..."
-                )
-              }
+              onClick={() => openModal("Hyperension", "m1t3.pdf")}
             >
               More Details...
             </a>
@@ -249,7 +318,7 @@ export const ModulePage1: React.FC = () => {
       {modalContent && (
         <Modal
           title={modalContent.title}
-          content={modalContent.content}
+          pdfUrl={modalContent.pdfUrl}
           onClose={closeModal}
         />
       )}

@@ -23,7 +23,7 @@ const smoothScrollTo = (targetY: number, duration: number) => {
 
 // Updated links with smooth scroll
 const handleLinkClick = (
-  e: React.MouseEvent<HTMLAnchorElement>,
+  e: React.MouseEvent<HTMLElement>,
   sectionId: string
 ) => {
   e.preventDefault();

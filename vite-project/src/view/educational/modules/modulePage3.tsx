@@ -4,6 +4,7 @@ import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick";
+import { Modal } from "./popupModel";
 
 
 export const ModulePage3: React.FC = () => {
@@ -13,6 +14,19 @@ export const ModulePage3: React.FC = () => {
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);
+  };
+
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+    pdfUrl: string;
+  } | null>(null);
+
+  const openModal = (title: string, pdfUrl: string) => {
+    setModalContent({ title, pdfUrl });
+  };
+
+  const closeModal = () => {
+    setModalContent(null);
   };
 
   return (
@@ -154,7 +168,11 @@ export const ModulePage3: React.FC = () => {
               is recommended, signs that might require assistance, and how to
               discuss your birth plan with your healthcare provider.
             </p>
-            <a href="#section1-more" className="details-link">
+            <a
+              href="#section1-more"
+              className="details-link"
+              onClick={() => openModal("Different Types of Birth Methods", "")}
+            >
               More Details...
             </a>
           </section>
@@ -170,7 +188,11 @@ export const ModulePage3: React.FC = () => {
               healthcare provider will help you make the best choice for you and
               your baby.
             </p>
-            <a href="#section2-more" className="details-link">
+            <a
+              href="#section2-more"
+              className="details-link"
+              onClick={() => openModal("Why Does It Matter?", "")}
+            >
               More Details...
             </a>
           </section>
@@ -189,7 +211,11 @@ export const ModulePage3: React.FC = () => {
               medical advice. Remember, every pregnancy is unique, and it’s okay
               to adjust your birth plan as needed.
             </p>
-            <a href="#section3-more" className="details-link">
+            <a
+              href="#section3-more"
+              className="details-link"
+              onClick={() => openModal("How to Choose?", "")}
+            >
               More Details...
             </a>
           </section>
@@ -207,7 +233,11 @@ export const ModulePage3: React.FC = () => {
               healing periods, making it important to weigh these factors when
               deciding on a delivery method.
             </p>
-            <a href="#section4-more" className="details-link">
+            <a
+              href="#section4-more"
+              className="details-link"
+              onClick={() => openModal("Vaginal Birth vs. C-Section", "")}
+            >
               More Details...
             </a>
           </section>
@@ -227,7 +257,11 @@ export const ModulePage3: React.FC = () => {
               proper postpartum care, including breastfeeding support and a
               balanced diet to promote healing.
             </p>
-            <a href="#section5-more" className="details-link">
+            <a
+              href="#section5-more"
+              className="details-link"
+              onClick={() => openModal("Recovery After Childbirth", "")}
+            >
               More Details...
             </a>
           </section>
@@ -254,6 +288,13 @@ export const ModulePage3: React.FC = () => {
         </main>
       </div>
       <Footer />
+      {modalContent && (
+        <Modal
+          title={modalContent.title}
+          pdfUrl={modalContent.pdfUrl}
+          onClose={closeModal}
+        />
+      )}
     </>
   );
 };

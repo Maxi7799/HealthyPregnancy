@@ -4,8 +4,7 @@ import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick";
-
-
+import { Modal } from "./popupModel";
 
 export const ModulePage4: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -14,6 +13,19 @@ export const ModulePage4: React.FC = () => {
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);
+  };
+
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+    pdfUrl: string;
+  } | null>(null);
+
+  const openModal = (title: string, pdfUrl: string) => {
+    setModalContent({ title, pdfUrl });
+  };
+
+  const closeModal = () => {
+    setModalContent(null);
   };
 
   return (
@@ -154,7 +166,11 @@ export const ModulePage4: React.FC = () => {
               in maintaining hormonal balance, promoting emotional well-being
               during this significant life stage.
             </p>
-            <a href="#section1-more" className="details-link">
+            <a
+              href="#section1-more"
+              className="details-link"
+              onClick={() => openModal("Why Nutrition Matters", "")}
+            >
               More Details...
             </a>
           </section>
@@ -173,7 +189,11 @@ export const ModulePage4: React.FC = () => {
               prevent constipation, common during pregnancy, with whole grains,
               fruits, and vegetables being excellent sources.
             </p>
-            <a href="#section2-more" className="details-link">
+            <a
+              href="#section2-more"
+              className="details-link"
+              onClick={() => openModal("Essential Nutrients", "")}
+            >
               More Details...
             </a>
           </section>
@@ -193,7 +213,13 @@ export const ModulePage4: React.FC = () => {
               daily calories, emphasizing unsaturated fats like olive oil and
               avocado for fetal brain development.
             </p>
-            <a href="#section3-more" className="details-link">
+            <a
+              href="#section3-more"
+              className="details-link"
+              onClick={() =>
+                openModal("Nutrition Standards for Pregnant Women", "")
+              }
+            >
               More Details...
             </a>
           </section>
@@ -211,7 +237,11 @@ export const ModulePage4: React.FC = () => {
               optimal health, energy levels, and reduces stress throughout your
               pregnancy.
             </p>
-            <a href="#section4-more" className="details-link">
+            <a
+              href="#section4-more"
+              className="details-link"
+              onClick={() => openModal("Healthy Meal Planning", "")}
+            >
               More Details...
             </a>
           </section>
@@ -231,7 +261,11 @@ export const ModulePage4: React.FC = () => {
               before consuming them. Understanding these risks helps you make
               informed dietary choices for a healthy pregnancy.
             </p>
-            <a href="#section5-more" className="details-link">
+            <a
+              href="#section5-more"
+              className="details-link"
+              onClick={() => openModal("Foods to Avoid", "")}
+            >
               More Details...
             </a>
           </section>
@@ -239,7 +273,8 @@ export const ModulePage4: React.FC = () => {
           <section id="quiz">
             <h3>1.6 Knowledge Checker</h3>
             <p>
-              Below link goes to questions to test your understanding of the education.
+              Below link goes to questions to test your understanding of the
+              education.
             </p>
             <a href="#quiz-more" className="details-link">
               Quesitons go here
@@ -257,6 +292,13 @@ export const ModulePage4: React.FC = () => {
         </main>
       </div>
       <Footer />
+      {modalContent && (
+        <Modal
+          title={modalContent.title}
+          pdfUrl={modalContent.pdfUrl}
+          onClose={closeModal}
+        />
+      )}
     </>
   );
 };
