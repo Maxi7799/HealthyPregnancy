@@ -16,7 +16,8 @@ html, body {
 
 /* Sidebar styling */
 .module-sidebar {
-  width: 370px;
+  width: 400px;
+  height: 900px;
   background-color: #EFE9DB;
   padding: 20px;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
@@ -107,6 +108,7 @@ html, body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1.5s ease; /* Slower transition for dropdown */
+  text-align: left;
 }
 
 .accordion-title.active + .submenu {

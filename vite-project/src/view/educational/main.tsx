@@ -12,12 +12,12 @@ import { useNavigate } from "react-router-dom";
 const modules = [
   {
     imageSrc: pre_img1,
-    title: "Australian Healthcare System",
+    title: "Health Risk",
     path: "/module1",
   },
-  { imageSrc: pre_img2, title: "Optimising Pregnancy Care", path: "/module2" },
-  { imageSrc: pre_img3, title: "Common Health Risks", path: "/module3" },
-  { imageSrc: pre_img4, title: "Nutritional Advice", path: "/module4" },
+  { imageSrc: pre_img2, title: "Antenatal Visits", path: "/module2" },
+  { imageSrc: pre_img3, title: "Birth Methods", path: "/module3" },
+  { imageSrc: pre_img4, title: "Nutrition", path: "/module4" },
   {
     imageSrc: pre_img5,
     title: "Exercise and Physical Activity",
