@@ -4,7 +4,7 @@ import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick";
-
+import { Modal } from "./popupModel";
 
 export const ModulePage5: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -13,6 +13,19 @@ export const ModulePage5: React.FC = () => {
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);
+  };
+
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+    pdfUrl: string;
+  } | null>(null);
+
+  const openModal = (title: string, pdfUrl: string) => {
+    setModalContent({ title, pdfUrl });
+  };
+
+  const closeModal = () => {
+    setModalContent(null);
   };
 
   return (
@@ -124,7 +137,11 @@ export const ModulePage5: React.FC = () => {
           <section id="section1">
             <h3>1.1. Topic One</h3>
             <p>Content for Topic One...</p>
-            <a href="#section1-more" className="details-link">
+            <a
+              href="#section1-more"
+              className="details-link"
+              onClick={() => openModal("Why Nutrition Matters", "")}
+            >
               More Details...
             </a>
           </section>
@@ -132,7 +149,11 @@ export const ModulePage5: React.FC = () => {
           <section id="section2">
             <h3>1.2. Topic Two</h3>
             <p>Content for Topic Two...</p>
-            <a href="#section2-more" className="details-link">
+            <a
+              href="#section2-more"
+              className="details-link"
+              onClick={() => openModal("Why Nutrition Matters", "")}
+            >
               More Details...
             </a>
           </section>
@@ -140,7 +161,11 @@ export const ModulePage5: React.FC = () => {
           <section id="section3">
             <h3>1.3. Topic Three</h3>
             <p>Content for Topic Three...</p>
-            <a href="#section3-more" className="details-link">
+            <a
+              href="#section3-more"
+              className="details-link"
+              onClick={() => openModal("Why Nutrition Matters", "")}
+            >
               More Details...
             </a>
           </section>
@@ -161,6 +186,13 @@ export const ModulePage5: React.FC = () => {
         </main>
       </div>
       <Footer />
+      {modalContent && (
+        <Modal
+          title={modalContent.title}
+          pdfUrl={modalContent.pdfUrl}
+          onClose={closeModal}
+        />
+      )}
     </>
   );
 };

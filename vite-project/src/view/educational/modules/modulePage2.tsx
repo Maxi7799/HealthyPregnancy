@@ -1,19 +1,49 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick";
-
+import { Modal } from "./popupModel";
+import { rootAddress } from "../../../../env";
+import FirstVisitPieChart from "../../../components/chart/FirstVisitPieChart";
 
 export const ModulePage2: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
     "Antenatal Visits"
   );
 
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+    pdfUrl: string;
+  } | null>(null);
+
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);
   };
+
+  const openModal = (title: string, pdfUrl: string) => {
+    setModalContent({ title, pdfUrl });
+  };
+
+  const closeModal = () => {
+    setModalContent(null);
+  };
+
+  const [firstVisitData, setFirstVisitData] = useState<any>(null);
+  const fetchData = async () => {
+    try {
+      const response = await fetch(rootAddress + `/datainsight/firstvisit`);
+      const data = await response.json();
+      setFirstVisitData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -56,7 +86,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          1.1 Why Are Antenatal Visits Important?
+                          2.1 Why Are Antenatal Visits Important?
                         </a>
                       </li>
                       <li>
@@ -64,7 +94,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          1.2 When Should You Go?
+                          2.2 When Should You Go?
                         </a>
                       </li>
                       <li>
@@ -72,7 +102,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          1.3 What to Prepare/Expect Before Your Antenatal Visit
+                          2.3 What to Prepare/Expect Before Your Antenatal Visit
                         </a>
                       </li>
                       <li>
@@ -80,7 +110,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section4"
                           onClick={(e) => handleLinkClick(e, "#section4")}
                         >
-                          1.4 What Happens During Antenatal Visits?
+                          2.4 What Happens During Antenatal Visits?
                         </a>
                       </li>
                       <li>
@@ -88,7 +118,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section5"
                           onClick={(e) => handleLinkClick(e, "#section5")}
                         >
-                          1.5 After Your Antenatal Visit
+                          2.5 After Your Antenatal Visit
                         </a>
                       </li>
                       <li>
@@ -96,7 +126,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section6"
                           onClick={(e) => handleLinkClick(e, "#section6")}
                         >
-                          1.6 Why Regular Check-ups Matter
+                          2.6 Why Regular Check-ups Matter
                         </a>
                       </li>
                       <li>
@@ -104,7 +134,7 @@ export const ModulePage2: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          1.7 Test Your Knowledge!
+                          2.7 Test Your Knowledge!
                         </a>
                       </li>
                     </ul>
@@ -148,7 +178,7 @@ export const ModulePage2: React.FC = () => {
           </p>
 
           <section id="section1">
-            <h3>1.1 Why Are Antenatal Visits Important?</h3>
+            <h3>2.1 Why Are Antenatal Visits Important?</h3>
             <p>
               Regular antenatal visits are crucial for maintaining the health of
               both you and your baby throughout pregnancy. These check-ups allow
@@ -162,34 +192,59 @@ export const ModulePage2: React.FC = () => {
               exercise, and mental health, ensuring you receive comprehensive
               support and referrals to specialists if needed.
             </p>
-            <a href="#section1-more" className="details-link">
+            <a
+              href="#section1-more"
+              className="details-link"
+              onClick={() =>
+                openModal("Why Are Antenatal Visits Important?", "m2t1.pdf")
+              }
+            >
               More Details...
             </a>
           </section>
 
           <section id="section2">
-            <h3>1.2 When Should You Go?</h3>
+            <h3>2.2 When Should You Go?</h3>
             <p>
               Antenatal visits are structured to ensure the health of both
-              mother and baby throughout pregnancy. In the first trimester (0-12
-              weeks), it’s important to schedule your first visit early,
-              typically around 6-8 weeks, to confirm the pregnancy and establish
-              a care plan. During the second trimester (13-28 weeks), visits
-              every 4 weeks focus on monitoring the baby’s growth and screening
-              for complications like gestational diabetes and high blood
-              pressure. In the third trimester (29-40 weeks), visits become more
-              frequent, preparing for labor and delivery while closely
-              monitoring the baby’s position and maternal health. Early visits
-              are essential, as they can lower the risk of complications, with
-              79.6% of women starting antenatal care before 14 weeks.
+              mother and baby throughout pregnancy. The following chart shows
+              the average time of first antenatal care visit (by week):
             </p>
-            <a href="#section2-more" className="details-link">
+            <div >
+              {firstVisitData ? (
+                <>
+                  <div className="chart">
+                    <FirstVisitPieChart data={firstVisitData} />
+                  </div>
+                </>
+              ) : (
+                <p>Loading...</p>
+              )}
+            </div>
+            <p>
+              In the first trimester (0-12 weeks), it’s important to schedule
+              your first visit early, typically around 6-8 weeks, to confirm the
+              pregnancy and establish a care plan. During the second trimester
+              (13-28 weeks), visits every 4 weeks focus on monitoring the baby’s
+              growth and screening for complications like gestational diabetes
+              and high blood pressure. In the third trimester (29-40 weeks),
+              visits become more frequent, preparing for labor and delivery
+              while closely monitoring the baby’s position and maternal health.
+              Early visits are essential, as they can lower the risk of
+              complications, with 79.6% of women starting antenatal care before
+              14 weeks.
+            </p>
+            <a
+              href="#section2-more"
+              className="details-link"
+              onClick={() => openModal("When Should You Go?", "m2t2.pdf")}
+            >
               More Details...
             </a>
           </section>
 
           <section id="section3">
-            <h3>1.3 What to Prepare/Expect Before Your Antenatal Visit</h3>
+            <h3>2.3 What to Prepare/Expect Before Your Antenatal Visit</h3>
             <p>
               Preparing for your antenatal visit can help you make the most of
               your time with your healthcare provider. Start by bringing
@@ -205,13 +260,22 @@ export const ModulePage2: React.FC = () => {
               steps will ensure a productive and informative antenatal visit,
               setting the stage for a healthy pregnancy journey.
             </p>
-            <a href="#section3-more" className="details-link">
+            <a
+              href="#section3-more"
+              className="details-link"
+              onClick={() =>
+                openModal(
+                  "What to Prepare/Expect Before Your Antenatal Visit",
+                  "m2t3.pdf"
+                )
+              }
+            >
               More Details...
             </a>
           </section>
 
           <section id="section4">
-            <h3>1.4. What Happens During Antenatal Visits?</h3>
+            <h3>2.4. What Happens During Antenatal Visits?</h3>
             <p>
               During your antenatal visits, several key checks and tests are
               performed to ensure a healthy pregnancy. A blood pressure check is
@@ -223,13 +287,19 @@ export const ModulePage2: React.FC = () => {
               your symptoms, nutrition, and exercise, helping you maintain your
               well-being throughout your pregnancy.
             </p>
-            <a href="#section4-more" className="details-link">
+            <a
+              href="#section4-more"
+              className="details-link"
+              onClick={() =>
+                openModal("What Happens During Antenatal Visits?", "m2t4.pdf")
+              }
+            >
               More Details...
             </a>
           </section>
 
           <section id="section5">
-            <h3>1.5 After Your Antenatal Visit</h3>
+            <h3>2.5 After Your Antenatal Visit</h3>
             <p>
               After your antenatal visit, it’s important to reflect and ensure
               you’re following through on your healthcare provider’s
@@ -244,13 +314,17 @@ export const ModulePage2: React.FC = () => {
               to connect with other expectant parents, offering valuable support
               and shared experiences.
             </p>
-            <a href="#section5-more" className="details-link">
+            <a
+              href="#section5-more"
+              className="details-link"
+              onClick={() => openModal("After Your Antenatal Visit", "m2t5.pdf")}
+            >
               More Details...
             </a>
           </section>
 
           <section id="section6">
-            <h3>1.6 Why Regular Check-ups Matter</h3>
+            <h3>2.6 Why Regular Check-ups Matter</h3>
             <p>
               Stay Healthy, Stay Informed! Regular antenatal visits are
               essential for catching complications like hypertension and
@@ -265,7 +339,11 @@ export const ModulePage2: React.FC = () => {
               your health matters, and regular check-ups are key to a healthy
               pregnancy for you and your baby.
             </p>
-            <a href="#section6-more" className="details-link">
+            <a
+              href="#section6-more"
+              className="details-link"
+              onClick={() => openModal("Why Regular Check-ups Matter", "m2t6.pdf")}
+            >
               More Details...
             </a>
           </section>
@@ -292,6 +370,13 @@ export const ModulePage2: React.FC = () => {
         </main>
       </div>
       <Footer />
+      {modalContent && (
+        <Modal
+          title={modalContent.title}
+          pdfUrl={modalContent.pdfUrl}
+          onClose={closeModal}
+        />
+      )}
     </>
   );
 };

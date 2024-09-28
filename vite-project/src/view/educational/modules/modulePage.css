@@ -219,8 +219,20 @@ html, body {
   background-color: #2a4d69;
 }
 
+/* text link */
+.text-link {
+  color: #2a4d69; 
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: #4392c4; 
+}
+
 /* Responsive Adjustments */
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .module-page {
     flex-direction: column;
   }
@@ -228,7 +240,7 @@ html, body {
   .module-sidebar {
     width: 100%;
     box-shadow: none;
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid #e0e0e0;
   }
 
@@ -259,4 +271,9 @@ html, body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+}
+
+.chart-section {
+  margin-top: 40px; 
+  text-align: center;
 }
