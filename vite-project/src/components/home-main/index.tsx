@@ -16,7 +16,7 @@ export const HomeMain: React.FC = () => {
   };
 
   return (
-    <Carousel afterChange={onChange} className="my-carousel">
+    <Carousel afterChange={onChange} arrows className="my-carousel" autoplay autoplaySpeed={15 * 1000}>
       {list.map((item) => {
         return (
           <div className="home-main">
