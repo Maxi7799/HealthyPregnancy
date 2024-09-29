@@ -1,7 +1,10 @@
 import { GlobalOutlined, CaretDownOutlined } from "@ant-design/icons";
 import US from "../../assets/US.png";
-import DE from "../../assets/DE.png";
-import FR from "../../assets/FR.png";
+import CH from "../../assets/CH.png";
+import YD from "../../assets/YD.png";
+import FL from "../../assets/FL.png";
+import YN from "../../assets/YN.png";
+import ML from "../../assets/ML.png";
 import { useTranslation } from "react-i18next";
 
 type listType = {
@@ -19,27 +22,27 @@ export function Language() {
     },
     {
       simple: "zh",
-      flag: DE,
+      flag: CH,
       country: "Chinese",
     },
     {
       simple: "id",
-      flag: FR,
+      flag: YD,
       country: "Bahasa Indonesia",
     },
     {
       simple: "fil",
-      flag: FR,
+      flag: FL,
       country: "Filipino",
     },
     {
       simple: "vi",
-      flag: FR,
+      flag: YN,
       country: "Vietnamese",
     },
     {
       simple: "ms",
-      flag: FR,
+      flag: ML,
       country: "Malaysian",
     },
   ];
