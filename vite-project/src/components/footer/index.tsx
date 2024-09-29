@@ -22,10 +22,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="footer-item">
-          <div className="footer-item-one">Our Service</div>
-          <Link to="/dataInsight" className="footer-item-other">
-            Data Insights
-          </Link>
+          <div className="footer-item-one">Our Services</div>
           <Link to="/educational" className="footer-item-other">
             Pregnancy Education
           </Link>

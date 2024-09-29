@@ -19,25 +19,25 @@
   },
   "home": {
     "slideshow":{
-      "page-1": "",
+      "page-1": "Education",
       "page-1-text-1": "",
-      "page-1-text-2": "",
-      "page-1-button": "",
+      "page-1-text-2": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
+      "page-1-button": "Explore",
 
-      "page-2": "",
+      "page-2": "Risk Assessment",
       "page-2-text-1": "",
-      "page-2-text-2": "",
-      "page-2-button": "",
+      "page-2-text-2": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
+      "page-2-button": "Learn More",
 
-      "page-3": "",
+      "page-3": "Nutrition",
       "page-3-text-1": "",
-      "page-3-text-2": "",
-      "page-3-button": "",
+      "page-3-text-2": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
+      "page-3-button": "Explore",
 
-      "page-4": "",
+      "page-4": "Exercise",
       "page-4-text-1": "",
-      "page-4-text-2": "",
-      "page-4-button": ""
+      "page-4-text-2": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
+      "page-4-button": "Explore"
     },
     "roadmap":{
       "title": "Plan your best pregnancy",
@@ -49,23 +49,23 @@
     },
 
     "detail-blocks":{
-      "title": "",
+      "title": "Choose the service you need",
 
-      "block-1-title": "",
-      "block-1-desc": "",
-      "block-1-button": "",
+      "block-1-title": "Education",
+      "block-1-desc": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
+      "block-1-button": "Explore",
 
-      "block-2-title": "",
-      "block-2-desc": "",
-      "block-2-button": "",
+      "block-2-title": "Risk Assessment",
+      "block-2-desc": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
+      "block-2-button": "Learn More",
 
-      "block-3-title": "",
-      "block-3-desc": "",
-      "block-3-button": "",
+      "block-3-title": "Nutrition",
+      "block-3-desc": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
+      "block-3-button": "Explore",
 
-      "block-4-title": "",
-      "block-4-desc": "",
-      "block-4-button": ""
+      "block-4-title": "Exercise",
+      "block-4-desc": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
+      "block-4-button": "Explore"
     },
 
     "body": "A store of messages",
@@ -117,12 +117,11 @@
     "icon-top": "Healthy",
     "icon-bottom": "Pregnancy",
 
-    "contents-title": "Service",
-    "content-1": "",
-    "content-2": "",
-    "content-3": "",
-    "content-4": "",
-    "content-5": "",
+    "contents-title": "Our Services",
+    "content-1": "Pregnancy Education",
+    "content-2": "Risk Assessment",
+    "content-3": "Nutritional Advice",
+    "content-4": "Pregnancy Exercises",
 
     "copyright": "Copyright © 2024 Powered by HealthyPregnancy"
   }

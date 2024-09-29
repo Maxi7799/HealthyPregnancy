@@ -105,25 +105,25 @@ def get_post_length(request):
     post_lengths = PostLength.objects.all()
 
     title = "Post Length"
-    method = ["non-instrumental_vaginal",
-              "forceps", "vacuum_extraction", "c-section"]
+    method = ["Non-Instrumental Vaginal Delivery",
+              "Forceps Delivery", "Vacuum Extraction Delivery", "Caesarean Section"]
     length_dic = {
-        "non-instrumental_vaginal": {
+        "Non-Instrumental Vaginal Delivery": {
             "length_of_stay": [],
             "value": [],
             "percent": []
         },
-        "forceps": {
+        "Forceps Delivery": {
             "length_of_stay": [],
             "value": [],
             "percent": []
         },
-        "vacuum_extraction": {
+        "Vacuum Extraction Delivery": {
             "length_of_stay": [],
             "value": [],
             "percent": []
         },
-        "c-section": {
+        "Caesarean Section": {
             "length_of_stay": [],
             "value": [],
             "percent": []
@@ -133,31 +133,34 @@ def get_post_length(request):
     for post_length in post_lengths:
 
         if post_length.method == "non-instrumental vaginal":
-            length_dic["non-instrumental_vaginal"]["length_of_stay"].append(
+            length_dic["Non-Instrumental Vaginal Delivery"]["length_of_stay"].append(
                 post_length.length_of_stay)
-            length_dic["non-instrumental_vaginal"]["value"].append(
+            length_dic["Non-Instrumental Vaginal Delivery"]["value"].append(
                 post_length.value)
-            length_dic["non-instrumental_vaginal"]["percent"].append(
+            length_dic["Non-Instrumental Vaginal Delivery"]["percent"].append(
                 post_length.percent)
 
         elif post_length.method == "forceps":
-            length_dic["forceps"]["length_of_stay"].append(
+            length_dic["Forceps Delivery"]["length_of_stay"].append(
                 post_length.length_of_stay)
-            length_dic["forceps"]["value"].append(post_length.value)
-            length_dic["forceps"]["percent"].append(post_length.percent)
-
-        elif post_length.method == "vacuum extraction":
-            length_dic["vacuum_extraction"]["length_of_stay"].append(
-                post_length.length_of_stay)
-            length_dic["vacuum_extraction"]["value"].append(post_length.value)
-            length_dic["vacuum_extraction"]["percent"].append(
+            length_dic["Forceps Delivery"]["value"].append(post_length.value)
+            length_dic["Forceps Delivery"]["percent"].append(
                 post_length.percent)
 
-        else:
-            length_dic["c-section"]["length_of_stay"].append(
+        elif post_length.method == "vacuum extraction":
+            length_dic["Vacuum Extraction Delivery"]["length_of_stay"].append(
                 post_length.length_of_stay)
-            length_dic["c-section"]["value"].append(post_length.value)
-            length_dic["c-section"]["percent"].append(post_length.percent)
+            length_dic["Vacuum Extraction Delivery"]["value"].append(
+                post_length.value)
+            length_dic["Vacuum Extraction Delivery"]["percent"].append(
+                post_length.percent)
+
+        elif post_length.method == "c-section":
+            length_dic["Caesarean Section"]["length_of_stay"].append(
+                post_length.length_of_stay)
+            length_dic["Caesarean Section"]["value"].append(post_length.value)
+            length_dic["Caesarean Section"]["percent"].append(
+                post_length.percent)
 
 
     return {
