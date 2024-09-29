@@ -5,8 +5,11 @@ import { HomeMain } from "../../components/home-main/index.tsx";
 import { HomeTitle } from "../../components/home-title/index.tsx";
 import { HomePlan } from "../../components/home-plan/index.tsx";
 import { ServiceList } from "../../components/service-list/index.tsx";
+import { useTranslation } from "react-i18next";
 
 export function Home() {
+  const [t] = useTranslation("global");
+
   return (
     <>
       <Header />
@@ -14,9 +17,9 @@ export function Home() {
       <HomeSec />
       <HomeThird /> */}
       <HomeMain />
-      <HomeTitle text="Plan your best pregnancy" />
+      <HomeTitle text={t("home.roadmap.title")} />
       <HomePlan />
-      <HomeTitle text="Choose the service you need" />
+      <HomeTitle text={t("home.detail-blocks.title")} />
       <ServiceList />
       <Footer />
     </>

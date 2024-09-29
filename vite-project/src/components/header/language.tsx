@@ -14,36 +14,37 @@ type listType = {
 };
 
 export function Language() {
+  const [t] = useTranslation("global");
   const list: Array<listType> = [
     {
       simple: "en",
       flag: US,
-      country: "English",
+      country: t("header.language-en"),
     },
     {
       simple: "zh",
       flag: CH,
-      country: "Chinese",
+      country: t("header.language-zh"),
     },
     {
       simple: "id",
       flag: YD,
-      country: "Bahasa Indonesia",
+      country: t("header.language-id"),
     },
     {
       simple: "fil",
       flag: FL,
-      country: "Filipino",
+      country: t("header.language-fil"),
     },
     {
       simple: "vi",
       flag: YN,
-      country: "Vietnamese",
+      country: t("header.language-vi"),
     },
     {
       simple: "ms",
       flag: ML,
-      country: "Malaysian",
+      country: t("header.language-ms"),
     },
   ];
 

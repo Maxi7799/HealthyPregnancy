@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useTransition } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import "./index.css";
@@ -7,6 +7,7 @@ import img1 from "../../assets/unsplash_7tGqLzHcjZ8.png";
 import img2 from "../../assets/unsplash_076XLvcgeDk.png";
 import img3 from "../../assets/unsplash_7ztiEagrkYk.png";
 import img4 from "../../assets/unsplash_ZSjQakwNsuE.png";
+import { useTranslation } from "react-i18next";
 
 type listType = Array<{
   title: string;
@@ -16,38 +17,46 @@ type listType = Array<{
   link: string;
 }>;
 
-export const list: listType = [
-  {
-    title: "Education",
-    text: "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
-    buttonText: "Explore",
-    imgUrl: img1,
-    link: "/educational",
-  },
-  {
-    title: "Risk Assessment",
-    text: "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
-    buttonText: "Learn More",
-    imgUrl: img2,
-    link: "/risk-assessment",
-  },
-  {
-    title: "Nutrition",
-    text: "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
-    buttonText: "Explore",
-    imgUrl: img3,
-    link: "/nutrition-analysis",
-  },
-  {
-    title: "Exercise",
-    text: "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
-    buttonText: "Explore",
-    imgUrl: img4,
-    link: "/exercise",
-  },
-];
+export const generateList = () => {
+  const [t] = useTranslation("global");
+
+  const list: listType = [
+    {
+      title: t("home.slideshow.page-1"),
+      text: t("home.slideshow.page-1-text-2"),
+      buttonText: t("home.slideshow.page-1-button"),
+      imgUrl: img1,
+      link: "/educational",
+    },
+    {
+      title: t("home.slideshow.page-2"),
+      text: t("home.slideshow.page-2-text-2"),
+      buttonText: t("home.slideshow.page-2-button"),
+      imgUrl: img2,
+      link: "/risk-assessment",
+    },
+    {
+      title: t("home.slideshow.page-3"),
+      text: t("home.slideshow.page-3-text-2"),
+      buttonText: t("home.slideshow.page-3-button"),
+      imgUrl: img3,
+      link: "/nutrition-analysis",
+    },
+    {
+      title: t("home.slideshow.page-4"),
+      text: t("home.slideshow.page-4-text-2"),
+      buttonText: t("home.slideshow.page-4-button"),
+      imgUrl: img4,
+      link: "/exercise",
+    },
+  ];
+  return list;
+
+}
+
 
 export const ServiceList: React.FC = () => {
+  const list = generateList()
   return (
     <>
       <div className="service-item">

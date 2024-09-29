@@ -49,27 +49,9 @@
     },
 
     "detail-blocks":{
-      "title": "Choose the service you need",
+      "title": "Choose the service you need"
+    }
 
-      "block-1-title": "Education",
-      "block-1-desc": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
-      "block-1-button": "Explore",
-
-      "block-2-title": "Risk Assessment",
-      "block-2-desc": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
-      "block-2-button": "Learn More",
-
-      "block-3-title": "Nutrition",
-      "block-3-desc": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
-      "block-3-button": "Explore",
-
-      "block-4-title": "Exercise",
-      "block-4-desc": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
-      "block-4-button": "Explore"
-    },
-
-    "body": "A store of messages",
-    "hero": "Pregnancy Health Risk Assessment Questionnaire"
   },
 
   "education": {

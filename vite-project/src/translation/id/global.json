@@ -1,9 +1,113 @@
 {
   "header": {
-    "message": "id"
+    "icon-top": "Healthy",
+    "icon-bottom": "Pregnancy",
+    "navbar-1": "Home",
+    "navbar-2": "Education",
+    "navbar-3": "Risk Assessment",
+    "navbar-4": "Nutrition",
+    "navbar-4-1": "Nutrition Analysis",
+    "navbar-4-2": "Recommendation",
+    "navbar-4-3": "Recipes",
+    "navbar-5": "Exercise",
+    "language-en": "English",
+    "language-zh": "chinese",
+    "language-id": "Bahasa Indonesia",
+    "language-fil": "Filipino",
+    "language-vi": "Vietnamese",
+    "language-ms": "Malaysian"
   },
   "home": {
-    "body": "id",
-    "hero": "id"
+    "slideshow": {
+      "page-1": "Education",
+      "page-1-text-1": "",
+      "page-1-text-2": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
+      "page-1-button": "Explore",
+
+      "page-2": "Risk Assessment",
+      "page-2-text-1": "",
+      "page-2-text-2": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
+      "page-2-button": "Learn More",
+
+      "page-3": "Nutrition",
+      "page-3-text-1": "",
+      "page-3-text-2": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
+      "page-3-button": "Explore",
+
+      "page-4": "Exercise",
+      "page-4-text-1": "",
+      "page-4-text-2": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
+      "page-4-button": "Explore"
+    },
+    "roadmap": {
+      "title": "Plan your best pregnancy",
+      "icon-1-desc": "Explore previous pregnancy through data insights",
+      "icon-2-desc": "Learn essential aspects about being pregnant",
+      "icon-3-desc": "Check pregnancy risk through a simple assessment",
+      "icon-4-desc": "Get your best nutrition and recipe recommendation",
+      "icon-5-desc": "Get yourself healthier through exercises"
+    },
+
+    "detail-blocks": {
+      "title": "Choose the service you need",
+
+      "block-1-title": "Education",
+      "block-1-desc": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
+      "block-1-button": "Explore",
+
+      "block-2-title": "Risk Assessment",
+      "block-2-desc": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
+      "block-2-button": "Learn More",
+
+      "block-3-title": "Nutrition",
+      "block-3-desc": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
+      "block-3-button": "Explore",
+
+      "block-4-title": "Exercise",
+      "block-4-desc": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
+      "block-4-button": "Explore"
+    },
+
+    "body": "A store of messages",
+    "hero": "Pregnancy Health Risk Assessment Questionnaire"
+  },
+
+  "education": {
+    "home": {
+      "title": "Pregnancy Education",
+      "text-1": "Whether you are planning to or currently pregnant, let’s leverage your knowledge on pregnancy through these interactive modules to achieve your best pregnancy experience.",
+      "text-2": "At the end of each chapter, try to check your understanding through a Knowledge Checker.",
+      "text-3": "Have fun!",
+      "card-1": "",
+      "card-2": "",
+      "card-3": "",
+      "card-4": "",
+      "card-5": "",
+      "card-6": ""
+    },
+    "card-1": {},
+
+    "card-2": {},
+
+    "card-3": {},
+
+    "card-4": {},
+
+    "card-5": {},
+
+    "card-6": {}
+  },
+
+  "footer": {
+    "icon-top": "Healthy",
+    "icon-bottom": "Pregnancy",
+
+    "contents-title": "Our Services",
+    "content-1": "Pregnancy Education",
+    "content-2": "Risk Assessment",
+    "content-3": "Nutritional Advice",
+    "content-4": "Pregnancy Exercises",
+
+    "copyright": "Copyright © 2024 Powered by HealthyPregnancy"
   }
 }

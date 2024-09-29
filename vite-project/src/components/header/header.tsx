@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 import icon from "../../assets/h-icon.png";
 import { Tooltip } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
+
 
 export const Header: React.FC = () => {
+  const [t] = useTranslation("global");
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -22,8 +25,8 @@ export const Header: React.FC = () => {
               <img className="i-icon" src={icon} alt="Healthy Pregnancy Logo" />
             </div>
             <div className="i-right">
-              <div>Healthy</div>
-              <div>Pregnancy</div>
+              <div>{t("header.icon-top")}</div>
+              <div>{t("header.icon-bottom")}</div>
             </div>
           </div>
         </Link>
@@ -31,22 +34,22 @@ export const Header: React.FC = () => {
       </div>
       <div className={`header-right ${menuOpen ? "show" : ""}`}>
         <div className="header-nav">
-          <Link to="/home">Home</Link>
+          <Link to="/home">{t("header.navbar-1")}</Link>
         </div>
         <div className="header-nav">
-          <Link to="/educational">Education</Link>
+          <Link to="/educational">{t("header.navbar-2")}</Link>
         </div>
         <div className="header-nav">
-          <Link to="/risk-assessment">Risk Assessment</Link>
+          <Link to="/risk-assessment">{t("header.navbar-3")}</Link>
         </div>
 
         <Tooltip placement="bottom" color="#fff" title={NutritionList}>
           <div className="header-nav">
-            <Link to="/nutrition-analysis">Nutrition</Link>
+            <Link to="/nutrition-analysis">{t("header.navbar-4")}</Link>
           </div>
         </Tooltip>
         <div className="header-nav">
-          <Link to="/exercise">Exercise</Link>
+          <Link to="/exercise">{t("header.navbar-5")}</Link>
         </div>
         <Language />
       </div>
@@ -55,16 +58,17 @@ export const Header: React.FC = () => {
 };
 
 const NutritionList = () => {
+  const [t] = useTranslation("global");
   return (
     <div style={{ color: "#000" }}>
       <div className="Nutrition-row">
-        <Link to="/nutrition-analysis?actTab=0">Nutrition Analysis</Link>
+        <Link to="/nutrition-analysis?actTab=0">{t("header.navbar-4-1")}</Link>
       </div>
       <div className="Nutrition-row">
-        <Link to="/nutrition-analysis?actTab=1">Recommendation</Link>
+        <Link to="/nutrition-analysis?actTab=1">{t("header.navbar-4-2")}</Link>
       </div>
       <div className="Nutrition-row">
-        <Link to="/recipe">Recipes</Link>
+        <Link to="/recipe">{t("header.navbar-4-3")}</Link>
       </div>
     </div>
   );

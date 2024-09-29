@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import homeImg from "../../assets/home-main.png";
 import { useTranslation } from "react-i18next";
 import { Carousel } from "antd";
-import { list } from "../service-list/index";
+import { generateList} from "../service-list/index";
 
 export const HomeMain: React.FC = () => {
   const [t] = useTranslation("global");
@@ -14,6 +14,7 @@ export const HomeMain: React.FC = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide);
   };
+  const list = generateList()
 
   return (
     <Carousel

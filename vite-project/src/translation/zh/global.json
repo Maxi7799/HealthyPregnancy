@@ -1,9 +1,95 @@
 {
   "header": {
-    "message": "你好"
+    "icon-top": "健康",
+    "icon-bottom": "孕期",
+    "navbar-1": "主页",
+    "navbar-2": "孕期课程",
+    "navbar-3": "风险评估",
+    "navbar-4": "食物营养",
+    "navbar-4-1": "营养分析",
+    "navbar-4-2": "饮食建议",
+    "navbar-4-3": "菜单推荐",
+    "navbar-5": "锻炼",
+    "language-en": "英语",
+    "language-zh": "中文",
+    "language-id": "印度尼西亚语",
+    "language-fil": "菲律宾语",
+    "language-vi": "越南语",
+    "language-ms": "马来西亚语"
   },
   "home": {
-    "body": "翻译完毕",
-    "hero": "翻译测试"
+    "slideshow": {
+      "page-1": "教育",
+      "page-1-text-1": "",
+      "page-1-text-2": "通过交互式模块了解更多有关怀孕的知识并充分利用您的怀孕知识。",
+      "page-1-button": "了解更多",
+
+      "page-2": "风险评估",
+      "page-2-text-1": "",
+      "page-2-text-2": "通过简单的评估检查怀孕风险。回答几个问题即可获得快速评估。",
+      "page-2-button": "了解更多",
+
+      "page-3": "食物营养分析",
+      "page-3-text-1": "",
+      "page-3-text-2": "获取有关营养的分析和建议并制定自己的时间表和食谱。",
+      "page-3-button": "了解更多",
+
+      "page-4": "孕期锻炼",
+      "page-4-text-1": "",
+      "page-4-text-2": "了解更多有关怀孕期间的运动的知识，通过运动让自己更健康。",
+      "page-4-button": "了解更多"
+    },
+    "roadmap": {
+      "title": "规划最佳怀孕计划",
+      "icon-1-desc": "通过数据洞察探索先前的怀孕情况",
+      "icon-2-desc": "了解有关怀孕的基本知识",
+      "icon-3-desc": "通过简单的评估检查怀孕风险",
+      "icon-4-desc": "获取最佳营养和食谱推荐",
+      "icon-5-desc": "通过锻炼让自己更健康"
+    },
+
+    "detail-blocks": {
+      "title": "选择您需要的服务"
+    }
+
+  },
+
+  "education": {
+    "home": {
+      "title": "Pregnancy Education",
+      "text-1": "Whether you are planning to or currently pregnant, let’s leverage your knowledge on pregnancy through these interactive modules to achieve your best pregnancy experience.",
+      "text-2": "At the end of each chapter, try to check your understanding through a Knowledge Checker.",
+      "text-3": "Have fun!",
+      "card-1": "",
+      "card-2": "",
+      "card-3": "",
+      "card-4": "",
+      "card-5": "",
+      "card-6": ""
+    },
+    "card-1": {},
+
+    "card-2": {},
+
+    "card-3": {},
+
+    "card-4": {},
+
+    "card-5": {},
+
+    "card-6": {}
+  },
+
+  "footer": {
+    "icon-top": "健康",
+    "icon-bottom": "孕期",
+
+    "contents-title": "我们的服务",
+    "content-1": "孕期知识科普",
+    "content-2": "孕期风险评估",
+    "content-3": "孕期食物营养分析",
+    "content-4": "孕期健身指南",
+
+    "copyright": "版权 © 2024 归于 HealthyPregnancy"
   }
 }
