@@ -16,16 +16,22 @@ export const HomeMain: React.FC = () => {
   };
 
   return (
-    <Carousel afterChange={onChange} arrows className="my-carousel" autoplay autoplaySpeed={15 * 1000}>
+    <Carousel
+      afterChange={onChange}
+      arrows
+      className="my-carousel"
+      autoplay
+      autoplaySpeed={15 * 1000}
+    >
       {list.map((item) => {
         return (
           <div className="home-main">
-            <div className="main-text">{t("home.hero")}</div>
-            <div className="home-welcome">welcome</div>
+            <div className="main-text">{item.title}</div>
+            {/* <div className="home-welcome">welcome</div> */}
             <div className="home-welcome home-text">{item.text}</div>
-            <div className="home-button">
-              <Link to={item.link}>{item.buttonText}</Link>
-            </div>
+            <Link to={item.link}>
+              <div className="home-button">{item.buttonText}</div>
+            </Link>
             <div
               className="home-main-image"
               style={{

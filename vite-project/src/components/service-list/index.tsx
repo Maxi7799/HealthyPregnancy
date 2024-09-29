@@ -18,32 +18,32 @@ type listType = Array<{
 
 export const list: listType = [
   {
-    title: "Pregnancy Data Insights",
-    text: "Explore previous pregnancy experience through data for your better pregnancy.",
+    title: "Education",
+    text: "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
     buttonText: "Explore",
     imgUrl: img1,
-    link: "/datainsight",
-  },
-  {
-    title: "Know More about Pregnancy",
-    text: "Leverage your knowledge on pregnancy through interactive modules.",
-    buttonText: "Learn More",
-    imgUrl: img2,
     link: "/educational",
   },
   {
-    title: "Find your Best Nutritional Advice",
-    text: "Find your recommended nutrition during your pregnancy and generate your own recipes.",
+    title: "Risk Assessment",
+    text: "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
+    buttonText: "Learn More",
+    imgUrl: img2,
+    link: "/risk-assessment",
+  },
+  {
+    title: "Nutrition",
+    text: "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
     buttonText: "Explore",
     imgUrl: img3,
     link: "/nutrition-analysis",
   },
   {
-    title: "Get Healthier through Exercises",
-    text: "Get yourself a healthier pregnancy through exercises for pregnant women.",
+    title: "Exercise",
+    text: "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
     buttonText: "Explore",
     imgUrl: img4,
-    link: "",
+    link: "/exercise",
   },
 ];
 
