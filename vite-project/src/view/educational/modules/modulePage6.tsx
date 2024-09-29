@@ -122,14 +122,35 @@ export const ModulePage6: React.FC = () => {
         </aside>
         <main className="module-content">
           <h2>6. Postpartum Exercises</h2>
+          <p>
+            Congratulations, mama! The postpartum period is all about recovery,
+            rebuilding, and reconnecting with your body. Let’s ease back into
+            movement, focusing on gentle exercises that support your healing
+            journey.
+          </p>
 
           <section id="section1">
             <h3>6.1 The First 6 Weeks: Gentle Healing Movements</h3>
-            <p>Content for Topic One...</p>
+            <p>
+              During the first 6 weeks postpartum, rest is crucial, but gentle
+              movements can aid recovery. <strong>Deep belly breathing</strong>{" "}
+              helps re-engage core muscles and reduce tension by taking slow,
+              deep breaths while sitting comfortably.{" "}
+              <strong>Pelvic tilts</strong> relieve lower back tension and begin
+              strengthening the core by gently tilting the pelvis upward while
+              lying on your back with bent knees.{" "}
+              <strong>Gentle walking</strong> boosts circulation and mood,
+              starting with short 5-10 minute walks.
+            </p>
             <a
               href="#section1-more"
               className="details-link"
-              onClick={() => openModal("Why Nutrition Matters", "")}
+              onClick={() =>
+                openModal(
+                  "The First 6 Weeks: Gentle Healing Movements",
+                  "m6t1.pdf"
+                )
+              }
             >
               More Details...
             </a>
@@ -137,11 +158,23 @@ export const ModulePage6: React.FC = () => {
 
           <section id="section2">
             <h3>6.2 Rebuilding Core and Pelvic Floor Strength (6-12 Weeks)</h3>
-            <p>Content for Topic Two...</p>
+            <p>
+              Between 6-12 weeks postpartum, with your doctor’s approval, focus
+              on rebuilding core strength. <strong>Heel slides</strong> help
+              reconnect core muscles and strengthen the lower abs by sliding one
+              heel away and back while lying on your back with one knee bent.{" "}
+              <strong>Bridges</strong> activate the glutes and core by lifting
+              your hips off the floor while lying on your back with knees bent.
+            </p>
             <a
               href="#section2-more"
               className="details-link"
-              onClick={() => openModal("Why Nutrition Matters", "")}
+              onClick={() =>
+                openModal(
+                  "Rebuilding Core and Pelvic Floor Strength (6-12 Weeks)",
+                  "m6t2.pdf"
+                )
+              }
             >
               More Details...
             </a>

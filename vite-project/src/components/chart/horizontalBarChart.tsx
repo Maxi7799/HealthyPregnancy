@@ -49,6 +49,19 @@ export default function HorizontalBarChart({ data }: BarProps) {
 
   return (
     <div style={{ height: "450px", width: "100%", position: "relative" }}>
+      <div
+        style={{
+          position: "absolute",
+          left: "-30px",
+          top: "50%",
+          transform: "translateY(-50%) rotate(-90deg)",
+          transformOrigin: "center",
+          fontSize: "14px",
+          color: "#333",
+        }}
+      >
+        Reasons
+      </div>
       <Chart
         options={{
           data: chartData,
@@ -64,7 +77,7 @@ export default function HorizontalBarChart({ data }: BarProps) {
           color: "#333",
         }}
       >
-        number of people
+        Number of Cases
       </div>
     </div>
   );

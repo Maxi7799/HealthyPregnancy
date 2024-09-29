@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick";
 import { Modal } from "./popupModel";
-
+import { rootAddress } from "../../../../env";
+import BirthMethodChart from "../../../components/chart/birthMethodChart";
+import HorizontalBarChart from "../../../components/chart/horizontalBarChart";
+import PostLengthStackBarChart from "../../../components/chart/postLengthStackbarChart";
 
 export const ModulePage3: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -28,6 +31,46 @@ export const ModulePage3: React.FC = () => {
   const closeModal = () => {
     setModalContent(null);
   };
+
+  const [birthMethodData, setBirthMethodData] = useState<any>(null);
+  const [cReasonData, setCReasonData] = useState<any>(null);
+  const [postLengthData, setPostLengthData] = useState<any>(null);
+
+  const fetchBirthMethodData = async () => {
+    try {
+      const response = await fetch(rootAddress + `/datainsight/birthmethod`);
+      const data = await response.json();
+      setBirthMethodData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  const fetchCReasonData = async () => {
+    try {
+      const response = await fetch(rootAddress + `/datainsight/creason`);
+      const data = await response.json();
+      setCReasonData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+    const fetchPostLengthData = async () => {
+      try {
+        const response = await fetch(rootAddress + `/datainsight/postlength`);
+        const data = await response.json();
+        setPostLengthData(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+  useEffect(() => {
+    fetchBirthMethodData();
+    fetchCReasonData();
+    fetchPostLengthData();
+  }, []);
 
   return (
     <>
@@ -171,7 +214,9 @@ export const ModulePage3: React.FC = () => {
             <a
               href="#section1-more"
               className="details-link"
-              onClick={() => openModal("Different Types of Birth Methods", "")}
+              onClick={() =>
+                openModal("Different Types of Birth Methods", "m3t1.pdf")
+              }
             >
               More Details...
             </a>
@@ -191,7 +236,7 @@ export const ModulePage3: React.FC = () => {
             <a
               href="#section2-more"
               className="details-link"
-              onClick={() => openModal("Why Does It Matter?", "")}
+              onClick={() => openModal("Why Does It Matter?", "m3t2.pdf")}
             >
               More Details...
             </a>
@@ -211,10 +256,42 @@ export const ModulePage3: React.FC = () => {
               medical advice. Remember, every pregnancy is unique, and it’s okay
               to adjust your birth plan as needed.
             </p>
+            <p>
+              Here’s some data on the most common birth methods to help you make
+              an informed choice:
+            </p>
+            <div className="chart-section">
+              {birthMethodData ? (
+                <>
+                  <div className="chart">
+                    <BirthMethodChart data={birthMethodData} />
+                  </div>
+                </>
+              ) : (
+                <p>Loading...</p>
+              )}
+            </div>
+            <p>
+              Remember, every pregnancy is unique, and it’s okay to adjust your
+              birth plan as needed. Below are some common reason for choosing
+              c-section:
+            </p>
+            <div className="chart-section">
+              {cReasonData ? (
+                <>
+                  <div className="chart">
+                    <HorizontalBarChart data={cReasonData} />
+                  </div>
+                </>
+              ) : (
+                <p>Loading...</p>
+              )}
+            </div>
+            <p>You can also found more details below</p>
             <a
               href="#section3-more"
               className="details-link"
-              onClick={() => openModal("How to Choose?", "")}
+              onClick={() => openModal("How to Choose?", "m3t3.pdf")}
             >
               More Details...
             </a>
@@ -233,10 +310,28 @@ export const ModulePage3: React.FC = () => {
               healing periods, making it important to weigh these factors when
               deciding on a delivery method.
             </p>
+            <p>
+              Below chart shows the Recovery Time (in days) for each Birth
+              Method:
+            </p>
+            <div className="stack-bar-chart-container">
+              {postLengthData ? (
+                <>
+                  <div>
+                    <PostLengthStackBarChart data={postLengthData} />
+                    <p>Child Birth Method</p>
+                  </div>
+                </>
+              ) : (
+                <p>Loading...</p>
+              )}
+            </div>
             <a
               href="#section4-more"
               className="details-link"
-              onClick={() => openModal("Vaginal Birth vs. C-Section", "")}
+              onClick={() =>
+                openModal("Vaginal Birth vs. C-Section", "m3t4.pdf")
+              }
             >
               More Details...
             </a>
@@ -260,7 +355,7 @@ export const ModulePage3: React.FC = () => {
             <a
               href="#section5-more"
               className="details-link"
-              onClick={() => openModal("Recovery After Childbirth", "")}
+              onClick={() => openModal("Recovery After Childbirth", "m3t5.pdf")}
             >
               More Details...
             </a>
