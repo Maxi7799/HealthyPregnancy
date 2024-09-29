@@ -20,10 +20,10 @@ const modules = [
   { imageSrc: pre_img4, title: "Nutrition", path: "/module4" },
   {
     imageSrc: pre_img5,
-    title: "Exercise and Physical Activity",
+    title: "Prenatal Exercises",
     path: "/module5",
   },
-  { imageSrc: pre_img6, title: "Birth Preparation", path: "/module6" },
+  { imageSrc: pre_img6, title: "Postpartum Exercises", path: "/module6" },
 ];
 
 export const PregnancyEducation: React.FC = () => {

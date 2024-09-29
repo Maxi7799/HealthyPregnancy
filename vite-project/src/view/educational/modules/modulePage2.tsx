@@ -154,13 +154,13 @@ export const ModulePage2: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module5" className="accordion-link">
-                    Exercise and Physical Activity
+                    Prenatal Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Birth Preparation
+                    Postpartum Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -210,7 +210,7 @@ export const ModulePage2: React.FC = () => {
               mother and baby throughout pregnancy. The following chart shows
               the average time of first antenatal care visit (by week):
             </p>
-            <div >
+            <div className="chart-section">
               {firstVisitData ? (
                 <>
                   <div className="chart">
@@ -317,7 +317,9 @@ export const ModulePage2: React.FC = () => {
             <a
               href="#section5-more"
               className="details-link"
-              onClick={() => openModal("After Your Antenatal Visit", "m2t5.pdf")}
+              onClick={() =>
+                openModal("After Your Antenatal Visit", "m2t5.pdf")
+              }
             >
               More Details...
             </a>
@@ -342,7 +344,9 @@ export const ModulePage2: React.FC = () => {
             <a
               href="#section6-more"
               className="details-link"
-              onClick={() => openModal("Why Regular Check-ups Matter", "m2t6.pdf")}
+              onClick={() =>
+                openModal("Why Regular Check-ups Matter", "m2t6.pdf")
+              }
             >
               More Details...
             </a>

@@ -79,7 +79,7 @@ export const ModulePage4: React.FC = () => {
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          1.1 Why Nutrition Matters
+                          4.1 Why Nutrition Matters
                         </a>
                       </li>
                       <li>
@@ -87,7 +87,7 @@ export const ModulePage4: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          1.2 Essential Nutrients
+                          4.2 Essential Nutrients
                         </a>
                       </li>
                       <li>
@@ -95,7 +95,7 @@ export const ModulePage4: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          1.3 Nutrition Standards for Pregnant Women
+                          4.3 Nutrition Standards for Pregnant Women
                         </a>
                       </li>
                       <li>
@@ -103,7 +103,7 @@ export const ModulePage4: React.FC = () => {
                           href="#section4"
                           onClick={(e) => handleLinkClick(e, "#section4")}
                         >
-                          1.4 Healthy Meal Planning
+                          4.4 Healthy Meal Planning
                         </a>
                       </li>
                       <li>
@@ -111,7 +111,7 @@ export const ModulePage4: React.FC = () => {
                           href="#section5"
                           onClick={(e) => handleLinkClick(e, "#section5")}
                         >
-                          1.5 Foods to Avoid
+                          4.5 Foods to Avoid
                         </a>
                       </li>
                       <li>
@@ -119,7 +119,7 @@ export const ModulePage4: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          1.6 Test Your Knowledge
+                          4.6 Test Your Knowledge
                         </a>
                       </li>
                     </ul>
@@ -127,13 +127,13 @@ export const ModulePage4: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module5" className="accordion-link">
-                    Exercise and Physical Activity
+                    Prenatal Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Birth Preparation
+                    Postpartum Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -153,7 +153,7 @@ export const ModulePage4: React.FC = () => {
           </p>
 
           <section id="section1">
-            <h3>1.1 Why Nutrition Matters</h3>
+            <h3>4.1 Why Nutrition Matters</h3>
             <p>
               Proper nutrition during pregnancy is crucial for both maternal and
               fetal health. A well-balanced diet supports the development of
@@ -176,7 +176,7 @@ export const ModulePage4: React.FC = () => {
           </section>
 
           <section id="section2">
-            <h3>1.2 Essential Nutrients</h3>
+            <h3>4.2 Essential Nutrients</h3>
             <p>
               During pregnancy, specific nutrients are essential for supporting
               both the growing baby and the mother. Folic acid helps prevent
@@ -199,7 +199,7 @@ export const ModulePage4: React.FC = () => {
           </section>
 
           <section id="section3">
-            <h3>1.3 Nutrition Standards for Pregnant Women</h3>
+            <h3>4.3 Nutrition Standards for Pregnant Women</h3>
             <p>
               During pregnancy, caloric intake and macronutrient needs change
               over time. In the first trimester, focus on nutrient-dense foods
@@ -225,7 +225,7 @@ export const ModulePage4: React.FC = () => {
           </section>
 
           <section id="section4">
-            <h3>1.4 Healthy Meal Planning</h3>
+            <h3>4.4 Healthy Meal Planning</h3>
             <p>
               Healthy meal planning during pregnancy is key to ensuring you and
               your baby receive essential nutrients while avoiding processed
@@ -247,7 +247,7 @@ export const ModulePage4: React.FC = () => {
           </section>
 
           <section id="section5">
-            <h3>1.5 Foods to Avoid</h3>
+            <h3>4.5 Foods to Avoid</h3>
             <p>
               During pregnancy, it’s important to avoid certain foods that could
               pose risks to you and your baby. Steer clear of high-mercury fish
@@ -271,7 +271,7 @@ export const ModulePage4: React.FC = () => {
           </section>
 
           <section id="quiz">
-            <h3>1.6 Knowledge Checker</h3>
+            <h3>4.6 Knowledge Checker</h3>
             <p>
               Below link goes to questions to test your understanding of the
               education.
