@@ -1,0 +1,116 @@
+.slideshow-container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.question-sidebar {
+  width: 20%;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-top: 80px;
+  background-color: #efe9db;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.sidebar-item.correct {
+  background-color: #d4edda;
+  border-radius: 10px;
+}
+
+.sidebar-item.incorrect {
+  background-color: #f8d7da;
+  border-radius: 10px;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.question-card-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.question-card {
+  border: 2px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.options {
+  margin-top: 15px;
+}
+
+.option {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.option.selected {
+  background-color: #c0dde9; /* Highlight selected option */
+  border-color: #c0dde9;
+}
+
+input[type="radio"] {
+  display: none; /* Hide the radio button */
+}
+
+label {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #2a4d69;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2a4d69; /* Default button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+button + button { 
+  margin-left: 10px; /* Add space between submit and next buttons */
+}
+
+.feedback {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}

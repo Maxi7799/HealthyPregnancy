@@ -7,6 +7,7 @@ import handleLinkClick from "./slowLinkClick";
 import { Modal } from "./popupModel";
 import { rootAddress } from "../../../../env";
 import FirstVisitPieChart from "../../../components/chart/FirstVisitPieChart";
+import { QuestionSlideshow2 } from "../quizs/questionSlideShow2";
 
 export const ModulePage2: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -355,12 +356,10 @@ export const ModulePage2: React.FC = () => {
           <section id="quiz">
             <h3>1.7 Knowledge Checker</h3>
             <p>
-              Below link goes to questions to test your understanding of the
-              education.
+              Try the questions below to test your understanding of the above
+              content.
             </p>
-            <a href="#quiz-more" className="details-link">
-              Quesitons go here
-            </a>
+            <QuestionSlideshow2 />
           </section>
 
           <div className="navigation-buttons">

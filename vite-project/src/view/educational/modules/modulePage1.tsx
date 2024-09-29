@@ -7,6 +7,7 @@ import handleLinkClick from "./slowLinkClick"
 import {Modal} from "./popupModel"
 import { rootAddress } from "../../../../env";
 import { TwoLineChart } from "../../../components/chart/twoLineChart";
+import { QuestionSlideshow1 } from "../quizs/questionSlideShow1";
 
 
 export const ModulePage1: React.FC = () => {
@@ -296,12 +297,10 @@ export const ModulePage1: React.FC = () => {
           <section id="quiz">
             <h3>1.4 Knowledge Checker</h3>
             <p>
-              Below link goes to questions to test your understanding of the
-              education.
+              Try the questions below to test your understanding of the
+              above content.
             </p>
-            <a href="#quiz-more" className="details-link">
-              Quesitons go here
-            </a>
+            <QuestionSlideshow1 />
           </section>
 
           <div className="navigation-buttons">

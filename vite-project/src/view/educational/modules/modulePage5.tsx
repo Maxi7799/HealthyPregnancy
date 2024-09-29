@@ -5,6 +5,7 @@ import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick";
 import { Modal } from "./popupModel";
+import { QuestionSlideshow5 } from "../quizs/questionSlideShow5";
 
 export const ModulePage5: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -267,7 +268,11 @@ export const ModulePage5: React.FC = () => {
 
           <section id="quiz">
             <h3>5.5 Knowledge Checker</h3>
-            <p>Quiz questions go here...</p>
+            <p>
+              Try the questions below to test your understanding of the above
+              content.
+            </p>
+            <QuestionSlideshow5 />
           </section>
 
           <div className="navigation-buttons">

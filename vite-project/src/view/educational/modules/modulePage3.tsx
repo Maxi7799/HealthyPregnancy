@@ -9,6 +9,7 @@ import { rootAddress } from "../../../../env";
 import BirthMethodChart from "../../../components/chart/birthMethodChart";
 import HorizontalBarChart from "../../../components/chart/horizontalBarChart";
 import PostLengthStackBarChart from "../../../components/chart/postLengthStackbarChart";
+import { QuestionSlideshow3 } from "../quizs/questionSlideShow3";
 
 export const ModulePage3: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
@@ -364,12 +365,10 @@ export const ModulePage3: React.FC = () => {
           <section id="quiz">
             <h3>3.6 Knowledge Checker</h3>
             <p>
-              Below link goes to questions to test your understanding of the
-              education.
+              Try the questions below to test your understanding of the above
+              content.
             </p>
-            <a href="#quiz-more" className="details-link">
-              Quesitons go here
-            </a>
+            <QuestionSlideshow3 />
           </section>
 
           <div className="navigation-buttons">
