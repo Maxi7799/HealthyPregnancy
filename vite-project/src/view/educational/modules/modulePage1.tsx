@@ -129,13 +129,13 @@ export const ModulePage1: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module5" className="accordion-link">
-                    Exercise and Physical Activity
+                    Prenatal Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Birth Preparation
+                    Postpartum Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>

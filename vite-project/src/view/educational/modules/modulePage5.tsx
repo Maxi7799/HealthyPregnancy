@@ -8,7 +8,7 @@ import { Modal } from "./popupModel";
 
 export const ModulePage5: React.FC = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(
-    "Exercise and Physical Activity"
+    "Prenatal Exercises "
   );
 
   const toggleSection = (section: string) => {
@@ -67,31 +67,27 @@ export const ModulePage5: React.FC = () => {
                 <li>
                   <div
                     className={`accordion-title ${
-                      expandedSection === "Exercise and Physical Activity"
-                        ? "active"
-                        : ""
+                      expandedSection === "Prenatal Exercises " ? "active" : ""
                     }`}
-                    onClick={() =>
-                      toggleSection("Exercise and Physical Activity")
-                    }
+                    onClick={() => toggleSection("Prenatal Exercises ")}
                   >
-                    Exercise and Physical Activity
+                    Prenatal Exercises
                     <span
                       className={`arrow ${
-                        expandedSection === "Exercise and Physical Activity"
+                        expandedSection === "Prenatal Exercises "
                           ? "down"
                           : "right"
                       }`}
                     ></span>
                   </div>
-                  {expandedSection === "Exercise and Physical Activity" && (
+                  {expandedSection === "Prenatal Exercises " && (
                     <ul className="submenu">
                       <li>
                         <a
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          1.1. Topic One
+                          5.1 Why Prenatal Exercise Matters
                         </a>
                       </li>
                       <li>
@@ -99,7 +95,7 @@ export const ModulePage5: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          1.2. Topic Two
+                          5.2 Safe Exercises for Each Trimester
                         </a>
                       </li>
                       <li>
@@ -107,7 +103,15 @@ export const ModulePage5: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          1.3. Topic Three
+                          5.3 Exercises to Prepare for Labor
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#section4"
+                          onClick={(e) => handleLinkClick(e, "#section4")}
+                        >
+                          5.4 Safety First, Always!
                         </a>
                       </li>
                       <li>
@@ -115,7 +119,7 @@ export const ModulePage5: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          1.4. Knowledge Checker
+                          5.5 Test Your Knowledge!
                         </a>
                       </li>
                     </ul>
@@ -123,7 +127,7 @@ export const ModulePage5: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Birth Preparation
+                    Postpartum Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -132,10 +136,10 @@ export const ModulePage5: React.FC = () => {
           </div>
         </aside>
         <main className="module-content">
-          <h2>1. Module Title</h2>
+          <h2>5. Prenatal Exercises </h2>
 
           <section id="section1">
-            <h3>1.1. Topic One</h3>
+            <h3>5.1 Why Prenatal Exercise Matters</h3>
             <p>Content for Topic One...</p>
             <a
               href="#section1-more"
@@ -147,7 +151,7 @@ export const ModulePage5: React.FC = () => {
           </section>
 
           <section id="section2">
-            <h3>1.2. Topic Two</h3>
+            <h3>5.2 Safe Exercises for Each Trimester</h3>
             <p>Content for Topic Two...</p>
             <a
               href="#section2-more"
@@ -159,7 +163,7 @@ export const ModulePage5: React.FC = () => {
           </section>
 
           <section id="section3">
-            <h3>1.3. Topic Three</h3>
+            <h3>5.3 Exercises to Prepare for Labor</h3>
             <p>Content for Topic Three...</p>
             <a
               href="#section3-more"
@@ -170,8 +174,20 @@ export const ModulePage5: React.FC = () => {
             </a>
           </section>
 
+          <section id="section4">
+            <h3>5.4 Safety First, Always!</h3>
+            <p>Content for Topic Three...</p>
+            <a
+              href="#section4-more"
+              className="details-link"
+              onClick={() => openModal("Why Nutrition Matters", "")}
+            >
+              More Details...
+            </a>
+          </section>
+
           <section id="quiz">
-            <h3>1.4. Knowledge Checker</h3>
+            <h3>5.5 Knowledge Checker</h3>
             <p>Quiz questions go here...</p>
           </section>
 

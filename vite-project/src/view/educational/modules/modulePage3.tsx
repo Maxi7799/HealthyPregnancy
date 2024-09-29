@@ -74,7 +74,7 @@ export const ModulePage3: React.FC = () => {
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          1.1 Different Types of Birth Methods
+                          3.1 Different Types of Birth Methods
                         </a>
                       </li>
                       <li>
@@ -82,7 +82,7 @@ export const ModulePage3: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          1.2 Why Does It Matter?
+                          3.2 Why Does It Matter?
                         </a>
                       </li>
                       <li>
@@ -90,7 +90,7 @@ export const ModulePage3: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          1.3 How to Choose?
+                          3.3 How to Choose?
                         </a>
                       </li>
                       <li>
@@ -98,7 +98,7 @@ export const ModulePage3: React.FC = () => {
                           href="#section4"
                           onClick={(e) => handleLinkClick(e, "#section4")}
                         >
-                          1.4 Vaginal Birth vs. C-Section
+                          3.4 Vaginal Birth vs. C-Section
                         </a>
                       </li>
                       <li>
@@ -106,7 +106,7 @@ export const ModulePage3: React.FC = () => {
                           href="#section5"
                           onClick={(e) => handleLinkClick(e, "#section5")}
                         >
-                          1.5 Recovery After Childbirth
+                          3.5 Recovery After Childbirth
                         </a>
                       </li>
                       <li>
@@ -114,7 +114,7 @@ export const ModulePage3: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          1.6 Test Your Knowledge
+                          3.6 Test Your Knowledge
                         </a>
                       </li>
                     </ul>
@@ -129,13 +129,13 @@ export const ModulePage3: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module5" className="accordion-link">
-                    Exercise and Physical Activity
+                    Prenatal Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Birth Preparation
+                    Postpartum Exercises
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -155,7 +155,7 @@ export const ModulePage3: React.FC = () => {
           </p>
 
           <section id="section1">
-            <h3>1.1 Different Types of Birth Methods</h3>
+            <h3>3.1 Different Types of Birth Methods</h3>
             <p>
               Understanding common birth methods can help you feel more prepared
               as your due date approaches. Vaginal birth is the most common
@@ -178,7 +178,7 @@ export const ModulePage3: React.FC = () => {
           </section>
 
           <section id="section2">
-            <h3>1.2 Why Does It Matter?</h3>
+            <h3>3.2 Why Does It Matter?</h3>
             <p>
               Choosing a birth method affects your recovery, future pregnancies,
               and your baby’s health. Vaginal births usually offer quicker
@@ -198,7 +198,7 @@ export const ModulePage3: React.FC = () => {
           </section>
 
           <section id="section3">
-            <h3>1.3 How to Choose?</h3>
+            <h3>3.3 How to Choose?</h3>
             <p>
               Several factors influence the choice of birth method, including
               your baby’s position, health conditions like gestational diabetes
@@ -221,7 +221,7 @@ export const ModulePage3: React.FC = () => {
           </section>
 
           <section id="section4">
-            <h3>1.4 Vaginal Birth vs. C-Section</h3>
+            <h3>3.4 Vaginal Birth vs. C-Section</h3>
             <p>
               Vaginal births offer benefits like shorter recovery times, lower
               infection risks, and fewer complications in future pregnancies,
@@ -243,7 +243,7 @@ export const ModulePage3: React.FC = () => {
           </section>
 
           <section id="section5">
-            <h3>1.5 Recovery After Childbirth</h3>
+            <h3>3.5 Recovery After Childbirth</h3>
             <p>
               Recovery after childbirth varies depending on whether you had a
               vaginal birth or a C-section. Vaginal birth recovery typically
@@ -267,7 +267,7 @@ export const ModulePage3: React.FC = () => {
           </section>
 
           <section id="quiz">
-            <h3>1.6 Knowledge Checker</h3>
+            <h3>3.6 Knowledge Checker</h3>
             <p>
               Below link goes to questions to test your understanding of the
               education.
