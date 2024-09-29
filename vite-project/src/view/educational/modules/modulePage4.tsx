@@ -169,7 +169,7 @@ export const ModulePage4: React.FC = () => {
             <a
               href="#section1-more"
               className="details-link"
-              onClick={() => openModal("Why Nutrition Matters", "")}
+              onClick={() => openModal("Why Nutrition Matters", "m4t1.pdf")}
             >
               More Details...
             </a>
@@ -189,10 +189,18 @@ export const ModulePage4: React.FC = () => {
               prevent constipation, common during pregnancy, with whole grains,
               fruits, and vegetables being excellent sources.
             </p>
+            <p>
+              Nutrient Guide: Visit our detailed guide for a list of recommended
+              foods
+              <Link to="/nutrition-analysis" className="text-link">
+                (link to Nutrition)
+              </Link>
+              .
+            </p>
             <a
               href="#section2-more"
               className="details-link"
-              onClick={() => openModal("Essential Nutrients", "")}
+              onClick={() => openModal("Essential Nutrients", "m4t2.pdf")}
             >
               More Details...
             </a>
@@ -217,7 +225,7 @@ export const ModulePage4: React.FC = () => {
               href="#section3-more"
               className="details-link"
               onClick={() =>
-                openModal("Nutrition Standards for Pregnant Women", "")
+                openModal("Nutrition Standards for Pregnant Women", "m4t3.pdf")
               }
             >
               More Details...
@@ -240,7 +248,7 @@ export const ModulePage4: React.FC = () => {
             <a
               href="#section4-more"
               className="details-link"
-              onClick={() => openModal("Healthy Meal Planning", "")}
+              onClick={() => openModal("Healthy Meal Planning", "m4t4.pdf")}
             >
               More Details...
             </a>
@@ -264,7 +272,7 @@ export const ModulePage4: React.FC = () => {
             <a
               href="#section5-more"
               className="details-link"
-              onClick={() => openModal("Foods to Avoid", "")}
+              onClick={() => openModal("Foods to Avoid", "m4t5.pdf")}
             >
               More Details...
             </a>
