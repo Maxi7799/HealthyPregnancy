@@ -363,7 +363,7 @@ export const ModulePage3: React.FC = () => {
           </section>
 
           <section id="quiz">
-            <h3>3.6 Knowledge Checker</h3>
+            <h3>3.6 Test Your Knowledge!</h3>
             <p>
               Try the questions below to test your understanding of the above
               content.
