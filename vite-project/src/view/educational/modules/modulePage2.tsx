@@ -8,8 +8,11 @@ import { Modal } from "./popupModel";
 import { rootAddress } from "../../../../env";
 import FirstVisitPieChart from "../../../components/chart/FirstVisitPieChart";
 import { QuestionSlideshow2 } from "../quizs/questionSlideShow2";
+import { useTranslation } from "react-i18next";
 
 export const ModulePage2: React.FC = () => {
+  const [t] = useTranslation("global");
+
   const [expandedSection, setExpandedSection] = useState<string | null>(
     "Antenatal Visits"
   );
@@ -52,15 +55,15 @@ export const ModulePage2: React.FC = () => {
       <div className="module-page">
         <aside className="module-sidebar">
           <Link to="/educational" className="back-button">
-            Back to Overview
+            {t("education.sidebar.back-btn")}
           </Link>
           <div className="contents-container">
             <nav className="module-contents">
-              <h3>Overview</h3>
+              <h3>{t("education.sidebar.overview")}</h3>
               <ul>
                 <li>
                   <Link to="/module1" className="accordion-link">
-                    Health risk
+                    {t("education.sidebar.card-1-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -71,7 +74,7 @@ export const ModulePage2: React.FC = () => {
                     }`}
                     onClick={() => toggleSection("Antenatal Visits")}
                   >
-                    Antenatal Visits
+                    {t("education.sidebar.card-2-title")}
                     <span
                       className={`arrow ${
                         expandedSection === "Antenatal Visits"
@@ -87,7 +90,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          2.1 Why Are Antenatal Visits Important?
+                          {t("education.sidebar.card-2-topic-1")}
                         </a>
                       </li>
                       <li>
@@ -95,7 +98,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          2.2 When Should You Go?
+                          {t("education.sidebar.card-2-topic-2")}
                         </a>
                       </li>
                       <li>
@@ -103,7 +106,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          2.3 What to Prepare/Expect Before Your Antenatal Visit
+                          {t("education.sidebar.card-2-topic-3")}
                         </a>
                       </li>
                       <li>
@@ -111,7 +114,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section4"
                           onClick={(e) => handleLinkClick(e, "#section4")}
                         >
-                          2.4 What Happens During Antenatal Visits?
+                          {t("education.sidebar.card-2-topic-4")}
                         </a>
                       </li>
                       <li>
@@ -119,7 +122,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section5"
                           onClick={(e) => handleLinkClick(e, "#section5")}
                         >
-                          2.5 After Your Antenatal Visit
+                          {t("education.sidebar.card-2-topic-5")}
                         </a>
                       </li>
                       <li>
@@ -127,7 +130,7 @@ export const ModulePage2: React.FC = () => {
                           href="#section6"
                           onClick={(e) => handleLinkClick(e, "#section6")}
                         >
-                          2.6 Why Regular Check-ups Matter
+                          {t("education.sidebar.card-2-topic-6")}
                         </a>
                       </li>
                       <li>
@@ -135,7 +138,7 @@ export const ModulePage2: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          2.7 Test Your Knowledge!
+                          {t("education.sidebar.card-2-topic-7")}
                         </a>
                       </li>
                     </ul>
@@ -143,25 +146,25 @@ export const ModulePage2: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module3" className="accordion-link">
-                    Birth Methods
+                    {t("education.sidebar.card-3-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module4" className="accordion-link">
-                    Nutrition
+                    {t("education.sidebar.card-4-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module5" className="accordion-link">
-                    Prenatal Exercises
+                    {t("education.sidebar.card-5-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Postpartum Exercises
+                    {t("education.sidebar.card-6-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>

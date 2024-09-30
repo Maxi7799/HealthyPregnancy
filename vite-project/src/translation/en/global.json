@@ -18,7 +18,7 @@
     "language-ms": "Malaysian"
   },
   "home": {
-    "slideshow":{
+    "slideshow": {
       "page-1": "Education",
       "page-1-text-1": "",
       "page-1-text-2": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
@@ -39,7 +39,7 @@
       "page-4-text-2": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
       "page-4-button": "Explore"
     },
-    "roadmap":{
+    "roadmap": {
       "title": "Plan your best pregnancy",
       "icon-1-desc": "Explore previous pregnancy through data insights",
       "icon-2-desc": "Learn essential aspects about being pregnant",
@@ -48,10 +48,9 @@
       "icon-5-desc": "Get yourself healthier through exercises"
     },
 
-    "detail-blocks":{
+    "detail-blocks": {
       "title": "Choose the service you need"
     }
-
   },
 
   "education": {
@@ -60,42 +59,531 @@
       "text-1": "Whether you are planning to or currently pregnant, let’s leverage your knowledge on pregnancy through these interactive modules to achieve your best pregnancy experience.",
       "text-2": "At the end of each chapter, try to check your understanding through a Knowledge Checker.",
       "text-3": "Have fun!",
-      "card-1": "",
-      "card-2": "",
-      "card-3": "",
-      "card-4": "",
-      "card-5": "",
-      "card-6": ""
-
-    },
-    "card-1":{
-
+      "card-1": "Health Risk",
+      "card-2": "Antenatal Visits",
+      "card-3": "Birth Methods",
+      "card-4": "Nutrition",
+      "card-5": "Prenatal Exercises",
+      "card-6": "Postpartum Exercises"
     },
 
-    "card-2":{
+    "sidebar": {
+      "back-btn": "Back to Overview",
+      "overview": "Overview",
+      "card-1-title": "Health Risk",
+      "card-1-topic-1": "1.1 Common Health Risk",
+      "card-1-topic-2": "1.2 Gestational Diabetes",
+      "card-1-topic-3": "1.3 Hyperension",
+      "card-1-topic-4": "1.4 Test Your Knowledge!",
 
+      "card-2-title": "Antenatal Visits",
+      "card-2-topic-1": "2.1 Why Are Antenatal Visits Important?",
+      "card-2-topic-2": "2.2 When Should You Go?",
+      "card-2-topic-3": "2.3 What to Prepare/Expect Before Your Antenatal Visit",
+      "card-2-topic-4": "2.4 What Happens During Antenatal Visits?",
+      "card-2-topic-5": "2.5 After Your Antenatal Visit",
+      "card-2-topic-6": "2.6 Why Regular Check-ups Matter",
+      "card-2-topic-7": "2.7 Test Your Knowledge!",
+
+      "card-3-title": "Birth Methods",
+      "card-3-topic-1": "3.1 Different Types of Birth Methods",
+      "card-3-topic-2": "3.2 Why Does It Matter?",
+      "card-3-topic-3": "3.3 How to Choose?",
+      "card-3-topic-4": "3.4 Vaginal Birth vs. C-Section",
+      "card-3-topic-5": "3.5 Recovery After Childbirth",
+      "card-3-topic-6": "3.6 Test Your Knowledge",
+
+      "card-4-title": "Nutrition",
+      "card-4-topic-1": "4.1 Why Nutrition Matters",
+      "card-4-topic-2": "4.2 Essential Nutrients",
+      "card-4-topic-3": "4.3 Nutrition Standards for Pregnant Women",
+      "card-4-topic-4": "4.4 Healthy Meal Planning",
+      "card-4-topic-5": "4.5 Foods to Avoid",
+      "card-4-topic-6": "4.6 Test Your Knowledge",
+
+      "card-5-title": "Prenatal Exercises",
+      "card-5-topic-1": "5.1 Why Prenatal Exercise Matters",
+      "card-5-topic-2": "5.2 Safe Exercises for Each Trimester",
+      "card-5-topic-3": "5.3 Exercises to Prepare for Labor",
+      "card-5-topic-4": "5.4 Safety First, Always!",
+      "card-5-topic-5": "5.5 Test Your Knowledge!",
+
+      "card-6-title": "Postpartum Exercises",
+      "card-6-topic-1": "6.1 The First 6 Weeks: Gentle Healing Movements",
+      "card-6-topic-2": "6.2 Rebuilding Core and Pelvic Floor Strength (6-12 Weeks)",
+      "card-6-topic-3": "6.3 Test Your Knowledge!"
     },
 
-    "card-3":{
+    "card-1": {
+      "module-name": "",
+      "module-desc": "",
 
+      "topic-1-name": "",
+      "topic-1-desc": {},
 
+      "topic-2-name": "",
+      "topic-2-desc": {},
+
+      "topic-3-name": "",
+      "topic-3-desc": {},
+
+      "quiz": {
+        "side-1": "",
+        "size-2": "",
+        "size-3": "",
+        "size-4": "",
+        "size-5": "",
+
+        "q-1-name": "",
+        "q-1-option-1": "",
+        "q-1-option-2": "",
+        "q-1-option-3": "",
+        "q-1-option-4": "",
+        "q-1-answer": "",
+        "q-1-pre-answer": "",
+        "q-1-post-answer": "",
+
+        "q-2-name": "",
+        "q-2-option-1": "",
+        "q-2-option-2": "",
+        "q-2-option-3": "",
+        "q-2-option-4": "",
+        "q-2-answer": "",
+        "q-2-pre-answer": "",
+        "q-2-post-answer": "",
+
+        "q-3-name": "",
+        "q-3-option-1": "",
+        "q-3-option-2": "",
+        "q-3-option-3": "",
+        "q-3-option-4": "",
+        "q-3-answer": "",
+        "q-3-pre-answer": "",
+        "q-3-post-answer": "",
+
+        "q-4-name": "",
+        "q-4-option-1": "",
+        "q-4-option-2": "",
+        "q-4-option-3": "",
+        "q-4-option-4": "",
+        "q-4-answer": "",
+        "q-4-pre-answer": "",
+        "q-4-post-answer": "",
+
+        "q-5-name": "",
+        "q-5-option-1": "",
+        "q-5-option-2": "",
+        "q-5-option-3": "",
+        "q-5-option-4": "",
+        "q-5-answer": "",
+        "q-5-pre-answer": "",
+        "q-5-post-answer": "",
+
+        "answer-correct": "",
+        "answer-incorrect": "",
+        "submit-btn": "",
+        "next-btn": ""
+      },
+
+      "more-details": "More Details...",
+      "prepage-btn": "",
+      "nextpage-btn": ""
     },
 
-    "card-4":{
+    "card-2": {
+      "module-name": "",
+      "module-desc": "",
 
+      "topic-1-name": "",
+      "topic-1-desc": {},
+
+      "topic-2-name": "",
+      "topic-2-desc": {},
+
+      "topic-3-name": "",
+      "topic-3-desc": {},
+
+      "topic-4-name": "",
+      "topic-4-desc": {},
+
+      "topic-5-name": "",
+      "topic-5-desc": {},
+
+      "topic-6-name": "",
+      "topic-6-desc": {},
+
+      "quiz": {
+        "side-1": "",
+        "size-2": "",
+        "size-3": "",
+        "size-4": "",
+        "size-5": "",
+
+        "q-1-name": "",
+        "q-1-option-1": "",
+        "q-1-option-2": "",
+        "q-1-option-3": "",
+        "q-1-option-4": "",
+        "q-1-answer": "",
+        "q-1-pre-answer": "",
+        "q-1-post-answer": "",
+
+        "q-2-name": "",
+        "q-2-option-1": "",
+        "q-2-option-2": "",
+        "q-2-option-3": "",
+        "q-2-option-4": "",
+        "q-2-answer": "",
+        "q-2-pre-answer": "",
+        "q-2-post-answer": "",
+
+        "q-3-name": "",
+        "q-3-option-1": "",
+        "q-3-option-2": "",
+        "q-3-option-3": "",
+        "q-3-option-4": "",
+        "q-3-answer": "",
+        "q-3-pre-answer": "",
+        "q-3-post-answer": "",
+
+        "q-4-name": "",
+        "q-4-option-1": "",
+        "q-4-option-2": "",
+        "q-4-option-3": "",
+        "q-4-option-4": "",
+        "q-4-answer": "",
+        "q-4-pre-answer": "",
+        "q-4-post-answer": "",
+
+        "answer-correct": "",
+        "answer-incorrect": "",
+        "submit-btn": "",
+        "next-btn": ""
+      },
+
+      "more-details": "More Details...",
+      "prepage-btn": "",
+      "nextpage-btn": ""
     },
 
-    "card-5":{
+    "card-3": {
+      "module-name": "",
+      "module-desc": "",
 
+      "topic-1-name": "",
+      "topic-1-desc": {},
+
+      "topic-2-name": "",
+      "topic-2-desc": {},
+
+      "topic-3-name": "",
+      "topic-3-desc": {},
+
+      "topic-4-name": "",
+      "topic-4-desc": {},
+
+      "topic-5-name": "",
+      "topic-5-desc": {},
+
+      "quiz": {
+        "side-1": "",
+        "size-2": "",
+        "size-3": "",
+        "size-4": "",
+        "size-5": "",
+
+        "q-1-name": "",
+        "q-1-option-1": "",
+        "q-1-option-2": "",
+        "q-1-option-3": "",
+        "q-1-option-4": "",
+        "q-1-answer": "",
+        "q-1-pre-answer": "",
+        "q-1-post-answer": "",
+
+        "q-2-name": "",
+        "q-2-option-1": "",
+        "q-2-option-2": "",
+        "q-2-option-3": "",
+        "q-2-option-4": "",
+        "q-2-answer": "",
+        "q-2-pre-answer": "",
+        "q-2-post-answer": "",
+
+        "q-3-name": "",
+        "q-3-option-1": "",
+        "q-3-option-2": "",
+        "q-3-option-3": "",
+        "q-3-option-4": "",
+        "q-3-answer": "",
+        "q-3-pre-answer": "",
+        "q-3-post-answer": "",
+
+        "q-4-name": "",
+        "q-4-option-1": "",
+        "q-4-option-2": "",
+        "q-4-option-3": "",
+        "q-4-option-4": "",
+        "q-4-answer": "",
+        "q-4-pre-answer": "",
+        "q-4-post-answer": "",
+
+        "q-5-name": "",
+        "q-5-option-1": "",
+        "q-5-option-2": "",
+        "q-5-option-3": "",
+        "q-5-option-4": "",
+        "q-5-answer": "",
+        "q-5-pre-answer": "",
+        "q-5-post-answer": "",
+
+        "answer-correct": "",
+        "answer-incorrect": "",
+        "submit-btn": "",
+        "next-btn": ""
+      },
+
+      "more-details": "More Details...",
+      "prepage-btn": "",
+      "nextpage-btn": ""
     },
 
-    "card-6":{
+    "card-4": {
+      "module-name": "",
+      "module-desc": "",
 
+      "topic-1-name": "",
+      "topic-1-desc": {},
+
+      "topic-2-name": "",
+      "topic-2-desc": {},
+
+      "topic-3-name": "",
+      "topic-3-desc": {},
+
+      "topic-4-name": "",
+      "topic-4-desc": {},
+
+      "topic-5-name": "",
+      "topic-5-desc": {},
+
+      "quiz": {
+        "side-1": "",
+        "size-2": "",
+        "size-3": "",
+        "size-4": "",
+        "size-5": "",
+
+        "q-1-name": "",
+        "q-1-option-1": "",
+        "q-1-option-2": "",
+        "q-1-option-3": "",
+        "q-1-option-4": "",
+        "q-1-answer": "",
+        "q-1-pre-answer": "",
+        "q-1-post-answer": "",
+
+        "q-2-name": "",
+        "q-2-option-1": "",
+        "q-2-option-2": "",
+        "q-2-option-3": "",
+        "q-2-option-4": "",
+        "q-2-answer": "",
+        "q-2-pre-answer": "",
+        "q-2-post-answer": "",
+
+        "q-3-name": "",
+        "q-3-option-1": "",
+        "q-3-option-2": "",
+        "q-3-option-3": "",
+        "q-3-option-4": "",
+        "q-3-answer": "",
+        "q-3-pre-answer": "",
+        "q-3-post-answer": "",
+
+        "q-4-name": "",
+        "q-4-option-1": "",
+        "q-4-option-2": "",
+        "q-4-option-3": "",
+        "q-4-option-4": "",
+        "q-4-answer": "",
+        "q-4-pre-answer": "",
+        "q-4-post-answer": "",
+
+        "q-5-name": "",
+        "q-5-option-1": "",
+        "q-5-option-2": "",
+        "q-5-option-3": "",
+        "q-5-option-4": "",
+        "q-5-answer": "",
+        "q-5-pre-answer": "",
+        "q-5-post-answer": "",
+
+        "answer-correct": "",
+        "answer-incorrect": "",
+        "submit-btn": "",
+        "next-btn": ""
+      },
+
+      "more-details": "More Details...",
+      "prepage-btn": "",
+      "nextpage-btn": ""
+    },
+
+    "card-5": {
+      "module-name": "",
+      "module-desc": "",
+
+      "topic-1-name": "",
+      "topic-1-desc": {},
+
+      "topic-2-name": "",
+      "topic-2-desc": {},
+
+      "topic-3-name": "",
+      "topic-3-desc": {},
+
+      "topic-4-name": "",
+      "topic-4-desc": {},
+
+      "quiz": {
+        "side-1": "",
+        "size-2": "",
+        "size-3": "",
+        "size-4": "",
+        "size-5": "",
+
+        "q-1-name": "",
+        "q-1-option-1": "",
+        "q-1-option-2": "",
+        "q-1-option-3": "",
+        "q-1-option-4": "",
+        "q-1-answer": "",
+        "q-1-pre-answer": "",
+        "q-1-post-answer": "",
+
+        "q-2-name": "",
+        "q-2-option-1": "",
+        "q-2-option-2": "",
+        "q-2-option-3": "",
+        "q-2-option-4": "",
+        "q-2-answer": "",
+        "q-2-pre-answer": "",
+        "q-2-post-answer": "",
+
+        "q-3-name": "",
+        "q-3-option-1": "",
+        "q-3-option-2": "",
+        "q-3-option-3": "",
+        "q-3-option-4": "",
+        "q-3-answer": "",
+        "q-3-pre-answer": "",
+        "q-3-post-answer": "",
+
+        "q-4-name": "",
+        "q-4-option-1": "",
+        "q-4-option-2": "",
+        "q-4-option-3": "",
+        "q-4-option-4": "",
+        "q-4-answer": "",
+        "q-4-pre-answer": "",
+        "q-4-post-answer": "",
+
+        "q-5-name": "",
+        "q-5-option-1": "",
+        "q-5-option-2": "",
+        "q-5-option-3": "",
+        "q-5-option-4": "",
+        "q-5-answer": "",
+        "q-5-pre-answer": "",
+        "q-5-post-answer": "",
+
+        "answer-correct": "",
+        "answer-incorrect": "",
+        "submit-btn": "",
+        "next-btn": ""
+      },
+
+      "more-details": "More Details...",
+      "prepage-btn": "",
+      "nextpage-btn": ""
+    },
+
+    "card-6": {
+      "module-name": "",
+      "module-desc": "",
+
+      "topic-1-name": "",
+      "topic-1-desc": {},
+
+      "topic-2-name": "",
+      "topic-2-desc": {},
+
+      "quiz": {
+        "side-1": "",
+        "size-2": "",
+        "size-3": "",
+        "size-4": "",
+        "size-5": "",
+
+        "q-1-name": "",
+        "q-1-option-1": "",
+        "q-1-option-2": "",
+        "q-1-option-3": "",
+        "q-1-option-4": "",
+        "q-1-answer": "",
+        "q-1-pre-answer": "",
+        "q-1-post-answer": "",
+
+        "q-2-name": "",
+        "q-2-option-1": "",
+        "q-2-option-2": "",
+        "q-2-option-3": "",
+        "q-2-option-4": "",
+        "q-2-answer": "",
+        "q-2-pre-answer": "",
+        "q-2-post-answer": "",
+
+        "q-3-name": "",
+        "q-3-option-1": "",
+        "q-3-option-2": "",
+        "q-3-option-3": "",
+        "q-3-option-4": "",
+        "q-3-answer": "",
+        "q-3-pre-answer": "",
+        "q-3-post-answer": "",
+
+        "q-4-name": "",
+        "q-4-option-1": "",
+        "q-4-option-2": "",
+        "q-4-option-3": "",
+        "q-4-option-4": "",
+        "q-4-answer": "",
+        "q-4-pre-answer": "",
+        "q-4-post-answer": "",
+
+        "q-5-name": "",
+        "q-5-option-1": "",
+        "q-5-option-2": "",
+        "q-5-option-3": "",
+        "q-5-option-4": "",
+        "q-5-answer": "",
+        "q-5-pre-answer": "",
+        "q-5-post-answer": "",
+
+        "answer-correct": "",
+        "answer-incorrect": "",
+        "submit-btn": "",
+        "next-btn": ""
+      },
+
+      "more-details": "More Details...",
+      "prepage-btn": "",
+      "nextpage-btn": ""
     }
   },
 
-
-  "footer":{
+  "footer": {
     "icon-top": "Healthy",
     "icon-bottom": "Pregnancy",
 
