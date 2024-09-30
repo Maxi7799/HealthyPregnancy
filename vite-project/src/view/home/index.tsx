@@ -13,9 +13,6 @@ export function Home() {
   return (
     <>
       <Header />
-      {/* <MainBox />
-      <HomeSec />
-      <HomeThird /> */}
       <HomeMain />
       <HomeTitle text={t("home.roadmap.title")} />
       <HomePlan />
