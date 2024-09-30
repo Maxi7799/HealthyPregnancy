@@ -6,8 +6,10 @@ import { Footer } from "../../../components/footer";
 import handleLinkClick from "./slowLinkClick";
 import { Modal } from "./popupModel";
 import { QuestionSlideshow5 } from "../quizs/questionSlideShow5";
+import { useTranslation } from "react-i18next";
 
 export const ModulePage5: React.FC = () => {
+  const [t] = useTranslation("global")
   const [expandedSection, setExpandedSection] = useState<string | null>(
     "Prenatal Exercises "
   );
@@ -35,33 +37,33 @@ export const ModulePage5: React.FC = () => {
       <div className="module-page">
         <aside className="module-sidebar">
           <Link to="/educational" className="back-button">
-            Back to Overview
+            {t("education.sidebar.back-btn")}
           </Link>
           <div className="contents-container">
             <nav className="module-contents">
-              <h3>Overview</h3>
+              <h3>{t("education.sidebar.overview")}</h3>
               <ul>
                 <li>
                   <Link to="/module1" className="accordion-link">
-                    Health Risk
+                    {t("education.sidebar.card-1-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module2" className="accordion-link">
-                    Antenatal Visits
+                    {t("education.sidebar.card-2-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module3" className="accordion-link">
-                    Birth Methods
+                    {t("education.sidebar.card-3-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module4" className="accordion-link">
-                    Nutrition
+                    {t("education.sidebar.card-4-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -72,7 +74,7 @@ export const ModulePage5: React.FC = () => {
                     }`}
                     onClick={() => toggleSection("Prenatal Exercises ")}
                   >
-                    Prenatal Exercises
+                    {t("education.sidebar.card-5-title")}
                     <span
                       className={`arrow ${
                         expandedSection === "Prenatal Exercises "
@@ -88,7 +90,7 @@ export const ModulePage5: React.FC = () => {
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          5.1 Why Prenatal Exercise Matters
+                          {t("education.sidebar.card-5-topic-1")}
                         </a>
                       </li>
                       <li>
@@ -96,7 +98,7 @@ export const ModulePage5: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          5.2 Safe Exercises for Each Trimester
+                          {t("education.sidebar.card-5-topic-2")}
                         </a>
                       </li>
                       <li>
@@ -104,7 +106,7 @@ export const ModulePage5: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          5.3 Exercises to Prepare for Labor
+                          {t("education.sidebar.card-5-topic-3")}
                         </a>
                       </li>
                       <li>
@@ -112,7 +114,7 @@ export const ModulePage5: React.FC = () => {
                           href="#section4"
                           onClick={(e) => handleLinkClick(e, "#section4")}
                         >
-                          5.4 Safety First, Always!
+                          {t("education.sidebar.card-5-topic-4")}
                         </a>
                       </li>
                       <li>
@@ -120,7 +122,7 @@ export const ModulePage5: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          5.5 Test Your Knowledge!
+                          {t("education.sidebar.card-5-topic-5")}
                         </a>
                       </li>
                     </ul>
@@ -128,7 +130,7 @@ export const ModulePage5: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Postpartum Exercises
+                    {t("education.sidebar.card-6-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>

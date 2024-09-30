@@ -8,9 +8,12 @@ import {Modal} from "./popupModel"
 import { rootAddress } from "../../../../env";
 import { TwoLineChart } from "../../../components/chart/twoLineChart";
 import { QuestionSlideshow1 } from "../quizs/questionSlideShow1";
+import { useTranslation } from "react-i18next";
 
 
 export const ModulePage1: React.FC = () => {
+  const [t] = useTranslation("global")
+
   const [expandedSection, setExpandedSection] = useState<string | null>(
     "Health Risk"
   );
@@ -53,11 +56,11 @@ export const ModulePage1: React.FC = () => {
       <div className="module-page">
         <aside className="module-sidebar">
           <Link to="/educational" className="back-button">
-            Back to Overview
+            {t("education.sidebar.back-btn")}
           </Link>
           <div className="contents-container">
             <nav className="module-contents">
-              <h3>Overview</h3>
+              <h3>{t("education.sidebar.overview")}</h3>
               <ul>
                 <li>
                   <div
@@ -66,7 +69,7 @@ export const ModulePage1: React.FC = () => {
                     }`}
                     onClick={() => toggleSection("Health Risk")}
                   >
-                    Health Risk
+                    {t("education.sidebar.card-1-title")}
                     <span
                       className={`arrow ${
                         expandedSection === "Health Risk" ? "down" : "right"
@@ -80,7 +83,7 @@ export const ModulePage1: React.FC = () => {
                           href="#section1"
                           onClick={(e) => handleLinkClick(e, "#section1")}
                         >
-                          1.1 Common Health Risk
+                          {t("education.sidebar.card-1-topic-1")}
                         </a>
                       </li>
                       <li>
@@ -88,7 +91,7 @@ export const ModulePage1: React.FC = () => {
                           href="#section2"
                           onClick={(e) => handleLinkClick(e, "#section2")}
                         >
-                          1.2 Gestational Diabetes
+                          {t("education.sidebar.card-1-topic-2")}
                         </a>
                       </li>
                       <li>
@@ -96,7 +99,7 @@ export const ModulePage1: React.FC = () => {
                           href="#section3"
                           onClick={(e) => handleLinkClick(e, "#section3")}
                         >
-                          1.3 Hyperension
+                          {t("education.sidebar.card-1-topic-3")}
                         </a>
                       </li>
                       <li>
@@ -104,7 +107,7 @@ export const ModulePage1: React.FC = () => {
                           href="#quiz"
                           onClick={(e) => handleLinkClick(e, "#quiz")}
                         >
-                          1.4 Test Your Knowledge!
+                          {t("education.sidebar.card-1-topic-4")}
                         </a>
                       </li>
                     </ul>
@@ -112,31 +115,31 @@ export const ModulePage1: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/module2" className="accordion-link">
-                    Antenatal Visits
+                    {t("education.sidebar.card-2-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module3" className="accordion-link">
-                    Birth Methods
+                    {t("education.sidebar.card-3-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module4" className="accordion-link">
-                    Nutrition
+                    {t("education.sidebar.card-4-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module5" className="accordion-link">
-                    Prenatal Exercises
+                    {t("education.sidebar.card-5-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/module6" className="accordion-link">
-                    Postpartum Exercises
+                    {t("education.sidebar.card-6-title")}
                     <span className="arrow right"></span>
                   </Link>
                 </li>
@@ -297,8 +300,8 @@ export const ModulePage1: React.FC = () => {
           <section id="quiz">
             <h3>1.4 Test Your Knowledge!</h3>
             <p>
-              Try the questions below to test your understanding of the
-              above content.
+              Try the questions below to test your understanding of the above
+              content.
             </p>
             <QuestionSlideshow1 />
           </section>
