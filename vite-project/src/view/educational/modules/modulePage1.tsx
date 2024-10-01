@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 import "./modulePage.css";
 import { Header } from "../../../components/header/header";
 import { Footer } from "../../../components/footer";
-import handleLinkClick from "./slowLinkClick"
-import {Modal} from "./popupModel"
+import handleLinkClick from "./slowLinkClick";
+import { Modal } from "./popupModel";
 import { rootAddress } from "../../../../env";
 import { TwoLineChart } from "../../../components/chart/twoLineChart";
 import { QuestionSlideshow1 } from "../quizs/questionSlideShow1";
 import { useTranslation } from "react-i18next";
 
-
 export const ModulePage1: React.FC = () => {
-  const [t] = useTranslation("global")
+  const [t] = useTranslation("global");
 
   const [expandedSection, setExpandedSection] = useState<string | null>(
     "Health Risk"
@@ -34,17 +33,16 @@ export const ModulePage1: React.FC = () => {
     setModalContent(null);
   };
 
-
   const [healthRiskData, setHealthRiskData] = useState<any>(null);
-   const fetchData = async () => {
-     try {
-       const response = await fetch(rootAddress + `/datainsight/healthrisk`);
-       const data = await response.json();
-       setHealthRiskData(data);
-     } catch (error) {
-       console.error("Error fetching data:", error);
-     }
-   };
+  const fetchData = async () => {
+    try {
+      const response = await fetch(rootAddress + `/datainsight/healthrisk`);
+      const data = await response.json();
+      setHealthRiskData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
   useEffect(() => {
     fetchData();
@@ -148,58 +146,40 @@ export const ModulePage1: React.FC = () => {
           </div>
         </aside>
         <main className="module-content">
-          <h2>1. Health Risk</h2>
-          <p>
-            This module covers important health risks during pregnancy,
-            including gestational diabetes, hypertension, and emotional
-            well-being. Staying informed and proactive helps expectant mothers
-            manage these risks effectively, ensuring a healthier journey for
-            both themselves and their babies. Regular check-ups and healthy
-            lifestyle choices are key to supporting overall health during this
-            exciting time.
-          </p>
+          <h2>{t("education.card-1.module-name")}</h2>
+          <p>{t("education.card-1.module-desc")}</p>
 
           <section id="section1">
-            <h3>1.1 Common Health Risk</h3>
+            <h3>{t("education.card-1.topic-1-name")}</h3>
             <p>
-              Common complications include{" "}
+              {t("education.card-1.topic-1-desc.text-1")}{" "}
               <span
                 className="text-link"
                 onClick={(e) => handleLinkClick(e, "#section2")}
               >
-                gestational diabetes
+                {t("education.card-1.topic-1-desc.nav-1")}
               </span>
               ,{" "}
               <span
                 className="text-link"
                 onClick={(e) => handleLinkClick(e, "#section3")}
               >
-                high blood pressure
+                {t("education.card-1.topic-1-desc.nav-2")}
               </span>{" "}
-              (which can lead to preeclampsia), infections, preterm labor, and
-              mental health challenges like depression and anxiety. More serious
-              conditions like pregnancy loss, miscarriage, or stillbirth, though
-              rare, also require awareness. Trust your body and seek medical
-              advice if you notice symptoms like severe headaches, vision
-              problems, unusual swelling, or pain. Regular prenatal care, a
-              balanced diet, staying active, and seeking support are key to a
-              healthy pregnancy.
+              {t("education.card-1.topic-1-desc.text-2")}
             </p>
             <a
               href="#section1-more"
               className="details-link"
               onClick={() => openModal("Common Health Risk", "m1t1.pdf")}
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section2">
-            <h3>1.2 Gestational Diabetes</h3>
-            <p>
-              Did you know that from 2014 to 2021, cases of gestational diabetes
-              rose by over 80%?
-            </p>
+            <h3>{t("education.card-1.topic-2-name")}</h3>
+            <p>{t("education.card-1.topic-2-desc.text-1")}</p>
             <div className="chart-section">
               {healthRiskData ? (
                 <>
@@ -208,41 +188,27 @@ export const ModulePage1: React.FC = () => {
                   </div>
                 </>
               ) : (
-                <p>Loading...</p>
+                <p>{t("education.card-1.topic-2-desc.loading")}</p>
               )}
             </div>
             <p>
-              Gestational diabetes is a type of diabetes that develops during
-              pregnancy, typically around the 24th week, and can have long-term
-              effects such as an increased risk of type 2 diabetes for the
-              mother and potential health issues for the child. It can cause
-              larger babies, leading to complications during delivery and a
-              higher likelihood of needing a C-section{" "}
+              {t("education.card-1.topic-2-desc.text-2")}{" "}
               <Link to="/module3" className="text-link">
-                (Visit our education to reduce the risk).
+                {t("education.card-1.topic-2-desc.nav-1")}
               </Link>
             </p>
-            <p>
-              Risk factors include obesity, age, family history, and ethnicity.
-              Managing gestational diabetes involves monitoring blood sugar,
-              eating a healthy diet, staying active, and sometimes taking
-              medication. Awareness and proactive management are crucial for the
-              health of both mother and baby. For more tailored support, check
-              out our:
-            </p>
+            <p>{t("education.card-1.topic-2-desc.text-3")}</p>
             <Link to="/nutrition-analysis" className="text-link">
-              1. Nutrition Recommendations
+              {t("education.card-1.topic-2-desc.nav-2")}
             </Link>
             <tr></tr>
             <Link to="/exercise" className="text-link">
-              2. Exercise
+              {t("education.card-1.topic-2-desc.nav-3")}
             </Link>
             <p>
-              Being a migrant women may face higher risk factors for gestational
-              diabetes due to dietary changes, limited access to healthcare, and
-              stress. If you’d like to assess your risk,{" "}
+              {t("education.card-1.topic-2-desc.text-4")}{" "}
               <Link to="/risk-assessment" className="text-link">
-                click here.
+                {t("education.card-1.topic-2-desc.nav-4")}
               </Link>
             </p>
 
@@ -251,40 +217,27 @@ export const ModulePage1: React.FC = () => {
               className="details-link"
               onClick={() => openModal("Gestational Diabetes", "m1t2.pdf")}
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section3">
-            <h3>1.3 Hyperension</h3>
-            <p>
-              Between 2014 and 2021, hypertension has been steadily rising,
-              becoming a common health concern, though not as dramatically as
-              diabetes. Hypertension, or high blood pressure, increases the risk
-              of heart disease, stroke, and kidney problems and often goes
-              unnoticed, earning it the nickname “silent killer.” It can be
-              caused by factors like genetics, poor diet, lack of physical
-              activity, stress, and being overweight.{" "}
-            </p>
+            <h3>{t("education.card-1.topic-3-name")}</h3>
+            <p>{t("education.card-1.topic-3-desc.text-1")}</p>
 
-            <p>
-              Managing hypertension involves lifestyle changes, such as a
-              heart-healthy diet and regular exercise. To help you along the
-              way, check out our resources on:{" "}
-            </p>
+            <p>{t("education.card-1.topic-3-desc.text-2")}</p>
             <Link to="/nutrition-analysis" className="text-link">
-              1. Nutrition Recommendations
+              {t("education.card-1.topic-3-desc.nav-1")}
             </Link>
             <tr></tr>
             <Link to="/exercise" className="text-link">
-              2. Exercise
+              {t("education.card-1.topic-3-desc.nav-2")}
             </Link>
 
             <p>
-              Regular check-ups are essential for catching and managing this
-              condition early to prevent serious health issues.{" "}
+              {t("education.card-1.topic-3-desc.text-3")}{" "}
               <Link to="/module2" className="text-link">
-                (More information can be found here)
+                {t("education.card-1.topic-3-desc.nav-3")}
               </Link>
             </p>
 
@@ -293,7 +246,7 @@ export const ModulePage1: React.FC = () => {
               className="details-link"
               onClick={() => openModal("Hyperension", "m1t3.pdf")}
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 

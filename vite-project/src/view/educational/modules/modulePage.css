@@ -1,4 +1,3 @@
-/* General reset and styling */
 html, body {
   margin: 0;
   padding: 0;
@@ -7,14 +6,12 @@ html, body {
   background-color: #f8f8f8;
 }
 
-/* Module Page Layout */
 .module-page {
   display: flex;
   min-height: 100vh;
   background-color: #f8f8f8;
 }
 
-/* Sidebar styling */
 .module-sidebar {
   width: 400px;
   height: 900px;
@@ -45,7 +42,6 @@ html, body {
   margin-right: 10px;
 }
 
-/* Contents Container */
 .contents-container {
   background-color: white; /* White background for the contents and list */
   padding-left: 20px;
@@ -95,11 +91,10 @@ html, body {
   background-color: transparent; 
 }
 
-/* Accordion styles */
 .accordion-title {
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.8s ease, color 0.8s ease; /* Slower transition */
+  transition: background-color 0.8s ease, color 0.8s ease; 
 }
 
 .submenu {
@@ -107,7 +102,7 @@ html, body {
   padding-left: 20px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.5s ease; /* Slower transition for dropdown */
+  transition: max-height 1.5s ease; 
   text-align: left;
 }
 
