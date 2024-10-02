@@ -19,6 +19,7 @@ import { ModulePage6 } from "../src/view/educational/modules/modulePage6";
 import { Exercise } from "../src/view/exercise/index";
 import {ExerciseQuestionari} from "../src/view/exercise/healthyQuestionnair/index";
 import { PostpartumExercise } from "../src/view/exercise/postpartumPhysicalHealthExercise";
+import {VideoPage1} from "../src/view/exercise/categorydetails/videoPage1";
 
 const MainRouter: React.FC = () => {
   return (
@@ -45,6 +46,8 @@ const MainRouter: React.FC = () => {
         <Route path="/module4" element={<ModulePage4 />} />
         <Route path="/module5" element={<ModulePage5 />} />
         <Route path="/module6" element={<ModulePage6 />} />
+
+        <Route path="/videopage1" element={<VideoPage1/>} />
       </Routes>
     </>
   );
