@@ -695,7 +695,71 @@
   },
 
   "exercise": {
-    
+    "overview-title": "Pregnancy Exercise",
+    "card-1-desc": "",
+    "card-2-desc": "",
+    "card-3-desc": "",
+    "card-4-desc": "",
+    "card-5-desc": "",
+    "card-6-desc": "",
+    "card-7-desc": "",
+    "card-8-desc": "",
+
+    "card-1": {
+      "card-title": "Welcome to Our Exercise",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": "Featured Videos"
+    },
+
+    "card-2": {
+      "card-title": "",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": ""
+    },
+
+     "card-3":{
+      "card-title": "",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": ""
+    },
+
+     "card-4":{
+      "card-title": "",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": ""
+    },
+
+     "card-5":{
+      "card-title": "",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": ""
+    },
+
+     "card-6":{
+      "card-title": "",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": ""
+    },
+
+     "card-7":{
+      "card-title": "",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": ""
+    },
+
+     "card-8":{
+      "card-title": "",
+      "card-desc-1": "",
+      "card-desc-2": "",
+      "video-title": ""
+    }
   },
 
   "footer": {

@@ -20,6 +20,13 @@ import { Exercise } from "../src/view/exercise/index";
 import {ExerciseQuestionari} from "../src/view/exercise/healthyQuestionnair/index";
 import { PostpartumExercise } from "../src/view/exercise/postpartumPhysicalHealthExercise";
 import {VideoPage1} from "../src/view/exercise/categorydetails/videoPage1";
+import { VideoPage2 } from "../src/view/exercise/categorydetails/videoPage2";
+import { VideoPage3 } from "../src/view/exercise/categorydetails/videoPage3";
+import { VideoPage4 } from "../src/view/exercise/categorydetails/videoPage4";
+import { VideoPage5 } from "../src/view/exercise/categorydetails/videopage5";
+import { VideoPage6 } from "../src/view/exercise/categorydetails/videoPage6";
+import { VideoPage7 } from "../src/view/exercise/categorydetails/videoPage7";
+import { VideoPage8 } from "../src/view/exercise/categorydetails/videoPage8";
 
 const MainRouter: React.FC = () => {
   return (
@@ -39,7 +46,6 @@ const MainRouter: React.FC = () => {
         <Route path="/healthyquestionnari" element={<ExerciseQuestionari />} />
         <Route path="/postpartumexercise" element={<PostpartumExercise />} />
 
-
         <Route path="/module1" element={<ModulePage1 />} />
         <Route path="/module2" element={<ModulePage2 />} />
         <Route path="/module3" element={<ModulePage3 />} />
@@ -47,7 +53,14 @@ const MainRouter: React.FC = () => {
         <Route path="/module5" element={<ModulePage5 />} />
         <Route path="/module6" element={<ModulePage6 />} />
 
-        <Route path="/videopage1" element={<VideoPage1/>} />
+        <Route path="/videopage1" element={<VideoPage1 />} />
+        <Route path="/videopage2" element={<VideoPage2 />} />
+        <Route path="/videopage3" element={<VideoPage3 />} />
+        <Route path="/videopage4" element={<VideoPage4 />} />
+        <Route path="/videopage5" element={<VideoPage5 />} />
+        <Route path="/videopage6" element={<VideoPage6 />} />
+        <Route path="/videopage7" element={<VideoPage7 />} />
+        <Route path="/videopage8" element={<VideoPage8 />} />
       </Routes>
     </>
   );
