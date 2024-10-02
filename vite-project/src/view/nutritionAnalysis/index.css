@@ -41,6 +41,10 @@
     .analyze-box {
         min-width: 90%;
     }
+
+    .input-table-body {
+        display: block;
+    }
 }
 
 .analyze-title {
@@ -461,6 +465,10 @@
     margin-right: 10px;
 }
 
+.input-table-body1 {
+    display: none;
+}
+
 @media (max-width: 850px) {
     .food-right-bottom {
         display: block;
@@ -473,4 +481,45 @@
 
 .actrecomend {
     border: 2px solid #000 !important;
+}
+
+@media (max-width: 700px) {
+    .analyze-box {
+        min-width: 90%;
+    }
+
+    .input-table-body {
+        flex: inherit;
+        display: none;
+    }
+
+    .input-table-body1 {
+        display: block;
+        width: 100%;
+    }
+
+    .input-table-header-text {
+        display: none;
+    }
+
+    .label {
+        display: inline-block;
+        width: 130px;
+        text-align: left;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .qty-col {
+        width: calc(100% - 130px);
+    }
+
+    .index-col {
+        display: flex;
+        align-items: top;
+    }
+
+    .border-bottom {
+        border-bottom: 1px dashed #000;
+        padding: 10px 0px;
+    }
 }

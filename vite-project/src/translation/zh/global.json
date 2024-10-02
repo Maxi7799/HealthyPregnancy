@@ -80,6 +80,37 @@
     "card-6": {}
   },
 
+  "collection": {
+    "title": "身体信息收集",
+    "text-1": "照顾病人很重要，病人也会跟着病人走，但那是一段非常痛苦和煎熬的时期。",
+    "text-2": "细究起来，任何人都不应该从事任何一种工作，除非他能从中得到一些好处。",
+    "card-1": {
+      "title": "你有任何运动行为吗",
+      "options-1": "是",
+      "options-2": "否"
+    },
+    "card-2": {
+      "title": "您属于哪个年龄段?"
+    },
+    "card-3": {
+      "title": "How often do you have an exercise?",
+      "radio-1": "Once a week",
+      "radio-2": "Twice a week",
+      "radio-3": "Three or more in a week"
+    },
+    "card-4": {
+      "title": "What is your weight （kg）?",
+      "weight": "weight"
+    },
+    "card-5": {
+      "title": "What is your height （cm）",
+      "height": "What is your height （cm）"
+    },
+    "Submit": "Submit",
+    "Reset": "Reset answers",
+    "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
+  },
+
   "footer": {
     "icon-top": "健康",
     "icon-bottom": "孕期",

@@ -1,0 +1,258 @@
+.Diabetes-risk {
+    background-color: #fff;
+}
+
+.Diabetes-risk-top {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.Diabetes-risk-top .step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #2C5665;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.Diabetes-risk-top .step-1,
+.step-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+}
+
+.Diabetes-risk-top .step-arrow {
+    font-size: 30px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding-top: 0.3vw; */
+    justify-content: center;
+}
+
+.Diabetes-risk-top .step-text {
+    font-size: 14px;
+    margin-top: 0.5vw;
+    width: 150px;
+}
+
+.Diabetes-risk-top .step-text span {
+    font-weight: 600;
+}
+
+.diabetes-risk-box {
+    width: 1000px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.diabetes-risk-title {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+}
+
+.diabetes-risk-text {
+    font-size: 14px;
+    text-align: left;
+    color: #666;
+}
+
+.blue-text {
+    color: #2C5665;
+    font-weight: 600;
+}
+
+.diabetes-risk-text-bold {
+    text-align: left;
+    color: #444;
+}
+
+.diabetes-risk-item {
+    width: calc(100% - 60px);
+    border: 1px solid #000;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.diabetes-risk-item-text {
+    text-align: left;
+    color: #000;
+}
+
+.diabetes-risk-item-details {
+    display: flex;
+    justify-content: start;
+    color: #000;
+}
+
+.tip-cont {
+    width: 300px;
+}
+
+.Socioeconomic-Factors {
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.socioeconomic-factors-text {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.dia-btn {
+    background-color: #2C5665;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit {
+    /* width: 100px;
+    height: 40px; */
+    background-color: #2C5665;
+}
+
+.reset {
+    /* width: 100px;
+    height: 40px; */
+    background-color: #FFF;
+    color: #888;
+    text-decoration: underline;
+}
+
+.result-title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.diabetes-result-box {
+    padding: 10px 0px;
+    border-top: 1px solid #ccc;
+}
+
+.diabetes-result-box p {
+    margin: 10px 0px;
+}
+
+.diabetes-result-text {
+    text-align: left;
+    font-weight: 600;
+    color: #666;
+}
+
+.dr {
+    width: 33.33%;
+    height: 15px;
+}
+
+.diabetes-result-view {
+    display: flex;
+    position: relative;
+}
+
+.diabetes-result-green {
+    background-color: #00CD14;
+}
+
+.diabetes-result-orange {
+    background-color: #FF7B00;
+}
+
+.diabetes-result-red {
+    background-color: #FF0000;
+}
+
+.diabetes-result-view-point {
+    width: 26px;
+    height: 26px;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    border-radius: 13px;
+    position: absolute;
+    background-color: #FFF;
+    top: -5PX;
+}
+
+.diabetes-result-view-point-text {
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: max-content;
+    font-weight: 600;
+    text-align: center;
+    left: -50%;
+}
+
+.diabetes-result-next {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.result-bottom-item {
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.result-bottom-item-top {
+    height: 300px;
+    border-bottom: 1px solid #000;
+}
+
+.result-bottom-item-text {
+    height: 30px;
+    text-align: left;
+    padding: 5px;
+    /* line-height: 30px; */
+}
+
+@media (max-width: 1200px) {
+    .Diabetes-risk-top .step-circle {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .Diabetes-risk-top .step-1,
+    .step-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+    }
+
+    .diabetes-risk-box {
+        width: 70%;
+        border: 1px solid #000;
+        border-radius: 20px;
+        padding: 30px 50px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .tip-cont {
+        width: 200px;
+    }
+}

@@ -8,7 +8,7 @@ import { RiskAssessment } from "../src/view/riskAssessment";
 import { NutritionAnalysis } from "../src/view/nutritionAnalysis";
 import { Recipe } from "../src/view/recipe";
 import { RecipeResult } from "../src/view/recipe-result";
-import {ScrollToTop} from "./scrollToTop";
+import { ScrollToTop } from "./scrollToTop";
 import React from "react";
 import { ModulePage1 } from "../src/view/educational/modules/modulePage1";
 import { ModulePage2 } from "../src/view/educational/modules/modulePage2";
@@ -17,9 +17,10 @@ import { ModulePage4 } from "../src/view/educational/modules/modulePage4";
 import { ModulePage5 } from "../src/view/educational/modules/modulePage5";
 import { ModulePage6 } from "../src/view/educational/modules/modulePage6";
 import { Exercise } from "../src/view/exercise/index";
-import {ExerciseQuestionari} from "../src/view/exercise/healthyQuestionnair/index";
+import { DiabetesRiskAssessment } from "../src/view/diabetesRiskAssessment/index";
+import { ExerciseQuestionari } from "../src/view/exercise/healthyQuestionnair/index";
 import { PostpartumExercise } from "../src/view/exercise/postpartumPhysicalHealthExercise";
-import {VideoPage1} from "../src/view/exercise/categorydetails/videoPage1";
+import { VideoPage1 } from "../src/view/exercise/categorydetails/videoPage1";
 
 import { VideoPage2 } from "../src/view/exercise/categorydetails/videoPage2";
 import { VideoPage3 } from "../src/view/exercise/categorydetails/videoPage3";
@@ -39,11 +40,12 @@ const MainRouter: React.FC = () => {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/educational" element={<Educational />} />
         <Route path="/dataInsight" element={<DataInsight />} />
-        <Route path="/risk-assessment" element={<RiskAssessment />} />
+        <Route path="/risk-assessment" element={<DiabetesRiskAssessment />} />
         <Route path="/nutrition-analysis" element={<NutritionAnalysis />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/recipe-result" element={<RecipeResult />} />
         <Route path="/exercise" element={<Exercise />} />
+
         <Route path="/healthyquestionnari" element={<ExerciseQuestionari />} />
         <Route path="/postpartumexercise" element={<PostpartumExercise />} />
 

@@ -319,7 +319,7 @@ export const NutritionAnalysis: React.FC = () => {
                 ) : (
                   <>
                     <div className="input-table">
-                      <div className="input-table-header">
+                      <div className="input-table-header input-table-header-text">
                         <Space>
                           <div className="table-col index-col"></div>
                           <div className="table-col qty-col">Qty</div>
@@ -329,8 +329,8 @@ export const NutritionAnalysis: React.FC = () => {
                       </div>
                       {guideList.map((item, index) => {
                         return (
-                          <div className="input-table-header">
-                            <div className="input-table-header">
+                          <div className="input-table-header border-bottom">
+                            <div className="input-table-header input-table-body">
                               <Space>
                                 <div className="table-col index-col">
                                   {index + 1}
@@ -386,6 +386,92 @@ export const NutritionAnalysis: React.FC = () => {
                                     }
                                   />
                                 </div>
+                                <div
+                                  className="table-col del-col"
+                                  onClick={() => deleteItem(index)}
+                                >
+                                  <DeleteOutlined />
+                                </div>
+                              </Space>
+                            </div>
+                            <div className="input-table-header input-table-body1">
+                              <Space>
+                                <div className="table-col index-col">
+                                  {index + 1}
+                                </div>
+                                <div>
+                                  <Space direction="vertical">
+                                    <Space>
+                                      <span className="label">Qty</span>
+                                      <Input
+                                        placeholder="e.g. 100"
+                                        value={item.Qty}
+                                        style={{ width: "200px" }}
+                                        onChange={(e) => QtyInput(e, index)}
+                                      />
+                                    </Space>
+                                    {/* </div> */}
+                                    {/* <div className="table-col qty-col"> */}
+                                    <Space>
+                                      <span className="label">Unit</span>
+                                      <Select
+                                        style={{ width: "200px" }}
+                                        defaultValue="Ounce"
+                                        onChange={(e) => UnitChange(e, index)}
+                                        value={item.Unit}
+                                        options={[
+                                          { value: "Ounce", label: "Ounce" },
+                                          { value: "Gram", label: "Gram" },
+                                          { value: "Pound", label: "Pound" },
+                                          {
+                                            value: "Kilogram",
+                                            label: "Kilogram",
+                                          },
+                                          { value: "Pinch", label: "Pinch" },
+                                          { value: "Liter", label: "Liter" },
+                                          {
+                                            value: "Fluid ounce",
+                                            label: "Fluid ounce",
+                                          },
+                                          { value: "Pint", label: "Pint" },
+                                          { value: "Quart", label: "Quart" },
+                                          {
+                                            value: "Milliliter",
+                                            label: "Milliliter",
+                                          },
+                                          { value: "Drop", label: "Drop" },
+                                          { value: "Cup", label: "Cup" },
+                                          {
+                                            value: "Tablespoon",
+                                            label: "Tablespoon",
+                                          },
+                                          {
+                                            value: "Teaspoon",
+                                            label: "Teaspoon",
+                                          },
+                                        ]}
+                                      />
+                                    </Space>
+                                    {/* </div> */}
+                                    {/* <div className="table-col"> */}
+                                    <Space>
+                                      <span className="label">
+                                        Ingredient Name
+                                      </span>
+                                      <Input
+                                        placeholder="e.g. fish"
+                                        value={item.IngredientName}
+                                        style={{ width: "200px" }}
+                                        onChange={(e) =>
+                                          IngredientNameInput(e, index)
+                                        }
+                                      />
+                                    </Space>
+                                  </Space>
+                                </div>
+                                {/* <div className="table-col qty-col"> */}
+
+                                {/* </div> */}
                                 <div
                                   className="table-col del-col"
                                   onClick={() => deleteItem(index)}

@@ -712,6 +712,37 @@
     }
   },
 
+  "collection": {
+    "title": "Body information collection",
+    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "card-1": {
+      "title": "Have you any sport behavior",
+      "options-1": "Yes",
+      "options-2": "No"
+    },
+    "card-2": {
+      "title": "Which age group do you belongs to?"
+    },
+    "card-3": {
+      "title": "How often do you have an exercise?",
+      "radio-1": "Once a week",
+      "radio-2": "Twice a week",
+      "radio-3": "Three or more in a week"
+    },
+    "card-4": {
+      "title": "What is your weight （kg）?",
+      "weight": "weight"
+    },
+    "card-5": {
+      "title": "What is your height （cm）",
+      "height": "What is your height （cm）"
+    },
+    "Submit": "Submit",
+    "Reset": "Reset answers",
+    "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
+  },
+
   "footer": {
     "icon-top": "Healthy",
     "icon-bottom": "Pregnancy",
