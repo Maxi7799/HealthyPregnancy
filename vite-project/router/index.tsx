@@ -20,6 +20,7 @@ import { Exercise } from "../src/view/exercise/index";
 import {ExerciseQuestionari} from "../src/view/exercise/healthyQuestionnair/index";
 import { PostpartumExercise } from "../src/view/exercise/postpartumPhysicalHealthExercise";
 import {VideoPage1} from "../src/view/exercise/categorydetails/videoPage1";
+
 import { VideoPage2 } from "../src/view/exercise/categorydetails/videoPage2";
 import { VideoPage3 } from "../src/view/exercise/categorydetails/videoPage3";
 import { VideoPage4 } from "../src/view/exercise/categorydetails/videoPage4";
@@ -61,6 +62,7 @@ const MainRouter: React.FC = () => {
         <Route path="/videopage6" element={<VideoPage6 />} />
         <Route path="/videopage7" element={<VideoPage7 />} />
         <Route path="/videopage8" element={<VideoPage8 />} />
+
       </Routes>
     </>
   );

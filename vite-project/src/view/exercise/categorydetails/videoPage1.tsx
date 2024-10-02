@@ -63,6 +63,7 @@ export const VideoPage1: React.FC = () => {
 
         {/* YouTube Slideshow */}
         <div className="video-slideshow">
+
           <h2>{t("exercise.card-1.video-title")}</h2>
           <div
             className="video-container"
