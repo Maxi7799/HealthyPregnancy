@@ -2,10 +2,13 @@ import React, { useRef } from "react";
 import "./page.css";
 import { Footer } from "../../../components/footer";
 import { Header } from "../../../components/header/header";
+import { useTranslation } from "react-i18next";
 
 const videos = ["dQw4w9WgXcQ", "tVj0ZTS4WF4", "QH2-TGUlwu4", "9bZkp7q19f0"];
 
 export const VideoPage1: React.FC = () => {
+
+  const [t] = useTranslation("global");
   const videoContainerRef = useRef<HTMLDivElement>(null);
   let isDragging = false;
   let startX: number = 0;
@@ -43,7 +46,7 @@ export const VideoPage1: React.FC = () => {
     <>
       <Header />
       <div className="page-container">
-        <h1 className="page-title">Welcome to Our Educational Page</h1>
+        <h1 className="page-title">{t("exercise.card-1.card-title")}</h1>
         <div className="intro-section">
           <div className="intro-image-container">
             <img
@@ -53,23 +56,15 @@ export const VideoPage1: React.FC = () => {
             />
           </div>
           <div className="intro-text">
-            <p>
-              This page offers insightful information on various topics related
-              to health, wellness, and more. We aim to provide valuable content
-              that helps you understand important aspects of life and how to
-              take care of yourself.
-            </p>
-            <p>
-              Our goal is to deliver accurate and up-to-date information through
-              engaging articles, helpful videos, and interactive content. Browse
-              through the sections to learn more.
-            </p>
+            <p>{t("exercise.card-1.card-desc-1")}</p>
+            <p>{t("exercise.card-1.card-desc-2")}</p>
           </div>
         </div>
 
         {/* YouTube Slideshow */}
         <div className="video-slideshow">
-          <h2>Featured Videos</h2>
+
+          <h2>{t("exercise.card-1.video-title")}</h2>
           <div
             className="video-container"
             ref={videoContainerRef}
