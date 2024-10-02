@@ -48,9 +48,11 @@ export const Header: React.FC = () => {
             <Link to="/nutrition-analysis">{t("header.navbar-4")}</Link>
           </div>
         </Tooltip>
-        <div className="header-nav">
-          <Link to="/exercise">{t("header.navbar-5")}</Link>
-        </div>
+        <Tooltip placement="bottom" color="#fff" title={ExerciseList}>
+          <div className="header-nav">
+            <Link to="/exercise">{t("header.navbar-5")}</Link>
+          </div>
+        </Tooltip>
         <Language />
       </div>
     </div>
@@ -69,6 +71,23 @@ const NutritionList = () => {
       </div>
       <div className="Nutrition-row">
         <Link to="/recipe">{t("header.navbar-4-3")}</Link>
+      </div>
+    </div>
+  );
+};
+
+const ExerciseList = () => {
+  const [t] = useTranslation("global");
+  return (
+    <div style={{ color: "#000" }}>
+      <div className="Nutrition-row">
+        <Link to="/exercise">{t("header.navbar-5-1")}</Link>
+      </div>
+      <div className="Nutrition-row">
+        <Link to="/healthyquestionnari">{t("header.navbar-5-2")}</Link>
+      </div>
+      <div className="Nutrition-row">
+        <Link to="/postpartumexercise">{t("header.navbar-5-3")}</Link>
       </div>
     </div>
   );
