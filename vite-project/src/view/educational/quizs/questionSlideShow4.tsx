@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { QuestionCard } from "./questionCard";
 import "./question.css";
+import { useTranslation } from "react-i18next";
 
 type Question = {
   question: string;
@@ -14,58 +15,71 @@ type Result = {
   isCorrect: boolean | null;
 };
 
-const questions: Question[] = [
-  {
-    question: "Which nutrient is vital for preventing neural tube defects?",
-    options: [
-      "A) Calcium",
-      "B) Iron",
-      "C) Folic Acid",
-      "D) Omega-3 Fatty Acids",
-    ],
-    answer: "C) Folic Acid",
-    correctExplanation:
-      "Folic acid is crucial for fetal development, particularly in the early stages of pregnancy.",
-  },
-  {
-    question:
-      "What should pregnant women limit in their diet to reduce the risk of foodborne illness?",
-    options: [
-      "A) Whole grains",
-      "B) Raw or undercooked seafood, meat, and eggs",
-      "C) Fruits and vegetables",
-      "D) Dairy products",
-    ],
-    answer: "B) Raw or undercooked seafood, meat, and eggs",
-    correctExplanation:
-      "These foods can harbor harmful bacteria and should be avoided during pregnancy.",
-  },
-  {
-    question: "What is a good source of calcium for pregnant women?",
-    options: ["A) Chicken", "B) Spinach", "C) Cheese", "D) Brown rice"],
-    answer: "C) Cheese",
-    correctExplanation:
-      "Dairy products, including cheese, are excellent sources of calcium essential for bone development.",
-  },
-  {
-    question:
-      "Which type of fish should pregnant women avoid due to high mercury levels?",
-    options: ["A) Salmon", "B) Sardines", "C) Swordfish", "D) Trout"],
-    answer: "C) Swordfish",
-    correctExplanation:
-      "Swordfish and other high-mercury fish should be avoided during pregnancy.",
-  },
-  {
-    question:
-      "What is the recommended daily limit for caffeine intake during pregnancy?",
-    options: ["A) 100 mg", "B) 200 mg", "C) 300 mg", "D) 400 mg"],
-    answer: "B) 200 mg",
-    correctExplanation:
-      "Pregnant women should limit caffeine intake to less than 200 mg per day to ensure safety for the baby.",
-  },
-];
+const generateQuestions = () => {
+  const [t] = useTranslation("global");
+  const questions: Question[] = [
+    {
+      question: t("education.card-4.quiz.q-1-name"),
+      options: [
+        t("education.card-4.quiz.q-1-option-1"),
+        t("education.card-4.quiz.q-1-option-2"),
+        t("education.card-4.quiz.q-1-option-3"),
+        t("education.card-4.quiz.q-1-option-4"),
+      ],
+      answer: t("education.card-4.quiz.q-1-answer"),
+      correctExplanation: t("education.card-4.quiz.q-1-post-answer"),
+    },
+    {
+      question: t("education.card-4.quiz.q-2-name"),
+      options: [
+        t("education.card-4.quiz.q-2-option-1"),
+        t("education.card-4.quiz.q-2-option-2"),
+        t("education.card-4.quiz.q-2-option-3"),
+        t("education.card-4.quiz.q-2-option-4"),
+      ],
+      answer: t("education.card-4.quiz.q-2-answer"),
+      correctExplanation: t("education.card-4.quiz.q-2-post-answer"),
+    },
+    {
+      question: t("education.card-4.quiz.q-3-name"),
+      options: [
+        t("education.card-4.quiz.q-3-option-1"),
+        t("education.card-4.quiz.q-3-option-2"),
+        t("education.card-4.quiz.q-3-option-3"),
+        t("education.card-4.quiz.q-3-option-4"),
+      ],
+      answer: t("education.card-4.quiz.q-3-answer"),
+      correctExplanation: t("education.card-4.quiz.q-3-post-answer"),
+    },
+    {
+      question: t("education.card-4.quiz.q-4-name"),
+      options: [
+        t("education.card-4.quiz.q-4-option-1"),
+        t("education.card-4.quiz.q-4-option-2"),
+        t("education.card-4.quiz.q-4-option-3"),
+        t("education.card-4.quiz.q-4-option-4"),
+      ],
+      answer: t("education.card-4.quiz.q-4-answer"),
+      correctExplanation: t("education.card-4.quiz.q-4-post-answer"),
+    },
+    {
+      question: t("education.card-4.quiz.q-5-name"),
+      options: [
+        t("education.card-4.quiz.q-5-option-1"),
+        t("education.card-4.quiz.q-5-option-2"),
+        t("education.card-4.quiz.q-5-option-3"),
+        t("education.card-4.quiz.q-5-option-4"),
+      ],
+      answer: t("education.card-4.quiz.q-5-answer"),
+      correctExplanation: t("education.card-4.quiz.q-5-post-answer"),
+    },
+  ];
+  return questions;
+};
 
 export const QuestionSlideshow4: React.FC = () => {
+  const questions = generateQuestions();
+  const [t] = useTranslation("global");
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [results, setResults] = useState<Result[]>(
     Array(questions.length).fill({ selectedOption: null, isCorrect: null })
@@ -105,7 +119,8 @@ export const QuestionSlideshow4: React.FC = () => {
               }`}
               onClick={() => handleQuestionClick(index)}
             >
-              Question {index + 1}
+              {t("education.card-1.quiz.side")}
+              {index + 1}
             </li>
           ))}
         </ul>

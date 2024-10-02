@@ -191,30 +191,12 @@ export const ModulePage3: React.FC = () => {
           </div>
         </aside>
         <main className="module-content">
-          <h2>3. Birth Methods</h2>
-          <p>
-            This section explores childbirth methods—vaginal birth, cesarean
-            section (C-section), and assisted vaginal delivery. It outlines the
-            pros and cons, recovery times, and factors influencing choices. A
-            comparison of postpartum recovery for each method is included, along
-            with a quiz to enhance understanding and promote discussions with
-            healthcare providers.
-          </p>
+          <h2>{t("education.card-3.module-name")}</h2>
+          <p>{t("education.card-3.module-desc")}</p>
 
           <section id="section1">
-            <h3>3.1 Different Types of Birth Methods</h3>
-            <p>
-              Understanding common birth methods can help you feel more prepared
-              as your due date approaches. Vaginal birth is the most common
-              method, offering quicker recovery and immediate skin-to-skin
-              contact. A C-section is a surgical delivery through the abdomen,
-              often planned for medical reasons or needed during labor, with a
-              longer recovery time. Assisted vaginal delivery uses tools like
-              forceps or a vacuum to help during difficult labor. Consider the
-              benefits and risks of each method, how to prepare if a C-section
-              is recommended, signs that might require assistance, and how to
-              discuss your birth plan with your healthcare provider.
-            </p>
+            <h3>{t("education.card-3.topic-1-name")}</h3>
+            <p>{t("education.card-3.topic-1-desc.text-1")}</p>
             <a
               href="#section1-more"
               className="details-link"
@@ -222,48 +204,26 @@ export const ModulePage3: React.FC = () => {
                 openModal("Different Types of Birth Methods", "m3t1.pdf")
               }
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section2">
-            <h3>3.2 Why Does It Matter?</h3>
-            <p>
-              Choosing a birth method affects your recovery, future pregnancies,
-              and your baby’s health. Vaginal births usually offer quicker
-              recovery and beneficial bacteria for the baby, while C-sections
-              have longer recovery times, higher risks of complications, and may
-              influence future deliveries. Discussing your options with your
-              healthcare provider will help you make the best choice for you and
-              your baby.
-            </p>
+            <h3>{t("education.card-3.topic-2-name")}?</h3>
+            <p>{t("education.card-3.topic-2-desc.text-1")}</p>
             <a
               href="#section2-more"
               className="details-link"
               onClick={() => openModal("Why Does It Matter?", "m3t2.pdf")}
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section3">
-            <h3>3.3 How to Choose?</h3>
-            <p>
-              Several factors influence the choice of birth method, including
-              your baby’s position, health conditions like gestational diabetes
-              or hypertension, and personal preferences. For instance, a breech
-              position may lead to a recommended C-section, while some moms
-              choose a planned C-section based on previous experiences or
-              anxiety about labor. Cultural and religious beliefs can also play
-              a role in this decision. Regular communication with your
-              healthcare team is essential to align your preferences with
-              medical advice. Remember, every pregnancy is unique, and it’s okay
-              to adjust your birth plan as needed.
-            </p>
-            <p>
-              Here’s some data on the most common birth methods to help you make
-              an informed choice:
-            </p>
+            <h3>{t("education.card-3.topic-3-name")}</h3>
+            <p>{t("education.card-3.topic-3-desc.text-1")}</p>
+            <p>{t("education.card-3.topic-3-desc.text-2")}</p>
             <div className="chart-section">
               {birthMethodData ? (
                 <>
@@ -272,14 +232,10 @@ export const ModulePage3: React.FC = () => {
                   </div>
                 </>
               ) : (
-                <p>Loading...</p>
+                <p>{t("education.card-2.topic-2-desc.loading")}</p>
               )}
             </div>
-            <p>
-              Remember, every pregnancy is unique, and it’s okay to adjust your
-              birth plan as needed. Below are some common reason for choosing
-              c-section:
-            </p>
+            <p>{t("education.card-3.topic-3-desc.text-3")}</p>
             <div className="chart-section">
               {cReasonData ? (
                 <>
@@ -288,36 +244,23 @@ export const ModulePage3: React.FC = () => {
                   </div>
                 </>
               ) : (
-                <p>Loading...</p>
+                <p>{t("education.card-2.topic-2-desc.loading")}</p>
               )}
             </div>
-            <p>You can also found more details below</p>
+            <p>{t("education.card-3.topic-3-desc.text-4")}</p>
             <a
               href="#section3-more"
               className="details-link"
               onClick={() => openModal("How to Choose?", "m3t3.pdf")}
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section4">
-            <h3>3.4 Vaginal Birth vs. C-Section</h3>
-            <p>
-              Vaginal births offer benefits like shorter recovery times, lower
-              infection risks, and fewer complications in future pregnancies,
-              though they can involve longer labor and the potential for
-              tearing. On the other hand, C-sections can be planned in advance
-              and avoid the risk of tearing but come with longer recovery times
-              and higher risks of infection and complications. Women who have
-              C-sections typically experience extended hospital stays and
-              healing periods, making it important to weigh these factors when
-              deciding on a delivery method.
-            </p>
-            <p>
-              Below chart shows the Recovery Time (in days) for each Birth
-              Method:
-            </p>
+            <h3>{t("education.card-3.topic-4-name")}</h3>
+            <p>{t("education.card-3.topic-4-desc.text-1")}</p>
+            <p>{t("education.card-3.topic-4-desc.text-2")}</p>
             <div className="stack-bar-chart-container">
               {postLengthData ? (
                 <>
@@ -327,7 +270,7 @@ export const ModulePage3: React.FC = () => {
                   </div>
                 </>
               ) : (
-                <p>Loading...</p>
+                <p>{t("education.card-2.topic-2-desc.loading")}</p>
               )}
             </div>
             <a
@@ -337,49 +280,38 @@ export const ModulePage3: React.FC = () => {
                 openModal("Vaginal Birth vs. C-Section", "m3t4.pdf")
               }
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section5">
-            <h3>3.5 Recovery After Childbirth</h3>
-            <p>
-              Recovery after childbirth varies depending on whether you had a
-              vaginal birth or a C-section. Vaginal birth recovery typically
-              takes 4-6 weeks, with pain managed by over-the-counter
-              medications. Women can gradually resume daily activities and focus
-              on perineal care and Kegel exercises to strengthen pelvic floor
-              muscles. C-section recovery usually takes 6-8 weeks or longer,
-              with prescription pain relief often needed initially. Physical
-              activity should be limited to walking, and incision care is
-              crucial to avoid infection. Both types of recovery benefit from
-              proper postpartum care, including breastfeeding support and a
-              balanced diet to promote healing.
-            </p>
+            <h3>{t("education.card-3.topic-5-name")}</h3>
+            <p>{t("education.card-3.topic-5-desc.text-1")}</p>
             <a
               href="#section5-more"
               className="details-link"
               onClick={() => openModal("Recovery After Childbirth", "m3t5.pdf")}
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="quiz">
-            <h3>3.6 Test Your Knowledge!</h3>
-            <p>
-              Try the questions below to test your understanding of the above
-              content.
-            </p>
+            <h3>{t("education.card-3.quiz.topic-6-name")}</h3>
+            <p>{t("education.card-3.quiz.desc")}</p>
             <QuestionSlideshow3 />
           </section>
 
           <div className="navigation-buttons">
             <Link to="/module2">
-              <button className="prev-button">Previous Chapter</button>
+              <button className="prev-button">
+                {t("education.card-1.prepage-btn")}
+              </button>
             </Link>
             <Link to="/module4">
-              <button className="next-button">Next Chapter</button>
+              <button className="next-button">
+                {t("education.card-1.nextpage-btn")}
+              </button>
             </Link>
           </div>
         </main>

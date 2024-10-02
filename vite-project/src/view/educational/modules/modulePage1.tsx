@@ -251,20 +251,21 @@ export const ModulePage1: React.FC = () => {
           </section>
 
           <section id="quiz">
-            <h3>1.4 Test Your Knowledge!</h3>
-            <p>
-              Try the questions below to test your understanding of the above
-              content.
-            </p>
+            <h3>{t("education.card-1.quiz.topic-4-name")}</h3>
+            <p>{t("education.card-1.quiz.desc")}</p>
             <QuestionSlideshow1 />
           </section>
 
           <div className="navigation-buttons">
             <Link to="/module1">
-              <button className="prev-button">Previous Chapter</button>
+              <button className="prev-button">
+                {t("education.card-1.prepage-btn")}
+              </button>
             </Link>
             <Link to="/module2">
-              <button className="next-button">Next Chapter</button>
+              <button className="next-button">
+                {t("education.card-1.nextpage-btn")}
+              </button>
             </Link>
           </div>
         </main>

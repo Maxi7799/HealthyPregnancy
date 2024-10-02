@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { QuestionCard } from "./questionCard";
 import "./question.css";
+import { useTranslation } from "react-i18next";
 
 type Question = {
   question: string;
@@ -14,58 +15,61 @@ type Result = {
   isCorrect: boolean | null;
 };
 
-const questions: Question[] = [
-  {
-    question: "Why are antenatal visits important?",
-    options: [
-      "A) To monitor the baby’s growth and mother’s health",
-      "B) To chat with your doctor",
-      "C) Only for blood pressure checks",
-      "D) To receive free samples",
-    ],
-    answer: "A) To monitor the baby’s growth and mother’s health",
-    correctExplanation:
-      "Antenatal visits track both your health and your baby’s development, ensuring a healthy pregnancy journey.",
-  },
-  {
-    question: "When should you schedule your first antenatal visit?",
-    options: [
-      "A) After the first trimester",
-      "B) As soon as you confirm your pregnancy",
-      "C) Just before delivery",
-      "D) After 20 weeks",
-    ],
-    answer: "B) As soon as you confirm your pregnancy",
-    correctExplanation:
-      "It's important to start antenatal care early to create a care plan and monitor your pregnancy from the beginning.",
-  },
-  {
-    question: "Which of the following is checked during an antenatal visit?",
-    options: [
-      "A) Blood pressure",
-      "B) Ultrasound scans",
-      "C) Urine tests",
-      "D) All of the above",
-    ],
-    answer: "D) All of the above",
-    correctExplanation:
-      "Antenatal visits involve various health checks to track both your well-being and your baby's development.",
-  },
-  {
-    question: "Why is it important to monitor blood pressure during pregnancy?",
-    options: [
-      "A) To check for signs of hypertension",
-      "B) To measure hydration levels",
-      "C) To track salt intake",
-      "D) It’s not necessary",
-    ],
-    answer: "A) To check for signs of hypertension",
-    correctExplanation:
-      "Monitoring blood pressure helps detect early signs of hypertension, which can affect both mother and baby.",
-  },
-];
+const generateQuestions = () => {
+  const [t] = useTranslation("global")
+  const questions: Question[] = [
+    {
+      question: t("education.card-2.quiz.q-1-name"),
+      options: [
+        t("education.card-2.quiz.q-1-option-1"),
+        t("education.card-2.quiz.q-1-option-2"),
+        t("education.card-2.quiz.q-1-option-3"),
+        t("education.card-2.quiz.q-1-option-4"),
+      ],
+      answer: t("education.card-2.quiz.q-1-answer"),
+      correctExplanation: t("education.card-2.quiz.q-1-post-answer"),
+    },
+    {
+      question: t("education.card-2.quiz.q-2-name"),
+      options: [
+        t("education.card-2.quiz.q-2-option-1"),
+        t("education.card-2.quiz.q-2-option-2"),
+        t("education.card-2.quiz.q-2-option-3"),
+        t("education.card-2.quiz.q-2-option-4"),
+      ],
+      answer: t("education.card-2.quiz.q-2-answer"),
+      correctExplanation: t("education.card-2.quiz.q-2-post-answer"),
+    },
+    {
+      question: t("education.card-2.quiz.q-3-name"),
+      options: [
+        t("education.card-2.quiz.q-3-option-1"),
+        t("education.card-2.quiz.q-3-option-2"),
+        t("education.card-2.quiz.q-3-option-3"),
+        t("education.card-2.quiz.q-3-option-4"),
+      ],
+      answer: t("education.card-2.quiz.q-3-answer"),
+      correctExplanation: t("education.card-2.quiz.q-3-post-answer"),
+    },
+    {
+      question: t("education.card-2.quiz.q-4-name"),
+      options: [
+        t("education.card-2.quiz.q-4-option-1"),
+        t("education.card-2.quiz.q-4-option-2"),
+        t("education.card-2.quiz.q-4-option-3"),
+        t("education.card-2.quiz.q-4-option-4"),
+      ],
+      answer: t("education.card-2.quiz.q-4-answer"),
+      correctExplanation: t("education.card-2.quiz.q-4-post-answer"),
+    },
+  ];
+  return questions;
+};
 
 export const QuestionSlideshow2: React.FC = () => {
+  const [t] = useTranslation("global");
+
+  const questions = generateQuestions();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [results, setResults] = useState<Result[]>(
     Array(questions.length).fill({ selectedOption: null, isCorrect: null })
@@ -105,7 +109,7 @@ export const QuestionSlideshow2: React.FC = () => {
               }`}
               onClick={() => handleQuestionClick(index)}
             >
-              Question {index + 1}
+              {t("education.card-1.quiz.side")}{index + 1}
             </li>
           ))}
         </ul>

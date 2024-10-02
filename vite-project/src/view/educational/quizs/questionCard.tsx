@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type QuestionCardProps = {
   question: string;
@@ -19,6 +20,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   onNextQuestion,
   prevSelectedOption,
 }) => {
+  const [t] = useTranslation("global");
   const [selectedOption, setSelectedOption] = useState<string | null>(
     prevSelectedOption
   );
@@ -81,7 +83,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             marginRight: "10px",
           }}
         >
-          Submit
+          {t("education.submit-btn")}
         </button>
 
         {/* Next Question button appears only after submission */}
@@ -98,7 +100,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               marginLeft: "10px",
             }}
           >
-            Next Question
+            {t("education.next-btn")}
           </button>
         )}
       </div>
@@ -107,15 +109,15 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         <div className={`feedback ${isCorrect ? "correct" : "incorrect"}`}>
           {isCorrect ? (
             <>
-              <h3>Correct!</h3>
+              <h3>{t("education.answer-correct")}</h3>
               <p>{correctExplanation}</p>
             </>
           ) : (
             <>
-              <h3>Incorrect!</h3>
+              <h3>{t("education.answer-incorrect")}</h3>
               <p>
-                The correct answer is <strong>{answer}</strong>.{" "}
-                {correctExplanation}
+                {t("education.card-1.quiz.q-1-pre-answer")} 
+                <strong>{answer}</strong>. {correctExplanation}
               </p>
             </>
           )}

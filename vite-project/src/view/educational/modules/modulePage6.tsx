@@ -124,26 +124,19 @@ export const ModulePage6: React.FC = () => {
           </div>
         </aside>
         <main className="module-content">
-          <h2>6. Postpartum Exercises</h2>
-          <p>
-            Congratulations, mama! The postpartum period is all about recovery,
-            rebuilding, and reconnecting with your body. Let’s ease back into
-            movement, focusing on gentle exercises that support your healing
-            journey.
-          </p>
+          <h2>{t("education.card-6.module-name")}</h2>
+          <p>{t("education.card-6.module-desc")}</p>
 
           <section id="section1">
-            <h3>6.1 The First 6 Weeks: Gentle Healing Movements</h3>
+            <h3>{t("education.card-6.topic-1-name")}</h3>
             <p>
-              During the first 6 weeks postpartum, rest is crucial, but gentle
-              movements can aid recovery. <strong>Deep belly breathing</strong>{" "}
-              helps re-engage core muscles and reduce tension by taking slow,
-              deep breaths while sitting comfortably.{" "}
-              <strong>Pelvic tilts</strong> relieve lower back tension and begin
-              strengthening the core by gently tilting the pelvis upward while
-              lying on your back with bent knees.{" "}
-              <strong>Gentle walking</strong> boosts circulation and mood,
-              starting with short 5-10 minute walks.
+              {t("education.card-6.topic-1-desc.text-1")}{" "}
+              <strong> {t("education.card-6.topic-1-desc.text-2")}</strong>{" "}
+              {t("education.card-6.topic-1-desc.text-3")}{" "}
+              <strong> {t("education.card-6.topic-1-desc.text-4")}</strong>{" "}
+              {t("education.card-6.topic-1-desc.text-5")}
+              <strong> {t("education.card-6.topic-1-desc.text-6")}</strong>{" "}
+              {t("education.card-6.topic-1-desc.text-7")}
             </p>
             <a
               href="#section1-more"
@@ -155,19 +148,18 @@ export const ModulePage6: React.FC = () => {
                 )
               }
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section2">
-            <h3>6.2 Rebuilding Core and Pelvic Floor Strength (6-12 Weeks)</h3>
+            <h3>{t("education.card-6.topic-2-name")}</h3>
             <p>
-              Between 6-12 weeks postpartum, with your doctor’s approval, focus
-              on rebuilding core strength. <strong>Heel slides</strong> help
-              reconnect core muscles and strengthen the lower abs by sliding one
-              heel away and back while lying on your back with one knee bent.{" "}
-              <strong>Bridges</strong> activate the glutes and core by lifting
-              your hips off the floor while lying on your back with knees bent.
+              {t("education.card-6.topic-2-desc.text-1")}{" "}
+              <strong>{t("education.card-6.topic-2-desc.text-2")}</strong>{" "}
+              {t("education.card-6.topic-2-desc.text-3")}{" "}
+              <strong>{t("education.card-6.topic-2-desc.text-4")}</strong>{" "}
+              {t("education.card-6.topic-2-desc.text-5")}
             </p>
             <a
               href="#section2-more"
@@ -179,25 +171,26 @@ export const ModulePage6: React.FC = () => {
                 )
               }
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="quiz">
-            <h3>6.3 Test Your Knowledge!</h3>
-            <p>
-              Try the questions below to test your understanding of the above
-              content.
-            </p>
+            <h3>{t("education.card-6.quiz.topic-3-name")}</h3>
+            <p>{t("education.card-6.quiz.desc")}</p>
             <QuestionSlideshow6 />
           </section>
 
           <div className="navigation-buttons">
             <Link to="/module5">
-              <button className="prev-button">Previous Chapter</button>
+              <button className="prev-button">
+                {t("education.card-1.prepage-btn")}
+              </button>
             </Link>
             <Link to="/module6">
-              <button className="next-button">Next Chapter</button>
+              <button className="next-button">
+                {t("education.card-1.nextpage-btn")}
+              </button>
             </Link>
           </div>
         </main>

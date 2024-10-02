@@ -139,34 +139,16 @@ export const ModulePage5: React.FC = () => {
           </div>
         </aside>
         <main className="module-content">
-          <h2>5. Prenatal Exercises </h2>
-          <p>
-            Hey mama! Staying active during pregnancy isn’t just about keeping
-            fit—it’s a wonderful way to prepare your body for the changes ahead,
-            keep your energy up, and even help with labour. This category is
-            about ensuring you feel strong, healthy, and empowered throughout
-            each stage of your pregnancy. From safe exercise routines to tips on
-            managing discomfort, we’ve got you covered!
-          </p>
+          <h2>{t("education.card-5.module-name")}</h2>
+          <p>{t("education.card-5.module-desc")}</p>
 
           <section id="section1">
-            <h3>5.1 Why Prenatal Exercise Matters</h3>
+            <h3>{t("education.card-5.topic-1-name")}</h3>
+            <p>{t("education.card-5.topic-1-desc.text-1")}</p>
             <p>
-              Prenatal exercise is highly beneficial for both you and your baby.
-              It boosts your energy, eases aches and pains, prepares your body
-              for labor by strengthening muscles and improving flexibility,
-              supports your baby’s health through better blood circulation, and
-              reduces the risk of complications like gestational diabetes and
-              preeclampsia. Staying active is one of the best things you can do
-              during pregnancy.
-            </p>
-            <p>
-              Quick Tip: Aim for about 30 minutes a day of moderate exercise
-              like walking or prenatal yoga, but always listen to your body. If
-              you feel tired, it’s okay to rest! If you want to know more about
-              prenatal exercises, click here{" "}
+              {t("education.card-5.topic-1-desc.text-2")}{" "}
               <Link to="/exercise" className="text-link">
-                (link to exercise)
+                {t("education.card-5.topic-1-desc.nav-1")}
               </Link>
               .
             </p>
@@ -177,34 +159,15 @@ export const ModulePage5: React.FC = () => {
                 openModal("Why Prenatal Exercise Matters", "m5t1.pdf")
               }
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section2">
-            <h3>5.2 Safe Exercises for Each Trimester</h3>
-            <p>
-              {" "}
-              • First Trimester (Weeks 1-12): Focus on light cardio like walking
-              and swimming, low-impact strength training for arms and legs with
-              small weights, and gentle stretching or prenatal yoga. Move slowly
-              and control movements, especially if feeling tired or nauseous.{" "}
-            </p>
-            <p>
-              • Second Trimester (Weeks 13-28): This is the best time for
-              exercise as many moms feel more energetic. Incorporate low-impact
-              aerobics, modified Pilates, and resistance band exercises. Focus
-              on building strength and maintaining good posture as your bump
-              grows. Avoid lying flat on your back.{" "}
-            </p>
-            <p>
-              • Third Trimester (Weeks 29-40): Stick to low-impact activities
-              like prenatal yoga, seated exercises, and gentle stretching. Add
-              pelvic floor exercises like Kegels and pelvic tilts to prepare for
-              labor. Gentle cardio, such as swimming or leisurely walks, is
-              recommended. Be mindful of balance as your center of gravity
-              shifts.
-            </p>
+            <h3>{t("education.card-5.topic-2-name")}</h3>
+            <p> {t("education.card-5.topic-2-desc.text-1")}</p>
+            <p>{t("education.card-5.topic-2-desc.text-2")} </p>
+            <p>{t("education.card-5.topic-2-desc.text-3")}</p>
             <a
               href="#section2-more"
               className="details-link"
@@ -212,28 +175,15 @@ export const ModulePage5: React.FC = () => {
                 openModal("Safe Exercises for Each Trimester", "m5t2.pdf")
               }
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section3">
-            <h3>5.3 Exercises to Prepare for Labor</h3>
-            <p>
-              • Squats: Strengthen your legs and pelvic floor, essential muscles
-              for labor. Stand with feet shoulder-width apart, squat as if
-              sitting in a chair, hold for a few seconds, then rise back up.
-            </p>
-            <p>
-              • Kegel Exercises: Strengthen your pelvic floor, aiding in pushing
-              during labor and preventing incontinence. Squeeze the muscles used
-              to stop urine flow, hold for 5 seconds, then release. Do 10 reps,
-              3 times a day.
-            </p>
-            <p>
-              • Cat-Cow Stretches: Relieve lower back pain and improve spinal
-              flexibility. On hands and knees, arch your back upwards like a
-              cat, then lower it, letting your belly drop toward the floor.
-            </p>
+            <h3>{t("education.card-5.topic-3-name")}</h3>
+            <p>{t("education.card-5.topic-3-desc.text-1")}</p>
+            <p>{t("education.card-5.topic-3-desc.text-2")}</p>
+            <p>{t("education.card-5.topic-3-desc.text-3")}</p>
             <a
               href="#section3-more"
               className="details-link"
@@ -241,48 +191,38 @@ export const ModulePage5: React.FC = () => {
                 openModal("Exercises to Prepare for Labor", "m5t3.pdf")
               }
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="section4">
-            <h3>5.4 Safety First, Always!</h3>
-            <p>
-              Safety is crucial during pregnancy, so always listen to your
-              body—if you feel tired, lightheaded, or uncomfortable, take a
-              break. Avoid high-impact activities like running or jumping, lying
-              flat on your back after the first trimester, and exercises that
-              require holding your breath. Stay hydrated by drinking plenty of
-              water before, during, and after exercise. Stop immediately if you
-              experience dizziness, severe shortness of breath, headache, chest
-              pain, sudden swelling, contractions, or decreased baby movements.
-              Your well-being and your baby’s health are top priorities, so
-              exercise with caution.
-            </p>
+            <h3>{t("education.card-5.topic-4-name")}</h3>
+            <p>{t("education.card-5.topic-4-desc.text-1")}</p>
             <a
               href="#section4-more"
               className="details-link"
               onClick={() => openModal("Safety First, Always!", "m5t4.pdf")}
             >
-              More Details...
+              {t("education.card-1.more-details")}
             </a>
           </section>
 
           <section id="quiz">
-            <h3>5.5 Test Your Knowledge!</h3>
-            <p>
-              Try the questions below to test your understanding of the above
-              content.
-            </p>
+            <h3>{t("education.card-5.quiz.topic-5-name")}</h3>
+            <p>{t("education.card-5.quiz.desc")}</p>
             <QuestionSlideshow5 />
           </section>
 
           <div className="navigation-buttons">
             <Link to="/module4">
-              <button className="prev-button">Previous Chapter</button>
+              <button className="prev-button">
+                {t("education.card-1.prepage-btn")}
+              </button>
             </Link>
             <Link to="/module6">
-              <button className="next-button">Next Chapter</button>
+              <button className="next-button">
+                {t("education.card-1.nextpage-btn")}
+              </button>
             </Link>
           </div>
         </main>

@@ -156,11 +156,7 @@
         "topic-4-name": "1.4 Test Your Knowledge!",
         "desc": "Try the questions below to test your understanding of the above content.",
 
-        "side-1": "Question 1",
-        "size-2": "Question 2",
-        "size-3": "Question 3",
-        "size-4": "Question 4",
-        "size-5": "Question 5",
+        "side": "Question ",
 
         "q-1-name": "When does gestational diabetes usually develop during pregnancy?",
         "q-1-option-1": "A) 12th week",
@@ -205,12 +201,7 @@
         "q-5-option-4": "D) Fried foods",
         "q-5-answer": "C) Whole grains and lean proteins",
         "q-5-pre-answer": "The correct answer is ",
-        "q-5-post-answer": "These help manage blood sugar and promote heart health.",
-
-        "answer-correct": "Correct!",
-        "answer-incorrect": "Incorrect!",
-        "submit-btn": "Submit",
-        "next-btn": "Next Question"
+        "q-5-post-answer": "These help manage blood sugar and promote heart health."
       },
 
       "more-details": "More Details...",
@@ -258,11 +249,7 @@
         "topic-7-name": "2.7 Test Your Knowledge!",
         "desc": "Try the questions below to test your understanding of the above content.",
 
-        "side-1": "Question 1",
-        "size-2": "Question 2",
-        "size-3": "Question 3",
-        "size-4": "Question 4",
-        "size-5": "Question 5",
+        "side": "Question",
 
         "q-1-name": "Why are antenatal visits important?",
         "q-1-option-1": "A) To monitor the baby’s growth and mother’s health",
@@ -298,12 +285,7 @@
         "q-4-option-4": "D) It’s not necessary",
         "q-4-answer": "A) To check for signs of hypertension",
         "q-4-pre-answer": "The correct answer is ",
-        "q-4-post-answer": "Monitoring blood pressure helps detect early signs of hypertension, which can affect both mother and baby.",
-
-        "answer-correct": "Correct!",
-        "answer-incorrect": "Incorrect!",
-        "submit-btn": "Submit",
-        "next-btn": "Next Question"
+        "q-4-post-answer": "Monitoring blood pressure helps detect early signs of hypertension, which can affect both mother and baby."
       },
 
       "more-details": "More Details...",
@@ -348,11 +330,7 @@
         "topic-6-name": "3.6 Test Your Knowledge!",
         "desc": "Try the questions below to test your understanding of the above content.",
 
-        "side-1": "Question 1",
-        "size-2": "Question 2",
-        "size-3": "Question 3",
-        "size-4": "Question 4",
-        "size-5": "Question 5",
+        "side": "Question",
 
         "q-1-name": "What is the most common method of childbirth?",
         "q-1-option-1": "A) Cesarean Section",
@@ -397,12 +375,7 @@
         "q-5-option-4": "D) Length of your pregnancy",
         "q-5-answer": "A) Baby’s position",
         "q-5-pre-answer": "The correct answer is ",
-        "q-5-post-answer": "The baby’s position can significantly impact the recommended delivery method.",
-
-        "answer-correct": "Correct!",
-        "answer-incorrect": "Incorrect!",
-        "submit-btn": "Submit",
-        "next-btn": "Next Question"
+        "q-5-post-answer": "The baby’s position can significantly impact the recommended delivery method."
       },
 
       "more-details": "More Details...",
@@ -445,11 +418,7 @@
         "topic-6-name": "4.6 Test Your Knowledge!",
         "desc": "Try the questions below to test your understanding of the above content.",
 
-        "side-1": "Question 1",
-        "size-2": "Question 2",
-        "size-3": "Question 3",
-        "size-4": "Question 4",
-        "size-5": "Question 5",
+        "side": "Question",
 
         "q-1-name": "Which nutrient is vital for preventing neural tube defects?",
         "q-1-option-1": "A) Calcium",
@@ -494,12 +463,7 @@
         "q-5-option-4": "D) 400 mg",
         "q-5-answer": "B) 200 mg",
         "q-5-pre-answer": "The correct answer is ",
-        "q-5-post-answer": "Pregnant women should limit caffeine intake to less than 200 mg per day to ensure safety for the baby.",
-
-        "answer-correct": "Correct!",
-        "answer-incorrect": "Incorrect!",
-        "submit-btn": "Submit",
-        "next-btn": "Next Question"
+        "q-5-post-answer": "Pregnant women should limit caffeine intake to less than 200 mg per day to ensure safety for the baby."
       },
 
       "more-details": "More Details...",
@@ -541,11 +505,7 @@
         "topic-5-name": "5.5 Test Your Knowledge!",
         "desc": "Try the questions below to test your understanding of the above content.",
 
-        "side-1": "Question 1",
-        "size-2": "Question 2",
-        "size-3": "Question 3",
-        "size-4": "Question 4",
-        "size-5": "Question 5",
+        "side": "Question",
 
         "q-1-name": "Which of the following is a benefit of prenatal exercise?",
         "q-1-option-1": "A) Causes preterm labor",
@@ -590,12 +550,7 @@
         "q-5-option-4": "D) Heavy weightlifting",
         "q-5-answer": "B) Gentle yoga",
         "q-5-pre-answer": "The correct answer is ",
-        "q-5-post-answer": "Gentle yoga is a safe and beneficial activity during the first trimester to improve flexibility and reduce stress.",
-
-        "answer-correct": "Correct!",
-        "answer-incorrect": "Incorrect!",
-        "submit-btn": "Submit",
-        "next-btn": "Next Question"
+        "q-5-post-answer": "Gentle yoga is a safe and beneficial activity during the first trimester to improve flexibility and reduce stress."
       },
 
       "more-details": "More Details...",
@@ -631,11 +586,7 @@
         "topic-3-name": "6.3 Test Your Knowledge!",
         "desc": "Try the questions below to test your understanding of the above content.",
 
-        "side-1": "Question 1",
-        "size-2": "Question 2",
-        "size-3": "Question 3",
-        "size-4": "Question 4",
-        "size-5": "Question 5",
+        "side": "Question",
 
         "q-1-name": "Which exercise helps reconnect your core muscles postpartum?",
         "q-1-option-1": "A) Heel slides",
@@ -680,18 +631,17 @@
         "q-5-option-4": "D) Gentle walking",
         "q-5-answer": "B) Planks",
         "q-5-pre-answer": "The correct answer is ",
-        "q-5-post-answer": "Planks should be avoided during early postpartum recovery as they put strain on the abdominal muscles that need time to heal.",
-
-        "answer-correct": "Correct!",
-        "answer-incorrect": "Incorrect!",
-        "submit-btn": "Submit",
-        "next-btn": "Next Question"
+        "q-5-post-answer": "Planks should be avoided during early postpartum recovery as they put strain on the abdominal muscles that need time to heal."
       },
 
       "more-details": "More Details...",
       "prepage-btn": "Previous Chapter",
       "nextpage-btn": "Next Chapter"
-    }
+    },
+    "answer-correct": "Correct!",
+    "answer-incorrect": "Incorrect!",
+    "submit-btn": "Submit",
+    "next-btn": "Next Question"
   },
 
   "exercise": {
@@ -719,48 +669,47 @@
       "video-title": ""
     },
 
-     "card-3":{
+    "card-3": {
       "card-title": "",
       "card-desc-1": "",
       "card-desc-2": "",
       "video-title": ""
     },
 
-     "card-4":{
+    "card-4": {
       "card-title": "",
       "card-desc-1": "",
       "card-desc-2": "",
       "video-title": ""
     },
 
-     "card-5":{
+    "card-5": {
       "card-title": "",
       "card-desc-1": "",
       "card-desc-2": "",
       "video-title": ""
     },
 
-     "card-6":{
+    "card-6": {
       "card-title": "",
       "card-desc-1": "",
       "card-desc-2": "",
       "video-title": ""
     },
 
-     "card-7":{
+    "card-7": {
       "card-title": "",
       "card-desc-1": "",
       "card-desc-2": "",
       "video-title": ""
     },
 
-     "card-8":{
+    "card-8": {
       "card-title": "",
       "card-desc-1": "",
       "card-desc-2": "",
       "video-title": ""
     }
-
   },
 
   "footer": {

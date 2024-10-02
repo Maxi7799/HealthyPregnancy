@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { QuestionCard } from "./questionCard";
 import "./question.css";
+import { useTranslation } from "react-i18next";
 
 type Question = {
   question: string;
@@ -14,70 +15,72 @@ type Result = {
   isCorrect: boolean | null;
 };
 
-const questions: Question[] = [
-  {
-    question: "What is the most common method of childbirth?",
-    options: [
-      "A) Cesarean Section",
-      "B) Assisted Vaginal Delivery",
-      "C) Vaginal Birth",
-      "D) Home Birth",
-    ],
-    answer: "C) Vaginal Birth",
-    correctExplanation:
-      "Vaginal birth is the most common delivery method for babies.",
-  },
-  {
-    question: "What is a potential risk associated with cesarean sections?",
-    options: [
-      "A) Lower risk of infection",
-      "B) Longer recovery time",
-      "C) Less time in the hospital",
-      "D) Easier breastfeeding",
-    ],
-    answer: "B) Longer recovery time",
-    correctExplanation:
-      "Women who undergo C-sections typically experience longer recovery times compared to those who have vaginal deliveries.",
-  },
-  {
-    question: "What is one advantage of vaginal birth?",
-    options: [
-      "A) Longer recovery time",
-      "B) Higher risk of infection",
-      "C) Shorter recovery time",
-      "D) Planned in advance",
-    ],
-    answer: "C) Shorter recovery time",
-    correctExplanation:
-      "Vaginal births generally allow for quicker recovery compared to C-sections.",
-  },
-  {
-    question: "What is an assisted vaginal delivery?",
-    options: [
-      "A) A home birth",
-      "B) Delivery with the use of tools like forceps or vacuum",
-      "C) A planned C-section",
-      "D) A natural birth without any intervention",
-    ],
-    answer: "B) Delivery with the use of tools like forceps or vacuum",
-    correctExplanation:
-      "Assisted vaginal delivery involves using instruments to help guide the baby out.",
-  },
-  {
-    question: "Which factor can influence your choice of birth method?",
-    options: [
-      "A) Baby’s position",
-      "B) Weather on the delivery day",
-      "C) Color of the nursery",
-      "D) Length of your pregnancy",
-    ],
-    answer: "A) Baby’s position",
-    correctExplanation:
-      "The baby’s position can significantly impact the recommended delivery method.",
-  }
-];
+const generateQuestions = () => {
+
+  const [t] = useTranslation("global");
+  const questions: Question[] = [
+    {
+      question: t("education.card-3.quiz.q-1-name"),
+      options: [
+        t("education.card-3.quiz.q-1-option-1"),
+        t("education.card-3.quiz.q-1-option-2"),
+        t("education.card-3.quiz.q-1-option-3"),
+        t("education.card-3.quiz.q-1-option-4"),
+      ],
+      answer: t("education.card-3.quiz.q-1-answer"),
+      correctExplanation: t("education.card-3.quiz.q-1-post-answer"),
+    },
+    {
+      question: t("education.card-3.quiz.q-2-name"),
+      options: [
+        t("education.card-3.quiz.q-2-option-1"),
+        t("education.card-3.quiz.q-2-option-2"),
+        t("education.card-3.quiz.q-2-option-3"),
+        t("education.card-3.quiz.q-2-option-4"),
+      ],
+      answer: t("education.card-3.quiz.q-2-answer"),
+      correctExplanation: t("education.card-3.quiz.q-2-post-answer"),
+    },
+    {
+      question: t("education.card-3.quiz.q-3-name"),
+      options: [
+        t("education.card-3.quiz.q-3-option-1"),
+        t("education.card-3.quiz.q-3-option-2"),
+        t("education.card-3.quiz.q-3-option-3"),
+        t("education.card-3.quiz.q-3-option-4"),
+      ],
+      answer: t("education.card-3.quiz.q-3-answer"),
+      correctExplanation: t("education.card-3.quiz.q-3-post-answer"),
+    },
+    {
+      question: t("education.card-3.quiz.q-4-name"),
+      options: [
+        t("education.card-3.quiz.q-4-option-1"),
+        t("education.card-3.quiz.q-4-option-2"),
+        t("education.card-3.quiz.q-4-option-3"),
+        t("education.card-3.quiz.q-4-option-4"),
+      ],
+      answer: t("education.card-3.quiz.q-4-answer"),
+      correctExplanation: t("education.card-3.quiz.q-4-post-answer"),
+    },
+    {
+      question: t("education.card-3.quiz.q-5-name"),
+      options: [
+        t("education.card-3.quiz.q-5-option-1"),
+        t("education.card-3.quiz.q-5-option-2"),
+        t("education.card-3.quiz.q-5-option-3"),
+        t("education.card-3.quiz.q-5-option-4"),
+      ],
+      answer: t("education.card-3.quiz.q-5-answer"),
+      correctExplanation: t("education.card-3.quiz.q-5-post-answer"),
+    },
+  ];
+  return questions;
+};
 
 export const QuestionSlideshow3: React.FC = () => {
+  const questions = generateQuestions();
+  const [t] = useTranslation("global");
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [results, setResults] = useState<Result[]>(
     Array(questions.length).fill({ selectedOption: null, isCorrect: null })
@@ -117,7 +120,8 @@ export const QuestionSlideshow3: React.FC = () => {
               }`}
               onClick={() => handleQuestionClick(index)}
             >
-              Question {index + 1}
+              {t("education.card-1.quiz.side")}
+              {index + 1}
             </li>
           ))}
         </ul>

@@ -19,73 +19,66 @@ const generateQuestions = () => {
   const [t] = useTranslation("global");
   const questions: Question[] = [
     {
-      question:
-        "When does gestational diabetes usually develop during pregnancy?",
+      question: t("education.card-1.quiz.q-1-name"),
       options: [
         t("education.card-1.quiz.q-1-option-1"),
-        "B) 24th week",
-        "C) 30th week",
-        "D) After childbirth",
+        t("education.card-1.quiz.q-1-option-2"),
+        t("education.card-1.quiz.q-1-option-3"),
+        t("education.card-1.quiz.q-1-option-4"),
       ],
-      answer: "B) 24th week",
-      correctExplanation:
-        "Gestational diabetes typically appears around the 24th week of pregnancy.",
+      answer: t("education.card-1.quiz.q-1-answer"),
+      correctExplanation: t("education.card-1.quiz.q-1-post-answer"),
     },
     {
-      question: "Why is hypertension called the 'silent killer'?",
+      question: t("education.card-1.quiz.q-2-name"),
       options: [
-        "A) It causes sudden headaches",
-        "B) It goes unnoticed until serious health issues arise",
-        "C) It makes you feel sleepy",
-        "D) It causes visible symptoms",
+        t("education.card-1.quiz.q-2-option-1"),
+        t("education.card-1.quiz.q-2-option-2"),
+        t("education.card-1.quiz.q-2-option-3"),
+        t("education.card-1.quiz.q-2-option-4"),
       ],
-      answer: "B) It goes unnoticed until serious health issues arise",
-      correctExplanation:
-        "It often has no symptoms until it causes major problems like heart disease or stroke.",
+      answer: t("education.card-1.quiz.q-2-answer"),
+      correctExplanation: t("education.card-1.quiz.q-2-post-answer"),
     },
     {
-      question: "Which lifestyle change can help manage hypertension?",
+      question: t("education.card-1.quiz.q-3-name"),
       options: [
-        "A) Eating more processed foods",
-        "B) Exercising regularly and eating heart-healthy foods",
-        "C) Sleeping less",
-        "D) Increasing salt intake",
+        t("education.card-1.quiz.q-3-option-1"),
+        t("education.card-1.quiz.q-3-option-2"),
+        t("education.card-1.quiz.q-3-option-3"),
+        t("education.card-1.quiz.q-3-option-4"),
       ],
-      answer: "B) Exercising regularly and eating heart-healthy foods",
-      correctExplanation:
-        "Staying active and eating a balanced diet can help reduce blood pressure.",
+      answer: t("education.card-1.quiz.q-3-answer"),
+      correctExplanation: t("education.card-1.quiz.q-3-post-answer"),
     },
     {
-      question:
-        "What’s one of the main long-term risks of gestational diabetes?",
+      question: t("education.card-1.quiz.q-4-name"),
       options: [
-        "A) Low birth weight",
-        "B) Type 2 diabetes later in life",
-        "C) Higher risk of migraines",
-        "D) Postpartum depression",
+        t("education.card-1.quiz.q-4-option-1"),
+        t("education.card-1.quiz.q-4-option-2"),
+        t("education.card-1.quiz.q-4-option-3"),
+        t("education.card-1.quiz.q-4-option-4"),
       ],
-      answer: "B) Type 2 diabetes later in life",
-      correctExplanation:
-        "Women with gestational diabetes have a higher chance of developing type 2 diabetes after pregnancy.",
+      answer: t("education.card-1.quiz.q-4-answer"),
+      correctExplanation: t("education.card-1.quiz.q-4-post-answer"),
     },
     {
-      question:
-        "Which of the following foods should you focus on to manage both conditions?",
+      question: t("education.card-1.quiz.q-5-name"),
       options: [
-        "A) Sugary snacks",
-        "B) Processed meat",
-        "C) Whole grains and lean proteins",
-        "D) Fried foods",
+        t("education.card-1.quiz.q-5-option-1"),
+        t("education.card-1.quiz.q-5-option-2"),
+        t("education.card-1.quiz.q-5-option-3"),
+        t("education.card-1.quiz.q-5-option-4"),
       ],
-      answer: "C) Whole grains and lean proteins",
-      correctExplanation:
-        "These help manage blood sugar and promote heart health.",
+      answer: t("education.card-1.quiz.q-5-answer"),
+      correctExplanation: t("education.card-1.quiz.q-5-post-answer"),
     },
   ];
   return questions;
 };
 
 export const QuestionSlideshow1: React.FC = () => {
+    const [t] = useTranslation("global");
 
   const questions = generateQuestions();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
@@ -127,7 +120,7 @@ export const QuestionSlideshow1: React.FC = () => {
               }`}
               onClick={() => handleQuestionClick(index)}
             >
-              Question {index + 1}
+              {t("education.card-1.quiz.side")}{index + 1}
             </li>
           ))}
         </ul>
