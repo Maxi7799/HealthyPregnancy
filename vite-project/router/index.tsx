@@ -17,6 +17,8 @@ import { ModulePage4 } from "../src/view/educational/modules/modulePage4";
 import { ModulePage5 } from "../src/view/educational/modules/modulePage5";
 import { ModulePage6 } from "../src/view/educational/modules/modulePage6";
 import { Exercise } from "../src/view/exercise/index";
+import {ExerciseQuestionari} from "../src/view/exercise/healthyQuestionnair/index";
+import { PostpartumExercise } from "../src/view/exercise/postpartumPhysicalHealthExercise";
 
 const MainRouter: React.FC = () => {
   return (
@@ -33,6 +35,9 @@ const MainRouter: React.FC = () => {
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/recipe-result" element={<RecipeResult />} />
         <Route path="/exercise" element={<Exercise />} />
+        <Route path="/healthyquestionnari" element={<ExerciseQuestionari />} />
+        <Route path="/postpartumexercise" element={<PostpartumExercise />} />
+
 
         <Route path="/module1" element={<ModulePage1 />} />
         <Route path="/module2" element={<ModulePage2 />} />
