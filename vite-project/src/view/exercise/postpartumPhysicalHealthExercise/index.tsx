@@ -9,78 +9,71 @@ export function PostpartumExercise() {
   const cardsData = [
     {
       image: "https://via.placeholder.com/150",
-      title: "Pelvic Floor Weakness",
-      condition:
-        "Pregnancy and childbirth can weaken the pelvic floor muscles, leading to issues such as urinary incontinence and pelvic organ prolapse.",
+      title: t("postpartum.card-1-title"),
+      condition: t("postpartum.card-1-condition-desc"),
       exerciseBenefits: [
-        "Pelvic Floor Exercises (e.g., Slow Squeezes, Quick Squeezes, Cough Test): Strengthen the pelvic floor muscles, improving bladder control.",
-        "Bridge Pose: Strengthens the pelvic floor and glutes, supporting lower back strength.",
+        t("postpartum.card-1-exe-1-title"),
+        t("postpartum.card-1-exe-2-title"),
       ],
       link: "/videomodule1",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Abdominal Weakness",
-      condition:
-        "Abdominal muscles can become weakened due to the growing uterus during pregnancy.",
+      title: t("postpartum.card-2-title"),
+      condition: t("postpartum.card-2-condition-desc"),
       exerciseBenefits: [
-        "Pelvic Tilts: Strengthens the core and supports lower back recovery.",
-        "Side-Lying Leg Lifts: Improves core stability and strengthens the outer thighs.",
+        t("postpartum.card-2-exe-1-title"),
+        t("postpartum.card-2-exe-2-title"),
       ],
       link: "/videomodule2",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Lower Back Pain",
-      condition:
-        "Lower back pain is common due to carrying extra weight and muscle imbalances.",
+      title: t("postpartum.card-3-title"),
+      condition: t("postpartum.card-3-condition-desc"),
       exerciseBenefits: [
-        "Cat-Cow Pose: Stretches and strengthens the spine, relieving back pain.",
-        "Squats: Strengthens the legs and glutes, reducing strain on the lower back.",
+        t("postpartum.card-3-exe-1-title"),
+        t("postpartum.card-3-exe-2-title"),
       ],
       link: "/videomodule3",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "General Fatigue and Low Energy",
-      condition:
-        "New mothers often experience fatigue and low energy due to the demands of caring for a newborn.",
+      title: t("postpartum.card-4-title"),
+      condition: t("postpartum.card-4-condition-desc"),
       exerciseBenefits: [
-        "Light Walking: Boosts cardiovascular health and energy levels.",
-        "Gentle Stretching: Relieves muscle tension and enhances flexibility.",
+        t("postpartum.card-4-exe-1-title"),
+        t("postpartum.card-4-exe-2-title"),
       ],
       link: "/videomodule4",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Decreased Cardiovascular Fitness",
-      condition:
-        "Cardiovascular fitness may decline due to reduced physical activity and increased body weight.",
+      title: t("postpartum.card-5-title"),
+      condition: t("postpartum.card-5-condition-desc"),
       exerciseBenefits: [
-        "Aqua Aerobics: Improves cardiovascular endurance with minimal joint strain.",
-        "Running: Increases cardiovascular stamina as fitness levels improve.",
+        t("postpartum.card-5-exe-1-title"),
+        t("postpartum.card-5-exe-2-title"),
       ],
       link: "/videomodule5",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Muscle Imbalances",
-      condition:
-        "Muscle imbalances occur due to altered posture and weight distribution during pregnancy.",
+      title: t("postpartum.card-6-title"),
+      condition: t("postpartum.card-6-condition-desc"),
       exerciseBenefits: [
-        "Bicep Curls: Maintains arm and shoulder strength, balancing muscle development.",
-        "Bird-Dog: Engages the core and improves stability, addressing muscle imbalances.",
+        t("postpartum.card-6-exe-1-title"),
+        t("postpartum.card-6-exe-2-title"),
       ],
       link: "/videomodule6",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Stress and Mood Fluctuations",
-      condition:
-        "Postnatal women may experience mood swings and stress due to hormonal changes and the demands of new motherhood.",
+      title: t("postpartum.card-7-title"),
+      condition: t("postpartum.card-7-condition-desc"),
       exerciseBenefits: [
-        "Prenatal Yoga: Promotes relaxation and improves mood, helping alleviate stress.",
-        "Gentle Stretching: Enhances relaxation and reduces muscle tension.",
+        t("postpartum.card-7-exe-1-title"),
+        t("postpartum.card-7-exe-2-title"),
       ],
       link: "/videomodule7",
     },
@@ -89,7 +82,7 @@ export function PostpartumExercise() {
     <>
       <Header />
       <div className="postpartum-container">
-        <h1>How Exercises Help Postnatal Conditions</h1>
+        <h1>{t("postpartum.title")}</h1>
         <div className="cards-list">
           {cardsData.map((card, index) => (
             <div key={index} className="card">
@@ -99,11 +92,11 @@ export function PostpartumExercise() {
               <div className="card-content">
                 <h2>{card.title}</h2>
                 <p>
-                  <strong>Condition: </strong>
+                  <strong>{t("postpartum.card-1-condition-title")}</strong>
                   {card.condition}
                 </p>
                 <p>
-                  <strong>What exercises may help: </strong>
+                  <strong>{t("postpartum.exe-recom-title")}</strong>
                   <ul>
                     {card.exerciseBenefits.map((benefit, idx) => (
                       <li key={idx}>{benefit}</li>
@@ -111,7 +104,7 @@ export function PostpartumExercise() {
                   </ul>
                 </p>
                 <a href={card.link} className="learn-more">
-                  Learn more details
+                  {t("postpartum.more-detail")}
                 </a>
               </div>
             </div>
