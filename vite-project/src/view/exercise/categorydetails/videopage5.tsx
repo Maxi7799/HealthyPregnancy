@@ -1,13 +1,67 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./page.css";
 import { Footer } from "../../../components/footer";
 import { Header } from "../../../components/header/header";
 import { useTranslation } from "react-i18next";
+import { Modal } from "./popupModel";
 
 const videos = ["dQw4w9WgXcQ", "tVj0ZTS4WF4", "QH2-TGUlwu4", "9bZkp7q19f0"];
 
 export const VideoPage5: React.FC = () => {
   const [t] = useTranslation("global");
+
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+    content: string[];
+    benefitsTitle: string;
+    benefitsContent: string;
+  } | null>(null);
+
+  const openModal = (exercise: number) => {
+    switch (exercise) {
+      case 1:
+        setModalContent({
+          title: t("exercise.card-5.exe-1-how-title"),
+          content: [
+            t("exercise.card-5.exe-1-how-content-1"),
+            t("exercise.card-5.exe-1-how-content-2"),
+            t("exercise.card-5.exe-1-how-content-3"),
+          ],
+          benefitsTitle: t("exercise.card-5.exe-1-ben-title"),
+          benefitsContent: t("exercise.card-5.exe-1-ben-content"),
+        });
+        break;
+      case 2:
+        setModalContent({
+          title: t("exercise.card-5.exe-2-how-title"),
+          content: [
+            t("exercise.card-5.exe-2-how-content-1"),
+            t("exercise.card-5.exe-2-how-content-2"),
+            t("exercise.card-5.exe-2-how-content-3"),
+          ],
+          benefitsTitle: t("exercise.card-5.exe-2-ben-title"),
+          benefitsContent: t("exercise.card-5.exe-2-ben-content"),
+        });
+        break;
+      case 3:
+        setModalContent({
+          title: t("exercise.card-5.exe-3-how-title"),
+          content: [
+            t("exercise.card-5.exe-3-how-content-1"),
+            t("exercise.card-5.exe-3-how-content-2"),
+            t("exercise.card-5.exe-3-how-content-3"),
+          ],
+          benefitsTitle: t("exercise.card-5.exe-3-ben-title"),
+          benefitsContent: t("exercise.card-5.exe-3-ben-content"),
+        });
+        break;
+      default:
+        setModalContent(null);
+    }
+  };
+
+  const closeModal = () => setModalContent(null);
+
   const videoContainerRef = useRef<HTMLDivElement>(null);
   let isDragging = false;
   let startX: number = 0;
@@ -55,9 +109,54 @@ export const VideoPage5: React.FC = () => {
             />
           </div>
           <div className="intro-text">
-            <p>{t("exercise.card-5.card-desc-1")}</p>
-            <p>{t("exercise.card-5.card-desc-2")}</p>
+            <div className="exercise-content-container">
+              {/* Suggested Period Section */}
+              <p>
+                <strong>{t("exercise.card-5.suggest-period-title")}</strong>
+                {t("exercise.card-5.suggest-period-content")}
+              </p>
+
+              {/* Description Section */}
+              <p>
+                <strong>{t("exercise.card-5.desc-title")}</strong>
+                {t("exercise.card-5.desc-content")}
+              </p>
+
+              {/* Exercises List */}
+              <ul>
+                <li>
+                  <strong>{t("exercise.card-5.exe-1-title")}</strong>
+                  {t("exercise.card-5.exe-1-content")}{" "}
+                  <a onClick={() => openModal(1)}>
+                    {t("exercise.card-5.how-btn")}
+                  </a>
+                </li>
+                <li>
+                  <strong>{t("exercise.card-5.exe-2-title")}</strong>
+                  {t("exercise.card-5.exe-2-content")}{" "}
+                  <a onClick={() => openModal(2)}>
+                    {t("exercise.card-5.how-btn")}
+                  </a>
+                </li>
+                <li>
+                  <strong>{t("exercise.card-5.exe-3-title")}</strong>
+                  {t("exercise.card-5.exe-3-content")}{" "}
+                  <a onClick={() => openModal(3)}>
+                    {t("exercise.card-5.how-btn")}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+          {modalContent && (
+            <Modal
+              title={modalContent.title}
+              content={modalContent.content}
+              benefitsTitle={modalContent.benefitsTitle}
+              benefitsContent={modalContent.benefitsContent}
+              onClose={closeModal}
+            />
+          )}
         </div>
 
         {/* YouTube Slideshow */}

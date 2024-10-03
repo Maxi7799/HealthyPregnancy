@@ -646,71 +646,305 @@
 
   "exercise": {
     "overview-title": "Pregnancy Exercise",
-    "card-1-desc": "",
-    "card-2-desc": "",
-    "card-3-desc": "",
-    "card-4-desc": "",
-    "card-5-desc": "",
-    "card-6-desc": "",
-    "card-7-desc": "",
-    "card-8-desc": "",
+    "card-1-desc": "Low-Impact Aerobic Exercise",
+    "card-2-desc": "Prenatal Yoga",
+    "card-3-desc": "Prenatal Pilates",
+    "card-4-desc": "Water-Based Exercises",
+    "card-5-desc": "Stretching Exercises",
+    "card-6-desc": "Prenatal Strength Training",
+    "card-7-desc": "Pelvic Floor Exercises",
+    "card-8-desc": "Prenatal Dance",
 
     "card-1": {
-      "card-title": "Welcome to Our Exercise",
-      "card-desc-1": "",
-      "card-desc-2": "",
+      "card-title": "Low-Impact Aerobic Exercise",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Early Postnatal Phase (0-6 Weeks)",
+      "desc-title": "Description: ",
+      "desc-content": "Gentle exercises that promote cardiovascular health and aid recovery while minimizing strain on the body. Ideal for new mothers easing back into physical activity.",
+
+      "exe-1-title": "Light Walking: ",
+      "exe-1-content": "Engages the cardiovascular system with minimal impact, aiding recovery and boosting energy levels.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Start with a 10-15 minute walk, gradually increasing the duration as your body adjusts.",
+      "exe-1-how-content-2": "Walk at a pace that feels comfortable, focusing on posture by keeping your back straight and your head lifted.",
+      "exe-1-how-content-3": "Swing your arms gently as you walk to improve circulation.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Stimulates circulation, reduces stress, boosts mood, and improves energy levels.",
+
+      "exe-2-title": "Seated Forward Bend: ",
+      "exe-2-content": "Stretches lower back, hamstrings, and calves, relieving back pain.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Sit on the floor with your legs extended straight in front of you.",
+      "exe-2-how-content-2": "Keep your back straight and inhale deeply, reaching both arms towards your toes.",
+      "exe-2-how-content-3": "Slowly bend forward from your hips, reaching as far as comfortable without straining.",
+      "exe-2-how-content-4": "Hold the position for 20-30 seconds, then release.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": "Stretches the lower back, hamstrings, and calves, helping to relieve back pain and improve flexibility.",
+
+      "exe-3-title": "Chest Opener Stretch: ",
+      "exe-3-content": "Stretches the chest and shoulders to improve posture.",
+      "exe-3-how-title": "How to do it:",
+      "exe-3-how-content-1": "Stand with your feet shoulder-width apart.",
+      "exe-3-how-content-2": "Clasp your hands behind your back, keeping your arms straight.",
+      "exe-3-how-content-3": "Gently lift your hands behind you while opening your chest and shoulders.",
+      "exe-3-how-content-4": "Hold the stretch for 15-30 seconds, then release.",
+      "exe-3-ben-title": "Benefits: ",
+      "exe-3-ben-content": "Stretches the chest and shoulders, improving posture and relieving tension from breastfeeding or holding the baby.",
+
+      "exe-4-title": "Hip Flexor Stretch : ",
+      "exe-4-content": "Targets hip muscles, reducing tension and improving pelvic alignment.",
+      "exe-4-how-title": "How to do it:",
+      "exe-4-how-content-1": "Start in a lunge position with your right foot forward and your left knee resting on the floor.",
+      "exe-4-how-content-2": "Push your hips forward gently until you feel a stretch in your left hip flexor.",
+      "exe-4-how-content-3": "Hold the position for 20-30 seconds, then switch sides.",
+      "exe-4-ben-title": "Benefits: ",
+      "exe-4-ben-content": "Stretches tight hip muscles, improves pelvic alignment, and helps reduce lower back discomfort.",
+
+      "how-btn": "How to do & Benefits",
       "video-title": "Featured Videos"
     },
 
     "card-2": {
-      "card-title": "",
-      "card-desc-1": "",
-      "card-desc-2": "",
-      "video-title": ""
+      "card-title": "Prenatal Yoga",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Post-6 Weeks to 12-16 Weeks",
+      "desc-title": "Description: ",
+      "desc-content": "Focuses on gentle stretches and poses that enhance flexibility, strength, and relaxation throughout pregnancy.",
+
+      "exe-1-title": "Cat-Cow Pose: ",
+      "exe-1-content": "Stretches and strengthens the spine, helping relieve back pain.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Start on your hands and knees in a tabletop position, with your wrists directly under your shoulders and your knees under your hips.",
+      "exe-1-how-content-2": "As you inhale, arch your back (cow pose), lifting your head and tailbone towards the ceiling.",
+      "exe-1-how-content-3": "As you exhale, round your back (cat pose), tucking your chin towards your chest and pulling your belly towards your spine.",
+      "exe-1-how-content-4": "Repeat for 5-10 breaths, moving with your breath.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Stretches and strengthens the spine, improves flexibility, and helps relieve back pain, a common issue during pregnancy.",
+
+      "exe-2-title": "Bound Angle Pose: ",
+      "exe-2-content": "Opens the hips and stretches the thighs to promote flexibility.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Sit on the floor with your legs extended in front of you.",
+      "exe-2-how-content-2": "Bring the soles of your feet together and let your knees drop outward, forming a diamond shape with your legs.",
+      "exe-2-how-content-3": "Hold your feet with both hands, sitting up tall with your back straight.",
+      "exe-2-how-content-4": "Gently press your knees towards the ground without forcing them, holding the pose for 20-30 seconds.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": " Opens the hips and stretches the inner thighs, promoting flexibility and easing tension in the pelvic area.",
+
+      "exe-3-title": "Warrior II Pose: ",
+      "exe-3-content": "Strengthens legs and improves balance, preparing the body for labor.",
+      "exe-3-how-title": "How to do it:",
+      "exe-3-how-content-1": "Stand with your feet about 3-4 feet apart.",
+      "exe-3-how-content-2": "Turn your right foot out 90 degrees and your left foot slightly inward.",
+      "exe-3-how-content-3": "Raise your arms parallel to the floor, palms facing down.",
+      "exe-3-how-content-4": "Bend your right knee while keeping your left leg straight, ensuring your right knee is directly over your ankle.",
+      "exe-3-how-content-5": "Hold the pose for 20-30 seconds, then switch sides.",
+      "exe-3-ben-title": "Benefits: ",
+      "exe-3-ben-content": "Strengthens the legs, hips, and core, while improving balance and stamina—important for preparing the body for labor.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
     },
 
     "card-3": {
-      "card-title": "",
-      "card-desc-1": "",
-      "card-desc-2": "",
-      "video-title": ""
+      "card-title": "Prenatal Pilates",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Post-6 Weeks to 12-16 Weeks",
+      "desc-title": "Description: ",
+      "desc-content": "Incorporates core-strengthening exercises that support overall fitness and stability, making it a beneficial practice during pregnancy.",
+
+      "exe-1-title": "Pelvic Tilts : ",
+      "exe-1-content": "Strengthens the core and supports the lower back, reducing pregnancy-related discomfort.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Lie on your back with knees bent and feet flat on the floor, hip-width apart.",
+      "exe-1-how-content-2": "Inhale, then as you exhale, gently tilt your pelvis upward, pressing your lower back into the floor.",
+      "exe-1-how-content-3": "Hold for a few seconds, then release back to a neutral spine position.",
+      "exe-1-how-content-4": "Repeat for 10-15 reps.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Strengthens the core, supports the lower back, and alleviates pregnancy-related discomfort.",
+
+      "exe-2-title": "Side-Lying Leg Lifts: ",
+      "exe-2-content": "Improves hip stability and strengthens the outer thighs and glutes.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Lie on your side with your legs straight and stacked on top of each other.",
+      "exe-2-how-content-2": "Support your head with your arm, then slowly lift your top leg while keeping your core engaged.",
+      "exe-2-how-content-3": "Lower the leg back down with control. Repeat 10-15 times on each side.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": "Improves hip stability, strengthens the outer thighs and glutes, and reduces pressure on the lower back.",
+
+      "exe-3-title": "Arm & Leg Extensions: ",
+      "exe-3-content": "Engages the core, improves stability, and strengthens arms and legs.",
+      "exe-3-how-title": "How to do it:",
+      "exe-3-how-content-1": "Begin in a tabletop position, with your wrists under your shoulders and knees under your hips.",
+      "exe-3-how-content-2": "Extend your right arm forward and your left leg back, keeping your hips level.",
+      "exe-3-how-content-3": "Hold for a few seconds, then return to the starting position. Repeat on the other side.",
+      "exe-3-how-content-4": "Perform 10-12 repetitions.",
+      "exe-3-ben-title": "Benefits: ",
+      "exe-3-ben-content": "",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
     },
 
     "card-4": {
-      "card-title": "",
-      "card-desc-1": "",
-      "card-desc-2": "",
-      "video-title": ""
+      "card-title": "Water-Based Exercises",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Post-6 Weeks to 12-16 Weeks",
+      "desc-title": "Description: ",
+      "desc-content": "Utilizes water resistance for a low-impact yet effective workout, promoting endurance and muscle tone without stressing the joints.",
+
+      "exe-1-title": "Aqua Aerobics: ",
+      "exe-1-content": "A low-impact exercise that uses water resistance to improve cardiovascular endurance and muscle strength.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Stand in waist-deep water and perform a series of movements like walking, leg kicks, or arm circles.",
+      "exe-1-how-content-2": "Utilize the water's resistance for each movement, moving slowly and deliberately.",
+      "exe-1-how-content-3": "Engage your core throughout the exercises to maintain balance and control.",
+      "exe-1-how-content-4": "Aim for 20-30 minutes of low-impact exercise in the water.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": " Improves cardiovascular endurance, builds muscle strength, and promotes joint flexibility, all with minimal stress on the body.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
     },
 
     "card-5": {
-      "card-title": "",
-      "card-desc-1": "",
-      "card-desc-2": "",
-      "video-title": ""
+      "card-title": "Stretching Exercises",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Early Postnatal Phase (0-6 Weeks)",
+      "desc-title": "Description: ",
+      "desc-content": "Aimed at improving flexibility and relieving tension in key muscle groups, stretching is essential for comfort during pregnancy.",
+
+      "exe-1-title": "Seated Forward Bend: ",
+      "exe-1-content": "Stretches lower back, hamstrings, and calves, relieving back pain.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Sit on the floor with your legs extended in front of you.",
+      "exe-1-how-content-2": "Slowly bend forward from your hips, reaching for your feet or as far as you can comfortably go.",
+      "exe-1-how-content-3": "Hold for 20-30 seconds, breathing deeply as you stretch.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Stretches the lower back, hamstrings, and calves, relieving tension and pain in the back and legs.",
+
+      "exe-2-title": "Chest Opener Stretch: ",
+      "exe-2-content": "Stretches the chest and shoulders to improve posture.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Stand tall with your feet shoulder-width apart.",
+      "exe-2-how-content-2": "Clasp your hands behind your back and gently lift your arms, opening your chest.",
+      "exe-2-how-content-3": "Hold the stretch for 20-30 seconds, breathing deeply.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": "Stretches the chest and shoulders, improving posture and countering slouching.",
+
+      "exe-3-title": "Hip Flexor Stretch: ",
+      "exe-3-content": "Targets hip muscles, reducing tension and improving pelvic alignment.",
+      "exe-3-how-title": "How to do it:",
+      "exe-3-how-content-1": "Kneel on one knee with the other foot in front, forming a 90-degree angle with both legs.",
+      "exe-3-how-content-2": "Gently push your hips forward until you feel a stretch in the hip flexor of the back leg.",
+      "exe-3-how-content-3": "Hold for 20-30 seconds, then switch sides.",
+      "exe-3-ben-title": "Benefits: ",
+      "exe-3-ben-content": "Targets tight hip muscles, reduces tension, and improves pelvic alignment, helping with mobility and comfort during pregnancy.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
     },
 
     "card-6": {
-      "card-title": "",
-      "card-desc-1": "",
-      "card-desc-2": "",
-      "video-title": ""
+      "card-title": "Prenatal Strength Training",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Post-6 Weeks to 12-16 Weeks",
+      "desc-title": "Description: ",
+      "desc-content": "Focuses on rebuilding strength while ensuring a safe recovery, this training helps maintain muscle tone and overall fitness.",
+
+      "exe-1-title": "Bicep Curls with Light Weights: ",
+      "exe-1-content": "Maintains arm and shoulder strength with low weights.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Stand with feet hip-width apart, holding a light weight in each hand.",
+      "exe-1-how-content-2": "Keep your elbows close to your sides and palms facing forward.",
+      "exe-1-how-content-3": "Slowly lift the weights toward your shoulders, then lower them back down with control.",
+      "exe-1-how-content-4": "Perform 10-12 repetitions.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Maintains arm and shoulder strength without straining muscles, promoting upper body fitness.",
+
+      "exe-2-title": "Wall Push-Ups: ",
+      "exe-2-content": "Engages upper body muscles, helping maintain chest and arm strength.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Stand facing a wall, with your feet hip-width apart and hands placed shoulder-width apart on the wall.",
+      "exe-2-how-content-2": "Bend your elbows and lean toward the wall, keeping your body straight.",
+      "exe-2-how-content-3": "Push back to the starting position. Repeat 10-15 times.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": "Engages upper body muscles, particularly the chest and arms, while providing low-impact resistance.",
+
+      "exe-3-title": "Squats: ",
+      "exe-3-content": "Strengthens the legs and glutes while supporting pelvic muscles, preparing for labor.",
+      "exe-3-how-title": "How to do it:",
+      "exe-3-how-content-1": "Stand with feet slightly wider than shoulder-width apart and toes pointing slightly outward.",
+      "exe-3-how-content-2": "Lower your body as if sitting back into a chair, keeping your back straight and knees behind your toes.",
+      "exe-3-how-content-3": "Push through your heels to return to a standing position. Repeat for 10-12 reps.",
+      "exe-3-ben-title": "Benefits: ",
+      "exe-3-ben-content": "Strengthens legs, glutes, and pelvic muscles, providing stability and preparing the body for labor.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
     },
 
     "card-7": {
-      "card-title": "",
-      "card-desc-1": "",
-      "card-desc-2": "",
-      "video-title": ""
+      "card-title": "Pelvic Floor Exercises (Kegel Exercises)",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Early Postnatal Phase (0-6 Weeks)",
+      "desc-title": "Description: ",
+      "desc-content": "Critical for strengthening pelvic muscles, these exercises help prevent incontinence and promote overall pelvic health.",
+
+      "exe-1-title": "Bridge Pose: ",
+      "exe-1-content": "Engages pelvic floor and glutes, supporting lower back strength.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Lie on your back with knees bent and feet flat on the floor, hip-width apart.",
+      "exe-1-how-content-2": "Slowly lift your hips toward the ceiling while squeezing the pelvic floor and glute muscles.",
+      "exe-1-how-content-3": "Hold for a few seconds, then lower back down. Repeat for 10-12 reps.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Strengthens the pelvic floor, glutes, and lower back, supporting recovery after childbirth.",
+
+      "exe-2-title": "Squat and Hold: ",
+      "exe-2-content": "Activates the pelvic floor and leg muscles, improving strength in these areas.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Slow Squeezes : Squeeze the pelvic floor muscles slowly, hold for 5-10 seconds, and then release. Repeat 10 times.",
+      "exe-2-how-content-2": "Quick Squeezes : Perform quick, short, and hard squeezes of the pelvic floor muscles. Repeat 10 times.",
+      "exe-2-how-content-3": "Cough Test : Squeeze the pelvic floor muscles, then cough lightly. Repeat 3 times.",
+      "exe-2-how-content-4": "Perform Regularly : Aim for 5-6 sets of pelvic floor exercises each day to build and maintain muscle strength.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": "Strengthens pelvic floor and leg muscles, promoting stability and reducing pelvic discomfort.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
     },
 
     "card-8": {
-      "card-title": "",
-      "card-desc-1": "",
-      "card-desc-2": "",
-      "video-title": ""
+      "card-title": "Prenatal Dance",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Post-6 Weeks to 12-16 Weeks",
+      "desc-title": "Description: ",
+      "desc-content": "Incorporates movement and rhythm to enhance enjoyment while improving coordination and cardiovascular health.",
+
+      "exe-1-title": "Gentle Dance Movements: ",
+      "exe-1-content": "Encourages movement and enjoyment while improving coordination and rhythm.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Choose simple dance steps, such as side steps, light sways, and arm movements.",
+      "exe-1-how-content-2": "Keep movements smooth and relaxed, ensuring you don’t overexert yourself.",
+      "exe-1-how-content-3": "Dance for 10-20 minutes, focusing on maintaining a steady rhythm and breathing.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Encourages fun, low-impact exercise that improves coordination, flexibility, and cardiovascular health.",
+
+      "exe-2-title": "Simple Choreography: ",
+      "exe-2-content": "Incorporates fun, easy dance routines that promote cardiovascular health without overexertion.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Follow easy routines with steps like step-touches, gentle spins, and arm lifts.",
+      "exe-2-how-content-2": "Incorporate music that you enjoy to keep the movements light and rhythmic.",
+      "exe-2-how-content-3": "Dance for 15-20 minutes, gradually building up your stamina.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": "Promotes cardiovascular health, coordination, and muscle tone, while providing a fun and relaxing form of exercise.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
     }
   },
+
+  "postpartum": {},
 
   "collection": {
     "title": "Body information collection",
@@ -731,12 +965,12 @@
       "radio-3": "Three or more in a week"
     },
     "card-4": {
-      "title": "What is your weight （kg）?",
+      "title": "What is your weight (kg)?",
       "weight": "weight"
     },
     "card-5": {
-      "title": "What is your height （cm）",
-      "height": "What is your height （cm）"
+      "title": "What is your height (cm)",
+      "height": "What is your height (cm)"
     },
     "Submit": "Submit",
     "Reset": "Reset answers",
