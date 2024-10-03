@@ -15,6 +15,9 @@ import vegetables_icon from "./images/vegetables.webp";
 import fish_icon from "./images/fish.webp";
 import { useSearchParams } from "react-router-dom";
 import { message } from "antd";
+import imageMap from './foodImage.json';
+// console.log(imageMap)
+const imgDatails = imageMap.items;
 
 import "./index.css";
 import { useEffect, useState } from "react";
@@ -142,7 +145,7 @@ export const NutritionAnalysis: React.FC = () => {
     getRecomendFood(food);
 
     const foodList = document.getElementById("foodList");
-    foodList?.scrollIntoView();
+    foodList?.scrollIntoView({behavior: "smooth"});
   };
 
   const submitAnalyze = async () => {
@@ -213,7 +216,7 @@ export const NutritionAnalysis: React.FC = () => {
     getRecomendFood(currentCategory);
 
     const category = document.getElementById("category");
-    category?.scrollIntoView();
+    category?.scrollIntoView({behavior: "smooth"});
   };
 
   const getRecomendFood = async (food: string) => {
@@ -232,6 +235,8 @@ export const NutritionAnalysis: React.FC = () => {
     const data = await response.json();
     console.log(data);
 
+   
+
     const newList = data.food_item.map((item: any, index: number) => {
       return {
         food: item,
@@ -243,6 +248,11 @@ export const NutritionAnalysis: React.FC = () => {
 
     console.log(newList);
   };
+
+  const getUrl = (name: string) => {
+    const urlList = imgDatails.filter(x => name == x.food_item)
+    return  urlList[0].image
+  }
 
   return (
     <>
@@ -901,7 +911,7 @@ export const NutritionAnalysis: React.FC = () => {
 
             <div
               className="category"
-              style={{ marginTop: "40px" }}
+              style={{ marginTop: "40px", display: foodList.length == 0 ? "none" : "block"}}
               id="foodList"
             >
               <div className="category-title">Food List</div>
@@ -912,7 +922,8 @@ export const NutritionAnalysis: React.FC = () => {
               {foodList.map((item: any) => {
                 return (
                   <div className="food-list">
-                    <div className="left-icon"></div>
+                    <div className="left-icon" style={{background: "url(" + getUrl(item.food ) + ") no-repeat center center", backgroundSize:"cover"}}>
+                    </div>
                     <div className="right-item">
                       <div className="food-right-top">
                         <span className="food-right-top-left">{item.food}</span>

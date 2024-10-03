@@ -1,6 +1,6 @@
 import { Footer } from "../../components/footer/index.tsx";
 import { Header } from "../../components/header/header.tsx";
-import { Checkbox, Space, Input } from "antd";
+import { Checkbox, Space, Input, Row, Col} from "antd";
 import {
   ArrowLeftOutlined,
   CalendarOutlined,
@@ -44,6 +44,10 @@ export const Recipe: React.FC = () => {
     localStorage.setItem("Dinner", "[]");
     localStorage.setItem("Lunch", "[]");
     localStorage.setItem("Teatime", "[]");
+    shoseBreakfast = [];
+    shoseDinner = [];
+    shoseLunch = [];
+    shoseTeatime = [];
   }, []);
 
   const getData = async (index: number) => {
@@ -80,10 +84,13 @@ export const Recipe: React.FC = () => {
       shoseTeatime = e;
     }
 
+    console.log(shoseBreakfast, shoseDinner, shoseLunch, shoseTeatime)
     const newData = shoseBreakfast
       .concat(shoseDinner)
       .concat(shoseLunch)
       .concat(shoseTeatime);
+
+      console.log(newData)
 
     // console.log(newData)
     setChose(newData);
@@ -150,10 +157,10 @@ export const Recipe: React.FC = () => {
           </div>
         </div>
 
-        <div className="recipe-tips">
+        {/* <div className="recipe-tips">
           <span>Step 1</span>: Explore tons of food recipes based on the
           categories or search by name
-        </div>
+        </div> */}
 
         <div className="recipe-label">Search by categories</div>
 
@@ -200,172 +207,7 @@ export const Recipe: React.FC = () => {
           </div>
         </div>
 
-        <div className="recipe-label">Or search by name</div>
-
-        <div className="search-name">
-          <div className="input-box">
-            <Input
-              size="large"
-              placeholder="e.g. Grilled Chicken"
-              suffix={
-                <div className="input-icon">
-                  <CloseOutlined />
-                </div>
-              }
-            />
-          </div>
-        </div>
-
-        <div className="recipe-tips">
-          <span>Step 2</span>: Select food recipes of your choice and collect
-          them in the Step 3
-        </div>
-
-        <div className="recipe-top-10">
-          <div className="recipe-top-10-title">
-            <ArrowLeftOutlined
-              style={{ marginRight: "10px" }}
-            ></ArrowLeftOutlined>
-            BREAKFAST RECOMMENDATIONS
-          </div>
-          <Checkbox.Group style={{ width: "100%" }} onChange={checked}>
-            <Space.Compact block direction="vertical">
-              {list.map((item: any, index: number) => {
-                return (
-                  <>
-                    <div className="recipe-top-10-details">
-                      <div className="recipe-top-10-check">
-                        <Checkbox value={item} />
-                      </div>
-                      <div className="recipe-top-10-right">
-                        <div className="top10-right-top">
-                          <div
-                            className="top10-right-top-img"
-                            style={{
-                              background:
-                                "url(" +
-                                item.food_picture +
-                                ") no-repeat center center",
-                              backgroundSize: "contain",
-                            }}
-                          ></div>
-                          <div className="top10-right-top-text">
-                            <div className="top10-foodName">
-                              {item.recipe_name}
-                            </div>
-                            <div>
-                              {/* High Protein ·Low Carb ·Sugar Conscious · Keto Friendly·
-                        DairyFree · Gluten Free · Wheat Free " Egg Free · Peanut
-                        Free * Tree NutFree " Soy Free · Fish Free ·Shellfish
-                        Free · Pork Free ·CrustaceanFree " Celery Free · Mustard
-                        Free " Sesame Free · Lupine Free "Mollusk Free "Alcohol
-                        Free · No oil added. FODMAP FreeKosher "lmmuno */}
-                              {/* Supportive */}
-                            </div>
-                          </div>
-                        </div>
-                        <div className="top10-right-bottom">
-                          <div className="top10-right-bottom-item">
-                            {/* <div className="top10-servings">10 servings</div> */}
-                            <div>
-                              <span className="top10-kcal">
-                                {item.calories_digits.toFixed(2)}
-                              </span>
-                              <span className="top10-kcal-unit">kcal</span>
-                            </div>
-                          </div>
-                          <div className="top10-right-bottom-item">
-                            <div className="recipe-list-item-details">
-                              <div className="recipe-list-item-left">
-                                <div className="point"></div>
-                                <div className="text">PROTEIN</div>
-                              </div>
-                              <div className="recipe-list-item-right">
-                                <div className="point">
-                                  {item.protein_digits.toFixed(2)}
-                                </div>
-                                <div className="unit">{item.protein_unit}</div>
-                              </div>
-                            </div>
-                            <div className="recipe-list-item-details">
-                              <div className="recipe-list-item-left">
-                                <div className="point point-fat"></div>
-                                <div className="text">FAT</div>
-                              </div>
-                              <div className="recipe-list-item-right">
-                                <div className="point">
-                                  {item.fat_digits.toFixed(2)}
-                                </div>
-                                <div className="unit">{item.fat_unit}</div>
-                              </div>
-                            </div>
-                            <div className="recipe-list-item-details">
-                              <div className="recipe-list-item-left">
-                                <div className="point point-carb"></div>
-                                <div className="text">CARB</div>
-                              </div>
-                              <div className="recipe-list-item-right">
-                                <div className="point">
-                                  {item.carb_digits.toFixed(2)}
-                                </div>
-                                <div className="unit">{item.carb_unit}</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="top10-right-bottom-item">
-                            <div className="top10-right-bottom-item-main">
-                              <span>Cholesterol</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.cholesterol_digits.toFixed(2)}{" "}
-                                {item.cholesterol_unit}
-                              </span>
-                            </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Sodium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.sodium_digits.toFixed(2)}{" "}
-                                {item.sodium_unit}
-                              </span>
-                            </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Calcium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.calcium_digits.toFixed(2)}{" "}
-                                {item.calcium_unit}
-                              </span>
-                            </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Magnesium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.magnesium_digits.toFixed(2)}{" "}
-                                {item.magnesium_unit}
-                              </span>
-                            </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Potassium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.potassium_digits.toFixed(2)}{" "}
-                                {item.potassium_unit}
-                              </span>
-                            </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Iron</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.iron_digits.toFixed(2)} {item.iron_unit}
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                );
-              })}
-            </Space.Compact>
-          </Checkbox.Group>
-        </div>
-
-        <div className="recipe-list-add">
+        <div className="recipe-list-add" style={{margin: "20px auto"}}>
           <div className="recipe-list-left">
             {chose.map((item: any) => {
               return (
@@ -437,6 +279,228 @@ export const Recipe: React.FC = () => {
             <div>Personalized Schedule</div>
           </div>
         </div>
+
+        <div className="recipe-label">Or search by name</div>
+
+        <div className="search-name">
+          <div className="input-box">
+            <Input
+              size="large"
+              placeholder="e.g. Grilled Chicken"
+              suffix={
+                <div className="input-icon">
+                  <CloseOutlined />
+                </div>
+              }
+            />
+          </div>
+        </div>
+
+        {/* <div className="recipe-tips">
+          <span>Step 2</span>: Select food recipes of your choice and collect
+          them in the Step 3
+        </div> */}
+
+        <div className="recipe-top-10">
+          <div className="recipe-top-10-title">
+            <ArrowLeftOutlined
+              style={{ marginRight: "10px" }}
+            ></ArrowLeftOutlined>
+            BREAKFAST RECOMMENDATIONS
+          </div>
+          <Checkbox.Group style={{ width: "100%" }} onChange={checked}>
+            <Space.Compact block direction="vertical">
+              {list.map((item: any, index: number) => {
+                return (
+                  <>
+                    <div className="recipe-top-10-details">
+                      <div className="recipe-top-10-check">
+                        <Checkbox value={item} />
+                      </div>
+                      <div className="recipe-top-10-right">
+                        <div className="top10-right-top">
+                          <Space><div
+                            className="top10-right-top-img"
+                            style={{
+                              background:
+                                "url(" +
+                                item.food_picture +
+                                ") no-repeat center center",
+                              backgroundSize: "contain",
+                            }}
+                          ></div>
+                          <Space direction="vertical">
+                          <div className="top10-right-top-text">
+                            <div className="top10-foodName" style={{textAlign: 'left'}}>
+                              {item.recipe_name}
+                            </div>
+                            <div>
+                              {/* High Protein ·Low Carb ·Sugar Conscious · Keto Friendly·
+                        DairyFree · Gluten Free · Wheat Free " Egg Free · Peanut
+                        Free * Tree NutFree " Soy Free · Fish Free ·Shellfish
+                        Free · Pork Free ·CrustaceanFree " Celery Free · Mustard
+                        Free " Sesame Free · Lupine Free "Mollusk Free "Alcohol
+                        Free · No oil added. FODMAP FreeKosher "lmmuno */}
+                              {/* Supportive */}
+                            </div>
+                          </div>
+                          {/* <div className="top10-right-bottom-item"> */}
+                            {/* <div className="top10-servings">10 servings</div> */}
+                            <div style={{textAlign: 'left'}}>
+                              <span className="top10-kcal">
+                                {item.calories_digits.toFixed(2)}
+                              </span>
+                              <span className="top10-kcal-unit">kcal</span>
+                            </div>
+                          {/* </div> */}
+                          
+                          
+                          </Space></Space>
+                          
+                          
+                          <div className="top10-right-bottom-item top10-right-Protein">
+                            <div className="recipe-list-item-details">
+                              <div className="recipe-list-item-left">
+                                <div className="point"></div>
+                                <div className="text">Protein</div>
+                              </div>
+                              <div className="recipe-list-item-right">
+                                <div className="point">
+                                  {item.protein_digits.toFixed(2)}
+                                </div>
+                                <div className="unit">{item.protein_unit}</div>
+                              </div>
+                            </div>
+                            <div className="recipe-list-item-details">
+                              <div className="recipe-list-item-left">
+                                <div className="point point-fat"></div>
+                                <div className="text">Fat</div>
+                              </div>
+                              <div className="recipe-list-item-right">
+                                <div className="point">
+                                  {item.fat_digits.toFixed(2)}
+                                </div>
+                                <div className="unit">{item.fat_unit}</div>
+                              </div>
+                            </div>
+                            <div className="recipe-list-item-details">
+                              <div className="recipe-list-item-left">
+                                <div className="point point-carb"></div>
+                                <div className="text">Carb</div>
+                              </div>
+                              <div className="recipe-list-item-right">
+                                <div className="point">
+                                  {item.carb_digits.toFixed(2)}
+                                </div>
+                                <div className="unit">{item.carb_unit}</div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div className="top10-right-bottom">
+                          
+                          {/* <div className="top10-right-bottom-item">
+                            <div className="recipe-list-item-details">
+                              <div className="recipe-list-item-left">
+                                <div className="point"></div>
+                                <div className="text">PROTEIN</div>
+                              </div>
+                              <div className="recipe-list-item-right">
+                                <div className="point">
+                                  {item.protein_digits.toFixed(2)}
+                                </div>
+                                <div className="unit">{item.protein_unit}</div>
+                              </div>
+                            </div>
+                            <div className="recipe-list-item-details">
+                              <div className="recipe-list-item-left">
+                                <div className="point point-fat"></div>
+                                <div className="text">FAT</div>
+                              </div>
+                              <div className="recipe-list-item-right">
+                                <div className="point">
+                                  {item.fat_digits.toFixed(2)}
+                                </div>
+                                <div className="unit">{item.fat_unit}</div>
+                              </div>
+                            </div>
+                            <div className="recipe-list-item-details">
+                              <div className="recipe-list-item-left">
+                                <div className="point point-carb"></div>
+                                <div className="text">CARB</div>
+                              </div>
+                              <div className="recipe-list-item-right">
+                                <div className="point">
+                                  {item.carb_digits.toFixed(2)}
+                                </div>
+                                <div className="unit">{item.carb_unit}</div>
+                              </div>
+                            </div>
+                          </div> */}
+                          {/* <div className="top10-right-bottom-item"> */}
+                            <div className="top10-right-bottom-new">
+                              <div className="top10-right-bottom-item-new">
+                              <div className="top10-right-bottom-item-main">
+                              <span>Cholesterol</span>
+                              <span className="top10-right-bottom-item-unit">
+                                {item.cholesterol_digits.toFixed(2)}{" "}
+                                {item.cholesterol_unit}
+                              </span>
+                            </div>
+                            <div className="top10-right-bottom-item-main">
+                              <span>Sodium</span>
+                              <span className="top10-right-bottom-item-unit">
+                                {item.sodium_digits.toFixed(2)}{" "}
+                                {item.sodium_unit}
+                              </span>
+                            </div>
+                              </div>
+                              <div className="top10-right-bottom-item-new">
+                              <div className="top10-right-bottom-item-main">
+                              <span>Calcium</span>
+                              <span className="top10-right-bottom-item-unit">
+                                {item.calcium_digits.toFixed(2)}{" "}
+                                {item.calcium_unit}
+                              </span>
+                            </div>
+                            <div className="top10-right-bottom-item-main">
+                              <span>Magnesium</span>
+                              <span className="top10-right-bottom-item-unit">
+                                {item.magnesium_digits.toFixed(2)}{" "}
+                                {item.magnesium_unit}
+                              </span>
+                            </div></div>
+                            <div className="top10-right-bottom-item-new">
+                              <div className="top10-right-bottom-item-main">
+                              <span>Potassium</span>
+                              <span className="top10-right-bottom-item-unit">
+                                {item.potassium_digits.toFixed(2)}{" "}
+                                {item.potassium_unit}
+                              </span>
+                            </div>
+                            <div className="top10-right-bottom-item-main">
+                              <span>Iron</span>
+                              <span className="top10-right-bottom-item-unit">
+                                {item.iron_digits.toFixed(2)} {item.iron_unit}
+                              </span>
+                            </div></div>
+                            </div>
+                            
+                            
+                            
+                          {/* </div> */}
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </Space.Compact>
+          </Checkbox.Group>
+        </div>
+
+
 
         <Footer></Footer>
       </div>
