@@ -1,0 +1,65 @@
+.postpartum-container {
+  padding: 10px 40px;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #2a4d69;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  background-color: rgb(244, 244, 244);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-image img {
+  width: 290px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+    text-align: left;
+}
+
+.card-content ul {
+  padding-left: 20px;
+}
+
+.learn-more {
+  margin-top: auto;
+  align-self: flex-end;
+  color: #4392c4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}

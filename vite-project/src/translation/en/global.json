@@ -12,7 +12,7 @@
     "navbar-5": "Exercise",
     "navbar-5-1": "Exercise Videos",
     "navbar-5-2": "Healthy Questionnair",
-    "navbar-5-3": "Postpartum Exercise",
+    "navbar-5-3": "postpartum recovery",
     "language-en": "English",
     "language-zh": "chinese",
     "language-id": "Bahasa Indonesia",
@@ -944,7 +944,73 @@
     }
   },
 
-  "postpartum": {},
+  "postpartum": {
+    "title": "How Exercises Help Postnatal Conditions",
+
+    "card-1-title": "Pelvic Floor Weakness",
+    "card-1-condition-title": "Condition: ",
+    "card-1-condition-desc": "Pregnancy and childbirth can weaken the pelvic floor muscles, leading to issues such as urinary incontinence and pelvic organ prolapse.",
+    "card-1-exe-title": "Exercise Benefits: ",
+    "card-1-exe-1-title": "Pelvic Floor Exercises (e.g., Slow Squeezes, Quick Squeezes, Cough Test): ",
+    "card-1-exe-1-content": "These exercises strengthen the pelvic floor muscles, helping to restore their function and support pelvic organs. They also improve bladder control and reduce the risk of incontinence.",
+    "card-1-exe-2-title": "Bridge Pose: ",
+    "card-1-exe-2-content": "Strengthens the pelvic floor and glutes, which supports lower back strength and helps in stabilizing the pelvic region.",
+
+    "card-2-title": "Abdominal Weakness",
+    "card-2-condition-title": "Condition: ",
+    "card-2-condition-desc": "Abdominal muscles, particularly the rectus abdominis, can become weakened and stretched due to the growing uterus during pregnancy.",
+    "card-2-exe-title": "Exercise Benefits: ",
+    "card-2-exe-1-title": "Pelvic Tilts (Prenatal Pilates): ",
+    "card-2-exe-1-content": "Strengthens the core and supports the lower back, aiding in the recovery of abdominal muscle strength and reducing the risk of diastasis recti (separation of abdominal muscles).",
+    "card-2-exe-2-title": "Side-Lying Leg Lifts (Prenatal Pilates): ",
+    "card-2-exe-2-content": "Improves core stability and strengthens the outer thighs and glutes, which contributes to overall abdominal strength.",
+
+    "card-3-title": "Lower Back Pain",
+    "card-3-condition-title": "Condition: ",
+    "card-3-condition-desc": "Lower back pain is common due to the strain of carrying extra weight during pregnancy and the resulting muscle imbalances.",
+    "card-3-exe-title": "Exercise Benefits: ",
+    "card-3-exe-1-title": "Cat-Cow Pose (Prenatal Yoga): ",
+    "card-3-exe-1-content": "Stretches and strengthens the spine, helping to relieve back pain by improving spinal flexibility and alignment.",
+    "card-3-exe-2-title": "Squats (Prenatal Strength Training):",
+    "card-3-exe-2-content": "Strengthens the legs and glutes, providing better support for the lower back and reducing strain.",
+
+    "card-4-title": "General Fatigue and Low Energy",
+    "card-4-condition-title": "Condition: ",
+    "card-4-condition-desc": "New mothers often experience fatigue and low energy due to the demands of caring for a newborn and recovering from childbirth.",
+    "card-4-exe-title": "Exercise Benefits: ",
+    "card-4-exe-1-title": "Light Walking: ",
+    "card-4-exe-1-content": "Boosts cardiovascular health and energy levels, helping to combat fatigue and improve overall mood.",
+    "card-4-exe-2-title": "Gentle Stretching: ",
+    "card-4-exe-2-content": "Relieves muscle tension and enhances flexibility, which can improve overall energy levels and reduce feelings of exhaustion.",
+
+    "card-5-title": "Decreased Cardiovascular Fitness",
+    "card-5-condition-title": "Condition: ",
+    "card-5-condition-desc": "During pregnancy, cardiovascular fitness may decline due to reduced physical activity and increased body weight.",
+    "card-5-exe-title": "Exercise Benefits: ",
+    "card-5-exe-1-title": "Aqua Aerobics (Water-Based Exercises): ",
+    "card-5-exe-1-content": "Provides a low-impact, full-body workout that improves cardiovascular endurance and muscle tone with minimal joint strain.",
+    "card-5-exe-2-title": "Running (After 16 Weeks): ",
+    "card-5-exe-2-content": "Increases cardiovascular stamina and endurance as fitness levels improve.",
+
+    "card-6-title": "Muscle Imbalances",
+    "card-6-condition-title": "Condition: ",
+    "card-6-condition-desc": "Muscle imbalances can occur due to the altered posture and weight distribution during pregnancy.",
+    "card-6-exe-title": "Exercise Benefits: ",
+    "card-6-exe-1-title": "Bicep Curls with Light Weights (Prenatal Strength Training): ",
+    "card-6-exe-1-content": "Maintains arm and shoulder strength, balancing muscle development and supporting overall body posture.",
+    "card-6-exe-2-title": "Arm & Leg Extensions (Bird-Dog) (Prenatal Pilates): ",
+    "card-6-exe-2-content": "Engages the core and improves stability, addressing muscle imbalances and supporting proper posture.",
+
+    "card-7-title": "Stress and Mood Fluctuations",
+    "card-7-condition-title": "Condition: ",
+    "card-7-condition-desc": "Postnatal women may experience mood swings and stress due to hormonal changes and the demands of new motherhood.",
+    "card-7-exe-title": "Exercise Benefits: ",
+    "card-7-exe-1-title": "Prenatal Yoga: ",
+    "card-7-exe-1-content": " Includes poses like Bound Angle Pose and Warrior II Pose that promote relaxation and improve mood, helping to alleviate stress and anxiety.",
+    "card-7-exe-2-title": "Gentle Stretching: ",
+    "card-7-exe-2-content": "Enhances relaxation and reduces muscle tension, contributing to improved mental wellbeing."
+
+  },
 
   "collection": {
     "title": "Body information collection",

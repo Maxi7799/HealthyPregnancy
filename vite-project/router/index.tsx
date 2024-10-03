@@ -30,6 +30,14 @@ import { VideoPage6 } from "../src/view/exercise/categorydetails/videoPage6";
 import { VideoPage7 } from "../src/view/exercise/categorydetails/videoPage7";
 import { VideoPage8 } from "../src/view/exercise/categorydetails/videoPage8";
 
+import { VideoModule1 } from "../src/view/exercise/postpartumPhysicalHealthExercise/detailModules/videoModule1";
+import { VideoModule2 } from "../src/view/exercise/postpartumPhysicalHealthExercise/detailModules/videoModule2";
+import { VideoModule3 } from "../src/view/exercise/postpartumPhysicalHealthExercise/detailModules/videoModule3";
+import { VideoModule4 } from "../src/view/exercise/postpartumPhysicalHealthExercise/detailModules/videoModule4";
+import { VideoModule5 } from "../src/view/exercise/postpartumPhysicalHealthExercise/detailModules/videoModule5";
+import { VideoModule6 } from "../src/view/exercise/postpartumPhysicalHealthExercise/detailModules/videoModule6";
+import { VideoModule7 } from "../src/view/exercise/postpartumPhysicalHealthExercise/detailModules/videoModule7";
+
 const MainRouter: React.FC = () => {
   return (
     <>
@@ -65,6 +73,13 @@ const MainRouter: React.FC = () => {
         <Route path="/videopage7" element={<VideoPage7 />} />
         <Route path="/videopage8" element={<VideoPage8 />} />
 
+        <Route path="/videomodule1" element={<VideoModule1 />} />
+        <Route path="/videomodule2" element={<VideoModule2 />} />
+        <Route path="/videomodule3" element={<VideoModule3 />} />
+        <Route path="/videomodule4" element={<VideoModule4 />} />
+        <Route path="/videomodule5" element={<VideoModule5 />} />
+        <Route path="/videomodule6" element={<VideoModule6 />} />
+        <Route path="/videomodule7" element={<VideoModule7 />} />
       </Routes>
     </>
   );
