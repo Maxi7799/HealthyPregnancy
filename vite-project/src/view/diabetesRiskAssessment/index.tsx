@@ -6,14 +6,50 @@ import "./index.css";
 import { useEffect, useState } from "react";
 import type { RadioChangeEvent } from 'antd';
 import newCountries from "./country"
+import { rootAddress } from '../../../env.tsx'
 newCountries.shift()
 
 export function DiabetesRiskAssessment() {
-  const [actValue, setActValue] = useState(0)
-  const [value1, setValue1] = useState(0)
-  const [value2, setValue2] = useState(0)
-  const [value3, setValue3] = useState(0)
+  const [height, setHeight] = useState("");
+  const [weight, setWeight] = useState("");
+  const [alcohol, setAlcohol] = useState("")
+  const [smoking, setSmoking] = useState("")
+  const [family_history, setfamily_history] = useState("")
+  const [physical_activity, setPhysical_activity] = useState("")
+  const [age, setAge] = useState("");
+  const [country, setCountry] = useState("");
+  const [result, setReult] = useState(null);
+  const [score, setScore] = useState(0)
 
+  const heightChange = (e: any) => {
+    // console.log(e).
+    setHeight(e.target.value)
+  }
+
+  const weightChange = (e: any) => {
+    // console.log(e).
+    setWeight(e.target.value)
+  }
+
+  const alcoholChange = (e: RadioChangeEvent) => {
+    setAlcohol(e.target.value)
+  }
+
+  const smokingChange = (e: RadioChangeEvent) => {
+    setSmoking(e.target.value)
+  }
+
+  const family_historyChange = (e: RadioChangeEvent) => {
+    setfamily_history(e.target.value)
+  }
+
+  const Physical_activityChange = (e: RadioChangeEvent) => {
+    setPhysical_activity(e.target.value)
+  }
+
+  const ageChange = (e: RadioChangeEvent) => {
+    setAge(e.target.value)
+  }
   const tips = (title: string) => {
     return (
       <>
@@ -22,24 +58,74 @@ export function DiabetesRiskAssessment() {
     )
   }
 
-  const activitiy = (e: RadioChangeEvent) => {
-    setActValue(e.target.value)
-  }
+  const riskResult = (result: any) => {
+    if (!result) {
+      setScore(0);
+      return;
+    }
+    console.log(result)
+    if (result.output_risk_level == "High Risk") {
+      console.log('High Risk')
+      setScore(83.4);
+      return;
+    }
 
-  const change1 = (e: RadioChangeEvent) => {
-    setValue1(e.target.value)
-  }
+    if (result.output_risk_level == "Moderate Risk") {
+      console.log('Moderate Risk')
+      setScore(50);
+      return;
+    }
 
-  const change2 = (e: RadioChangeEvent) => {
-    setValue2(e.target.value)
+    if (result.output_risk_level == "Low Risk") {
+      console.log('Low Risk')
+      setScore(16.6);
+      return;
+    }
   }
-
-  const change3 = (e: RadioChangeEvent) => {
-    setValue3(e.target.value)
-  }
-
   const handleChange = (value: string) => {
-    console.log(value)
+    setCountry(value)
+  }
+
+  const submit = async () => {
+    const paramData = {
+      country,
+      age,
+      physical_activity,
+      family_history,
+      smoking,
+      alcohol,
+      height_cm: height,
+      weight_kg: weight
+    }
+
+    console.log(paramData)
+    const riskassessment = "/risk/riskassessment";
+    const response = await fetch(rootAddress + riskassessment, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        "Content-Type": 'application/json'
+      },
+      body: JSON.stringify(paramData),
+    });
+    const data = await response.json();
+    setReult(data)
+    riskResult(data)
+    const foodList = document.getElementById("result");
+    foodList?.scrollIntoView({behavior: "smooth"});
+    // console.log(data)
+  }
+
+  const reset = () => {
+    setHeight("")
+    setWeight("")
+    setAlcohol("")
+    setSmoking("")
+    setfamily_history("")
+    setPhysical_activity("")
+    setAge("")
+    setCountry("")
+    setReult(null)
+    setScore(0)
   }
   return (
     <>
@@ -109,10 +195,10 @@ export function DiabetesRiskAssessment() {
             <p className="diabetes-risk-item-details">
               <Space direction="vertical">
                 <Space>
-                  Height: <Input placeholder="Height" /> cm
+                  Height: <Input placeholder="Height" value={height} onChange={(e) => { heightChange(e) }} /> cm
                 </Space>
                 <Space>
-                  Weight: <Input placeholder="Weight" /> kg
+                  Weight: <Input placeholder="Weight" value={weight} onChange={(e) => { weightChange(e) }} /> kg
                 </Space>
               </Space>
             </p>
@@ -129,11 +215,11 @@ export function DiabetesRiskAssessment() {
             </p>
 
             <p className="diabetes-risk-item-details">
-              <Radio.Group onChange={(e) => activitiy(e)} value={actValue}>
+              <Radio.Group onChange={(e) => Physical_activityChange(e)} value={physical_activity}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="No family history">No family history</Radio>
-                  <Radio value="One parent with diabetes">One parent with diabetes</Radio>
-                  <Radio value="Both parents with diabetes">Both parents with diabetes</Radio>
+                  <Radio value="Active (≥ 150 min/week)">Active (≥ 150 min/week)</Radio>
+                  <Radio value="Moderately active (75–149 min/week)">Moderately active (75–149 min/week)</Radio>
+                  <Radio value="Inactive (< 75 min/week)">{"Inactive (< 75 min/week)"}</Radio>
                 </Space>
               </Radio.Group>
             </p>
@@ -150,7 +236,7 @@ export function DiabetesRiskAssessment() {
             </p>
 
             <p className="diabetes-risk-item-details">
-              <Radio.Group onChange={(e) => change1(e)} value={value1}>
+              <Radio.Group onChange={(e) => family_historyChange(e)} value={family_history}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
                   <Radio value="No family history">No family history</Radio>
                   <Radio value="One parent with diabetes">One parent with diabetes</Radio>
@@ -171,11 +257,11 @@ export function DiabetesRiskAssessment() {
             </p>
 
             <p className="diabetes-risk-item-details">
-              <Radio.Group onChange={(e) => change2(e)} value={value2}>
+              <Radio.Group onChange={(e) => smokingChange(e)} value={smoking}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="No family history">Never smoked</Radio>
-                  <Radio value="One parent with diabetes">Former smoker</Radio>
-                  <Radio value="Both parents with diabetes">Current smoker</Radio>
+                  <Radio value="Never smoked">Never smoked</Radio>
+                  <Radio value="Former smoker">Former smoker</Radio>
+                  <Radio value="Current smoker">Current smoker</Radio>
                 </Space>
               </Radio.Group>
             </p>
@@ -192,11 +278,11 @@ export function DiabetesRiskAssessment() {
             </p>
 
             <p className="diabetes-risk-item-details">
-              <Radio.Group onChange={(e) => change3(e)} value={value3}>
+              <Radio.Group onChange={(e) => alcoholChange(e)} value={alcohol}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="No family history">Non-drinker</Radio>
-                  <Radio value="One parent with diabetes">Moderate drinker</Radio>
-                  <Radio value="Both parents with diabetes">Heavy drinker</Radio>
+                  <Radio value="Non-drinker">Non-drinker</Radio>
+                  <Radio value="Moderate drinker">Moderate drinker</Radio>
+                  <Radio value="Heavy drinker">Heavy drinker</Radio>
                 </Space>
               </Radio.Group>
             </p>
@@ -220,6 +306,7 @@ export function DiabetesRiskAssessment() {
                 defaultValue={newCountries[0]}
                 style={{ width: 120 }}
                 onChange={handleChange}
+                value={country}
                 options={newCountries.map((item) => {
                   return { value: item, label: item };
                 })}
@@ -238,11 +325,12 @@ export function DiabetesRiskAssessment() {
             </p>
 
             <p className="diabetes-risk-item-details">
-              <Radio.Group onChange={(e) => change3(e)} value={value3}>
+              <Radio.Group onChange={(e) => ageChange(e)} value={age}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="No family history">No family history</Radio>
-                  <Radio value="One parent with diabetes">One parent with diabetes</Radio>
-                  <Radio value="Both parents with diabetes">Both parents with diabetes</Radio>
+                  <Radio value="18-24">18-24</Radio>
+                  <Radio value="25-34">25-34</Radio>
+                  <Radio value="35-44">35-44</Radio>
+                  <Radio value="45-54">45-54</Radio>
                 </Space>
               </Radio.Group>
             </p>
@@ -251,24 +339,24 @@ export function DiabetesRiskAssessment() {
           <div>
             <p className="diabetes-risk-item-details">
               <Space>
-                <div className="dia-btn submit">Submit</div>
-                <div className="dia-btn reset">Reset answers</div>
+                <div className="dia-btn submit" onClick={submit}>Submit</div>
+                <div className="dia-btn reset" onClick={reset}>Reset answers</div>
               </Space>
             </p>
           </div>
 
-          <div className="diabetes-result-box">
+          <div className="diabetes-result-box" id="result">
             <p className="result-title">Assessment Result</p>
           </div>
 
           <p className="diabetes-result-text">Your Country of Birth: <span style={{ color: "#2C5665" }}>Australia</span></p>
 
-          <p className="diabetes-result-text">{`It belongs to the {output_country_region} region. The risk of diabetes here is {output_risk_vs_au} compared to Australia's average.`}</p>
+          <p className="diabetes-result-text">{`It belongs to the ${country} region. The risk of diabetes here is ${result ? result.output_risk_vs_au : ""} compared to Australia's average.`}</p>
 
           <p style={{ textAlign: "left" }}><b>Your Diabetes Risk: <span style={{ color: "#FF7B00" }}>MODERATE RISK</span></b></p>
 
           <div className="diabetes-result-view">
-            <div className="diabetes-result-view-point">
+            <div className="diabetes-result-view-point" style={{ left: score + '%' }}>
               <div className="diabetes-result-view-point-text">Your Score</div>
             </div>
             <div className="diabetes-result-green dr"></div>
@@ -276,7 +364,7 @@ export function DiabetesRiskAssessment() {
             <div className="diabetes-result-red dr"></div>
           </div>
 
-          <p className="diabetes-result-text" style={{ marginTop: "50px" }}>Main contributing Factor: <span style={{ color: "#2C5665" }}>{"{output_highest_contributor}"}</span></p>
+          <p className="diabetes-result-text" style={{ marginTop: "50px" }}>Main contributing Factor: <span style={{ color: "#2C5665" }}>{result ? result.output_highest_contributor : ""}</span></p>
 
           <p className="diabetes-result-text">
             <div style={{ fontWeight: 100 }}><i>Note</i> :</div>
