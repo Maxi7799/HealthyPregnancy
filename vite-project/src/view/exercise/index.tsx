@@ -66,14 +66,14 @@ export function Exercise(){
         <div className="container">
           <h1 className="title">{t("exercise.overview-title")}</h1>
           <div className="question-btn">
-            <div className="quiz-banner-container">
+            <Link className="quiz-banner-container" to="/healthyquestionnari">
               <div className="quiz-text">
                 <span>◆</span> Not Sure Where to Start? Take Our Exercise Quiz!
               </div>
               <div className="quiz-icon">
                 <img src={quizIcon} alt="Quiz Button" />
               </div>
-            </div>
+            </Link>
           </div>
           <div className="card-container">
             {cards.map((card, index) => (
