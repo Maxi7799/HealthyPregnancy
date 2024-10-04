@@ -145,7 +145,7 @@ export const NutritionAnalysis: React.FC = () => {
     getRecomendFood(food);
 
     const foodList = document.getElementById("foodList");
-    foodList?.scrollIntoView({behavior: "smooth"});
+    foodList?.scrollIntoView({ behavior: "smooth" });
   };
 
   const submitAnalyze = async () => {
@@ -216,7 +216,7 @@ export const NutritionAnalysis: React.FC = () => {
     getRecomendFood(currentCategory);
 
     const category = document.getElementById("category");
-    category?.scrollIntoView({behavior: "smooth"});
+    category?.scrollIntoView({ behavior: "smooth" });
   };
 
   const getRecomendFood = async (food: string) => {
@@ -235,7 +235,7 @@ export const NutritionAnalysis: React.FC = () => {
     const data = await response.json();
     console.log(data);
 
-   
+
 
     const newList = data.food_item.map((item: any, index: number) => {
       return {
@@ -251,7 +251,7 @@ export const NutritionAnalysis: React.FC = () => {
 
   const getUrl = (name: string) => {
     const urlList = imgDatails.filter(x => name == x.food_item)
-    return  urlList[0].image
+    return urlList[0].image
   }
 
   return (
@@ -297,24 +297,25 @@ export const NutritionAnalysis: React.FC = () => {
             </div>
 
             <div className="tab-switch">
+
               <div
-                className={
-                  "tab-item tab-item1" + " " + (actTab == 0 ? "tab-act" : "")
-                }
+                className={"tab-item tab-item1" + " " + (actTab == 0 ? "tab-act" : "")}
                 onClick={() => TabClick(0)}
               >
-                Free Text
+                Guided Input
               </div>
               <div
-                className={"tab-item" + " " + (actTab == 1 ? "tab-act" : "")}
+                className={
+                  "tab-item " + " " + (actTab == 1 ? "tab-act" : "")
+                }
                 onClick={() => TabClick(1)}
               >
-                Guided Input
+                Free Text
               </div>
             </div>
             <div className="input-main-box">
               <div className="input-main-left">
-                {actTab == 0 ? (
+                {actTab == 1 ? (
                   <>
                     <div className="text-area-box">
                       <TextArea
@@ -911,7 +912,7 @@ export const NutritionAnalysis: React.FC = () => {
 
             <div
               className="category"
-              style={{ marginTop: "40px", display: foodList.length == 0 ? "none" : "block"}}
+              style={{ marginTop: "40px", display: foodList.length == 0 ? "none" : "block" }}
               id="foodList"
             >
               <div className="category-title">Food List</div>
@@ -922,7 +923,7 @@ export const NutritionAnalysis: React.FC = () => {
               {foodList.map((item: any) => {
                 return (
                   <div className="food-list">
-                    <div className="left-icon" style={{background: "url(" + getUrl(item.food ) + ") no-repeat center center", backgroundSize:"cover"}}>
+                    <div className="left-icon" style={{ background: "url(" + getUrl(item.food) + ") no-repeat center center", backgroundSize: "cover" }}>
                     </div>
                     <div className="right-item">
                       <div className="food-right-top">

@@ -1,6 +1,6 @@
 import { Footer } from "../../components/footer/index.tsx";
 import { Header } from "../../components/header/header.tsx";
-import { Checkbox, Space, Input, Row, Col} from "antd";
+import { Checkbox, Space, Input, Row, Col } from "antd";
 import {
   ArrowLeftOutlined,
   CalendarOutlined,
@@ -90,7 +90,7 @@ export const Recipe: React.FC = () => {
       .concat(shoseLunch)
       .concat(shoseTeatime);
 
-      console.log(newData)
+    console.log(newData)
 
     // console.log(newData)
     setChose(newData);
@@ -175,16 +175,7 @@ export const Recipe: React.FC = () => {
               <div className="recipe-img-text">BREAKFAST</div>
             </div>
           </div>
-          <div className="recipe-img " onClick={() => recipeChange(1)}>
-            <div
-              className={
-                "recipe-box " + (currentRecipe == 1 ? "recipe-box-act" : "")
-              }
-            >
-              <div className="recipe-img-main recipe-img2"></div>
-              <div className="recipe-img-text">DINNER</div>
-            </div>
-          </div>
+
           <div className="recipe-img " onClick={() => recipeChange(2)}>
             <div
               className={
@@ -205,9 +196,19 @@ export const Recipe: React.FC = () => {
               <div className="recipe-img-text">TEATIME</div>
             </div>
           </div>
+          <div className="recipe-img " onClick={() => recipeChange(1)}>
+            <div
+              className={
+                "recipe-box " + (currentRecipe == 1 ? "recipe-box-act" : "")
+              }
+            >
+              <div className="recipe-img-main recipe-img2"></div>
+              <div className="recipe-img-text">DINNER</div>
+            </div>
+          </div>
         </div>
 
-        <div className="recipe-list-add" style={{margin: "20px auto"}}>
+        <div className="recipe-list-add" style={{ margin: "20px auto" }}>
           <div className="recipe-list-left">
             {chose.map((item: any) => {
               return (
@@ -329,35 +330,35 @@ export const Recipe: React.FC = () => {
                               backgroundSize: "contain",
                             }}
                           ></div>
-                          <Space direction="vertical">
-                          <div className="top10-right-top-text">
-                            <div className="top10-foodName" style={{textAlign: 'left'}}>
-                              {item.recipe_name}
-                            </div>
-                            <div>
-                              {/* High Protein ·Low Carb ·Sugar Conscious · Keto Friendly·
+                            <Space direction="vertical">
+                              <div className="top10-right-top-text">
+                                <div className="top10-foodName" style={{ textAlign: 'left' }}>
+                                  {item.recipe_name}
+                                </div>
+                                <div>
+                                  {/* High Protein ·Low Carb ·Sugar Conscious · Keto Friendly·
                         DairyFree · Gluten Free · Wheat Free " Egg Free · Peanut
                         Free * Tree NutFree " Soy Free · Fish Free ·Shellfish
                         Free · Pork Free ·CrustaceanFree " Celery Free · Mustard
                         Free " Sesame Free · Lupine Free "Mollusk Free "Alcohol
                         Free · No oil added. FODMAP FreeKosher "lmmuno */}
-                              {/* Supportive */}
-                            </div>
-                          </div>
-                          {/* <div className="top10-right-bottom-item"> */}
-                            {/* <div className="top10-servings">10 servings</div> */}
-                            <div style={{textAlign: 'left'}}>
-                              <span className="top10-kcal">
-                                {item.calories_digits.toFixed(2)}
-                              </span>
-                              <span className="top10-kcal-unit">kcal</span>
-                            </div>
-                          {/* </div> */}
-                          
-                          
-                          </Space></Space>
-                          
-                          
+                                  {/* Supportive */}
+                                </div>
+                              </div>
+                              {/* <div className="top10-right-bottom-item"> */}
+                              {/* <div className="top10-servings">10 servings</div> */}
+                              <div style={{ textAlign: 'left' }}>
+                                <span className="top10-kcal">
+                                  {item.calories_digits.toFixed(2)}
+                                </span>
+                                <span className="top10-kcal-unit">kcal</span>
+                              </div>
+                              {/* </div> */}
+
+
+                            </Space></Space>
+
+
                           <div className="top10-right-bottom-item top10-right-Protein">
                             <div className="recipe-list-item-details">
                               <div className="recipe-list-item-left">
@@ -399,7 +400,7 @@ export const Recipe: React.FC = () => {
 
                         </div>
                         <div className="top10-right-bottom">
-                          
+
                           {/* <div className="top10-right-bottom-item">
                             <div className="recipe-list-item-details">
                               <div className="recipe-list-item-left">
@@ -439,56 +440,56 @@ export const Recipe: React.FC = () => {
                             </div>
                           </div> */}
                           {/* <div className="top10-right-bottom-item"> */}
-                            <div className="top10-right-bottom-new">
-                              <div className="top10-right-bottom-item-new">
-                              <div className="top10-right-bottom-item-main">
-                              <span>Cholesterol</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.cholesterol_digits.toFixed(2)}{" "}
-                                {item.cholesterol_unit}
-                              </span>
-                            </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Sodium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.sodium_digits.toFixed(2)}{" "}
-                                {item.sodium_unit}
-                              </span>
-                            </div>
-                              </div>
-                              <div className="top10-right-bottom-item-new">
-                              <div className="top10-right-bottom-item-main">
-                              <span>Calcium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.calcium_digits.toFixed(2)}{" "}
-                                {item.calcium_unit}
-                              </span>
-                            </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Magnesium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.magnesium_digits.toFixed(2)}{" "}
-                                {item.magnesium_unit}
-                              </span>
-                            </div></div>
+                          <div className="top10-right-bottom-new">
                             <div className="top10-right-bottom-item-new">
                               <div className="top10-right-bottom-item-main">
-                              <span>Potassium</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.potassium_digits.toFixed(2)}{" "}
-                                {item.potassium_unit}
-                              </span>
+                                <span>Cholesterol</span>
+                                <span className="top10-right-bottom-item-unit">
+                                  {item.cholesterol_digits.toFixed(2)}{" "}
+                                  {item.cholesterol_unit}
+                                </span>
+                              </div>
+                              <div className="top10-right-bottom-item-main">
+                                <span>Sodium</span>
+                                <span className="top10-right-bottom-item-unit">
+                                  {item.sodium_digits.toFixed(2)}{" "}
+                                  {item.sodium_unit}
+                                </span>
+                              </div>
                             </div>
-                            <div className="top10-right-bottom-item-main">
-                              <span>Iron</span>
-                              <span className="top10-right-bottom-item-unit">
-                                {item.iron_digits.toFixed(2)} {item.iron_unit}
-                              </span>
-                            </div></div>
-                            </div>
-                            
-                            
-                            
+                            <div className="top10-right-bottom-item-new">
+                              <div className="top10-right-bottom-item-main">
+                                <span>Calcium</span>
+                                <span className="top10-right-bottom-item-unit">
+                                  {item.calcium_digits.toFixed(2)}{" "}
+                                  {item.calcium_unit}
+                                </span>
+                              </div>
+                              <div className="top10-right-bottom-item-main">
+                                <span>Magnesium</span>
+                                <span className="top10-right-bottom-item-unit">
+                                  {item.magnesium_digits.toFixed(2)}{" "}
+                                  {item.magnesium_unit}
+                                </span>
+                              </div></div>
+                            <div className="top10-right-bottom-item-new">
+                              <div className="top10-right-bottom-item-main">
+                                <span>Potassium</span>
+                                <span className="top10-right-bottom-item-unit">
+                                  {item.potassium_digits.toFixed(2)}{" "}
+                                  {item.potassium_unit}
+                                </span>
+                              </div>
+                              <div className="top10-right-bottom-item-main">
+                                <span>Iron</span>
+                                <span className="top10-right-bottom-item-unit">
+                                  {item.iron_digits.toFixed(2)} {item.iron_unit}
+                                </span>
+                              </div></div>
+                          </div>
+
+
+
                           {/* </div> */}
                         </div>
                       </div>

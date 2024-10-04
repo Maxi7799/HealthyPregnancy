@@ -332,12 +332,14 @@
 .recommendation-switch-button .left {
     border-radius: 20px 0px 0px 20px;
     background-color: #7FCD00;
+    opacity: 0.4;
 }
 
 .recommendation-switch-button .right {
     border-left: none;
     border-radius: 0px 20px 20px 0px;
     background-color: #ffa5a5;
+    opacity: 0.4;
 }
 
 .category {
@@ -479,8 +481,13 @@
     }
 }
 
-.actrecomend {
-    border: 2px solid #000 !important;
+.recommendation-switch-button .actrecomend {
+    border: 2px solid #444 !important;
+    opacity: 1;
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
 }
 
 @media (max-width: 700px) {

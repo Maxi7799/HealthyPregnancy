@@ -53,14 +53,16 @@ export const HomePlan: React.FC = () => {
           return (
             <>
               <div className="plan-box">
-                <div
-                  className="plan-image"
-                  style={{
-                    background:
-                      "url(" + item.icon + ") no-repeat center center",
-                    backgroundSize: "contain",
-                  }}
-                ></div>
+                <a href={item.link}>
+                  <div
+                    className="plan-image"
+                    style={{
+                      background:
+                        "url(" + item.icon + ") no-repeat center center",
+                      backgroundSize: "contain",
+                    }}
+                  ></div>
+                </a>
                 <a href={item.link}>
                   <div className="plan-text2">{item.other}</div>
                 </a>
