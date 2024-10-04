@@ -67,6 +67,27 @@ html, body {
   justify-content: center;
 }
 
+.back-button {
+  display: flex;
+  align-items: center;
+  margin-top:0px;
+  margin-bottom: 0px;
+  font-size: 23px;
+  text-decoration: none;
+  color: #2a4d69;
+  font-weight: bold;
+}
+
+.back-button::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../../assets/education/back.png'); /* Adjust this path to your actual image location */
+  background-size: cover;
+  margin-right: 10px;
+}
+
 .video-container:active {
   cursor: grabbing;
 }

@@ -26,7 +26,7 @@ html, body {
   align-items: center;
   margin-top:5px;
   margin-bottom: 50px;
-  font-size: 23px;
+  font-size: 15px;
   text-decoration: none;
   color: #2a4d69;
   font-weight: bold;
@@ -35,8 +35,8 @@ html, body {
 .back-button::before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-image: url('../../../assets/education/back.png'); /* Adjust this path to your actual image location */
   background-size: cover;
   margin-right: 10px;
@@ -200,7 +200,7 @@ html, body {
   margin-top: 50px;
 }
 
-.prev-button, .next-button {
+.prev-button, .next-button{
   padding: 10px 20px;
   background-color: #3c6e71;
   color: white;
@@ -210,9 +210,13 @@ html, body {
   transition: background-color 0.3s ease;
 }
 
-.prev-button:hover, .next-button:hover {
+.prev-button:hover, .next-button:hover{
   background-color: #2a4d69;
 }
+
+ .next-text:hover {
+  color: rgb(169, 169, 254); /* Change to blue on hover */
+ }
 
 /* text link */
 .text-link {

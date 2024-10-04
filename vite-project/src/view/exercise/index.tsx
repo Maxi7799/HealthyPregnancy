@@ -3,6 +3,7 @@ import { Footer } from "../../components/footer";
 import { Header } from "../../components/header/header";
 import "./index.css"
 import { useTranslation } from "react-i18next";
+import quizIcon from "../../../src/assets/exercise/exe-q.png"
 
 export function Exercise(){
 
@@ -64,6 +65,16 @@ export function Exercise(){
         <Header />
         <div className="container">
           <h1 className="title">{t("exercise.overview-title")}</h1>
+          <div className="question-btn">
+            <div className="quiz-banner-container">
+              <div className="quiz-text">
+                <span>◆</span> Not Sure Where to Start? Take Our Exercise Quiz!
+              </div>
+              <div className="quiz-icon">
+                <img src={quizIcon} alt="Quiz Button" />
+              </div>
+            </div>
+          </div>
           <div className="card-container">
             {cards.map((card, index) => (
               <Link to={card.link} className="card-link" key={index}>

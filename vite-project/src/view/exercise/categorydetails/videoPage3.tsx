@@ -4,6 +4,7 @@ import { Footer } from "../../../components/footer";
 import { Header } from "../../../components/header/header";
 import { useTranslation } from "react-i18next";
 import { Modal } from "./popupModel";
+import { Link } from "react-router-dom";
 
 const videos = ["4Ejz7IgODlU", "USQ827zBMdA", "R91023CV62M"];
 
@@ -148,6 +149,11 @@ export const VideoPage3: React.FC = () => {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div>
+              <Link to="/exercise" className="back-button">
+                {t("education.sidebar.back-btn")}
+              </Link>
             </div>
           </div>
           {modalContent && (

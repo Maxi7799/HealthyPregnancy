@@ -20,11 +20,16 @@
     margin: auto;
     margin-bottom: 2vw;
 }
-
 .plan-text2 {
     height: calc(100% - 108px);
     width: 100%;
     font-size: 1.2vw;
+    color: black;
+}
+
+.plan-text2:hover {
+    color: rgb(169, 169, 254); /* Change to blue on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 .plan-box {
@@ -40,3 +45,4 @@
     padding-top: 2vw;
     box-sizing: border-box;
 }
+

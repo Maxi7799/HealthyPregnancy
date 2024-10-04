@@ -187,10 +187,8 @@ export const ModulePage6: React.FC = () => {
                 {t("education.card-1.prepage-btn")}
               </button>
             </Link>
-            <Link to="/module6">
-              <button className="next-button">
-                {t("education.card-1.nextpage-btn")}
-              </button>
+            <Link to="/risk-assessment">
+              <p className="next-text">{t("education.card-6.nextpage-btn")}</p>
             </Link>
           </div>
         </main>

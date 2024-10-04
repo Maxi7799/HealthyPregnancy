@@ -3,6 +3,7 @@ import "./videoModule.css";
 import { Footer } from "../../../../components/footer";
 import { Header } from "../../../../components/header/header";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const videos = ["6pDr_nxLTIY", "R91023CV62M"];
 
@@ -76,6 +77,11 @@ export const VideoModule6: React.FC = () => {
                   </ul>
                 </li>
               </ul>
+            </div>
+            <div>
+              <Link to="/postpartumexercise" className="back-button">
+                {t("education.sidebar.back-btn")}
+              </Link>
             </div>
           </div>
         </div>
