@@ -20,14 +20,14 @@ body {
   grid-template-columns: repeat(4, 1fr); /* Four cards per row */
   gap: 20px;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 10px; 
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;

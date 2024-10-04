@@ -7,6 +7,7 @@ import { Modal } from "./popupModel";
 
 const videos = ["dQw4w9WgXcQ", "tVj0ZTS4WF4", "QH2-TGUlwu4", "9bZkp7q19f0"];
 
+
 export const VideoPage1: React.FC = () => {
   const [t] = useTranslation("global");
 
