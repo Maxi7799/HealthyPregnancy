@@ -68,7 +68,7 @@ export function Exercise(){
           <div className="question-btn">
             <Link className="quiz-banner-container" to="/healthyquestionnari">
               <div className="quiz-text">
-                <span>◆</span> Not Sure Where to Start? Take Our Exercise Quiz!
+                <span>◆</span> {t("exercise.questionnaire-access")}
               </div>
               <div className="quiz-icon">
                 <img src={quizIcon} alt="Quiz Button" />

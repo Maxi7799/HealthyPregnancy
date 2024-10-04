@@ -155,4 +155,8 @@ html, body {
   .video-item iframe {
     height: 180px;
   }
+
+  .video-container {
+  justify-content: left;
+}
 }
