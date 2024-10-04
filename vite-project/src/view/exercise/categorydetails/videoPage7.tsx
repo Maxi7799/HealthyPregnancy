@@ -5,7 +5,7 @@ import { Header } from "../../../components/header/header";
 import { useTranslation } from "react-i18next";
 import { Modal } from "./popupModel";
 
-const videos = ["dQw4w9WgXcQ", "tVj0ZTS4WF4", "QH2-TGUlwu4", "9bZkp7q19f0"];
+const videos = ["l8GgH1pB9qI", "c3YGDRLe6MU"];
 
 export const VideoPage7: React.FC = () => {
   const [t] = useTranslation("global");
@@ -92,7 +92,7 @@ export const VideoPage7: React.FC = () => {
         <div className="intro-section">
           <div className="intro-image-container">
             <img
-              src="https://media.istockphoto.com/id/1366052585/photo/shot-of-a-group-of-friends-hanging-out-before-working-out-together.jpg?s=1024x1024&w=is&k=20&c=XFaueoiQkP6_pXOhKbUCeDb28u6dc4ABhLkP_WKngn4="
+              src="https://img.freepik.com/free-photo/side-view-woman-exercising-home_23-2149601628.jpg?w=2000&t=st=1728012325~exp=1728012925~hmac=5a08510b2c5176d4c8e53b2c1f569c7f1384b12cd47dbec5347f6c022d39c78b"
               alt="Page Intro"
               className="intro-image"
             />

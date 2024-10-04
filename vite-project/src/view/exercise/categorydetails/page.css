@@ -64,6 +64,7 @@ html, body {
   padding: 10px;
   cursor: grab;
   scroll-behavior: smooth;
+  justify-content: center;
 }
 
 .video-container:active {

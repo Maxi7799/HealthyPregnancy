@@ -4,7 +4,7 @@ import { Footer } from "../../../../components/footer";
 import { Header } from "../../../../components/header/header";
 import { useTranslation } from "react-i18next";
 
-const videos = ["dQw4w9WgXcQ", "tVj0ZTS4WF4", "QH2-TGUlwu4", "9bZkp7q19f0"];
+const videos = ["6pDr_nxLTIY", "R91023CV62M"];
 
 export const VideoModule6: React.FC = () => {
   const [t] = useTranslation("global");
@@ -50,7 +50,7 @@ export const VideoModule6: React.FC = () => {
         <div className="intro-section">
           <div className="intro-image-container">
             <img
-              src="https://media.istockphoto.com/id/1366052585/photo/shot-of-a-group-of-friends-hanging-out-before-working-out-together.jpg?s=1024x1024&w=is&k=20&c=XFaueoiQkP6_pXOhKbUCeDb28u6dc4ABhLkP_WKngn4="
+              src="https://images.pexels.com/photos/18087454/pexels-photo-18087454/free-photo-of-women-exercising-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Page Intro"
               className="intro-image"
             />

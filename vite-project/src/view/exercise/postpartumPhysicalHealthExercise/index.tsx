@@ -8,7 +8,8 @@ export function PostpartumExercise() {
 
   const cardsData = [
     {
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://images.pexels.com/photos/7055676/pexels-photo-7055676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: t("postpartum.card-1-title"),
       condition: t("postpartum.card-1-condition-desc"),
       exerciseBenefits: [
@@ -18,7 +19,8 @@ export function PostpartumExercise() {
       link: "/videomodule1",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://images.pexels.com/photos/7155540/pexels-photo-7155540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: t("postpartum.card-2-title"),
       condition: t("postpartum.card-2-condition-desc"),
       exerciseBenefits: [
@@ -28,7 +30,8 @@ export function PostpartumExercise() {
       link: "/videomodule2",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://images.pexels.com/photos/9267563/pexels-photo-9267563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: t("postpartum.card-3-title"),
       condition: t("postpartum.card-3-condition-desc"),
       exerciseBenefits: [
@@ -38,7 +41,8 @@ export function PostpartumExercise() {
       link: "/videomodule3",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://images.pexels.com/photos/7055728/pexels-photo-7055728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: t("postpartum.card-4-title"),
       condition: t("postpartum.card-4-condition-desc"),
       exerciseBenefits: [
@@ -48,7 +52,8 @@ export function PostpartumExercise() {
       link: "/videomodule4",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://images.pexels.com/photos/7155550/pexels-photo-7155550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: t("postpartum.card-5-title"),
       condition: t("postpartum.card-5-condition-desc"),
       exerciseBenefits: [
@@ -58,7 +63,8 @@ export function PostpartumExercise() {
       link: "/videomodule5",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://images.pexels.com/photos/18087454/pexels-photo-18087454/free-photo-of-women-exercising-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: t("postpartum.card-6-title"),
       condition: t("postpartum.card-6-condition-desc"),
       exerciseBenefits: [
@@ -68,7 +74,8 @@ export function PostpartumExercise() {
       link: "/videomodule6",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://images.pexels.com/photos/7155363/pexels-photo-7155363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: t("postpartum.card-7-title"),
       condition: t("postpartum.card-7-condition-desc"),
       exerciseBenefits: [
