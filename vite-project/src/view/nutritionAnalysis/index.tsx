@@ -16,6 +16,7 @@ import fish_icon from "./images/fish.webp";
 import { useSearchParams } from "react-router-dom";
 import { message } from "antd";
 import imageMap from './foodImage.json';
+import { useTranslation } from "react-i18next";
 // console.log(imageMap)
 const imgDatails = imageMap.items;
 
@@ -41,6 +42,7 @@ export const NutritionAnalysis: React.FC = () => {
   const [params] = useSearchParams();
   const [messageApi, contextHolder] = message.useMessage();
   console.log(params.getAll("actTab")[0]);
+  const [t] = useTranslation("global");
 
   useEffect(() => {
     setGuideList([
@@ -265,7 +267,7 @@ export const NutritionAnalysis: React.FC = () => {
           }
           onClick={() => analysisClick("Nutrition Analysis")}
         >
-          Nutrition Analysis
+          {t("NutritionAnalysis.NutritionAnalysis")}
         </div>
         <div
           className={
@@ -274,26 +276,21 @@ export const NutritionAnalysis: React.FC = () => {
           }
           onClick={() => analysisClick("Recommendation")}
         >
-          Recommendation
+          {t("NutritionAnalysis.Recommendation")}
         </div>
         <div className="button-item">
           <Link to="/recipe" style={{ color: "#000" }}>
-            Recipes
+            {t("NutritionAnalysis.Recipes")}
           </Link>
         </div>
       </div>
       {currentPage == "Nutrition Analysis" ? (
         <>
           <div className="analyze-box">
-            <div className="analyze-title">Food Nutrition Analysis</div>
+            <div className="analyze-title">{t("NutritionAnalysis.FoodNutritionAnalysis")}</div>
 
             <div className="analyze-text">
-              Here you can calculate the nutrients contained in various types
-              and amounts of food. You can use a text box to enter, such as '2
-              cups coffee', and you can add a variety of foods through line
-              breaks. You can also enter and select the type and amount of food
-              with guided input. When you click analyze, you can get a nutrition
-              table for all your foods combined
+              {t("NutritionAnalysis.text1")}
             </div>
 
             <div className="tab-switch">
@@ -302,7 +299,7 @@ export const NutritionAnalysis: React.FC = () => {
                 className={"tab-item tab-item1" + " " + (actTab == 0 ? "tab-act" : "")}
                 onClick={() => TabClick(0)}
               >
-                Guided Input
+                {t("NutritionAnalysis.GuidedInput")}
               </div>
               <div
                 className={
@@ -310,7 +307,7 @@ export const NutritionAnalysis: React.FC = () => {
                 }
                 onClick={() => TabClick(1)}
               >
-                Free Text
+                {t("NutritionAnalysis.FreeText")}
               </div>
             </div>
             <div className="input-main-box">
@@ -333,9 +330,9 @@ export const NutritionAnalysis: React.FC = () => {
                       <div className="input-table-header input-table-header-text">
                         <Space>
                           <div className="table-col index-col"></div>
-                          <div className="table-col qty-col">Qty</div>
-                          <div className="table-col qty-col">Unit</div>
-                          <div className="table-col">Ingredient Name</div>
+                          <div className="table-col qty-col">{t("NutritionAnalysis.Qty")}</div>
+                          <div className="table-col qty-col">{t("NutritionAnalysis.Unit")}</div>
+                          <div className="table-col">{t("NutritionAnalysis.IngredientName")}</div>
                         </Space>
                       </div>
                       {guideList.map((item, index) => {
@@ -361,29 +358,29 @@ export const NutritionAnalysis: React.FC = () => {
                                     onChange={(e) => UnitChange(e, index)}
                                     value={item.Unit}
                                     options={[
-                                      { value: "Ounce", label: "Ounce" },
-                                      { value: "Gram", label: "Gram" },
-                                      { value: "Pound", label: "Pound" },
-                                      { value: "Kilogram", label: "Kilogram" },
-                                      { value: "Pinch", label: "Pinch" },
-                                      { value: "Liter", label: "Liter" },
+                                      { value: "Ounce", label: t("NutritionAnalysis.Ounce") },
+                                      { value: "Gram", label: t("NutritionAnalysis.Gram") },
+                                      { value: "Pound", label: t("NutritionAnalysis.Pound") },
+                                      { value: "Kilogram", label: t("NutritionAnalysis.Kilogram") },
+                                      { value: "Pinch", label: t("NutritionAnalysis.Pinch") },
+                                      { value: "Liter", label: t("NutritionAnalysis.Liter") },
                                       {
                                         value: "Fluid ounce",
-                                        label: "Fluid ounce",
+                                        label: t("NutritionAnalysis.Fluidounce"),
                                       },
-                                      { value: "Pint", label: "Pint" },
-                                      { value: "Quart", label: "Quart" },
+                                      { value: "Pint", label: t("NutritionAnalysis.Pint") },
+                                      { value: "Quart", label: t("NutritionAnalysis.Quart") },
                                       {
                                         value: "Milliliter",
-                                        label: "Milliliter",
+                                        label: t("NutritionAnalysis.Milliliter"),
                                       },
-                                      { value: "Drop", label: "Drop" },
-                                      { value: "Cup", label: "Cup" },
+                                      { value: "Drop", label: t("NutritionAnalysis.Drop") },
+                                      { value: "Cup", label: t("NutritionAnalysis.Cup") },
                                       {
                                         value: "Tablespoon",
-                                        label: "Tablespoon",
+                                        label: t("NutritionAnalysis.Tablespoon"),
                                       },
-                                      { value: "Teaspoon", label: "Teaspoon" },
+                                      { value: "Teaspoon", label: t("NutritionAnalysis.Teaspoon") },
                                     ]}
                                   />
                                 </div>
@@ -413,7 +410,7 @@ export const NutritionAnalysis: React.FC = () => {
                                 <div>
                                   <Space direction="vertical">
                                     <Space>
-                                      <span className="label">Qty</span>
+                                      <span className="label">{t("NutritionAnalysis.Qty")}</span>
                                       <Input
                                         placeholder="e.g. 100"
                                         value={item.Qty}
@@ -424,7 +421,7 @@ export const NutritionAnalysis: React.FC = () => {
                                     {/* </div> */}
                                     {/* <div className="table-col qty-col"> */}
                                     <Space>
-                                      <span className="label">Unit</span>
+                                      <span className="label">{t("NutritionAnalysis.Unit")}</span>
                                       <Select
                                         style={{ width: "200px" }}
                                         defaultValue="Ounce"
@@ -467,7 +464,7 @@ export const NutritionAnalysis: React.FC = () => {
                                     {/* <div className="table-col"> */}
                                     <Space>
                                       <span className="label">
-                                        Ingredient Name
+                                        {t("NutritionAnalysis.IngredientName")}
                                       </span>
                                       <Input
                                         placeholder="e.g. fish"
@@ -497,7 +494,7 @@ export const NutritionAnalysis: React.FC = () => {
                     </div>
 
                     <div className="add-item" onClick={addItem}>
-                      Add another item
+                      {t("NutritionAnalysis.AddAnotherItem")}
                     </div>
                   </>
                 )}
@@ -507,25 +504,25 @@ export const NutritionAnalysis: React.FC = () => {
                     className="submit-analyze"
                     onClick={() => submitAnalyze()}
                   >
-                    Analyze
+                    {t("NutritionAnalysis.Analyze")}
                   </div>
                   <div className="clear-analyze" onClick={clear}>
-                    clear
+                    {t("NutritionAnalysis.clear")}
                   </div>
                 </div>
 
                 {showResult ? (
                   <>
                     <div className="analyze">
-                      <div className="analyze-title">Ingredients Summary</div>
+                      <div className="analyze-title">{t("NutritionAnalysis.FoodRecommendation")}y</div>
                     </div>
                     <div className="analyze-result-table">
                       <div className="result-header">
-                        <div>Qty</div>
-                        <div>Unit</div>
-                        <div>Name</div>
-                        <div>Calories</div>
-                        <div>Weight</div>
+                        <div>{t("NutritionAnalysis.Qty")}</div>
+                        <div>{t("NutritionAnalysis.Unit")}</div>
+                        <div>{t("NutritionAnalysis.Name")}</div>
+                        <div>{t("NutritionAnalysis.Calories")}</div>
+                        <div>{t("NutritionAnalysis.Weight")}</div>
                       </div>
                       <div className="table-line"></div>
                       {tableData.map((item, index) => {
@@ -557,11 +554,11 @@ export const NutritionAnalysis: React.FC = () => {
                 <>
                   <div className="input-main-right">
                     <div className="result-box-right">
-                      <div className="result-right-title">Nutrition Facts</div>
+                      <div className="result-right-title">{t("NutritionAnalysis.NutritionFacts")}</div>
                       <div className="result-line"></div>
-                      <div className="result-sub">Amount Per Serving</div>
+                      <div className="result-sub">{t("NutritionAnalysis.AmountPerServing")}</div>
                       <div className="result-Calories">
-                        <span>Calories</span>
+                        <span>{t("NutritionAnalysis.Calories")}</span>
                         <span>
                           {result.calories.reduce(
                             (prev: number, cur: number) => {
@@ -572,12 +569,12 @@ export const NutritionAnalysis: React.FC = () => {
                       </div>
                       <div className="result-line2"></div>
 
-                      <div className="daily-value">% Daily Value*</div>
+                      <div className="daily-value">% {t("DailyValue")}*</div>
 
                       <div className="result-item">
                         <div className="item-main">
                           <div>
-                            <b>Total Fat </b>
+                            <b>{t("NutritionAnalysis.TotalFat")} </b>
                             {result.total_fat_digits.toFixed(2)}{" "}
                             {result.total_fat_unit}
                           </div>
@@ -587,7 +584,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-details">
                           <span>
-                            Saturated Fat{" "}
+                            {t("NutritionAnalysis.SaturatedFat")}{" "}
                             {result.saturated_fat_digits.toFixed(2)}
                             {result.saturated_fat_unit}
                           </span>
@@ -595,14 +592,14 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-details">
                           <span>
-                            Trans Fat {result.trans_fat_digits.toFixed(2)}{" "}
+                            {t("TransFat")} {result.trans_fat_digits.toFixed(2)}{" "}
                             {result.trans_fat_unit}
                           </span>
                           <b>{result.trans_fat_percent.toFixed(2)}%</b>
                         </div>
                         <div className="item-main">
                           <div>
-                            <b>Cholesterol </b>
+                            <b>{t("NutritionAnalysis.Cholesterol")}</b>
                             {result.cholesterol_digits.toFixed(2)}{" "}
                             {result.cholesterol_unit}
                             {/* <b>{result.cholesterol_percent}%</b> */}
@@ -613,7 +610,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-main">
                           <div>
-                            <b>Sodium</b>
+                            <b>{t("NutritionAnalysis.Sodium")}</b>
                             {result.saturated_fat_digits.toFixed(2)}{" "}
                             {result.saturated_fat_unit}
                           </div>
@@ -623,7 +620,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-main">
                           <div>
-                            <b>Total Carbohydrate</b>
+                            <b>{t("NutritionAnalysis.TotalCarbohydrate")}</b>
                             {result.total_carbohydrate_digits.toFixed(2)}{" "}
                             {result.total_carbohydrate_unit}
                           </div>
@@ -635,7 +632,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-details">
                           <span>
-                            Dietary Fiber{" "}
+                            {t("NutritionAnalysis.DietaryFiber")}{" "}
                             {result.dietary_fiber_digits.toFixed(2)}{" "}
                             {result.dietary_fiber_unit}
                           </span>
@@ -643,18 +640,18 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-details">
                           <span>
-                            Total Sugars {result.total_sugars_digits.toFixed(2)}{" "}
+                            {t("NutritionAnalysis.TotalSugars")} {result.total_sugars_digits.toFixed(2)}{" "}
                             {result.total_sugars_unit}
                           </span>
                           <b>{result.total_sugars_percent.toFixed(2)}%</b>
                         </div>
                         <div className="item-details">
-                          <span>Includes - Added Sugars</span>
+                          <span>{t("NutritionAnalysis.Includes-AddedSugars")}</span>
                           <b></b>
                         </div>
                         <div className="item-main">
                           <div>
-                            <b>Protein</b>
+                            <b>{t("NutritionAnalysis.Protein")}</b>
                             {result.protein_digits.toFixed(2)}{" "}
                             {result.protein_unit}
                           </div>
@@ -664,7 +661,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-main">
                           <div>
-                            Vitamin D {result.vitamin_digits.toFixed(2)}{" "}
+                            {t("NutritionAnalysis.VitaminD")}{result.vitamin_digits.toFixed(2)}{" "}
                             {result.vitamin_unit}
                           </div>
                           <div>
@@ -673,7 +670,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>
                         <div className="item-main">
                           <div>
-                            Calcium {result.calcium_digits.toFixed(2)}{" "}
+                            {t("NutritionAnalysis.Calcium")} {result.calcium_digits.toFixed(2)}{" "}
                             {result.calcium_unit}
                           </div>
                           <div>
@@ -682,7 +679,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>{" "}
                         <div className="item-main">
                           <div>
-                            Iron {result.iron_digits.toFixed(2)}{" "}
+                            {t("NutritionAnalysis.Iron")} {result.iron_digits.toFixed(2)}{" "}
                             {result.iron_unit}
                           </div>
                           <div>
@@ -691,7 +688,7 @@ export const NutritionAnalysis: React.FC = () => {
                         </div>{" "}
                         <div className="item-main">
                           <div>
-                            Potassium {result.potassium_digits.toFixed(2)}{" "}
+                            {t("NutritionAnalysis.Potassium")} {result.potassium_digits.toFixed(2)}{" "}
                             {result.potassium_unit}
                           </div>
                           <div>
@@ -702,7 +699,7 @@ export const NutritionAnalysis: React.FC = () => {
                     </div>
 
                     <div className="right-bottom">
-                      *Percent Daily Values are based on a 2000 calorie diet
+                      *{t("NutritionAnalysis.PercentDailyValuesarebasedona2000caloriediet")}
                     </div>
                   </div>
                 </>
@@ -715,11 +712,10 @@ export const NutritionAnalysis: React.FC = () => {
       ) : (
         <>
           <div className="Recommendation-box">
-            <div className="recommendation-title">Food Recommendation</div>
+            <div className="recommendation-title">{t("NutritionAnalysis.FoodRecommendation")}</div>
 
             <div>
-              Explore the food that is recommended or not recommended for
-              pregnancy.
+              {t("NutritionAnalysis.text2")}
             </div>
 
             <div className="recommendation-switch-button">
@@ -727,19 +723,19 @@ export const NutritionAnalysis: React.FC = () => {
                 className={"left button " + (recomend ? "actrecomend" : "")}
                 onClick={() => onRecommended(true)}
               >
-                Recommended
+                {t("NutritionAnalysis.Recommended")}
               </div>
               <div
                 className={"right button " + (!recomend ? "actrecomend" : "")}
                 onClick={() => onRecommended(false)}
               >
-                Not Recommended
+                {t("NutritionAnalysis.NotRecommended")}
               </div>
             </div>
 
             <div className="category" id="category">
-              <div className="category-title">category</div>
-              <div className="category-sub-title">Choose the food category</div>
+              <div className="category-title">{t("NutritionAnalysis.category")}</div>
+              <div className="category-sub-title">{t("NutritionAnalysis.Choosethefoodcategory")}</div>
 
               <div className="category-group">
                 <data
@@ -759,7 +755,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Grains</div>
+                    <div className="category-text">{t("NutritionAnalysis.Grains")}</div>
                   </div>
                 </data>
                 <data
@@ -779,7 +775,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Meat</div>
+                    <div className="category-text">{t("NutritionAnalysis.Meat")}</div>
                   </div>
                 </data>
                 <data
@@ -799,7 +795,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Dairy</div>
+                    <div className="category-text">{t("NutritionAnalysis.Dairy")}</div>
                   </div>
                 </data>
                 <data
@@ -819,7 +815,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Fish</div>
+                    <div className="category-text">{t("NutritionAnalysis.Fish")}</div>
                   </div>
                 </data>
                 <data
@@ -842,7 +838,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Vegetables</div>
+                    <div className="category-text">{t("NutritionAnalysis.Vegetables")}</div>
                   </div>
                 </data>
                 <data
@@ -862,7 +858,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Fruits</div>
+                    <div className="category-text">{t("NutritionAnalysis.Fruits")}</div>
                   </div>
                 </data>
                 <data
@@ -883,7 +879,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Beverages</div>
+                    <div className="category-text">{t("NutritionAnalysis.Beverages")}</div>
                   </div>
                 </data>
                 <data
@@ -904,7 +900,7 @@ export const NutritionAnalysis: React.FC = () => {
                         backgroundSize: "contain",
                       }}
                     ></div>
-                    <div className="category-text">Processed</div>
+                    <div className="category-text">{t("NutritionAnalysis.Processed")}</div>
                   </div>
                 </data>
               </div>
@@ -915,9 +911,9 @@ export const NutritionAnalysis: React.FC = () => {
               style={{ marginTop: "40px", display: foodList.length == 0 ? "none" : "block" }}
               id="foodList"
             >
-              <div className="category-title">Food List</div>
+              <div className="category-title">{t("NutritionAnalysis.FoodList")}</div>
               <div className="category-sub-title">
-                List of food items based on your selection
+                {t("NutritionAnalysis.Listoffooditemsbasedonyourselection")}
               </div>
 
               {foodList.map((item: any) => {

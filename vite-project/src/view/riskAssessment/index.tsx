@@ -7,6 +7,7 @@ import { useState } from "react";
 import newCountries from "./country";
 import { rootAddress } from '../../../env.tsx'
 import type { RadioChangeEvent } from "antd";
+import { useTranslation } from "react-i18next";
 // console.log(newCountries.shift());
 // console.log(newCountries);
 newCountries.shift()
@@ -31,6 +32,7 @@ export const RiskAssessment: React.FC = () => {
   const [risk_level, setRiskLevel] = useState("");
   // your score
   const [score, setScore] = useState(0)
+  const [t] = useTranslation("global");
 
   const handleChange = (country: string) => {
     setCountry(country);
@@ -136,7 +138,7 @@ export const RiskAssessment: React.FC = () => {
       <div className="risk-top">
         <div className="step step-1">
           <div className="step-circle">1</div>
-          <div className="step-text">Answer the risk assessment questions</div>
+          <div className="step-text">{t("riskassessment.point1")}</div>
         </div>
         <div className="step step-arrow">
           <ArrowRightOutlined />

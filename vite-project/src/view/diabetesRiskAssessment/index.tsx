@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import type { RadioChangeEvent } from 'antd';
 import newCountries from "./country"
 import { rootAddress } from '../../../env.tsx'
+import { useTranslation } from "react-i18next";
 newCountries.shift()
 
 export function DiabetesRiskAssessment() {
@@ -20,6 +21,7 @@ export function DiabetesRiskAssessment() {
   const [country, setCountry] = useState("");
   const [result, setReult] = useState(null);
   const [score, setScore] = useState(0)
+  const [t] = useTranslation("global");
 
   const heightChange = (e: any) => {
     // console.log(e).
@@ -111,7 +113,7 @@ export function DiabetesRiskAssessment() {
     setReult(data)
     riskResult(data)
     const foodList = document.getElementById("result");
-    foodList?.scrollIntoView({behavior: "smooth"});
+    foodList?.scrollIntoView({ behavior: "smooth" });
     // console.log(data)
   }
 
@@ -135,7 +137,8 @@ export function DiabetesRiskAssessment() {
           <div className="step step-1">
             <div className="step-circle">1</div>
             <div className="step-text">
-              <span>Answer</span> the risk assessment questions
+              {/* {t("riskassessment.point1")} */}
+              <span>{t("riskassessment.point-bold")}</span> {t("riskassessment.point1")}
             </div>
           </div>
           <div className="step step-arrow">
@@ -144,41 +147,30 @@ export function DiabetesRiskAssessment() {
           <div className="step step-2">
             <div className="step-circle">2</div>
             <div className="step-text">
-              Get the <span>result</span> right after you submit
+              {t("riskassessment.point2-1")} <span>{t("riskassessment.point2-bold")}</span> {t("riskassessment.point2-2")}
             </div>
           </div>
         </div>
 
         <div className="diabetes-risk-box">
-          <div className="diabetes-risk-title">Diabetes Risk Assessment</div>
+          <div className="diabetes-risk-title">{t("riskassessment.title")}</div>
           <p className="diabetes-risk-text">
-            <b>Disclaimer</b>:
+            <b>{t("riskassessment.Disclaimer")}</b>:
           </p>
           <p className="diabetes-risk-text">
-            The information provided in this risk assessment is based on
-            statistical research conducted by the{" "}
+            {t("riskassessment.text")}
             <i className="blue-text">
-              Australian Institute of Health and Welfare (AIHW)
+              {t("riskassessment.bule-text")}
             </i>
-            . You can view the full report at AIHW - Social Determinants of Health
-            among CALD Australians. This tool is intended to raise awareness and
-            provide general insights. It is not a substitute for professional
-            medical advice, diagnosis, or treatment. Please consult with a
-            qualified healthcare professional for any personal medical concerns or
-            decisions.
+            . {t("riskassessment.text2-text")}
           </p>
 
           <p className="diabetes-risk-text-bold">
-            <b>Direct causes</b>:
+            <b>{t("riskassessment.Direct-causes")}</b>:
           </p>
           <p className="diabetes-risk-text-bold">
             <b>
-              Direct causes like BMI, physical activity, family history, smoking,
-              and alcohol consumption significantly influence diabetes risk. High
-              BMI and low physical activity directly impact insulin sensitivity,
-              while a family history of diabetes increases genetic susceptibility.
-              Smoking and excessive alcohol intake disrupt metabolic health,
-              further raising the risk.
+              {t("riskassessment.text2")}
             </b>
             :
           </p>
@@ -186,8 +178,8 @@ export function DiabetesRiskAssessment() {
           <div className="diabetes-risk-item">
             <p className="diabetes-risk-item-text">
               <Space>
-                What is your height and weight?
-                <Popover placement="right" title="" content={tips("Higher BMI, particularly obesity, increases the risk of diabetes by contributing to insulin resistance.")}>
+                {t("riskassessment.card1.title")}
+                <Popover placement="right" title="" content={tips(t("riskassessment.card1.tips"))}>
                   <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                 </Popover>
               </Space>
@@ -195,10 +187,10 @@ export function DiabetesRiskAssessment() {
             <p className="diabetes-risk-item-details">
               <Space direction="vertical">
                 <Space>
-                  Height: <Input placeholder="Height" value={height} onChange={(e) => { heightChange(e) }} /> cm
+                  {t("riskassessment.card1.Height")}: <Input placeholder="Height" value={height} onChange={(e) => { heightChange(e) }} /> {t("riskassessment.card1.cm")}
                 </Space>
                 <Space>
-                  Weight: <Input placeholder="Weight" value={weight} onChange={(e) => { weightChange(e) }} /> kg
+                  {t("riskassessment.card1.Weight")}: <Input placeholder="Weight" value={weight} onChange={(e) => { weightChange(e) }} /> {t("riskassessment.card1.kg")}
                 </Space>
               </Space>
             </p>
@@ -207,8 +199,8 @@ export function DiabetesRiskAssessment() {
           <div className="diabetes-risk-item">
             <p className="diabetes-risk-item-text">
               <Space>
-                How often do you engage in physical activitiy?
-                <Popover placement="right" title="" content={tips("Regular physical activity lowers diabetes risk by improving insulin sensitivity and helping with weight management.")}>
+                {t("riskassessment.card2.title")}
+                <Popover placement="right" title="" content={tips(t("riskassessment.card2.tips"))}>
                   <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                 </Popover>
               </Space>
@@ -217,9 +209,9 @@ export function DiabetesRiskAssessment() {
             <p className="diabetes-risk-item-details">
               <Radio.Group onChange={(e) => Physical_activityChange(e)} value={physical_activity}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="Active (≥ 150 min/week)">Active (≥ 150 min/week)</Radio>
-                  <Radio value="Moderately active (75–149 min/week)">Moderately active (75–149 min/week)</Radio>
-                  <Radio value="Inactive (< 75 min/week)">{"Inactive (< 75 min/week)"}</Radio>
+                  <Radio value="Active (≥ 150 min/week)">{t("riskassessment.card2.roadio1")}</Radio>
+                  <Radio value="Moderately active (75–149 min/week)">{t("riskassessment.card2.roadio2")}</Radio>
+                  <Radio value="Inactive (< 75 min/week)">{t("riskassessment.card2.roadio3")}</Radio>
                 </Space>
               </Radio.Group>
             </p>
@@ -228,8 +220,8 @@ export function DiabetesRiskAssessment() {
           <div className="diabetes-risk-item">
             <p className="diabetes-risk-item-text">
               <Space>
-                Do you have a family history of diabetes (e.g., parent or sibling with diabetes)?
-                <Popover placement="right" title="" content={tips("A family history of diabetes raises the likelihood of developing the condition due to genetic factors.")}>
+                {t("riskassessment.card3.title")}
+                <Popover placement="right" title="" content={tips(t("riskassessment.card3.tips"))}>
                   <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                 </Popover>
               </Space>
@@ -238,9 +230,9 @@ export function DiabetesRiskAssessment() {
             <p className="diabetes-risk-item-details">
               <Radio.Group onChange={(e) => family_historyChange(e)} value={family_history}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="No family history">No family history</Radio>
-                  <Radio value="One parent with diabetes">One parent with diabetes</Radio>
-                  <Radio value="Both parents with diabetes">Both parents with diabetes</Radio>
+                  <Radio value="No family history">{t("riskassessment.card3.roadio1")}</Radio>
+                  <Radio value="One parent with diabetes">{t("riskassessment.card3.roadio2")}</Radio>
+                  <Radio value="Both parents with diabetes">{t("riskassessment.card3.roadio3")}</Radio>
                 </Space>
               </Radio.Group>
             </p>
@@ -249,8 +241,8 @@ export function DiabetesRiskAssessment() {
           <div className="diabetes-risk-item">
             <p className="diabetes-risk-item-text">
               <Space>
-                How often do you smoke?
-                <Popover placement="right" title="" content={tips("Smoking increases diabetes risk by contributing to inflammation, insulin resistance, and other metabolic issues.")}>
+                {t("riskassessment.card4.title")}
+                <Popover placement="right" title="" content={tips(t("riskassessment.card4.tips"))}>
                   <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                 </Popover>
               </Space>
@@ -259,9 +251,9 @@ export function DiabetesRiskAssessment() {
             <p className="diabetes-risk-item-details">
               <Radio.Group onChange={(e) => smokingChange(e)} value={smoking}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="Never smoked">Never smoked</Radio>
-                  <Radio value="Former smoker">Former smoker</Radio>
-                  <Radio value="Current smoker">Current smoker</Radio>
+                  <Radio value="Never smoked">{t("riskassessment.card4.roadio1")}</Radio>
+                  <Radio value="Former smoker">{t("riskassessment.card4.roadio2")}</Radio>
+                  <Radio value="Current smoker">{t("riskassessment.card4.roadio3")}</Radio>
                 </Space>
               </Radio.Group>
             </p>
@@ -270,7 +262,7 @@ export function DiabetesRiskAssessment() {
           <div className="diabetes-risk-item">
             <p className="diabetes-risk-item-text">
               <Space>
-                How often do you drink?
+                {t("riskassessment.card5.title")}
                 <Popover placement="right" title="" content={tips("Excessive alcohol intake can lead to weight gain and impaired insulin regulation, increasing diabetes risk.")}>
                   <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                 </Popover>
@@ -280,22 +272,22 @@ export function DiabetesRiskAssessment() {
             <p className="diabetes-risk-item-details">
               <Radio.Group onChange={(e) => alcoholChange(e)} value={alcohol}>
                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                  <Radio value="Non-drinker">Non-drinker</Radio>
-                  <Radio value="Moderate drinker">Moderate drinker</Radio>
-                  <Radio value="Heavy drinker">Heavy drinker</Radio>
+                  <Radio value="Non-drinker">{t("riskassessment.card5.roadio1")}</Radio>
+                  <Radio value="Moderate drinker">{t("riskassessment.card5.roadio2")}</Radio>
+                  <Radio value="Heavy drinker">{t("riskassessment.card5.roadio3")}</Radio>
                 </Space>
               </Radio.Group>
             </p>
           </div>
 
-          <p className="Socioeconomic-Factors">Socioeconomic Factors</p>
-          <p className="socioeconomic-factors-text">Socioeconomic factors such as Country of Birth and Age Group affect diabetes risk by influencing access to healthcare, lifestyle habits, and genetic predispositions. Migrants from certain regions and older age groups may face higher diabetes risk due to these facto</p>
+          <p className="Socioeconomic-Factors">{t("riskassessment.SocioeconomicFactors")}</p>
+          <p className="socioeconomic-factors-text">{t("riskassessment.SocioeconomicText")}</p>
 
           <div className="diabetes-risk-item">
             <p className="diabetes-risk-item-text">
               <Space>
-                What is your Country of birth?
-                <Popover placement="right" title="" content={tips("Influences diabetes risk due to genetic predisposition and varying healthcare access in different regions.")}>
+                {t("riskassessment.card6.WhatisyourCountryofbirth")}?
+                <Popover placement="right" title="" content={tips(t("riskassessment.card6.tips"))}>
                   <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                 </Popover>
               </Space>
@@ -317,8 +309,8 @@ export function DiabetesRiskAssessment() {
           <div className="diabetes-risk-item">
             <p className="diabetes-risk-item-text">
               <Space>
-                Which age group do you belongs to?
-                <Popover placement="right" title="" content={tips("Older age groups have a higher risk of diabetes due to metabolic changes and lifestyle factors.")}>
+                {t("riskassessment.card7.Whichagegroupdoyoubelongsto")}?
+                <Popover placement="right" title="" content={tips(t("riskassessment.card7.tips"))}>
                   <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                 </Popover>
               </Space>
@@ -339,36 +331,36 @@ export function DiabetesRiskAssessment() {
           <div>
             <p className="diabetes-risk-item-details">
               <Space>
-                <div className="dia-btn submit" onClick={submit}>Submit</div>
-                <div className="dia-btn reset" onClick={reset}>Reset answers</div>
+                <div className="dia-btn submit" onClick={submit}>{t("riskassessment.Submit")}</div>
+                <div className="dia-btn reset" onClick={reset}>{t("riskassessment.ResetAnswers")}</div>
               </Space>
             </p>
           </div>
 
           <div className="diabetes-result-box" id="result">
-            <p className="result-title">Assessment Result</p>
+            <p className="result-title">{t("riskassessment.AssessmentResult")}</p>
           </div>
 
-          <p className="diabetes-result-text">Your Country of Birth: <span style={{ color: "#2C5665" }}>Australia</span></p>
+          <p className="diabetes-result-text">{t("riskassessment.YourCountryofBirth")}: <span style={{ color: "#2C5665" }}>Australia</span></p>
 
           <p className="diabetes-result-text">{`It belongs to the ${country} region. The risk of diabetes here is ${result ? result.output_risk_vs_au : ""} compared to Australia's average.`}</p>
 
-          <p style={{ textAlign: "left" }}><b>Your Diabetes Risk: <span style={{ color: "#FF7B00" }}>MODERATE RISK</span></b></p>
+          <p style={{ textAlign: "left" }}><b>{t("riskassessment.YourDiabetesRisk")}: <span style={{ color: "#FF7B00" }}>{t("MODERATERISK")}</span></b></p>
 
           <div className="diabetes-result-view">
             <div className="diabetes-result-view-point" style={{ left: score + '%' }}>
-              <div className="diabetes-result-view-point-text">Your Score</div>
+              <div className="diabetes-result-view-point-text">{t("riskassessment.YourScore")}</div>
             </div>
             <div className="diabetes-result-green dr"></div>
             <div className="diabetes-result-orange dr"></div>
             <div className="diabetes-result-red dr"></div>
           </div>
 
-          <p className="diabetes-result-text" style={{ marginTop: "50px" }}>Main contributing Factor: <span style={{ color: "#2C5665" }}>{result ? result.output_highest_contributor : ""}</span></p>
+          <p className="diabetes-result-text" style={{ marginTop: "50px" }}>{t("riskassessment.MaincontributingFacto")}: <span style={{ color: "#2C5665" }}>{result ? result.output_highest_contributor : ""}</span></p>
 
           <p className="diabetes-result-text">
-            <div style={{ fontWeight: 100 }}><i>Note</i> :</div>
-            <div><i>This assessment score is based on <b style={{ color: "#2C5665" }}>Australian Institute of Health and Wellbeing (AIHW)</b></i></div>
+            <div style={{ fontWeight: 100 }}><i>{t("riskassessment.Note")}</i> :</div>
+            <div><i>{t("riskassessment.row2-1")} <b style={{ color: "#2C5665" }}>{t("riskassessment.row2-2")}</b></i></div>
           </p>
 
           <p style={{
@@ -376,7 +368,7 @@ export function DiabetesRiskAssessment() {
             borderBottom: "1px solid #ccc"
           }}></p>
 
-          <p className="diabetes-result-next">What's Next</p>
+          <p className="diabetes-result-next">{t("riskassessment.What'sNext")}</p>
 
           <p>
             <Space>
@@ -384,23 +376,10 @@ export function DiabetesRiskAssessment() {
               <div style={{ textAlign: "left", fontWeight: 600 }}>
                 <div>
                   <div>
-                    Learn More About Diabetes and Pregnancy: Discover essential information about diabetes management during pregnancy on our education page to stay informed and proactive.
+                    {t("riskassessment.row3")}
                   </div>
                   <div>
-                    <ArrowRightOutlined /> education page
-                  </div>
-                </div>
-              </div>
-            </Space>
-          </p>
-
-          <p style={{ textAlign: "left" }}>
-            <Space>
-              <ArrowRightOutlined />
-              <div>
-                <div>
-                  <div>
-                    Learn more about the importance and effect of antenatal visit during pregnancy here.
+                    <ArrowRightOutlined /> {t("riskassessment.educationpage")}
                   </div>
                 </div>
               </div>
@@ -413,7 +392,7 @@ export function DiabetesRiskAssessment() {
               <div>
                 <div>
                   <div>
-                    Explore more about nutritional advice that suits your pregnancy here.
+                    {t("riskassessment.row4")}
                   </div>
                 </div>
               </div>
@@ -426,7 +405,20 @@ export function DiabetesRiskAssessment() {
               <div>
                 <div>
                   <div>
-                    Explore recommended exercise and physical activity for your best pregnancy experience here.
+                    {t("riskassessment.row5")}
+                  </div>
+                </div>
+              </div>
+            </Space>
+          </p>
+
+          <p style={{ textAlign: "left" }}>
+            <Space>
+              <ArrowRightOutlined />
+              <div>
+                <div>
+                  <div>
+                    {t("riskassessment.row6")}
                   </div>
                 </div>
               </div>
