@@ -6,14 +6,16 @@ import "./index.css";
 import { useEffect, useState } from "react";
 import type { RadioChangeEvent } from 'antd';
 // import newCountries from "./country"
+import json from './videoLinks.json'
 import { useTranslation } from "react-i18next";
 // newCountries.shift()
 
 export function ExerciseQuestionari() {
     const [actValue, setActValue] = useState(0)
     const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(0)
-    const [value3, setValue3] = useState(0)
+    const [value2, setValue2] = useState()
+    const [value3, setValue3] = useState();
+    const [vedio, setVedio] = useState([])
     const [t] = useTranslation("global");
 
     const tips = (title: string) => {
@@ -34,6 +36,7 @@ export function ExerciseQuestionari() {
 
     const change2 = (e: RadioChangeEvent) => {
         setValue2(e.target.value)
+        console.log(e.target.value)
     }
 
     const change3 = (e: RadioChangeEvent) => {
@@ -43,6 +46,71 @@ export function ExerciseQuestionari() {
     const handleChange = (value: string) => {
         console.log(value)
     }
+
+    const submit = () => {
+        console.log(json)
+        console.log(actValue);
+        let data: any = [];
+        if (actValue === "15-24") {
+            // data = json.filter((item) => item.age_group === "< 25"));
+            data = json.filter((item) => item.age_group === "< 25");
+        }
+
+        if (actValue === "25-34") {
+            // data = json.filter((item) => item.age_group === "< 25"));
+            data = json.filter((item) => item.age_group === "< 25");
+        }
+
+        if (actValue === "35-44") {
+            // data = json.filter((item) => item.age_group === "< 25"));
+            data = json.filter((item) => item.age_group === "< 25");
+        }
+
+        if (actValue === "45-54" || actValue === "55-64" || actValue === "65-74" || actValue === "75 and over") {
+            // data = json.filter((item) => item.age_group === "< 25"));
+            data = json.filter((item) => item.age_group === "45+");
+        }
+        console.log(data)
+
+        const data2 = data.filter((item) => item.activity_level === value1);
+        console.log(data2, value1)
+        // # Calculate BMI
+        const bmi_value = getFat(value2, value3)
+
+        let bmi_cat = "";
+
+        if (bmi_value < 18.5) {
+            bmi_cat = "Underweight"
+        } else if (18.5 <= bmi_value && bmi_value < 24.9) {
+            bmi_cat = "Healthy Weight"
+        } else if (25 <= bmi_value && bmi_value < 29.9) {
+            bmi_cat = "Overweight"
+        } else {
+            bmi_cat = "Obese"
+        }
+
+        console.log(bmi_cat)
+
+
+        const result = data2.filter((item) => item.bmi_category === bmi_cat);
+
+        console.log(result)
+
+        if (result.length == 0) return;
+        setVedio(result[0].recommended_exercises)
+
+        // print(bmi_cat)
+    }
+
+    const getFat = (weight: number, height: number) => {
+        const bmi = weight / (height ** 2)
+        return bmi
+
+
+    }
+
+
+
     return (
         <>
             <Header />
@@ -171,7 +239,7 @@ export function ExerciseQuestionari() {
                     <div className="diabetes-risk-item">
                         <p className="diabetes-risk-item-text">
                             <Space>
-                            {t("collection.card-3.title")}
+                                {t("collection.card-3.title")}
                                 <Popover placement="right" title="" content={tips("A family history of diabetes raises the likelihood of developing the condition due to genetic factors.")}>
                                     <span style={{ cursor: "pointer" }}><QuestionCircleOutlined /></span>
                                 </Popover>
@@ -181,9 +249,10 @@ export function ExerciseQuestionari() {
                         <p className="diabetes-risk-item-details">
                             <Radio.Group onChange={(e) => change1(e)} value={value1}>
                                 <Space direction="vertical" style={{ textAlign: "left" }}>
-                                    <Radio value="No family history">Once a week</Radio>
-                                    <Radio value="One parent with diabetes">Twice a week</Radio>
-                                    <Radio value="Both parents with diabetes">Three or more in a week</Radio>
+                                    <Radio value="Lightly Active (1-2 times a week)">Lightly Active (1-2 times a week)</Radio>
+                                    <Radio value="Moderately Active (3-4 times a week)">Moderately Active (3-4 times a week)</Radio>
+                                    <Radio value="Highly Active (more than 5 times a week)">Highly Active (more than 5 times a week)</Radio>
+                                    <Radio value="Sedentary (no regular exercise)">Sedentary (no regular exercise)</Radio>
                                 </Space>
                             </Radio.Group>
                         </p>
@@ -200,7 +269,7 @@ export function ExerciseQuestionari() {
                         </p>
 
                         <p className="diabetes-risk-item-details">
-                            <Input placeholder="weight" style={{ width: "200px" }} />
+                            <Input placeholder="weight" style={{ width: "200px" }} value={value2} onChange={(e) => change2(e)} />
                         </p>
                     </div>
 
@@ -216,7 +285,7 @@ export function ExerciseQuestionari() {
 
                         <p className="diabetes-risk-item-details">
 
-                            <Input placeholder="height" style={{ width: "200px" }} />
+                            <Input placeholder="height" style={{ width: "200px" }} value={value3} onChange={() => change3(e)} />
                         </p>
                     </div>
 
@@ -269,7 +338,7 @@ export function ExerciseQuestionari() {
                     <div>
                         <p className="diabetes-risk-item-details">
                             <Space>
-                                <div className="dia-btn submit">Submit</div>
+                                <div className="dia-btn submit" onClick={() => submit()}>Submit</div>
                                 <div className="dia-btn reset">Reset answers</div>
                             </Space>
                         </p>
@@ -277,17 +346,29 @@ export function ExerciseQuestionari() {
 
                     <div>
                         <Row>
-                            <Col span={12}>
-                                <div className="result-bottom-item">
-                                    <div className="result-bottom-item-top"></div>
-                                    <div className="result-bottom-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas </div>
-                                </div>
-                            </Col>
-                            <Col span={12}><div className="result-bottom-item">
-                                <div className="result-bottom-item-top"></div>
-                                <div className="result-bottom-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas </div>
-                            </div>
-                            </Col>
+                            <Space>
+
+                                {
+                                    vedio.map((item, index) => {
+                                        return (
+                                            <><Col span={6}>
+                                                <div className="result-bottom-item">
+                                                    <div className="result-bottom-item-top">
+                                                        <iframe
+                                                            src={`https://www.youtube.com/embed/${item.link}`}
+                                                            title={`YouTube Video ${index + 1}`}
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowFullScreen
+                                                        ></iframe>
+                                                    </div>
+                                                    <div className="result-bottom-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas </div>
+                                                </div>
+                                            </Col></>
+                                        )
+                                    })
+                                }
+                            </Space>
+
                         </Row>
                         {/* <div>
                             <div></div>

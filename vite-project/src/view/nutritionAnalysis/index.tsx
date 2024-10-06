@@ -156,7 +156,7 @@ export const NutritionAnalysis: React.FC = () => {
     let ingrs: string[] = [];
     const table: any = [];
 
-    if (actTab == 0) {
+    if (actTab == 1) {
       if (!textAreaValue) return;
       ingredient_list = textAreaValue.replace(/\n/g, ",").split(",");
       ingrs = ingredient_list.map((item, index) => {

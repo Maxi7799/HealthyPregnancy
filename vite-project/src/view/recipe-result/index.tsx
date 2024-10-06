@@ -407,7 +407,7 @@ export const RecipeResult: React.FC = () => {
   let iron_digits = 0 */}
           <div
             className="top10-right-bottom"
-            style={{ width: "70%", margin: "20px auto" }}
+            style={{ width: "70%", margin: "20px auto", display: "flex" }}
           >
             <div className="top10-right-bottom-item">
               {/* <div className="top10-servings">10 servings</div> */}
