@@ -6,6 +6,8 @@ import { ArrowLeftOutlined, FilePptOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import { useEffect, useState } from "react";
+import { EnergyIntake } from '../riskAssessment/energyModel.tsx'
 // import { useSearchParams } from "react-router-dom";
 export const RecipeResult: React.FC = () => {
   // const [params] = useSearchParams()
@@ -17,6 +19,18 @@ export const RecipeResult: React.FC = () => {
   const Dinner = localStorage.getItem("Dinner") || "[]";
   const Lunch = localStorage.getItem("Lunch") || "[]";
   const Teatime = localStorage.getItem("Teatime") || "[]";
+  const [kll, setKll] = useState(0);
+
+  useEffect(() => {
+    const data = localStorage.getItem('useInfo')
+    if (!data) return;
+    const list = JSON.parse(data);
+    console.log(list)
+    const { activity, age, height, trimester, weight } = list
+    const energyIntake = new EnergyIntake(age, activity, weight, height, trimester);
+    const f = energyIntake.getStandard()
+    setKll(f)
+  }, [])
 
   let calories_digits = 0;
   let protein_digits = 0;
@@ -412,8 +426,16 @@ export const RecipeResult: React.FC = () => {
             <div className="top10-right-bottom-item">
               {/* <div className="top10-servings">10 servings</div> */}
               <div>
-                <span className="top10-kcal">{calories_digits.toFixed(2)}</span>
+                {/* <span className="top10-kcal">{calories_digits.toFixed(2)}</span>
+                <span className="top10-kcal-unit">kcal</span> */}
+                <span className="top10-kcal">{((calories_digits.toFixed(2) / kll) * 100).toFixed(2) + '%'}</span>
                 <span className="top10-kcal-unit">kcal</span>
+                
+              </div>
+              <div>
+                <div className="cll-progress">
+                  <div className="cll-main" style={{width: ((calories_digits.toFixed(2) / kll) * 100).toFixed(2) + '%'}}></div>
+                </div>
               </div>
             </div>
             <div className="top10-right-bottom-item">

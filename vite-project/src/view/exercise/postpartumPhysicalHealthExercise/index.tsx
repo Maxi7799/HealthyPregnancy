@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { Footer } from "../../../components/footer";
 import { Header } from "../../../components/header/header";
 import "./index.css";
-import { Link } from "react-router-dom";
 
 export function PostpartumExercise() {
   const [t] = useTranslation("global");
@@ -111,9 +110,9 @@ export function PostpartumExercise() {
                     ))}
                   </ul>
                 </p>
-                <Link to={card.link} className="learn-more">
-                  <p>{t("postpartum.more-detail")}</p>
-                </Link>
+                <a href={card.link} className="learn-more">
+                  {t("postpartum.more-detail")}
+                </a>
               </div>
             </div>
           ))}

@@ -1,6 +1,8 @@
 import { Footer } from "../../components/footer/index.tsx";
 import { Header } from "../../components/header/header.tsx";
-import { Checkbox, Space, Input, Row, Col } from "antd";
+import { Checkbox, Space, Input, Row, Col, Modal, Form, Select } from "antd";
+// import type { FormProps } from 'antd';
+// import { Button, Checkbox, Form, Input } from 'antd';
 import {
   ArrowLeftOutlined,
   CalendarOutlined,
@@ -13,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./index.css";
 import { useEffect, useState } from "react";
-import type { GetProp } from "antd";
+import type { GetProp, FormProps } from "antd";
 import { useTranslation } from "react-i18next";
 
 let shoseBreakfast: any = [];
@@ -26,7 +28,15 @@ export const Recipe: React.FC = () => {
   const [list, setList] = useState([]);
   const [chose, setChose] = useState<any>([]);
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [t] = useTranslation("global");
+
+  const [age, setAge] = useState("")
+  const [activity, setActivity] = useState("")
+  const [weight, setweight] = useState("")
+  const [height, setheight] = useState("")
+  const [trimester, settrimester] = useState("")
+
 
   // const [shoseBreakfast, setChoseBreakFast] = useState<any>([])
   // const [shoseDinner, setChoseDinner] = useState<any>([])
@@ -101,10 +111,133 @@ export const Recipe: React.FC = () => {
   };
 
   const toResult = () => {
-    navigate("/recipe-result");
+    const useInfo = localStorage.getItem("useInfo");
+    if (useInfo) {
+      navigate("/recipe-result");
+    } else {
+      setIsModalOpen(true);
+    }
   };
+
+  // const showModal = () => {
+  //   setIsModalOpen(true);
+  // };
+
+  const handleOk = () => {
+    localStorage.setItem("useInfo", JSON.stringify({
+      age, activity, weight, height, trimester
+    }))
+    navigate("/recipe-result");
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleChange = (e) => {
+    console.log(e)
+    setActivity(e)
+  }
+
+  const ageChange = (e) => {
+    console.log(e.target.value)
+    setAge(e.target.value)
+  }
+
+  const handleChange2 = (e) => {
+    settrimester(e)
+  }
+
+  const weightChange = (e) => {
+    console.log(e.target.value)
+    setweight(e.target.value)
+  }
+
+  const heightChange = (e) => {
+    console.log(e.target.value)
+    setheight(e.target.value)
+  }
   return (
     <>
+      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <Form
+          name="basic"
+          labelCol={{ span: 6 }}
+          wrapperCol={{ span: 16 }}
+          style={{ maxWidth: 600 }}
+        >
+          <Form.Item
+            label="age"
+            name="age"
+            style={{ marginBottom: 0 }}
+            rules={[{ required: true, message: 'Please input your age!' }]}
+          >
+            <Input onChange={(e) => ageChange(e)} value={age} />
+          </Form.Item>
+
+          <Form.Item
+            label="activity"
+            name="activity"
+            style={{ marginBottom: 0 }}
+            rules={[{ required: true, message: 'Please input your activity!' }]}
+          >
+            <Select
+              defaultValue=""
+              // style={{ width: 120 }}
+              onChange={(e) => handleChange(e)}
+              value={activity}
+              options={[
+                { value: 'no', label: 'no' },
+                { value: 'low', label: 'low' },
+                { value: 'active', label: 'active' },
+                { value: 'very_active', label: 'very_active' },
+              ]}
+            />
+
+          </Form.Item>
+
+
+          <Form.Item
+            label="weight"
+            name="weight"
+            style={{ marginBottom: 0 }}
+            rules={[{ required: true, message: 'Please input your weight!' }]}
+          >
+            <Input onChange={(e) => weightChange(e)}
+              value={weight} />
+          </Form.Item>
+
+          <Form.Item
+            label="height"
+            name="height"
+            style={{ marginBottom: 0 }}
+            rules={[{ required: true, message: 'Please input your height!' }]}
+          >
+            <Input onChange={(e) => heightChange(e)} value={height} />
+          </Form.Item>
+
+          <Form.Item
+            label="trimester"
+            name="trimester"
+            style={{ marginBottom: 0 }}
+            rules={[{ required: true, message: 'Please input your trimester!' }]}
+          >
+            <Select
+              value={trimester}
+              defaultValue=""
+              // style={{ width: 120 }}
+              onChange={(e) => handleChange2(e)}
+              options={[
+                { value: '1st', label: '1st' },
+                { value: '2nd', label: '2nd' },
+                { value: '3rd', label: '3rd' },
+              ]}
+            />
+          </Form.Item>
+
+        </Form>
+      </Modal>
       <div className="recipe-page">
         <Header></Header>
         {/* <div className="recipe-top-img"></div> */}

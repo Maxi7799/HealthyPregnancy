@@ -13,8 +13,8 @@ import { useTranslation } from "react-i18next";
 export function ExerciseQuestionari() {
     const [actValue, setActValue] = useState(0)
     const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState()
-    const [value3, setValue3] = useState();
+    const [value2, setValue2] = useState("")
+    const [value3, setValue3] = useState("");
     const [vedio, setVedio] = useState([])
     const [t] = useTranslation("global");
 
@@ -107,6 +107,14 @@ export function ExerciseQuestionari() {
         return bmi
 
 
+    }
+
+    const clear = () => {
+        setActValue("");
+        setValue1("")
+        setValue2("");
+        setValue3("");
+        setVedio([])
     }
 
 
@@ -285,7 +293,7 @@ export function ExerciseQuestionari() {
 
                         <p className="diabetes-risk-item-details">
 
-                            <Input placeholder="height" style={{ width: "200px" }} value={value3} onChange={() => change3(e)} />
+                            <Input placeholder="height" style={{ width: "200px" }} value={value3} onChange={(e) => change3(e)} />
                         </p>
                     </div>
 
@@ -339,21 +347,21 @@ export function ExerciseQuestionari() {
                         <p className="diabetes-risk-item-details">
                             <Space>
                                 <div className="dia-btn submit" onClick={() => submit()}>Submit</div>
-                                <div className="dia-btn reset">Reset answers</div>
+                                <div className="dia-btn reset"  onClick={() => clear()}>Reset answers</div>
                             </Space>
                         </p>
                     </div>
 
                     <div>
-                        <Row>
+                        <Row style={{overflowX: "scroll"}}>
                             <Space>
 
                                 {
                                     vedio.map((item, index) => {
                                         return (
                                             <><Col span={6}>
-                                                <div className="result-bottom-item">
-                                                    <div className="result-bottom-item-top">
+                                                <div className="result-bottom-item" style={{border: "none"}}>
+                                                    <div className="result-bottom-item-top" style={{border: "none"}}>
                                                         <iframe
                                                             src={`https://www.youtube.com/embed/${item.link}`}
                                                             title={`YouTube Video ${index + 1}`}

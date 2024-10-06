@@ -93,7 +93,7 @@ export const VideoPage7: React.FC = () => {
         <div className="intro-section">
           <div className="intro-image-container">
             <img
-              src="https://img.freepik.com/free-photo/side-view-woman-exercising-home_23-2149601638.jpg?w=2000&t=st=1728188743~exp=1728189343~hmac=5a288d6ccc0b95ed0a8c3fe983963f8bb76af12b8471aa6d9a8790c11df6f39d"
+              src="https://img.freepik.com/free-photo/side-view-woman-exercising-home_23-2149601628.jpg?w=2000&t=st=1728012325~exp=1728012925~hmac=5a08510b2c5176d4c8e53b2c1f569c7f1384b12cd47dbec5347f6c022d39c78b"
               alt="Page Intro"
               className="intro-image"
             />
