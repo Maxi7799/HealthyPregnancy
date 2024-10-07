@@ -1197,7 +1197,7 @@
 
   "collection": {
     "title": "Body information collection",
-    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-1": "With a few simple questions, find the right exercise for you. Based on the results of our analysis, we will recommend some relevant videos to you. Help you find the exercise that works best for you",
     "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "card-1": {
       "title": "Have you any sport behavior",
@@ -1224,6 +1224,12 @@
     "Submit": "Submit",
     "Reset": "Reset answers",
     "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
+  },
+
+  "reciperesult": {
+    "Schedule": "Schedule",
+    "text1": "According to your schedule, you will eat about",
+    "text2": "of the standard amount of calories"
   },
 
   "footer": {

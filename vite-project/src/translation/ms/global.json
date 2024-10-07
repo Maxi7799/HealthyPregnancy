@@ -1198,7 +1198,7 @@
 
   "collection": {
     "title": "Pengumpulan Maklumat Badan",
-    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-1": "Dengan beberapa soalan mudah, cari senaman yang sesuai untuk anda. Berdasarkan hasil analisis kami, kami akan mencadangkan beberapa video yang relevan untuk anda. Membantu anda mencari senaman yang paling berkesan untuk anda",
     "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "card-1": {
       "title": "Adakah anda mempunyai tingkah laku sukan?",
@@ -1226,6 +1226,13 @@
     "Reset": "Tetapkan semula jawapan",
     "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
   },
+
+  "reciperesult": {
+    "Schedule": "Jadual",
+    "text1": "Menurut jadual anda, anda akan makan sekitar",
+    "text2": "dari jumlah kalori yang standard"
+  },
+
 
   "footer": {
     "icon-top": "Sihat",

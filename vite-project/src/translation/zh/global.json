@@ -1186,7 +1186,7 @@
 
   "collection": {
     "title": "身体信息收集",
-    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-1": "通过几个简单的问题，找到适合你的锻炼。根据我们的分析结果，我们会为你推荐一些相关的视频。帮助你找到最适合你的锻炼。",
     "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "card-1": {
       "title": "你有运动习惯吗",
@@ -1213,6 +1213,13 @@
     "Submit": "提交",
     "Reset": "重置答案",
     "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
+  },
+
+  
+  "reciperesult": {
+    "Schedule": "日程",
+    "text1": "根据你的日程，你将大约吃",
+    "text2": "标准卡路里的数量"
   },
 
   "footer": {

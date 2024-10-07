@@ -1198,7 +1198,7 @@
 
   "collection": {
     "title": "Pagkolekta ng Impormasyon sa Katawan",
-    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-1": "Sa ilang simpleng tanong, hanapin ang tamang ehersisyo para sa iyo. Batay sa mga resulta ng aming pagsusuri, magrerekomenda kami ng ilang nauugnay na video sa iyo. Tulungan kang mahanap ang ehersisyo na pinakamahusay para sa iyo",
     "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "card-1": {
       "title": "Mayroon ka bang ugali sa palakasan?",
@@ -1225,6 +1225,12 @@
     "Submit": "Ipasa",
     "Reset": "I-reset ang mga sagot",
     "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
+  },
+
+  "reciperesult": {
+    "Schedule": "Iskedyul",
+    "text1": "Ayon sa iyong iskedyul, kakain ka ng mga",
+    "text2": "ng karaniwang dami ng calories"
   },
 
   "footer": {

@@ -8,6 +8,7 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useEffect, useState } from "react";
 import { EnergyIntake } from '../riskAssessment/energyModel.tsx'
+import { useTranslation } from "react-i18next";
 // import { useSearchParams } from "react-router-dom";
 export const RecipeResult: React.FC = () => {
   // const [params] = useSearchParams()
@@ -15,14 +16,15 @@ export const RecipeResult: React.FC = () => {
   // const data = JSON.parse(params.getAll("data")[0])
   // console.log(data)
   // const meal_time = ['Breakfast', 'Dinner', 'Lunch', 'Teatime']
-  const Breakfast = localStorage.getItem("Breakfast") || "[]";
-  const Dinner = localStorage.getItem("Dinner") || "[]";
-  const Lunch = localStorage.getItem("Lunch") || "[]";
-  const Teatime = localStorage.getItem("Teatime") || "[]";
+  const Breakfast = sessionStorage.getItem("Breakfast") || "[]";
+  const Dinner = sessionStorage.getItem("Dinner") || "[]";
+  const Lunch = sessionStorage.getItem("Lunch") || "[]";
+  const Teatime = sessionStorage.getItem("Teatime") || "[]";
   const [kll, setKll] = useState(0);
+  const [t] = useTranslation("global");
 
   useEffect(() => {
-    const data = localStorage.getItem('useInfo')
+    const data = sessionStorage.getItem('useInfo')
     if (!data) return;
     const list = JSON.parse(data);
     console.log(list)
@@ -141,12 +143,13 @@ export const RecipeResult: React.FC = () => {
                 <ArrowLeftOutlined></ArrowLeftOutlined>
               </Link>
             </div>
-            Schedule
+            {/* Schedule */}
+            {t("reciperesult.Schedule")}
           </div>
 
           <div className="recipe-items">
             <div className="recipe-items-card card1">
-              <div className="card-label">Breakfast</div>
+              <div className="card-label">{t("recipe.BREAKFAST")}</div>
               <div className="card-item">
                 {JSON.parse(Breakfast).map((item: any) => {
                   return (
@@ -173,7 +176,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point"></div>
-                          <div className="text">PROTEIN</div>
+                          <div className="text">{t("recipe.PROTEIN")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -185,7 +188,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-fat"></div>
-                          <div className="text">FAT</div>
+                          <div className="text">{t("recipe.FAT")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -197,7 +200,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-carb"></div>
-                          <div className="text">CARB</div>
+                          <div className="text">{t("recipe.CARB")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -212,7 +215,7 @@ export const RecipeResult: React.FC = () => {
               </div>
             </div>
             <div className="recipe-items-card card2">
-              <div className="card-label">Lunch</div>
+              <div className="card-label">{t("recipe.LUNCH")}</div>
               <div className="card-item">
                 {JSON.parse(Lunch).map((item: any) => {
                   return (
@@ -239,7 +242,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point"></div>
-                          <div className="text">PROTEIN</div>
+                          <div className="text">{t("recipe.PROTEIN")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -251,7 +254,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-fat"></div>
-                          <div className="text">FAT</div>
+                          <div className="text">{t("recipe.FAT")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -263,7 +266,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-carb"></div>
-                          <div className="text">CARB</div>
+                          <div className="text">{t("recipe.CARB")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -278,7 +281,7 @@ export const RecipeResult: React.FC = () => {
               </div>
             </div>
             <div className="recipe-items-card card3">
-              <div className="card-label">Tea Time</div>
+              <div className="card-label">{t("recipe.TEATIME")}</div>
               <div className="card-item">
                 {JSON.parse(Teatime).map((item: any) => {
                   return (
@@ -305,7 +308,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point"></div>
-                          <div className="text">PROTEIN</div>
+                          <div className="text">{t("recipe.PROTEIN")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -317,7 +320,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-fat"></div>
-                          <div className="text">FAT</div>
+                          <div className="text">{t("recipe.FAT")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -329,7 +332,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-carb"></div>
-                          <div className="text">CARB</div>
+                          <div className="text">{t("recipe.CARB")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -344,7 +347,7 @@ export const RecipeResult: React.FC = () => {
               </div>
             </div>
             <div className="recipe-items-card card4">
-              <div className="card-label">Dinner</div>
+              <div className="card-label">{t("recipe.DINNER")}</div>
               <div className="card-item">
                 {JSON.parse(Dinner).map((item: any) => {
                   return (
@@ -371,7 +374,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point"></div>
-                          <div className="text">PROTEIN</div>
+                          <div className="text">{t("recipe.PROTEIN")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -383,7 +386,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-fat"></div>
-                          <div className="text">FAT</div>
+                          <div className="text">{t("recipe.FAT")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -395,7 +398,7 @@ export const RecipeResult: React.FC = () => {
                       <div className="recipe-list-item-details">
                         <div className="recipe-list-item-left">
                           <div className="point point-carb"></div>
-                          <div className="text">CARB</div>
+                          <div className="text">{t("recipe.CARB")}</div>
                         </div>
                         <div className="recipe-list-item-right">
                           <div className="point">
@@ -425,16 +428,19 @@ export const RecipeResult: React.FC = () => {
           >
             <div className="top10-right-bottom-item">
               {/* <div className="top10-servings">10 servings</div> */}
-              <div>
+              <div style={{ fontSize: "16px", textAlign: "left" }}>
                 {/* <span className="top10-kcal">{calories_digits.toFixed(2)}</span>
                 <span className="top10-kcal-unit">kcal</span> */}
-                <span className="top10-kcal">{((calories_digits.toFixed(2) / kll) * 100).toFixed(2) + '%'}</span>
+                {/* {t("")} */}
+                {t("reciperesult.text1")} {" "}
+                <span className="top10-kcal" style={{ fontSize: "18px" }} >{((calories_digits.toFixed(2) / kll) * 100).toFixed(2) + '%'}</span>
                 <span className="top10-kcal-unit">kcal</span>
-                
+                {t("reciperesult.text2")}
+
               </div>
               <div>
                 <div className="cll-progress">
-                  <div className="cll-main" style={{width: ((calories_digits.toFixed(2) / kll) * 100).toFixed(2) + '%'}}></div>
+                  <div className="cll-main" style={{ width: ((calories_digits.toFixed(2) / kll) * 100).toFixed(2) + '%' }}></div>
                 </div>
               </div>
             </div>
@@ -442,7 +448,7 @@ export const RecipeResult: React.FC = () => {
               <div className="recipe-list-item-details">
                 <div className="recipe-list-item-left">
                   <div className="point"></div>
-                  <div className="text">PROTEIN</div>
+                  <div className="text">{t("recipe.PROTEIN")}</div>
                 </div>
                 <div className="recipe-list-item-right">
                   <div className="point">{protein_digits.toFixed(2)}</div>
@@ -452,7 +458,7 @@ export const RecipeResult: React.FC = () => {
               <div className="recipe-list-item-details">
                 <div className="recipe-list-item-left">
                   <div className="point point-fat"></div>
-                  <div className="text">FAT</div>
+                  <div className="text">{t("recipe.FAT")}</div>
                 </div>
                 <div className="recipe-list-item-right">
                   <div className="point">{fat_digits.toFixed(2)}</div>
@@ -462,7 +468,7 @@ export const RecipeResult: React.FC = () => {
               <div className="recipe-list-item-details">
                 <div className="recipe-list-item-left">
                   <div className="point point-carb"></div>
-                  <div className="text">CARB</div>
+                  <div className="text">{t("recipe.CARB")}</div>
                 </div>
                 <div className="recipe-list-item-right">
                   <div className="point">{carb_digits.toFixed(2)}</div>
@@ -472,37 +478,37 @@ export const RecipeResult: React.FC = () => {
             </div>
             <div className="top10-right-bottom-item">
               <div className="top10-right-bottom-item-main">
-                <span>Cholesterol</span>
+                <span>{t("recipe.Cholesterol")}</span>
                 <span className="top10-right-bottom-item-unit">
                   {cholesterol_digits.toFixed(2)} mg
                 </span>
               </div>
               <div className="top10-right-bottom-item-main">
-                <span>Sodium</span>
+                <span>{t("recipe.Sodium")}</span>
                 <span className="top10-right-bottom-item-unit">
                   {sodium_digits.toFixed(2)} mg
                 </span>
               </div>
               <div className="top10-right-bottom-item-main">
-                <span>Calcium</span>
+                <span>{t("recipe.Calcium")}</span>
                 <span className="top10-right-bottom-item-unit">
                   {calcium_digits.toFixed(2)} mg
                 </span>
               </div>
               <div className="top10-right-bottom-item-main">
-                <span>Magnesium</span>
+                <span>{t("recipe.Magnesium")}</span>
                 <span className="top10-right-bottom-item-unit">
                   {magnesium_digits.toFixed(2)} mg
                 </span>
               </div>
               <div className="top10-right-bottom-item-main">
-                <span>Potassium</span>
+                <span>{t("recipe.Potassium")}</span>
                 <span className="top10-right-bottom-item-unit">
                   {potassium_digits.toFixed(2)} mg
                 </span>
               </div>
               <div className="top10-right-bottom-item-main">
-                <span>Iron</span>
+                <span>{t("recipe.Iron")}</span>
                 <span className="top10-right-bottom-item-unit">
                   {iron_digits.toFixed(2)} mg
                 </span>

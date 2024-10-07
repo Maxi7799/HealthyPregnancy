@@ -8,6 +8,7 @@ import type { RadioChangeEvent } from 'antd';
 import newCountries from "./country"
 import { rootAddress } from '../../../env.tsx'
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 newCountries.shift()
 
 export function DiabetesRiskAssessment() {
@@ -370,7 +371,7 @@ export function DiabetesRiskAssessment() {
 
           <p className="diabetes-result-next">{t("riskassessment.What'sNext")}</p>
 
-          <p>
+          {/* <p>
             <Space>
               <ArrowRightOutlined />
               <div style={{ textAlign: "left", fontWeight: 600 }}>
@@ -384,7 +385,7 @@ export function DiabetesRiskAssessment() {
                 </div>
               </div>
             </Space>
-          </p>
+          </p> */}
 
           <p style={{ textAlign: "left" }}>
             <Space>
@@ -392,7 +393,7 @@ export function DiabetesRiskAssessment() {
               <div>
                 <div>
                   <div>
-                    {t("riskassessment.row4")}
+                    <Link to="/educational">{t("riskassessment.row4")}</Link>
                   </div>
                 </div>
               </div>
@@ -405,7 +406,7 @@ export function DiabetesRiskAssessment() {
               <div>
                 <div>
                   <div>
-                    {t("riskassessment.row5")}
+                    <Link to="/nutrition-analysis">{t("riskassessment.row5")}</Link>
                   </div>
                 </div>
               </div>
@@ -418,7 +419,7 @@ export function DiabetesRiskAssessment() {
               <div>
                 <div>
                   <div>
-                    {t("riskassessment.row6")}
+                    <Link to="/exercise">{t("riskassessment.row6")}</Link>
                   </div>
                 </div>
               </div>

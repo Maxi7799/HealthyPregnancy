@@ -1113,7 +1113,7 @@
 
   "collection": {
     "title": "Thu Thập Thông Tin Cơ Thể",
-    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-1": "Với một vài câu hỏi đơn giản, hãy tìm bài tập phù hợp với bạn. Dựa trên kết quả phân tích của chúng tôi, chúng tôi sẽ gợi ý một số video liên quan cho bạn. Giúp bạn tìm bài tập hiệu quả nhất cho bản thân.",
     "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "card-1": {
       "title": "Bạn có tham gia thể thao không?",
@@ -1140,6 +1140,12 @@
     "Submit": "Gửi",
     "Reset": "Đặt lại câu trả lời",
     "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
+  },
+
+  "reciperesult": {
+    "Schedule": "Lịch trình",
+    "text1": "từ số lượng calo tiêu chuẩn",
+    "text2": "của số lượng calo tiêu chuẩn"
   },
 
   "footer": {

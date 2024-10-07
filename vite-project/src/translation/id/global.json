@@ -1198,7 +1198,7 @@
 
   "collection": {
     "title": "Pengumpulan Informasi Tubuh",
-    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-1": "Dengan beberapa pertanyaan sederhana, temukan latihan yang tepat untuk Anda. Berdasarkan hasil analisis kami, kami akan merekomendasikan beberapa video yang relevan untuk Anda. Membantu Anda menemukan latihan yang paling cocok untuk Anda.",
     "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "card-1": {
       "title": "Apakah Anda memiliki perilaku olahraga?",
@@ -1226,6 +1226,13 @@
     "Reset": "Atur Ulang Jawaban",
     "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
   },
+
+  "reciperesult": {
+    "Schedule": "Jadwal",
+    "text1": "Menurut jadwal Anda, Anda akan makan sekitar",
+    "text2": "dari jumlah kalori standar"
+  },
+
 
   "footer": {
     "icon-top": "Sehat",

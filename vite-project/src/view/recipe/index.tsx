@@ -52,10 +52,10 @@ export const Recipe: React.FC = () => {
   useEffect(() => {
     getData(0);
     // const meal_time = ['Breakfast', 'Dinner', 'Lunch', 'Teatime']
-    localStorage.setItem("Breakfast", "[]");
-    localStorage.setItem("Dinner", "[]");
-    localStorage.setItem("Lunch", "[]");
-    localStorage.setItem("Teatime", "[]");
+    sessionStorage.setItem("Breakfast", "[]");
+    sessionStorage.setItem("Dinner", "[]");
+    sessionStorage.setItem("Lunch", "[]");
+    sessionStorage.setItem("Teatime", "[]");
     shoseBreakfast = [];
     shoseDinner = [];
     shoseLunch = [];
@@ -107,11 +107,11 @@ export const Recipe: React.FC = () => {
     // console.log(newData)
     setChose(newData);
     const meal_time = ["Breakfast", "Dinner", "Lunch", "Teatime"];
-    localStorage.setItem(meal_time[currentRecipe], JSON.stringify(e));
+    sessionStorage.setItem(meal_time[currentRecipe], JSON.stringify(e));
   };
 
   const toResult = () => {
-    const useInfo = localStorage.getItem("useInfo");
+    const useInfo = sessionStorage.getItem("useInfo");
     if (useInfo) {
       navigate("/recipe-result");
     } else {
@@ -124,7 +124,7 @@ export const Recipe: React.FC = () => {
   // };
 
   const handleOk = () => {
-    localStorage.setItem("useInfo", JSON.stringify({
+    sessionStorage.setItem("useInfo", JSON.stringify({
       age, activity, weight, height, trimester
     }))
     navigate("/recipe-result");

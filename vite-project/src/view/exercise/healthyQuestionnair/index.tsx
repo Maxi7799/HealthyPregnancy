@@ -147,7 +147,7 @@ export function ExerciseQuestionari() {
                     <div className="diabetes-risk-title">{t("collection.title")}</div>
                     <div style={{ textAlign: "left" }}>
                         <div>{t("collection.text-1")}</div>
-                        <div>{t("collection.text-2")}</div>
+                        {/* <div>{t("collection.text-2")}</div> */}
                     </div>
                     {/* <p className="diabetes-risk-text">
                         <b>Disclaimer</b>:
