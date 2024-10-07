@@ -83,9 +83,9 @@ const ExerciseList = () => {
       <div className="Nutrition-row">
         <Link to="/exercise">{t("header.navbar-5-1")}</Link>
       </div>
-      <div className="Nutrition-row">
+      {/* <div className="Nutrition-row">
         <Link to="/healthyquestionnari">{t("header.navbar-5-2")}</Link>
-      </div>
+      </div> */}
       <div className="Nutrition-row">
         <Link to="/postpartumexercise">{t("header.navbar-5-3")}</Link>
       </div>
