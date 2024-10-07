@@ -12,7 +12,7 @@
     "navbar-5": "Exercise",
     "navbar-5-1": "Exercise Videos",
     "navbar-5-2": "Healthy Questionnair",
-    "navbar-5-3": "postpartum recovery",
+    "navbar-5-3": "Postpartum Recovery",
     "language-en": "English",
     "language-zh": "chinese",
     "language-id": "Bahasa Indonesia",
@@ -826,7 +826,6 @@
 
   "exercise": {
     "overview-title": "Pregnancy Exercise",
-
     "questionnaire-access": "Not Sure Where to Start? Take Our Exercise Quiz!",
     "card-1-desc": "Low-Impact Aerobic Exercise",
     "card-2-desc": "Prenatal Yoga",

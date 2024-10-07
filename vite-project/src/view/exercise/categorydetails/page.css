@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -59,7 +60,7 @@ html, body {
 .video-container {
   display: flex;
   gap: 30px;
-  overflow-x: scroll;  
+  overflow-x: scroll;
   white-space: nowrap;
   padding: 10px;
   cursor: grab;
@@ -70,7 +71,7 @@ html, body {
 .back-button {
   display: flex;
   align-items: center;
-  margin-top:0px;
+  margin-top: 0px;
   margin-bottom: 0px;
   font-size: 23px;
   text-decoration: none;
@@ -83,7 +84,7 @@ html, body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url('../../../assets/education/back.png'); /* Adjust this path to your actual image location */
+  background-image: url("../../../assets/education/back.png"); /* Adjust this path to your actual image location */
   background-size: cover;
   margin-right: 10px;
 }
@@ -154,5 +155,8 @@ html, body {
 
   .video-item iframe {
     height: 180px;
+  }
+  .video-container {
+    justify-content: left;
   }
 }
