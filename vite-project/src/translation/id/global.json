@@ -1,598 +1,1242 @@
 {
   "header": {
-    "icon-top": "Healthy",
-    "icon-bottom": "Pregnancy",
-    "navbar-1": "Home",
-    "navbar-2": "Education",
-    "navbar-3": "Risk Assessment",
-    "navbar-4": "Nutrition",
-    "navbar-4-1": "Nutrition Analysis",
-    "navbar-4-2": "Recommendation",
-    "navbar-4-3": "Recipes",
-    "navbar-5": "Exercise",
-    "language-en": "English",
-    "language-zh": "chinese",
+    "icon-top": "Sehat",
+    "icon-bottom": "Kehamilan",
+    "navbar-1": "Beranda",
+    "navbar-2": "Edukasi",
+    "navbar-3": "Penilaian Risiko",
+    "navbar-4": "Nutrisi",
+    "navbar-4-1": "Analisis Nutrisi",
+    "navbar-4-2": "Rekomendasi",
+    "navbar-4-3": "Resep",
+    "navbar-5": "Olahraga",
+    "navbar-5-1": "Video Olahraga",
+    "navbar-5-2": "Kuesioner Sehat",
+    "navbar-5-3": "Pemulihan Pasca Melahirkan",
+    "language-en": "Bahasa Inggris",
+    "language-zh": "Bahasa Tionghoa",
     "language-id": "Bahasa Indonesia",
     "language-fil": "Filipino",
-    "language-vi": "Vietnamese",
-    "language-ms": "Malaysian"
+    "language-vi": "Bahasa Vietnam",
+    "language-ms": "Bahasa Malaysia"
   },
   "home": {
     "slideshow": {
-      "page-1": "Education",
+      "page-1": "Pendidikan",
       "page-1-text-1": "",
-      "page-1-text-2": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
-      "page-1-button": "Explore",
+      "page-1-text-2": "Pelajari lebih lanjut tentang kehamilan dan tingkatkan pengetahuan Anda melalui modul interaktif.",
+      "page-1-button": "Jelajahi",
 
-      "page-2": "Risk Assessment",
+      "page-2": "Penilaian Risiko",
       "page-2-text-1": "",
-      "page-2-text-2": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
-      "page-2-button": "Learn More",
+      "page-2-text-2": "Periksa risiko kehamilan melalui penilaian sederhana. Dapatkan penilaian cepat dengan menjawab beberapa pertanyaan.",
+      "page-2-button": "Pelajari Lebih Lanjut",
 
-      "page-3": "Nutrition",
+      "page-3": "Nutrisi",
       "page-3-text-1": "",
-      "page-3-text-2": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
-      "page-3-button": "Explore",
+      "page-3-text-2": "Dapatkan analisis, rekomendasi tentang nutrisi dan buat jadwal Anda sendiri dengan resep.",
+      "page-3-button": "Jelajahi",
 
-      "page-4": "Exercise",
+      "page-4": "Olahraga",
       "page-4-text-1": "",
-      "page-4-text-2": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
-      "page-4-button": "Explore"
+      "page-4-text-2": "Pelajari lebih lanjut tentang olahraga selama kehamilan dan jadikan diri Anda lebih sehat melalui olahraga.",
+      "page-4-button": "Jelajahi"
     },
     "roadmap": {
-      "title": "Plan your best pregnancy",
-      "icon-1-desc": "Explore previous pregnancy through data insights",
-      "icon-2-desc": "Learn essential aspects about being pregnant",
-      "icon-3-desc": "Check pregnancy risk through a simple assessment",
-      "icon-4-desc": "Get your best nutrition and recipe recommendation",
-      "icon-5-desc": "Get yourself healthier through exercises"
+      "title": "Rencanakan Kehamilan Terbaik Anda",
+      "icon-1-desc": "Jelajahi kehamilan sebelumnya melalui wawasan data",
+      "icon-2-desc": "Pelajari aspek penting tentang kehamilan",
+      "icon-3-desc": "Periksa risiko kehamilan melalui penilaian sederhana",
+      "icon-4-desc": "Dapatkan rekomendasi nutrisi dan resep terbaik untuk Anda",
+      "icon-5-desc": "Jadikan diri Anda lebih sehat melalui olahraga"
     },
 
     "detail-blocks": {
-      "title": "Choose the service you need"
+      "title": "Pilih layanan yang Anda butuhkan"
     }
   },
 
   "education": {
     "home": {
-      "title": "Pregnancy Education",
-      "text-1": "Whsdfsfdsfd34253 planning to or currently pregnant, let’s leverage your knowledge on pregnancy through these interactive modules to achieve your best pregnancy experience.",
-      "text-2": "At the end of each chapter, try to check your understanding through a Knowledge Checker.",
-      "text-3": "Have fun!",
-      "card-1": "Health Risk",
-      "card-2": "Antenatal Visits",
-      "card-3": "Birth Methods",
-      "card-4": "Nutrition",
-      "card-5": "Prenatal Exercises",
-      "card-6": "Postpartum Exercises"
+      "title": "Pendidikan Kehamilan",
+      "text-1": "Apakah Anda merencanakan atau sedang hamil, mari tingkatkan pengetahuan Anda tentang kehamilan melalui modul interaktif ini untuk mencapai pengalaman kehamilan terbaik Anda.",
+      "text-2": "Di akhir setiap bab, coba periksa pemahaman Anda melalui Pemeriksa Pengetahuan.",
+      "text-3": "Selamat bersenang-senang!",
+      "card-1": "Risiko Kesehatan",
+      "card-2": "Kunjungan Antenatal",
+      "card-3": "Metode Melahirkan",
+      "card-4": "Nutrisi",
+      "card-5": "Olahraga Prenatal",
+      "card-6": "Olahraga Pasca Melahirkan"
     },
 
     "sidebar": {
-      "back-btn": "Back to Overview",
-      "overview": "Overview",
-      "card-1-title": "Health Risk",
-      "card-1-topic-1": "1.1 Common Health Risk",
-      "card-1-topic-2": "1.2 Gestational Diabetes",
-      "card-1-topic-3": "1.3 Hyperension",
-      "card-1-topic-4": "1.4 Test Your Knowledge!",
+      "back-btn": "Kembali ke Ikhtisar",
+      "overview": "Ikhtisar",
+      "card-1-title": "Risiko Kesehatan",
+      "card-1-topic-1": "1.1 Risiko Kesehatan Umum",
+      "card-1-topic-2": "1.2 Diabetes Gestasional",
+      "card-1-topic-3": "1.3 Hipertensi",
+      "card-1-topic-4": "1.4 Uji Pengetahuan Anda!",
 
-      "card-2-title": "Antenatal Visits",
-      "card-2-topic-1": "2.1 Why Are Antenatal Visits Important?",
-      "card-2-topic-2": "2.2 When Should You Go?",
-      "card-2-topic-3": "2.3 What to Prepare/Expect Before Your Antenatal Visit",
-      "card-2-topic-4": "2.4 What Happens During Antenatal Visits?",
-      "card-2-topic-5": "2.5 After Your Antenatal Visit",
-      "card-2-topic-6": "2.6 Why Regular Check-ups Matter",
-      "card-2-topic-7": "2.7 Test Your Knowledge!",
+      "card-2-title": "Kunjungan Antenatal",
+      "card-2-topic-1": "2.1 Mengapa Kunjungan Antenatal Penting?",
+      "card-2-topic-2": "2.2 Kapan Harus Pergi?",
+      "card-2-topic-3": "2.3 Apa yang Harus Dipersiapkan/Diharapkan Sebelum Kunjungan Antenatal",
+      "card-2-topic-4": "2.4 Apa yang Terjadi Selama Kunjungan Antenatal?",
+      "card-2-topic-5": "2.5 Setelah Kunjungan Antenatal Anda",
+      "card-2-topic-6": "2.6 Mengapa Pemeriksaan Rutin Penting",
+      "card-2-topic-7": "2.7 Uji Pengetahuan Anda!",
 
-      "card-3-title": "Birth Methods",
-      "card-3-topic-1": "3.1 Different Types of Birth Methods",
-      "card-3-topic-2": "3.2 Why Does It Matter?",
-      "card-3-topic-3": "3.3 How to Choose?",
-      "card-3-topic-4": "3.4 Vaginal Birth vs. C-Section",
-      "card-3-topic-5": "3.5 Recovery After Childbirth",
-      "card-3-topic-6": "3.6 Test Your Knowledge",
+      "card-3-title": "Metode Melahirkan",
+      "card-3-topic-1": "3.1 Jenis Metode Melahirkan yang Berbeda",
+      "card-3-topic-2": "3.2 Mengapa Ini Penting?",
+      "card-3-topic-3": "3.3 Bagaimana Memilih?",
+      "card-3-topic-4": "3.4 Persalinan Normal vs. Operasi Caesar",
+      "card-3-topic-5": "3.5 Pemulihan Setelah Melahirkan",
+      "card-3-topic-6": "3.6 Uji Pengetahuan Anda",
 
-      "card-4-title": "Nutrition",
-      "card-4-topic-1": "4.1 Why Nutrition Matters",
-      "card-4-topic-2": "4.2 Essential Nutrients",
-      "card-4-topic-3": "4.3 Nutrition Standards for Pregnant Women",
-      "card-4-topic-4": "4.4 Healthy Meal Planning",
-      "card-4-topic-5": "4.5 Foods to Avoid",
-      "card-4-topic-6": "4.6 Test Your Knowledge",
+      "card-4-title": "Nutrisi",
+      "card-4-topic-1": "4.1 Mengapa Nutrisi Penting",
+      "card-4-topic-2": "4.2 Nutrisi Esensial",
+      "card-4-topic-3": "4.3 Standar Nutrisi untuk Wanita Hamil",
+      "card-4-topic-4": "4.4 Perencanaan Makanan Sehat",
+      "card-4-topic-5": "4.5 Makanan yang Harus Dihindari",
+      "card-4-topic-6": "4.6 Uji Pengetahuan Anda",
 
-      "card-5-title": "Prenatal Exercises",
-      "card-5-topic-1": "5.1 Why Prenatal Exercise Matters",
-      "card-5-topic-2": "5.2 Safe Exercises for Each Trimester",
-      "card-5-topic-3": "5.3 Exercises to Prepare for Labor",
-      "card-5-topic-4": "5.4 Safety First, Always!",
-      "card-5-topic-5": "5.5 Test Your Knowledge!",
+      "card-5-title": "Olahraga Prenatal",
+      "card-5-topic-1": "5.1 Mengapa Olahraga Prenatal Penting",
+      "card-5-topic-2": "5.2 Olahraga Aman untuk Setiap Trimester",
+      "card-5-topic-3": "5.3 Olahraga untuk Mempersiapkan Persalinan",
+      "card-5-topic-4": "5.4 Utamakan Keselamatan, Selalu!",
+      "card-5-topic-5": "5.5 Uji Pengetahuan Anda!",
 
-      "card-6-title": "Postpartum Exercises",
-      "card-6-topic-1": "6.1 The First 6 Weeks: Gentle Healing Movements",
-      "card-6-topic-2": "6.2 Rebuilding Core and Pelvic Floor Strength (6-12 Weeks)",
-      "card-6-topic-3": "6.3 Test Your Knowledge!"
+      "card-6-title": "Olahraga Pasca Melahirkan",
+      "card-6-topic-1": "6.1 6 Minggu Pertama: Gerakan Penyembuhan Lembut",
+      "card-6-topic-2": "6.2 Membangun Kembali Kekuatan Inti dan Lantai Panggul (6-12 Minggu)",
+      "card-6-topic-3": "6.3 Uji Pengetahuan Anda!"
     },
 
     "card-1": {
-      "module-name": "",
-      "module-desc": "",
+      "module-name": "1. Risiko Kesehatan",
+      "module-desc": "Modul ini mencakup risiko kesehatan penting selama kehamilan, termasuk diabetes gestasional, hipertensi, dan kesejahteraan emosional. Tetap terinformasi dan proaktif membantu ibu hamil mengelola risiko ini secara efektif, memastikan perjalanan yang lebih sehat untuk diri mereka dan bayi mereka. Pemeriksaan rutin dan pilihan gaya hidup sehat adalah kunci untuk mendukung kesehatan secara keseluruhan selama waktu yang menarik ini.",
 
-      "topic-1-name": "",
-      "topic-1-desc": {},
-
-      "topic-2-name": "",
-      "topic-2-desc": {},
-
-      "topic-3-name": "",
-      "topic-3-desc": {},
-
-      "quiz": {
-        "side-1": "",
-        "size-2": "",
-        "size-3": "",
-        "size-4": "",
-        "size-5": "",
-
-        "q-1-name": "",
-        "q-1-option-1": "",
-        "q-1-option-2": "",
-        "q-1-option-3": "",
-        "q-1-option-4": "",
-        "q-1-answer": "",
-        "q-1-pre-answer": "",
-        "q-1-post-answer": "",
-
-        "q-2-name": "",
-        "q-2-option-1": "",
-        "q-2-option-2": "",
-        "q-2-option-3": "",
-        "q-2-option-4": "",
-        "q-2-answer": "",
-        "q-2-pre-answer": "",
-        "q-2-post-answer": "",
-
-        "q-3-name": "",
-        "q-3-option-1": "",
-        "q-3-option-2": "",
-        "q-3-option-3": "",
-        "q-3-option-4": "",
-        "q-3-answer": "",
-        "q-3-pre-answer": "",
-        "q-3-post-answer": "",
-
-        "q-4-name": "",
-        "q-4-option-1": "",
-        "q-4-option-2": "",
-        "q-4-option-3": "",
-        "q-4-option-4": "",
-        "q-4-answer": "",
-        "q-4-pre-answer": "",
-        "q-4-post-answer": "",
-
-        "q-5-name": "",
-        "q-5-option-1": "",
-        "q-5-option-2": "",
-        "q-5-option-3": "",
-        "q-5-option-4": "",
-        "q-5-answer": "",
-        "q-5-pre-answer": "",
-        "q-5-post-answer": "",
-
-        "answer-correct": "",
-        "answer-incorrect": "",
-        "submit-btn": "",
-        "next-btn": ""
+      "topic-1-name": "1.1 Risiko Kesehatan Umum",
+      "topic-1-desc": {
+        "text-1": "Komplikasi umum termasuk",
+        "nav-1": "diabetes gestasional",
+        "nav-2": "tekanan darah tinggi",
+        "text-2": "(yang dapat menyebabkan preeklampsia), infeksi, persalinan prematur, dan tantangan kesehatan mental seperti depresi dan kecemasan. Kondisi yang lebih serius seperti keguguran, kehilangan kehamilan, atau bayi lahir mati, meskipun jarang, juga memerlukan kesadaran. Percayalah pada tubuh Anda dan cari nasihat medis jika Anda memperhatikan gejala seperti sakit kepala parah, masalah penglihatan, pembengkakan yang tidak biasa, atau nyeri. Perawatan prenatal rutin, pola makan seimbang, tetap aktif, dan mencari dukungan adalah kunci untuk kehamilan yang sehat."
       },
 
-      "more-details": "More Details...",
-      "prepage-btn": "",
-      "nextpage-btn": ""
+      "topic-2-name": "1.2 Diabetes Gestasional",
+      "topic-2-desc": {
+        "text-1": "Tahukah Anda bahwa dari 2014 hingga 2021, kasus diabetes gestasional meningkat lebih dari 80%?",
+        "loading": "Memuat...",
+        "text-2": "Diabetes gestasional adalah jenis diabetes yang berkembang selama kehamilan, biasanya sekitar minggu ke-24, dan dapat memiliki efek jangka panjang seperti peningkatan risiko diabetes tipe 2 bagi ibu dan potensi masalah kesehatan bagi anak. Hal ini dapat menyebabkan bayi yang lebih besar, yang mengarah pada komplikasi saat persalinan dan kemungkinan lebih besar membutuhkan operasi caesar.",
+        "nav-1": "(Kunjungi pendidikan kami untuk mengurangi risiko).",
+        "text-3": "Faktor risiko termasuk obesitas, usia, riwayat keluarga, dan etnis. Mengelola diabetes gestasional melibatkan pemantauan gula darah, makan pola makan sehat, tetap aktif, dan terkadang minum obat. Kesadaran dan manajemen proaktif sangat penting untuk kesehatan ibu dan bayi. Untuk dukungan yang lebih spesifik, lihat:",
+        "nav-2": "1. Rekomendasi Nutrisi",
+        "nav-3": "2. Olahraga",
+        "text-4": "Wanita migran mungkin menghadapi faktor risiko yang lebih tinggi untuk diabetes gestasional karena perubahan pola makan, akses terbatas ke layanan kesehatan, dan stres. Jika Anda ingin menilai risiko Anda,",
+        "nav-4": "klik di sini."
+      },
+
+      "topic-3-name": "1.3 Hipertensi",
+      "topic-3-desc": {
+        "text-1": "Antara tahun 2014 dan 2021, hipertensi terus meningkat, menjadi perhatian kesehatan yang umum, meskipun tidak secepat diabetes. Hipertensi, atau tekanan darah tinggi, meningkatkan risiko penyakit jantung, stroke, dan masalah ginjal dan sering kali tidak terdeteksi, memberinya julukan 'pembunuh diam-diam'. Ini bisa disebabkan oleh faktor-faktor seperti genetika, pola makan yang buruk, kurang aktivitas fisik, stres, dan kelebihan berat badan.",
+        "text-2": "Mengelola hipertensi melibatkan perubahan gaya hidup, seperti pola makan yang sehat untuk jantung dan olahraga teratur. Untuk membantu Anda, lihat sumber daya kami tentang:",
+        "nav-1": "1. Rekomendasi Nutrisi",
+        "nav-2": "2. Olahraga",
+        "text-3": "Pemeriksaan rutin sangat penting untuk menangkap dan mengelola kondisi ini lebih awal untuk mencegah masalah kesehatan yang serius.",
+        "nav-3": "(Informasi lebih lanjut dapat ditemukan di sini)"
+      },
+
+      "quiz": {
+        "topic-4-name": "1.4 Uji Pengetahuan Anda!",
+        "desc": "Coba pertanyaan di bawah ini untuk menguji pemahaman Anda tentang konten di atas.",
+
+        "side": "Pertanyaan ",
+
+        "q-1-name": "Kapan biasanya diabetes gestasional berkembang selama kehamilan?",
+        "q-1-option-1": "A) Minggu ke-12",
+        "q-1-option-2": "B) Minggu ke-24",
+        "q-1-option-3": "C) Minggu ke-30",
+        "q-1-option-4": "D) Setelah melahirkan",
+        "q-1-answer": "B) Minggu ke-24",
+        "q-1-pre-answer": "Jawaban yang benar adalah ",
+        "q-1-post-answer": "Diabetes gestasional biasanya muncul sekitar minggu ke-24 kehamilan.",
+
+        "q-2-name": "Mengapa hipertensi disebut 'pembunuh diam-diam'?",
+        "q-2-option-1": "A) Menyebabkan sakit kepala mendadak",
+        "q-2-option-2": "B) Tidak terdeteksi sampai masalah kesehatan serius muncul",
+        "q-2-option-3": "C) Membuat Anda merasa mengantuk",
+        "q-2-option-4": "D) Menyebabkan gejala yang terlihat",
+        "q-2-answer": "B) Tidak terdeteksi sampai masalah kesehatan serius muncul",
+        "q-2-pre-answer": "Jawaban yang benar adalah ",
+        "q-2-post-answer": "Biasanya tidak ada gejala sampai menyebabkan masalah besar seperti penyakit jantung atau stroke.",
+
+        "q-3-name": "Perubahan gaya hidup mana yang dapat membantu mengelola hipertensi?",
+        "q-3-option-1": "A) Makan lebih banyak makanan olahan",
+        "q-3-option-2": "B) Berolahraga secara teratur dan makan makanan sehat untuk jantung",
+        "q-3-option-3": "C) Kurang tidur",
+        "q-3-option-4": "D) Meningkatkan asupan garam",
+        "q-3-answer": "B) Berolahraga secara teratur dan makan makanan sehat untuk jantung",
+        "q-3-pre-answer": "Jawaban yang benar adalah ",
+        "q-3-post-answer": "Tetap aktif dan makan makanan seimbang dapat membantu menurunkan tekanan darah.",
+
+        "q-4-name": "Apa salah satu risiko jangka panjang utama dari diabetes gestasional?",
+        "q-4-option-1": "A) Berat badan lahir rendah",
+        "q-4-option-2": "B) Diabetes tipe 2 di kemudian hari",
+        "q-4-option-3": "C) Risiko migrain yang lebih tinggi",
+        "q-4-option-4": "D) Depresi pasca persalinan",
+        "q-4-answer": "B) Diabetes tipe 2 di kemudian hari",
+        "q-4-pre-answer": "Jawaban yang benar adalah ",
+        "q-4-post-answer": "Wanita dengan diabetes gestasional memiliki peluang lebih tinggi untuk mengembangkan diabetes tipe 2 setelah kehamilan.",
+
+        "q-5-name": "Makanan mana yang harus Anda fokuskan untuk mengelola kedua kondisi?",
+        "q-5-option-1": "A) Camilan manis",
+        "q-5-option-2": "B) Daging olahan",
+        "q-5-option-3": "C) Gandum utuh dan protein tanpa lemak",
+        "q-5-option-4": "D) Makanan gorengan",
+        "q-5-answer": "C) Gandum utuh dan protein tanpa lemak",
+        "q-5-pre-answer": "Jawaban yang benar adalah ",
+        "q-5-post-answer": "Ini membantu mengelola gula darah dan meningkatkan kesehatan jantung."
+      },
+
+      "more-details": "Detail Lebih Lanjut...",
+      "prepage-btn": "Bab Sebelumnya",
+      "nextpage-btn": "Bab Berikutnya"
     },
 
     "card-2": {
-      "module-name": "",
-      "module-desc": "",
+      "module-name": "2. Kunjungan Antenatal",
+      "module-desc": "Kunjungan antenatal adalah pemeriksaan penting selama kehamilan yang memantau kesehatan ibu dan bayi. Kunjungan ini melacak pertumbuhan, mendeteksi masalah potensial lebih awal, dan memberikan panduan tentang nutrisi dan kesehatan, memastikan perjalanan kehamilan yang sehat.",
 
-      "topic-1-name": "",
-      "topic-1-desc": {},
-
-      "topic-2-name": "",
-      "topic-2-desc": {},
-
-      "topic-3-name": "",
-      "topic-3-desc": {},
-
-      "topic-4-name": "",
-      "topic-4-desc": {},
-
-      "topic-5-name": "",
-      "topic-5-desc": {},
-
-      "topic-6-name": "",
-      "topic-6-desc": {},
-
-      "quiz": {
-        "side-1": "",
-        "size-2": "",
-        "size-3": "",
-        "size-4": "",
-        "size-5": "",
-
-        "q-1-name": "",
-        "q-1-option-1": "",
-        "q-1-option-2": "",
-        "q-1-option-3": "",
-        "q-1-option-4": "",
-        "q-1-answer": "",
-        "q-1-pre-answer": "",
-        "q-1-post-answer": "",
-
-        "q-2-name": "",
-        "q-2-option-1": "",
-        "q-2-option-2": "",
-        "q-2-option-3": "",
-        "q-2-option-4": "",
-        "q-2-answer": "",
-        "q-2-pre-answer": "",
-        "q-2-post-answer": "",
-
-        "q-3-name": "",
-        "q-3-option-1": "",
-        "q-3-option-2": "",
-        "q-3-option-3": "",
-        "q-3-option-4": "",
-        "q-3-answer": "",
-        "q-3-pre-answer": "",
-        "q-3-post-answer": "",
-
-        "q-4-name": "",
-        "q-4-option-1": "",
-        "q-4-option-2": "",
-        "q-4-option-3": "",
-        "q-4-option-4": "",
-        "q-4-answer": "",
-        "q-4-pre-answer": "",
-        "q-4-post-answer": "",
-
-        "answer-correct": "",
-        "answer-incorrect": "",
-        "submit-btn": "",
-        "next-btn": ""
+      "topic-1-name": "2.1 Mengapa Kunjungan Antenatal Penting?",
+      "topic-1-desc": {
+        "text-1": "Kunjungan antenatal secara rutin sangat penting untuk menjaga kesehatan Anda dan bayi selama kehamilan. Pemeriksaan ini memungkinkan penyedia layanan kesehatan untuk melacak pertumbuhan bayi Anda melalui ultrasonografi dan pemantauan janin, memastikan perkembangan yang tepat dan mendeteksi kelainan sejak dini. Mereka juga memantau kesehatan Anda dengan mengawasi tanda-tanda vital seperti tekanan darah dan berat badan, yang membantu mendeteksi kondisi seperti diabetes gestasional, hipertensi, dan preeklampsia sejak dini. Selain itu, kunjungan ini memberikan saran ahli tentang nutrisi, olahraga, dan kesehatan mental, memastikan Anda menerima dukungan komprehensif dan rujukan ke spesialis jika diperlukan."
       },
 
-      "more-details": "More Details...",
-      "prepage-btn": "",
-      "nextpage-btn": ""
+      "topic-2-name": "2.2 Kapan Harus Pergi?",
+      "topic-2-desc": {
+        "text-1": "Kunjungan antenatal disusun untuk memastikan kesehatan ibu dan bayi sepanjang kehamilan. Grafik berikut menunjukkan waktu rata-rata kunjungan antenatal pertama (berdasarkan minggu):",
+        "loading": "Memuat...",
+        "text-2": "Pada trimester pertama (0-12 minggu), penting untuk menjadwalkan kunjungan pertama lebih awal, biasanya sekitar 6-8 minggu, untuk mengonfirmasi kehamilan dan menetapkan rencana perawatan. Selama trimester kedua (13-28 minggu), kunjungan setiap 4 minggu berfokus pada pemantauan pertumbuhan bayi dan pemeriksaan komplikasi seperti diabetes gestasional dan tekanan darah tinggi. Pada trimester ketiga (29-40 minggu), kunjungan menjadi lebih sering, mempersiapkan persalinan dan melacak posisi bayi serta kesehatan ibu secara dekat. Kunjungan awal sangat penting, karena dapat menurunkan risiko komplikasi, dengan 79,6% wanita memulai perawatan antenatal sebelum 14 minggu."
+      },
+
+      "topic-3-name": "2.3 Apa yang Harus Dipersiapkan/Diharapkan Sebelum Kunjungan Antenatal",
+      "topic-3-desc": {
+        "text-1": "Mempersiapkan kunjungan antenatal Anda dapat membantu memaksimalkan waktu Anda dengan penyedia layanan kesehatan. Mulailah dengan membawa dokumen penting seperti catatan kesehatan dan informasi asuransi Anda. Siapkan daftar pertanyaan tentang kehamilan, persalinan, dan perawatan pasca melahirkan, dan catat gejala yang Anda alami, seperti sakit kepala atau perubahan pergerakan janin. Pantau berat badan dan pola makan Anda, dan siap untuk mendiskusikan ini dengan penyedia Anda. Rencanakan transportasi Anda, terutama jika Anda tidak merasa baik, dan kenakan pakaian yang nyaman untuk pemeriksaan. Siapkan waktu ekstra untuk janji Anda, karena waktu pertemuan mungkin bervariasi, dan hadapilah kunjungan Anda dengan pikiran yang positif. Dengan langkah-langkah ini, kunjungan antenatal Anda akan menjadi lebih produktif dan informatif, membuka jalan untuk perjalanan kehamilan yang sehat."
+      },
+
+      "topic-4-name": "2.4. Apa yang Terjadi Selama Kunjungan Antenatal?",
+      "topic-4-desc": {
+        "text-1": "Selama kunjungan antenatal, beberapa pemeriksaan dan tes penting dilakukan untuk memastikan kehamilan yang sehat. Pemeriksaan tekanan darah sangat penting untuk mendeteksi tanda-tanda awal hipertensi, sementara tes urin menyaring infeksi dan diabetes gestasional. Pemindaian ultrasonografi memungkinkan pemantauan perkembangan bayi secara real-time, dan tes darah membantu melacak kadar zat besi dan kesehatan secara keseluruhan. Selain itu, Anda akan menerima saran kesehatan yang disesuaikan untuk mengelola gejala Anda, nutrisi, dan olahraga, membantu Anda menjaga kesejahteraan selama kehamilan."
+      },
+
+      "topic-5-name": "2.5 Setelah Kunjungan Antenatal",
+      "topic-5-desc": {
+        "text-1": "Setelah kunjungan antenatal Anda, penting untuk merefleksikan dan memastikan bahwa Anda menjalankan rekomendasi dari penyedia layanan kesehatan Anda. Mulailah dengan meninjau catatan atau handout yang Anda terima untuk memperkuat apa yang telah Anda pelajari. Terapkan nasihat apa pun, seperti perubahan pola makan, rutinitas olahraga, atau penyesuaian obat-obatan. Jadwalkan janji Anda berikutnya dan tandai di kalender Anda, atau konfirmasikan kapan Anda harus kembali, biasanya dalam 4-6 minggu. Lanjutkan memantau gejala yang dibahas selama kunjungan Anda, dan hubungi penyedia layanan Anda jika gejala baru muncul atau yang sudah ada memburuk. Selain itu, pertimbangkan untuk mengikuti kelas antenatal atau bergabung dengan kelompok pendukung untuk terhubung dengan orang tua lain, menawarkan dukungan dan pengalaman bersama yang berharga."
+      },
+
+      "topic-6-name": "2.6 Mengapa Pemeriksaan Rutin Penting",
+      "topic-6-desc": {
+        "text-1": "Tetap Sehat, Tetap Terinformasi! Kunjungan antenatal rutin sangat penting untuk mendeteksi komplikasi seperti hipertensi dan diabetes gestasional lebih awal, memastikan mereka tidak menjadi serius. Kunjungan ini membantu Anda memantau kesehatan Anda dan pertumbuhan bayi Anda, menjaga segalanya tetap berjalan dengan baik. Berdayakan diri Anda dengan mempelajari tentang kehamilan, persalinan, dan pengasuhan—ajukan pertanyaan dan dapatkan informasi yang Anda butuhkan. Bangun hubungan yang kuat dengan penyedia layanan kesehatan Anda untuk komunikasi terbuka dan ketenangan pikiran. Pemeriksaan rutin memberikan rasa tenang, mengurangi kecemasan, dan membuat Anda tetap terinformasi selama perjalanan kehamilan Anda. Ingatlah, kesehatan Anda penting, dan pemeriksaan rutin adalah kunci untuk kehamilan yang sehat bagi Anda dan bayi Anda."
+      },
+
+      "quiz": {
+        "topic-7-name": "2.7 Uji Pengetahuan Anda!",
+        "desc": "Coba pertanyaan di bawah ini untuk menguji pemahaman Anda tentang konten di atas.",
+
+        "side": "Pertanyaan",
+
+        "q-1-name": "Mengapa kunjungan antenatal penting?",
+        "q-1-option-1": "A) Untuk memantau pertumbuhan bayi dan kesehatan ibu",
+        "q-1-option-2": "B) Untuk mengobrol dengan dokter Anda",
+        "q-1-option-3": "C) Hanya untuk pemeriksaan tekanan darah",
+        "q-1-option-4": "D) Untuk menerima sampel gratis",
+        "q-1-answer": "A) Untuk memantau pertumbuhan bayi dan kesehatan ibu",
+        "q-1-pre-answer": "Jawaban yang benar adalah ",
+        "q-1-post-answer": "Kunjungan antenatal melacak kesehatan Anda dan perkembangan bayi Anda, memastikan perjalanan kehamilan yang sehat.",
+
+        "q-2-name": "Kapan Anda harus menjadwalkan kunjungan antenatal pertama Anda?",
+        "q-2-option-1": "A) Setelah trimester pertama",
+        "q-2-option-2": "B) Segera setelah Anda mengonfirmasi kehamilan Anda",
+        "q-2-option-3": "C) Tepat sebelum persalinan",
+        "q-2-option-4": "D) Setelah 20 minggu",
+        "q-2-answer": "B) Segera setelah Anda mengonfirmasi kehamilan Anda",
+        "q-2-pre-answer": "Jawaban yang benar adalah ",
+        "q-2-post-answer": "Penting untuk memulai perawatan antenatal lebih awal untuk membuat rencana perawatan dan memantau kehamilan Anda sejak awal.",
+
+        "q-3-name": "Apa yang diperiksa selama kunjungan antenatal?",
+        "q-3-option-1": "A) Tekanan darah",
+        "q-3-option-2": "B) Pemindaian ultrasonografi",
+        "q-3-option-3": "C) Tes urin",
+        "q-3-option-4": "D) Semua di atas",
+        "q-3-answer": "D) Semua di atas",
+        "q-3-pre-answer": "Jawaban yang benar adalah ",
+        "q-3-post-answer": "Kunjungan antenatal melibatkan berbagai pemeriksaan kesehatan untuk melacak kesejahteraan Anda dan perkembangan bayi Anda.",
+
+        "q-4-name": "Mengapa penting untuk memantau tekanan darah selama kehamilan?",
+        "q-4-option-1": "A) Untuk memeriksa tanda-tanda hipertensi",
+        "q-4-option-2": "B) Untuk mengukur tingkat hidrasi",
+        "q-4-option-3": "C) Untuk melacak asupan garam",
+        "q-4-option-4": "D) Tidak perlu",
+        "q-4-answer": "A) Untuk memeriksa tanda-tanda hipertensi",
+        "q-4-pre-answer": "Jawaban yang benar adalah ",
+        "q-4-post-answer": "Memantau tekanan darah membantu mendeteksi tanda-tanda awal hipertensi, yang dapat mempengaruhi ibu dan bayi."
+      },
+
+      "more-details": "Detail Lebih Lanjut...",
+      "prepage-btn": "Bab Sebelumnya",
+      "nextpage-btn": "Bab Berikutnya"
     },
 
     "card-3": {
-      "module-name": "",
-      "module-desc": "",
+      "module-name": "3. Metode Persalinan",
+      "module-desc": "Bagian ini mengeksplorasi metode persalinan—persalinan normal, operasi sesar (C-section), dan persalinan vaginal dengan bantuan. Ini mencakup pro dan kontra, waktu pemulihan, dan faktor yang memengaruhi pilihan. Perbandingan pemulihan pasca persalinan untuk setiap metode juga disertakan, bersama dengan kuis untuk meningkatkan pemahaman dan mendorong diskusi dengan penyedia layanan kesehatan.",
 
-      "topic-1-name": "",
-      "topic-1-desc": {},
-
-      "topic-2-name": "",
-      "topic-2-desc": {},
-
-      "topic-3-name": "",
-      "topic-3-desc": {},
-
-      "topic-4-name": "",
-      "topic-4-desc": {},
-
-      "topic-5-name": "",
-      "topic-5-desc": {},
-
-      "quiz": {
-        "side-1": "",
-        "size-2": "",
-        "size-3": "",
-        "size-4": "",
-        "size-5": "",
-
-        "q-1-name": "",
-        "q-1-option-1": "",
-        "q-1-option-2": "",
-        "q-1-option-3": "",
-        "q-1-option-4": "",
-        "q-1-answer": "",
-        "q-1-pre-answer": "",
-        "q-1-post-answer": "",
-
-        "q-2-name": "",
-        "q-2-option-1": "",
-        "q-2-option-2": "",
-        "q-2-option-3": "",
-        "q-2-option-4": "",
-        "q-2-answer": "",
-        "q-2-pre-answer": "",
-        "q-2-post-answer": "",
-
-        "q-3-name": "",
-        "q-3-option-1": "",
-        "q-3-option-2": "",
-        "q-3-option-3": "",
-        "q-3-option-4": "",
-        "q-3-answer": "",
-        "q-3-pre-answer": "",
-        "q-3-post-answer": "",
-
-        "q-4-name": "",
-        "q-4-option-1": "",
-        "q-4-option-2": "",
-        "q-4-option-3": "",
-        "q-4-option-4": "",
-        "q-4-answer": "",
-        "q-4-pre-answer": "",
-        "q-4-post-answer": "",
-
-        "q-5-name": "",
-        "q-5-option-1": "",
-        "q-5-option-2": "",
-        "q-5-option-3": "",
-        "q-5-option-4": "",
-        "q-5-answer": "",
-        "q-5-pre-answer": "",
-        "q-5-post-answer": "",
-
-        "answer-correct": "",
-        "answer-incorrect": "",
-        "submit-btn": "",
-        "next-btn": ""
+      "topic-1-name": "3.1 Jenis Metode Persalinan yang Berbeda",
+      "topic-1-desc": {
+        "text-1": "Memahami metode persalinan umum dapat membantu Anda merasa lebih siap saat mendekati tanggal kelahiran. Persalinan normal adalah metode yang paling umum, menawarkan pemulihan yang lebih cepat dan kontak kulit-ke-kulit segera. Operasi sesar adalah persalinan melalui pembedahan di perut, sering kali direncanakan karena alasan medis atau diperlukan selama persalinan, dengan waktu pemulihan yang lebih lama. Persalinan vaginal dengan bantuan menggunakan alat seperti forceps atau vakum untuk membantu saat persalinan yang sulit. Pertimbangkan manfaat dan risiko dari setiap metode, bagaimana mempersiapkan jika operasi sesar direkomendasikan, tanda-tanda yang mungkin memerlukan bantuan, dan bagaimana mendiskusikan rencana persalinan Anda dengan penyedia layanan kesehatan."
       },
 
-      "more-details": "More Details...",
-      "prepage-btn": "",
-      "nextpage-btn": ""
+      "topic-2-name": "3.2 Mengapa Ini Penting?",
+      "topic-2-desc": {
+        "text-1": "Memilih metode persalinan memengaruhi pemulihan Anda, kehamilan di masa depan, dan kesehatan bayi Anda. Persalinan normal biasanya menawarkan pemulihan yang lebih cepat dan bakteri bermanfaat untuk bayi, sementara operasi sesar memiliki waktu pemulihan yang lebih lama, risiko komplikasi yang lebih tinggi, dan dapat memengaruhi persalinan di masa depan. Mendiskusikan pilihan Anda dengan penyedia layanan kesehatan akan membantu Anda membuat pilihan terbaik untuk Anda dan bayi Anda."
+      },
+
+      "topic-3-name": "3.3 Bagaimana Memilih?",
+      "topic-3-desc": {
+        "text-1": "Beberapa faktor memengaruhi pilihan metode persalinan, termasuk posisi bayi Anda, kondisi kesehatan seperti diabetes gestasional atau hipertensi, dan preferensi pribadi. Misalnya, posisi sungsang dapat menyebabkan rekomendasi operasi sesar, sementara beberapa ibu memilih operasi sesar yang direncanakan berdasarkan pengalaman sebelumnya atau kecemasan tentang persalinan. Keyakinan budaya dan agama juga dapat berperan dalam keputusan ini. Komunikasi yang teratur dengan tim perawatan kesehatan Anda sangat penting untuk menyelaraskan preferensi Anda dengan saran medis. Ingatlah, setiap kehamilan unik, dan tidak apa-apa menyesuaikan rencana persalinan Anda sesuai kebutuhan.",
+        "text-2": "Berikut adalah beberapa data tentang metode persalinan yang paling umum untuk membantu Anda membuat pilihan yang tepat:",
+        "text-3": "Ingatlah, setiap kehamilan unik, dan tidak apa-apa menyesuaikan rencana persalinan Anda sesuai kebutuhan. Di bawah ini adalah beberapa alasan umum memilih operasi sesar:",
+        "text-4": "Anda juga dapat menemukan detail lebih lanjut di bawah"
+      },
+
+      "topic-4-name": "3.4 Persalinan Normal vs. C-Section",
+      "topic-4-desc": {
+        "text-1": "Persalinan normal menawarkan manfaat seperti waktu pemulihan yang lebih singkat, risiko infeksi yang lebih rendah, dan lebih sedikit komplikasi pada kehamilan berikutnya, meskipun bisa melibatkan persalinan yang lebih lama dan kemungkinan robekan. Di sisi lain, operasi sesar dapat direncanakan sebelumnya dan menghindari risiko robekan, tetapi memiliki waktu pemulihan yang lebih lama dan risiko infeksi serta komplikasi yang lebih tinggi. Wanita yang menjalani operasi sesar biasanya mengalami masa tinggal di rumah sakit yang lebih lama dan periode penyembuhan yang lebih panjang, sehingga penting untuk mempertimbangkan faktor-faktor ini saat memutuskan metode persalinan.",
+        "text-2": "Diagram di bawah ini menunjukkan Waktu Pemulihan (dalam hari) untuk setiap Metode Persalinan:"
+      },
+
+      "topic-5-name": "3.5 Pemulihan Setelah Persalinan",
+      "topic-5-desc": {
+        "text-1": "Pemulihan setelah persalinan bervariasi tergantung pada apakah Anda menjalani persalinan normal atau operasi sesar. Pemulihan persalinan normal biasanya memakan waktu 4-6 minggu, dengan rasa sakit yang diatasi dengan obat-obatan yang dijual bebas. Wanita dapat secara bertahap melanjutkan aktivitas sehari-hari dan fokus pada perawatan perineum serta latihan Kegel untuk memperkuat otot dasar panggul. Pemulihan operasi sesar biasanya memakan waktu 6-8 minggu atau lebih, dengan obat pereda nyeri resep yang sering diperlukan pada awalnya. Aktivitas fisik harus dibatasi pada berjalan kaki, dan perawatan luka sangat penting untuk menghindari infeksi. Kedua jenis pemulihan mendapat manfaat dari perawatan pasca melahirkan yang tepat, termasuk dukungan menyusui dan pola makan seimbang untuk mempercepat penyembuhan."
+      },
+
+      "quiz": {
+        "topic-6-name": "3.6 Uji Pengetahuan Anda!",
+        "desc": "Coba pertanyaan di bawah ini untuk menguji pemahaman Anda tentang konten di atas.",
+
+        "side": "Pertanyaan",
+
+        "q-1-name": "Apa metode persalinan yang paling umum?",
+        "q-1-option-1": "A) Operasi Sesar",
+        "q-1-option-2": "B) Persalinan Vaginal dengan Bantuan",
+        "q-1-option-3": "C) Persalinan Normal",
+        "q-1-option-4": "D) Persalinan di Rumah",
+        "q-1-answer": "C) Persalinan Normal",
+        "q-1-pre-answer": "Jawaban yang benar adalah ",
+        "q-1-post-answer": "Persalinan normal adalah metode persalinan yang paling umum untuk bayi.",
+
+        "q-2-name": "Apa risiko potensial yang terkait dengan operasi sesar?",
+        "q-2-option-1": "A) Risiko infeksi yang lebih rendah",
+        "q-2-option-2": "B) Waktu pemulihan yang lebih lama",
+        "q-2-option-3": "C) Waktu yang lebih sedikit di rumah sakit",
+        "q-2-option-4": "D) Menyusui lebih mudah",
+        "q-2-answer": "B) Waktu pemulihan yang lebih lama",
+        "q-2-pre-answer": "Jawaban yang benar adalah ",
+        "q-2-post-answer": "Wanita yang menjalani operasi sesar biasanya mengalami waktu pemulihan yang lebih lama dibandingkan dengan mereka yang menjalani persalinan normal.",
+
+        "q-3-name": "Apa salah satu keuntungan persalinan normal?",
+        "q-3-option-1": "A) Waktu pemulihan yang lebih lama",
+        "q-3-option-2": "B) Risiko infeksi yang lebih tinggi",
+        "q-3-option-3": "C) Waktu pemulihan yang lebih singkat",
+        "q-3-option-4": "D) Direncanakan sebelumnya",
+        "q-3-answer": "C) Waktu pemulihan yang lebih singkat",
+        "q-3-pre-answer": "Jawaban yang benar adalah ",
+        "q-3-post-answer": "Persalinan normal umumnya memungkinkan pemulihan yang lebih cepat dibandingkan dengan operasi sesar.",
+
+        "q-4-name": "Apa itu persalinan vaginal dengan bantuan?",
+        "q-4-option-1": "A) Persalinan di rumah",
+        "q-4-option-2": "B) Persalinan dengan menggunakan alat seperti forceps atau vakum",
+        "q-4-option-3": "C) Operasi sesar yang direncanakan",
+        "q-4-option-4": "D) Persalinan alami tanpa intervensi",
+        "q-4-answer": "B) Persalinan dengan menggunakan alat seperti forceps atau vakum",
+        "q-4-pre-answer": "Jawaban yang benar adalah ",
+        "q-4-post-answer": "Persalinan vaginal dengan bantuan melibatkan penggunaan alat untuk membantu membimbing bayi keluar.",
+
+        "q-5-name": "Faktor mana yang dapat memengaruhi pilihan metode persalinan Anda?",
+        "q-5-option-1": "A) Posisi bayi",
+        "q-5-option-2": "B) Cuaca pada hari persalinan",
+        "q-5-option-3": "C) Warna kamar bayi",
+        "q-5-option-4": "D) Lama kehamilan Anda",
+        "q-5-answer": "A) Posisi bayi",
+        "q-5-pre-answer": "Jawaban yang benar adalah ",
+        "q-5-post-answer": "Posisi bayi dapat sangat mempengaruhi metode persalinan yang direkomendasikan."
+      },
+
+      "more-details": "Detail Lebih Lanjut...",
+      "prepage-btn": "Bab Sebelumnya",
+      "nextpage-btn": "Bab Berikutnya"
     },
 
     "card-4": {
-      "module-name": "",
-      "module-desc": "",
+      "module-name": "4. Nutrisi",
+      "module-desc": "Bagian ini memberikan informasi penting tentang pentingnya nutrisi seimbang selama kehamilan. Pelajari tentang nutrisi utama yang mendukung kesehatan ibu dan bayi, pedoman diet untuk setiap trimester, makanan yang harus dihindari, dan tips perencanaan makanan sehat. Jelajahi alat dan sumber daya interaktif untuk membantu ibu hamil menjaga pola makan yang bergizi untuk pertumbuhan dan perkembangan optimal.",
 
-      "topic-1-name": "",
-      "topic-1-desc": {},
-
-      "topic-2-name": "",
-      "topic-2-desc": {},
-
-      "topic-3-name": "",
-      "topic-3-desc": {},
-
-      "topic-4-name": "",
-      "topic-4-desc": {},
-
-      "topic-5-name": "",
-      "topic-5-desc": {},
-
-      "quiz": {
-        "side-1": "",
-        "size-2": "",
-        "size-3": "",
-        "size-4": "",
-        "size-5": "",
-
-        "q-1-name": "",
-        "q-1-option-1": "",
-        "q-1-option-2": "",
-        "q-1-option-3": "",
-        "q-1-option-4": "",
-        "q-1-answer": "",
-        "q-1-pre-answer": "",
-        "q-1-post-answer": "",
-
-        "q-2-name": "",
-        "q-2-option-1": "",
-        "q-2-option-2": "",
-        "q-2-option-3": "",
-        "q-2-option-4": "",
-        "q-2-answer": "",
-        "q-2-pre-answer": "",
-        "q-2-post-answer": "",
-
-        "q-3-name": "",
-        "q-3-option-1": "",
-        "q-3-option-2": "",
-        "q-3-option-3": "",
-        "q-3-option-4": "",
-        "q-3-answer": "",
-        "q-3-pre-answer": "",
-        "q-3-post-answer": "",
-
-        "q-4-name": "",
-        "q-4-option-1": "",
-        "q-4-option-2": "",
-        "q-4-option-3": "",
-        "q-4-option-4": "",
-        "q-4-answer": "",
-        "q-4-pre-answer": "",
-        "q-4-post-answer": "",
-
-        "q-5-name": "",
-        "q-5-option-1": "",
-        "q-5-option-2": "",
-        "q-5-option-3": "",
-        "q-5-option-4": "",
-        "q-5-answer": "",
-        "q-5-pre-answer": "",
-        "q-5-post-answer": "",
-
-        "answer-correct": "",
-        "answer-incorrect": "",
-        "submit-btn": "",
-        "next-btn": ""
+      "topic-1-name": "4.1 Mengapa Nutrisi Penting",
+      "topic-1-desc": {
+        "text-1": "Nutrisi yang tepat selama kehamilan sangat penting bagi kesehatan ibu dan janin. Pola makan yang seimbang mendukung perkembangan organ vital seperti otak, paru-paru, dan jantung, dengan nutrisi seperti asam folat yang penting untuk perkembangan tabung saraf. Ini juga membantu mengelola gejala kehamilan seperti mual dan kelelahan, mengurangi risiko komplikasi seperti diabetes gestasional dan hipertensi, serta memberikan energi yang dibutuhkan untuk tuntutan fisik dan emosional yang meningkat. Selain itu, nutrisi yang baik membantu menjaga keseimbangan hormon, mempromosikan kesejahteraan emosional selama tahap kehidupan yang penting ini."
       },
 
-      "more-details": "More Details...",
-      "prepage-btn": "",
-      "nextpage-btn": ""
+      "topic-2-name": "4.2 Nutrisi Esensial",
+      "topic-2-desc": {
+        "text-1": "Selama kehamilan, nutrisi tertentu sangat penting untuk mendukung bayi yang sedang tumbuh dan ibu. Asam folat membantu mencegah cacat tabung saraf, yang ditemukan dalam sayuran hijau, buah jeruk, dan sereal yang diperkaya. Zat besi penting untuk memproduksi darah ekstra dan mencegah anemia, tersedia dalam daging tanpa lemak, bayam, dan kacang-kacangan. Kalsium mendukung perkembangan tulang bayi, dengan produk susu dan almond sebagai sumber yang baik. Asam lemak omega-3 membantu perkembangan otak, ditemukan dalam salmon, kenari, dan biji rami. Serat membantu mencegah sembelit, yang umum selama kehamilan, dengan biji-bijian, buah-buahan, dan sayuran sebagai sumber yang sangat baik.",
+        "text-2": "Panduan Nutrisi: Kunjungi panduan rinci kami untuk daftar makanan yang direkomendasikan",
+        "nav-1": "(tautan ke Nutrisi)."
+      },
+
+      "topic-3-name": "4.3 Standar Nutrisi untuk Wanita Hamil",
+      "topic-3-desc": {
+        "text-1": "Selama kehamilan, kebutuhan kalori dan makronutrien berubah seiring waktu. Pada trimester pertama, fokuslah pada makanan padat nutrisi karena kebutuhan kalori tidak meningkat secara signifikan. Pada trimester kedua, tambahan 300-350 kalori per hari dianjurkan, meningkat menjadi 450-500 kalori per hari pada trimester ketiga. Asupan protein harus 70-100 gram per hari untuk mendukung perkembangan janin dan kesehatan ibu. Karbohidrat harus mencakup 45-65% dari kalori harian, dengan fokus pada karbohidrat kompleks seperti biji-bijian dan sayuran. Lemak sehat harus mencakup 25-35% dari kalori harian, dengan penekanan pada lemak tak jenuh seperti minyak zaitun dan alpukat untuk perkembangan otak janin."
+      },
+
+      "topic-4-name": "4.4 Perencanaan Makanan Sehat",
+      "topic-4-desc": {
+        "text-1": "Perencanaan makanan sehat selama kehamilan adalah kunci untuk memastikan Anda dan bayi Anda mendapatkan nutrisi penting sambil menghindari makanan olahan. Untuk menjaga pola makan yang seimbang, rencanakan makanan terlebih dahulu, perhatikan porsi makanan, dan sediakan camilan sehat seperti kacang-kacangan dan yogurt. Usahakan makanan yang beragam dengan memasukkan berbagai buah dan sayuran, dan ingat untuk tetap terhidrasi dengan minum setidaknya 8-10 gelas air setiap hari. Pendekatan ini mendukung kesehatan optimal, tingkat energi, dan mengurangi stres selama kehamilan Anda."
+      },
+
+      "topic-5-name": "4.5 Makanan yang Harus Dihindari",
+      "topic-5-desc": {
+        "text-1": "Selama kehamilan, penting untuk menghindari makanan tertentu yang dapat menimbulkan risiko bagi Anda dan bayi. Hindari ikan yang mengandung merkuri tinggi seperti hiu dan ikan pedang, dan pilihlah ikan rendah merkuri seperti salmon. Hindari keju lunak yang terbuat dari susu yang tidak dipasteurisasi dan daging olahan seperti daging deli kecuali dipanaskan hingga mendidih. Produk susu dan jus yang tidak dipasteurisasi juga harus dihindari untuk meminimalkan risiko bakteri berbahaya. Batasi konsumsi kafein hingga 200 mg per hari dan hindari alkohol sepenuhnya. Berhati-hatilah dengan teh herbal, karena beberapa dapat berbahaya; selalu konsultasikan dengan penyedia layanan kesehatan Anda sebelum mengonsumsinya. Memahami risiko ini membantu Anda membuat pilihan diet yang tepat untuk kehamilan yang sehat."
+      },
+
+      "quiz": {
+        "topic-6-name": "4.6 Uji Pengetahuan Anda!",
+        "desc": "Coba pertanyaan di bawah ini untuk menguji pemahaman Anda tentang konten di atas.",
+
+        "side": "Pertanyaan",
+
+        "q-1-name": "Nutrisi mana yang penting untuk mencegah cacat tabung saraf?",
+        "q-1-option-1": "A) Kalsium",
+        "q-1-option-2": "B) Zat Besi",
+        "q-1-option-3": "C) Asam Folat",
+        "q-1-option-4": "D) Asam Lemak Omega-3",
+        "q-1-answer": "C) Asam Folat",
+        "q-1-pre-answer": "Jawaban yang benar adalah ",
+        "q-1-post-answer": "Asam folat sangat penting untuk perkembangan janin, terutama pada tahap awal kehamilan.",
+
+        "q-2-name": "Apa yang harus dibatasi wanita hamil dalam diet mereka untuk mengurangi risiko penyakit bawaan makanan?",
+        "q-2-option-1": "A) Biji-bijian utuh",
+        "q-2-option-2": "B) Makanan laut, daging, dan telur mentah atau setengah matang",
+        "q-2-option-3": "C) Buah dan sayuran",
+        "q-2-option-4": "D) Produk susu",
+        "q-2-answer": "B) Makanan laut, daging, dan telur mentah atau setengah matang",
+        "q-2-pre-answer": "Jawaban yang benar adalah ",
+        "q-2-post-answer": "Makanan ini dapat mengandung bakteri berbahaya dan harus dihindari selama kehamilan.",
+
+        "q-3-name": "Apa sumber kalsium yang baik untuk wanita hamil?",
+        "q-3-option-1": "A) Ayam",
+        "q-3-option-2": "B) Bayam",
+        "q-3-option-3": "C) Keju",
+        "q-3-option-4": "D) Nasi cokelat",
+        "q-3-answer": "C) Keju",
+        "q-3-pre-answer": "Jawaban yang benar adalah ",
+        "q-3-post-answer": "Produk susu, termasuk keju, adalah sumber kalsium yang sangat baik yang penting untuk perkembangan tulang.",
+
+        "q-4-name": "Ikan jenis apa yang harus dihindari wanita hamil karena tingkat merkuri yang tinggi?",
+        "q-4-option-1": "A) Salmon",
+        "q-4-option-2": "B) Sarden",
+        "q-4-option-3": "C) Ikan Pedang",
+        "q-4-option-4": "D) Trout",
+        "q-4-answer": "C) Ikan Pedang",
+        "q-4-pre-answer": "Jawaban yang benar adalah ",
+        "q-4-post-answer": "Ikan pedang dan ikan lain yang mengandung merkuri tinggi harus dihindari selama kehamilan.",
+
+        "q-5-name": "Berapa batas harian yang direkomendasikan untuk asupan kafein selama kehamilan?",
+        "q-5-option-1": "A) 100 mg",
+        "q-5-option-2": "B) 200 mg",
+        "q-5-option-3": "C) 300 mg",
+        "q-5-option-4": "D) 400 mg",
+        "q-5-answer": "B) 200 mg",
+        "q-5-pre-answer": "Jawaban yang benar adalah ",
+        "q-5-post-answer": "Wanita hamil harus membatasi asupan kafein hingga kurang dari 200 mg per hari untuk memastikan keamanan bagi bayi."
+      },
+
+      "more-details": "Detail Lebih Lanjut...",
+      "prepage-btn": "Bab Sebelumnya",
+      "nextpage-btn": "Bab Berikutnya"
     },
 
     "card-5": {
-      "module-name": "",
-      "module-desc": "",
+      "module-name": "5. Olahraga Prenatal",
+      "module-desc": "Hai mama! Tetap aktif selama kehamilan tidak hanya tentang menjaga kebugaran—ini adalah cara yang luar biasa untuk mempersiapkan tubuh Anda menghadapi perubahan yang akan datang, menjaga energi Anda tetap tinggi, dan bahkan membantu dalam persalinan. Kategori ini memastikan Anda merasa kuat, sehat, dan berdaya sepanjang setiap tahap kehamilan Anda. Dari rutinitas olahraga yang aman hingga tips mengelola ketidaknyamanan, kami siap membantu Anda!",
 
-      "topic-1-name": "",
-      "topic-1-desc": {},
-
-      "topic-2-name": "",
-      "topic-2-desc": {},
-
-      "topic-3-name": "",
-      "topic-3-desc": {},
-
-      "topic-4-name": "",
-      "topic-4-desc": {},
-
-      "quiz": {
-        "side-1": "",
-        "size-2": "",
-        "size-3": "",
-        "size-4": "",
-        "size-5": "",
-
-        "q-1-name": "",
-        "q-1-option-1": "",
-        "q-1-option-2": "",
-        "q-1-option-3": "",
-        "q-1-option-4": "",
-        "q-1-answer": "",
-        "q-1-pre-answer": "",
-        "q-1-post-answer": "",
-
-        "q-2-name": "",
-        "q-2-option-1": "",
-        "q-2-option-2": "",
-        "q-2-option-3": "",
-        "q-2-option-4": "",
-        "q-2-answer": "",
-        "q-2-pre-answer": "",
-        "q-2-post-answer": "",
-
-        "q-3-name": "",
-        "q-3-option-1": "",
-        "q-3-option-2": "",
-        "q-3-option-3": "",
-        "q-3-option-4": "",
-        "q-3-answer": "",
-        "q-3-pre-answer": "",
-        "q-3-post-answer": "",
-
-        "q-4-name": "",
-        "q-4-option-1": "",
-        "q-4-option-2": "",
-        "q-4-option-3": "",
-        "q-4-option-4": "",
-        "q-4-answer": "",
-        "q-4-pre-answer": "",
-        "q-4-post-answer": "",
-
-        "q-5-name": "",
-        "q-5-option-1": "",
-        "q-5-option-2": "",
-        "q-5-option-3": "",
-        "q-5-option-4": "",
-        "q-5-answer": "",
-        "q-5-pre-answer": "",
-        "q-5-post-answer": "",
-
-        "answer-correct": "",
-        "answer-incorrect": "",
-        "submit-btn": "",
-        "next-btn": ""
+      "topic-1-name": "5.1 Mengapa Olahraga Prenatal Penting",
+      "topic-1-desc": {
+        "text-1": "Olahraga prenatal sangat bermanfaat bagi Anda dan bayi Anda. Ini meningkatkan energi, meredakan nyeri, mempersiapkan tubuh Anda untuk persalinan dengan memperkuat otot dan meningkatkan fleksibilitas, mendukung kesehatan bayi Anda melalui sirkulasi darah yang lebih baik, dan mengurangi risiko komplikasi seperti diabetes gestasional dan preeklampsia. Tetap aktif adalah salah satu hal terbaik yang bisa Anda lakukan selama kehamilan.",
+        "text-2": "Tip Cepat: Usahakan sekitar 30 menit olahraga ringan setiap hari seperti berjalan kaki atau yoga prenatal, tetapi selalu dengarkan tubuh Anda. Jika Anda merasa lelah, tidak apa-apa untuk beristirahat! Jika Anda ingin mengetahui lebih banyak tentang olahraga prenatal, klik di sini ",
+        "nav-1": "(tautan ke olahraga)."
       },
 
-      "more-details": "More Details...",
-      "prepage-btn": "",
-      "nextpage-btn": ""
+      "topic-2-name": "5.2 Olahraga Aman untuk Setiap Trimester",
+      "topic-2-desc": {
+        "text-1": "• Trimester Pertama (Minggu 1-12): Fokus pada kardio ringan seperti berjalan kaki dan berenang, latihan kekuatan ringan untuk lengan dan kaki dengan beban kecil, dan peregangan lembut atau yoga prenatal. Bergerak perlahan dan kendalikan gerakan, terutama jika merasa lelah atau mual.",
+        "text-2": "• Trimester Kedua (Minggu 13-28): Ini adalah waktu terbaik untuk berolahraga karena banyak ibu merasa lebih energik. Gabungkan aerobik low-impact, Pilates yang dimodifikasi, dan latihan resistensi dengan tali. Fokus pada membangun kekuatan dan menjaga postur yang baik saat perut Anda tumbuh. Hindari berbaring telentang.",
+        "text-3": "• Trimester Ketiga (Minggu 29-40): Tetap berpegang pada aktivitas low-impact seperti yoga prenatal, latihan duduk, dan peregangan lembut. Tambahkan latihan dasar panggul seperti Kegel dan kemiringan panggul untuk mempersiapkan persalinan. Kardio ringan, seperti berenang atau jalan santai, dianjurkan. Waspadai keseimbangan saat pusat gravitasi Anda bergeser."
+      },
+
+      "topic-3-name": "5.3 Latihan untuk Mempersiapkan Persalinan",
+      "topic-3-desc": {
+        "text-1": "• Squat: Perkuat kaki dan dasar panggul, otot-otot penting untuk persalinan. Berdirilah dengan kaki selebar bahu, jongkok seperti duduk di kursi, tahan beberapa detik, lalu berdiri kembali.",
+        "text-2": "• Latihan Kegel: Perkuat otot dasar panggul, membantu dalam mendorong saat persalinan dan mencegah inkontinensia. Kencangkan otot yang digunakan untuk menghentikan aliran urin, tahan selama 5 detik, lalu lepaskan. Lakukan 10 repetisi, 3 kali sehari.",
+        "text-3": "• Peregangan Cat-Cow: Meredakan nyeri punggung bawah dan meningkatkan fleksibilitas tulang belakang. Dengan posisi tangan dan lutut, lengkungkan punggung Anda ke atas seperti kucing, lalu turunkan, biarkan perut Anda jatuh ke arah lantai."
+      },
+
+      "topic-4-name": "5.4 Keselamatan Selalu Diutamakan!",
+      "topic-4-desc": {
+        "text-1": "Keselamatan sangat penting selama kehamilan, jadi selalu dengarkan tubuh Anda—jika Anda merasa lelah, pusing, atau tidak nyaman, istirahatlah. Hindari aktivitas berintensitas tinggi seperti berlari atau melompat, berbaring telentang setelah trimester pertama, dan latihan yang memerlukan menahan napas. Tetap terhidrasi dengan minum banyak air sebelum, selama, dan setelah berolahraga. Hentikan segera jika Anda mengalami pusing, sesak napas yang parah, sakit kepala, nyeri dada, pembengkakan mendadak, kontraksi, atau penurunan gerakan bayi. Kesejahteraan Anda dan kesehatan bayi Anda adalah prioritas utama, jadi berolahragalah dengan hati-hati."
+      },
+
+      "quiz": {
+        "topic-5-name": "5.5 Uji Pengetahuan Anda!",
+        "desc": "Coba pertanyaan di bawah ini untuk menguji pemahaman Anda tentang konten di atas.",
+
+        "side": "Pertanyaan",
+
+        "q-1-name": "Manakah dari berikut ini yang merupakan manfaat olahraga prenatal?",
+        "q-1-option-1": "A) Menyebabkan persalinan prematur",
+        "q-1-option-2": "B) Mengurangi nyeri punggung dan meningkatkan suasana hati",
+        "q-1-option-3": "C) Menyebabkan dehidrasi",
+        "q-1-option-4": "D) Meningkatkan risiko komplikasi",
+        "q-1-answer": "B) Mengurangi nyeri punggung dan meningkatkan suasana hati",
+        "q-1-pre-answer": "Jawaban yang benar adalah ",
+        "q-1-post-answer": "Olahraga prenatal membantu mengurangi nyeri punggung, meningkatkan suasana hati, dan meningkatkan kesejahteraan secara keseluruhan selama kehamilan.",
+
+        "q-2-name": "Pada trimester mana yang terbaik untuk fokus pada latihan duduk dan peregangan lembut?",
+        "q-2-option-1": "A) Trimester pertama",
+        "q-2-option-2": "B) Trimester kedua",
+        "q-2-option-3": "C) Trimester ketiga",
+        "q-2-option-4": "D) Pasca persalinan",
+        "q-2-answer": "C) Trimester ketiga",
+        "q-2-pre-answer": "Jawaban yang benar adalah ",
+        "q-2-post-answer": "Trimester ketiga adalah waktu yang ideal untuk fokus pada latihan lembut dan peregangan untuk menyesuaikan perubahan tubuh.",
+
+        "q-3-name": "Apa cara terbaik untuk memperkuat otot dasar panggul Anda?",
+        "q-3-option-1": "A) Jumping jacks",
+        "q-3-option-2": "B) Latihan Kegel",
+        "q-3-option-3": "C) Crunches",
+        "q-3-option-4": "D) Angkat beban berat",
+        "q-3-answer": "B) Latihan Kegel",
+        "q-3-pre-answer": "Jawaban yang benar adalah ",
+        "q-3-post-answer": "Latihan Kegel dirancang khusus untuk memperkuat otot dasar panggul, yang penting selama kehamilan.",
+
+        "q-4-name": "Jenis latihan apa yang harus dihindari setelah trimester pertama?",
+        "q-4-option-1": "A) Berjalan kaki",
+        "q-4-option-2": "B) Berbaring telentang",
+        "q-4-option-3": "C) Yoga prenatal",
+        "q-4-option-4": "D) Squat",
+        "q-4-answer": "B) Berbaring telentang",
+        "q-4-pre-answer": "Jawaban yang benar adalah ",
+        "q-4-post-answer": "Setelah trimester pertama, berbaring telentang harus dihindari karena dapat mengurangi aliran darah ke bayi.",
+
+        "q-5-name": "Aktivitas mana yang aman untuk trimester pertama?",
+        "q-5-option-1": "A) Latihan interval intensitas tinggi",
+        "q-5-option-2": "B) Yoga lembut",
+        "q-5-option-3": "C) Lari jarak jauh",
+        "q-5-option-4": "D) Angkat beban berat",
+        "q-5-answer": "B) Yoga lembut",
+        "q-5-pre-answer": "Jawaban yang benar adalah ",
+        "q-5-post-answer": "Yoga lembut adalah aktivitas yang aman dan bermanfaat selama trimester pertama untuk meningkatkan fleksibilitas dan mengurangi stres."
+      },
+
+      "more-details": "Detail Lebih Lanjut...",
+      "prepage-btn": "Bab Sebelumnya",
+      "nextpage-btn": "Bab Berikutnya"
     },
 
     "card-6": {
-      "module-name": "",
-      "module-desc": "",
+      "module-name": "6. Olahraga Pasca Melahirkan",
+      "module-desc": "Selamat, mama! Masa pasca melahirkan adalah tentang pemulihan, membangun kembali, dan menyambung kembali dengan tubuh Anda. Mari kembali ke gerakan dengan fokus pada latihan lembut yang mendukung perjalanan penyembuhan Anda.",
 
-      "topic-1-name": "",
-      "topic-1-desc": {},
-
-      "topic-2-name": "",
-      "topic-2-desc": {},
-
-      "quiz": {
-        "side-1": "",
-        "size-2": "",
-        "size-3": "",
-        "size-4": "",
-        "size-5": "",
-
-        "q-1-name": "",
-        "q-1-option-1": "",
-        "q-1-option-2": "",
-        "q-1-option-3": "",
-        "q-1-option-4": "",
-        "q-1-answer": "",
-        "q-1-pre-answer": "",
-        "q-1-post-answer": "",
-
-        "q-2-name": "",
-        "q-2-option-1": "",
-        "q-2-option-2": "",
-        "q-2-option-3": "",
-        "q-2-option-4": "",
-        "q-2-answer": "",
-        "q-2-pre-answer": "",
-        "q-2-post-answer": "",
-
-        "q-3-name": "",
-        "q-3-option-1": "",
-        "q-3-option-2": "",
-        "q-3-option-3": "",
-        "q-3-option-4": "",
-        "q-3-answer": "",
-        "q-3-pre-answer": "",
-        "q-3-post-answer": "",
-
-        "q-4-name": "",
-        "q-4-option-1": "",
-        "q-4-option-2": "",
-        "q-4-option-3": "",
-        "q-4-option-4": "",
-        "q-4-answer": "",
-        "q-4-pre-answer": "",
-        "q-4-post-answer": "",
-
-        "q-5-name": "",
-        "q-5-option-1": "",
-        "q-5-option-2": "",
-        "q-5-option-3": "",
-        "q-5-option-4": "",
-        "q-5-answer": "",
-        "q-5-pre-answer": "",
-        "q-5-post-answer": "",
-
-        "answer-correct": "",
-        "answer-incorrect": "",
-        "submit-btn": "",
-        "next-btn": ""
+      "topic-1-name": "6.1 Enam Minggu Pertama: Gerakan Penyembuhan Lembut",
+      "topic-1-desc": {
+        "text-1": "Selama enam minggu pertama pasca melahirkan, istirahat sangat penting, tetapi gerakan lembut dapat membantu pemulihan.",
+        "text-2": "Pernapasan perut dalam",
+        "text-3": " membantu mengaktifkan kembali otot inti dan mengurangi ketegangan dengan menarik napas dalam-dalam secara perlahan sambil duduk dengan nyaman.",
+        "text-4": "Kemiringan panggul",
+        "text-5": " meredakan ketegangan punggung bawah dan mulai memperkuat inti dengan perlahan memiringkan panggul ke atas sambil berbaring telentang dengan lutut ditekuk.",
+        "text-6": "Jalan kaki ringan",
+        "text-7": " meningkatkan sirkulasi dan suasana hati, dimulai dengan jalan kaki singkat selama 5-10 menit."
       },
 
-      "more-details": "More Details...",
-      "prepage-btn": "",
-      "nextpage-btn": ""
+      "topic-2-name": "6.2 Membangun Kembali Kekuatan Inti dan Dasar Panggul (6-12 Minggu)",
+      "topic-2-desc": {
+        "text-1": "Antara 6-12 minggu pasca melahirkan, dengan persetujuan dokter Anda, fokuslah untuk membangun kembali kekuatan inti.",
+        "text-2": "Geser tumit",
+        "text-3": " membantu menghubungkan kembali otot inti dan memperkuat perut bagian bawah dengan menggeser satu tumit menjauh dan kembali sambil berbaring telentang dengan satu lutut ditekuk.",
+        "text-4": "Jembatan",
+        "text-5": " mengaktifkan otot glute dan inti dengan mengangkat pinggul dari lantai sambil berbaring telentang dengan lutut ditekuk."
+      },
+
+      "quiz": {
+        "topic-3-name": "6.3 Uji Pengetahuan Anda!",
+        "desc": "Coba pertanyaan di bawah ini untuk menguji pemahaman Anda tentang konten di atas.",
+
+        "side": "Pertanyaan",
+
+        "q-1-name": "Latihan mana yang membantu menghubungkan kembali otot inti Anda pasca melahirkan?",
+        "q-1-option-1": "A) Geser tumit",
+        "q-1-option-2": "B) Jump squats",
+        "q-1-option-3": "C) Sit-up",
+        "q-1-option-4": "D) Push-up",
+        "q-1-answer": "A) Geser tumit",
+        "q-1-pre-answer": "Jawaban yang benar adalah ",
+        "q-1-post-answer": "Geser tumit adalah gerakan lembut yang membantu menghubungkan kembali dan memperkuat otot inti setelah melahirkan.",
+
+        "q-2-name": "Kapan biasanya aman untuk memulai latihan ringan seperti jalan kaki setelah persalinan normal?",
+        "q-2-option-1": "A) Segera",
+        "q-2-option-2": "B) Setelah 2 minggu",
+        "q-2-option-3": "C) Setelah 4-6 minggu, dengan persetujuan dokter",
+        "q-2-option-4": "D) Setelah 3 bulan",
+        "q-2-answer": "C) Setelah 4-6 minggu, dengan persetujuan dokter",
+        "q-2-pre-answer": "Jawaban yang benar adalah ",
+        "q-2-post-answer": "Setelah persalinan normal, umumnya aman untuk memulai latihan ringan seperti jalan kaki setelah 4-6 minggu, dengan persetujuan dokter.",
+
+        "q-3-name": "Apa latihan terbaik untuk memulai membangun kembali kekuatan inti Anda?",
+        "q-3-option-1": "A) Sit-up",
+        "q-3-option-2": "B) Geser tumit",
+        "q-3-option-3": "C) Jumping jacks",
+        "q-3-option-4": "D) Lari",
+        "q-3-answer": "B) Geser tumit",
+        "q-3-pre-answer": "Jawaban yang benar adalah ",
+        "q-3-post-answer": "Geser tumit adalah latihan lembut dan efektif untuk mulai membangun kembali kekuatan inti pasca melahirkan.",
+
+        "q-4-name": "Apa yang harus Anda lakukan jika merasa sakit atau melihat peningkatan pendarahan selama latihan?",
+        "q-4-option-1": "A) Terus berusaha",
+        "q-4-option-2": "B) Perlambat dan konsultasikan dengan dokter Anda",
+        "q-4-option-3": "C) Tingkatkan intensitas",
+        "q-4-option-4": "D) Minum lebih banyak air",
+        "q-4-answer": "B) Perlambat dan konsultasikan dengan dokter Anda",
+        "q-4-pre-answer": "Jawaban yang benar adalah ",
+        "q-4-post-answer": "Jika Anda mengalami rasa sakit atau peningkatan pendarahan selama latihan, penting untuk memperlambat dan berkonsultasi dengan dokter Anda.",
+
+        "q-5-name": "Latihan mana yang sebaiknya dihindari selama pemulihan awal pasca melahirkan?",
+        "q-5-option-1": "A) Kemiringan panggul",
+        "q-5-option-2": "B) Plank",
+        "q-5-option-3": "C) Pernapasan perut dalam",
+        "q-5-option-4": "D) Jalan kaki ringan",
+        "q-5-answer": "B) Plank",
+        "q-5-pre-answer": "Jawaban yang benar adalah ",
+        "q-5-post-answer": "Plank sebaiknya dihindari selama pemulihan awal pasca melahirkan karena memberi tekanan pada otot perut yang membutuhkan waktu untuk sembuh."
+      },
+
+      "more-details": "Detail Lebih Lanjut...",
+      "prepage-btn": "Bab Sebelumnya",
+      "nextpage-btn": "Setelah Anda menyelesaikan bagian pendidikan, mari pergi ke Halaman Penilaian Risiko di sini"
+    },
+    "answer-correct": "Benar!",
+    "answer-incorrect": "Salah!",
+    "submit-btn": "Kirim",
+    "next-btn": "Pertanyaan Selanjutnya"
+  },
+
+  "riskassessment": {
+    "point1-bold": "Jawab",
+    "point1": "pertanyaan penilaian risiko",
+    "point2-bold": "Jawab",
+    "point2-1": "Dapatkan hasilnya",
+    "point2-2": "segera setelah Anda mengirim",
+    "title": "Penilaian Risiko Diabetes",
+    "Disclaimer": "Peringatan",
+    "text1": "Informasi yang diberikan dalam penilaian risiko ini didasarkan pada penelitian statistik yang dilakukan oleh.",
+    "text2-text": "Anda dapat melihat laporan lengkap di AIHW - Determinan Sosial Kesehatan di antara Orang Australia dengan Latar Belakang Budaya dan Bahasa yang Beragam. Alat ini dimaksudkan untuk meningkatkan kesadaran dan memberikan wawasan umum. Ini bukan pengganti nasihat, diagnosis, atau perawatan medis profesional. Silakan konsultasikan dengan profesional kesehatan yang berkualifikasi untuk masalah atau keputusan medis pribadi.",
+    "bule-text": "Institut Kesehatan dan Kesejahteraan Australia (AIHW)",
+    "Direct-causes": "Penyebab Langsung",
+    "text2": "Penyebab langsung seperti IMT, aktivitas fisik, riwayat keluarga, merokok, dan konsumsi alkohol secara signifikan mempengaruhi risiko diabetes. IMT yang tinggi dan aktivitas fisik yang rendah secara langsung mempengaruhi sensitivitas insulin, sedangkan riwayat keluarga diabetes meningkatkan kerentanan genetik. Merokok dan konsumsi alkohol berlebihan mengganggu kesehatan metabolik, sehingga meningkatkan risiko.",
+    "card1": {
+      "title": "Berapa tinggi dan berat badan Anda?",
+      "Height": "Tinggi",
+      "Weight": "Berat",
+      "cm": "cm",
+      "kg": "kg",
+      "tips": "IMT yang lebih tinggi, terutama obesitas, meningkatkan risiko diabetes dengan berkontribusi pada resistensi insulin."
+    },
+    "card2": {
+      "title": "Seberapa sering Anda berolahraga?",
+      "roadio1": "Aktif (≥ 150 menit/minggu)",
+      "roadio2": "Cukup aktif (75–149 menit/minggu)",
+      "roadio3": "Tidak aktif (< 75 menit/minggu)",
+      "tips": "Aktivitas fisik yang teratur menurunkan risiko diabetes dengan meningkatkan sensitivitas insulin dan membantu pengelolaan berat badan."
+    },
+    "card3": {
+      "title": "Apakah Anda memiliki riwayat keluarga diabetes (misalnya, orang tua atau saudara kandung dengan diabetes)?",
+      "roadio1": "Tidak ada riwayat keluarga",
+      "roadio2": "Satu orang tua dengan diabetes",
+      "roadio3": "Kedua orang tua dengan diabetes",
+      "tips": "Riwayat keluarga diabetes meningkatkan kemungkinan mengembangkan kondisi tersebut karena faktor genetik."
+    },
+    "card4": {
+      "title": "Seberapa sering Anda merokok?",
+      "roadio1": "Tidak pernah merokok",
+      "roadio2": "Mantan perokok",
+      "roadio3": "Perokok saat ini",
+      "tips": "Merokok meningkatkan risiko diabetes dengan berkontribusi pada peradangan, resistensi insulin, dan masalah metabolik lainnya."
+    },
+    "card5": {
+      "title": "Seberapa sering Anda minum alkohol?",
+      "roadio1": "Tidak pernah minum",
+      "roadio2": "Peminum sedang",
+      "roadio3": "Peminum berat",
+      "tips": "Konsumsi alkohol yang berlebihan dapat menyebabkan peningkatan berat badan dan gangguan pengaturan insulin, meningkatkan risiko diabetes."
+    },
+    "SocioeconomicFactors": "Faktor Sosioekonomi",
+    "SocioeconomicText": "Faktor sosioekonomi seperti Negara Kelahiran dan Kelompok Usia mempengaruhi risiko diabetes dengan mempengaruhi akses ke layanan kesehatan, kebiasaan gaya hidup, dan kecenderungan genetik. Migran dari wilayah tertentu dan kelompok usia yang lebih tua mungkin menghadapi risiko diabetes yang lebih tinggi karena faktor-faktor ini.",
+    "card6": {
+      "WhatisyourCountryofbirth": "Apa negara kelahiran Anda?",
+      "tips": "Mempengaruhi risiko diabetes karena kecenderungan genetik dan akses layanan kesehatan yang bervariasi di berbagai wilayah."
+    },
+    "card7": {
+      "Whichagegroupdoyoubelongsto": "Anda termasuk dalam kelompok usia mana?",
+      "tips": "Kelompok usia yang lebih tua memiliki risiko diabetes yang lebih tinggi karena perubahan metabolisme dan faktor gaya hidup."
+    },
+    "Submit": "Kirim",
+    "ResetAnswers": "Atur Ulang Jawaban",
+    "AssessmentResult": "Hasil Penilaian",
+    "YourCountryofBirth": "Negara Kelahiran Anda",
+    "row": "Termasuk dalam wilayah. Risiko diabetes di sini dibandingkan dengan rata-rata Australia",
+    "YourDiabetesRisk": "Risiko Diabetes Anda",
+    "MODERATERISK": "RISIKO SEDANG",
+    "YourScore": "Skor Anda",
+    "MaincontributingFacto": "Faktor Utama yang Berkontribusi",
+    "Note": "Catatan",
+    "row2-1": "Skor penilaian ini didasarkan pada",
+    "row2-2": " Institut Kesehatan dan Kesejahteraan Australia (AIHW)",
+    "What'sNext": "Langkah Selanjutnya",
+    "row3": "Pelajari Lebih Lanjut Tentang Diabetes dan Kehamilan: Temukan informasi penting tentang pengelolaan diabetes selama kehamilan di halaman edukasi kami untuk tetap terinformasi dan proaktif.",
+    "educationpage": "halaman edukasi",
+    "row4": "Pelajari lebih lanjut tentang pentingnya dan efek kunjungan antenatal selama kehamilan di sini",
+    "row5": "Jelajahi lebih lanjut tentang saran nutrisi yang sesuai untuk kehamilan Anda di sini",
+    "row6": "Jelajahi rekomendasi olahraga dan aktivitas fisik untuk pengalaman kehamilan terbaik Anda di sini"
+  },
+
+  "NutritionAnalysis": {
+    "NutritionAnalysis": "Analisis Nutrisi",
+    "Recommendation": "Rekomendasi",
+    "Recipes": "Resep",
+    "FoodNutritionAnalysis": "Analisis Nutrisi Makanan",
+    "text1": "Di sini Anda dapat menghitung nutrisi yang terkandung dalam berbagai jenis dan jumlah makanan. Anda dapat menggunakan kotak teks untuk memasukkan, seperti '2 cangkir kopi', dan Anda dapat menambahkan berbagai makanan melalui jeda baris. Anda juga dapat memasukkan dan memilih jenis dan jumlah makanan dengan input terarah. Ketika Anda mengklik analisis, Anda dapat melihat tabel nutrisi untuk semua makanan Anda yang digabungkan.",
+    "GuidedInput": "Input Terarah",
+    "FreeText": "Teks Bebas",
+    "Qty": "Jumlah",
+    "Unit": "Unit",
+    "Name": "Nama",
+    "Calories": "Kalori",
+    "Weight": "Berat",
+    "IngredientName": "Nama Bahan",
+    "Ounce": "Ons",
+    "Gram": "Gram",
+    "Pound": "Pound",
+    "Kilogram": "Kilogram",
+    "Pinch": "Sejumput",
+    "Liter": "Liter",
+    "Fluidounce": "Ons Cairan",
+    "Pint": "Pint",
+    "Quart": "Kuart",
+    "Milliliter": "Mililiter",
+    "Drop": "Tetes",
+    "Cup": "Cangkir",
+    "Tablespoon": "Sendok Makan",
+    "Teaspoon": "Sendok Teh",
+    "AddAnotherItem": "Tambahkan Item Lain",
+    "Analyze": "Analisis",
+    "clear": "Bersihkan",
+    "NutritionFacts": "Fakta Nutrisi",
+    "AmountPerServing": "Jumlah Per Porsi",
+    "FoodRecommendation": "Rekomendasi Makanan",
+    "text2": "Jelajahi makanan yang direkomendasikan atau tidak direkomendasikan untuk kehamilan.",
+    "Recommended": "Direkomendasikan",
+    "NotRecommended": "Tidak Direkomendasikan",
+    "category": "Kategori",
+    "Choosethefoodcategory": "Pilih kategori makanan",
+    "DailyValue": "Nilai Harian",
+    "TotalFat": "Total Lemak",
+    "SaturatedFat": "Lemak Jenuh",
+    "TransFat": "Lemak Trans",
+    "Cholesterol": "Kolesterol",
+    "Sodium": "Natrium",
+    "TotalCarbohydrate": "Total Karbohidrat",
+    "DietaryFiber": "Serat Makanan",
+    "TotalSugars": "Total Gula",
+    "Includes-AddedSugars": "Termasuk - Gula Tambahan",
+    "Protein": "Protein",
+    "VitaminD": "Vitamin D",
+    "Calcium": "Kalsium",
+    "Iron": "Zat Besi",
+    "Potassium": "Kalium",
+    "PercentDailyValuesarebasedona2000caloriediet": "Nilai Harian Persen didasarkan pada diet 2000 kalori",
+    "Grains": "Biji-bijian",
+    "Meat": "Daging",
+    "Dairy": "Produk Susu",
+    "Fish": "Ikan",
+    "Vegetables": "Sayuran",
+    "Fruits": "Buah-buahan",
+    "Beverages": "Minuman",
+    "Processed": "Olahan",
+    "FoodList": "Daftar Makanan",
+    "Listoffooditemsbasedonyourselection": "Daftar item makanan berdasarkan pilihan Anda"
+  },
+
+  "recipe": {
+    "NutritionAnalysis": "Analisis Nutrisi",
+    "Recommendation": "Rekomendasi",
+    "Recipes": "Resep",
+    "FoodRecipes": "Resep Makanan",
+    "text": "Jelajahi resep makanan berdasarkan preferensi Anda sendiri dan buatlah sebagai rencana makan terbaik Anda.",
+    "point-1-bold": "Jelajahi",
+    "point-1": "resep makanan",
+    "point-2-bold": "Pilih",
+    "point-2": "resep yang Anda sukai",
+    "point-3-bold": "Jadwalkan",
+    "point-3": "rencana makan Anda",
+    "text1": "Cari berdasarkan kategori",
+    "BREAKFAST": "SARAPAN",
+    "LUNCH": "MAKAN SIANG",
+    "TEATIME": "WAKTU TEH",
+    "DINNER": "MAKAN MALAM",
+    "PersonalizedSchedule": "Jadwal Pribadi",
+    "BeefRoast": "Daging Sapi Panggang",
+    "kcal": "kcal",
+    "PROTEIN": "PROTEIN",
+    "FAT": "LEMAK",
+    "CARB": "KARBOHIDRAT",
+    "text2": "Atau cari berdasarkan nama",
+    "BREAKFASTRECOMMENDATIONS": "REKOMENDASI SARAPAN",
+    "Cholesterol": "Kolesterol",
+    "Calcium": "Kalsium",
+    "Potassium": "Kalium",
+    "Protein": "Protein",
+    "Sodium": "Natrium",
+    "Magnesium": "Magnesium",
+    "Iron": "Zat Besi"
+  },
+
+  "exercise": {
+    "overview-title": "Latihan Kehamilan",
+
+    "questionnaire-access": "Tidak Yakin Harus Mulai dari Mana? Ikuti Kuis Latihan Kami!",
+    "card-1-desc": "Latihan Aerobik Low-Impact",
+    "card-2-desc": "Yoga Prenatal",
+    "card-3-desc": "Pilates Prenatal",
+    "card-4-desc": "Latihan Berbasis Air",
+    "card-5-desc": "Latihan Peregangan",
+    "card-6-desc": "Latihan Kekuatan Prenatal",
+    "card-7-desc": "Latihan Dasar Panggul",
+    "card-8-desc": "Tarian Prenatal",
+
+    "card-1": {
+      "card-title": "Latihan Aerobik Low-Impact",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Fase Pasca Melahirkan Awal (0-6 Minggu)",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Latihan ringan yang meningkatkan kesehatan kardiovaskular dan membantu pemulihan sambil meminimalkan tekanan pada tubuh. Ideal untuk ibu baru yang kembali beraktivitas fisik.",
+
+      "exe-1-title": "Jalan Kaki Ringan: ",
+      "exe-1-content": "Melibatkan sistem kardiovaskular dengan dampak minimal, membantu pemulihan dan meningkatkan tingkat energi.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Mulailah dengan berjalan selama 10-15 menit, secara bertahap tingkatkan durasinya seiring tubuh Anda menyesuaikan.",
+      "exe-1-how-content-2": "Berjalan dengan kecepatan yang nyaman, fokus pada postur dengan menjaga punggung tetap lurus dan kepala terangkat.",
+      "exe-1-how-content-3": "Ayunkan lengan Anda perlahan saat berjalan untuk meningkatkan sirkulasi.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Merangsang sirkulasi, mengurangi stres, meningkatkan suasana hati, dan meningkatkan tingkat energi.",
+
+      "exe-2-title": "Peregangan Maju Duduk: ",
+      "exe-2-content": "Meregangkan punggung bawah, paha belakang, dan betis, mengurangi nyeri punggung.",
+      "exe-2-how-title": "Cara melakukannya:",
+      "exe-2-how-content-1": "Duduk di lantai dengan kaki lurus di depan Anda.",
+      "exe-2-how-content-2": "Jaga punggung tetap lurus dan tarik napas dalam-dalam, meraih kedua lengan ke arah jari-jari kaki.",
+      "exe-2-how-content-3": "Perlahan bungkukkan badan dari pinggul, meraih sejauh mungkin tanpa merasa tertekan.",
+      "exe-2-how-content-4": "Tahan posisi ini selama 20-30 detik, lalu lepaskan.",
+      "exe-2-ben-title": "Manfaat: ",
+      "exe-2-ben-content": "Meregangkan punggung bawah, paha belakang, dan betis, membantu meredakan nyeri punggung dan meningkatkan fleksibilitas.",
+
+      "exe-3-title": "Peregangan Pembuka Dada: ",
+      "exe-3-content": "Meregangkan dada dan bahu untuk meningkatkan postur.",
+      "exe-3-how-title": "Cara melakukannya:",
+      "exe-3-how-content-1": "Berdirilah dengan kaki selebar bahu.",
+      "exe-3-how-content-2": "Genggam tangan Anda di belakang punggung, jaga lengan tetap lurus.",
+      "exe-3-how-content-3": "Angkat tangan Anda perlahan di belakang Anda sambil membuka dada dan bahu.",
+      "exe-3-how-content-4": "Tahan peregangan selama 15-30 detik, lalu lepaskan.",
+      "exe-3-ben-title": "Manfaat: ",
+      "exe-3-ben-content": "Meregangkan dada dan bahu, meningkatkan postur dan meredakan ketegangan akibat menyusui atau menggendong bayi.",
+
+      "exe-4-title": "Peregangan Fleksor Panggul: ",
+      "exe-4-content": "Menargetkan otot panggul, mengurangi ketegangan, dan meningkatkan keseimbangan panggul.",
+      "exe-4-how-title": "Cara melakukannya:",
+      "exe-4-how-content-1": "Mulailah dalam posisi lunge dengan kaki kanan di depan dan lutut kiri di lantai.",
+      "exe-4-how-content-2": "Dorong panggul Anda ke depan perlahan hingga Anda merasakan peregangan pada fleksor panggul kiri.",
+      "exe-4-how-content-3": "Tahan posisi ini selama 20-30 detik, lalu ganti sisi.",
+      "exe-4-ben-title": "Manfaat: ",
+      "exe-4-ben-content": "Meregangkan otot panggul yang tegang, meningkatkan keseimbangan panggul, dan membantu mengurangi ketidaknyamanan punggung bawah.",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
+    },
+
+    "card-2": {
+      "card-title": "Yoga Prenatal",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Setelah 6 Minggu hingga 12-16 Minggu",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Fokus pada peregangan dan pose lembut yang meningkatkan fleksibilitas, kekuatan, dan relaksasi selama kehamilan.",
+
+      "exe-1-title": "Pose Cat-Cow: ",
+      "exe-1-content": "Meregangkan dan memperkuat tulang belakang, membantu meredakan nyeri punggung.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Mulailah dengan posisi merangkak, dengan pergelangan tangan di bawah bahu dan lutut di bawah pinggul.",
+      "exe-1-how-content-2": "Saat menghirup, lengkungkan punggung Anda (pose sapi), angkat kepala dan tulang ekor ke arah langit-langit.",
+      "exe-1-how-content-3": "Saat menghembuskan napas, bulatkan punggung Anda (pose kucing), masukkan dagu ke dada dan tarik perut ke arah tulang belakang.",
+      "exe-1-how-content-4": "Ulangi selama 5-10 kali napas, bergerak sesuai dengan napas Anda.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Meregangkan dan memperkuat tulang belakang, meningkatkan fleksibilitas, dan membantu meredakan nyeri punggung, yang sering terjadi selama kehamilan.",
+
+      "exe-2-title": "Pose Sudut Terikat: ",
+      "exe-2-content": "Membuka pinggul dan meregangkan paha untuk meningkatkan fleksibilitas.",
+      "exe-2-how-title": "Cara melakukannya:",
+      "exe-2-how-content-1": "Duduk di lantai dengan kaki lurus di depan Anda.",
+      "exe-2-how-content-2": "Bawa telapak kaki Anda bersama-sama dan biarkan lutut Anda jatuh ke luar, membentuk bentuk berlian dengan kaki Anda.",
+      "exe-2-how-content-3": "Pegang kaki Anda dengan kedua tangan, duduk tegak dengan punggung lurus.",
+      "exe-2-how-content-4": "Tekan lutut ke tanah dengan lembut tanpa memaksakan, tahan pose selama 20-30 detik.",
+      "exe-2-ben-title": "Manfaat: ",
+      "exe-2-ben-content": "Membuka pinggul dan meregangkan paha bagian dalam, meningkatkan fleksibilitas dan mengurangi ketegangan di area panggul.",
+
+      "exe-3-title": "Pose Prajurit II: ",
+      "exe-3-content": "Memperkuat kaki dan meningkatkan keseimbangan, mempersiapkan tubuh untuk persalinan.",
+      "exe-3-how-title": "Cara melakukannya:",
+      "exe-3-how-content-1": "Berdiri dengan kaki selebar 3-4 kaki.",
+      "exe-3-how-content-2": "Putar kaki kanan Anda keluar 90 derajat dan kaki kiri sedikit ke dalam.",
+      "exe-3-how-content-3": "Angkat kedua tangan sejajar dengan lantai, telapak tangan menghadap ke bawah.",
+      "exe-3-how-content-4": "Tekuk lutut kanan Anda sambil menjaga kaki kiri tetap lurus, pastikan lutut kanan tepat di atas pergelangan kaki.",
+      "exe-3-how-content-5": "Tahan pose selama 20-30 detik, lalu ganti sisi.",
+      "exe-3-ben-title": "Manfaat: ",
+      "exe-3-ben-content": "Memperkuat kaki, pinggul, dan inti, sekaligus meningkatkan keseimbangan dan stamina—penting untuk mempersiapkan tubuh untuk persalinan.",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
+    },
+
+    "card-3": {
+      "card-title": "Pilates Prenatal",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Setelah 6 Minggu hingga 12-16 Minggu",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Menggabungkan latihan penguatan inti yang mendukung kebugaran dan stabilitas secara keseluruhan, menjadikannya latihan yang bermanfaat selama kehamilan.",
+
+      "exe-1-title": "Kemiringan Panggul: ",
+      "exe-1-content": "Memperkuat inti dan mendukung punggung bawah, mengurangi ketidaknyamanan terkait kehamilan.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Berbaring telentang dengan lutut ditekuk dan kaki rata di lantai, selebar pinggul.",
+      "exe-1-how-content-2": "Tarik napas, lalu saat menghembuskan napas, miringkan panggul Anda ke atas, tekan punggung bawah ke lantai.",
+      "exe-1-how-content-3": "Tahan selama beberapa detik, lalu kembali ke posisi netral.",
+      "exe-1-how-content-4": "Ulangi 10-15 kali.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Memperkuat inti, mendukung punggung bawah, dan mengurangi ketidaknyamanan terkait kehamilan.",
+
+      "exe-2-title": "Angkat Kaki Samping: ",
+      "exe-2-content": "Meningkatkan stabilitas pinggul dan memperkuat paha luar serta otot glute.",
+      "exe-2-how-title": "Cara melakukannya:",
+      "exe-2-how-content-1": "Berbaring di sisi Anda dengan kaki lurus dan bertumpuk satu sama lain.",
+      "exe-2-how-content-2": "Topang kepala Anda dengan lengan, lalu perlahan angkat kaki bagian atas sambil menjaga inti tetap aktif.",
+      "exe-2-how-content-3": "Turunkan kaki kembali dengan kontrol. Ulangi 10-15 kali di setiap sisi.",
+      "exe-2-ben-title": "Manfaat: ",
+      "exe-2-ben-content": "Meningkatkan stabilitas pinggul, memperkuat paha luar dan otot glute, serta mengurangi tekanan pada punggung bawah.",
+
+      "exe-3-title": "Ekstensi Lengan & Kaki: ",
+      "exe-3-content": "Melibatkan inti, meningkatkan stabilitas, dan memperkuat lengan serta kaki.",
+      "exe-3-how-title": "Cara melakukannya:",
+      "exe-3-how-content-1": "Mulailah dalam posisi merangkak, dengan pergelangan tangan di bawah bahu dan lutut di bawah pinggul.",
+      "exe-3-how-content-2": "Rentangkan lengan kanan Anda ke depan dan kaki kiri ke belakang, jaga pinggul tetap sejajar.",
+      "exe-3-how-content-3": "Tahan selama beberapa detik, lalu kembali ke posisi awal. Ulangi di sisi lain.",
+      "exe-3-how-content-4": "Lakukan 10-12 repetisi.",
+      "exe-3-ben-title": "Manfaat: ",
+      "exe-3-ben-content": "",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
+    },
+
+    "card-4": {
+      "card-title": "Latihan Berbasis Air",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Setelah 6 Minggu hingga 12-16 Minggu",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Menggunakan resistensi air untuk latihan berdampak rendah namun efektif, meningkatkan daya tahan dan kekuatan otot tanpa membebani persendian.",
+
+      "exe-1-title": "Aerobik Air: ",
+      "exe-1-content": "Latihan berdampak rendah yang menggunakan resistensi air untuk meningkatkan daya tahan kardiovaskular dan kekuatan otot.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Berdirilah di air setinggi pinggang dan lakukan serangkaian gerakan seperti berjalan, menendang kaki, atau memutar lengan.",
+      "exe-1-how-content-2": "Manfaatkan resistensi air untuk setiap gerakan, bergerak perlahan dan dengan sengaja.",
+      "exe-1-how-content-3": "Libatkan inti Anda sepanjang latihan untuk menjaga keseimbangan dan kontrol.",
+      "exe-1-how-content-4": "Usahakan untuk berolahraga berdampak rendah selama 20-30 menit di air.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Meningkatkan daya tahan kardiovaskular, membangun kekuatan otot, dan meningkatkan fleksibilitas sendi, semua dengan tekanan minimal pada tubuh.",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
+    },
+
+    "card-5": {
+      "card-title": "Latihan Peregangan",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Fase Pasca Melahirkan Awal (0-6 Minggu)",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Ditujukan untuk meningkatkan fleksibilitas dan mengurangi ketegangan pada kelompok otot utama, peregangan sangat penting untuk kenyamanan selama kehamilan.",
+
+      "exe-1-title": "Peregangan Maju Duduk: ",
+      "exe-1-content": "Meregangkan punggung bawah, paha belakang, dan betis, meredakan nyeri punggung.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Duduk di lantai dengan kaki lurus di depan Anda.",
+      "exe-1-how-content-2": "Perlahan bungkukkan badan dari pinggul, raih kaki atau sejauh yang bisa Anda capai dengan nyaman.",
+      "exe-1-how-content-3": "Tahan selama 20-30 detik, bernapas dalam-dalam saat Anda meregang.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Meregangkan punggung bawah, paha belakang, dan betis, meredakan ketegangan dan nyeri di punggung dan kaki.",
+
+      "exe-2-title": "Peregangan Pembuka Dada: ",
+      "exe-2-content": "Meregangkan dada dan bahu untuk meningkatkan postur.",
+      "exe-2-how-title": "Cara melakukannya:",
+      "exe-2-how-content-1": "Berdiri tegak dengan kaki selebar bahu.",
+      "exe-2-how-content-2": "Genggam tangan Anda di belakang punggung dan angkat tangan Anda perlahan, membuka dada.",
+      "exe-2-how-content-3": "Tahan peregangan selama 20-30 detik, bernapas dalam-dalam.",
+      "exe-2-ben-title": "Manfaat: ",
+      "exe-2-ben-content": "Meregangkan dada dan bahu, meningkatkan postur, dan mengatasi pembungkukan.",
+
+      "exe-3-title": "Peregangan Fleksor Panggul: ",
+      "exe-3-content": "Menargetkan otot panggul, mengurangi ketegangan dan meningkatkan keseimbangan panggul.",
+      "exe-3-how-title": "Cara melakukannya:",
+      "exe-3-how-content-1": "Berlutut di satu lutut dengan kaki lainnya di depan, membentuk sudut 90 derajat dengan kedua kaki.",
+      "exe-3-how-content-2": "Dorong pinggul Anda perlahan ke depan hingga Anda merasakan peregangan di fleksor panggul kaki belakang.",
+      "exe-3-how-content-3": "Tahan selama 20-30 detik, lalu ganti sisi.",
+      "exe-3-ben-title": "Manfaat: ",
+      "exe-3-ben-content": "Menargetkan otot panggul yang tegang, mengurangi ketegangan, dan meningkatkan keseimbangan panggul, membantu mobilitas dan kenyamanan selama kehamilan.",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
+    },
+
+    "card-6": {
+      "card-title": "Latihan Kekuatan Prenatal",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Setelah 6 Minggu hingga 12-16 Minggu",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Berfokus pada membangun kembali kekuatan sambil memastikan pemulihan yang aman, latihan ini membantu menjaga tonus otot dan kebugaran secara keseluruhan.",
+
+      "exe-1-title": "Bicep Curls dengan Beban Ringan: ",
+      "exe-1-content": "Menjaga kekuatan lengan dan bahu dengan beban ringan.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Berdiri dengan kaki selebar pinggul, memegang beban ringan di setiap tangan.",
+      "exe-1-how-content-2": "Jaga siku Anda dekat dengan sisi tubuh dan telapak tangan menghadap ke depan.",
+      "exe-1-how-content-3": "Angkat beban perlahan ke arah bahu Anda, lalu turunkan kembali dengan kontrol.",
+      "exe-1-how-content-4": "Lakukan 10-12 repetisi.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Menjaga kekuatan lengan dan bahu tanpa membuat otot tegang, meningkatkan kebugaran tubuh bagian atas.",
+
+      "exe-2-title": "Push-Up di Dinding: ",
+      "exe-2-content": "Melibatkan otot tubuh bagian atas, membantu menjaga kekuatan dada dan lengan.",
+      "exe-2-how-title": "Cara melakukannya:",
+      "exe-2-how-content-1": "Berdiri menghadap dinding, dengan kaki selebar pinggul dan tangan ditempatkan selebar bahu di dinding.",
+      "exe-2-how-content-2": "Tekuk siku Anda dan condongkan tubuh ke dinding, jaga tubuh Anda tetap lurus.",
+      "exe-2-how-content-3": "Dorong kembali ke posisi awal. Ulangi 10-15 kali.",
+      "exe-2-ben-title": "Manfaat: ",
+      "exe-2-ben-content": "Melibatkan otot tubuh bagian atas, terutama dada dan lengan, sambil memberikan resistensi berdampak rendah.",
+
+      "exe-3-title": "Squat: ",
+      "exe-3-content": "Memperkuat kaki dan glutes sambil mendukung otot panggul, mempersiapkan tubuh untuk persalinan.",
+      "exe-3-how-title": "Cara melakukannya:",
+      "exe-3-how-content-1": "Berdiri dengan kaki sedikit lebih lebar dari bahu dan jari-jari kaki mengarah sedikit ke luar.",
+      "exe-3-how-content-2": "Turunkan tubuh Anda seolah-olah duduk di kursi, menjaga punggung tetap lurus dan lutut di belakang jari kaki.",
+      "exe-3-how-content-3": "Dorong melalui tumit Anda untuk kembali ke posisi berdiri. Ulangi selama 10-12 kali.",
+      "exe-3-ben-title": "Manfaat: ",
+      "exe-3-ben-content": "Memperkuat kaki, glutes, dan otot panggul, memberikan stabilitas dan mempersiapkan tubuh untuk persalinan.",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
+    },
+
+    "card-7": {
+      "card-title": "Latihan Dasar Panggul (Latihan Kegel)",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Fase Pasca Melahirkan Awal (0-6 Minggu)",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Penting untuk memperkuat otot panggul, latihan ini membantu mencegah inkontinensia dan meningkatkan kesehatan panggul secara keseluruhan.",
+
+      "exe-1-title": "Pose Jembatan: ",
+      "exe-1-content": "Melibatkan dasar panggul dan glutes, mendukung kekuatan punggung bawah.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Berbaring telentang dengan lutut ditekuk dan kaki rata di lantai, selebar pinggul.",
+      "exe-1-how-content-2": "Angkat pinggul Anda perlahan ke arah langit-langit sambil meremas otot dasar panggul dan glutes.",
+      "exe-1-how-content-3": "Tahan selama beberapa detik, lalu turunkan kembali. Ulangi selama 10-12 kali.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Memperkuat dasar panggul, glutes, dan punggung bawah, mendukung pemulihan setelah melahirkan.",
+
+      "exe-2-title": "Squat dan Tahan: ",
+      "exe-2-content": "Mengaktifkan otot panggul dan kaki, meningkatkan kekuatan di area ini.",
+      "exe-2-how-title": "Cara melakukannya:",
+      "exe-2-how-content-1": "Peras Perlahan : Peras otot dasar panggul secara perlahan, tahan selama 5-10 detik, lalu lepaskan. Ulangi 10 kali.",
+      "exe-2-how-content-2": "Peras Cepat : Lakukan perasan cepat, pendek, dan keras pada otot dasar panggul. Ulangi 10 kali.",
+      "exe-2-how-content-3": "Tes Batuk : Peras otot dasar panggul, lalu batuk ringan. Ulangi 3 kali.",
+      "exe-2-how-content-4": "Lakukan Secara Teratur : Usahakan untuk melakukan 5-6 set latihan dasar panggul setiap hari untuk membangun dan menjaga kekuatan otot.",
+      "exe-2-ben-title": "Manfaat: ",
+      "exe-2-ben-content": "Memperkuat otot panggul dan kaki, meningkatkan stabilitas dan mengurangi ketidaknyamanan panggul.",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
+    },
+
+    "card-8": {
+      "card-title": "Tarian Prenatal",
+      "suggest-period-title": "Periode yang Disarankan: ",
+      "suggest-period-content": "Setelah 6 Minggu hingga 12-16 Minggu",
+      "desc-title": "Deskripsi: ",
+      "desc-content": "Menggabungkan gerakan dan ritme untuk meningkatkan kesenangan sambil meningkatkan koordinasi dan kesehatan kardiovaskular.",
+
+      "exe-1-title": "Gerakan Tarian Ringan: ",
+      "exe-1-content": "Mendorong gerakan dan kesenangan sambil meningkatkan koordinasi dan ritme.",
+      "exe-1-how-title": "Cara melakukannya:",
+      "exe-1-how-content-1": "Pilih langkah-langkah tari sederhana, seperti langkah samping, goyangan ringan, dan gerakan lengan.",
+      "exe-1-how-content-2": "Jaga gerakan tetap halus dan santai, pastikan Anda tidak terlalu memaksakan diri.",
+      "exe-1-how-content-3": "Menari selama 10-20 menit, fokus pada menjaga ritme yang stabil dan pernapasan.",
+      "exe-1-ben-title": "Manfaat: ",
+      "exe-1-ben-content": "Mendorong latihan berdampak rendah yang menyenangkan yang meningkatkan koordinasi, fleksibilitas, dan kesehatan kardiovaskular.",
+
+      "exe-2-title": "Koreografi Sederhana: ",
+      "exe-2-content": "Menggabungkan rutinitas tari yang menyenangkan dan mudah yang meningkatkan kesehatan kardiovaskular tanpa berlebihan.",
+      "exe-2-how-title": "Cara melakukannya:",
+      "exe-2-how-content-1": "Ikuti rutinitas mudah dengan langkah-langkah seperti langkah sentuh, putaran ringan, dan angkat lengan.",
+      "exe-2-how-content-2": "Masukkan musik yang Anda sukai untuk menjaga gerakan tetap ringan dan berirama.",
+      "exe-2-how-content-3": "Menari selama 15-20 menit, secara bertahap membangun stamina Anda.",
+      "exe-2-ben-title": "Manfaat: ",
+      "exe-2-ben-content": "Meningkatkan kesehatan kardiovaskular, koordinasi, dan tonus otot, sambil memberikan bentuk latihan yang menyenangkan dan santai.",
+
+      "how-btn": "Cara Melakukan & Manfaat",
+      "video-title": "Video Unggulan"
     }
   },
 
+  "postpartum": {
+    "title": "Bagaimana Latihan Membantu Kondisi Pascamelahirkan",
+
+    "card-1-title": "Kelemahan Dasar Panggul",
+    "card-1-condition-title": "Kondisi: ",
+    "card-1-condition-desc": "Kehamilan dan persalinan dapat melemahkan otot dasar panggul, menyebabkan masalah seperti inkontinensia urin dan prolaps organ panggul.",
+    "card-1-exe-title": "Manfaat Latihan ",
+    "card-1-exe-1-title": "Latihan Dasar Panggul (mis. Perasan Lambat, Perasan Cepat): ",
+    "card-1-exe-1-content": "Latihan ini memperkuat otot dasar panggul, membantu memulihkan fungsinya dan mendukung organ panggul. Mereka juga meningkatkan kontrol kandung kemih dan mengurangi risiko inkontinensia.",
+    "card-1-exe-2-title": "Pose Jembatan ",
+    "card-1-exe-2-content": "Memperkuat dasar panggul dan glutes, yang mendukung kekuatan punggung bawah dan membantu menstabilkan area panggul.",
+
+    "card-2-title": "Kelemahan Perut",
+    "card-2-condition-title": "Kondisi: ",
+    "card-2-condition-desc": "Otot perut, khususnya rectus abdominis, dapat melemah dan meregang karena rahim yang membesar selama kehamilan.",
+    "card-2-exe-title": "Manfaat Latihan ",
+    "card-2-exe-1-title": "Pelvic Tilts (Pilates Prenatal): ",
+    "card-2-exe-1-content": "Memperkuat inti dan mendukung punggung bawah, membantu memulihkan kekuatan otot perut dan mengurangi risiko diastasis recti (pemisahan otot perut).",
+    "card-2-exe-2-title": "Angkat Kaki Samping (Pilates Prenatal) ",
+    "card-2-exe-2-content": "Meningkatkan stabilitas inti dan memperkuat paha luar dan glutes, yang berkontribusi pada kekuatan perut secara keseluruhan.",
+
+    "card-3-title": "Nyeri Punggung Bawah",
+    "card-3-condition-title": "Kondisi: ",
+    "card-3-condition-desc": "Nyeri punggung bawah umum terjadi karena tekanan akibat membawa berat badan ekstra selama kehamilan dan ketidakseimbangan otot yang dihasilkan.",
+    "card-3-exe-title": "Manfaat Latihan ",
+    "card-3-exe-1-title": "Pose Cat-Cow (Yoga Prenatal): ",
+    "card-3-exe-1-content": "Meregangkan dan memperkuat tulang belakang, membantu meredakan nyeri punggung dengan meningkatkan fleksibilitas dan keselarasan tulang belakang.",
+    "card-3-exe-2-title": "Squat (Latihan Kekuatan Prenatal) ",
+    "card-3-exe-2-content": "Memperkuat kaki dan glutes, memberikan dukungan yang lebih baik untuk punggung bawah dan mengurangi tekanan.",
+
+    "card-4-title": "Kelelahan Umum dan Rendahnya Energi",
+    "card-4-condition-title": "Kondisi: ",
+    "card-4-condition-desc": "Ibu baru sering mengalami kelelahan dan rendahnya energi karena tuntutan merawat bayi baru lahir dan memulihkan diri dari persalinan.",
+    "card-4-exe-title": "Manfaat Latihan: ",
+    "card-4-exe-1-title": "Jalan Kaki Ringan ",
+    "card-4-exe-1-content": "Meningkatkan kesehatan kardiovaskular dan tingkat energi, membantu melawan kelelahan dan meningkatkan suasana hati secara keseluruhan.",
+    "card-4-exe-2-title": "Peregangan Lembut ",
+    "card-4-exe-2-content": "Meredakan ketegangan otot dan meningkatkan fleksibilitas, yang dapat meningkatkan tingkat energi keseluruhan dan mengurangi perasaan kelelahan.",
+
+    "card-5-title": "Penurunan Kebugaran Kardiovaskular",
+    "card-5-condition-title": "Kondisi: ",
+    "card-5-condition-desc": "Selama kehamilan, kebugaran kardiovaskular mungkin menurun karena berkurangnya aktivitas fisik dan peningkatan berat badan.",
+    "card-5-exe-title": "Manfaat Latihan ",
+    "card-5-exe-1-title": "Aerobik Air (Latihan Berbasis Air): ",
+    "card-5-exe-1-content": "Memberikan latihan berdampak rendah yang melibatkan seluruh tubuh, meningkatkan daya tahan kardiovaskular dan tonus otot dengan tekanan minimal pada sendi.",
+    "card-5-exe-2-title": "Lari (Setelah 16 Minggu) ",
+    "card-5-exe-2-content": "Meningkatkan stamina dan daya tahan kardiovaskular seiring dengan meningkatnya tingkat kebugaran.",
+
+    "card-6-title": "Ketidakseimbangan Otot",
+    "card-6-condition-title": "Kondisi: ",
+    "card-6-condition-desc": "Ketidakseimbangan otot dapat terjadi karena perubahan postur dan distribusi berat selama kehamilan.",
+    "card-6-exe-title": "Manfaat Latihan ",
+    "card-6-exe-1-title": "Bicep Curls dengan Beban Ringan (Latihan Kekuatan Prenatal): ",
+    "card-6-exe-1-content": "Menjaga kekuatan lengan dan bahu, menyeimbangkan perkembangan otot, dan mendukung postur tubuh secara keseluruhan.",
+    "card-6-exe-2-title": "Ekstensi Lengan & Kaki (Bird-Dog) (Pilates Prenatal) ",
+    "card-6-exe-2-content": "Melibatkan inti dan meningkatkan stabilitas, mengatasi ketidakseimbangan otot dan mendukung postur tubuh yang tepat.",
+
+    "card-7-title": "Stres dan Fluktuasi Suasana Hati",
+    "card-7-condition-title": "Kondisi: ",
+    "card-7-condition-desc": "Wanita pascamelahirkan dapat mengalami perubahan suasana hati dan stres karena perubahan hormonal dan tuntutan sebagai ibu baru.",
+    "card-7-exe-title": "Manfaat Latihan ",
+    "card-7-exe-1-title": "Yoga Prenatal: ",
+    "card-7-exe-1-content": "Termasuk pose seperti Bound Angle Pose dan Warrior II Pose yang meningkatkan relaksasi dan suasana hati, membantu meredakan stres dan kecemasan.",
+    "card-7-exe-2-title": "Peregangan Lembut ",
+    "card-7-exe-2-content": "Meningkatkan relaksasi dan mengurangi ketegangan otot, berkontribusi pada peningkatan kesehatan mental.",
+
+    "exe-recom-title": "Latihan apa yang dapat membantu: ",
+    "more-detail": "Pelajari lebih lanjut"
+  },
+
+  "collection": {
+    "title": "Pengumpulan Informasi Tubuh",
+    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "card-1": {
+      "title": "Apakah Anda memiliki perilaku olahraga?",
+      "options-1": "Ya",
+      "options-2": "Tidak"
+    },
+    "card-2": {
+      "title": "Kelompok usia mana yang Anda termasuk?"
+    },
+    "card-3": {
+      "title": "Seberapa sering Anda berolahraga?",
+      "radio-1": "Sekali seminggu",
+      "radio-2": "Dua kali seminggu",
+      "radio-3": "Tiga kali atau lebih dalam seminggu"
+    },
+    "card-4": {
+      "title": "Berapa berat badan Anda (kg)?",
+      "weight": "berat badan"
+    },
+    "card-5": {
+      "title": "Berapa tinggi badan Anda (cm)?",
+      "height": "Berapa tinggi badan Anda (cm)"
+    },
+    "Submit": "Kirim",
+    "Reset": "Atur Ulang Jawaban",
+    "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
+  },
+
   "footer": {
-    "icon-top": "Healthy",
-    "icon-bottom": "Pregnancy",
+    "icon-top": "Sehat",
+    "icon-bottom": "Kehamilan",
 
-    "contents-title": "Our Services",
-    "content-1": "Pregnancy Education",
-    "content-2": "Risk Assessment",
-    "content-3": "Nutritional Advice",
-    "content-4": "Pregnancy Exercises",
+    "contents-title": "Layanan Kami",
+    "content-1": "Edukasi Kehamilan",
+    "content-2": "Penilaian Risiko",
+    "content-3": "Saran Gizi",
+    "content-4": "Latihan Kehamilan",
 
-    "copyright": "Copyright © 2024 Powered by HealthyPregnancy"
+    "copyright": "Hak Cipta © 2024 Didukung oleh HealthyPregnancy"
   }
 }

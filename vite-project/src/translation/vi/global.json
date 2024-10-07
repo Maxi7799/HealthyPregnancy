@@ -1,113 +1,1157 @@
 {
   "header": {
-    "icon-top": "Healthy",
-    "icon-bottom": "Pregnancy",
-    "navbar-1": "Home",
-    "navbar-2": "Education",
-    "navbar-3": "Risk Assessment",
-    "navbar-4": "Nutrition",
-    "navbar-4-1": "Nutrition Analysis",
-    "navbar-4-2": "Recommendation",
-    "navbar-4-3": "Recipes",
-    "navbar-5": "Exercise",
-    "language-en": "English",
-    "language-zh": "chinese",
+    "icon-top": "Sức Khỏe",
+    "icon-bottom": "Mang Thai",
+    "navbar-1": "Trang Chủ",
+    "navbar-2": "Giáo Dục",
+    "navbar-3": "Đánh Giá Nguy Cơ",
+    "navbar-4": "Dinh Dưỡng",
+    "navbar-4-1": "Phân Tích Dinh Dưỡng",
+    "navbar-4-2": "Khuyến Nghị",
+    "navbar-4-3": "Công Thức",
+    "navbar-5": "Tập Thể Dục",
+    "navbar-5-1": "Video Tập Thể Dục",
+    "navbar-5-2": "Bảng Câu Hỏi Sức Khỏe",
+    "navbar-5-3": "Hồi Phục Sau Sinh",
+    "language-en": "Tiếng Anh",
+    "language-zh": "Tiếng Trung",
     "language-id": "Bahasa Indonesia",
-    "language-fil": "Filipino",
-    "language-vi": "Vietnamese",
-    "language-ms": "Malaysian"
+    "language-fil": "Tiếng Filipino",
+    "language-vi": "Tiếng Việt",
+    "language-ms": "Tiếng Mã Lai"
   },
   "home": {
     "slideshow": {
-      "page-1": "Education",
+      "page-1": "Giáo Dục",
       "page-1-text-1": "",
-      "page-1-text-2": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
-      "page-1-button": "Explore",
+      "page-1-text-2": "Tìm hiểu thêm về thai kỳ và sử dụng kiến thức của bạn về thai kỳ thông qua các mô-đun tương tác.",
+      "page-1-button": "Khám Phá",
 
-      "page-2": "Risk Assessment",
+      "page-2": "Đánh Giá Rủi Ro",
       "page-2-text-1": "",
-      "page-2-text-2": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
-      "page-2-button": "Learn More",
+      "page-2-text-2": "Kiểm tra rủi ro thai kỳ qua một bài đánh giá đơn giản. Nhận đánh giá nhanh bằng cách trả lời một vài câu hỏi.",
+      "page-2-button": "Tìm Hiểu Thêm",
 
-      "page-3": "Nutrition",
+      "page-3": "Dinh Dưỡng",
       "page-3-text-1": "",
-      "page-3-text-2": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
-      "page-3-button": "Explore",
+      "page-3-text-2": "Nhận phân tích, khuyến nghị về dinh dưỡng và xây dựng lịch trình và công thức riêng của bạn.",
+      "page-3-button": "Khám Phá",
 
-      "page-4": "Exercise",
+      "page-4": "Tập Luyện",
       "page-4-text-1": "",
-      "page-4-text-2": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
-      "page-4-button": "Explore"
+      "page-4-text-2": "Tìm hiểu thêm về các bài tập trong thai kỳ và giữ gìn sức khỏe thông qua các bài tập.",
+      "page-4-button": "Khám Phá"
     },
     "roadmap": {
-      "title": "Plan your best pregnancy",
-      "icon-1-desc": "Explore previous pregnancy through data insights",
-      "icon-2-desc": "Learn essential aspects about being pregnant",
-      "icon-3-desc": "Check pregnancy risk through a simple assessment",
-      "icon-4-desc": "Get your best nutrition and recipe recommendation",
-      "icon-5-desc": "Get yourself healthier through exercises"
+      "title": "Lập Kế Hoạch Cho Thai Kỳ Tốt Nhất",
+      "icon-1-desc": "Khám phá thai kỳ trước đó thông qua những hiểu biết từ dữ liệu",
+      "icon-2-desc": "Tìm hiểu các khía cạnh thiết yếu về việc mang thai",
+      "icon-3-desc": "Kiểm tra rủi ro thai kỳ qua một bài đánh giá đơn giản",
+      "icon-4-desc": "Nhận khuyến nghị về dinh dưỡng và công thức tốt nhất",
+      "icon-5-desc": "Giữ gìn sức khỏe thông qua các bài tập"
     },
 
     "detail-blocks": {
-      "title": "Choose the service you need",
-
-      "block-1-title": "Education",
-      "block-1-desc": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
-      "block-1-button": "Explore",
-
-      "block-2-title": "Risk Assessment",
-      "block-2-desc": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
-      "block-2-button": "Learn More",
-
-      "block-3-title": "Nutrition",
-      "block-3-desc": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
-      "block-3-button": "Explore",
-
-      "block-4-title": "Exercise",
-      "block-4-desc": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
-      "block-4-button": "Explore"
-    },
-
-    "body": "A store of messages",
-    "hero": "Pregnancy Health Risk Assessment Questionnaire"
+      "title": "Chọn dịch vụ bạn cần"
+    }
   },
 
   "education": {
     "home": {
-      "title": "Pregnancy Education",
-      "text-1": "Whether you are planning to or currently pregnant, let’s leverage your knowledge on pregnancy through these interactive modules to achieve your best pregnancy experience.",
-      "text-2": "At the end of each chapter, try to check your understanding through a Knowledge Checker.",
-      "text-3": "Have fun!",
-      "card-1": "",
-      "card-2": "",
-      "card-3": "",
-      "card-4": "",
-      "card-5": "",
-      "card-6": ""
+      "title": "Giáo dục về thai kỳ",
+      "text-1": "Dù bạn đang có kế hoạch mang thai hay đã mang thai, hãy nâng cao kiến thức về thai kỳ thông qua các mô-đun tương tác này để đạt được trải nghiệm thai kỳ tốt nhất.",
+      "text-2": "Cuối mỗi chương, hãy kiểm tra kiến thức của bạn qua Trình Kiểm Tra Kiến Thức.",
+      "text-3": "Chúc bạn vui vẻ!",
+      "card-1": "Rủi ro sức khỏe",
+      "card-2": "Các lần khám thai",
+      "card-3": "Phương pháp sinh",
+      "card-4": "Dinh dưỡng",
+      "card-5": "Bài tập trước sinh",
+      "card-6": "Bài tập sau sinh"
     },
-    "card-1": {},
 
-    "card-2": {},
+    "sidebar": {
+      "back-btn": "Trở lại Tổng quan",
+      "overview": "Tổng quan",
+      "card-1-title": "Rủi ro sức khỏe",
+      "card-1-topic-1": "1.1 Rủi ro sức khỏe phổ biến",
+      "card-1-topic-2": "1.2 Tiểu đường thai kỳ",
+      "card-1-topic-3": "1.3 Tăng huyết áp",
+      "card-1-topic-4": "1.4 Kiểm tra kiến thức của bạn!",
 
-    "card-3": {},
+      "card-2-title": "Các lần khám thai",
+      "card-2-topic-1": "2.1 Tại sao các lần khám thai lại quan trọng?",
+      "card-2-topic-2": "2.2 Khi nào nên đi khám?",
+      "card-2-topic-3": "2.3 Chuẩn bị những gì trước khi đi khám",
+      "card-2-topic-4": "2.4 Điều gì xảy ra trong các lần khám thai?",
+      "card-2-topic-5": "2.5 Sau khi khám thai",
+      "card-2-topic-6": "2.6 Tại sao các lần khám định kỳ lại quan trọng",
+      "card-2-topic-7": "2.7 Kiểm tra kiến thức của bạn!",
 
-    "card-4": {},
+      "card-3-title": "Phương pháp sinh",
+      "card-3-topic-1": "3.1 Các phương pháp sinh khác nhau",
+      "card-3-topic-2": "3.2 Tại sao nó lại quan trọng?",
+      "card-3-topic-3": "3.3 Cách chọn lựa?",
+      "card-3-topic-4": "3.4 Sinh thường vs. Mổ lấy thai",
+      "card-3-topic-5": "3.5 Hồi phục sau khi sinh",
+      "card-3-topic-6": "3.6 Kiểm tra kiến thức của bạn",
 
-    "card-5": {},
+      "card-4-title": "Dinh dưỡng",
+      "card-4-topic-1": "4.1 Tại sao dinh dưỡng lại quan trọng",
+      "card-4-topic-2": "4.2 Dưỡng chất thiết yếu",
+      "card-4-topic-3": "4.3 Tiêu chuẩn dinh dưỡng cho phụ nữ mang thai",
+      "card-4-topic-4": "4.4 Lập kế hoạch bữa ăn lành mạnh",
+      "card-4-topic-5": "4.5 Những thực phẩm cần tránh",
+      "card-4-topic-6": "4.6 Kiểm tra kiến thức của bạn",
 
-    "card-6": {}
+      "card-5-title": "Bài tập trước sinh",
+      "card-5-topic-1": "5.1 Tại sao bài tập trước sinh lại quan trọng",
+      "card-5-topic-2": "5.2 Các bài tập an toàn cho mỗi giai đoạn thai kỳ",
+      "card-5-topic-3": "5.3 Bài tập chuẩn bị cho việc sinh",
+      "card-5-topic-4": "5.4 Luôn luôn ưu tiên an toàn!",
+      "card-5-topic-5": "5.5 Kiểm tra kiến thức của bạn!",
+
+      "card-6-title": "Bài tập sau sinh",
+      "card-6-topic-1": "6.1 Sáu tuần đầu tiên: Các động tác hồi phục nhẹ nhàng",
+      "card-6-topic-2": "6.2 Xây dựng lại sức mạnh vùng core và sàn chậu (6-12 tuần)",
+      "card-6-topic-3": "6.3 Kiểm tra kiến thức của bạn!"
+    },
+
+    "card-1": {
+      "module-name": "1. Rủi ro sức khỏe",
+      "module-desc": "Mô-đun này bao gồm những rủi ro sức khỏe quan trọng trong thai kỳ, bao gồm tiểu đường thai kỳ, tăng huyết áp và sức khỏe tinh thần. Việc nắm rõ và chủ động giúp các bà mẹ mang thai quản lý tốt những rủi ro này, đảm bảo một hành trình khỏe mạnh cho cả mẹ và bé. Các lần khám thai định kỳ và lựa chọn lối sống lành mạnh là chìa khóa hỗ trợ sức khỏe tổng thể trong thời gian thú vị này.",
+
+      "topic-1-name": "1.1 Rủi ro sức khỏe phổ biến",
+      "topic-1-desc": {
+        "text-1": "Các biến chứng phổ biến bao gồm",
+        "nav-1": " tiểu đường thai kỳ",
+        "nav-2": "tăng huyết áp",
+        "text-2": "(có thể dẫn đến tiền sản giật), nhiễm trùng, chuyển dạ sớm và các vấn đề về sức khỏe tinh thần như trầm cảm và lo âu. Các tình trạng nghiêm trọng hơn như sẩy thai hoặc thai chết lưu, dù hiếm gặp, cũng cần được lưu ý. Hãy tin vào cơ thể của bạn và tìm lời khuyên y tế nếu bạn nhận thấy các triệu chứng như đau đầu nghiêm trọng, vấn đề về thị lực, sưng tấy bất thường hoặc đau. Chăm sóc tiền sản định kỳ, chế độ ăn uống cân bằng, duy trì hoạt động và tìm kiếm sự hỗ trợ là chìa khóa để có một thai kỳ khỏe mạnh."
+      },
+
+      "topic-2-name": "1.2 Tiểu đường thai kỳ",
+      "topic-2-desc": {
+        "text-1": "Bạn có biết rằng từ năm 2014 đến 2021, số ca tiểu đường thai kỳ đã tăng hơn 80%?",
+        "loading": "Đang tải...",
+        "text-2": "Tiểu đường thai kỳ là một dạng tiểu đường phát triển trong thai kỳ, thường vào khoảng tuần thứ 24, và có thể gây ra các ảnh hưởng lâu dài như tăng nguy cơ tiểu đường loại 2 cho mẹ và các vấn đề sức khỏe tiềm ẩn cho trẻ. Nó có thể khiến trẻ sinh ra lớn hơn, dẫn đến các biến chứng trong quá trình sinh nở và tăng khả năng cần mổ lấy thai.",
+        "nav-1": "(Truy cập giáo dục của chúng tôi để giảm rủi ro).",
+        "text-3": "Các yếu tố nguy cơ bao gồm béo phì, tuổi tác, tiền sử gia đình và dân tộc. Quản lý tiểu đường thai kỳ bao gồm theo dõi đường huyết, ăn uống lành mạnh, duy trì hoạt động và đôi khi dùng thuốc. Nắm rõ và quản lý chủ động là rất quan trọng đối với sức khỏe của cả mẹ và bé. Để nhận được sự hỗ trợ cụ thể hơn, hãy xem qua các nội dung của chúng tôi:",
+        "nav-2": "1. Khuyến nghị dinh dưỡng",
+        "nav-3": "2. Bài tập",
+        "text-4": "Phụ nữ nhập cư có thể đối mặt với các yếu tố nguy cơ cao hơn đối với tiểu đường thai kỳ do thay đổi chế độ ăn uống, tiếp cận hạn chế với chăm sóc sức khỏe và căng thẳng. Nếu bạn muốn đánh giá nguy cơ của mình,",
+        "nav-4": "nhấn vào đây."
+      },
+
+      "topic-3-name": "1.3 Tăng huyết áp",
+      "topic-3-desc": {
+        "text-1": "Từ năm 2014 đến năm 2021, tăng huyết áp đã tăng đều đặn, trở thành một mối lo ngại về sức khỏe phổ biến, mặc dù không nghiêm trọng như tiểu đường. Tăng huyết áp, hay còn gọi là huyết áp cao, làm tăng nguy cơ mắc bệnh tim, đột quỵ và các vấn đề về thận, và thường không có triệu chứng, vì vậy nó được gọi là “kẻ giết người thầm lặng”. Nó có thể do các yếu tố như di truyền, chế độ ăn uống kém, thiếu hoạt động thể chất, căng thẳng và thừa cân.",
+        "text-2": "Quản lý tăng huyết áp bao gồm thay đổi lối sống, chẳng hạn như chế độ ăn tốt cho tim và tập thể dục đều đặn. Để hỗ trợ bạn, hãy xem các tài nguyên của chúng tôi về:",
+        "nav-1": "1. Khuyến nghị về dinh dưỡng",
+        "nav-2": "2. Tập thể dục",
+        "text-3": "Kiểm tra sức khỏe thường xuyên là điều cần thiết để phát hiện và kiểm soát tình trạng này sớm, ngăn ngừa các vấn đề sức khỏe nghiêm trọng.",
+        "nav-3": "(Thêm thông tin có thể được tìm thấy tại đây)"
+      },
+
+      "quiz": {
+        "topic-4-name": "1.4 Kiểm tra kiến thức của bạn!",
+        "desc": "Hãy thử các câu hỏi dưới đây để kiểm tra hiểu biết của bạn về nội dung trên.",
+
+        "side": "Câu hỏi ",
+
+        "q-1-name": "Bệnh tiểu đường thai kỳ thường phát triển khi nào trong thai kỳ?",
+        "q-1-option-1": "A) Tuần thứ 12",
+        "q-1-option-2": "B) Tuần thứ 24",
+        "q-1-option-3": "C) Tuần thứ 30",
+        "q-1-option-4": "D) Sau khi sinh",
+        "q-1-answer": "B) Tuần thứ 24",
+        "q-1-pre-answer": "Câu trả lời đúng là ",
+        "q-1-post-answer": "Bệnh tiểu đường thai kỳ thường xuất hiện vào khoảng tuần thứ 24 của thai kỳ.",
+
+        "q-2-name": "Tại sao tăng huyết áp được gọi là 'kẻ giết người thầm lặng'?",
+        "q-2-option-1": "A) Nó gây ra những cơn đau đầu đột ngột",
+        "q-2-option-2": "B) Nó không có triệu chứng cho đến khi xảy ra các vấn đề sức khỏe nghiêm trọng",
+        "q-2-option-3": "C) Nó khiến bạn cảm thấy buồn ngủ",
+        "q-2-option-4": "D) Nó gây ra các triệu chứng rõ ràng",
+        "q-2-answer": "B) Nó không có triệu chứng cho đến khi xảy ra các vấn đề sức khỏe nghiêm trọng",
+        "q-2-pre-answer": "Câu trả lời đúng là ",
+        "q-2-post-answer": "Nó thường không có triệu chứng cho đến khi gây ra các vấn đề lớn như bệnh tim hoặc đột quỵ.",
+
+        "q-3-name": "Thay đổi lối sống nào có thể giúp quản lý tăng huyết áp?",
+        "q-3-option-1": "A) Ăn nhiều thực phẩm chế biến",
+        "q-3-option-2": "B) Tập thể dục thường xuyên và ăn thực phẩm tốt cho tim mạch",
+        "q-3-option-3": "C) Ngủ ít hơn",
+        "q-3-option-4": "D) Tăng lượng muối",
+        "q-3-answer": "B) Tập thể dục thường xuyên và ăn thực phẩm tốt cho tim mạch",
+        "q-3-pre-answer": "Câu trả lời đúng là ",
+        "q-3-post-answer": "Tập thể dục và ăn chế độ ăn cân bằng có thể giúp giảm huyết áp.",
+
+        "q-4-name": "Một trong những rủi ro lâu dài chính của bệnh tiểu đường thai kỳ là gì?",
+        "q-4-option-1": "A) Cân nặng khi sinh thấp",
+        "q-4-option-2": "B) Bệnh tiểu đường loại 2 sau này",
+        "q-4-option-3": "C) Nguy cơ cao hơn về đau nửa đầu",
+        "q-4-option-4": "D) Trầm cảm sau sinh",
+        "q-4-answer": "B) Bệnh tiểu đường loại 2 sau này",
+        "q-4-pre-answer": "Câu trả lời đúng là ",
+        "q-4-post-answer": "Phụ nữ bị tiểu đường thai kỳ có nguy cơ cao phát triển bệnh tiểu đường loại 2 sau khi mang thai.",
+
+        "q-5-name": "Những thực phẩm nào bạn nên tập trung để quản lý cả hai tình trạng bệnh?",
+        "q-5-option-1": "A) Đồ ăn nhẹ nhiều đường",
+        "q-5-option-2": "B) Thịt chế biến",
+        "q-5-option-3": "C) Ngũ cốc nguyên hạt và protein nạc",
+        "q-5-option-4": "D) Thức ăn chiên",
+        "q-5-answer": "C) Ngũ cốc nguyên hạt và protein nạc",
+        "q-5-pre-answer": "Câu trả lời đúng là ",
+        "q-5-post-answer": "Những thực phẩm này giúp kiểm soát đường huyết và thúc đẩy sức khỏe tim mạch."
+      },
+
+      "more-details": "Thêm chi tiết...",
+      "prepage-btn": "Chương trước",
+      "nextpage-btn": "Chương tiếp theo"
+    },
+
+    "card-3": {
+      "module-name": "3. Phương Pháp Sinh Con",
+      "module-desc": "Phần này khám phá các phương pháp sinh con—sinh thường qua đường âm đạo, sinh mổ (C-section), và sinh thường có hỗ trợ. Nó giải thích những ưu và nhược điểm, thời gian phục hồi, và các yếu tố ảnh hưởng đến sự lựa chọn. Một so sánh về quá trình phục hồi sau sinh của mỗi phương pháp cũng được đưa ra, cùng với bài kiểm tra nhằm nâng cao sự hiểu biết và khuyến khích thảo luận với nhà cung cấp dịch vụ y tế.",
+
+      "topic-1-name": "3.1 Các Phương Pháp Sinh Con Khác Nhau",
+      "topic-1-desc": {
+        "text-1": "Hiểu về các phương pháp sinh con phổ biến có thể giúp bạn cảm thấy chuẩn bị tốt hơn khi ngày sinh đến gần. Sinh thường qua đường âm đạo là phương pháp phổ biến nhất, mang lại khả năng phục hồi nhanh hơn và tiếp xúc da kề da ngay lập tức. Sinh mổ là phương pháp phẫu thuật qua bụng, thường được lên kế hoạch vì lý do y tế hoặc cần thiết trong quá trình chuyển dạ, với thời gian hồi phục lâu hơn. Sinh thường có hỗ trợ sử dụng các công cụ như kẹp hoặc máy hút để hỗ trợ trong quá trình chuyển dạ khó khăn. Hãy cân nhắc những lợi ích và rủi ro của mỗi phương pháp, cách chuẩn bị nếu sinh mổ được khuyến nghị, các dấu hiệu có thể cần hỗ trợ, và cách thảo luận kế hoạch sinh với bác sĩ của bạn."
+      },
+
+      "topic-2-name": "3.2 Tại Sao Nó Quan Trọng?",
+      "topic-2-desc": {
+        "text-1": "Lựa chọn phương pháp sinh ảnh hưởng đến quá trình hồi phục, các lần mang thai trong tương lai và sức khỏe của bé. Sinh thường qua đường âm đạo thường mang lại thời gian phục hồi nhanh hơn và vi khuẩn có lợi cho bé, trong khi sinh mổ có thời gian hồi phục lâu hơn, nguy cơ biến chứng cao hơn và có thể ảnh hưởng đến các lần sinh sau. Thảo luận các lựa chọn với bác sĩ của bạn sẽ giúp bạn đưa ra quyết định tốt nhất cho bạn và bé."
+      },
+
+      "topic-3-name": "3.3 Làm Thế Nào Để Lựa Chọn?",
+      "topic-3-desc": {
+        "text-1": "Có nhiều yếu tố ảnh hưởng đến lựa chọn phương pháp sinh, bao gồm vị trí của bé, các điều kiện sức khỏe như tiểu đường thai kỳ hoặc tăng huyết áp, và sở thích cá nhân. Ví dụ, vị trí ngôi mông có thể dẫn đến việc khuyến nghị sinh mổ, trong khi một số bà mẹ chọn sinh mổ có kế hoạch dựa trên trải nghiệm trước đó hoặc lo lắng về quá trình chuyển dạ. Niềm tin văn hóa và tôn giáo cũng có thể ảnh hưởng đến quyết định này. Giao tiếp thường xuyên với nhóm chăm sóc y tế là điều cần thiết để điều chỉnh sở thích của bạn với lời khuyên y tế. Hãy nhớ rằng, mỗi thai kỳ là duy nhất và việc điều chỉnh kế hoạch sinh là điều bình thường.",
+        "text-2": "Dưới đây là một số dữ liệu về các phương pháp sinh phổ biến để giúp bạn đưa ra lựa chọn sáng suốt:",
+        "text-3": "Hãy nhớ rằng mỗi thai kỳ là duy nhất và việc điều chỉnh kế hoạch sinh là điều bình thường. Dưới đây là một số lý do phổ biến cho việc lựa chọn sinh mổ:",
+        "text-4": "Bạn có thể tìm thêm chi tiết bên dưới."
+      },
+
+      "topic-4-name": "3.4 Sinh Thường Qua Đường Âm Đạo So Với Sinh Mổ",
+      "topic-4-desc": {
+        "text-1": "Sinh thường qua đường âm đạo mang lại lợi ích như thời gian phục hồi ngắn hơn, nguy cơ nhiễm trùng thấp hơn, và ít biến chứng hơn trong các lần mang thai sau, mặc dù có thể mất nhiều thời gian chuyển dạ và nguy cơ rách. Mặt khác, sinh mổ có thể được lên kế hoạch trước và tránh nguy cơ rách nhưng đi kèm với thời gian phục hồi lâu hơn và nguy cơ nhiễm trùng và biến chứng cao hơn. Phụ nữ sinh mổ thường phải ở lại bệnh viện và thời gian hồi phục lâu hơn, do đó cần cân nhắc các yếu tố này khi quyết định phương pháp sinh.",
+        "text-2": "Biểu đồ dưới đây cho thấy Thời Gian Phục Hồi (tính theo ngày) cho mỗi Phương Pháp Sinh:"
+      },
+
+      "topic-5-name": "3.5 Phục Hồi Sau Khi Sinh",
+      "topic-5-desc": {
+        "text-1": "Quá trình phục hồi sau sinh khác nhau tùy thuộc vào việc bạn sinh thường qua đường âm đạo hay sinh mổ. Thời gian phục hồi sau sinh thường qua đường âm đạo thường mất 4-6 tuần, với việc kiểm soát đau bằng các loại thuốc không cần kê toa. Phụ nữ có thể dần dần quay lại các hoạt động hàng ngày và tập trung vào việc chăm sóc vùng đáy chậu và tập Kegel để tăng cường cơ sàn chậu. Quá trình phục hồi sau sinh mổ thường mất từ 6-8 tuần hoặc lâu hơn, với việc kiểm soát đau ban đầu cần sử dụng thuốc kê toa. Hoạt động thể chất nên được giới hạn ở việc đi bộ, và việc chăm sóc vết mổ rất quan trọng để tránh nhiễm trùng. Cả hai loại phục hồi đều được hưởng lợi từ chăm sóc sau sinh đúng cách, bao gồm hỗ trợ cho con bú và chế độ ăn uống cân bằng để thúc đẩy quá trình hồi phục."
+      },
+
+      "quiz": {
+        "topic-6-name": "3.6 Kiểm Tra Kiến Thức Của Bạn!",
+        "desc": "Hãy thử các câu hỏi dưới đây để kiểm tra sự hiểu biết của bạn về nội dung trên.",
+
+        "side": "Câu hỏi",
+
+        "q-1-name": "Phương pháp sinh con phổ biến nhất là gì?",
+        "q-1-option-1": "A) Sinh mổ",
+        "q-1-option-2": "B) Sinh thường có hỗ trợ",
+        "q-1-option-3": "C) Sinh thường qua đường âm đạo",
+        "q-1-option-4": "D) Sinh tại nhà",
+        "q-1-answer": "C) Sinh thường qua đường âm đạo",
+        "q-1-pre-answer": "Câu trả lời đúng là ",
+        "q-1-post-answer": "Sinh thường qua đường âm đạo là phương pháp sinh con phổ biến nhất.",
+
+        "q-2-name": "Một nguy cơ tiềm ẩn của sinh mổ là gì?",
+        "q-2-option-1": "A) Nguy cơ nhiễm trùng thấp hơn",
+        "q-2-option-2": "B) Thời gian phục hồi lâu hơn",
+        "q-2-option-3": "C) Ít thời gian nằm viện hơn",
+        "q-2-option-4": "D) Dễ dàng cho con bú hơn",
+        "q-2-answer": "B) Thời gian phục hồi lâu hơn",
+        "q-2-pre-answer": "Câu trả lời đúng là ",
+        "q-2-post-answer": "Phụ nữ sinh mổ thường mất thời gian phục hồi lâu hơn so với những người sinh thường qua đường âm đạo.",
+
+        "q-3-name": "Một lợi thế của sinh thường qua đường âm đạo là gì?",
+        "q-3-option-1": "A) Thời gian phục hồi lâu hơn",
+        "q-3-option-2": "B) Nguy cơ nhiễm trùng cao hơn",
+        "q-3-option-3": "C) Thời gian phục hồi ngắn hơn",
+        "q-3-option-4": "D) Lên kế hoạch trước",
+        "q-3-answer": "C) Thời gian phục hồi ngắn hơn",
+        "q-3-pre-answer": "Câu trả lời đúng là ",
+        "q-3-post-answer": "Sinh thường qua đường âm đạo thường cho phép phục hồi nhanh hơn so với sinh mổ.",
+
+        "q-4-name": "Sinh thường có hỗ trợ là gì?",
+        "q-4-option-1": "A) Sinh tại nhà",
+        "q-4-option-2": "B) Sinh với sự hỗ trợ của các công cụ như kẹp hoặc máy hút",
+        "q-4-option-3": "C) Sinh mổ có kế hoạch",
+        "q-4-option-4": "D) Sinh tự nhiên không có can thiệp",
+        "q-4-answer": "B) Sinh với sự hỗ trợ của các công cụ như kẹp hoặc máy hút",
+        "q-4-pre-answer": "Câu trả lời đúng là ",
+        "q-4-post-answer": "Sinh thường có hỗ trợ liên quan đến việc sử dụng các công cụ để giúp hướng dẫn bé ra ngoài.",
+
+        "q-5-name": "Yếu tố nào có thể ảnh hưởng đến lựa chọn phương pháp sinh của bạn?",
+        "q-5-option-1": "A) Vị trí của em bé",
+        "q-5-option-2": "B) Thời tiết vào ngày sinh",
+        "q-5-option-3": "C) Màu của phòng trẻ",
+        "q-5-option-4": "D) Thời gian mang thai của bạn",
+        "q-5-answer": "A) Vị trí của em bé",
+        "q-5-pre-answer": "Câu trả lời đúng là ",
+        "q-5-post-answer": "Vị trí của em bé có thể ảnh hưởng đáng kể đến phương pháp sinh được khuyến nghị."
+      },
+
+      "more-details": "Chi tiết thêm...",
+      "prepage-btn": "Chương trước",
+      "nextpage-btn": "Chương tiếp theo"
+    },
+
+    "card-4": {
+      "module-name": "4. Dinh Dưỡng",
+      "module-desc": "Phần này cung cấp thông tin cần thiết về tầm quan trọng của dinh dưỡng cân bằng trong thai kỳ. Tìm hiểu về các chất dinh dưỡng chính hỗ trợ sức khỏe cho cả mẹ và bé, hướng dẫn chế độ ăn uống cho từng tam cá nguyệt, thực phẩm cần tránh và mẹo lập kế hoạch bữa ăn lành mạnh. Khám phá các công cụ và tài nguyên tương tác để giúp các bà mẹ mang thai duy trì chế độ ăn uống bổ dưỡng nhằm tối ưu hóa sự phát triển và tăng trưởng.",
+
+      "topic-1-name": "4.1 Tại Sao Dinh Dưỡng Quan Trọng",
+      "topic-1-desc": {
+        "text-1": "Dinh dưỡng hợp lý trong thai kỳ rất quan trọng cho sức khỏe của cả mẹ và thai nhi. Một chế độ ăn uống cân bằng hỗ trợ sự phát triển của các cơ quan quan trọng như não, phổi và tim, với các chất dinh dưỡng như axit folic rất cần thiết cho sự phát triển ống thần kinh. Nó cũng giúp quản lý các triệu chứng thai kỳ như buồn nôn và mệt mỏi, giảm nguy cơ các biến chứng như tiểu đường thai kỳ và tăng huyết áp, và cung cấp năng lượng cần thiết cho những yêu cầu thể chất và cảm xúc gia tăng. Thêm vào đó, dinh dưỡng tốt còn giúp duy trì cân bằng hormone, thúc đẩy sức khỏe cảm xúc trong giai đoạn quan trọng của cuộc đời này."
+      },
+
+      "topic-2-name": "4.2 Các Chất Dinh Dưỡng Thiết Yếu",
+      "topic-2-desc": {
+        "text-1": "Trong thai kỳ, một số chất dinh dưỡng rất cần thiết để hỗ trợ cả mẹ và thai nhi đang phát triển. Axit folic giúp ngăn ngừa khuyết tật ống thần kinh, có trong rau lá xanh, trái cây họ cam quýt và ngũ cốc tăng cường. Sắt rất quan trọng cho việc sản xuất thêm máu và ngăn ngừa thiếu máu, có trong thịt nạc, rau bina và đậu. Canxi hỗ trợ sự phát triển xương của thai nhi, với các sản phẩm từ sữa và hạnh nhân là những nguồn tốt. Axit béo Omega-3 giúp phát triển não bộ, có trong cá hồi, quả óc chó và hạt lanh. Chất xơ giúp ngăn ngừa táo bón, điều phổ biến trong thai kỳ, với ngũ cốc nguyên hạt, trái cây và rau củ là những nguồn tuyệt vời.",
+        "text-2": "Hướng dẫn Chất Dinh Dưỡng: Hãy truy cập hướng dẫn chi tiết của chúng tôi để có danh sách các thực phẩm khuyến nghị",
+        "nav-1": "(liên kết đến Dinh Dưỡng)."
+      },
+
+      "topic-3-name": "4.3 Tiêu Chuẩn Dinh Dưỡng Cho Phụ Nữ Mang Thai",
+      "topic-3-desc": {
+        "text-1": "Trong thai kỳ, nhu cầu năng lượng và các chất dinh dưỡng vĩ mô thay đổi theo thời gian. Trong tam cá nguyệt đầu tiên, tập trung vào thực phẩm giàu dinh dưỡng vì nhu cầu năng lượng không tăng đáng kể. Đến tam cá nguyệt thứ hai, khuyến nghị tăng thêm 300-350 calo mỗi ngày, tăng lên 450-500 calo mỗi ngày trong tam cá nguyệt thứ ba. Lượng protein nên là 70-100 gram mỗi ngày để hỗ trợ sự phát triển của thai nhi và sức khỏe của mẹ. Carbohydrate nên chiếm 45-65% tổng lượng calo hàng ngày, tập trung vào carbohydrate phức tạp như ngũ cốc nguyên hạt và rau củ. Chất béo lành mạnh nên chiếm 25-35% tổng lượng calo hàng ngày, nhấn mạnh vào chất béo không bão hòa như dầu ô liu và bơ để phát triển não bộ của thai nhi."
+      },
+
+      "topic-4-name": "4.4 Lập Kế Hoạch Bữa Ăn Lành Mạnh",
+      "topic-4-desc": {
+        "text-1": "Lập kế hoạch bữa ăn lành mạnh trong thai kỳ là chìa khóa để đảm bảo bạn và em bé nhận được các chất dinh dưỡng cần thiết trong khi tránh thực phẩm chế biến. Để duy trì một chế độ ăn uống cân bằng, hãy lập kế hoạch bữa ăn trước, chú ý đến kích thước khẩu phần và giữ những món ăn nhẹ lành mạnh như hạt và sữa chua bên cạnh. Hãy cố gắng có những bữa ăn đa dạng bằng cách bao gồm nhiều loại trái cây và rau củ, và nhớ giữ cho cơ thể đủ nước bằng cách uống ít nhất 8-10 ly nước mỗi ngày. Cách tiếp cận này hỗ trợ sức khỏe tối ưu, mức năng lượng và giảm căng thẳng trong suốt thai kỳ."
+      },
+
+      "topic-5-name": "4.5 Thực Phẩm Cần Tránh",
+      "topic-5-desc": {
+        "text-1": "Trong thai kỳ, điều quan trọng là tránh một số thực phẩm có thể gây rủi ro cho bạn và em bé. Hãy tránh cá có hàm lượng thủy ngân cao như cá mập và cá kiếm, chọn các loại cá có hàm lượng thủy ngân thấp như cá hồi thay thế. Tránh phô mai mềm làm từ sữa chưa tiệt trùng và thịt chế biến như thịt deli trừ khi được hâm nóng đến nhiệt độ cao. Sữa và nước trái cây chưa tiệt trùng cũng nên tránh để giảm thiểu nguy cơ vi khuẩn có hại. Hạn chế lượng caffeine xuống 200 mg mỗi ngày và hoàn toàn tránh rượu. Cẩn thận với trà thảo mộc, vì một số có thể gây hại; luôn tham khảo ý kiến nhà cung cấp dịch vụ chăm sóc sức khỏe của bạn trước khi sử dụng. Hiểu những rủi ro này giúp bạn đưa ra các lựa chọn chế độ ăn uống thông minh cho một thai kỳ khỏe mạnh."
+      },
+
+      "quiz": {
+        "topic-6-name": "4.6 Kiểm Tra Kiến Thức Của Bạn!",
+        "desc": "Hãy thử các câu hỏi dưới đây để kiểm tra sự hiểu biết của bạn về nội dung ở trên.",
+
+        "side": "Câu hỏi",
+
+        "q-1-name": "Chất dinh dưỡng nào rất cần thiết để ngăn ngừa khuyết tật ống thần kinh?",
+        "q-1-option-1": "A) Canxi",
+        "q-1-option-2": "B) Sắt",
+        "q-1-option-3": "C) Axit Folic",
+        "q-1-option-4": "D) Axit béo Omega-3",
+        "q-1-answer": "C) Axit Folic",
+        "q-1-pre-answer": "Câu trả lời đúng là ",
+        "q-1-post-answer": "Axit folic rất quan trọng cho sự phát triển của thai nhi, đặc biệt trong giai đoạn đầu của thai kỳ.",
+
+        "q-2-name": "Phụ nữ mang thai nên hạn chế điều gì trong chế độ ăn uống để giảm nguy cơ bệnh do thực phẩm?",
+        "q-2-option-1": "A) Ngũ cốc nguyên hạt",
+        "q-2-option-2": "B) Hải sản, thịt và trứng sống hoặc chưa chín",
+        "q-2-option-3": "C) Trái cây và rau củ",
+        "q-2-option-4": "D) Sản phẩm từ sữa",
+        "q-2-answer": "B) Hải sản, thịt và trứng sống hoặc chưa chín",
+        "q-2-pre-answer": "Câu trả lời đúng là ",
+        "q-2-post-answer": "Những thực phẩm này có thể chứa vi khuẩn có hại và nên tránh trong thai kỳ.",
+
+        "q-3-name": "Nguồn tốt nào cung cấp canxi cho phụ nữ mang thai?",
+        "q-3-option-1": "A) Gà",
+        "q-3-option-2": "B) Rau bina",
+        "q-3-option-3": "C) Phô mai",
+        "q-3-option-4": "D) Gạo lứt",
+        "q-3-answer": "C) Phô mai",
+        "q-3-pre-answer": "Câu trả lời đúng là ",
+        "q-3-post-answer": "Các sản phẩm từ sữa, bao gồm phô mai, là nguồn canxi tuyệt vời cần thiết cho sự phát triển xương.",
+
+        "q-4-name": "Phụ nữ mang thai nên tránh loại cá nào do hàm lượng thủy ngân cao?",
+        "q-4-option-1": "A) Cá hồi",
+        "q-4-option-2": "B) Cá mòi",
+        "q-4-option-3": "C) Cá kiếm",
+        "q-4-option-4": "D) Cá hồi tươi",
+        "q-4-answer": "C) Cá kiếm",
+        "q-4-pre-answer": "Câu trả lời đúng là ",
+        "q-4-post-answer": "Cá kiếm và các loại cá có hàm lượng thủy ngân cao khác nên được tránh trong thai kỳ.",
+
+        "q-5-name": "Giới hạn tiêu thụ caffeine hàng ngày được khuyến nghị trong thai kỳ là bao nhiêu?",
+        "q-5-option-1": "A) 100 mg",
+        "q-5-option-2": "B) 200 mg",
+        "q-5-option-3": "C) 300 mg",
+        "q-5-option-4": "D) 400 mg",
+        "q-5-answer": "B) 200 mg",
+        "q-5-pre-answer": "Câu trả lời đúng là ",
+        "q-5-post-answer": "Phụ nữ mang thai nên hạn chế lượng caffeine tiêu thụ xuống dưới 200 mg mỗi ngày để đảm bảo an toàn cho em bé."
+      },
+
+      "more-details": "Chi tiết thêm...",
+      "prepage-btn": "Chương trước",
+      "nextpage-btn": "Chương tiếp theo"
+    },
+
+    "card-5": {
+      "module-name": "5. Bài Tập Thai Kỳ",
+      "module-desc": "Chào mẹ! Giữ cho cơ thể hoạt động trong thai kỳ không chỉ là việc giữ dáng—đó là cách tuyệt vời để chuẩn bị cơ thể cho những thay đổi sắp tới, giữ năng lượng dồi dào và thậm chí hỗ trợ trong quá trình sinh nở. Danh mục này nhằm đảm bảo bạn cảm thấy mạnh mẽ, khỏe mạnh và có quyền lực trong từng giai đoạn của thai kỳ. Từ các bài tập an toàn đến mẹo quản lý sự khó chịu, chúng tôi sẽ hỗ trợ bạn hết mình!",
+
+      "topic-1-name": "5.1 Tại Sao Bài Tập Thai Kỳ Quan Trọng",
+      "topic-1-desc": {
+        "text-1": "Bài tập thai kỳ rất có lợi cho cả bạn và em bé. Nó giúp tăng cường năng lượng, giảm đau nhức, chuẩn bị cơ thể cho quá trình sinh nở bằng cách tăng cường sức mạnh cơ bắp và cải thiện độ linh hoạt, hỗ trợ sức khỏe của em bé thông qua việc cải thiện lưu thông máu, và giảm nguy cơ gặp các biến chứng như tiểu đường thai kỳ và tiền sản giật. Giữ cơ thể hoạt động là một trong những điều tốt nhất bạn có thể làm trong thai kỳ.",
+        "text-2": "Mẹo Nhanh: Hãy cố gắng tập khoảng 30 phút mỗi ngày với các bài tập vừa phải như đi bộ hoặc yoga thai kỳ, nhưng luôn lắng nghe cơ thể bạn. Nếu bạn cảm thấy mệt mỏi, hãy nghỉ ngơi! Nếu bạn muốn biết thêm về các bài tập thai kỳ, hãy nhấp vào đây ",
+        "nav-1": "(liên kết đến bài tập)."
+      },
+
+      "topic-2-name": "5.2 Bài Tập An Toàn Cho Mỗi Tam Cá Nguyệt",
+      "topic-2-desc": {
+        "text-1": "• Tam Cá Nguyệt Thứ Nhất (Tuần 1-12): Tập trung vào cardio nhẹ nhàng như đi bộ và bơi lội, tập tạ nhẹ cho tay và chân với trọng lượng nhỏ, và các bài kéo giãn nhẹ hoặc yoga thai kỳ. Di chuyển chậm rãi và kiểm soát các động tác, đặc biệt nếu cảm thấy mệt mỏi hoặc buồn nôn.",
+        "text-2": "• Tam Cá Nguyệt Thứ Hai (Tuần 13-28): Đây là thời điểm tốt nhất để tập thể dục vì nhiều bà mẹ cảm thấy tràn đầy năng lượng hơn. Kết hợp các bài thể dục aerobic nhẹ, Pilates đã điều chỉnh, và các bài tập với dây kháng lực. Tập trung vào việc xây dựng sức mạnh và duy trì tư thế tốt khi bụng bạn lớn lên. Tránh nằm ngửa hoàn toàn.",
+        "text-3": "• Tam Cá Nguyệt Thứ Ba (Tuần 29-40): Giữ cho các hoạt động nhẹ nhàng như yoga thai kỳ, các bài tập ngồi và kéo giãn nhẹ nhàng. Thêm các bài tập sàn chậu như Kegel và nghiêng xương chậu để chuẩn bị cho quá trình sinh nở. Cardio nhẹ nhàng, như bơi lội hoặc đi bộ thong thả, là được khuyến nghị. Hãy chú ý đến sự cân bằng khi trọng tâm của bạn dịch chuyển."
+      },
+
+      "topic-3-name": "5.3 Các Bài Tập Chuẩn Bị Cho Quá Trình Sinh Nở",
+      "topic-3-desc": {
+        "text-1": "• Ngồi xổm: Tăng cường sức mạnh cho chân và sàn chậu, các cơ quan trọng cho quá trình sinh nở. Đứng với chân rộng bằng vai, ngồi xổm như thể ngồi trên ghế, giữ trong vài giây rồi đứng dậy.",
+        "text-2": "• Bài Tập Kegel: Tăng cường sức mạnh cho sàn chậu, hỗ trợ trong việc đẩy trong quá trình sinh và ngăn ngừa tiểu không tự chủ. Siết chặt các cơ dùng để ngừng dòng nước tiểu, giữ trong 5 giây rồi thả lỏng. Làm 10 lần, 3 lần mỗi ngày.",
+        "text-3": "• Kéo Giãn Cat-Cow: Giảm đau lưng dưới và cải thiện độ linh hoạt của cột sống. Ở tư thế quỳ tay và đầu gối, cong lưng lên như một con mèo, sau đó hạ xuống, để bụng bạn rơi xuống sàn."
+      },
+
+      "topic-4-name": "5.4 An Toàn Là Trên Hết!",
+      "topic-4-desc": {
+        "text-1": "An toàn là rất quan trọng trong thai kỳ, vì vậy hãy luôn lắng nghe cơ thể bạn—nếu bạn cảm thấy mệt mỏi, chóng mặt hoặc không thoải mái, hãy nghỉ ngơi. Tránh các hoạt động tác động cao như chạy hoặc nhảy, nằm ngửa hoàn toàn sau tam cá nguyệt đầu tiên, và các bài tập cần giữ hơi thở. Giữ đủ nước bằng cách uống nhiều nước trước, trong và sau khi tập thể dục. Ngừng ngay lập tức nếu bạn cảm thấy chóng mặt, khó thở nghiêm trọng, đau đầu, đau ngực, sưng đột ngột, co thắt hoặc giảm chuyển động của em bé. Sức khỏe của bạn và em bé là ưu tiên hàng đầu, vì vậy hãy tập luyện một cách cẩn thận."
+      },
+
+      "quiz": {
+        "topic-5-name": "5.5 Kiểm Tra Kiến Thức Của Bạn!",
+        "desc": "Hãy thử làm các câu hỏi dưới đây để kiểm tra hiểu biết của bạn về nội dung ở trên.",
+
+        "side": "Câu hỏi",
+
+        "q-1-name": "Lợi ích nào sau đây của bài tập thai kỳ?",
+        "q-1-option-1": "A) Gây sinh non",
+        "q-1-option-2": "B) Giảm đau lưng và cải thiện tâm trạng",
+        "q-1-option-3": "C) Dẫn đến mất nước",
+        "q-1-option-4": "D) Tăng nguy cơ biến chứng",
+        "q-1-answer": "B) Giảm đau lưng và cải thiện tâm trạng",
+        "q-1-pre-answer": "Câu trả lời đúng là ",
+        "q-1-post-answer": "Bài tập thai kỳ giúp giảm đau lưng, cải thiện tâm trạng và thúc đẩy sức khỏe tổng thể trong thai kỳ.",
+
+        "q-2-name": "Tam cá nguyệt nào là thời điểm tốt nhất để tập trung vào các bài tập nhẹ nhàng, ngồi và kéo giãn?",
+        "q-2-option-1": "A) Tam cá nguyệt thứ nhất",
+        "q-2-option-2": "B) Tam cá nguyệt thứ hai",
+        "q-2-option-3": "C) Tam cá nguyệt thứ ba",
+        "q-2-option-4": "D) Sau sinh",
+        "q-2-answer": "C) Tam cá nguyệt thứ ba",
+        "q-2-pre-answer": "Câu trả lời đúng là ",
+        "q-2-post-answer": "Tam cá nguyệt thứ ba là thời điểm lý tưởng để tập trung vào các bài tập nhẹ nhàng và kéo giãn nhằm thích ứng với những thay đổi của cơ thể.",
+
+        "q-3-name": "Cách tốt nhất để tăng cường cơ sàn chậu là gì?",
+        "q-3-option-1": "A) Bài tập nhảy",
+        "q-3-option-2": "B) Bài tập Kegel",
+        "q-3-option-3": "C) Bài tập gập bụng",
+        "q-3-option-4": "D) Nâng tạ nặng",
+        "q-3-answer": "B) Bài tập Kegel",
+        "q-3-pre-answer": "Câu trả lời đúng là ",
+        "q-3-post-answer": "Bài tập Kegel được thiết kế đặc biệt để tăng cường cơ sàn chậu, rất quan trọng trong thai kỳ.",
+
+        "q-4-name": "Loại bài tập nào nên tránh sau tam cá nguyệt đầu tiên?",
+        "q-4-option-1": "A) Đi bộ",
+        "q-4-option-2": "B) Nằm ngửa hoàn toàn",
+        "q-4-option-3": "C) Yoga thai kỳ",
+        "q-4-option-4": "D) Ngồi xổm",
+        "q-4-answer": "B) Nằm ngửa hoàn toàn",
+        "q-4-pre-answer": "Câu trả lời đúng là ",
+        "q-4-post-answer": "Sau tam cá nguyệt đầu tiên, nằm ngửa hoàn toàn nên được tránh vì có thể giảm lưu lượng máu đến em bé.",
+
+        "q-5-name": "Hoạt động nào là an toàn cho tam cá nguyệt thứ nhất?",
+        "q-5-option-1": "A) Tập luyện cường độ cao",
+        "q-5-option-2": "B) Yoga nhẹ nhàng",
+        "q-5-option-3": "C) Chạy đường dài",
+        "q-5-option-4": "D) Nâng tạ nặng",
+        "q-5-answer": "B) Yoga nhẹ nhàng",
+        "q-5-pre-answer": "Câu trả lời đúng là ",
+        "q-5-post-answer": "Yoga nhẹ nhàng là một hoạt động an toàn và có lợi trong tam cá nguyệt thứ nhất để cải thiện độ linh hoạt và giảm căng thẳng."
+      },
+
+      "more-details": "Chi tiết thêm...",
+      "prepage-btn": "Chương trước",
+      "nextpage-btn": "Chương tiếp theo"
+    },
+
+    "card-6": {
+      "module-name": "6. Bài Tập Sau Sinh",
+      "module-desc": "Chúc mừng, mẹ! Thời kỳ sau sinh là thời gian để phục hồi, xây dựng lại và kết nối với cơ thể của bạn. Hãy bắt đầu trở lại với chuyển động, tập trung vào những bài tập nhẹ nhàng hỗ trợ hành trình phục hồi của bạn.",
+
+      "topic-1-name": "6.1 6 Tuần Đầu: Những Chuyển Động Làm Dịu",
+      "topic-1-desc": {
+        "text-1": "Trong 6 tuần đầu sau sinh, việc nghỉ ngơi là rất quan trọng, nhưng những chuyển động nhẹ nhàng có thể hỗ trợ phục hồi. ",
+        "text-2": "Hít thở sâu từ bụng",
+        "text-3": " giúp kết nối lại các cơ bụng và giảm căng thẳng bằng cách hít thở chậm, sâu trong khi ngồi thoải mái. ",
+        "text-4": "Nghiêng xương chậu",
+        "text-5": " giúp giảm căng thẳng ở lưng dưới và bắt đầu tăng cường cơ bụng bằng cách nghiêng nhẹ xương chậu lên trong khi nằm ngửa với đầu gối gập. ",
+        "text-6": "Đi bộ nhẹ nhàng",
+        "text-7": " tăng cường lưu thông và tâm trạng, bắt đầu với những lần đi bộ ngắn từ 5-10 phút."
+      },
+
+      "topic-2-name": "6.2 Rebuilding Core and Pelvic Floor Strength (6-12 Weeks)",
+      "topic-2-desc": {
+        "text-1": "Between 6-12 weeks postpartum, with your doctor’s approval, focus on rebuilding core strength. ",
+        "text-2": "Heel slides",
+        "text-3": " help reconnect core muscles and strengthen the lower abs by sliding one heel away and back while lying on your back with one knee bent. ",
+        "text-4": "Bridges",
+        "text-5": " activate the glutes and core by lifting your hips off the floor while lying on your back with knees bent."
+      },
+
+      "quiz": {
+        "topic-3-name": "6.3 Kiểm Tra Kiến Thức Của Bạn!",
+        "desc": "Hãy thử làm các câu hỏi dưới đây để kiểm tra hiểu biết của bạn về nội dung ở trên.",
+
+        "side": "Câu hỏi",
+
+        "q-1-name": "Bài tập nào giúp kết nối lại các cơ bụng của bạn sau sinh?",
+        "q-1-option-1": "A) Trượt gót chân",
+        "q-1-option-2": "B) Nhảy squats",
+        "q-1-option-3": "C) Gập bụng",
+        "q-1-option-4": "D) Chống đẩy",
+        "q-1-answer": "A) Trượt gót chân",
+        "q-1-pre-answer": "Câu trả lời đúng là ",
+        "q-1-post-answer": "Trượt gót chân là những chuyển động nhẹ nhàng giúp kết nối và tăng cường các cơ bụng sau khi sinh.",
+
+        "q-2-name": "Khi nào thì thường an toàn để bắt đầu các bài tập nhẹ nhàng như đi bộ sau khi sinh thường?",
+        "q-2-option-1": "A) Ngay lập tức",
+        "q-2-option-2": "B) Sau 2 tuần",
+        "q-2-option-3": "C) Sau 4-6 tuần, với sự đồng ý của bác sĩ",
+        "q-2-option-4": "D) Sau 3 tháng",
+        "q-2-answer": "C) Sau 4-6 tuần, với sự đồng ý của bác sĩ",
+        "q-2-pre-answer": "Câu trả lời đúng là ",
+        "q-2-post-answer": "Sau khi sinh thường, thường an toàn để bắt đầu các bài tập nhẹ nhàng như đi bộ sau 4-6 tuần, với sự đồng ý của bác sĩ.",
+
+        "q-3-name": "Bài tập tốt nhất để bắt đầu xây dựng lại cơ bụng là gì?",
+        "q-3-option-1": "A) Gập bụng",
+        "q-3-option-2": "B) Trượt gót chân",
+        "q-3-option-3": "C) Nhảy jacks",
+        "q-3-option-4": "D) Chạy",
+        "q-3-answer": "B) Trượt gót chân",
+        "q-3-pre-answer": "Câu trả lời đúng là ",
+        "q-3-post-answer": "Trượt gót chân là một bài tập nhẹ nhàng và hiệu quả để bắt đầu xây dựng lại sức mạnh cơ bụng sau sinh.",
+
+        "q-4-name": "Bạn nên làm gì nếu cảm thấy đau hoặc thấy tăng lượng máu khi tập thể dục?",
+        "q-4-option-1": "A) Cố gắng tiếp tục",
+        "q-4-option-2": "B) Chậm lại và tham khảo ý kiến bác sĩ",
+        "q-4-option-3": "C) Tăng cường độ",
+        "q-4-option-4": "D) Uống nhiều nước hơn",
+        "q-4-answer": "B) Chậm lại và tham khảo ý kiến bác sĩ",
+        "q-4-pre-answer": "Câu trả lời đúng là ",
+        "q-4-post-answer": "Nếu bạn cảm thấy đau hoặc thấy tăng lượng máu khi tập thể dục, điều quan trọng là phải chậm lại và tham khảo ý kiến bác sĩ.",
+
+        "q-5-name": "Bài tập nào nên tránh trong quá trình phục hồi sau sinh sớm?",
+        "q-5-option-1": "A) Nghiêng xương chậu",
+        "q-5-option-2": "B) Plank",
+        "q-5-option-3": "C) Hít thở sâu từ bụng",
+        "q-5-option-4": "D) Đi bộ nhẹ nhàng",
+        "q-5-answer": "B) Plank",
+        "q-5-pre-answer": "Câu trả lời đúng là ",
+        "q-5-post-answer": "Plank nên tránh trong quá trình phục hồi sau sinh sớm vì chúng gây áp lực lên các cơ bụng cần thời gian để phục hồi."
+      },
+
+      "more-details": "Chi tiết thêm...",
+      "prepage-btn": "Chương Trước",
+      "nextpage-btn": "Sau khi bạn hoàn thành phần giáo dục, hãy đến trang Đánh Giá Rủi Ro ở đây."
+    },
+    "answer-correct": "Đúng rồi!",
+    "answer-incorrect": "Sai rồi!",
+    "submit-btn": "Gửi",
+    "next-btn": "Câu Hỏi Tiếp Theo"
+  },
+
+  "riskassessment": {
+    "point1-bold": "Trả lời",
+    "point1": "các câu hỏi đánh giá rủi ro",
+    "point2-bold": "Trả lời",
+    "point2-1": "Nhận được",
+    "point2-2": "ngay sau khi bạn gửi",
+    "title": "Đánh Giá Rủi Ro Bệnh Tiểu Đường",
+    "Disclaimer": "Lưu ý",
+    "text1": "Thông tin được cung cấp trong đánh giá rủi ro này dựa trên nghiên cứu thống kê được thực hiện bởi.",
+    "text2-text": "Bạn có thể xem báo cáo đầy đủ tại AIHW - Các yếu tố xã hội ảnh hưởng đến sức khỏe của người Úc đến từ các nền văn hóa khác nhau. Công cụ này nhằm nâng cao nhận thức và cung cấp những hiểu biết chung. Nó không thay thế cho lời khuyên y tế chuyên nghiệp, chẩn đoán hoặc điều trị. Vui lòng tham khảo ý kiến ​​của một chuyên gia y tế đủ tiêu chuẩn cho bất kỳ mối quan tâm hoặc quyết định y tế cá nhân nào.",
+    "bule-text": "Viện Y tế và Phúc lợi Úc (AIHW)",
+    "Direct-causes": "Nguyên nhân trực tiếp",
+    "text2": "Các nguyên nhân trực tiếp như chỉ số BMI, hoạt động thể chất, tiền sử gia đình, hút thuốc và tiêu thụ rượu có ảnh hưởng đáng kể đến nguy cơ mắc bệnh tiểu đường. Chỉ số BMI cao và hoạt động thể chất thấp ảnh hưởng trực tiếp đến độ nhạy insulin, trong khi tiền sử gia đình mắc bệnh tiểu đường làm tăng khả năng di truyền. Hút thuốc và uống rượu quá mức làm rối loạn sức khỏe chuyển hóa, tăng thêm nguy cơ.",
+    "card1": {
+      "title": "Chiều cao và cân nặng của bạn là gì?",
+      "Height": "Chiều cao",
+      "Weight": "Cân nặng",
+      "cm": "cm",
+      "kg": "kg",
+      "tips": "Chỉ số BMI cao, đặc biệt là béo phì, làm tăng nguy cơ mắc bệnh tiểu đường bằng cách góp phần vào kháng insulin."
+    },
+    "card2": {
+      "title": "Bạn tham gia hoạt động thể chất bao lâu một lần?",
+      "roadio1": "Năng động (≥ 150 phút/tuần)",
+      "roadio2": "Hơi năng động (75–149 phút/tuần)",
+      "roadio3": "Không hoạt động (< 75 phút/tuần)",
+      "tips": "Hoạt động thể chất thường xuyên làm giảm nguy cơ mắc bệnh tiểu đường bằng cách cải thiện độ nhạy insulin và giúp quản lý cân nặng."
+    },
+    "card3": {
+      "title": "Bạn có tiền sử gia đình mắc bệnh tiểu đường không (ví dụ, cha mẹ hoặc anh chị em có bệnh tiểu đường)?",
+      "roadio1": "Không có tiền sử gia đình",
+      "roadio2": "Một phụ huynh có bệnh tiểu đường",
+      "roadio3": "Cả hai phụ huynh đều có bệnh tiểu đường",
+      "tips": "Tiền sử gia đình mắc bệnh tiểu đường làm tăng khả năng phát triển tình trạng này do các yếu tố di truyền."
+    },
+    "card4": {
+      "title": "Bạn hút thuốc bao lâu một lần?",
+      "roadio1": "Chưa từng hút thuốc",
+      "roadio2": "Người từng hút thuốc",
+      "roadio3": "Người hiện đang hút thuốc",
+      "tips": "Hút thuốc làm tăng nguy cơ mắc bệnh tiểu đường bằng cách góp phần vào viêm, kháng insulin và các vấn đề chuyển hóa khác."
+    },
+    "card5": {
+      "title": "Bạn uống rượu bao lâu một lần?",
+      "roadio1": "Không uống rượu",
+      "roadio2": "Người uống rượu vừa phải",
+      "roadio3": "Người uống rượu nhiều",
+      "tips": "Uống rượu quá mức có thể dẫn đến tăng cân và rối loạn điều hòa insulin, làm tăng nguy cơ mắc bệnh tiểu đường."
+    },
+    "SocioeconomicFactors": "Các Yếu Tố Kinh Tế - Xã Hội",
+    "SocioeconomicText": "Các yếu tố kinh tế - xã hội như Quốc gia Sinh ra và Nhóm Tuổi ảnh hưởng đến nguy cơ mắc bệnh tiểu đường bằng cách ảnh hưởng đến khả năng tiếp cận dịch vụ y tế, thói quen lối sống và di truyền. Người nhập cư từ một số khu vực và các nhóm tuổi lớn hơn có thể phải đối mặt với nguy cơ mắc bệnh tiểu đường cao hơn do những yếu tố này.",
+    "card6": {
+      "WhatisyourCountryofbirth": "Quốc gia sinh ra của bạn là gì?",
+      "tips": "Ảnh hưởng đến nguy cơ mắc bệnh tiểu đường do di truyền và khả năng tiếp cận dịch vụ y tế khác nhau ở các khu vực khác nhau."
+    },
+    "card7": {
+      "Whichagegroupdoyoubelongsto": "Bạn thuộc nhóm tuổi nào?",
+      "tips": "Các nhóm tuổi lớn hơn có nguy cơ mắc bệnh tiểu đường cao hơn do những thay đổi chuyển hóa và các yếu tố lối sống."
+    },
+    "Submit": "Gửi",
+    "ResetAnswers": "Đặt lại câu trả lời",
+    "AssessmentResult": "Kết quả đánh giá",
+    "YourCountryofBirth": "Quốc gia sinh ra của bạn",
+    "row": "Nó thuộc về khu vực. Nguy cơ mắc bệnh tiểu đường ở đây được so sánh với mức trung bình của Úc.",
+    "YourDiabetesRisk": "Nguy cơ mắc bệnh tiểu đường của bạn",
+    "MODERATERISK": "NGUY CƠ VỪA PHẢI",
+    "YourScore": "Điểm số của bạn",
+    "MaincontributingFacto": "Các yếu tố chính góp phần",
+    "Note": "Lưu ý",
+    "row2-1": "Điểm đánh giá này dựa trên",
+    "row2-2": "Viện Y tế và Phúc lợi Úc (AIHW)",
+    "What'sNext": "Tiếp theo là gì?",
+    "row3": "Tìm hiểu thêm về bệnh tiểu đường và thai kỳ: Khám phá thông tin thiết yếu về quản lý bệnh tiểu đường trong thời kỳ mang thai trên trang giáo dục của chúng tôi để luôn được thông báo và chủ động.",
+    "educationpage": "trang giáo dục",
+    "row4": "Tìm hiểu thêm về tầm quan trọng và hiệu quả của việc thăm khám trước sinh trong thời kỳ mang thai tại đây.",
+    "row5": "Khám phá thêm về các lời khuyên dinh dưỡng phù hợp với thai kỳ của bạn tại đây.",
+    "row6": "Khám phá các bài tập và hoạt động thể chất được khuyến nghị cho trải nghiệm thai kỳ tốt nhất của bạn tại đây."
+  },
+
+  "NutritionAnalysis": {
+    "NutritionAnalysis": "Phân tích dinh dưỡng",
+    "Recommendation": "Khuyến nghị",
+    "Recipes": "Công thức",
+    "FoodNutritionAnalysis": "Phân tích dinh dưỡng thực phẩm",
+    "text1": "Tại đây bạn có thể tính toán các chất dinh dưỡng có trong nhiều loại thực phẩm và số lượng khác nhau. Bạn có thể sử dụng ô văn bản để nhập, chẳng hạn như '2 tách cà phê', và bạn có thể thêm nhiều loại thực phẩm khác nhau qua các dòng ngắt. Bạn cũng có thể nhập và chọn loại và số lượng thực phẩm với hướng dẫn. Khi bạn nhấn phân tích, bạn có thể nhận được bảng dinh dưỡng cho tất cả các thực phẩm bạn đã kết hợp.",
+    "GuidedInput": "Nhập liệu có hướng dẫn",
+    "FreeText": "Văn bản tự do",
+    "Qty": "Số lượng",
+    "Unit": "Đơn vị",
+    "Name": "Tên",
+    "Calories": "Calo",
+    "Weight": "Trọng lượng",
+    "IngredientName": "Tên nguyên liệu",
+    "Ounce": "Ounce",
+    "Gram": "Gram",
+    "Pound": "Pound",
+    "Kilogram": "Kilogram",
+    "Pinch": "Nhúm",
+    "Liter": "Lít",
+    "Fluidounce": "Fluid ounce",
+    "Pint": "Pint",
+    "Quart": "Quart",
+    "Milliliter": "Millilít",
+    "Drop": "Giọt",
+    "Cup": "Tách",
+    "Tablespoon": "Muỗng canh",
+    "Teaspoon": "Muỗng cà phê",
+    "AddAnotherItem": "Thêm một mục khác",
+    "Analyze": "Phân tích",
+    "clear": "xóa",
+    "NutritionFacts": "Thông tin dinh dưỡng",
+    "AmountPerServing": "Khối lượng mỗi khẩu phần",
+    "FoodRecommendation": "Khuyến nghị thực phẩm",
+    "text2": "Khám phá các thực phẩm được khuyến nghị hoặc không được khuyến nghị trong thai kỳ.",
+    "Recommended": "Khuyến nghị",
+    "NotRecommended": "Không khuyến nghị",
+    "category": "danh mục",
+    "Choosethefoodcategory": "Chọn danh mục thực phẩm",
+    "DailyValue": "Giá trị hàng ngày",
+    "TotalFat": "Tổng chất béo",
+    "SaturatedFat": "Chất béo bão hòa",
+    "TransFat": "Chất béo chuyển hóa",
+    "Cholesterol": "Cholesterol",
+    "Sodium": "Natri",
+    "TotalCarbohydrate": "Tổng carbohydrate",
+    "DietaryFiber": "Chất xơ thực phẩm",
+    "TotalSugars": "Tổng đường",
+    "Includes-AddedSugars": "Bao gồm - Đường thêm vào",
+    "Protein": "Protein",
+    "VitaminD": "Vitamin D",
+    "Calcium": "Canxi",
+    "Iron": "Sắt",
+    "Potassium": "Kali",
+    "PercentDailyValuesarebasedona2000caloriediet": "Giá trị hàng ngày phần trăm được dựa trên chế độ ăn 2000 calo",
+    "Grains": "Ngũ cốc",
+    "Meat": "Thịt",
+    "Dairy": "Sữa",
+    "Fish": "Cá",
+    "Vegetables": "Rau",
+    "Fruits": "Trái cây",
+    "Beverages": "Đồ uống",
+    "Processed": "Chế biến",
+    "FoodList": "Danh sách thực phẩm",
+    "Listoffooditemsbasedonyourselection": "Danh sách các mục thực phẩm dựa trên lựa chọn của bạn"
+  },
+
+  "recipe": {
+    "NutritionAnalysis": "Phân tích dinh dưỡng",
+    "Recommendation": "Khuyến nghị",
+    "Recipes": "Công thức",
+    "FoodRecipes": "Công thức thực phẩm",
+    "text": "Khám phá các công thức thực phẩm dựa trên sở thích của bạn và tạo ra kế hoạch bữa ăn tốt nhất cho bạn.",
+    "point-1-bold": "Khám phá",
+    "point-1": "các công thức thực phẩm",
+    "point-2-bold": "Chọn",
+    "point-2": "các công thức ưa thích của bạn",
+    "point-3-bold": "Lên lịch",
+    "point-3": "kế hoạch bữa ăn của bạn",
+    "text1": "Tìm kiếm theo danh mục",
+    "BREAKFAST": "BỮA SÁNG",
+    "LUNCH": "BỮA TRƯA",
+    "TEATIME": "THỜI GIAN TRÀ",
+    "DINNER": "BỮA TỐI",
+    "PersonalizedSchedule": "Lịch trình cá nhân hóa",
+    "BeefRoast": "Thịt bò nướng",
+    "kcal": "kcal",
+    "PROTEIN": "PROTEIN",
+    "FAT": "CHẤT BÉO",
+    "CARB": "CARBOHYDRATE",
+    "text2": "Hoặc tìm kiếm theo tên",
+    "BREAKFASTRECOMMENDATIONS": "KHuyến nghị bữa sáng",
+    "Cholesterol": "Cholesterol",
+    "Calcium": "Canxi",
+    "Potassium": "Kali",
+    "Protein": "Protein",
+    "Sodium": "Natri",
+    "Magnesium": "Magnesium",
+    "Iron": "Sắt"
+  },
+
+  "exercise": {
+    "overview-title": "Bài Tập Khi Mang Thai",
+
+    "questionnaire-access": "Không biết bắt đầu từ đâu? Hãy làm bài kiểm tra thể dục của chúng tôi!",
+    "card-1-desc": "Bài Tập Aerobic Thấp Cường Độ",
+    "card-2-desc": "Yoga Mang Thai",
+    "card-3-desc": "Pilates Mang Thai",
+    "card-4-desc": "Bài Tập Dưới Nước",
+    "card-5-desc": "Bài Tập Giãn Cơ",
+    "card-6-desc": "Tập Lực Mang Thai",
+    "card-7-desc": "Bài Tập Sàn Chậu",
+    "card-8-desc": "Nhảy Múa Mang Thai",
+
+    "card-1": {
+      "card-title": "Bài Tập Aerobic Thấp Cường Độ",
+      "suggest-period-title": "Thời Gian Đề Xuất: ",
+      "suggest-period-content": "Giai Đoạn Sau Sinh Sớm (0-6 Tuần)",
+      "desc-title": "Mô Tả: ",
+      "desc-content": "Các bài tập nhẹ nhàng giúp nâng cao sức khỏe tim mạch và hỗ trợ phục hồi trong khi giảm thiểu căng thẳng cho cơ thể. Rất phù hợp cho các bà mẹ mới sinh đang trở lại hoạt động thể chất.",
+
+      "exe-1-title": "Đi Bộ Nhẹ: ",
+      "exe-1-content": "Kích thích hệ thống tim mạch với tác động tối thiểu, hỗ trợ phục hồi và tăng cường năng lượng.",
+      "exe-1-how-title": "Cách thực hiện:",
+      "exe-1-how-content-1": "Bắt đầu với một cuộc đi bộ 10-15 phút, từ từ tăng thời gian khi cơ thể bạn điều chỉnh.",
+      "exe-1-how-content-2": "Đi với tốc độ cảm thấy thoải mái, chú ý vào tư thế bằng cách giữ lưng thẳng và đầu nâng cao.",
+      "exe-1-how-content-3": "Đung đưa cánh tay nhẹ nhàng khi đi để cải thiện tuần hoàn.",
+      "exe-1-ben-title": "Lợi ích: ",
+      "exe-1-ben-content": "Kích thích tuần hoàn, giảm căng thẳng, nâng cao tâm trạng và cải thiện mức năng lượng.",
+
+      "exe-2-title": "Gập Người Từ Tư Thế Ngồi: ",
+      "exe-2-content": "Giãn cơ lưng dưới, gân kheo và bắp chân, giảm đau lưng.",
+      "exe-2-how-title": "Cách thực hiện:",
+      "exe-2-how-content-1": "Ngồi trên sàn với hai chân duỗi thẳng trước mặt.",
+      "exe-2-how-content-2": "Giữ lưng thẳng và hít sâu, với cả hai tay hướng về phía ngón chân.",
+      "exe-2-how-content-3": "Từ từ gập người về phía trước từ hông, duỗi ra xa nhất có thể mà không bị căng thẳng.",
+      "exe-2-how-content-4": "Giữ tư thế trong 20-30 giây, sau đó thả ra.",
+      "exe-2-ben-title": "Lợi ích: ",
+      "exe-2-ben-content": "Giãn cơ lưng dưới, gân kheo và bắp chân, giúp giảm đau lưng và cải thiện độ linh hoạt.",
+
+      "exe-3-title": "Giãn Cơ Mở Ngực: ",
+      "exe-3-content": "Giãn cơ ngực và vai để cải thiện tư thế.",
+      "exe-3-how-title": "Cách thực hiện:",
+      "exe-3-how-content-1": "Đứng với hai chân rộng bằng vai.",
+      "exe-3-how-content-2": "Nắm tay sau lưng, giữ tay thẳng.",
+      "exe-3-how-content-3": "Nhẹ nhàng nâng tay lên phía sau trong khi mở ngực và vai.",
+      "exe-3-how-content-4": "Giữ giãn trong 15-30 giây, sau đó thả ra.",
+      "exe-3-ben-title": "Lợi ích: ",
+      "exe-3-ben-content": "Giãn cơ ngực và vai, cải thiện tư thế và giảm căng thẳng từ việc cho con bú hoặc bế trẻ.",
+
+      "exe-4-title": "Giãn Cơ Khớp Hông: ",
+      "exe-4-content": "Tập trung vào cơ hông, giảm căng thẳng và cải thiện sự cân bằng khung chậu.",
+      "exe-4-how-title": "Cách thực hiện:",
+      "exe-4-how-content-1": "Bắt đầu ở tư thế bước với chân phải phía trước và đầu gối trái resting trên sàn.",
+      "exe-4-how-content-2": "Đẩy hông về phía trước nhẹ nhàng cho đến khi cảm thấy căng ở cơ hông bên trái.",
+      "exe-4-how-content-3": "Giữ tư thế trong 20-30 giây, sau đó đổi bên.",
+      "exe-4-ben-title": "Lợi ích: ",
+      "exe-4-ben-content": "Giãn cơ hông căng, cải thiện sự cân bằng khung chậu và giúp giảm khó chịu ở lưng dưới.",
+
+      "how-btn": "Cách thực hiện & Lợi ích",
+      "video-title": "Video Đặc Sắc"
+    },
+
+    "card-2": {
+      "card-title": "Yoga Mang Thai",
+      "suggest-period-title": "Thời Gian Đề Xuất: ",
+      "suggest-period-content": "Từ 6 Tuần Sau Đến 12-16 Tuần",
+      "desc-title": "Mô Tả: ",
+      "desc-content": "Tập trung vào các bài giãn cơ và tư thế nhẹ nhàng nhằm tăng cường độ linh hoạt, sức mạnh và sự thư giãn trong suốt thời gian mang thai.",
+
+      "exe-1-title": "Tư Thế Mèo-Bò: ",
+      "exe-1-content": "Giãn cơ và tăng cường sức mạnh cho cột sống, giúp giảm đau lưng.",
+      "exe-1-how-title": "Cách thực hiện:",
+      "exe-1-how-content-1": "Bắt đầu ở tư thế tay và đầu gối, với cổ tay thẳng dưới vai và đầu gối thẳng dưới hông.",
+      "exe-1-how-content-2": "Khi hít vào, cong lưng (tư thế bò), nâng đầu và đuôi lên trần.",
+      "exe-1-how-content-3": "Khi thở ra, cong lưng (tư thế mèo), hạ cằm về phía ngực và kéo bụng về phía cột sống.",
+      "exe-1-how-content-4": "Lặp lại trong 5-10 hơi thở, di chuyển theo nhịp thở.",
+      "exe-1-ben-title": "Lợi ích: ",
+      "exe-1-ben-content": "Giãn cơ và tăng cường sức mạnh cho cột sống, cải thiện độ linh hoạt và giúp giảm đau lưng, một vấn đề phổ biến trong thời gian mang thai.",
+
+      "exe-2-title": "Tư Thế Góc Đóng: ",
+      "exe-2-content": "Mở hông và giãn cơ đùi để thúc đẩy độ linh hoạt.",
+      "exe-2-how-title": "Cách thực hiện:",
+      "exe-2-how-content-1": "Ngồi trên sàn với hai chân duỗi thẳng trước mặt.",
+      "exe-2-how-content-2": "Đem lòng bàn chân lại gần nhau và để đầu gối rơi ra ngoài, tạo thành hình kim cương với hai chân.",
+      "exe-2-how-content-3": "Giữ lòng bàn chân bằng cả hai tay, ngồi thẳng với lưng thẳng.",
+      "exe-2-how-content-4": "Nhẹ nhàng ấn đầu gối xuống đất mà không ép buộc, giữ tư thế trong 20-30 giây.",
+      "exe-2-ben-title": "Lợi ích: ",
+      "exe-2-ben-content": "Mở hông và giãn cơ đùi trong, thúc đẩy độ linh hoạt và giảm căng thẳng ở khu vực chậu.",
+
+      "exe-3-title": "Warrior II Pose: ",
+      "exe-3-content": "Strengthens legs and improves balance, preparing the body for labor.",
+      "exe-3-how-title": "How to do it:",
+      "exe-3-how-content-1": "Stand with your feet about 3-4 feet apart.",
+      "exe-3-how-content-2": "Turn your right foot out 90 degrees and your left foot slightly inward.",
+      "exe-3-how-content-3": "Raise your arms parallel to the floor, palms facing down.",
+      "exe-3-how-content-4": "Bend your right knee while keeping your left leg straight, ensuring your right knee is directly over your ankle.",
+      "exe-3-how-content-5": "Hold the pose for 20-30 seconds, then switch sides.",
+      "exe-3-ben-title": "Benefits: ",
+      "exe-3-ben-content": "Strengthens the legs, hips, and core, while improving balance and stamina—important for preparing the body for labor.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
+    },
+
+    "card-3": {
+      "card-title": "Prenatal Pilates",
+      "suggest-period-title": "Suggested Period: ",
+      "suggest-period-content": "Post-6 Weeks to 12-16 Weeks",
+      "desc-title": "Description: ",
+      "desc-content": "Incorporates core-strengthening exercises that support overall fitness and stability, making it a beneficial practice during pregnancy.",
+
+      "exe-1-title": "Pelvic Tilts: ",
+      "exe-1-content": "Strengthens the core and supports the lower back, reducing pregnancy-related discomfort.",
+      "exe-1-how-title": "How to do it:",
+      "exe-1-how-content-1": "Lie on your back with knees bent and feet flat on the floor, hip-width apart.",
+      "exe-1-how-content-2": "Inhale, then as you exhale, gently tilt your pelvis upward, pressing your lower back into the floor.",
+      "exe-1-how-content-3": "Hold for a few seconds, then release back to a neutral spine position.",
+      "exe-1-how-content-4": "Repeat for 10-15 reps.",
+      "exe-1-ben-title": "Benefits: ",
+      "exe-1-ben-content": "Strengthens the core, supports the lower back, and alleviates pregnancy-related discomfort.",
+
+      "exe-2-title": "Side-Lying Leg Lifts: ",
+      "exe-2-content": "Improves hip stability and strengthens the outer thighs and glutes.",
+      "exe-2-how-title": "How to do it:",
+      "exe-2-how-content-1": "Lie on your side with your legs straight and stacked on top of each other.",
+      "exe-2-how-content-2": "Support your head with your arm, then slowly lift your top leg while keeping your core engaged.",
+      "exe-2-how-content-3": "Lower the leg back down with control. Repeat 10-15 times on each side.",
+      "exe-2-ben-title": "Benefits: ",
+      "exe-2-ben-content": "Improves hip stability, strengthens the outer thighs and glutes, and reduces pressure on the lower back.",
+
+      "exe-3-title": "Arm & Leg Extensions: ",
+      "exe-3-content": "Engages the core, improves stability, and strengthens arms and legs.",
+      "exe-3-how-title": "How to do it:",
+      "exe-3-how-content-1": "Begin in a tabletop position, with your wrists under your shoulders and knees under your hips.",
+      "exe-3-how-content-2": "Extend your right arm forward and your left leg back, keeping your hips level.",
+      "exe-3-how-content-3": "Hold for a few seconds, then return to the starting position. Repeat on the other side.",
+      "exe-3-how-content-4": "Perform 10-12 repetitions.",
+      "exe-3-ben-title": "Benefits: ",
+      "exe-3-ben-content": "Enhances core stability, strengthens the back, arms, and legs, and improves coordination, which is beneficial for daily activities during pregnancy.",
+
+      "how-btn": "How to do & Benefits",
+      "video-title": "Featured Videos"
+    },
+
+    "card-4": {
+      "card-title": "Bài Tập Dưới Nước",
+      "suggest-period-title": "Thời Gian Đề Xuất: ",
+      "suggest-period-content": "Sau 6 Tuần đến 12-16 Tuần",
+      "desc-title": "Mô Tả: ",
+      "desc-content": "Sử dụng sức kháng của nước để có một bài tập hiệu quả với ít tác động, giúp tăng cường sức bền và ton cơ mà không gây áp lực lên các khớp.",
+
+      "exe-1-title": "Thể Dục Nước: ",
+      "exe-1-content": "Một bài tập ít tác động sử dụng sức kháng của nước để cải thiện sức bền tim mạch và sức mạnh cơ bắp.",
+      "exe-1-how-title": "Cách thực hiện:",
+      "exe-1-how-content-1": "Đứng trong nước sâu đến thắt lưng và thực hiện một loạt các động tác như đi bộ, đá chân hoặc xoay tay.",
+      "exe-1-how-content-2": "Sử dụng sức kháng của nước cho mỗi động tác, thực hiện chậm rãi và có ý thức.",
+      "exe-1-how-content-3": "Kích hoạt cơ bụng trong suốt bài tập để duy trì sự cân bằng và kiểm soát.",
+      "exe-1-how-content-4": "Mục tiêu là 20-30 phút bài tập ít tác động dưới nước.",
+      "exe-1-ben-title": "Lợi ích: ",
+      "exe-1-ben-content": "Cải thiện sức bền tim mạch, xây dựng sức mạnh cơ bắp và tăng cường sự linh hoạt của các khớp, tất cả đều với ít áp lực lên cơ thể.",
+
+      "how-btn": "Cách thực hiện & Lợi ích",
+      "video-title": "Video Nổi Bật"
+    },
+
+    "card-5": {
+      "card-title": "Bài Tập Giãn Cơ",
+      "suggest-period-title": "Thời Gian Đề Xuất: ",
+      "suggest-period-content": "Giai Đoạn Sau Sinh Sớm (0-6 Tuần)",
+      "desc-title": "Mô Tả: ",
+      "desc-content": "Nhắm đến việc cải thiện độ linh hoạt và giảm căng thẳng ở các nhóm cơ chính, giãn cơ là rất cần thiết để mang lại sự thoải mái trong thai kỳ.",
+
+      "exe-1-title": "Gập Người Về Phía Trước Ngồi: ",
+      "exe-1-content": "Giãn cơ lưng dưới, gân kheo và bắp chân, giảm đau lưng.",
+      "exe-1-how-title": "Cách thực hiện:",
+      "exe-1-how-content-1": "Ngồi trên sàn với hai chân duỗi thẳng trước mặt.",
+      "exe-1-how-content-2": "Từ từ gập người về phía trước từ hông, với tay với lấy chân hoặc đến mức bạn cảm thấy thoải mái.",
+      "exe-1-how-content-3": "Giữ trong 20-30 giây, thở sâu khi bạn giãn cơ.",
+      "exe-1-ben-content": "Giãn cơ lưng dưới, gân kheo và bắp chân, giúp giảm căng thẳng và đau nhức ở lưng và chân.",
+
+      "exe-2-title": "Giãn Cơ Mở Ngực: ",
+      "exe-2-content": "Giãn cơ ngực và vai để cải thiện tư thế.",
+      "exe-2-how-title": "Cách thực hiện:",
+      "exe-2-how-content-1": "Đứng thẳng với hai chân cách nhau bằng vai.",
+      "exe-2-how-content-2": "Nắm tay sau lưng và nhẹ nhàng nâng cánh tay lên, mở rộng ngực.",
+      "exe-2-how-content-3": "Giữ tư thế giãn trong 20-30 giây, thở sâu.",
+      "exe-2-ben-title": "Lợi ích: ",
+      "exe-2-ben-content": "Giãn cơ ngực và vai, cải thiện tư thế và chống lại việc ngồi khom lưng.",
+
+      "exe-3-title": "Giãn Cơ Gập Hông: ",
+      "exe-3-content": "Nhắm đến các cơ hông, giảm căng thẳng và cải thiện sự cân bằng của xương chậu.",
+      "exe-3-how-title": "Cách thực hiện:",
+      "exe-3-how-content-1": "Quỳ một chân với chân kia ở phía trước, tạo thành một góc 90 độ với cả hai chân.",
+      "exe-3-how-content-2": "Nhẹ nhàng đẩy hông về phía trước cho đến khi bạn cảm thấy căng ở cơ gập hông của chân phía sau.",
+      "exe-3-how-content-3": "Giữ trong 20-30 giây, sau đó đổi bên.",
+      "exe-3-ben-title": "Lợi ích: ",
+      "exe-3-ben-content": "Nhắm đến các cơ hông chặt, giảm căng thẳng và cải thiện sự cân bằng của xương chậu, giúp tăng cường tính linh hoạt và thoải mái trong thai kỳ.",
+
+      "how-btn": "Cách thực hiện & Lợi ích",
+      "video-title": "Video Nổi Bật"
+    },
+
+    "card-6": {
+      "card-title": "Tập Lực Lượng Trước Sinh",
+      "suggest-period-title": "Thời gian đề xuất: ",
+      "suggest-period-content": "Sau 6 Tuần đến 12-16 Tuần",
+      "desc-title": "Mô tả: ",
+      "desc-content": "Tập trung vào việc phục hồi sức mạnh trong khi đảm bảo an toàn, tập luyện này giúp duy trì sự săn chắc cơ bắp và thể lực tổng thể.",
+
+      "exe-1-title": "Gập Bicep với Tạ Nhẹ: ",
+      "exe-1-content": "Duy trì sức mạnh cánh tay và vai với tạ nhẹ.",
+      "exe-1-how-title": "Cách thực hiện:",
+      "exe-1-how-content-1": "Đứng với hai chân rộng bằng hông, giữ một tạ nhẹ ở mỗi tay.",
+      "exe-1-how-content-2": "Giữ khuỷu tay gần sát cơ thể và lòng bàn tay hướng về phía trước.",
+      "exe-1-how-content-3": "Từ từ nâng tạ lên đến vai, sau đó hạ xuống từ từ.",
+      "exe-1-how-content-4": "Thực hiện 10-12 lần lặp lại.",
+      "exe-1-ben-title": "Lợi ích: ",
+      "exe-1-ben-content": "Duy trì sức mạnh cánh tay và vai mà không làm căng cơ, thúc đẩy thể lực phần trên cơ thể.",
+
+      "exe-2-title": "Chống Đẩy trên Tường: ",
+      "exe-2-content": "Kích hoạt cơ bắp phần trên cơ thể, giúp duy trì sức mạnh ngực và cánh tay.",
+      "exe-2-how-title": "Cách thực hiện:",
+      "exe-2-how-content-1": "Đứng đối diện với tường, với hai chân cách nhau bằng hông và tay đặt rộng bằng vai trên tường.",
+      "exe-2-how-content-2": "Gập khuỷu tay và nghiêng về phía tường, giữ cơ thể thẳng.",
+      "exe-2-how-content-3": "Đẩy về vị trí ban đầu. Lặp lại 10-15 lần.",
+      "exe-2-ben-title": "Lợi ích: ",
+      "exe-2-ben-content": "Kích hoạt cơ bắp phần trên cơ thể, đặc biệt là ngực và cánh tay, trong khi cung cấp sức đề kháng ít tác động.",
+
+      "exe-3-title": "Ngồi Xuống: ",
+      "exe-3-content": "Tăng cường sức mạnh cho chân và mông trong khi hỗ trợ các cơ xương chậu, chuẩn bị cho quá trình sinh.",
+      "exe-3-how-title": "Cách thực hiện:",
+      "exe-3-how-content-1": "Đứng với hai chân rộng hơn vai một chút và ngón chân chỉ hơi ra ngoài.",
+      "exe-3-how-content-2": "Hạ thấp cơ thể như thể bạn đang ngồi vào một chiếc ghế, giữ lưng thẳng và đầu gối sau ngón chân.",
+      "exe-3-how-content-3": "Đẩy qua gót chân để trở lại tư thế đứng. Lặp lại 10-12 lần.",
+      "exe-3-ben-title": "Lợi ích: ",
+      "exe-3-ben-content": "Tăng cường sức mạnh cho chân, mông và các cơ xương chậu, cung cấp sự ổn định và chuẩn bị cơ thể cho quá trình sinh.",
+
+      "how-btn": "Cách thực hiện & Lợi ích",
+      "video-title": "Video Nổi Bật"
+    },
+
+    "card-7": {
+      "card-title": "Bài Tập Cơ Sàn Chậu (Bài Tập Kegel)",
+      "suggest-period-title": "Thời gian đề xuất: ",
+      "suggest-period-content": "Giai đoạn Sau Sinh Sớm (0-6 Tuần)",
+      "desc-title": "Mô tả: ",
+      "desc-content": "Rất quan trọng để tăng cường cơ sàn chậu, những bài tập này giúp ngăn ngừa tiểu không tự chủ và thúc đẩy sức khỏe sàn chậu tổng thể.",
+
+      "exe-1-title": "T позе cầu: ",
+      "exe-1-content": "Kích hoạt cơ sàn chậu và mông, hỗ trợ sức mạnh lưng dưới.",
+      "exe-1-how-title": "Cách thực hiện:",
+      "exe-1-how-content-1": "Nằm ngửa với đầu gối cong và bàn chân phẳng trên sàn, cách nhau bằng hông.",
+      "exe-1-how-content-2": "Từ từ nâng hông lên trần nhà trong khi siết chặt cơ sàn chậu và mông.",
+      "exe-1-how-content-3": "Giữ trong vài giây, sau đó hạ xuống. Lặp lại 10-12 lần.",
+      "exe-1-ben-title": "Lợi ích: ",
+      "exe-1-ben-content": "Tăng cường cơ sàn chậu, mông và lưng dưới, hỗ trợ phục hồi sau sinh.",
+
+      "exe-2-title": "Ngồi Xuống và Giữ: ",
+      "exe-2-content": "Kích hoạt cơ sàn chậu và cơ chân, cải thiện sức mạnh ở các khu vực này.",
+      "exe-2-how-title": "Cách thực hiện:",
+      "exe-2-how-content-1": "Squeeze Chậm: Siết chặt cơ sàn chậu từ từ, giữ trong 5-10 giây, sau đó thả lỏng. Lặp lại 10 lần.",
+      "exe-2-how-content-2": "Squeeze Nhanh: Thực hiện siết chặt nhanh, ngắn và mạnh của cơ sàn chậu. Lặp lại 10 lần.",
+      "exe-2-how-content-3": "Kiểm tra Ho: Siết chặt cơ sàn chậu, sau đó ho nhẹ. Lặp lại 3 lần.",
+      "exe-2-how-content-4": "Thực hiện Đều Đặn: Nhắm đến 5-6 bộ bài tập cơ sàn chậu mỗi ngày để xây dựng và duy trì sức mạnh cơ bắp.",
+      "exe-2-ben-title": "Lợi ích: ",
+      "exe-2-ben-content": "Tăng cường cơ sàn chậu và cơ chân, thúc đẩy sự ổn định và giảm khó chịu ở vùng chậu.",
+
+      "how-btn": "Cách thực hiện & Lợi ích",
+      "video-title": "Video Nổi Bật"
+    },
+
+    "card-8": {
+      "card-title": "Nhảy Múa Trước Sinh",
+      "suggest-period-title": "Thời gian đề xuất: ",
+      "suggest-period-content": "Sau 6 Tuần đến 12-16 Tuần",
+      "desc-title": "Mô tả: ",
+      "desc-content": "Kết hợp chuyển động và nhịp điệu để tăng cường sự thích thú trong khi cải thiện sự phối hợp và sức khỏe tim mạch.",
+
+      "exe-1-title": "Các Động Tác Nhảy Nhẹ Nhàng: ",
+      "exe-1-content": "Khuyến khích chuyển động và niềm vui trong khi cải thiện sự phối hợp và nhịp điệu.",
+      "exe-1-how-title": "Cách thực hiện:",
+      "exe-1-how-content-1": "Chọn những bước nhảy đơn giản, như bước sang bên, nghiêng nhẹ và động tác tay.",
+      "exe-1-how-content-2": "Giữ cho các chuyển động mượt mà và thư giãn, đảm bảo bạn không làm quá sức.",
+      "exe-1-how-content-3": "Nhảy trong 10-20 phút, tập trung vào việc duy trì nhịp điệu ổn định và thở đều.",
+      "exe-1-ben-title": "Lợi ích: ",
+      "exe-1-ben-content": "Khuyến khích tập luyện ít tác động thú vị, cải thiện sự phối hợp, tính linh hoạt và sức khỏe tim mạch.",
+
+      "exe-2-title": "Biên Đạo Đơn Giản: ",
+      "exe-2-content": "Kết hợp những động tác nhảy dễ dàng và vui vẻ giúp thúc đẩy sức khỏe tim mạch mà không làm quá sức.",
+      "exe-2-how-title": "Cách thực hiện:",
+      "exe-2-how-content-1": "Thực hiện các động tác đơn giản với các bước như bước-touches, xoay nhẹ và nâng tay.",
+      "exe-2-how-content-2": "Kết hợp nhạc mà bạn thích để giữ cho các chuyển động nhẹ nhàng và nhịp nhàng.",
+      "exe-2-how-content-3": "Nhảy trong 15-20 phút, từ từ xây dựng sức bền của bạn.",
+      "exe-2-ben-title": "Lợi ích: ",
+      "exe-2-ben-content": "Thúc đẩy sức khỏe tim mạch, khả năng phối hợp và sức mạnh cơ bắp, đồng thời cung cấp một hình thức tập luyện vui vẻ và thư giãn.",
+
+      "how-btn": "Cách thực hiện & Lợi ích",
+      "video-title": "Video Nổi Bật"
+    }
+  },
+
+  "postpartum": {
+    "title": "Cách Bài Tập Giúp Các Tình Trạng Sau Sinh",
+
+    "card-1-title": "Yếu Cơ Sàn Chậu",
+    "card-1-condition-title": "Tình Trạng: ",
+    "card-1-condition-desc": "Mang thai và sinh con có thể làm yếu cơ sàn chậu, dẫn đến các vấn đề như tiểu không kiểm soát và sa cơ quan chậu.",
+    "card-1-exe-title": "Lợi Ích Từ Bài Tập ",
+    "card-1-exe-1-title": "Bài Tập Cơ Sàn Chậu (Ví dụ: Siết Chậm, Siết Nhanh): ",
+    "card-1-exe-1-content": "Các bài tập này làm mạnh cơ sàn chậu, giúp phục hồi chức năng của chúng và hỗ trợ các cơ quan chậu. Chúng cũng cải thiện kiểm soát bàng quang và giảm nguy cơ tiểu không kiểm soát.",
+    "card-1-exe-2-title": "T поз (Bridge Pose) ",
+    "card-1-exe-2-content": "Tăng cường sức mạnh cho cơ sàn chậu và cơ mông, hỗ trợ sức mạnh cho lưng dưới và giúp ổn định vùng chậu.",
+
+    "card-2-title": "Yếu Cơ Bụng",
+    "card-2-condition-title": "Tình Trạng: ",
+    "card-2-condition-desc": "Cơ bụng, đặc biệt là cơ thẳng bụng, có thể bị yếu và kéo dài do tử cung phát triển trong thời kỳ mang thai.",
+    "card-2-exe-title": "Lợi Ích Từ Bài Tập ",
+    "card-2-exe-1-title": "Nghiêng Chậu (Pelvic Tilts) (Pilates Trước Sinh): ",
+    "card-2-exe-1-content": "Tăng cường sức mạnh cho cơ bụng và hỗ trợ lưng dưới, giúp phục hồi sức mạnh cho cơ bụng và giảm nguy cơ tách cơ bụng (diastasis recti).",
+    "card-2-exe-2-title": "Nâng Chân Nằm Bên (Side-Lying Leg Lifts) (Pilates Trước Sinh) ",
+    "card-2-exe-2-content": "Cải thiện độ ổn định của cơ bụng và tăng cường sức mạnh cho đùi ngoài và cơ mông, góp phần vào sức mạnh tổng thể của cơ bụng.",
+
+    "card-3-title": "Đau Lưng Dưới",
+    "card-3-condition-title": "Tình Trạng: ",
+    "card-3-condition-desc": "Đau lưng dưới là phổ biến do căng thẳng khi mang thêm trọng lượng trong thời kỳ mang thai và sự mất cân bằng cơ bắp.",
+    "card-3-exe-title": "Lợi Ích Từ Bài Tập ",
+    "card-3-exe-1-title": "T поз (Cat-Cow Pose) (Yoga Trước Sinh): ",
+    "card-3-exe-1-content": "Kéo dài và tăng cường sức mạnh cho cột sống, giúp giảm đau lưng bằng cách cải thiện sự linh hoạt và sự sắp xếp của cột sống.",
+    "card-3-exe-2-title": "Ngồi Xổm (Squats) (Tập Lực Trước Sinh) ",
+    "card-3-exe-2-content": "Tăng cường sức mạnh cho chân và cơ mông, cung cấp hỗ trợ tốt hơn cho lưng dưới và giảm căng thẳng.",
+
+    "card-4-title": "Mệt Mỏi Chung và Năng Lượng Thấp",
+    "card-4-condition-title": "Tình Trạng: ",
+    "card-4-condition-desc": "Các bà mẹ mới thường trải qua tình trạng mệt mỏi và năng lượng thấp do yêu cầu chăm sóc trẻ sơ sinh và phục hồi sau sinh.",
+    "card-4-exe-title": "Lợi Ích Từ Bài Tập: ",
+    "card-4-exe-1-title": "Đi Bộ Nhẹ ",
+    "card-4-exe-1-content": "Tăng cường sức khỏe tim mạch và mức năng lượng, giúp chống lại mệt mỏi và cải thiện tâm trạng tổng thể.",
+    "card-4-exe-2-title": "Kéo Dãn Nhẹ ",
+    "card-4-exe-2-content": "Giảm căng thẳng cơ bắp và tăng cường tính linh hoạt, có thể cải thiện mức năng lượng tổng thể và giảm cảm giác kiệt sức.",
+
+    "card-5-title": "Giảm Sức Khỏe Tim Mạch",
+    "card-5-condition-title": "Tình Trạng: ",
+    "card-5-condition-desc": "Trong thời kỳ mang thai, sức khỏe tim mạch có thể giảm do hoạt động thể chất ít và trọng lượng cơ thể tăng.",
+    "card-5-exe-title": "Lợi Ích Từ Bài Tập ",
+    "card-5-exe-1-title": "Thể Dục Nước (Aqua Aerobics): ",
+    "card-5-exe-1-content": "Cung cấp bài tập toàn thân với tác động thấp, cải thiện sức bền tim mạch và cơ bắp với ít căng thẳng lên khớp.",
+    "card-5-exe-2-title": "Chạy (Sau 16 Tuần) ",
+    "card-5-exe-2-content": "Tăng cường sức bền và sức mạnh tim mạch khi mức độ thể lực cải thiện.",
+
+    "card-6-title": "Mất Cân Bằng Cơ Bắp",
+    "card-6-condition-title": "Tình Trạng: ",
+    "card-6-condition-desc": "Mất cân bằng cơ bắp có thể xảy ra do tư thế và phân bố trọng lượng thay đổi trong thời kỳ mang thai.",
+    "card-6-exe-title": "Lợi Ích Từ Bài Tập ",
+    "card-6-exe-1-title": "Cuốn Bắp Tay với Tạ Nhẹ (Tập Lực Trước Sinh): ",
+    "card-6-exe-1-content": "Duy trì sức mạnh cho tay và vai, cân bằng sự phát triển cơ bắp và hỗ trợ tư thế cơ thể tổng thể.",
+    "card-6-exe-2-title": "Mở Rộng Tay & Chân (Bird-Dog) (Pilates Trước Sinh) ",
+    "card-6-exe-2-content": "Kích thích cơ bụng và cải thiện độ ổn định, giải quyết sự mất cân bằng cơ bắp và hỗ trợ tư thế đúng cách.",
+
+    "card-7-title": "Căng Thẳng và Biến Động Tâm Trạng",
+    "card-7-condition-title": "Tình Trạng: ",
+    "card-7-condition-desc": "Phụ nữ sau sinh có thể trải qua cảm xúc thất thường và căng thẳng do sự thay đổi hormone và yêu cầu của việc làm mẹ mới.",
+    "card-7-exe-title": "Lợi Ích Từ Bài Tập ",
+    "card-7-exe-1-title": "Yoga Trước Sinh: ",
+    "card-7-exe-1-content": "Bao gồm các tư thế như Tư Thế Góc Ràng Buộc và Tư Thế Chiến Binh II, giúp thúc đẩy sự thư giãn và cải thiện tâm trạng, giúp giảm căng thẳng và lo âu.",
+    "card-7-exe-2-title": "Kéo Dãn Nhẹ ",
+    "card-7-exe-2-content": "Tăng cường sự thư giãn và giảm căng thẳng cơ bắp, góp phần cải thiện sức khỏe tâm thần.",
+
+    "exe-recom-title": "Các bài tập có thể giúp: ",
+    "more-detail": "Tìm hiểu thêm chi tiết"
+  },
+
+  "collection": {
+    "title": "Thu Thập Thông Tin Cơ Thể",
+    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "card-1": {
+      "title": "Bạn có tham gia thể thao không?",
+      "options-1": "Có",
+      "options-2": "Không"
+    },
+    "card-2": {
+      "title": "Bạn thuộc nhóm tuổi nào?"
+    },
+    "card-3": {
+      "title": "Bạn tập thể dục bao nhiêu lần một tuần?",
+      "radio-1": "Một lần một tuần",
+      "radio-2": "Hai lần một tuần",
+      "radio-3": "Ba lần hoặc nhiều hơn một tuần"
+    },
+    "card-4": {
+      "title": "Cân nặng của bạn (kg) là gì?",
+      "weight": "Cân nặng"
+    },
+    "card-5": {
+      "title": "Chiều cao của bạn (cm) là gì?",
+      "height": "Chiều cao của bạn (cm)"
+    },
+    "Submit": "Gửi",
+    "Reset": "Đặt lại câu trả lời",
+    "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
   },
 
   "footer": {
-    "icon-top": "Healthy",
-    "icon-bottom": "Pregnancy",
+    "icon-top": "Khỏe Mạnh",
+    "icon-bottom": "Thai Kỳ",
 
-    "contents-title": "Our Services",
-    "content-1": "Pregnancy Education",
-    "content-2": "Risk Assessment",
-    "content-3": "Nutritional Advice",
-    "content-4": "Pregnancy Exercises",
+    "contents-title": "Dịch Vụ Của Chúng Tôi",
+    "content-1": "Giáo Dục Thai Kỳ",
+    "content-2": "Đánh Giá Rủi Ro",
+    "content-3": "Lời Khuyên Dinh Dưỡng",
+    "content-4": "Bài Tập Thai Kỳ",
 
-    "copyright": "Copyright © 2024 Powered by HealthyPregnancy"
+    "copyright": "Bản quyền © 2024 Powered by HealthyPregnancy"
   }
 }

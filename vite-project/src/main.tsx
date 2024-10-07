@@ -13,35 +13,32 @@ import global_ms from "./translation/ms/global.json";
 import global_vi from "./translation/vi/global.json";
 import i18next from "i18next";
 import "./index.css";
-import { Global } from "@emotion/react";
 import { I18nextProvider } from "react-i18next";
 
-
 i18next.init({
-  interpolation: {escapeValue: false},
+  interpolation: { escapeValue: false },
   lng: "en",
-  resources:{
-    en:{
-      global: global_en
+  resources: {
+    en: {
+      global: global_en,
     },
-    zh:{
-      global: global_zh
+    zh: {
+      global: global_zh,
     },
-    id:{
-      global: global_id
+    id: {
+      global: global_id,
     },
-    fil:{
-      global: global_fil
+    fil: {
+      global: global_fil,
     },
-    ms:{
-      global: global_ms
+    ms: {
+      global: global_ms,
     },
-    vi:{
-      global: global_vi
-    }
-  }
-})
-
+    vi: {
+      global: global_vi,
+    },
+  },
+});
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

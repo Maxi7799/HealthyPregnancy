@@ -1,17 +1,20 @@
 {
   "header": {
-    "icon-top": "Healthy",
-    "icon-bottom": "Pregnancy",
-    "navbar-1": "Home",
-    "navbar-2": "Education",
-    "navbar-3": "Risk Assessment",
-    "navbar-4": "Nutrition",
-    "navbar-4-1": "Nutrition Analysis",
-    "navbar-4-2": "Recommendation",
-    "navbar-4-3": "Recipes",
-    "navbar-5": "Exercise",
-    "language-en": "English",
-    "language-zh": "chinese",
+    "icon-top": "Malusog",
+    "icon-bottom": "Pagbubuntis",
+    "navbar-1": "Tahanan",
+    "navbar-2": "Edukasyon",
+    "navbar-3": "Pagtatasa ng Panganib",
+    "navbar-4": "Nutrisyon",
+    "navbar-4-1": "Pagsusuri ng Nutrisyon",
+    "navbar-4-2": "Rekomendasyon",
+    "navbar-4-3": "Mga Resipe",
+    "navbar-5": "Ehersisyo",
+    "navbar-5-1": "Mga Video ng Ehersisyo",
+    "navbar-5-2": "Katanungang Pangkalusugan",
+    "navbar-5-3": "Pagbawi Pagkatapos ng Panganganak",
+    "language-en": "Ingles",
+    "language-zh": "Tsino",
     "language-id": "Bahasa Indonesia",
     "language-fil": "Filipino",
     "language-vi": "Vietnamese",
@@ -19,95 +22,1221 @@
   },
   "home": {
     "slideshow": {
-      "page-1": "Education",
+      "page-1": "Edukasyon",
       "page-1-text-1": "",
-      "page-1-text-2": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
-      "page-1-button": "Explore",
+      "page-1-text-2": "Matuto nang higit pa tungkol sa pagbubuntis at palawakin ang iyong kaalaman sa pagbubuntis sa pamamagitan ng mga interactive na module.",
+      "page-1-button": "I-explore",
 
-      "page-2": "Risk Assessment",
+      "page-2": "Pagtatasa ng Panganib",
       "page-2-text-1": "",
-      "page-2-text-2": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
-      "page-2-button": "Learn More",
+      "page-2-text-2": "Suriin ang panganib sa pagbubuntis sa pamamagitan ng simpleng pagtatasa. Makakuha ng mabilis na pagsusuri sa pamamagitan ng pagsagot ng ilang katanungan.",
+      "page-2-button": "Matuto Nang Higit Pa",
 
-      "page-3": "Nutrition",
+      "page-3": "Nutrisyon",
       "page-3-text-1": "",
-      "page-3-text-2": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
-      "page-3-button": "Explore",
+      "page-3-text-2": "Makakuha ng pagsusuri, rekomendasyon tungkol sa nutrisyon at bumuo ng sarili mong iskedyul at mga resipe.",
+      "page-3-button": "I-explore",
 
-      "page-4": "Exercise",
+      "page-4": "Ehersisyo",
       "page-4-text-1": "",
-      "page-4-text-2": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
-      "page-4-button": "Explore"
+      "page-4-text-2": "Matuto nang higit pa tungkol sa mga ehersisyo habang buntis at gawing mas malusog ang sarili sa pamamagitan ng ehersisyo.",
+      "page-4-button": "I-explore"
     },
     "roadmap": {
-      "title": "Plan your best pregnancy",
-      "icon-1-desc": "Explore previous pregnancy through data insights",
-      "icon-2-desc": "Learn essential aspects about being pregnant",
-      "icon-3-desc": "Check pregnancy risk through a simple assessment",
-      "icon-4-desc": "Get your best nutrition and recipe recommendation",
-      "icon-5-desc": "Get yourself healthier through exercises"
+      "title": "Iplano ang iyong pinakamahusay na pagbubuntis",
+      "icon-1-desc": "I-explore ang mga nakaraang pagbubuntis sa pamamagitan ng mga data insights",
+      "icon-2-desc": "Matuto ng mahahalagang aspeto tungkol sa pagbubuntis",
+      "icon-3-desc": "Suriin ang panganib sa pagbubuntis sa pamamagitan ng simpleng pagtatasa",
+      "icon-4-desc": "Makakuha ng pinakamahusay na rekomendasyon sa nutrisyon at mga resipe",
+      "icon-5-desc": "Gawing mas malusog ang sarili sa pamamagitan ng ehersisyo"
     },
 
     "detail-blocks": {
-      "title": "Choose the service you need",
-
-      "block-1-title": "Education",
-      "block-1-desc": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
-      "block-1-button": "Explore",
-
-      "block-2-title": "Risk Assessment",
-      "block-2-desc": "Check pregnancy risk through a simple assessment.Get a quick assessment by answering a few questions.",
-      "block-2-button": "Learn More",
-
-      "block-3-title": "Nutrition",
-      "block-3-desc": "Get analysis, recommendation about nutritions and build up your own schedule by and recipes.",
-      "block-3-button": "Explore",
-
-      "block-4-title": "Exercise",
-      "block-4-desc": "Learn more about exercises during pregnancy and get yourself healthier through exercises.",
-      "block-4-button": "Explore"
-    },
-
-    "body": "A store of messages",
-    "hero": "Pregnancy Health Risk Assessment Questionnaire"
+      "title": "Piliin ang serbisyong kailangan mo"
+    }
   },
 
   "education": {
     "home": {
-      "title": "Pregnancy Education",
-      "text-1": "Whether you are planning to or currently pregnant, let’s leverage your knowledge on pregnancy through these interactive modules to achieve your best pregnancy experience.",
-      "text-2": "At the end of each chapter, try to check your understanding through a Knowledge Checker.",
-      "text-3": "Have fun!",
-      "card-1": "",
-      "card-2": "",
-      "card-3": "",
-      "card-4": "",
-      "card-5": "",
-      "card-6": ""
+      "title": "Edukasyon sa Pagbubuntis",
+      "text-1": "Kung ikaw ay nagpaplano o kasalukuyang buntis, palawakin natin ang iyong kaalaman sa pagbubuntis sa pamamagitan ng mga interactive na module upang makamit ang iyong pinakamahusay na karanasan sa pagbubuntis.",
+      "text-2": "Sa pagtatapos ng bawat kabanata, subukan mong suriin ang iyong kaalaman sa pamamagitan ng 'Knowledge Checker'.",
+      "text-3": "Magsaya!",
+      "card-1": "Panganib sa Kalusugan",
+      "card-2": "Mga Pagbisita sa Antenatal",
+      "card-3": "Mga Paraan ng Panganganak",
+      "card-4": "Nutrisyon",
+      "card-5": "Mga Ehersisyong Prenatal",
+      "card-6": "Mga Ehersisyong Postpartum"
     },
-    "card-1": {},
 
-    "card-2": {},
+    "sidebar": {
+      "back-btn": "Bumalik sa Pangkalahatang-ideya",
+      "overview": "Pangkalahatang-ideya",
+      "card-1-title": "Panganib sa Kalusugan",
+      "card-1-topic-1": "1.1 Karaniwang Panganib sa Kalusugan",
+      "card-1-topic-2": "1.2 Gestational Diabetes",
+      "card-1-topic-3": "1.3 Hypertension",
+      "card-1-topic-4": "1.4 Subukin ang Iyong Kaalaman!",
 
-    "card-3": {},
+      "card-2-title": "Mga Pagbisita sa Antenatal",
+      "card-2-topic-1": "2.1 Bakit Mahalaga ang Mga Pagbisita sa Antenatal?",
+      "card-2-topic-2": "2.2 Kailan Dapat Kang Pumunta?",
+      "card-2-topic-3": "2.3 Ano ang Dapat Ihanda/Iasahan Bago ang Iyong Pagbisita",
+      "card-2-topic-4": "2.4 Ano ang Nangyayari sa Mga Pagbisita sa Antenatal?",
+      "card-2-topic-5": "2.5 Pagkatapos ng Iyong Pagbisita",
+      "card-2-topic-6": "2.6 Bakit Mahalaga ang Regular na Check-up",
+      "card-2-topic-7": "2.7 Subukin ang Iyong Kaalaman!",
 
-    "card-4": {},
+      "card-3-title": "Mga Paraan ng Panganganak",
+      "card-3-topic-1": "3.1 Iba't Ibang Uri ng Paraan ng Panganganak",
+      "card-3-topic-2": "3.2 Bakit Ito Mahalaga?",
+      "card-3-topic-3": "3.3 Paano Pumili?",
+      "card-3-topic-4": "3.4 Panganganak sa Puwerta vs. C-Section",
+      "card-3-topic-5": "3.5 Pagbawi Pagkatapos ng Panganganak",
+      "card-3-topic-6": "3.6 Subukin ang Iyong Kaalaman",
 
-    "card-5": {},
+      "card-4-title": "Nutrisyon",
+      "card-4-topic-1": "4.1 Bakit Mahalaga ang Nutrisyon",
+      "card-4-topic-2": "4.2 Mahahalagang Nutrients",
+      "card-4-topic-3": "4.3 Mga Pamantayan sa Nutrisyon para sa mga Buntis na Babae",
+      "card-4-topic-4": "4.4 Pagpaplano ng Malusog na Pagkain",
+      "card-4-topic-5": "4.5 Mga Pagkaing Dapat Iwasan",
+      "card-4-topic-6": "4.6 Subukin ang Iyong Kaalaman",
 
-    "card-6": {}
+      "card-5-title": "Mga Ehersisyong Prenatal",
+      "card-5-topic-1": "5.1 Bakit Mahalaga ang Prenatal na Ehersisyo",
+      "card-5-topic-2": "5.2 Mga Ligtas na Ehersisyo para sa Bawat Trimester",
+      "card-5-topic-3": "5.3 Mga Ehersisyo na Inihahanda para sa Panganganak",
+      "card-5-topic-4": "5.4 Kaligtasan Muna, Palagi!",
+      "card-5-topic-5": "5.5 Subukin ang Iyong Kaalaman!",
+
+      "card-6-title": "Mga Ehersisyong Postpartum",
+      "card-6-topic-1": "6.1 Ang Unang 6 na Linggo: Banayad na Mga Galaw para sa Pagpapagaling",
+      "card-6-topic-2": "6.2 Pagbabalik ng Lakas ng Core at Pelvic Floor (6-12 Linggo)",
+      "card-6-topic-3": "6.3 Subukin ang Iyong Kaalaman!"
+    },
+
+    "card-1": {
+      "module-name": "1. Panganib sa Kalusugan",
+      "module-desc": "Tatalakayin ng module na ito ang mahahalagang panganib sa kalusugan sa panahon ng pagbubuntis, kabilang ang gestational diabetes, hypertension, at kalusugang emosyonal. Ang pagiging may alam at maagap ay nakatutulong sa mga nagdadalang-tao na pamahalaan ang mga panganib na ito nang epektibo, na nagtitiyak ng mas malusog na paglalakbay para sa kanilang sarili at kanilang mga sanggol. Ang regular na pagbisita sa doktor at malusog na pamumuhay ay mahalaga para sa pagsuporta sa kabuuang kalusugan sa kapanapanabik na panahong ito.",
+
+      "topic-1-name": "1.1 Karaniwang Panganib sa Kalusugan",
+      "topic-1-desc": {
+        "text-1": "Kasama sa mga karaniwang komplikasyon ang",
+        "nav-1": " gestational diabetes",
+        "nav-2": "mataas na presyon ng dugo",
+        "text-2": "(na maaaring magdulot ng preeclampsia), mga impeksyon, preterm labor, at mga hamon sa kalusugan ng pag-iisip tulad ng depresyon at pagkabalisa. Ang mas malubhang kondisyon tulad ng pagkakawala ng pagbubuntis, pagkalaglag, o stillbirth, bagama't bihira, ay nangangailangan din ng kamalayan. Pakinggan ang iyong katawan at humingi ng medikal na payo kung makakaramdam ka ng mga sintomas tulad ng matinding sakit ng ulo, problema sa paningin, hindi karaniwang pamamaga, o pananakit. Ang regular na prenatal care, balanseng diyeta, pagiging aktibo, at paghahanap ng suporta ay susi sa malusog na pagbubuntis."
+      },
+
+      "topic-2-name": "1.2 Gestational Diabetes",
+      "topic-2-desc": {
+        "text-1": "Alam mo ba na mula 2014 hanggang 2021, tumaas ng higit sa 80% ang mga kaso ng gestational diabetes?",
+        "loading": "Naglo-load...",
+        "text-2": "Ang gestational diabetes ay isang uri ng diabetes na umuusbong sa panahon ng pagbubuntis, kadalasan sa paligid ng ika-24 na linggo, at maaaring magkaroon ng pangmatagalang epekto tulad ng mas mataas na panganib ng type 2 diabetes para sa ina at posibleng mga isyu sa kalusugan para sa sanggol. Maaari itong magdulot ng mas malalaking sanggol, na nagdudulot ng mga komplikasyon sa panganganak at mas mataas na posibilidad na kailanganin ng C-section.",
+        "nav-1": "(Bisitahin ang aming edukasyon upang mabawasan ang panganib).",
+        "text-3": "Kasama sa mga salik ng panganib ang labis na timbang, edad, kasaysayan ng pamilya, at lahi. Ang pamamahala sa gestational diabetes ay kinabibilangan ng pagmamanman ng asukal sa dugo, pagkain ng malusog na diyeta, pagiging aktibo, at kung minsan ay pag-inom ng gamot. Ang kamalayan at maagap na pamamahala ay mahalaga para sa kalusugan ng ina at sanggol. Para sa mas naaangkop na suporta, tingnan ang aming:",
+        "nav-2": "1. Mga Rekomendasyon sa Nutrisyon",
+        "nav-3": "2. Ehersisyo",
+        "text-4": "Ang pagiging isang migranteng babae ay maaaring magkaroon ng mas mataas na salik ng panganib para sa gestational diabetes dahil sa mga pagbabago sa diyeta, limitadong access sa healthcare, at stress. Kung nais mong suriin ang iyong panganib,",
+        "nav-4": "pindutin dito."
+      },
+
+      "topic-3-name": "1.3 Hypertension",
+      "topic-3-desc": {
+        "text-1": "Mula 2014 hanggang 2021, ang hypertension ay patuloy na tumataas, nagiging isang karaniwang alalahanin sa kalusugan, bagama't hindi kasing-dramatiko ng diabetes. Ang hypertension, o mataas na presyon ng dugo, ay nagpapataas ng panganib ng sakit sa puso, stroke, at mga problema sa bato at madalas na hindi napapansin, kaya't tinawag itong 'silent killer'. Maaari itong sanhi ng mga salik tulad ng genetika, hindi tamang diyeta, kakulangan sa pisikal na aktibidad, stress, at sobrang timbang.",
+        "text-2": "Ang pamamahala sa hypertension ay kinabibilangan ng mga pagbabago sa pamumuhay, tulad ng isang diyeta na mabuti para sa puso at regular na ehersisyo. Upang matulungan ka sa daan, tingnan ang aming mga mapagkukunan sa:",
+        "nav-1": "1. Mga Rekomendasyon sa Nutrisyon",
+        "nav-2": "2. Ehersisyo",
+        "text-3": "Ang regular na check-up ay mahalaga upang ma-detect at mapamahalaan ang kondisyong ito nang maaga upang maiwasan ang malubhang mga isyu sa kalusugan.",
+        "nav-3": "(Makakakita ng karagdagang impormasyon dito)"
+      },
+
+      "quiz": {
+        "topic-4-name": "1.4 Subukin ang Iyong Kaalaman!",
+        "desc": "Subukan ang mga tanong sa ibaba upang masuri ang iyong pagkaunawa sa nabanggit na mga nilalaman.",
+
+        "side": "Tanong ",
+
+        "q-1-name": "Kailan kadalasang lumalabas ang gestational diabetes sa pagbubuntis?",
+        "q-1-option-1": "A) Ika-12 linggo",
+        "q-1-option-2": "B) Ika-24 linggo",
+        "q-1-option-3": "C) Ika-30 linggo",
+        "q-1-option-4": "D) Pagkatapos ng panganganak",
+        "q-1-answer": "B) Ika-24 linggo",
+        "q-1-pre-answer": "Ang tamang sagot ay ",
+        "q-1-post-answer": "Kadalasang lumalabas ang gestational diabetes sa paligid ng ika-24 linggo ng pagbubuntis.",
+
+        "q-2-name": "Bakit tinatawag ang hypertension na 'silent killer'?",
+        "q-2-option-1": "A) Nagdudulot ito ng biglaang sakit ng ulo",
+        "q-2-option-2": "B) Hindi ito napapansin hanggang sa lumitaw ang malalaking isyu sa kalusugan",
+        "q-2-option-3": "C) Pinapagod ka nito",
+        "q-2-option-4": "D) Nagdudulot ito ng mga nakikitang sintomas",
+        "q-2-answer": "B) Hindi ito napapansin hanggang sa lumitaw ang malalaking isyu sa kalusugan",
+        "q-2-pre-answer": "Ang tamang sagot ay ",
+        "q-2-post-answer": "Kadalasan ay walang mga sintomas hanggang sa magdulot ito ng mga pangunahing problema tulad ng sakit sa puso o stroke.",
+
+        "q-3-name": "Anong pagbabago sa pamumuhay ang makakatulong sa pamamahala ng hypertension?",
+        "q-3-option-1": "A) Kumain ng mas maraming naprosesong pagkain",
+        "q-3-option-2": "B) Regular na mag-ehersisyo at kumain ng pagkaing mabuti para sa puso",
+        "q-3-option-3": "C) Bawasan ang pagtulog",
+        "q-3-option-4": "D) Dagdagan ang pagkain ng asin",
+        "q-3-answer": "B) Regular na mag-ehersisyo at kumain ng pagkaing mabuti para sa puso",
+        "q-3-pre-answer": "Ang tamang sagot ay ",
+        "q-3-post-answer": "Ang pagiging aktibo at pagkain ng balanseng diyeta ay makakatulong na mabawasan ang presyon ng dugo.",
+
+        "q-4-name": "Ano ang isa sa mga pangunahing pangmatagalang panganib ng gestational diabetes?",
+        "q-4-option-1": "A) Mababang timbang ng sanggol",
+        "q-4-option-2": "B) Type 2 diabetes sa kalaunan",
+        "q-4-option-3": "C) Mas mataas na panganib ng migraine",
+        "q-4-option-4": "D) Postpartum depression",
+        "q-4-answer": "B) Type 2 diabetes sa kalaunan",
+        "q-4-pre-answer": "Ang tamang sagot ay ",
+        "q-4-post-answer": "Ang mga kababaihang may gestational diabetes ay may mas mataas na tsansa na magkaroon ng type 2 diabetes pagkatapos ng pagbubuntis.",
+
+        "q-5-name": "Aling pagkain ang dapat mong ituon para sa parehong kondisyon?",
+        "q-5-option-1": "A) Mga matamis na pagkain",
+        "q-5-option-2": "B) Naprosesong karne",
+        "q-5-option-3": "C) Buong butil at payat na protina",
+        "q-5-option-4": "D) Piniritong pagkain",
+        "q-5-answer": "C) Buong butil at payat na protina",
+        "q-5-pre-answer": "Ang tamang sagot ay ",
+        "q-5-post-answer": "Ang mga ito ay nakakatulong sa pamamahala ng asukal sa dugo at nagtataguyod ng kalusugan ng puso."
+      },
+
+      "more-details": "Karagdagang Detalye...",
+      "prepage-btn": "Nakaraang Kabanata",
+      "nextpage-btn": "Susunod na Kabanata"
+    },
+
+    "card-2": {
+      "module-name": "2. Mga Pagbisita sa Antenatal",
+      "module-desc": "Ang mga pagbisita sa antenatal ay mahahalagang check-up sa panahon ng pagbubuntis na sumusubaybay sa kalusugan ng parehong ina at sanggol. Ang mga pagbisitang ito ay sumusubaybay sa paglaki, nakakakita ng mga potensyal na isyu nang maaga, at nagbibigay ng gabay sa nutrisyon at kalusugan, na tinitiyak ang isang malusog na paglalakbay sa pagbubuntis.",
+
+      "topic-1-name": "2.1 Bakit Mahalaga ang Mga Pagbisita sa Antenatal?",
+      "topic-1-desc": {
+        "text-1": "Ang mga regular na pagbisita sa antenatal ay mahalaga para mapanatili ang kalusugan ng parehong ikaw at ng iyong sanggol sa buong pagbubuntis. Ang mga check-up na ito ay nagbibigay-daan sa mga tagapagbigay ng kalusugan na subaybayan ang paglaki ng iyong sanggol sa pamamagitan ng mga ultrasound at fetal monitoring, na tinitiyak ang tamang pag-unlad at nakakatuklas ng anumang abnormalidad nang maaga. Sinusubaybayan din nila ang iyong kalusugan sa pamamagitan ng pagmamanman sa mga mahahalagang palatandaan tulad ng presyon ng dugo at timbang, na nakakatulong sa maagang pagtuklas ng mga kondisyon tulad ng gestational diabetes, hypertension, at preeclampsia. Bukod pa rito, ang mga pagbisita na ito ay nagbibigay ng payo mula sa mga eksperto tungkol sa nutrisyon, ehersisyo, at kalusugan ng isip, na tinitiyak na ikaw ay makakatanggap ng komprehensibong suporta at rekomendasyon sa mga espesyalista kung kinakailangan."
+      },
+
+      "topic-2-name": "2.2 Kailan Dapat Kang Pumunta?",
+      "topic-2-desc": {
+        "text-1": "Ang mga pagbisita sa antenatal ay nakaayos upang matiyak ang kalusugan ng parehong ina at sanggol sa buong pagbubuntis. Ang sumusunod na tsart ay nagpapakita ng karaniwang oras ng unang pagbisita sa antenatal care (sa pamamagitan ng linggo):",
+        "loading": "Naglo-load...",
+        "text-2": "Sa unang trimester (0-12 linggo), mahalagang mag-schedule ng iyong unang pagbisita nang maaga, karaniwang sa paligid ng ika-6 hanggang ika-8 linggo, upang kumpirmahin ang pagbubuntis at magtatag ng plano sa pangangalaga. Sa ikalawang trimester (13-28 linggo), ang mga pagbisita bawat 4 na linggo ay nakatuon sa pagsubaybay sa paglaki ng sanggol at pag-screen para sa mga komplikasyon tulad ng gestational diabetes at mataas na presyon ng dugo. Sa ikatlong trimester (29-40 linggo), mas nagiging madalas ang mga pagbisita, inihahanda para sa panganganak habang mahigpit na sinusubaybayan ang posisyon ng sanggol at kalusugan ng ina. Ang maagang mga pagbisita ay mahalaga, dahil maaari nilang mabawasan ang panganib ng mga komplikasyon, kung saan 79.6% ng mga kababaihan ay nagsisimula ng antenatal care bago ang ika-14 na linggo."
+      },
+
+      "topic-3-name": "2.3 Ano ang Dapat Ihanda/Iasahan Bago ang Iyong Pagbisita sa Antenatal",
+      "topic-3-desc": {
+        "text-1": "Ang paghahanda para sa iyong pagbisita sa antenatal ay makakatulong sa iyo na masulit ang iyong oras kasama ang iyong tagapagbigay ng kalusugan. Magsimula sa pamamagitan ng pagdadala ng mga mahahalagang dokumento tulad ng iyong mga tala sa kalusugan at impormasyon sa insurance. Maghanda ng listahan ng mga tanong tungkol sa iyong pagbubuntis, panganganak, at pangangalaga pagkatapos manganak, at subaybayan ang anumang mga sintomas na iyong naranasan, tulad ng sakit ng ulo o pagbabago sa paggalaw ng fetus. Subaybayan ang iyong timbang at diyeta, at maging handa na talakayin ang mga ito sa iyong provider. I-planong mabuti ang iyong transportasyon, lalo na kung hindi ka maganda ang pakiramdam, at magsuot ng komportableng damit para sa mga pagsusuri. Maglaan ng dagdag na oras para sa iyong appointment, dahil maaaring mag-iba ang haba nito, at harapin ang iyong pagbisita nang may positibong kaisipan. Ang mga hakbang na ito ay magtitiyak ng produktibo at impormatibong pagbisita sa antenatal, na magtatakda ng yugto para sa isang malusog na paglalakbay sa pagbubuntis."
+      },
+
+      "topic-4-name": "2.4 Ano ang Nangyayari sa Mga Pagbisita sa Antenatal?",
+      "topic-4-desc": {
+        "text-1": "Sa panahon ng iyong mga pagbisita sa antenatal, isinasagawa ang ilang mahahalagang pagsusuri upang matiyak ang malusog na pagbubuntis. Ang pagsusuri sa presyon ng dugo ay mahalaga para sa pagtuklas ng maagang palatandaan ng hypertension, habang ang pagsusuri sa ihi ay nagsasala para sa mga impeksyon at gestational diabetes. Ang mga ultrasound scan ay nagpapahintulot sa real-time na pagsubaybay sa pag-unlad ng iyong sanggol, at ang mga pagsusuri sa dugo ay nakakatulong sa pagsubaybay sa antas ng bakal at pangkalahatang kalusugan. Bukod dito, makakatanggap ka ng payo tungkol sa pangangalaga sa kalusugan na iniakma sa pamamahala ng iyong mga sintomas, nutrisyon, at ehersisyo, na makakatulong sa iyo na mapanatili ang iyong kagalingan sa buong pagbubuntis."
+      },
+
+      "topic-5-name": "2.5 Pagkatapos ng Iyong Pagbisita sa Antenatal",
+      "topic-5-desc": {
+        "text-1": "Pagkatapos ng iyong pagbisita sa antenatal, mahalagang pagnilayan at siguraduhing sinusunod mo ang mga rekomendasyon ng iyong tagapagbigay ng kalusugan. Magsimula sa pamamagitan ng pagrerepaso ng anumang mga tala o handout na natanggap mo upang mapatibay ang iyong natutunan. Ipatupad ang anumang payo, tulad ng mga pagbabago sa diyeta, mga gawain sa ehersisyo, o mga pagsasaayos sa gamot. I-schedule ang iyong susunod na appointment at itala ito sa iyong kalendaryo, o kumpirmahin kung kailan ka dapat bumalik, karaniwang sa loob ng 4-6 na linggo. Patuloy na subaybayan ang anumang mga sintomas na tinalakay sa panahon ng iyong pagbisita, at makipag-ugnayan sa iyong provider kung may mga bagong sintomas na lumitaw o kung lumala ang mga umiiral na sintomas. Bukod dito, isaalang-alang ang paglahok sa mga klase sa antenatal o mga support group upang kumonekta sa ibang mga magulang na nagdadalang-tao, na nagbibigay ng mahalagang suporta at mga karanasang ibinahagi."
+      },
+
+      "topic-6-name": "2.6 Bakit Mahalaga ang Regular na Check-up",
+      "topic-6-desc": {
+        "text-1": "Manatiling Malusog, Manatiling Impormado! Ang mga regular na pagbisita sa antenatal ay mahalaga para sa maagang pagtuklas ng mga komplikasyon tulad ng hypertension at gestational diabetes, tinitiyak na hindi sila magiging seryoso. Ang mga pagbisitang ito ay tumutulong sa iyo na subaybayan ang parehong iyong kagalingan at paglaki ng iyong sanggol, na tinitiyak na ang lahat ay nasa tamang landas. Palakasin ang iyong sarili sa pamamagitan ng pag-aaral tungkol sa pagbubuntis, panganganak, at pagiging magulang—magtanong at makakuha ng mga impormasyong kailangan mo. Bumuo ng malakas na relasyon sa iyong tagapagbigay ng kalusugan para sa bukas na komunikasyon at katiyakan. Ang mga regular na check-up ay nagbibigay ng kapayapaan ng isip, binabawasan ang pagkabalisa, at pinapanatili kang impormado sa buong iyong paglalakbay sa pagbubuntis. Tandaan, mahalaga ang iyong kalusugan, at ang mga regular na check-up ay susi sa isang malusog na pagbubuntis para sa iyo at sa iyong sanggol."
+      },
+
+      "quiz": {
+        "topic-7-name": "2.7 Subukin ang Iyong Kaalaman!",
+        "desc": "Subukan ang mga tanong sa ibaba upang masuri ang iyong pagkaunawa sa nabanggit na mga nilalaman.",
+
+        "side": "Tanong",
+
+        "q-1-name": "Bakit mahalaga ang mga pagbisita sa antenatal?",
+        "q-1-option-1": "A) Para subaybayan ang paglaki ng sanggol at kalusugan ng ina",
+        "q-1-option-2": "B) Para makipag-usap sa iyong doktor",
+        "q-1-option-3": "C) Para lamang sa pagsusuri ng presyon ng dugo",
+        "q-1-option-4": "D) Para makatanggap ng mga libreng sample",
+        "q-1-answer": "A) Para subaybayan ang paglaki ng sanggol at kalusugan ng ina",
+        "q-1-pre-answer": "Ang tamang sagot ay ",
+        "q-1-post-answer": "Ang mga pagbisita sa antenatal ay sumusubaybay sa iyong kalusugan at pag-unlad ng iyong sanggol, na tinitiyak ang isang malusog na paglalakbay sa pagbubuntis.",
+
+        "q-2-name": "Kailan mo dapat i-schedule ang iyong unang pagbisita sa antenatal?",
+        "q-2-option-1": "A) Pagkatapos ng unang trimester",
+        "q-2-option-2": "B) Sa oras na makumpirma mo ang pagbubuntis",
+        "q-2-option-3": "C) Bago lamang manganak",
+        "q-2-option-4": "D) Pagkatapos ng 20 linggo",
+        "q-2-answer": "B) Sa oras na makumpirma mo ang pagbubuntis",
+        "q-2-pre-answer": "Ang tamang sagot ay ",
+        "q-2-post-answer": "Mahalaga ang pagsisimula ng antenatal care nang maaga upang makagawa ng plano sa pangangalaga at masubaybayan ang pagbubuntis mula sa simula.",
+
+        "q-3-name": "Alin sa mga sumusunod ang sinusuri sa isang pagbisita sa antenatal?",
+        "q-3-option-1": "A) Presyon ng dugo",
+        "q-3-option-2": "B) Mga ultrasound scan",
+        "q-3-option-3": "C) Mga pagsusuri sa ihi",
+        "q-3-option-4": "D) Lahat ng nabanggit",
+        "q-3-answer": "D) Lahat ng nabanggit",
+        "q-3-pre-answer": "Ang tamang sagot ay ",
+        "q-3-post-answer": "Ang mga pagbisita sa antenatal ay nagsasangkot ng iba't ibang mga pagsusuri sa kalusugan upang subaybayan ang parehong iyong kagalingan at pag-unlad ng iyong sanggol.",
+
+        "q-4-name": "Bakit mahalaga ang pagsubaybay sa presyon ng dugo sa pagbubuntis?",
+        "q-4-option-1": "A) Upang suriin ang mga palatandaan ng hypertension",
+        "q-4-option-2": "B) Upang masukat ang mga antas ng hydration",
+        "q-4-option-3": "C) Upang subaybayan ang dami ng asin sa pagkain",
+        "q-4-option-4": "D) Hindi ito kinakailangan",
+        "q-4-answer": "A) Upang suriin ang mga palatandaan ng hypertension",
+        "q-4-pre-answer": "Ang tamang sagot ay ",
+        "q-4-post-answer": "Ang pagsubaybay sa presyon ng dugo ay nakakatulong sa pagtuklas ng maagang palatandaan ng hypertension, na maaaring makaapekto sa parehong ina at sanggol."
+      },
+
+      "more-details": "Karagdagang Detalye...",
+      "prepage-btn": "Nakaraang Kabanata",
+      "nextpage-btn": "Susunod na Kabanata"
+    },
+
+    "card-3": {
+      "module-name": "3. Mga Paraan ng Panganganak",
+      "module-desc": "Tinalakay sa bahaging ito ang mga paraan ng panganganak—panganganak sa pamamagitan ng puwerta, cesarean section (C-section), at assisted vaginal delivery. Itinatampok nito ang mga kalamangan at kahinaan, oras ng paggaling, at mga salik na nakakaimpluwensya sa mga pagpipilian. Kasama rin ang paghahambing ng postpartum recovery para sa bawat pamamaraan, kasama ang isang pagsusulit upang mapalalim ang pagkaunawa at hikayatin ang mga talakayan sa mga tagapagbigay ng kalusugan.",
+
+      "topic-1-name": "3.1 Iba't Ibang Uri ng Paraan ng Panganganak",
+      "topic-1-desc": {
+        "text-1": "Ang pag-unawa sa mga karaniwang paraan ng panganganak ay makakatulong sa iyo na maging mas handa habang papalapit ang iyong takdang araw. Ang panganganak sa pamamagitan ng puwerta ang pinakakaraniwang pamamaraan, na nag-aalok ng mas mabilis na paggaling at agarang skin-to-skin contact. Ang C-section ay isang surgical delivery sa pamamagitan ng tiyan, kadalasang planado para sa mga medikal na kadahilanan o kinakailangan sa panahon ng labor, na may mas mahabang oras ng paggaling. Ang assisted vaginal delivery ay gumagamit ng mga kasangkapan tulad ng forceps o vacuum upang makatulong sa mahirap na labor. Isaalang-alang ang mga benepisyo at panganib ng bawat pamamaraan, kung paano maghanda kung inirerekomenda ang C-section, mga palatandaang maaaring mangailangan ng tulong, at kung paano talakayin ang iyong birth plan sa iyong tagapagbigay ng kalusugan."
+      },
+
+      "topic-2-name": "3.2 Bakit Ito Mahalaga?",
+      "topic-2-desc": {
+        "text-1": "Ang pagpili ng paraan ng panganganak ay nakakaapekto sa iyong paggaling, mga susunod na pagbubuntis, at kalusugan ng iyong sanggol. Karaniwang nag-aalok ang panganganak sa pamamagitan ng puwerta ng mas mabilis na paggaling at benepisyal na bacteria para sa sanggol, habang ang C-sections ay may mas mahabang oras ng paggaling, mas mataas na panganib ng mga komplikasyon, at maaaring makaapekto sa mga susunod na panganganak. Ang pakikipag-usap sa iyong tagapagbigay ng kalusugan tungkol sa iyong mga pagpipilian ay makakatulong sa iyong makagawa ng pinakamahusay na desisyon para sa iyo at sa iyong sanggol."
+      },
+
+      "topic-3-name": "3.3 Paano Pumili?",
+      "topic-3-desc": {
+        "text-1": "Maraming salik ang nakakaimpluwensya sa pagpili ng paraan ng panganganak, kabilang ang posisyon ng iyong sanggol, mga kondisyon ng kalusugan tulad ng gestational diabetes o hypertension, at mga personal na kagustuhan. Halimbawa, ang breech position ay maaaring humantong sa rekomendasyon ng C-section, habang ang ilang ina ay pinipili ang planadong C-section batay sa mga naunang karanasan o pagkabalisa tungkol sa labor. Ang mga paniniwalang kultura at relihiyon ay maaari ring maglaro ng bahagi sa desisyong ito. Ang regular na komunikasyon sa iyong team ng kalusugan ay mahalaga upang ma-align ang iyong mga kagustuhan sa medikal na payo. Tandaan, bawat pagbubuntis ay natatangi, at okay lang na ayusin ang iyong birth plan kung kinakailangan.",
+        "text-2": "Narito ang ilang data tungkol sa mga pinakakaraniwang paraan ng panganganak upang matulungan kang makagawa ng may-kaalamang desisyon:",
+        "text-3": "Tandaan, bawat pagbubuntis ay natatangi, at okay lang na ayusin ang iyong birth plan kung kinakailangan. Narito ang ilang karaniwang dahilan para piliin ang C-section:",
+        "text-4": "Makakahanap ka rin ng karagdagang mga detalye sa ibaba."
+      },
+
+      "topic-4-name": "3.4 Panganganak sa Puwerta vs. C-Section",
+      "topic-4-desc": {
+        "text-1": "Ang mga panganganak sa pamamagitan ng puwerta ay nag-aalok ng mga benepisyo tulad ng mas maikling oras ng paggaling, mas mababang panganib ng impeksyon, at mas kaunting komplikasyon sa mga susunod na pagbubuntis, bagaman maaari itong magkaroon ng mas mahabang labor at posibilidad ng punit. Sa kabilang banda, ang mga C-section ay maaaring planuhin nang maaga at maiiwasan ang panganib ng punit ngunit may kasamang mas mahabang oras ng paggaling at mas mataas na panganib ng impeksyon at komplikasyon. Ang mga babaeng sumasailalim sa C-sections ay karaniwang nakakaranas ng mas matagal na pananatili sa ospital at mga panahon ng pagpapagaling, kaya mahalagang timbangin ang mga salik na ito kapag nagpapasya sa paraan ng panganganak.",
+        "text-2": "Ang sumusunod na tsart ay nagpapakita ng Oras ng Paggaling (sa mga araw) para sa bawat Paraan ng Panganganak:"
+      },
+
+      "topic-5-name": "3.5 Paggaling Pagkatapos ng Panganganak",
+      "topic-5-desc": {
+        "text-1": "Ang paggaling pagkatapos ng panganganak ay nag-iiba depende sa kung ikaw ay nagkaroon ng panganganak sa pamamagitan ng puwerta o C-section. Ang paggaling mula sa panganganak sa pamamagitan ng puwerta ay karaniwang tumatagal ng 4-6 na linggo, na ang sakit ay pinamamahalaan ng over-the-counter na mga gamot. Ang mga babae ay unti-unting bumabalik sa pang-araw-araw na gawain at nakatuon sa perineal care at Kegel exercises upang palakasin ang pelvic floor muscles. Ang paggaling mula sa C-section ay karaniwang tumatagal ng 6-8 linggo o higit pa, na may kinakailangang reseta para sa pamamahala ng sakit sa una. Ang pisikal na aktibidad ay dapat na limitado sa paglalakad, at ang pangangalaga sa sugat ay mahalaga upang maiwasan ang impeksyon. Parehong mga uri ng paggaling ay nakikinabang mula sa wastong postpartum care, kabilang ang suporta sa pagpapasuso at balanseng diyeta upang mapadali ang paggaling."
+      },
+
+      "quiz": {
+        "topic-6-name": "3.6 Subukin ang Iyong Kaalaman!",
+        "desc": "Subukan ang mga tanong sa ibaba upang masuri ang iyong pagkaunawa sa nabanggit na mga nilalaman.",
+
+        "side": "Tanong",
+
+        "q-1-name": "Ano ang pinakakaraniwang paraan ng panganganak?",
+        "q-1-option-1": "A) Cesarean Section",
+        "q-1-option-2": "B) Assisted Vaginal Delivery",
+        "q-1-option-3": "C) Panganganak sa Puwerta",
+        "q-1-option-4": "D) Home Birth",
+        "q-1-answer": "C) Panganganak sa Puwerta",
+        "q-1-pre-answer": "Ang tamang sagot ay ",
+        "q-1-post-answer": "Ang panganganak sa pamamagitan ng puwerta ay ang pinakakaraniwang paraan ng panganganak.",
+
+        "q-2-name": "Ano ang isang posibleng panganib na nauugnay sa cesarean section?",
+        "q-2-option-1": "A) Mas mababang panganib ng impeksyon",
+        "q-2-option-2": "B) Mas mahabang oras ng paggaling",
+        "q-2-option-3": "C) Mas maikling oras ng pananatili sa ospital",
+        "q-2-option-4": "D) Mas madaling pagpapasuso",
+        "q-2-answer": "B) Mas mahabang oras ng paggaling",
+        "q-2-pre-answer": "Ang tamang sagot ay ",
+        "q-2-post-answer": "Ang mga babaeng sumasailalim sa C-sections ay karaniwang nakakaranas ng mas mahabang oras ng paggaling kumpara sa mga babaeng nagkaroon ng panganganak sa pamamagitan ng puwerta.",
+
+        "q-3-name": "Ano ang isang bentahe ng panganganak sa puwerta?",
+        "q-3-option-1": "A) Mas mahabang oras ng paggaling",
+        "q-3-option-2": "B) Mas mataas na panganib ng impeksyon",
+        "q-3-option-3": "C) Mas maikling oras ng paggaling",
+        "q-3-option-4": "D) Planado nang maaga",
+        "q-3-answer": "C) Mas maikling oras ng paggaling",
+        "q-3-pre-answer": "Ang tamang sagot ay ",
+        "q-3-post-answer": "Ang mga panganganak sa pamamagitan ng puwerta ay karaniwang nagbibigay-daan para sa mas mabilis na paggaling kumpara sa C-sections.",
+
+        "q-4-name": "Ano ang assisted vaginal delivery?",
+        "q-4-option-1": "A) Isang home birth",
+        "q-4-option-2": "B) Panganganak gamit ang mga kasangkapan tulad ng forceps o vacuum",
+        "q-4-option-3": "C) Isang planadong C-section",
+        "q-4-option-4": "D) Isang natural na panganganak na walang interbensyon",
+        "q-4-answer": "B) Panganganak gamit ang mga kasangkapan tulad ng forceps o vacuum",
+        "q-4-pre-answer": "Ang tamang sagot ay ",
+        "q-4-post-answer": "Ang assisted vaginal delivery ay kinabibilangan ng paggamit ng mga instrumento upang matulungan ang paglabas ng sanggol.",
+
+        "q-5-name": "Aling salik ang maaaring makaapekto sa iyong pagpili ng paraan ng panganganak?",
+        "q-5-option-1": "A) Posisyon ng sanggol",
+        "q-5-option-2": "B) Panahon sa araw ng panganganak",
+        "q-5-option-3": "C) Kulay ng nursery",
+        "q-5-option-4": "D) Haba ng iyong pagbubuntis",
+        "q-5-answer": "A) Posisyon ng sanggol",
+        "q-5-pre-answer": "Ang tamang sagot ay ",
+        "q-5-post-answer": "Ang posisyon ng sanggol ay maaaring makabuluhang makaapekto sa inirerekomendang paraan ng panganganak."
+      },
+
+      "more-details": "Karagdagang Detalye...",
+      "prepage-btn": "Nakaraang Kabanata",
+      "nextpage-btn": "Susunod na Kabanata"
+    },
+
+    "card-4": {
+      "module-name": "4. Nutrisyon",
+      "module-desc": "Ang seksyong ito ay nagbibigay ng mahalagang impormasyon tungkol sa kahalagahan ng balanseng nutrisyon sa panahon ng pagbubuntis. Matutunan ang mga mahahalagang sustansya na sumusuporta sa kalusugan ng ina at sanggol, mga gabay sa diyeta para sa bawat trimester, mga pagkaing dapat iwasan, at mga tip sa pagpaplano ng masustansyang pagkain. Tuklasin ang mga interactive na tools at mapagkukunan upang matulungan ang mga nagdadalang-tao na mapanatili ang masustansyang diyeta para sa pinakamainam na paglaki at pag-unlad.",
+
+      "topic-1-name": "4.1 Bakit Mahalaga ang Nutrisyon",
+      "topic-1-desc": {
+        "text-1": "Ang tamang nutrisyon sa panahon ng pagbubuntis ay mahalaga para sa kalusugan ng ina at sanggol. Ang balanseng diyeta ay sumusuporta sa pag-unlad ng mga kritikal na organo tulad ng utak, baga, at puso, na may mga sustansyang tulad ng folic acid na mahalaga para sa pag-unlad ng neural tube. Tumutulong din ito sa pamamahala ng mga sintomas ng pagbubuntis tulad ng pagduduwal at pagkapagod, binabawasan ang panganib ng mga komplikasyon tulad ng gestational diabetes at hypertension, at nagbibigay ng enerhiya na kinakailangan para sa pisikal at emosyonal na mga hamon. Bukod dito, ang magandang nutrisyon ay nakakatulong sa pagpapanatili ng hormonal balance, na nagtataguyod ng emosyonal na kagalingan sa yugtong ito ng buhay."
+      },
+
+      "topic-2-name": "4.2 Mahahalagang Sustansya",
+      "topic-2-desc": {
+        "text-1": "Sa panahon ng pagbubuntis, may mga partikular na sustansyang mahalaga para sa pagsuporta sa parehong lumalaking sanggol at ina. Ang folic acid ay tumutulong upang maiwasan ang neural tube defects, matatagpuan ito sa mga madahong gulay, citrus fruits, at fortified cereals. Ang iron ay mahalaga para sa paggawa ng dagdag na dugo at pag-iwas sa anemia, matatagpuan ito sa mga lean meats, spinach, at beans. Ang calcium ay sumusuporta sa pag-unlad ng mga buto ng sanggol, na makukuha sa mga produktong dairy at almonds. Ang Omega-3 fatty acids ay tumutulong sa pag-unlad ng utak, matatagpuan ito sa salmon, walnuts, at flaxseeds. Ang fiber ay tumutulong na maiwasan ang constipation, karaniwan sa pagbubuntis, na matatagpuan sa whole grains, prutas, at gulay.",
+        "text-2": "Gabay sa Sustansya: Bisitahin ang aming detalyadong gabay para sa listahan ng mga inirerekomendang pagkain",
+        "nav-1": "(link to Nutrition)."
+      },
+
+      "topic-3-name": "4.3 Mga Pamantayan sa Nutrisyon para sa mga Buntis na Babae",
+      "topic-3-desc": {
+        "text-1": "Sa panahon ng pagbubuntis, ang pangangailangan sa calories at macronutrients ay nagbabago sa paglipas ng panahon. Sa unang trimester, magpokus sa nutrient-dense na pagkain dahil hindi gaanong tumataas ang pangangailangan sa calories. Sa ikalawang trimester, inirerekomenda ang dagdag na 300-350 calories bawat araw, na tumataas sa 450-500 calories bawat araw sa ikatlong trimester. Ang pangangailangan sa protein ay dapat nasa 70-100 gramo araw-araw upang suportahan ang pag-unlad ng fetus at kalusugan ng ina. Ang carbohydrates ay dapat bumuo ng 45-65% ng araw-araw na calories, na nakatuon sa complex carbs tulad ng whole grains at gulay. Ang mga healthy fats ay dapat bumuo ng 25-35% ng araw-araw na calories, na binibigyang-diin ang unsaturated fats tulad ng olive oil at avocado para sa pag-unlad ng utak ng fetus."
+      },
+
+      "topic-4-name": "4.4 Malusog na Pagpaplano ng Pagkain",
+      "topic-4-desc": {
+        "text-1": "Ang malusog na pagpaplano ng pagkain sa panahon ng pagbubuntis ay susi upang matiyak na ikaw at ang iyong sanggol ay makakatanggap ng mahahalagang sustansya habang iniiwasan ang mga naprosesong pagkain. Upang mapanatili ang balanseng diyeta, magplano ng mga pagkain nang maaga, bigyang-pansin ang mga laki ng bahagi, at maghanda ng masustansyang meryenda tulad ng nuts at yogurt. Maghangad ng iba't ibang pagkain sa pamamagitan ng pagsasama ng iba't ibang prutas at gulay, at tandaan na manatiling hydrated sa pamamagitan ng pag-inom ng hindi bababa sa 8-10 baso ng tubig araw-araw. Ang pamamaraang ito ay sumusuporta sa pinakamainam na kalusugan, antas ng enerhiya, at binabawasan ang stress sa buong pagbubuntis."
+      },
+
+      "topic-5-name": "4.5 Mga Pagkaing Dapat Iwasan",
+      "topic-5-desc": {
+        "text-1": "Sa panahon ng pagbubuntis, mahalagang iwasan ang ilang pagkain na maaaring magdulot ng panganib sa iyo at sa iyong sanggol. Iwasan ang mga isda na mataas sa mercury tulad ng pating at swordfish, at pumili ng mga low-mercury options tulad ng salmon. Iwasan ang mga malambot na keso na gawa sa unpasteurized milk at mga naprosesong karne tulad ng deli meats maliban kung pinainit hanggang sa kumulo. Ang mga unpasteurized dairy at juices ay dapat ding iwasan upang mabawasan ang panganib ng mapanganib na bacteria. Limitahan ang pag-inom ng caffeine sa 200 mg bawat araw at ganap na iwasan ang alkohol. Mag-ingat sa mga herbal tea, dahil ang ilan ay maaaring makasama; palaging kumonsulta sa iyong tagapagbigay ng kalusugan bago ito inumin. Ang pag-unawa sa mga panganib na ito ay makakatulong sa iyo na gumawa ng may-kaalamang mga desisyon sa diyeta para sa malusog na pagbubuntis."
+      },
+
+      "quiz": {
+        "topic-6-name": "4.6 Subukin ang Iyong Kaalaman!",
+        "desc": "Subukan ang mga tanong sa ibaba upang masuri ang iyong pagkaunawa sa nabanggit na mga nilalaman.",
+
+        "side": "Tanong",
+
+        "q-1-name": "Aling sustansya ang mahalaga para sa pag-iwas sa neural tube defects?",
+        "q-1-option-1": "A) Calcium",
+        "q-1-option-2": "B) Iron",
+        "q-1-option-3": "C) Folic Acid",
+        "q-1-option-4": "D) Omega-3 Fatty Acids",
+        "q-1-answer": "C) Folic Acid",
+        "q-1-pre-answer": "Ang tamang sagot ay ",
+        "q-1-post-answer": "Ang folic acid ay mahalaga para sa pag-unlad ng fetus, partikular sa mga unang yugto ng pagbubuntis.",
+
+        "q-2-name": "Ano ang dapat limitahan ng mga buntis na kababaihan sa kanilang diyeta upang mabawasan ang panganib ng foodborne illness?",
+        "q-2-option-1": "A) Whole grains",
+        "q-2-option-2": "B) Raw o undercooked seafood, karne, at itlog",
+        "q-2-option-3": "C) Prutas at gulay",
+        "q-2-option-4": "D) Mga produktong dairy",
+        "q-2-answer": "B) Raw o undercooked seafood, karne, at itlog",
+        "q-2-pre-answer": "Ang tamang sagot ay ",
+        "q-2-post-answer": "Ang mga pagkaing ito ay maaaring maglaman ng mapanganib na bacteria at dapat iwasan sa panahon ng pagbubuntis.",
+
+        "q-3-name": "Ano ang magandang mapagkukunan ng calcium para sa mga buntis na kababaihan?",
+        "q-3-option-1": "A) Manok",
+        "q-3-option-2": "B) Spinach",
+        "q-3-option-3": "C) Keso",
+        "q-3-option-4": "D) Brown rice",
+        "q-3-answer": "C) Keso",
+        "q-3-pre-answer": "Ang tamang sagot ay ",
+        "q-3-post-answer": "Ang mga produktong dairy, kabilang ang keso, ay mahusay na mapagkukunan ng calcium na mahalaga para sa pag-unlad ng buto.",
+
+        "q-4-name": "Aling uri ng isda ang dapat iwasan ng mga buntis na kababaihan dahil sa mataas na mercury levels?",
+        "q-4-option-1": "A) Salmon",
+        "q-4-option-2": "B) Sardinas",
+        "q-4-option-3": "C) Swordfish",
+        "q-4-option-4": "D) Trout",
+        "q-4-answer": "C) Swordfish",
+        "q-4-pre-answer": "Ang tamang sagot ay ",
+        "q-4-post-answer": "Ang swordfish at iba pang mga isda na mataas sa mercury ay dapat iwasan sa panahon ng pagbubuntis.",
+
+        "q-5-name": "Ano ang inirerekomendang limitasyon sa pang-araw-araw na pag-inom ng caffeine para sa mga buntis?",
+        "q-5-option-1": "A) 100 mg",
+        "q-5-option-2": "B) 200 mg",
+        "q-5-option-3": "C) 300 mg",
+        "q-5-option-4": "D) 400 mg",
+        "q-5-answer": "B) 200 mg",
+        "q-5-pre-answer": "Ang tamang sagot ay ",
+        "q-5-post-answer": "Dapat limitahan ng mga buntis na kababaihan ang pag-inom ng caffeine sa mas mababa sa 200 mg bawat araw upang matiyak ang kaligtasan ng sanggol."
+      },
+
+      "more-details": "Karagdagang Detalye...",
+      "prepage-btn": "Nakaraang Kabanata",
+      "nextpage-btn": "Susunod na Kabanata"
+    },
+
+    "card-5": {
+      "module-name": "5. Mga Ehersisyong Prenatal",
+      "module-desc": "Hey mama! Ang pananatiling aktibo sa panahon ng pagbubuntis ay hindi lamang tungkol sa pagiging fit—isa itong magandang paraan upang ihanda ang iyong katawan para sa mga pagbabago, mapanatili ang iyong enerhiya, at matulungan pa sa labor. Ang kategoryang ito ay tungkol sa pagsiguro na ikaw ay pakiramdam na malakas, malusog, at empowered sa bawat yugto ng iyong pagbubuntis. Mula sa mga ligtas na routine ng ehersisyo hanggang sa mga tip sa pamamahala ng kakulangan sa ginhawa, kami ang bahala sa'yo!",
+
+      "topic-1-name": "5.1 Bakit Mahalaga ang Prenatal na Ehersisyo",
+      "topic-1-desc": {
+        "text-1": "Ang prenatal na ehersisyo ay napakabisa para sa parehong ikaw at ang iyong sanggol. Pinapataas nito ang iyong enerhiya, pinapawi ang mga sakit at kirot, inihahanda ang iyong katawan para sa labor sa pamamagitan ng pagpapalakas ng mga kalamnan at pagpapabuti ng flexibility, sinusuportahan ang kalusugan ng iyong sanggol sa pamamagitan ng mas mahusay na sirkulasyon ng dugo, at binabawasan ang panganib ng mga komplikasyon tulad ng gestational diabetes at preeclampsia. Ang pananatiling aktibo ay isa sa pinakamabuting bagay na magagawa mo sa panahon ng pagbubuntis.",
+        "text-2": "Mabilis na Tip: Maghangad ng humigit-kumulang 30 minutong katamtamang ehersisyo tulad ng paglalakad o prenatal yoga, ngunit laging pakinggan ang iyong katawan. Kung ikaw ay nakakaramdam ng pagod, okay lang magpahinga! Kung nais mong malaman ang higit pa tungkol sa prenatal na ehersisyo, pindutin dito ",
+        "nav-1": "(link to exercise)."
+      },
+
+      "topic-2-name": "5.2 Mga Ligtas na Ehersisyo para sa Bawat Trimester",
+      "topic-2-desc": {
+        "text-1": "• Unang Trimester (Linggo 1-12): Magpokus sa magaan na cardio tulad ng paglalakad at paglangoy, low-impact na strength training para sa mga braso at binti gamit ang maliliit na weights, at banayad na stretching o prenatal yoga. Gumalaw nang dahan-dahan at kontrolin ang mga paggalaw, lalo na kung nakakaramdam ng pagod o pagduduwal.",
+        "text-2": "• Ikalawang Trimester (Linggo 13-28): Ito ang pinakamainam na oras para sa ehersisyo dahil maraming ina ang nakakaramdam ng mas mataas na enerhiya. Isama ang low-impact aerobics, modified Pilates, at resistance band exercises. Magpokus sa pagpapalakas at pagpapanatili ng tamang postura habang lumalaki ang iyong tiyan. Iwasan ang paghiga nang patag sa likod.",
+        "text-3": "• Ikatlong Trimester (Linggo 29-40): Manatili sa low-impact na aktibidad tulad ng prenatal yoga, seated exercises, at banayad na stretching. Magdagdag ng pelvic floor exercises tulad ng Kegels at pelvic tilts upang ihanda para sa labor. Ang banayad na cardio, tulad ng paglangoy o mabagal na paglalakad, ay inirerekomenda. Mag-ingat sa pagbabalanse habang nagbabago ang sentro ng iyong grabidad."
+      },
+
+      "topic-3-name": "5.3 Mga Ehersisyo para Maghanda para sa Labor",
+      "topic-3-desc": {
+        "text-1": "• Squats: Palakasin ang iyong mga binti at pelvic floor, mahahalagang kalamnan para sa labor. Tumayo na ang mga paa ay kasinglawak ng balikat, mag-squat na parang uupo sa isang upuan, humawak ng ilang segundo, pagkatapos ay bumalik pataas.",
+        "text-2": "• Kegel Exercises: Palakasin ang iyong pelvic floor, na tumutulong sa pagtulak sa panahon ng labor at pag-iwas sa incontinence. Piga ang mga kalamnan na ginagamit upang pigilan ang pag-ihi, humawak ng 5 segundo, pagkatapos ay pakawalan. Gawin ang 10 repetitions, 3 beses sa isang araw.",
+        "text-3": "• Cat-Cow Stretches: Bawasan ang pananakit sa ibabang bahagi ng likod at pagbutihin ang flexibility ng gulugod. Sa mga kamay at tuhod, i-arch ang iyong likod pataas tulad ng isang pusa, pagkatapos ay ibaba ito, hinahayaan ang iyong tiyan na bumaba patungo sa sahig."
+      },
+
+      "topic-4-name": "5.4 Kaligtasan Muna, Palagi!",
+      "topic-4-desc": {
+        "text-1": "Mahalaga ang kaligtasan sa panahon ng pagbubuntis, kaya laging pakinggan ang iyong katawan—kung nakakaramdam ka ng pagod, pagkahilo, o hindi komportable, magpahinga. Iwasan ang mga high-impact na aktibidad tulad ng pagtakbo o pagtalon, paghiga nang patag sa iyong likod pagkatapos ng unang trimester, at mga ehersisyong nangangailangan ng pagtigil sa paghinga. Manatiling hydrated sa pamamagitan ng pag-inom ng maraming tubig bago, habang, at pagkatapos ng ehersisyo. Itigil kaagad kung makakaranas ka ng pagkahilo, matinding hirap sa paghinga, sakit ng ulo, pananakit sa dibdib, biglaang pamamaga, contraction, o nabawasan ang paggalaw ng sanggol. Ang iyong kapakanan at kalusugan ng iyong sanggol ay pinakamahalaga, kaya mag-ehersisyo nang may pag-iingat."
+      },
+
+      "quiz": {
+        "topic-5-name": "5.5 Subukin ang Iyong Kaalaman!",
+        "desc": "Subukan ang mga tanong sa ibaba upang masuri ang iyong pagkaunawa sa nabanggit na mga nilalaman.",
+
+        "side": "Tanong",
+
+        "q-1-name": "Alin sa mga sumusunod ang benepisyo ng prenatal na ehersisyo?",
+        "q-1-option-1": "A) Nagdudulot ng preterm labor",
+        "q-1-option-2": "B) Binabawasan ang pananakit ng likod at nagpapabuti ng mood",
+        "q-1-option-3": "C) Nagdudulot ng dehydration",
+        "q-1-option-4": "D) Pinapataas ang panganib ng mga komplikasyon",
+        "q-1-answer": "B) Binabawasan ang pananakit ng likod at nagpapabuti ng mood",
+        "q-1-pre-answer": "Ang tamang sagot ay ",
+        "q-1-post-answer": "Ang prenatal na ehersisyo ay nakakatulong na mabawasan ang pananakit ng likod, nagpapabuti ng mood, at nagtataguyod ng kabuuang kagalingan sa panahon ng pagbubuntis.",
+
+        "q-2-name": "Aling trimester ang pinakamainam para magpokus sa banayad na ehersisyo at stretching?",
+        "q-2-option-1": "A) Unang trimester",
+        "q-2-option-2": "B) Ikalawang trimester",
+        "q-2-option-3": "C) Ikatlong trimester",
+        "q-2-option-4": "D) Pagkatapos manganak",
+        "q-2-answer": "C) Ikatlong trimester",
+        "q-2-pre-answer": "Ang tamang sagot ay ",
+        "q-2-post-answer": "Ang ikatlong trimester ay ang perpektong oras upang magpokus sa banayad na ehersisyo at stretching upang maisaayos ang mga pagbabago sa katawan.",
+
+        "q-3-name": "Ano ang pinakamainam na paraan upang palakasin ang mga kalamnan ng pelvic floor?",
+        "q-3-option-1": "A) Jumping jacks",
+        "q-3-option-2": "B) Kegel exercises",
+        "q-3-option-3": "C) Crunches",
+        "q-3-option-4": "D) Pagbuhat ng mabibigat",
+        "q-3-answer": "B) Kegel exercises",
+        "q-3-pre-answer": "Ang tamang sagot ay ",
+        "q-3-post-answer": "Ang Kegel exercises ay partikular na idinisenyo upang palakasin ang mga kalamnan ng pelvic floor, na mahalaga sa panahon ng pagbubuntis.",
+
+        "q-4-name": "Anong uri ng ehersisyo ang dapat iwasan pagkatapos ng unang trimester?",
+        "q-4-option-1": "A) Paglalakad",
+        "q-4-option-2": "B) Paghiga nang patag sa iyong likod",
+        "q-4-option-3": "C) Prenatal yoga",
+        "q-4-option-4": "D) Squats",
+        "q-4-answer": "B) Paghiga nang patag sa iyong likod",
+        "q-4-pre-answer": "Ang tamang sagot ay ",
+        "q-4-post-answer": "Pagkatapos ng unang trimester, ang paghiga nang patag sa iyong likod ay dapat iwasan dahil maaari itong mabawasan ang daloy ng dugo sa sanggol.",
+
+        "q-5-name": "Anong aktibidad ang ligtas para sa unang trimester?",
+        "q-5-option-1": "A) High-intensity interval training",
+        "q-5-option-2": "B) Banayad na yoga",
+        "q-5-option-3": "C) Long-distance running",
+        "q-5-option-4": "D) Pagbuhat ng mabibigat",
+        "q-5-answer": "B) Banayad na yoga",
+        "q-5-pre-answer": "Ang tamang sagot ay ",
+        "q-5-post-answer": "Ang banayad na yoga ay isang ligtas at kapaki-pakinabang na aktibidad sa unang trimester upang mapabuti ang flexibility at mabawasan ang stress."
+      },
+
+      "more-details": "Karagdagang Detalye...",
+      "prepage-btn": "Nakaraang Kabanata",
+      "nextpage-btn": "Susunod na Kabanata"
+    },
+
+    "card-6": {
+      "module-name": "6. Mga Ehersisyong Postpartum",
+      "module-desc": "Congratulations, mama! Ang postpartum period ay tungkol sa paggaling, muling pagbubuo, at muling pagkonekta sa iyong katawan. Magsimula tayo muli sa mga banayad na ehersisyo na sumusuporta sa iyong paglalakbay sa paggaling.",
+
+      "topic-1-name": "6.1 Ang Unang 6 na Linggo: Banayad na Mga Paggalaw para sa Paggaling",
+      "topic-1-desc": {
+        "text-1": "Sa unang 6 na linggo postpartum, mahalaga ang pahinga, ngunit ang banayad na mga paggalaw ay makakatulong sa paggaling. ",
+        "text-2": "Deep belly breathing",
+        "text-3": " ay nakakatulong na muling paganahin ang mga kalamnan ng core at mabawasan ang tensyon sa pamamagitan ng mabagal, malalim na paghinga habang komportableng nakaupo. ",
+        "text-4": "Pelvic tilts",
+        "text-5": " ay nagpapagaan ng tensyon sa ibabang likod at nagsisimula sa pagpapalakas ng core sa pamamagitan ng banayad na pag-angat ng pelvis pataas habang nakahiga sa iyong likod na nakabaluktot ang mga tuhod. ",
+        "text-6": "Banayad na paglalakad",
+        "text-7": " ay nagpapalakas ng sirkulasyon at mood, simula sa maikling 5-10 minutong paglalakad."
+      },
+
+      "topic-2-name": "6.2 Pagbabalik ng Lakas ng Core at Pelvic Floor (6-12 Linggo)",
+      "topic-2-desc": {
+        "text-1": "Sa pagitan ng 6-12 linggo postpartum, kasama ang pag-apruba ng iyong doktor, magpokus sa muling pagbubuo ng lakas ng core. ",
+        "text-2": "Heel slides",
+        "text-3": " ay nakakatulong na muling ikonekta ang mga kalamnan ng core at palakasin ang ibabang bahagi ng abs sa pamamagitan ng pag-slide ng isang takong palayo at pabalik habang nakahiga sa iyong likod na nakabaluktot ang isang tuhod. ",
+        "text-4": "Bridges",
+        "text-5": " ay pinapagana ang glutes at core sa pamamagitan ng pag-angat ng iyong balakang mula sa sahig habang nakahiga sa iyong likod na nakabaluktot ang mga tuhod."
+      },
+
+      "quiz": {
+        "topic-3-name": "6.3 Subukin ang Iyong Kaalaman!",
+        "desc": "Subukan ang mga tanong sa ibaba upang masuri ang iyong pagkaunawa sa nabanggit na mga nilalaman.",
+
+        "side": "Tanong",
+
+        "q-1-name": "Aling ehersisyo ang nakakatulong sa muling pagkonekta ng iyong mga kalamnan ng core postpartum?",
+        "q-1-option-1": "A) Heel slides",
+        "q-1-option-2": "B) Jump squats",
+        "q-1-option-3": "C) Sit-ups",
+        "q-1-option-4": "D) Push-ups",
+        "q-1-answer": "A) Heel slides",
+        "q-1-pre-answer": "Ang tamang sagot ay ",
+        "q-1-post-answer": "Ang heel slides ay banayad na mga paggalaw na nakakatulong na muling ikonekta at palakasin ang mga kalamnan ng core pagkatapos ng panganganak.",
+
+        "q-2-name": "Kailan karaniwang ligtas magsimula ng banayad na ehersisyo tulad ng paglalakad pagkatapos ng panganganak sa pamamagitan ng puwerta?",
+        "q-2-option-1": "A) Agad-agad",
+        "q-2-option-2": "B) Pagkatapos ng 2 linggo",
+        "q-2-option-3": "C) Pagkatapos ng 4-6 linggo, kasama ang pag-apruba ng doktor",
+        "q-2-option-4": "D) Pagkatapos ng 3 buwan",
+        "q-2-answer": "C) Pagkatapos ng 4-6 linggo, kasama ang pag-apruba ng doktor",
+        "q-2-pre-answer": "Ang tamang sagot ay ",
+        "q-2-post-answer": "Pagkatapos ng panganganak sa pamamagitan ng puwerta, karaniwang ligtas magsimula ng banayad na ehersisyo tulad ng paglalakad pagkatapos ng 4-6 linggo, kasama ang pag-apruba ng doktor.",
+
+        "q-3-name": "Ano ang pinakamainam na ehersisyo para simulan ang muling pagbubuo ng iyong lakas ng core?",
+        "q-3-option-1": "A) Sit-ups",
+        "q-3-option-2": "B) Heel slides",
+        "q-3-option-3": "C) Jumping jacks",
+        "q-3-option-4": "D) Pagpapatakbo",
+        "q-3-answer": "B) Heel slides",
+        "q-3-pre-answer": "Ang tamang sagot ay ",
+        "q-3-post-answer": "Ang heel slides ay banayad at epektibong ehersisyo upang simulan ang muling pagbubuo ng lakas ng core pagkatapos ng panganganak.",
+
+        "q-4-name": "Ano ang dapat mong gawin kung nakakaramdam ka ng sakit o napansin mong tumindi ang pagdurugo sa panahon ng pag-eehersisyo?",
+        "q-4-option-1": "A) Ituloy pa rin",
+        "q-4-option-2": "B) Bawasan ang bilis at kumonsulta sa iyong doktor",
+        "q-4-option-3": "C) Dagdagan ang intensity",
+        "q-4-option-4": "D) Uminom ng mas maraming tubig",
+        "q-4-answer": "B) Bawasan ang bilis at kumonsulta sa iyong doktor",
+        "q-4-pre-answer": "Ang tamang sagot ay ",
+        "q-4-post-answer": "Kung makakaranas ka ng sakit o tumindi ang pagdurugo sa panahon ng pag-eehersisyo, mahalaga na bawasan ang bilis at kumonsulta sa iyong doktor.",
+
+        "q-5-name": "Aling ehersisyo ang pinakamainam na iwasan sa unang bahagi ng postpartum recovery?",
+        "q-5-option-1": "A) Pelvic tilts",
+        "q-5-option-2": "B) Planks",
+        "q-5-option-3": "C) Deep belly breathing",
+        "q-5-option-4": "D) Banayad na paglalakad",
+        "q-5-answer": "B) Planks",
+        "q-5-pre-answer": "Ang tamang sagot ay ",
+        "q-5-post-answer": "Ang planks ay dapat iwasan sa unang bahagi ng postpartum recovery dahil pinapataas nito ang strain sa mga kalamnan ng tiyan na nangangailangan ng oras upang gumaling."
+      },
+
+      "more-details": "Karagdagang Detalye...",
+      "prepage-btn": "Nakaraang Kabanata",
+      "nextpage-btn": "Kapag natapos mo na ang bahaging edukasyon, pumunta tayo sa Pahina ng Pagtatasa ng Panganib dito"
+    },
+    "answer-correct": "Tama!",
+    "answer-incorrect": "Mali!",
+    "submit-btn": "Isumite",
+    "next-btn": "Susunod na Tanong"
+  },
+
+  "riskassessment": {
+    "point1-bold": "Sagutin",
+    "point1": "ang mga tanong sa pagtatasa ng panganib",
+    "point2-bold": "Sagutin",
+    "point2-1": "Makakuha ng",
+    "point2-2": "kaagad matapos mong isumite",
+    "title": "Pagtatasa ng Panganib sa Diabetes",
+    "Disclaimer": "Paunawa",
+    "text1": "Ang impormasyong ibinigay sa pagtatasa ng panganib na ito ay batay sa pananaliksik na estadistika na isinagawa ng.",
+    "text2-text": "Maaari mong tingnan ang buong ulat sa AIHW - Social Determinants of Health among CALD Australians. Ang tool na ito ay nilalayon upang magtaas ng kamalayan at magbigay ng pangkalahatang pananaw. Hindi ito kapalit ng propesyonal na payo medikal, pagsusuri, o paggamot. Mangyaring kumonsulta sa isang kwalipikadong propesyonal sa kalusugan para sa anumang mga personal na alalahaning medikal o desisyon",
+    "bule-text": "Australian Institute of Health and Welfare (AIHW)",
+    "Direct-causes": "Mga Direktang Sanhi",
+    "text2": "Ang mga direktang sanhi tulad ng BMI, pisikal na aktibidad, kasaysayan ng pamilya, paninigarilyo, at pag-inom ng alak ay malaki ang impluwensya sa panganib ng diabetes. Ang mataas na BMI at mababang pisikal na aktibidad ay direktang nakakaapekto sa pagiging sensitibo ng insulin, habang ang kasaysayan ng pamilya ng diabetes ay nagpapataas ng genetikong pagkahilig. Ang paninigarilyo at labis na pag-inom ng alak ay nagpapababa ng kalusugang metabolic, na karagdagang nagpapataas ng panganib",
+    "card1": {
+      "title": "Ano ang iyong taas at timbang?",
+      "Height": "Taas",
+      "Weight": "Timbang",
+      "cm": "cm",
+      "kg": "kg",
+      "tips": "Ang mas mataas na BMI, lalo na ang labis na katabaan, ay nagpapataas ng panganib ng diabetes sa pamamagitan ng pag-aambag sa insulin resistance."
+    },
+    "card2": {
+      "title": "Gaano kadalas kang nakikilahok sa pisikal na aktibidad",
+      "roadio1": "Aktibo (≥ 150 min/week)",
+      "roadio2": "Katamtamang aktibo (75–149 min/week)",
+      "roadio3": "Hindi aktibo (< 75 min/week)",
+      "tips": "Ang regular na pisikal na aktibidad ay nagpapababa ng panganib ng diabetes sa pamamagitan ng pagpapabuti ng pagiging sensitibo sa insulin at pagtulong sa pamamahala ng timbang."
+    },
+    "card3": {
+      "title": "Mayroon ka bang kasaysayan ng pamilya ng diabetes (hal., magulang o kapatid na may diabetes)?",
+      "roadio1": "Walang kasaysayan ng pamilya",
+      "roadio2": "Isang magulang na may diabetes",
+      "roadio3": "Parehong magulang na may diabetes",
+      "tips": "Ang kasaysayan ng pamilya ng diabetes ay nagpapataas ng posibilidad na magkaroon ng kondisyon dahil sa mga genetic factors."
+    },
+    "card4": {
+      "title": "Gaano kadalas kang naninigarilyo",
+      "roadio1": "Hindi kailanman nanigarilyo",
+      "roadio2": "Dati nanigarilyo",
+      "roadio3": "Kasalukuyang naninigarilyo",
+      "tips": "Ang paninigarilyo ay nagpapataas ng panganib ng diabetes sa pamamagitan ng pag-aambag sa pamamaga, insulin resistance, at iba pang mga metabolic issues"
+    },
+    "card5": {
+      "title": "Gaano kadalas kang umiinom",
+      "roadio1": "Hindi umiinom",
+      "roadio2": "Katamtamang umiinom",
+      "roadio3": "Mabigat na umiinom",
+      "tips": "Ang labis na pag-inom ng alak ay maaaring magdulot ng pagtaas ng timbang at pagkasira ng regulasyon ng insulin, na nagpapataas ng panganib ng diabetes"
+    },
+    "SocioeconomicFactors": "Mga Sosyoekonomikong Salik",
+    "SocioeconomicText": "Ang mga sosyoekonomikong salik tulad ng Bansa ng Kapanganakan at Pangkat ng Edad ay nakakaapekto sa panganib ng diabetes sa pamamagitan ng pag-impluwensya sa pag-access sa healthcare, mga gawi sa pamumuhay, at genetic predispositions. Ang mga migrante mula sa ilang mga rehiyon at mas matatandang pangkat ng edad ay maaaring magkaroon ng mas mataas na panganib ng diabetes dahil sa mga salik na ito",
+    "card6": {
+      "WhatisyourCountryofbirth": "Ano ang iyong Bansa ng Kapanganakan",
+      "tips": "Nakakaimpluwensya sa panganib ng diabetes dahil sa genetic predisposition at iba't ibang access sa healthcare sa iba't ibang rehiyon."
+    },
+    "card7": {
+      "Whichagegroupdoyoubelongsto": "Sa aling pangkat ng edad ka kabilang",
+      "tips": "Ang mga matatandang pangkat ng edad ay may mas mataas na panganib ng diabetes dahil sa mga pagbabago sa metabolismo at mga salik sa pamumuhay."
+    },
+    "Submit": "Isumite",
+    "ResetAnswers": "I-reset ang mga sagot",
+    "AssessmentResult": "Resulta ng Pagtatasa",
+    "YourCountryofBirth": "Ang Iyong Bansa ng Kapanganakan",
+    "row": "Ito ay kabilang sa rehiyon. Ang panganib ng diabetes dito ay inihahambing sa average ng Australia",
+    "YourDiabetesRisk": "Ang Iyong Panganib sa Diabetes",
+    "MODERATERISK": "KATAMTAMANG PANGANIB",
+    "YourScore": "Ang Iyong Iskor",
+    "MaincontributingFacto": "Pangunahing Nakaaambag na Salik",
+    "Note": "Tandaan",
+    "row2-1": "Ang iskor ng pagtatasa na ito ay batay sa",
+    "row2-2": " Australian Institute of Health and Wellbeing (AIHW)",
+    "What'sNext": "Ano'ng Susunod?",
+    "row3": "Alamin Pa Tungkol sa Diabetes at Pagbubuntis: Tuklasin ang mga mahahalagang impormasyon tungkol sa pamamahala ng diabetes sa pagbubuntis sa aming pahina ng edukasyon upang manatiling alam at maagap",
+    "educationpage": "pahina ng edukasyon",
+    "row4": "Alamin pa ang kahalagahan at epekto ng pagbisita sa antenatal sa panahon ng pagbubuntis dito",
+    "row5": "Tuklasin ang higit pang mga payo sa nutrisyon na naaangkop sa iyong pagbubuntis dito",
+    "row6": "Tuklasin ang mga inirerekomendang ehersisyo at pisikal na aktibidad para sa pinakamahusay na karanasan ng iyong pagbubuntis dito"
+  },
+
+  "NutritionAnalysis": {
+    "NutritionAnalysis": "Pagsusuri ng Nutrisyon",
+    "Recommendation": "Rekomendasyon",
+    "Recipes": "Mga Recipe",
+    "FoodNutritionAnalysis": "Pagsusuri ng Nutrisyon ng Pagkain",
+    "text1": "Dito mo maaaring kalkulahin ang mga sustansya na nakapaloob sa iba't ibang uri at dami ng pagkain. Maaari mong gamitin ang text box upang ipasok, tulad ng '2 tasa ng kape', at maaari kang magdagdag ng iba't ibang pagkain sa pamamagitan ng line breaks. Maaari mo ring ipasok at piliin ang uri at dami ng pagkain gamit ang guided input. Kapag pinindot mo ang analyze, maaari kang makakuha ng isang talahanayan ng nutrisyon para sa lahat ng iyong pagkain na pinagsama",
+    "GuidedInput": "Guided Input",
+    "FreeText": "Libreng Teksto",
+    "Qty": "Dami",
+    "Unit": "Yunit",
+    "Name": "Pangalan",
+    "Calories": "Calorya",
+    "Weight": "Timbang",
+    "IngredientName": "Pangalan ng Sangkap",
+    "Ounce": "Onsa",
+    "Gram": "Gramo",
+    "Pound": "Libra",
+    "Kilogram": "Kilogramo",
+    "Pinch": "Cubit",
+    "Liter": "Litro",
+    "Fluidounce": "Onsa ng Likido",
+    "Pint": "Pinta",
+    "Quart": "Quarto",
+    "Milliliter": "Milliliter",
+    "Drop": "Patak",
+    "Cup": "Tasa",
+    "Tablespoon": "Kutsara",
+    "Teaspoon": "Kutsarita",
+    "AddAnotherItem": "Magdagdag ng Isa pang Item",
+    "Analyze": "Suriin",
+    "clear": "I-clear",
+    "NutritionFacts": "Mga Katotohanan sa Nutrisyon",
+    "AmountPerServing": "Dami Bawat Paghahain",
+    "FoodRecommendation": "Rekomendasyon ng Pagkain",
+    "text2": "Tuklasin ang mga pagkaing inirerekomenda o hindi inirerekomenda para sa pagbubuntis.",
+    "Recommended": "Inirerekomenda",
+    "NotRecommended": "Hindi Inirerekomenda",
+    "category": "kategorya",
+    "Choosethefoodcategory": "Piliin ang kategorya ng pagkain",
+    "DailyValue": "Halaga ng Araw-araw",
+    "TotalFat": "Kabuuang Taba",
+    "SaturatedFat": "Saturated na Taba",
+    "TransFat": "Trans Fat",
+    "Cholesterol": "Kolesterol",
+    "Sodium": "Sodium",
+    "TotalCarbohydrate": "Kabuuang Karbohidrat",
+    "DietaryFiber": "Pandiyeta Hibla",
+    "TotalSugars": "Kabuuang Asukal",
+    "Includes-AddedSugars": "Kasama ang - Nadagdagang Asukal",
+    "Protein": "Protina",
+    "VitaminD": "Bitamina D",
+    "Calcium": "Kaltsyum",
+    "Iron": "Iron",
+    "Potassium": "Potassium",
+    "PercentDailyValuesarebasedona2000caloriediet": "Ang mga porsyento ng Araw-araw na Halaga ay batay sa isang 2000 calorie diet",
+    "Grains": "Butil",
+    "Meat": "Karne",
+    "Dairy": "Produkto ng Gatas",
+    "Fish": "Isda",
+    "Vegetables": "Gulay",
+    "Fruits": "Prutas",
+    "Beverages": "Inumin",
+    "Processed": "Naproseso",
+    "FoodList": "Listahan ng Pagkain",
+    "Listoffooditemsbasedonyourselection": "Listahan ng mga item sa pagkain batay sa iyong pinili"
+  },
+
+  "recipe": {
+    "NutritionAnalysis": "Pagsusuri ng Nutrisyon",
+    "Recommendation": "Rekomendasyon",
+    "Recipes": "Mga Recipe",
+    "FoodRecipes": "Mga Recipe ng Pagkain",
+    "text": "Tuklasin ang mga recipe ng pagkain batay sa iyong sariling kagustuhan at gawin itong iyong pinakamahusay na plano ng pagkain.",
+    "point-1-bold": "Tuklasin",
+    "point-1": "ang mga recipe ng pagkain",
+    "point-2-bold": "Piliin",
+    "point-2": "ang iyong mga paboritong recipe",
+    "point-3-bold": "Iskedyul",
+    "point-3": "ang iyong plano sa pagkain",
+    "text1": "Maghanap ayon sa mga kategorya",
+    "BREAKFAST": "ALMUSAL",
+    "LUNCH": "TANGHALIAN",
+    "TEATIME": "ORAS NG TSAA",
+    "DINNER": "HAPUNAN",
+    "PersonalizedSchedule": "Personalized na Iskedyul",
+    "BeefRoast": "Inihaw na Karne ng Baka",
+    "kcal": "kcal",
+    "PROTEIN": "PROTINA",
+    "FAT": "TABA",
+    "CARB": "CARB",
+    "text2": "O maghanap ayon sa pangalan",
+    "BREAKFASTRECOMMENDATIONS": "MGA REKOMENDASYON PARA SA ALMUSAL",
+    "Cholesterol": "Kolesterol",
+    "Calcium": "Kaltsyum",
+    "Potassium": "Potassium",
+    "Protein": "Protina",
+    "Sodium": "Sodium",
+    "Magnesium": "Magnesium",
+    "Iron": "Iron"
+  },
+
+  "exercise": {
+    "overview-title": "Ehersisyo sa Pagbubuntis",
+
+    "questionnaire-access": "Hindi Sigurado Kung Saan Magsisimula? Gawin ang Aming Quiz ng Ehersisyo!",
+    "card-1-desc": "Low-Impact Aerobic Exercise",
+    "card-2-desc": "Prenatal Yoga",
+    "card-3-desc": "Prenatal Pilates",
+    "card-4-desc": "Mga Ehersisyo na Batay sa Tubig",
+    "card-5-desc": "Mga Ehersisyo sa Pag-unat",
+    "card-6-desc": "Prenatal Strength Training",
+    "card-7-desc": "Mga Ehersisyo sa Pelvic Floor",
+    "card-8-desc": "Prenatal Dance",
+
+    "card-1": {
+      "card-title": "Low-Impact Aerobic Exercise",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Maagang Postnatal Phase (0-6 Linggo)",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Banayad na ehersisyo na nagtataguyod ng kalusugan ng cardiovascular at tumutulong sa paggaling habang pinapaliit ang strain sa katawan. Mainam para sa mga bagong ina na bumalik sa pisikal na aktibidad.",
+
+      "exe-1-title": "Magaan na Paglalakad: ",
+      "exe-1-content": "Nakikibahagi ang cardiovascular system na may minimal na impact, tumutulong sa paggaling at nagpapalakas ng enerhiya.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Magsimula sa isang 10-15 minutong paglalakad, unti-unting pataasin ang tagal habang nasasanay ang iyong katawan.",
+      "exe-1-how-content-2": "Maglakad sa bilis na komportable, pagtuunan ng pansin ang postura sa pamamagitan ng pagtuwid ng likod at pag-angat ng ulo.",
+      "exe-1-how-content-3": "Igalaw nang banayad ang mga braso habang naglalakad upang mapabuti ang sirkulasyon.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Pinasisigla ang sirkulasyon, binabawasan ang stress, nagpapabuti ng mood, at nagpapataas ng antas ng enerhiya.",
+
+      "exe-2-title": "Seated Forward Bend: ",
+      "exe-2-content": "Inaabot ang mas mababang likod, hamstrings, at binti, na nakakatulong sa pananakit ng likod.",
+      "exe-2-how-title": "Paano Gawin:",
+      "exe-2-how-content-1": "Umupo sa sahig na nakaunat ang mga binti sa harap mo.",
+      "exe-2-how-content-2": "Panatilihing tuwid ang iyong likod at huminga ng malalim, inaabot ang mga braso patungo sa iyong mga daliri sa paa.",
+      "exe-2-how-content-3": "Dahan-dahang yumuko mula sa iyong balakang, umaabot hangga't kaya nang walang pamimilit.",
+      "exe-2-how-content-4": "Hawakan ang posisyon sa loob ng 20-30 segundo, pagkatapos ay bumalik sa pagkakaupo.",
+      "exe-2-ben-title": "Mga Benepisyo: ",
+      "exe-2-ben-content": "Inaabot ang mas mababang likod, hamstrings, at binti, na nakakatulong sa pananakit ng likod at pagpapabuti ng flexibility.",
+
+      "exe-3-title": "Chest Opener Stretch: ",
+      "exe-3-content": "Inaabot ang dibdib at balikat upang mapabuti ang postura.",
+      "exe-3-how-title": "Paano Gawin:",
+      "exe-3-how-content-1": "Tumayo na ang mga paa ay kasinglawak ng balikat.",
+      "exe-3-how-content-2": "Hawakan ang iyong mga kamay sa likod, pinapanatili ang mga braso na tuwid.",
+      "exe-3-how-content-3": "Dahan-dahang itaas ang iyong mga kamay habang binubuksan ang iyong dibdib at balikat.",
+      "exe-3-how-content-4": "Hawakan ang stretch sa loob ng 15-30 segundo, pagkatapos ay bitawan.",
+      "exe-3-ben-title": "Mga Benepisyo: ",
+      "exe-3-ben-content": "Inaabot ang dibdib at balikat, pinapabuti ang postura at nagpapagaan ng tensyon mula sa pagpapasuso o paghawak sa sanggol.",
+
+      "exe-4-title": "Hip Flexor Stretch : ",
+      "exe-4-content": "Inaabot ang mga kalamnan ng balakang, binabawasan ang tensyon at nagpapabuti ng alignment ng balakang.",
+      "exe-4-how-title": "Paano Gawin:",
+      "exe-4-how-content-1": "Simulan sa posisyon ng lunge na nakaabante ang kanang paa at ang kaliwang tuhod ay nakahiga sa sahig.",
+      "exe-4-how-content-2": "Itulak nang bahagya ang iyong balakang hanggang sa maramdaman ang stretch sa kaliwang hip flexor.",
+      "exe-4-how-content-3": "Hawakan ang posisyon sa loob ng 20-30 segundo, pagkatapos ay palitan ang panig.",
+      "exe-4-ben-title": "Mga Benepisyo: ",
+      "exe-4-ben-content": "Inaabot ang masikip na kalamnan ng balakang, nagpapabuti ng alignment ng balakang, at tumutulong na bawasan ang pananakit sa ibabang likod.",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    },
+
+    "card-2": {
+      "card-title": "Prenatal Yoga",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Post-6 Linggo hanggang 12-16 Linggo",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Tumututok sa banayad na mga stretch at mga posisyon na nagpapahusay ng flexibility, lakas, at pagpapahinga sa buong pagbubuntis.",
+
+      "exe-1-title": "Cat-Cow Pose: ",
+      "exe-1-content": "Inaabot at pinapalakas ang gulugod, tumutulong na maibsan ang pananakit ng likod.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Magsimula sa iyong mga kamay at tuhod sa posisyon ng tabletop, ang iyong mga pulso ay direkta sa ilalim ng iyong mga balikat at ang iyong mga tuhod sa ilalim ng iyong balakang.",
+      "exe-1-how-content-2": "Habang humihinga, i-arch ang iyong likod (cow pose), itinaas ang iyong ulo at buntot patungo sa kisame.",
+      "exe-1-how-content-3": "Habang humihinga palabas, i-round ang iyong likod (cat pose), isuksok ang iyong baba patungo sa iyong dibdib at hilahin ang iyong tiyan patungo sa iyong gulugod.",
+      "exe-1-how-content-4": "Ulitin para sa 5-10 na paghinga, gumalaw kasabay ng iyong paghinga.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Inaabot at pinapalakas ang gulugod, nagpapahusay ng flexibility, at tumutulong na maibsan ang pananakit ng likod, isang karaniwang isyu sa pagbubuntis.",
+
+      "exe-2-title": "Bound Angle Pose: ",
+      "exe-2-content": "Binubukas ang balakang at inaabot ang mga hita upang itaguyod ang flexibility.",
+      "exe-2-how-title": "Paano Gawin:",
+      "exe-2-how-content-1": "Umupo sa sahig na nakaunat ang iyong mga binti sa harap mo.",
+      "exe-2-how-content-2": "Dalhin ang talampakan ng iyong mga paa nang magkasama at hayaang bumaba ang iyong mga tuhod, na bumubuo ng hugis brilyante gamit ang iyong mga binti.",
+      "exe-2-how-content-3": "Hawakan ang iyong mga paa gamit ang parehong mga kamay, at umupo ng tuwid na may likod na tuwid.",
+      "exe-2-how-content-4": "Dahan-dahang itulak ang iyong mga tuhod patungo sa lupa nang hindi pinipilit, at hawakan ang posisyon sa loob ng 20-30 segundo.",
+      "exe-2-ben-title": "Mga Benepisyo: ",
+      "exe-2-ben-content": "Binubukas ang balakang at inaabot ang mga panloob na hita, na itinataguyod ang flexibility at binabawasan ang tensyon sa pelvic area.",
+
+      "exe-3-title": "Warrior II Pose: ",
+      "exe-3-content": "Pinapalakas ang mga binti at nagpapabuti ng balanse, na inihahanda ang katawan para sa panganganak.",
+      "exe-3-how-title": "Paano Gawin:",
+      "exe-3-how-content-1": "Tumayo na ang iyong mga paa ay nasa 3-4 talampakan ang layo.",
+      "exe-3-how-content-2": "I-turn ang iyong kanang paa palabas ng 90 degrees at ang iyong kaliwang paa bahagyang papasok.",
+      "exe-3-how-content-3": "Itaas ang iyong mga braso ng parallel sa sahig, ang mga palad ay nakaharap pababa.",
+      "exe-3-how-content-4": "Ibaluktot ang iyong kanang tuhod habang pinapanatili ang kaliwang binti na tuwid, tiyakin na ang iyong kanang tuhod ay direkta sa ibabaw ng iyong bukung-bukong.",
+      "exe-3-how-content-5": "Hawakan ang posisyon sa loob ng 20-30 segundo, pagkatapos ay palitan ang panig.",
+      "exe-3-ben-title": "Mga Benepisyo: ",
+      "exe-3-ben-content": "Pinapalakas ang mga binti, balakang, at core, habang nagpapabuti ng balanse at stamina—mahalaga para sa paghahanda ng katawan para sa panganganak.",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    },
+
+    "card-3": {
+      "card-title": "Prenatal Pilates",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Post-6 Linggo hanggang 12-16 Linggo",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Naglalaman ng mga ehersisyo para sa pagpapalakas ng core na sumusuporta sa kabuuang fitness at katatagan, na ginagawang isang kapaki-pakinabang na pagsasanay sa panahon ng pagbubuntis.",
+
+      "exe-1-title": "Pelvic Tilts: ",
+      "exe-1-content": "Pinapalakas ang core at sumusuporta sa ibabang likod, binabawasan ang mga kakulanganang nauugnay sa pagbubuntis.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Humiga sa iyong likod na nakabaluktot ang mga tuhod at ang mga paa ay patag sa sahig, kasinglawak ng balakang.",
+      "exe-1-how-content-2": "Huminga ng malalim, pagkatapos habang humihinga palabas, bahagyang i-tilt ang iyong pelvis pataas, pinipindot ang ibabang bahagi ng iyong likod sa sahig.",
+      "exe-1-how-content-3": "Hawakan ng ilang segundo, pagkatapos ay bumalik sa neutral na posisyon ng gulugod.",
+      "exe-1-how-content-4": "Ulitin para sa 10-15 reps.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Pinapalakas ang core, sumusuporta sa ibabang likod, at nagpapagaan ng kakulanganang nauugnay sa pagbubuntis.",
+
+      "exe-2-title": "Side-Lying Leg Lifts: ",
+      "exe-2-content": "Pinapalakas ang stability ng balakang at pinapalakas ang panlabas na hita at glutes.",
+      "exe-2-how-title": "Paano Gawin:",
+      "exe-2-how-content-1": "Humiga sa iyong gilid na nakaunat ang mga binti at nakasalansan sa ibabaw ng bawat isa.",
+      "exe-2-how-content-2": "Suportahan ang iyong ulo gamit ang iyong braso, pagkatapos ay dahan-dahang itaas ang iyong top leg habang pinapanatiling nakikibahagi ang iyong core.",
+      "exe-2-how-content-3": "Ibalik ang binti pababa nang kontrolado. Ulitin ng 10-15 beses sa bawat panig.",
+      "exe-2-ben-title": "Mga Benepisyo: ",
+      "exe-2-ben-content": "Pinapalakas ang stability ng balakang, pinapalakas ang panlabas na hita at glutes, at binabawasan ang pressure sa ibabang likod.",
+
+      "exe-3-title": "Arm & Leg Extensions: ",
+      "exe-3-content": "Inaabot ang core, nagpapabuti ng stability, at pinapalakas ang mga braso at binti.",
+      "exe-3-how-title": "Paano Gawin:",
+      "exe-3-how-content-1": "Magsimula sa posisyon ng tabletop, na ang iyong mga pulso ay nasa ilalim ng iyong mga balikat at ang iyong mga tuhod ay nasa ilalim ng iyong balakang.",
+      "exe-3-how-content-2": "I-extend ang iyong kanang braso pasulong at ang iyong kaliwang binti paatras, pinapanatiling nakatuwid ang iyong mga balakang.",
+      "exe-3-how-content-3": "Hawakan ng ilang segundo, pagkatapos ay bumalik sa panimulang posisyon. Ulitin sa kabilang panig.",
+      "exe-3-how-content-4": "Gawin ang 10-12 repetitions.",
+      "exe-3-ben-title": "Mga Benepisyo: ",
+      "exe-3-ben-content": "",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    },
+
+    "card-4": {
+      "card-title": "Mga Ehersisyong Batay sa Tubig",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Post-6 Linggo hanggang 12-16 Linggo",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Ginagamit ang resistensya ng tubig para sa isang mababang-impact ngunit epektibong ehersisyo, na nagtataguyod ng tibay at toning ng kalamnan nang hindi binibigyang-stress ang mga kasukasuan.",
+
+      "exe-1-title": "Aqua Aerobics: ",
+      "exe-1-content": "Isang mababang-impact na ehersisyo na gumagamit ng resistensya ng tubig upang mapabuti ang cardiovascular endurance at lakas ng kalamnan.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Tumayo sa tubig hanggang baywang at magsagawa ng mga galaw tulad ng paglalakad, mga sipa ng binti, o pag-ikot ng braso.",
+      "exe-1-how-content-2": "Gamitin ang resistensya ng tubig para sa bawat galaw, gumalaw nang dahan-dahan at may deliberasyon.",
+      "exe-1-how-content-3": "Panatilihing nakikibahagi ang iyong core sa buong ehersisyo upang mapanatili ang balanse at kontrol.",
+      "exe-1-how-content-4": "Maglaan ng 20-30 minuto para sa mababang-impact na ehersisyo sa tubig.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Pinapabuti ang cardiovascular endurance, pinapalakas ang kalamnan, at pinapalakas ang flexibility ng mga kasukasuan, lahat nang walang matinding stress sa katawan.",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    },
+
+    "card-5": {
+      "card-title": "Mga Ehersisyo sa Pag-unat",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Maagang Postnatal Phase (0-6 Linggo)",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Nakatutok sa pagpapahusay ng flexibility at pagbabawas ng tensyon sa mga pangunahing grupo ng kalamnan, ang pag-unat ay mahalaga para sa kaginhawaan sa panahon ng pagbubuntis.",
+
+      "exe-1-title": "Seated Forward Bend: ",
+      "exe-1-content": "Inaabot ang mas mababang likod, hamstrings, at binti, na nakakatulong sa pananakit ng likod.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Umupo sa sahig na nakaunat ang mga binti sa harap mo.",
+      "exe-1-how-content-2": "Dahan-dahang yumuko mula sa iyong balakang, inaabot ang iyong mga paa o hanggang sa maaari kang kumportable.",
+      "exe-1-how-content-3": "Hawakan ang posisyon sa loob ng 20-30 segundo, huminga ng malalim habang inaabot.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Inaabot ang mas mababang likod, hamstrings, at binti, pinapawi ang tensyon at pananakit sa likod at binti.",
+
+      "exe-2-title": "Chest Opener Stretch: ",
+      "exe-2-content": "Inaabot ang dibdib at balikat upang mapabuti ang postura.",
+      "exe-2-how-title": "Paano Gawin:",
+      "exe-2-how-content-1": "Tumayo nang tuwid na may paa na kasinglawak ng balikat.",
+      "exe-2-how-content-2": "Ilagay ang iyong mga kamay sa likod at bahagyang itaas ang mga braso, binubuksan ang dibdib.",
+      "exe-2-how-content-3": "Hawakan ang stretch sa loob ng 20-30 segundo, huminga ng malalim.",
+      "exe-2-ben-title": "Mga Benepisyo: ",
+      "exe-2-ben-content": "Inaabot ang dibdib at balikat, pinapabuti ang postura at nag-aalis ng slouching.",
+
+      "exe-3-title": "Hip Flexor Stretch: ",
+      "exe-3-content": "Inaabot ang mga kalamnan ng balakang, binabawasan ang tensyon at nagpapabuti ng alignment ng pelvic.",
+      "exe-3-how-title": "Paano Gawin:",
+      "exe-3-how-content-1": "Lumuhod sa isang tuhod na may kabilang paa sa harap, bumuo ng 90-degree na anggulo sa parehong mga binti.",
+      "exe-3-how-content-2": "Dahan-dahang itulak ang iyong balakang pasulong hanggang sa maramdaman ang stretch sa hip flexor ng likurang binti.",
+      "exe-3-how-content-3": "Hawakan ng 20-30 segundo, pagkatapos ay palitan ang panig.",
+      "exe-3-ben-title": "Mga Benepisyo: ",
+      "exe-3-ben-content": "Inaabot ang masikip na mga kalamnan ng balakang, binabawasan ang tensyon, at nagpapabuti ng alignment ng pelvic, na tumutulong sa mobility at kaginhawaan sa panahon ng pagbubuntis.",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    },
+
+    "card-6": {
+      "card-title": "Prenatal Strength Training",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Post-6 Linggo hanggang 12-16 Linggo",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Nakatutok sa muling pagpapalakas ng mga kalamnan habang tinitiyak ang ligtas na paggaling, tumutulong ang pagsasanay na ito na mapanatili ang tono ng kalamnan at pangkalahatang fitness.",
+
+      "exe-1-title": "Bicep Curls gamit ang Magaan na Timbang: ",
+      "exe-1-content": "Pinapanatili ang lakas ng braso at balikat gamit ang magaan na timbang.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Tumayo nang ang mga paa ay kasing-lapad ng balakang, hawak ang magaan na timbang sa bawat kamay.",
+      "exe-1-how-content-2": "Panatilihin ang iyong mga siko malapit sa iyong tagiliran at ang mga palad ay nakaharap pasulong.",
+      "exe-1-how-content-3": "Dahan-dahang itaas ang mga timbang patungo sa iyong balikat, pagkatapos ay ibaba ito pabalik nang kontrolado.",
+      "exe-1-how-content-4": "Gawin ang 10-12 repetitions.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Pinapanatili ang lakas ng braso at balikat nang hindi pinapagod ang mga kalamnan, pinapahusay ang fitness ng itaas na bahagi ng katawan.",
+
+      "exe-2-title": "Wall Push-Ups: ",
+      "exe-2-content": "Nakikibahagi ang mga kalamnan ng itaas na katawan, tumutulong na mapanatili ang lakas ng dibdib at braso.",
+      "exe-2-how-title": "Paano Gawin:",
+      "exe-2-how-content-1": "Tumayo na nakaharap sa isang pader, na ang mga paa ay kasing-lapad ng balakang at ang mga kamay ay nakapuwesto nang kasing-lapad ng balikat sa pader.",
+      "exe-2-how-content-2": "Ibaluktot ang mga siko at yumuko patungo sa pader, panatilihing tuwid ang katawan.",
+      "exe-2-how-content-3": "Itulak pabalik sa panimulang posisyon. Ulitin ng 10-15 beses.",
+      "exe-2-ben-title": "Mga Benepisyo: ",
+      "exe-2-ben-content": "Nakikibahagi ang mga kalamnan ng itaas na katawan, partikular ang dibdib at mga braso, habang nagbibigay ng mababang-impact na resistensya.",
+
+      "exe-3-title": "Squats: ",
+      "exe-3-content": "Pinapalakas ang mga binti at glutes habang sumusuporta sa mga kalamnan ng pelvic, na naghahanda para sa panganganak.",
+      "exe-3-how-title": "Paano Gawin:",
+      "exe-3-how-content-1": "Tumayo na ang mga paa ay bahagyang mas malawak kaysa sa lapad ng balikat at ang mga daliri ng paa ay bahagyang nakatutok palabas.",
+      "exe-3-how-content-2": "Ibaluktot ang katawan na parang uupo sa isang upuan, panatilihing tuwid ang likod at ang mga tuhod ay nasa likod ng mga daliri ng paa.",
+      "exe-3-how-content-3": "Itulak sa pamamagitan ng mga sakong upang bumalik sa pagtayo. Ulitin ng 10-12 reps.",
+      "exe-3-ben-title": "Mga Benepisyo: ",
+      "exe-3-ben-content": "Pinapalakas ang mga binti, glutes, at mga kalamnan ng pelvic, nagbibigay ng katatagan at inihahanda ang katawan para sa panganganak.",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    },
+
+    "card-7": {
+      "card-title": "Mga Ehersisyo sa Pelvic Floor (Kegel Exercises)",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Maagang Postnatal Phase (0-6 Linggo)",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Mahalaga para sa pagpapalakas ng mga kalamnan ng pelvic, ang mga ehersisyong ito ay tumutulong sa pagpigil sa incontinence at pagtataguyod ng pangkalahatang kalusugan ng pelvic.",
+
+      "exe-1-title": "Bridge Pose: ",
+      "exe-1-content": "Nakikibahagi ang pelvic floor at glutes, sumusuporta sa lakas ng ibabang likod.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Humiga sa iyong likod na may mga tuhod na baluktot at ang mga paa ay patag sa sahig, kasing-lawak ng balakang.",
+      "exe-1-how-content-2": "Dahan-dahang itaas ang iyong balakang patungo sa kisame habang pinipiga ang mga kalamnan ng pelvic floor at glutes.",
+      "exe-1-how-content-3": "Hawakan ng ilang segundo, pagkatapos ay ibaba muli. Ulitin ng 10-12 reps.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Pinapalakas ang pelvic floor, glutes, at ibabang likod, sumusuporta sa paggaling pagkatapos ng panganganak.",
+
+      "exe-2-title": "Squat and Hold: ",
+      "exe-2-content": "Pinapagana ang pelvic floor at mga kalamnan ng binti, pinapalakas ang mga lugar na ito.",
+      "exe-2-how-title": "Paano Gawin:",
+      "exe-2-how-content-1": "Mabagal na Pagpisil: Pisilin ang mga kalamnan ng pelvic floor nang dahan-dahan, hawakan ng 5-10 segundo, at pagkatapos ay bitawan. Ulitin ng 10 beses.",
+      "exe-2-how-content-2": "Mabilis na Pagpisil: Gawin ang mabilis, maikli, at malakas na pagpisil ng mga kalamnan ng pelvic floor. Ulitin ng 10 beses.",
+      "exe-2-how-content-3": "Cough Test: Pisilin ang mga kalamnan ng pelvic floor, pagkatapos ay bahagyang umubo. Ulitin ng 3 beses.",
+      "exe-2-how-content-4": "Gawin Regularly: Mag-target ng 5-6 set ng mga ehersisyo sa pelvic floor bawat araw upang mabuo at mapanatili ang lakas ng kalamnan.",
+      "exe-2-ben-title": "Mga Benepisyo: ",
+      "exe-2-ben-content": "Pinapalakas ang mga kalamnan ng pelvic floor at binti, na nagtataguyod ng katatagan at binabawasan ang kakulanganang pelvic.",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    },
+
+    "card-8": {
+      "card-title": "Prenatal Dance",
+      "suggest-period-title": "Inirerekomendang Panahon: ",
+      "suggest-period-content": "Post-6 Linggo hanggang 12-16 Linggo",
+      "desc-title": "Paglalarawan: ",
+      "desc-content": "Isinasama ang galaw at ritmo upang palakasin ang kasiyahan habang pinapabuti ang koordinasyon at kalusugan ng cardiovascular.",
+
+      "exe-1-title": "Banayad na Mga Galaw ng Sayaw: ",
+      "exe-1-content": "Hinahikayat ang paggalaw at kasiyahan habang pinapahusay ang koordinasyon at ritmo.",
+      "exe-1-how-title": "Paano Gawin:",
+      "exe-1-how-content-1": "Pumili ng mga simpleng hakbang sa sayaw, tulad ng mga side steps, banayad na sways, at galaw ng mga braso.",
+      "exe-1-how-content-2": "Panatilihing makinis at kalmado ang mga galaw, siguraduhing hindi ka mag-overexert.",
+      "exe-1-how-content-3": "Sumayaw ng 10-20 minuto, na nakatutok sa pagpapanatili ng tuloy-tuloy na ritmo at paghinga.",
+      "exe-1-ben-title": "Mga Benepisyo: ",
+      "exe-1-ben-content": "Hinahikayat ang masaya, mababang-impact na ehersisyo na nagpapabuti sa koordinasyon, flexibility, at kalusugan ng cardiovascular.",
+
+      "exe-2-title": "Simpleng Koreograpiya: ",
+      "exe-2-content": "Isinasama ang masaya at madaling mga sayaw na nagpapabuti sa kalusugan ng cardiovascular nang hindi nag-o-overexert.",
+      "exe-2-how-title": "Paano Gawin:",
+      "exe-2-how-content-1": "Sundan ang madaling mga galaw tulad ng step-touches, banayad na spins, at pag-angat ng mga braso.",
+      "exe-2-how-content-2": "Isama ang musika na iyong kinagigiliwan upang mapanatiling magaan at makasabay ang mga galaw.",
+      "exe-2-how-content-3": "Sumayaw ng 15-20 minuto, unti-unting pinapataas ang iyong stamina.",
+      "exe-2-ben-title": "Mga Benepisyo: ",
+      "exe-2-ben-content": "Nagpapabuti sa kalusugan ng cardiovascular, koordinasyon, at tono ng kalamnan, habang nagbibigay ng masaya at nakakarelaks na anyo ng ehersisyo.",
+
+      "how-btn": "Paano Gawin at Mga Benepisyo",
+      "video-title": "Tampok na Mga Video"
+    }
+  },
+
+  "postpartum": {
+    "title": "Paano Nakatutulong ang Ehersisyo sa Postnatal Kondisyon",
+
+    "card-1-title": "Kahinaan ng Pelvic Floor",
+    "card-1-condition-title": "Kondisyon: ",
+    "card-1-condition-desc": "Ang pagbubuntis at panganganak ay maaaring magpahina sa mga kalamnan ng pelvic floor, na nagiging sanhi ng mga isyu tulad ng urinary incontinence at pelvic organ prolapse.",
+    "card-1-exe-title": "Mga Benepisyo ng Ehersisyo ",
+    "card-1-exe-1-title": "Mga Ehersisyo ng Pelvic Floor (hal. Mga Dahan-dahang Pisil, Mabilisang Pisil): ",
+    "card-1-exe-1-content": "Pinalalakas ng mga ehersisyong ito ang mga kalamnan ng pelvic floor, tumutulong sa pagpapanumbalik ng kanilang tungkulin at pagsuporta sa mga pelvic organ. Pinapabuti rin nito ang kontrol sa pantog at binabawasan ang panganib ng incontinence.",
+    "card-1-exe-2-title": "Bridge Pose ",
+    "card-1-exe-2-content": "Pinalalakas ang pelvic floor at glutes, na sumusuporta sa kalakasan ng ibabang bahagi ng likod at tumutulong sa pagsasabalanse ng pelvic region.",
+
+    "card-2-title": "Kahinaan ng Tiyan",
+    "card-2-condition-title": "Kondisyon: ",
+    "card-2-condition-desc": "Ang mga kalamnan ng tiyan, lalo na ang rectus abdominis, ay maaaring humina at mag-inat dahil sa paglaki ng matris sa pagbubuntis.",
+    "card-2-exe-title": "Mga Benepisyo ng Ehersisyo ",
+    "card-2-exe-1-title": "Pelvic Tilts (Prenatal Pilates): ",
+    "card-2-exe-1-content": "Pinapalakas ang core at sumusuporta sa ibabang bahagi ng likod, tumutulong sa pagbabalik ng lakas ng kalamnan ng tiyan at binabawasan ang panganib ng diastasis recti (pagkakahiwalay ng mga kalamnan ng tiyan).",
+    "card-2-exe-2-title": "Side-Lying Leg Lifts (Prenatal Pilates) ",
+    "card-2-exe-2-content": "Pinapabuti ang katatagan ng core at pinapalakas ang mga panlabas na hita at glutes, na nag-aambag sa kabuuang lakas ng tiyan.",
+
+    "card-3-title": "Panakit ng Ibabang Likod",
+    "card-3-condition-title": "Kondisyon: ",
+    "card-3-condition-desc": "Ang panakit ng ibabang likod ay karaniwan dahil sa bigat ng pagbubuntis at ang mga imbalanse sa kalamnan na dulot nito.",
+    "card-3-exe-title": "Mga Benepisyo ng Ehersisyo ",
+    "card-3-exe-1-title": "Cat-Cow Pose (Prenatal Yoga): ",
+    "card-3-exe-1-content": "Pinalalakas at iniinat ang gulugod, tumutulong sa pagpapaginhawa ng panakit ng likod sa pamamagitan ng pagpapabuti ng flexibility at alignment ng gulugod.",
+    "card-3-exe-2-title": "Squats (Prenatal Strength Training) ",
+    "card-3-exe-2-content": "Pinapalakas ang mga binti at glutes, nagbibigay ng mas mahusay na suporta sa ibabang bahagi ng likod at binabawasan ang strain.",
+
+    "card-4-title": "Pangkalahatang Pagod at Mababang Enerhiya",
+    "card-4-condition-title": "Kondisyon: ",
+    "card-4-condition-desc": "Madalas na nakakaranas ng pagod at mababang enerhiya ang mga bagong ina dahil sa mga pangangailangan ng pag-aalaga sa sanggol at pagbawi mula sa panganganak.",
+    "card-4-exe-title": "Mga Benepisyo ng Ehersisyo: ",
+    "card-4-exe-1-title": "Banayad na Paglakad ",
+    "card-4-exe-1-content": "Pinapalakas ang kalusugan ng cardiovascular at antas ng enerhiya, tumutulong sa paglaban sa pagod at pagpapabuti ng pangkalahatang mood.",
+    "card-4-exe-2-title": "Banayad na Pag-inat ",
+    "card-4-exe-2-content": "Nagpapagaan ng tensiyon sa kalamnan at nagpapabuti ng flexibility, na maaaring magpataas ng antas ng enerhiya at mabawasan ang pakiramdam ng pagod.",
+
+    "card-5-title": "Pagbaba ng Kalusugan ng Cardiovascular",
+    "card-5-condition-title": "Kondisyon: ",
+    "card-5-condition-desc": "Habang nagbubuntis, maaaring bumaba ang kalusugan ng cardiovascular dahil sa bawas na pisikal na aktibidad at pagtaas ng timbang.",
+    "card-5-exe-title": "Mga Benepisyo ng Ehersisyo ",
+    "card-5-exe-1-title": "Aqua Aerobics (Mga Ehersisyo sa Tubig): ",
+    "card-5-exe-1-content": "Nagbibigay ng mababang-impact, buong-katawang ehersisyo na nagpapabuti sa endurance ng cardiovascular at tono ng kalamnan na may kaunting strain sa mga kasukasuan.",
+    "card-5-exe-2-title": "Pagtakbo (Pagkatapos ng 16 Linggo) ",
+    "card-5-exe-2-content": "Pinapataas ang tibay at stamina ng cardiovascular habang bumubuti ang antas ng kalusugan.",
+
+    "card-6-title": "Imbalance sa Kalamnan",
+    "card-6-condition-title": "Kondisyon: ",
+    "card-6-condition-desc": "Ang mga imbalances sa kalamnan ay maaaring mangyari dahil sa binagong postura at distribusyon ng timbang habang nagbubuntis.",
+    "card-6-exe-title": "Mga Benepisyo ng Ehersisyo ",
+    "card-6-exe-1-title": "Bicep Curls gamit ang Magaan na Timbang (Prenatal Strength Training): ",
+    "card-6-exe-1-content": "Pinapanatili ang lakas ng mga braso at balikat, nagbabalanse ng pag-unlad ng kalamnan at sumusuporta sa tamang postura.",
+    "card-6-exe-2-title": "Arm & Leg Extensions (Bird-Dog) (Prenatal Pilates) ",
+    "card-6-exe-2-content": "Pinapalakas ang core at nagpapabuti ng katatagan, tinutugunan ang mga imbalance ng kalamnan at sumusuporta sa tamang postura.",
+
+    "card-7-title": "Stress at Mood Fluctuations",
+    "card-7-condition-title": "Kondisyon: ",
+    "card-7-condition-desc": "Ang mga babaeng postnatal ay maaaring makaranas ng mood swings at stress dahil sa mga pagbabago sa hormone at ang mga pangangailangan ng pagiging ina.",
+    "card-7-exe-title": "Mga Benepisyo ng Ehersisyo ",
+    "card-7-exe-1-title": "Prenatal Yoga: ",
+    "card-7-exe-1-content": "Kasama ang mga poses tulad ng Bound Angle Pose at Warrior II Pose na nagpapasigla ng relaxation at nagpapabuti ng mood, tumutulong na mapawi ang stress at anxiety.",
+    "card-7-exe-2-title": "Banayad na Pag-inat ",
+    "card-7-exe-2-content": "Nagpapabuti ng relaxation at nagpapagaan ng tensiyon sa kalamnan, na nag-aambag sa pagpapabuti ng mental na kagalingan.",
+
+    "exe-recom-title": "Anong mga ehersisyo ang makatutulong: ",
+    "more-detail": "Alamin ang higit pang detalye"
+  },
+
+  "collection": {
+    "title": "Pagkolekta ng Impormasyon sa Katawan",
+    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "text-2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "card-1": {
+      "title": "Mayroon ka bang ugali sa palakasan?",
+      "options-1": "Oo",
+      "options-2": "Hindi"
+    },
+    "card-2": {
+      "title": "Sa anong pangkat ng edad ka nabibilang?"
+    },
+    "card-3": {
+      "title": "Gaano ka kadalas mag-ehersisyo?",
+      "radio-1": "Isang beses sa isang linggo",
+      "radio-2": "Dalawang beses sa isang linggo",
+      "radio-3": "Tatlo o higit pa sa isang linggo"
+    },
+    "card-4": {
+      "title": "Ano ang iyong timbang (kg)?",
+      "weight": "timbang"
+    },
+    "card-5": {
+      "title": "Ano ang iyong taas (cm)",
+      "height": "Ano ang iyong taas (cm)"
+    },
+    "Submit": "Ipasa",
+    "Reset": "I-reset ang mga sagot",
+    "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
   },
 
   "footer": {
-    "icon-top": "Healthy",
-    "icon-bottom": "Pregnancy",
+    "icon-top": "Kalusugan",
+    "icon-bottom": "Pagbubuntis",
 
-    "contents-title": "Our Services",
-    "content-1": "Pregnancy Education",
-    "content-2": "Risk Assessment",
-    "content-3": "Nutritional Advice",
-    "content-4": "Pregnancy Exercises",
+    "contents-title": "Aming mga Serbisyo",
+    "content-1": "Edukasyon sa Pagbubuntis",
+    "content-2": "Pagsusuri ng Panganib",
+    "content-3": "Payo sa Nutrisyon",
+    "content-4": "Mga Ehersisyo para sa Pagbubuntis",
 
-    "copyright": "Copyright © 2024 Powered by HealthyPregnancy"
+    "copyright": "Karapatang-ari © 2024 Pinatatakbo ng HealthyPregnancy"
   }
 }
