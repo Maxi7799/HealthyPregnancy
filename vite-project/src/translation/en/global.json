@@ -22,6 +22,11 @@
   },
   "home": {
     "slideshow": {
+      "page-0": "",
+      "page-0-text-1": "",
+      "page-0-text-2": "Our website is dedicated to helping immigrant women better understand pregnancy and prepare them for it",
+      "page-0-button": "Explore",
+
       "page-1": "Education",
       "page-1-text-1": "",
       "page-1-text-2": "Learn more about prgnancy and Leverage your knowledge on pregnancy through interactive modules.",
@@ -718,9 +723,10 @@
     "What'sNext": "What's Next",
     "row3": "Learn More About Diabetes and Pregnancy: Discover essential information about diabetes management during pregnancy on our education page to stay informed and proactive",
     "educationpage": "education page",
-    "row4": "Learn more about the importance and effect of antenatal visit during pregnancy here",
-    "row5": "Explore more about nutritional advice that suits your pregnancy here",
-    "row6": "Explore recommended exercise and physical activity for your best pregnancy experience here"
+    "row4": "Learn more about the importance and effect of antenatal visit during pregnancy",
+    "row5": "Explore more about nutritional advice that suits your pregnancy",
+    "row6": "Explore recommended exercise and physical activity for your best pregnancy experience",
+    "here":"here"
   },
 
   "NutritionAnalysis": {
@@ -787,7 +793,8 @@
     "Beverages": "Beverages",
     "Processed": "Processed",
     "FoodList": "Food List",
-    "Listoffooditemsbasedonyourselection": "List of food items based on your selection"
+    "Listoffooditemsbasedonyourselection": "List of food items based on your selection",
+    "noRecommendedFood": "no recommended food"
   },
 
   "recipe": {

@@ -7,6 +7,7 @@ import img1 from "../../assets/unsplash_7tGqLzHcjZ8.png";
 import img2 from "../../assets/unsplash_076XLvcgeDk.png";
 import img3 from "../../assets/unsplash_7ztiEagrkYk.png";
 import img4 from "../../assets/unsplash_ZSjQakwNsuE.png";
+import icon from "../../assets/h-icon.png";
 import { useTranslation } from "react-i18next";
 
 type listType = Array<{
@@ -21,6 +22,14 @@ export const generateList = () => {
   const [t] = useTranslation("global");
 
   const list: listType = [
+    {
+      title: t("header.icon-top") + t("header.icon-bottom"),
+      text: t("home.slideshow.page-0-text-2"),
+      buttonText: t("home.slideshow.page-1-button"),
+      imgUrl: icon,
+      link: "/educational",
+    },
+
     {
       title: t("home.slideshow.page-1"),
       text: t("home.slideshow.page-1-text-2"),

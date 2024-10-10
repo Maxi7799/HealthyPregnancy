@@ -22,6 +22,11 @@
   },
   "home": {
     "slideshow": {
+      "page-0": "",
+      "page-0-text-1": "",
+      "page-0-text-2": "Trang web của chúng tôi dành riêng để giúp phụ nữ di cư hiểu rõ hơn về thai kỳ và chuẩn bị cho nó",
+      "page-0-button": "",
+
       "page-1": "Giáo Dục",
       "page-1-text-1": "",
       "page-1-text-2": "Tìm hiểu thêm về thai kỳ và sử dụng kiến thức của bạn về thai kỳ thông qua các mô-đun tương tác.",
@@ -634,9 +639,10 @@
     "What'sNext": "Tiếp theo là gì?",
     "row3": "Tìm hiểu thêm về bệnh tiểu đường và thai kỳ: Khám phá thông tin thiết yếu về quản lý bệnh tiểu đường trong thời kỳ mang thai trên trang giáo dục của chúng tôi để luôn được thông báo và chủ động.",
     "educationpage": "trang giáo dục",
-    "row4": "Tìm hiểu thêm về tầm quan trọng và hiệu quả của việc thăm khám trước sinh trong thời kỳ mang thai tại đây.",
-    "row5": "Khám phá thêm về các lời khuyên dinh dưỡng phù hợp với thai kỳ của bạn tại đây.",
-    "row6": "Khám phá các bài tập và hoạt động thể chất được khuyến nghị cho trải nghiệm thai kỳ tốt nhất của bạn tại đây."
+    "row4": "Tìm hiểu thêm về tầm quan trọng và hiệu quả của việc thăm khám trước sinh trong thời kỳ mang thai tại",
+    "row5": "Khám phá thêm về các lời khuyên dinh dưỡng phù hợp với thai kỳ của bạn tại",
+    "row6": "Khám phá các bài tập và hoạt động thể chất được khuyến nghị cho trải nghiệm thai kỳ tốt nhất của bạn tại",
+    "here": "Ở đây"
   },
 
   "NutritionAnalysis": {
@@ -703,7 +709,8 @@
     "Beverages": "Đồ uống",
     "Processed": "Chế biến",
     "FoodList": "Danh sách thực phẩm",
-    "Listoffooditemsbasedonyourselection": "Danh sách các mục thực phẩm dựa trên lựa chọn của bạn"
+    "Listoffooditemsbasedonyourselection": "Danh sách các mục thực phẩm dựa trên lựa chọn của bạn",
+    "noRecommendedFood": "Không có món ăn được đề xuất"
   },
 
   "recipe": {

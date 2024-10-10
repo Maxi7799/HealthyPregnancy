@@ -908,13 +908,18 @@ export const NutritionAnalysis: React.FC = () => {
 
             <div
               className="category"
-              style={{ marginTop: "40px", display: foodList.length == 0 ? "none" : "block" }}
+              style={{ marginTop: "40px" }}
               id="foodList"
             >
               <div className="category-title">{t("NutritionAnalysis.FoodList")}</div>
               <div className="category-sub-title">
                 {t("NutritionAnalysis.Listoffooditemsbasedonyourselection")}
               </div>
+
+              {
+                foodList.length === 0 ? <div>{t("NutritionAnalysis.noRecommendedFood")}</div> : <></>
+              }
+
 
               {foodList.map((item: any) => {
                 return (

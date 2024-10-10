@@ -22,6 +22,11 @@
   },
   "home": {
     "slideshow": {
+      "page-0": "",
+      "page-0-text-1": "",
+      "page-0-text-2": "Ang aming website ay nakalaan upang tulungan ang mga babaeng imigrante na mas maunawaan ang pagbubuntis at ihanda sila para dito",
+      "page-0-button": "Explore",
+
       "page-1": "Edukasyon",
       "page-1-text-1": "",
       "page-1-text-2": "Matuto nang higit pa tungkol sa pagbubuntis at palawakin ang iyong kaalaman sa pagbubuntis sa pamamagitan ng mga interactive na module.",
@@ -718,9 +723,10 @@
     "What'sNext": "Ano'ng Susunod?",
     "row3": "Alamin Pa Tungkol sa Diabetes at Pagbubuntis: Tuklasin ang mga mahahalagang impormasyon tungkol sa pamamahala ng diabetes sa pagbubuntis sa aming pahina ng edukasyon upang manatiling alam at maagap",
     "educationpage": "pahina ng edukasyon",
-    "row4": "Alamin pa ang kahalagahan at epekto ng pagbisita sa antenatal sa panahon ng pagbubuntis dito",
-    "row5": "Tuklasin ang higit pang mga payo sa nutrisyon na naaangkop sa iyong pagbubuntis dito",
-    "row6": "Tuklasin ang mga inirerekomendang ehersisyo at pisikal na aktibidad para sa pinakamahusay na karanasan ng iyong pagbubuntis dito"
+    "row4": "Alamin pa ang kahalagahan at epekto ng pagbisita sa antenatal sa panahon ng pagbubuntis",
+    "row5": "Tuklasin ang higit pang mga payo sa nutrisyon na naaangkop sa iyong pagbubuntis",
+    "row6": "Tuklasin ang mga inirerekomendang ehersisyo at pisikal na aktibidad para sa pinakamahusay na karanasan ng iyong pagbubuntis",
+    "here":"dito"
   },
 
   "NutritionAnalysis": {
@@ -787,7 +793,8 @@
     "Beverages": "Inumin",
     "Processed": "Naproseso",
     "FoodList": "Listahan ng Pagkain",
-    "Listoffooditemsbasedonyourselection": "Listahan ng mga item sa pagkain batay sa iyong pinili"
+    "Listoffooditemsbasedonyourselection": "Listahan ng mga item sa pagkain batay sa iyong pinili",
+    "noRecommendedFood": "Walang inirerekomendang pagkain"
   },
 
   "recipe": {

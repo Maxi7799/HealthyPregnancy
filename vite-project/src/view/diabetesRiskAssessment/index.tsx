@@ -387,7 +387,7 @@ export function DiabetesRiskAssessment() {
             </Space>
           </p> */}
 
-          <p style={{ textAlign: "left" }}>
+          {/* <p style={{ textAlign: "left" }}>
             <Space>
               <ArrowRightOutlined />
               <div>
@@ -398,7 +398,7 @@ export function DiabetesRiskAssessment() {
                 </div>
               </div>
             </Space>
-          </p>
+          </p> */}
 
           <p style={{ textAlign: "left" }}>
             <Space>
@@ -406,7 +406,7 @@ export function DiabetesRiskAssessment() {
               <div>
                 <div>
                   <div>
-                    <Link to="/nutrition-analysis">{t("riskassessment.row5")}</Link>
+                    {t("riskassessment.row5")}<Link to="/nutrition-analysis">{" "}{t("riskassessment.here")}</Link>
                   </div>
                 </div>
               </div>
@@ -419,7 +419,7 @@ export function DiabetesRiskAssessment() {
               <div>
                 <div>
                   <div>
-                    <Link to="/exercise">{t("riskassessment.row6")}</Link>
+                    {t("riskassessment.row6")}<Link to="/exercise">{" "}{t("riskassessment.here")}</Link>
                   </div>
                 </div>
               </div>

@@ -22,6 +22,11 @@
   },
   "home": {
     "slideshow": {
+      "page-0": "",
+      "page-0-text-1": "",
+      "page-0-text-2": "Laman web kami didedikasikan untuk membantu wanita imigran memahami kehamilan dengan lebih baik dan mempersiapkan diri untuknya",
+      "page-0-button": "Explore",
+
       "page-1": "Pendidikan",
       "page-1-text-1": "",
       "page-1-text-2": "Ketahui lebih lanjut tentang kehamilan dan tingkatkan pengetahuan anda tentang kehamilan melalui modul interaktif.",
@@ -720,7 +725,8 @@
     "educationpage": "halaman pendidikan",
     "row4": "Ketahui lebih lanjut mengenai kepentingan dan kesan lawatan antenatal semasa kehamilan di sini.",
     "row5": "Terokai lebih lanjut mengenai nasihat pemakanan yang sesuai untuk kehamilan anda di sini.",
-    "row6": "Terokai senaman dan aktiviti fizikal yang disyorkan untuk pengalaman kehamilan terbaik anda di sini."
+    "row6": "Terokai senaman dan aktiviti fizikal yang disyorkan untuk pengalaman kehamilan terbaik anda di sini.",
+    "here": "di sini"
   },
 
   "NutritionAnalysis": {
@@ -787,7 +793,8 @@
     "Beverages": "Minuman",
     "Processed": "Diproces",
     "FoodList": "Senarai Makanan",
-    "Listoffooditemsbasedonyourselection": "Senarai item makanan berdasarkan pilihan anda"
+    "Listoffooditemsbasedonyourselection": "Senarai item makanan berdasarkan pilihan anda",
+    "noRecommendedFood": "Tiada makanan yang disyorkan"
   },
 
   "recipe": {

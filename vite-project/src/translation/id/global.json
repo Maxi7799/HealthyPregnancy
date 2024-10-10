@@ -22,6 +22,11 @@
   },
   "home": {
     "slideshow": {
+      "page-0": "",
+      "page-0-text-1": "",
+      "page-0-text-2": "Situs web kami didedikasikan untuk membantu wanita imigran lebih memahami kehamilan dan mempersiapkan diri untuk itu",
+      "page-0-button": "Explore",
+
       "page-1": "Pendidikan",
       "page-1-text-1": "",
       "page-1-text-2": "Pelajari lebih lanjut tentang kehamilan dan tingkatkan pengetahuan Anda melalui modul interaktif.",
@@ -718,9 +723,10 @@
     "What'sNext": "Langkah Selanjutnya",
     "row3": "Pelajari Lebih Lanjut Tentang Diabetes dan Kehamilan: Temukan informasi penting tentang pengelolaan diabetes selama kehamilan di halaman edukasi kami untuk tetap terinformasi dan proaktif.",
     "educationpage": "halaman edukasi",
-    "row4": "Pelajari lebih lanjut tentang pentingnya dan efek kunjungan antenatal selama kehamilan di sini",
-    "row5": "Jelajahi lebih lanjut tentang saran nutrisi yang sesuai untuk kehamilan Anda di sini",
-    "row6": "Jelajahi rekomendasi olahraga dan aktivitas fisik untuk pengalaman kehamilan terbaik Anda di sini"
+    "row4": "Pelajari lebih lanjut tentang pentingnya dan efek kunjungan antenatal selama kehamilan",
+    "row5": "Jelajahi lebih lanjut tentang saran nutrisi yang sesuai untuk kehamilan Anda",
+    "row6": "Jelajahi rekomendasi olahraga dan aktivitas fisik untuk pengalaman kehamilan terbaik Anda",
+    "here": "Di sini"
   },
 
   "NutritionAnalysis": {
@@ -787,7 +793,8 @@
     "Beverages": "Minuman",
     "Processed": "Olahan",
     "FoodList": "Daftar Makanan",
-    "Listoffooditemsbasedonyourselection": "Daftar item makanan berdasarkan pilihan Anda"
+    "Listoffooditemsbasedonyourselection": "Daftar item makanan berdasarkan pilihan Anda",
+    "noRecommendedFood": "Tidak ada makanan yang direkomendasikan"
   },
 
   "recipe": {
@@ -1232,7 +1239,6 @@
     "text1": "Menurut jadwal Anda, Anda akan makan sekitar",
     "text2": "dari jumlah kalori standar"
   },
-
 
   "footer": {
     "icon-top": "Sehat",

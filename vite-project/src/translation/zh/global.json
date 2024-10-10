@@ -22,6 +22,11 @@
   },
   "home": {
     "slideshow": {
+      "page-0": "",
+      "page-0-text-1": "",
+      "page-0-text-2": "我们的网站致力于帮助移民女性更好地理解怀孕并为之做好准备",
+      "page-0-button": "",
+
       "page-1": "教育",
       "page-1-text-1": "",
       "page-1-text-2": "通过互动模块了解更多关于怀孕的知识，并提升您的怀孕知识。",
@@ -717,7 +722,8 @@
     "educationpage": "教育页面",
     "row4": "在此处了解产前检查在怀孕期间的重要性和影响。",
     "row5": "在此处探索适合您怀孕的营养建议。",
-    "row6": "在此处探索推荐的运动和身体活动，为您提供最佳的怀孕体验。"
+    "row6": "在此处探索推荐的运动和身体活动，为您提供最佳的怀孕体验。",
+    "here": "这里"
   },
 
   "NutritionAnalysis": {
@@ -784,7 +790,8 @@
     "Beverages": "饮料",
     "Processed": "加工食品",
     "FoodList": "食物列表",
-    "Listoffooditemsbasedonyourselection": "基于您选择的食物列表"
+    "Listoffooditemsbasedonyourselection": "基于您选择的食物列表",
+    "noRecommendedFood": "没有推荐的食物"
   },
 
   "recipe": {
@@ -1215,7 +1222,6 @@
     "botom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas"
   },
 
-  
   "reciperesult": {
     "Schedule": "日程",
     "text1": "根据你的日程，你将大约吃",

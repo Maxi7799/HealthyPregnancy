@@ -199,7 +199,7 @@ export const Recipe: React.FC = () => {
 
 
           <Form.Item
-            label="weight"
+            label="weight(kg)"
             name="weight"
             style={{ marginBottom: 0 }}
             rules={[{ required: true, message: 'Please input your weight!' }]}
@@ -209,7 +209,7 @@ export const Recipe: React.FC = () => {
           </Form.Item>
 
           <Form.Item
-            label="height"
+            label="height(m)"
             name="height"
             style={{ marginBottom: 0 }}
             rules={[{ required: true, message: 'Please input your height!' }]}
