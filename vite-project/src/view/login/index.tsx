@@ -10,12 +10,12 @@ export const Login: React.FC = () => {
   const navigate = useNavigate(); // Initialize the navigate function
 
   const handleLogin = () => {
-    // if (username === "admin" && password === "admin") {
-    //   navigate("/home");
-    // } else {
-    //   setErrorMessage("Invalid username or password");
-    // }
-    navigate("/home");
+    if (username === "admin" && password === "admin") {
+      navigate("/home");
+    } else {
+      setErrorMessage("Invalid username or password");
+    }
+    // navigate("/home");
   };
 
   return (
