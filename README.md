@@ -1,5 +1,5 @@
 # IT project built for migrant pregnant women easily accessing medical care
-The project was built for Industry Experience Team 35
+
 
 # Tech stack: 
 
