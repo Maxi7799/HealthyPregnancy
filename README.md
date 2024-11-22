@@ -12,3 +12,8 @@ DB: MySQL
 Cloud Services: AWS (EC2, RDS, Load Balancer)
 
 Deployment: Docker, Nginx, Cerbot(SSL certificate)
+
+
+# Login:
+username: admin
+password: admin
